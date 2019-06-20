@@ -1,7 +1,7 @@
 const express 	= require("express");
 const router 	= express.Router();
 
-const CmspageController = require('../controllers/cmspage');
+const CmspageController = require('../controllers/cmspages');
 
 router.post('/', CmspageController.create_cmspage);
 
@@ -20,6 +20,3 @@ router.delete('/:cmspageID',CmspageController.delete_cmspage);
 
 
 module.exports = router;
-
-
-

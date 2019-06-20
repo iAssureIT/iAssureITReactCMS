@@ -9,7 +9,7 @@ exports.create_cmsblocks = (req,res,next)=>{
 		.then(data =>{
 			if(data){
 				return res.status(200).json({
-					message: ' Role already exists'
+					message: ' CMS Block already exists'
 				});
 			}else{
 				const role = new Cmsblocks({
@@ -29,7 +29,7 @@ exports.create_cmsblocks = (req,res,next)=>{
                 role.save()
                     .then(data=>{
                         console.log('data ',data);
-                        res.status(200).json("Cmsblocks Added");
+                        res.status(200).json("Cms blocks Added");
                     })
                     .catch(err =>{
                         console.log(err);
@@ -70,7 +70,7 @@ exports.detail_cmsblocks = (req,res,next)=>{
             if(data){
                 res.status(200).json(data);
             }else{
-                res.status(404).json('Pagedesignmaster not found');
+                res.status(404).json('Cms blocks not found');
             }
         })
         .catch(err =>{
@@ -84,10 +84,18 @@ exports.detail_cmsblocks = (req,res,next)=>{
 exports.update_cmsblocks = (req,res,next)=>{
     var roleData = req.body.role;
     Cmsblocks.updateOne(
-            { _id:req.body.id},  
+        { _id : req.body.cmspageID},  
             {
                 $set:{
-                    "role" : roleData.toLowerCase()
+                    blocktitle          : req.body.blocktitle,
+                    blocksubtitle       : req.body.blocksubtitle,
+                    blockbody           : req.body.blockbody ,
+                    componentName       : req.body.componentName,
+                    blockimage          : req.body.blockimage,
+                    blocktype           : req.body.blocktype,
+                    blockbackgroundimage : req.body.blockbackgroundimage,
+                    blockvideo           : req.body.blockvideo,
+                    blockbackgroundvideo : req.body.blockbackgroundvideo,
                 }
             }
         )
@@ -95,9 +103,9 @@ exports.update_cmsblocks = (req,res,next)=>{
         .then(data=>{
             console.log('data ',data);
             if(data){
-                res.status(200).json("Pagedesignmaster Updated");
+                res.status(200).json("Cms blocks Updated");
             }else{
-                res.status(401).json("Pagedesignmaster Not Found");
+                res.status(401).json("Cms blocks Not Found");
             }
         })
         .catch(err =>{

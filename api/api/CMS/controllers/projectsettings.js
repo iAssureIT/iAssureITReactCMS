@@ -1,30 +1,30 @@
 const mongoose	= require("mongoose");
 
-const Blockdesignmasters = require('../models/blockdesingmasters');
+const Pagedesignmaster = require('../models/pagedesignmasters');
 
-exports.create_blockdesingmasters = (req,res,next)=>{
-    var blockdesingmastersData = req.body.componentName;
-	Blockdesignmasters.findOne({componentName:blockdesingmastersData.toLowerCase()})
+exports.create_pagedesignmaster = (req,res,next)=>{
+    var componentNameData = req.body.componentName;
+	Pagedesignmaster.findOne({componentName:componentNameData.toLowerCase()})
 		.exec()
 		.then(data =>{
 			if(data){
 				return res.status(200).json({
-					message: ' blockdesingmasters already exists'
+					message: ' Role already exists'
 				});
 			}else{
-				const role = new Blockdesignmasters({
-                    _id         : new mongoose.Types.ObjectId(),
-                   
+				const role = new Pagedesignmaster({
+                    _id                 : new mongoose.Types.ObjectId(),
                     componentName       : req.body.componentName,
                     designImage         : req.body.designImage ,
                     designName          : req.body.designName,
                     designImageid       : req.body.designImageid,
-                    blocktype           : req.body.blocktype,
+                    pageType            : req.body.pageType,
                     createdAt           : new Date()
                 });
                 role.save()
                     .then(data=>{
-                        res.status(200).json("blockdesingmasters Added");
+                        console.log('data ',data);
+                        res.status(200).json("Page Design Masters Added");
                     })
                     .catch(err =>{
                         console.log(err);
@@ -42,9 +42,8 @@ exports.create_blockdesingmasters = (req,res,next)=>{
 		});
 };
 
-exports.list_blockdesingmasters = (req,res,next)=>{
-    Blockdesignmasters.find()
-       
+exports.list_pagedesignmasters = (req,res,next)=>{
+    Pagedesignmaster.find()
         .exec()
         .then(data=>{
             res.status(200).json(data);
@@ -57,16 +56,16 @@ exports.list_blockdesingmasters = (req,res,next)=>{
         });
 }
 
-exports.detail_blockdesingmasters = (req,res,next)=>{
+exports.detail_pagedesignmaster = (req,res,next)=>{
     var roleData = req.params.role;
-    Blockdesignmasters.findOne({role:roleData.toLowerCase()})
-       
+    Pagedesignmaster.findOne({role:roleData.toLowerCase()})
+        
         .exec()
         .then(data=>{
             if(data){
                 res.status(200).json(data);
             }else{
-                res.status(404).json('Role not found');
+                res.status(404).json('Pagedesignmaster not found');
             }
         })
         .catch(err =>{
@@ -77,9 +76,9 @@ exports.detail_blockdesingmasters = (req,res,next)=>{
         });
 }
 
-exports.update_blockdesingmasters = (req,res,next)=>{
+exports.update_pagedesignmaster = (req,res,next)=>{
     var roleData = req.body.role;
-    Blockdesignmasters.updateOne(
+    Pagedesignmaster.updateOne(
             { _id:req.body.id},  
             {
                 $set:{
@@ -91,9 +90,9 @@ exports.update_blockdesingmasters = (req,res,next)=>{
         .then(data=>{
             console.log('data ',data);
             if(data){
-                res.status(200).json("Role Updated");
+                res.status(200).json("Pagedesignmaster Updated");
             }else{
-                res.status(401).json("Role Not Found");
+                res.status(401).json("Pagedesignmaster Not Found");
             }
         })
         .catch(err =>{
@@ -104,8 +103,8 @@ exports.update_blockdesingmasters = (req,res,next)=>{
         });
 }
 
-exports.delete_blockdesignmasters = (req,res,next)=>{
-    Blockdesignmasters.deleteOne({_id:req.params.roleID})
+exports.delete_pagedesignmaster = (req,res,next)=>{
+    Pagedesignmaster.deleteOne({_id:req.params.roleID})
         .exec()
         .then(data=>{
             res.status(200).json("Pagedesignmaster deleted");

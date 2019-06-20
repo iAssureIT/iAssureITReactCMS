@@ -1,16 +1,16 @@
 const mongoose	= require("mongoose");
 
-const Cmspage = require('../models/cmspage');
+const Cmspage = require('../models/cmspages');
 
 exports.create_cmspage = (req,res,next)=>{
     var componentNameData = req.body.componentName;
 	Cmspage.findOne({componentName:componentNameData.toLowerCase()})
 		.exec()
 		.then(data =>{
-            var companyId = data.length + 1;
+           
 			if(data){
 				return res.status(200).json({
-					message: ' Role already exists'
+					message: ' CMS page already exists'
 				});
 			}else{
 				const role = new Cmspage({
@@ -24,25 +24,25 @@ exports.create_cmspage = (req,res,next)=>{
                     pagevideo                   : req.body.pagevideo,
                     pagebackgroundvideo         : req.body.pagebackgroundvideo,
                     
-                    pagehead    :               [
-                                                    {
-                                                        pagekeyword           : req.body.pagekeyword,
-                                                        pagediscription       : req.body.pagediscription,
-                                                        pageauthor            : req.body.pageauthor
-                                                    }
-                                                ],
-                    pagebody                    :[
-                                                {
-                                                    pagetitle            : req.body.pagetitle,
-                                                    pagediscription      : req.body.pagediscription
-                                                }
-                                            ],
-                    blocks             : [
-                                                {
-                                                    block_id            : req.body. block_id,
-                                                    componentName       : req.body.componentName,
-                                                }
-                                            ]
+                    pagehead                    :   [
+                                                        {
+                                                            pagekeyword           : req.body.pagekeyword,
+                                                            pagediscription       : req.body.pagediscription,
+                                                            pageauthor            : req.body.pageauthor
+                                                        }
+                                                    ],
+                    pagebody                    :   [
+                                                        {
+                                                            pagetitle            : req.body.pagetitle,
+                                                            pagediscription      : req.body.pagediscription
+                                                        }
+                                                    ],
+                    blocks                      :   [
+                                                        {
+                                                            block_id            : req.body. block_id,
+                                                            componentName       : req.body.componentName,
+                                                        }
+                                                    ]
                 });
                 role.save()
                     .then(data=>{
@@ -66,7 +66,7 @@ exports.create_cmspage = (req,res,next)=>{
 };
 
 exports.detail_Cmspage = (req,res,next)=>{
-    Companysettings.findOne({companyId:req.params.companysettingsID})
+    Companysettings.findOne({companyId:req.params.companyId})
         .exec()
         .then(data=>{
             if(data){
@@ -85,13 +85,13 @@ exports.detail_Cmspage = (req,res,next)=>{
 
 exports.list_Cmspage = (req,res,next)=>{
     console.log('list');
-    Companysettings.find({})
+    Cmspage.find({})
         .exec()
         .then(data=>{
             if(data){
                 res.status(200).json(data);
             }else{
-                res.status(404).json('Company Details not found');
+                res.status(404).json('CMS page not found');
             }
         })
         .catch(err =>{
@@ -126,9 +126,9 @@ exports.update_cmspage = (req,res,next)=>{
                     .exec()
                     .then(data=>{
                         if(data.nModified == 1){
-                            res.status(200).json("pagehead added");
+                            res.status(200).json("Page head added");
                         }else{
-                            res.status(401).json("Company Not found");
+                            res.status(401).json("Page head Not found");
                         }
                     })
                     .catch(err =>{
@@ -138,17 +138,15 @@ exports.update_cmspage = (req,res,next)=>{
                         });
                     });  
                     break;              
-                case 'tax' :
-                    Companysettings.updateOne(
-                        { companyId : req.body.companyID},  
+                case 'pagebody' :
+                Cmspage.updateOne(
+                    { _id : req.body.cmspageID},  
                         {
                             $push:{
-                                taxSettings : {
-                                    taxType         : req.body.taxType,
-                                    applicableTax   : req.body.applicableTax,
-                                    effectiveFrom   : req.body.effectiveFrom,
-                                    effectiveTo     : req.body.effectiveTo,
-                                    createdAt       : new Date(),
+                                pagebody : {
+                                    pagekeyword           : req.body.pagekeyword,
+                                    pagediscription       : req.body.pagediscription,
+                                    pageauthor            : req.body.pageauthor
                                 }
                             }
                         }
@@ -157,9 +155,9 @@ exports.update_cmspage = (req,res,next)=>{
                     .then(data=>{
                         console.log('data ',data);
                         if(data.nModified == 1){
-                            res.status(200).json("Company Tax Details added");
+                            res.status(200).json("Page body  added");
                         }else{
-                            res.status(401).json("Company Not found");
+                            res.status(401).json("Page body  Not found");
                         }
                     })
                     .catch(err =>{
@@ -169,17 +167,14 @@ exports.update_cmspage = (req,res,next)=>{
                         });
                     });  
                     break;
-                case 'bank' :
-                    Companysettings.updateOne(
-                        { companyId : req.body.companyID},  
+                case 'blocks' :
+                Cmspage.updateOne(
+                        { _id : req.body.cmspageID},  
                         {
                             $push:{
-                                bankDetails : {
-                                    accHolderName : req.body.accHolderName,
-                                    bankName      : req.body.bankName,
-                                    branchName    : req.body.branchName,
-                                    accNumber     : req.body.accNumber,
-                                    ifscCode      : req.body.ifscCode,
+                                blocks : {
+                                    block_id            : req.body. block_id,
+                                    componentName       : req.body.componentName,
                                 }
                             }
                         }
@@ -188,9 +183,9 @@ exports.update_cmspage = (req,res,next)=>{
                     .then(data=>{
                         console.log('data ',data);
                         if(data.nModified == 1){
-                            res.status(200).json("Company Bank Details added");
+                            res.status(200).json("Blocks added");
                         }else{
-                            res.status(401).json("Company Not found");
+                            res.status(401).json("Blocks Not found");
                         }
                     })
                     .catch(err =>{
@@ -206,14 +201,15 @@ exports.update_cmspage = (req,res,next)=>{
             break;
         case 'remove' :
             switch(info){
-                case 'location':
-                    console.log('location remove ',req.body);
-                    Companysettings.updateOne(
-                                        { companyId : req.body.companyID},  
+                case 'pagehead':
+                    console.log('pagehead remove ',req.body);
+                    Cmspage.updateOne(
+                                        { _id : req.body.cmspageID},  
                                         {
                                             $pull:{
-                                                companyLocationsInfo : {
-                                                    _id        : req.body.locationID,
+                                                pagehead : {
+                                                    // _id        : req.body.locationID,
+                                                     _id : req.body.pageheadID,  
                                                 }
                                             }
                                         }
@@ -221,9 +217,9 @@ exports.update_cmspage = (req,res,next)=>{
                                     .exec()
                                     .then(data=>{
                                         if(data.nModified == 1){
-                                            res.status(200).json("Company Location removed");
+                                            res.status(200).json("Page head removed");
                                         }else{
-                                            res.status(401).json("Company Not found");
+                                            res.status(401).json("Page head Not found");
                                         }
                                     })
                                     .catch(err =>{
@@ -233,14 +229,14 @@ exports.update_cmspage = (req,res,next)=>{
                                         });
                                     });  
                     break;
-                case 'tax' :
-                    console.log('tax remove ',req.body);
-                    Companysettings.updateOne(
-                                        { companyId : req.body.companyID},  
+                case 'pagebody' :
+                    console.log('pagebody remove ',req.body);
+                    Cmspage.updateOne(
+                                        { _id : req.body.cmspageID},  
                                         {
                                             $pull:{
-                                                taxSettings : {
-                                                    _id        : req.body.taxID,
+                                                pagebody : {
+                                                    _id : req.body.pagebodyID,
                                                 }
                                             }
                                         }
@@ -260,14 +256,14 @@ exports.update_cmspage = (req,res,next)=>{
                                         });
                                     });  
                     break;
-                case 'bank' :
-                    console.log('bank remove ',req.body);
-                    Companysettings.updateOne(
-                                        { companyId : req.body.companyID},  
+                case 'blocks' :
+                    console.log('blocks remove ',req.body);
+                    Cmspage.updateOne(
+                                        { _id : req.body.cmspageID},  
                                         {
                                             $pull:{
-                                                bankDetails : {
-                                                    _id        : req.body.bankID,
+                                                blocks : {
+                                                    _id : req.body.blocksID,
                                                 }
                                             }
                                         }
@@ -275,9 +271,9 @@ exports.update_cmspage = (req,res,next)=>{
                                     .exec()
                                     .then(data=>{
                                         if(data.nModified == 1){
-                                            res.status(200).json("Company Bank Details removed");
+                                            res.status(200).json("Blocks Details removed");
                                         }else{
-                                            res.status(401).json("Company Not found");
+                                            res.status(401).json("Blocks Not found");
                                         }
                                     })
                                     .catch(err =>{
@@ -293,27 +289,24 @@ exports.update_cmspage = (req,res,next)=>{
             break;
         case 'edit' :
             switch(info){
-                case 'location':
-                    console.log('location edit ',req.body);
-                    Companysettings.updateOne(
-                                        { "companyId" : req.body.companyID, "companyLocationsInfo._id":req.body.locationID},  
+                case 'pagehead':
+                    console.log('pagehead edit ',req.body);
+                    Cmspage.updateOne(
+                                        { "cmspageID" : req.body.cmspageID, "pagehead._id":req.body.pageheadID},  
                                         {
                                             $set:{
-                                                "companyLocationsInfo.$.location"          : req.body.location,
-                                                "companyLocationsInfo.$.companyAddress"    : req.body.companyAddress,
-                                                "companyLocationsInfo.$.companyPincode"    : req.body.companyPincode,
-                                                "companyLocationsInfo.$.companyCity"       : req.body.companyCity,
-                                                "companyLocationsInfo.$.companyState"      : req.body.companyState,
-                                                "companyLocationsInfo.$.companyCountry"    : req.body.companyCountry,                                                
+                                                "pagehead.$.pagekeyword"           : req.body.pagekeyword,
+                                                "pagehead.$.pagediscription"       : req.body.pagediscription,
+                                                "pagehead.$.pageauthor"            : req.body.pageauthor,
                                             }
                                         }
                                     )
                                     .exec()
                                     .then(data=>{
                                         if(data.nModified == 1){
-                                            res.status(200).json("Company Location updated");
+                                            res.status(200).json("Page head updated");
                                         }else{
-                                            res.status(401).json("Company Not found");
+                                            res.status(401).json("Page head Not found");
                                         }
                                     })
                                     .catch(err =>{
@@ -323,25 +316,24 @@ exports.update_cmspage = (req,res,next)=>{
                                         });
                                     });  
                     break;
-                case 'tax' :
-                    console.log('tax edit ',req.body);
-                    Companysettings.updateOne(
-                                        { "companyId" : req.body.companyID, "taxSettings._id":req.body.taxID},  
+                case 'pagebody' :
+                    console.log('pagebody edit ',req.body);
+                    Cmspage.updateOne(
+                                        { "cmspageID" : req.body.cmspageID, "pagebody._id":req.body.pagebodyID},  
                                         {
                                             $set:{
-                                                "taxSettings.$.taxType"          : req.body.taxType,
-                                                "taxSettings.$.applicableTax"    : req.body.applicableTax,
-                                                "taxSettings.$.effectiveFrom"    : req.body.effectiveFrom,
-                                                "taxSettings.$.effectiveTo"       : req.body.effectiveTo
+                                                "pagebody.$.pagekeyword"           : req.body.pagekeyword,
+                                                "pagebody.$.pagediscription"       : req.body.pagediscription,
+                                                "pagebody.$.pageauthor"            : req.body.pageauthor
                                             }
                                         }
                                     )
                                     .exec()
                                     .then(data=>{
                                         if(data.nModified == 1){
-                                            res.status(200).json("Company Tax updated");
+                                            res.status(200).json("Page body  updated");
                                         }else{
-                                            res.status(401).json("Company Not found");
+                                            res.status(401).json("Page body Not found");
                                         }
                                     })
                                     .catch(err =>{
@@ -351,17 +343,14 @@ exports.update_cmspage = (req,res,next)=>{
                                         });
                                     });  
                     break;
-                case 'bank' :
-                    console.log('bank edit ',req.body);
-                    Companysettings.updateOne(
-                                        { "companyId" : req.body.companyID, "bankDetails._id":req.body.bankID},  
+                case 'blocks' :
+                    console.log('blocks edit ',req.body);
+                    Cmspage.updateOne(
+                                        { "cmspageID" : req.body.cmspageID, "blocksdetails._id":req.body.blocksID},  
                                         {
                                             $set:{
-                                                "bankDetails.$.accHolderName" : req.body.accHolderName,
-                                                "bankDetails.$.bankName"      : req.body.bankName,
-                                                "bankDetails.$.branchName"    : req.body.branchName,
-                                                "bankDetails.$.accNumber"     : req.body.accNumber,
-                                                "bankDetails.$.ifscCode"      : req.body.ifscCode,
+                                                "blocksdetails.$.block_id"            : req.body. block_id,
+                                                "blocksdetails.$.componentName"       : req.body.componentName
                                             }
                                         }
                                     )
@@ -391,10 +380,10 @@ exports.update_cmspage = (req,res,next)=>{
 }
 
 exports.delete_cmspage = (req,res,next)=>{
-    Companysettings.deleteOne({_id:req.params.companysettingsID})
+    Cmspage.deleteOne({_id : req.body.cmspageID})
         .exec()
         .then(data=>{
-            res.status(200).json("Company Settings deleted");
+            res.status(200).json("Cms page deleted");
         })
         .catch(err =>{
             console.log(err);

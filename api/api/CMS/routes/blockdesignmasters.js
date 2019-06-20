@@ -11,7 +11,7 @@ router.get('/list',BlockdesignmastersController.list_blockdesingmasters);
 
 // router.put('/',BlockdesignmastersController.update_Pagedesignmasters);
 
-// router.delete('/:blockdesignmastersID',BlockdesignmastersController.delete_blockdesingmasters);
+router.delete('/:blockdesignmastersID',BlockdesignmastersController.delete_blockdesignmasters);
 
 
 

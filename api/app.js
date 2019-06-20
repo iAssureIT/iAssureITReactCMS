@@ -13,7 +13,7 @@ const companySettingRoutes		= require("./api/coreAdmin/routes/companysettings");
 const pagedesignmastersRoutes	= require("./api/CMS/routes/pagedesignmasters"); 
 const blockdesignmastersRoutes  = require("./api/CMS/routes/blockdesignmasters");
 const cmsblockRoutes			= require("./api/CMS/routes/cmsblocks");
-const cmspageRoutes				= require("./api/CMS/routes/cmspage"); 
+const cmspageRoutes				= require("./api/CMS/routes/cmspages"); 
 
 
 
@@ -47,7 +47,7 @@ app.use("/api/pagedesignmasters",pagedesignmastersRoutes);
 
 app.use("/api/blockdesignmasters",blockdesignmastersRoutes);
 app.use("/api/cmsblocks",cmsblockRoutes);
-app.use("/api/cmspage",cmspageRoutes);
+app.use("/api/cmspages",cmspageRoutes);
 
 
 

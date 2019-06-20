@@ -9,7 +9,7 @@ router.get('/list',CmsblocksController.list_cmsblocks);
 
 // router.get('/:Cmsblocks', CmsblocksController.detail_Cmsblocks);
 
-// router.put('/',CmsblocksController.update_Cmsblocks);
+router.patch('/',CmsblocksController.update_cmsblocks);
 
 router.delete('/:CmsblocksID',CmsblocksController.delete_cmsblocks);
 

@@ -11,7 +11,7 @@ router.get('/list',CmsblocksController.list_cmsblocks);
 
 router.patch('/',CmsblocksController.update_cmsblocks);
 
-router.delete('/:CmsblocksID',CmsblocksController.delete_cmsblocks);
+router.delete('/:cmsblocksID',CmsblocksController.delete_cmsblocks);
 
 
 

@@ -4,15 +4,15 @@ const Pagedesignmaster = require('../models/pagedesignmasters');
 
 exports.create_pagedesignmaster = (req,res,next)=>{
     var componentNameData = req.body.componentName;
-	Pagedesignmaster.findOne({componentName:componentNameData.toLowerCase()})
+	Pagedesignmaster.findOne({componentName:componentNameData})
 		.exec()
 		.then(data =>{
 			if(data){
 				return res.status(200).json({
-					message: ' Role already exists'
+					message: ' Page Design already exists'
 				});
 			}else{
-				const role = new Pagedesignmaster({
+				const pagedesignmasters = new Pagedesignmaster({
                     _id                 : new mongoose.Types.ObjectId(),
                     componentName       : req.body.componentName,
                     designImage         : req.body.designImage ,
@@ -21,7 +21,7 @@ exports.create_pagedesignmaster = (req,res,next)=>{
                     pageType            : req.body.pageType,
                     createdAt           : new Date()
                 });
-                role.save()
+                pagedesignmasters.save()
                     .then(data=>{
                         console.log('data ',data);
                         res.status(200).json("Page Design Masters Added");
@@ -57,8 +57,8 @@ exports.list_pagedesignmasters = (req,res,next)=>{
 }
 
 exports.detail_pagedesignmaster = (req,res,next)=>{
-    var roleData = req.params.role;
-    Pagedesignmaster.findOne({role:roleData.toLowerCase()})
+    var componentNameData = req.params.componentName;
+    Pagedesignmaster.findOne({componentName:componentNameData})
         
         .exec()
         .then(data=>{
@@ -76,35 +76,9 @@ exports.detail_pagedesignmaster = (req,res,next)=>{
         });
 }
 
-exports.update_pagedesignmaster = (req,res,next)=>{
-    var roleData = req.body.role;
-    Pagedesignmaster.updateOne(
-            { _id:req.body.id},  
-            {
-                $set:{
-                    "role" : roleData.toLowerCase()
-                }
-            }
-        )
-        .exec()
-        .then(data=>{
-            console.log('data ',data);
-            if(data){
-                res.status(200).json("Pagedesignmaster Updated");
-            }else{
-                res.status(401).json("Pagedesignmaster Not Found");
-            }
-        })
-        .catch(err =>{
-            console.log(err);
-            res.status(500).json({
-                error: err
-            });
-        });
-}
 
 exports.delete_pagedesignmaster = (req,res,next)=>{
-    Pagedesignmaster.deleteOne({_id:req.params.roleID})
+    Pagedesignmaster.deleteOne({_id:req.params.pagedesignmastersID})
         .exec()
         .then(data=>{
             res.status(200).json("Pagedesignmaster deleted");

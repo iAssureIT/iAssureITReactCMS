@@ -13,9 +13,9 @@ exports.create_cmspage = (req,res,next)=>{
 					message: ' CMS page already exists'
 				});
 			}else{
-				const role = new Cmspage({
+				const cmspages = new Cmspage({
                     _id			                : new mongoose.Types.ObjectId(),
-                    createdAt                   : Date,
+                    createdAt                   : new Date,
                     componentName               : req.body.componentName,
                     pageurl                     : req.body.pageurl ,
                     designpattern               : req.body.designpattern,
@@ -24,27 +24,27 @@ exports.create_cmspage = (req,res,next)=>{
                     pagevideo                   : req.body.pagevideo,
                     pagebackgroundvideo         : req.body.pagebackgroundvideo,
                     
-                    pagehead                    :   [
-                                                        {
-                                                            pagekeyword           : req.body.pagekeyword,
-                                                            pagediscription       : req.body.pagediscription,
-                                                            pageauthor            : req.body.pageauthor
-                                                        }
-                                                    ],
-                    pagebody                    :   [
-                                                        {
-                                                            pagetitle            : req.body.pagetitle,
-                                                            pagediscription      : req.body.pagediscription
-                                                        }
-                                                    ],
-                    blocks                      :   [
-                                                        {
-                                                            block_id            : req.body. block_id,
-                                                            componentName       : req.body.componentName,
-                                                        }
-                                                    ]
+                    // pagehead                    :   [
+                    //                                     {
+                    //                                         pagekeyword           : req.body.pagekeyword,
+                    //                                         pagediscription       : req.body.pagediscription,
+                    //                                         pageauthor            : req.body.pageauthor
+                    //                                     }
+                    //                                 ],
+                    // pagebody                    :   [
+                    //                                     {
+                    //                                         pagetitle            : req.body.pagetitle,
+                    //                                         pagediscription      : req.body.pagediscription
+                    //                                     }
+                    //                                 ],
+                    // blocks                      :   [
+                    //                                     {
+                    //                                         block_id            : req.body. block_id,
+                    //                                         componentName       : req.body.componentName,
+                    //                                     }
+                    //                                 ]
                 });
-                role.save()
+                cmspages.save()
                     .then(data=>{
                         console.log('data ',data);
                         res.status(200).json("CMS Page Added");
@@ -105,26 +105,29 @@ exports.list_Cmspage = (req,res,next)=>{
 exports.update_cmspage = (req,res,next)=>{
     var info = req.params.info;
     var action = req.params.action;
+    console.log('body ',req.body);
     switch(action){
         case 'add' :
             switch(info){
                 case 'pagehead':
+                console.log('pagehead add');
                 Cmspage.updateOne(
                         { _id : req.body.cmspageID},  
                         {
                             $push:{
-                                pagehead    :               [
+                                pagehead    :               
                                     {
                                         pagekeyword           : req.body.pagekeyword,
                                         pagediscription       : req.body.pagediscription,
                                         pageauthor            : req.body.pageauthor,
                                     }
-                                ],
+                                
                             }
                         }
                     )
                     .exec()
                     .then(data=>{
+                        console.log('data ',data);
                         if(data.nModified == 1){
                             res.status(200).json("Page head added");
                         }else{
@@ -153,7 +156,7 @@ exports.update_cmspage = (req,res,next)=>{
                     )
                     .exec()
                     .then(data=>{
-                        console.log('data ',data);
+                        console.log('data =======>>>>',data);
                         if(data.nModified == 1){
                             res.status(200).json("Page body  added");
                         }else{
@@ -229,9 +232,9 @@ exports.update_cmspage = (req,res,next)=>{
                                         });
                                     });  
                     break;
-                case 'pagebody' :
-                    console.log('pagebody remove ',req.body);
-                    Cmspage.updateOne(
+                    case 'pagebody' :
+                        console.log('pagebody remove ',req.body);
+                        Cmspage.updateOne(
                                         { _id : req.body.cmspageID},  
                                         {
                                             $pull:{
@@ -306,7 +309,7 @@ exports.update_cmspage = (req,res,next)=>{
                                         if(data.nModified == 1){
                                             res.status(200).json("Page head updated");
                                         }else{
-                                            res.status(401).json("Page head Not found");
+                                            res.status(401).json("Page head Not updated");
                                         }
                                     })
                                     .catch(err =>{

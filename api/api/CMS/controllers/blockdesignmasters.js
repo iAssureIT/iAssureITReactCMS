@@ -4,7 +4,8 @@ const Blockdesignmasters = require('../models/blockdesingmasters');
 
 exports.create_blockdesingmasters = (req,res,next)=>{
     var blockdesingmastersData = req.body.componentName;
-	Blockdesignmasters.findOne({componentName:blockdesingmastersData.toLowerCase()})
+    console.log('blockdesingmastersData ',req.body);
+	Blockdesignmasters.findOne({componentName:blockdesingmastersData})
 		.exec()
 		.then(data =>{
 			if(data){
@@ -13,8 +14,7 @@ exports.create_blockdesingmasters = (req,res,next)=>{
 				});
 			}else{
 				const role = new Blockdesignmasters({
-                    _id         : new mongoose.Types.ObjectId(),
-                   
+                    _id                 : new mongoose.Types.ObjectId(),
                     componentName       : req.body.componentName,
                     designImage         : req.body.designImage,
                     designName          : req.body.designName,
@@ -22,6 +22,7 @@ exports.create_blockdesingmasters = (req,res,next)=>{
                     blocktype           : req.body.blocktype,
                     createdAt           : new Date()
                 });
+                console.log('role ',role);
                 role.save()
                     .then(data=>{
                         res.status(200).json("block design masters Added");

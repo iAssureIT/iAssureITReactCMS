@@ -12,7 +12,7 @@ exports.create_cmsblocks = (req,res,next)=>{
 					message: ' CMS Block already exists'
 				});
 			}else{
-				const role = new Cmsblocks({
+				const cmsblocks = new Cmsblocks({
                     _id                 : new mongoose.Types.ObjectId(),
                   
                     blocktitle          : req.body.blocktitle,
@@ -26,7 +26,7 @@ exports.create_cmsblocks = (req,res,next)=>{
                     blockbackgroundvideo : req.body.blockbackgroundvideo,
                     createdAt           : new Date()
                 });
-                role.save()
+                cmsblocks.save()
                     .then(data=>{
                         console.log('data ',data);
                         res.status(200).json("Cms blocks Added");
@@ -61,28 +61,10 @@ exports.list_cmsblocks = (req,res,next)=>{
         });
 }
 
-exports.detail_cmsblocks = (req,res,next)=>{
-    var roleData = req.params.role;
-    Cmsblocks.findOne({role:roleData.toLowerCase()})
-        
-        .exec()
-        .then(data=>{
-            if(data){
-                res.status(200).json(data);
-            }else{
-                res.status(404).json('Cms blocks not found');
-            }
-        })
-        .catch(err =>{
-            console.log(err);
-            res.status(500).json({
-                error: err
-            });
-        });
-}
+
 
 exports.update_cmsblocks = (req,res,next)=>{
-    var roleData = req.body.role;
+    var cmsblocksData = req.body.cmsblocks;
     Cmsblocks.updateOne(
         { _id : req.body.cmspageID},  
             {
@@ -117,7 +99,7 @@ exports.update_cmsblocks = (req,res,next)=>{
 }
 
 exports.delete_cmsblocks = (req,res,next)=>{
-    Cmsblocks.deleteOne({_id:req.params.roleID})
+    Cmsblocks.deleteOne({_id:req.params.cmsblocksID})
         .exec()
         .then(data=>{
             res.status(200).json("Cmsblocks deleted");

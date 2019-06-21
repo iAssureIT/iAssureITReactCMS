@@ -49,7 +49,26 @@ exports.create_cmsblocks = (req,res,next)=>{
 
 exports.list_cmsblocks = (req,res,next)=>{
     Cmsblocks.find()
+        
         .exec()
+        
+        .then(data=>{
+            res.status(200).json(data);
+        })
+        .catch(err =>{
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+}
+
+
+exports.fetch_cmsblocks = (req,res,next)=>{
+    Cmsblocks.find({_id : cmsblocksID})
+        
+        .exec()
+        
         .then(data=>{
             res.status(200).json(data);
         })
@@ -64,7 +83,7 @@ exports.list_cmsblocks = (req,res,next)=>{
 
 
 exports.update_cmsblocks = (req,res,next)=>{
-    var cmsblocksData = req.body.cmsblocks;
+    var roleData = req.body.role;
     Cmsblocks.updateOne(
         { _id : req.body.cmspageID},  
             {
@@ -99,7 +118,7 @@ exports.update_cmsblocks = (req,res,next)=>{
 }
 
 exports.delete_cmsblocks = (req,res,next)=>{
-    Cmsblocks.deleteOne({_id:req.params.cmsblocksID})
+    Cmsblocks.deleteOne({_id:req.params.roleID})
         .exec()
         .then(data=>{
             res.status(200).json("Cmsblocks deleted");

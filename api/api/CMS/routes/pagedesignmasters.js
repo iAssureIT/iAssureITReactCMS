@@ -7,7 +7,7 @@ router.post('/', PagedesignmastersController.create_pagedesignmaster);
 
 router.get('/list',PagedesignmastersController.list_pagedesignmasters);
 
-// router.get('/:Pagedesignmasters', PagedesignmastersController.detail_Pagedesignmasters);
+router.get('/pagedesignmastersID', PagedesignmastersController.fetch_pagedesignmasters);
 
 // router.put('/',PagedesignmastersController.update_Pagedesignmasters);
 

@@ -7,7 +7,7 @@ router.post('/', CmsblocksController.create_cmsblocks);
 
 router.get('/list',CmsblocksController.list_cmsblocks);
 
-// router.get('/:Cmsblocks', CmsblocksController.detail_Cmsblocks);
+router.get('/:cmsblocksID', CmsblocksController.fetch_cmsblocks);
 
 router.patch('/',CmsblocksController.update_cmsblocks);
 

@@ -56,6 +56,22 @@ exports.list_pagedesignmasters = (req,res,next)=>{
         });
 }
 
+exports.fetch_pagedesignmasters = (req,res,next)=>{
+    Pagedesignmaster.findOne({_id : pagedesignmastersID})
+        .select()
+        .exec()
+        .then(data=>{
+            res.status(200).json(data);
+        })
+        .catch(err =>{
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+}
+
+
 exports.detail_pagedesignmaster = (req,res,next)=>{
     var componentNameData = req.params.componentName;
     Pagedesignmaster.findOne({componentName:componentNameData})

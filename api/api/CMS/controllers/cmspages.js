@@ -102,6 +102,25 @@ exports.list_Cmspage = (req,res,next)=>{
         });
 }
 
+exports.fetch_cmspages = (req,res,next)=>{
+    // console.log('list');
+    Cmspage.find({_id : cmspageID})
+        .exec()
+        .then(data=>{
+            if(data){
+                res.status(200).json(data);
+            }else{
+                res.status(404).json('CMS page not found');
+            }
+        })
+        .catch(err =>{
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+}
+
 exports.update_cmspage = (req,res,next)=>{
     var info = req.params.info;
     var action = req.params.action;

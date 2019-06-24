@@ -104,7 +104,7 @@ exports.list_Cmspage = (req,res,next)=>{
 
 exports.fetch_cmspages = (req,res,next)=>{
     // console.log('list');
-    Cmspage.find({_id : cmspageID})
+    Cmspage.find({_id : req.params.cmspageID})
         .exec()
         .then(data=>{
             if(data){

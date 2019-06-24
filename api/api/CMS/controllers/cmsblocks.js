@@ -65,7 +65,7 @@ exports.list_cmsblocks = (req,res,next)=>{
 
 
 exports.fetch_cmsblocks = (req,res,next)=>{
-    Cmsblocks.find({_id : cmsblocksID})
+    Cmsblocks.find({_id : req.params.cmsblocksID})
         
         .exec()
         

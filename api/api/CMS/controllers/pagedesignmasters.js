@@ -57,7 +57,8 @@ exports.list_pagedesignmasters = (req,res,next)=>{
 }
 
 exports.fetch_pagedesignmasters = (req,res,next)=>{
-    Pagedesignmaster.findOne({_id : pagedesignmastersID})
+    console.log('in pagedesignmastersID');
+    Pagedesignmaster.findOne({_id : req.params.pagedesignmastersID})
         .select()
         .exec()
         .then(data=>{

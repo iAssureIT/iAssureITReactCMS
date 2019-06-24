@@ -7,7 +7,7 @@ router.post('/', BlockdesignmastersController.create_blockdesingmasters);
 
 router.get('/list',BlockdesignmastersController.list_blockdesingmasters);
 
-// router.get('/:Pagedesignmasters', BlockdesignmastersController.detail_Pagedesignmasters);
+router.get('/:blockdesignmastersID', BlockdesignmastersController.fetch_blockdesingmasters);
 
 // router.put('/',BlockdesignmastersController.update_Pagedesignmasters);
 

@@ -44,6 +44,21 @@ exports.create_blockdesingmasters = (req,res,next)=>{
 };
 
 exports.list_blockdesingmasters = (req,res,next)=>{
+    Blockdesignmasters.find({_id : req.params.blockdesignmastersID})
+       
+        .exec()
+        .then(data=>{
+            res.status(200).json(data);
+        })
+        .catch(err =>{
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+}
+
+exports.fetch_blockdesingmasters = (req,res,next)=>{
     Blockdesignmasters.find()
        
         .exec()

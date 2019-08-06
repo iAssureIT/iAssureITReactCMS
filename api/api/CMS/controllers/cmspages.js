@@ -4,7 +4,7 @@ const Cmspage = require('../models/cmspages');
 
 exports.create_cmspage = (req,res,next)=>{
     var componentNameData = req.body.componentName;
-	Cmspage.findOne({componentName:componentNameData.toLowerCase()})
+	Cmspage.findOne({componentName:componentNameData})
 		.exec()
 		.then(data =>{
            

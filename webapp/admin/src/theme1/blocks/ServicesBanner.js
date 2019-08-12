@@ -1,0 +1,35 @@
+import React from 'react';
+import "./ServicesBanner.css"
+export default class ServicesBanner extends React.Component {
+	constructor(props) {
+		super(props);
+	}
+
+	render() {
+		return (
+			<div className="banerSBheight">
+				<div className="col-lg-12 col-md-12 col-xl-12 col-sm-12 row">{/*3menubar*/}
+					<div className="col-lg-12 col-md-12 col-xl-12 col-sm-12 logoBox">
+						<img className="logo img-responsive" src="./images/Logo.png" alt="logo"/>
+						{/*<img className="menuimg img-responsive pull-right" src="./images/3menubar.png" alt="logo"/>*/}
+					</div>
+					<div className="col-lg-6 col-md-6 col-sm-6 col-sm-6">
+						<div className="pull-right mtop100SB">
+							<span className="h1TitleSB">iAssureIT
+							</span><br/>
+							<span className="h2TitleSB">SERVICES
+							</span><br/>
+							<span className="h3TitleSB">Lorem ipsum dolor sit amet,
+							</span>
+						</div>	
+					</div>
+					<div className=" col-lg-6 col-md-6 col-sm-6 col-6 row">
+						<img className="bannerImgSB img-responsive" src="./images/28.png" alt="Bannerpng"/>
+					</div>
+				</div>	
+				
+				
+			</div>
+		);
+	}
+}

@@ -1,0 +1,320 @@
+.industryDomainsHt{
+	height: 950px;
+	background-color: #fff;
+	width: 100%;
+}
+.demoTitle{
+	margin-left: 44%;
+    margin-top: 20%;
+}
+.ldash{
+    border-bottom: 4px solid;
+    height: 25px;
+    margin: 0px 2px;
+    width: 88px;
+}
+.sdash{
+	border-bottom: 4px solid;
+	height: 25px;
+	width: 25px;
+}
+.ldash::before {
+	position: relative;
+	border-bottom: 4px solid;
+	height: 25px;
+	width: 25px;
+
+}
+
+.ldash::after {
+	position: relative;
+	border-bottom: 4px solid;
+	height: 25px;
+	width: 25px;
+
+}
+
+.iDomainBlock{
+	height: 850px;
+	/*background-color: #aaa;*/
+	position: relative;
+}
+.idcol1{
+	height: 250px;
+	background-color: #fff;
+	/*border-radius: 10px;*/
+	position: relative;
+	top: 25px;
+	box-shadow: 2px 2px 20px 5px #dad6d6;
+}
+.mtop25{
+	margin-top: 25px;
+}
+.innerDomain{
+	position: relative;
+    height: 45px;
+    top: 30px;
+    left: 35px;
+}
+.innerDomain1{
+    position: relative;
+    height: 105px;
+    top: 30px;
+    left: 90px;
+}
+.innerDomain2{
+    position: relative;
+    height: 75px;
+    top: 53px;
+    left: 74px;
+}
+.innerDomain3{
+    position: relative;
+    height: 75px;
+    top: 50px;
+    left: 51px;
+}
+.domainTitle{
+	position: relative;
+    top: 25px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.domainTitle1{
+	position: relative;
+    top: 55px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+/*.domainTitle2{
+	position: relative;
+    top: 25px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}*/
+
+.innerDomainRE {
+    position: relative;
+    height: 135px;
+    top: 17px;
+    left: 69px;
+}
+.domainTitleRE{
+		position: relative;   
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.innerDomainED {
+    position: relative;
+    height: 125px;
+    top: 36px;
+    left: 80px;
+}
+.domainTitleED{
+	position: relative; 
+	top: 10px;  
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+.innerDomainTL {
+    position: relative;
+    height: 105px;
+    top: 32px;
+    left: 83px;
+}
+.domainTitleTI{
+	position: relative; 
+	top: 25px;  
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+.innerDomainSU{
+    position: relative;
+    height: 88px;
+    top: 38px;
+    left: 68px;
+}
+.domainTitleSU{
+	position: relative; 
+	top: 40px;  
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+
+/*dash ===== ======================== =============*/
+.dashBox{
+  list-style: none;
+  position: relative; 
+  left: 25px;
+  top: 10px;
+}
+.dashBox li{
+  float: left;
+}
+.dash1,.dash3 {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.dash2{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
+/*===================================================================================*/
+/*===================================================================================*/
+/*============================ Mobile view ==========================================*/
+/*===================================================================================*/
+/*===================================================================================*/
+.xsindustryDomainsHt{
+    height: 1850px;
+    margin-top: -200px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.xsiDomainBlock{
+    height: 850px;
+    /*background-color: #aaa;*/
+    position: relative;
+}
+.xsidcol1{
+    height: 180px;
+    background-color: #fff;
+    /*border-radius: 10px;*/
+    position: relative;
+    top: 25px;
+    margin-bottom: 7px;
+    box-shadow: 2px 2px 20px 5px #dad6d6;
+}
+.xsmtop25{
+    
+}
+.xsinnerDomain{
+    position: relative;
+    height: 45px;
+    top: 30px;
+    left: 35px;
+}
+.xsinnerDomain1{
+
+    position: relative;
+    height: 65px;
+    top: 30px;
+    left: 75px;
+}
+.xsinnerDomain2{
+    position: relative;
+    height: 63px;
+    top: 30px;
+    left: 50px;
+}
+.xsinnerDomain3{
+    position: relative;
+    height: 50px;
+    top: 50px;
+    margin-bottom: 8px;
+    left: 45px;
+}
+.xsdomainTitle{
+    position: relative;
+    top: 25px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.xsdomainTitle1{
+    position: relative;
+    top: 25px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.xsinnerDomainRE {
+    position: relative;
+    height: 86px;
+    top: 17px;
+    left: 59px;
+}
+.xsdomainTitleRE{
+        position: relative;   
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+.xsinnerDomainED {
+    position: relative;
+    height: 78px;
+    top: 36px;
+    left: 70px;
+}
+.xsdomainTitleED{
+    position: relative; 
+    top: 10px;  
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+.xsinnerDomainTL {
+    position: relative;
+    height: 66px;
+    top: 32px;
+    left: 69px;
+}
+.xsdomainTitleTI{
+    position: relative; 
+    top: 25px;  
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+.xsinnerDomainSU{
+    position: relative;
+    height: 60px;
+    top: 38px;
+    left: 59px;
+}
+.xsdomainTitleSU{
+    position: relative; 
+    top: 33px;  
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+}
+
+/*dash ===== ======================== =============*/
+.xsdashBox{
+  list-style: none;
+  position: relative; 
+  left: 25px;
+  top: 10px;
+}
+.xsdashBox li{
+  float: left;
+}
+.xsdash1,.xsdash3 {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.xsdash2{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+
+/*===================================================================================*/
+/*===================================================================================*/
+/*============================ Mobile view ==========================================*/
+/*===================================================================================*/
+/*===================================================================================*/

@@ -1,0 +1,39 @@
+.MVwrapper{
+	
+}
+
+.mvBox1{
+	height: 610px;
+	background-color: #f3f0f0;
+}
+.mvBox2{
+	height: 610px;
+	/*background-color: #f3f0f0;*/
+}
+.mvinfoImg1 {
+    height: 405px;
+    margin-top: 85px;
+}
+.mvinfotext1{
+	position: relative;
+	top: 120px;
+}
+.mvheadingb1{
+	position: relative;
+}
+.mvpara1{
+	position: relative;
+	    top: 28px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+.mvrdmore{
+	position: relative;
+	top: 60px;
+	letter-spacing: 1px !important;
+    color: #376bff !important;
+    font-weight: 600;
+}
+.mvrdmore span{
+
+}

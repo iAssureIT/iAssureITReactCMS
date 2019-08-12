@@ -1,0 +1,109 @@
+.ABOUTbanerheight{
+	height: 655px;
+	
+	background-image: url("/images/36.png");
+	background-size: 100% 100%;
+}
+.abbannerImg{
+	height: 485px;
+	margin-top: 135px;
+}
+.mtop305{
+    margin-top: 305px;
+    margin-right: 30px;
+    color: #fff;
+}
+.h1Title{
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+.h2Title{
+	    font-size: 82px;
+    line-height: 1;
+    letter-spacing: 2.5px;
+    font-weight: 1000;;
+}
+.h3Title{
+	font-size: 27px;
+    letter-spacing: 1px;
+}
+
+.logoBox{
+	position: absolute;
+
+}
+.logoab{
+	position: absolute;
+    top: 30px;
+    height: 56px;
+    left: 130px;
+}
+.menuimgab{
+	height: 30px;
+    position: fixed;
+    z-index: 10;
+    top: 40px;
+    right: 150px;
+    /*filter: invert(100%);*/
+}
+.menuimgab:hover{
+	cursor: pointer;
+	/*caret-color: red;*/
+}
+
+/*=====================================================================================*/
+/*   mobile view*/
+/*=====================================================================================*/
+.mtop305xs{
+	margin-top: 160px;
+}
+.h1Titlexs{
+	font-size: 36px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+.h2Titlexs{
+	font-size: 52px;
+    line-height: 1;
+    letter-spacing: 2.5px;
+    font-weight: 1000;
+	text-align: center;
+
+}
+.h3Titlexs{
+	font-size: 27px;
+	text-align: center;
+
+    letter-spacing: 1px;
+}
+
+.abbannerImgxs{
+
+}
+
+.logoabxs{
+	position: absolute;
+    top: 30px;
+    height: 56px;
+    left: 0px;
+}
+.menuimgabxs{
+	height: 30px;
+    position: fixed;
+    z-index: 10;
+    top: 40px;
+    right: 20px;
+    /*filter: invert(100%);*/
+}
+.menuimgabxs:hover{
+	cursor: pointer;
+	/*caret-color: red;*/
+}
+
+
+
+/*=====================================================================================*/
+/*  / mobile view*/
+/*=====================================================================================*/
+
+

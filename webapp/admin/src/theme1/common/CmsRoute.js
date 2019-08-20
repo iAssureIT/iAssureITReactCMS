@@ -4,6 +4,8 @@ import { Route } from 'react-router';
 
 import Homepage from '../pages/Homepage.js';
 import ServicesList from '../pages/ServicesList.js';
+import ContactUs from '../pages/ContactUs.js';
+
 import AboutUs from '../pages/AboutUs.js';
 import Header from './Header.js';
 
@@ -16,6 +18,8 @@ const CmsRoute = (props) => {
     		<Route path = "/services" exact component = {ServicesList} />
     		<Route path = "/aboutus" exact component = {AboutUs} />
     		<Route path = "/header" exact component = {Header} />
+            <Route path = "/contactus" exact component = {ContactUs} />
+
 
 
     	</Switch>

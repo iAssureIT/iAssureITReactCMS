@@ -79,3 +79,22 @@ background-color:#376bff;
 .mtop10{
 	margin-top: 14px;
 }
+
+.footerTopxs{
+    height: 340px;
+    background-color: #376bff;
+
+}
+.footerTopxs ul{
+    list-style: none;
+}
+.footerBottomxs ul{
+    list-style: none;
+}
+
+
+.footerBottomxs{
+    height: 100px;
+    background-color: #283592;
+
+}

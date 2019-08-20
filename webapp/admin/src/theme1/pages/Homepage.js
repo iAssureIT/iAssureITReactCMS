@@ -19,7 +19,7 @@ export default class Homepage extends React.Component {
 
 	render() {
 		return (
-			<div className="">
+			<div className="" style={{backgroundColor:"#f1f1f1"}}>
 				<Header/>
 				<Banner />
 				<Services />

@@ -47,3 +47,62 @@
 	cursor: pointer;
 	caret-color: red;
 }
+
+/*=======================================================================================*/
+/*=======================================================================================*/
+/*============================ Mobile view ==============================================*/
+/*=======================================================================================*/
+/*=======================================================================================*/
+
+.banerSBheightxs{
+	height: 685px;
+	width: 100%;
+	background-image: url("/images/27.png");
+	background-size: 100% 100%;
+}
+.bannerImgSBxs{
+    height: 335px;
+    margin-top: 0px;
+    margin-left: 33px;
+}
+.mtop100SBxs{
+    margin-top: 155px;
+    color: #fff;
+    margin-left: 35px;
+    text-align: center;
+}
+.h1TitleSBxs{
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+.h2TitleSBxs{
+	font-size: 46px;
+    line-height: 1;
+    letter-spacing: 2.5px;
+    font-weight: 1000;;
+}
+.h3TitleSBxs{
+	font-size: 27px;
+    letter-spacing: 1px;
+}
+.logoBoxxs{
+	position: absolute;
+
+}
+.logoxs{
+	position: absolute;
+    top: 45px;
+    left: 90px;
+}
+.menuimgxs{
+	height: 35px;
+    position: fixed;
+    top: 50px;
+    right: 95px;
+    z-index: 10;
+    /*filter: invert(100%);*/
+}
+.menuimgxs:hover{
+	cursor: pointer;
+	caret-color: red;
+}

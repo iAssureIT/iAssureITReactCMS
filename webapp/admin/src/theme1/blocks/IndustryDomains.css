@@ -1,6 +1,6 @@
 .industryDomainsHt{
 	height: 950px;
-	background-color: #fff;
+	background-color: #f1f1f1;
 	width: 100%;
 }
 .demoTitle{
@@ -60,19 +60,19 @@
     position: relative;
     height: 105px;
     top: 30px;
-    left: 90px;
+    left: 29.5%;
 }
 .innerDomain2{
     position: relative;
     height: 75px;
     top: 53px;
-    left: 74px;
+    left: 25.5%;
 }
 .innerDomain3{
     position: relative;
     height: 75px;
     top: 50px;
-    left: 51px;
+    left: 17.5%;
 }
 .domainTitle{
 	position: relative;
@@ -97,7 +97,7 @@
     position: relative;
     height: 135px;
     top: 17px;
-    left: 69px;
+    left: 28%;
 }
 .domainTitleRE{
 		position: relative;   
@@ -108,7 +108,7 @@
     position: relative;
     height: 125px;
     top: 36px;
-    left: 80px;
+    left: 29.5%;
 }
 .domainTitleED{
 	position: relative; 
@@ -121,7 +121,7 @@
     position: relative;
     height: 105px;
     top: 32px;
-    left: 83px;
+    left: 29.5%;
 }
 .domainTitleTI{
 	position: relative; 
@@ -134,7 +134,7 @@
     position: relative;
     height: 88px;
     top: 38px;
-    left: 68px;
+    left: 25.6%;
 }
 .domainTitleSU{
 	position: relative; 
@@ -145,27 +145,27 @@
 }
 
 /*dash ===== ======================== =============*/
-.dashBox{
+.dashBoxID{
   list-style: none;
   position: relative; 
   left: 25px;
   top: 10px;
 }
-.dashBox li{
+.dashBoxID li{
   float: left;
 }
-.dash1,.dash3 {
+.dash1ID,.dash3ID {
     height: 1px;
     width: 20px;
     margin:2px;
-    border: 2px solid;
+    border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash2{
+.dash2ID{
     height: 1px;
     width: 50px;
     margin:2px;
-    border: 2px solid;
+    border: 2px solid #00ccff;
     border-radius: 10px;
 }
 /*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/

@@ -22,7 +22,7 @@ export default class Banner extends React.Component {
 			            <span class="hamb-bottom"></span>
 			            </button>*/}
 					</div>
-					<div className="col-lg-7 col-md-7 hidden-sm hidden-xs">
+					<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs">
 						<div className="pull-right mtop100">
 							<span className="h1Title">MOBILITY
 							</span><br/>
@@ -54,7 +54,7 @@ export default class Banner extends React.Component {
 						</div>	
 					</div>
 					<div className="hidden-lg hidden-md col-sm-12 col-xs-12 row">
-						<img className="bannerImgxs img-responsive" src="./images/2.png" alt="Bannerpng"/>
+						<img className="bannerImgxs img-responsive col-sm-offset-3" src="./images/2.png" alt="Bannerpng"/>
 					</div>
 				</div>	
 				

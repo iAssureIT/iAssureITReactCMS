@@ -1,5 +1,5 @@
 .banerheight{
-	height: 635px;
+	height: 600px;
 	
 	background-image: url("../public/images/1.png");
 	background-size: 100% 100%;
@@ -35,6 +35,8 @@
 	position: absolute;
     top: 45px;
     left: 90px;
+    height: 75px !important;
+    width: 125px !important;
 }
 .menuimg{
 	height: 35px;

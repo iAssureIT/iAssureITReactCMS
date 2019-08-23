@@ -6,6 +6,8 @@
 .footerTop{
 height: 250px;
 background-color:#376bff;
+/*background-image: url("/images/wmpng.png");*/
+background-size: 100% 100%;
 }
 .footerBottom{
 	height: 50px;

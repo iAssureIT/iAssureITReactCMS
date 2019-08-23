@@ -1,5 +1,5 @@
 .industryDomainsHt{
-	height: 950px;
+	height: 800px;
 	background-color: #f1f1f1;
 	width: 100%;
 }
@@ -35,12 +35,12 @@
 }
 
 .iDomainBlock{
-	height: 850px;
+	height: 700px;
 	/*background-color: #aaa;*/
 	position: relative;
 }
 .idcol1{
-	height: 250px;
+	height: 190px;
 	background-color: #fff;
 	/*border-radius: 10px;*/
 	position: relative;
@@ -58,31 +58,32 @@
 }
 .innerDomain1{
     position: relative;
-    height: 105px;
-    top: 30px;
+    height:  104px;
+    top: 10px;
     left: 29.5%;
+
 }
 .innerDomain2{
     position: relative;
     height: 75px;
-    top: 53px;
+    top: 30px;
     left: 25.5%;
 }
 .innerDomain3{
     position: relative;
     height: 75px;
-    top: 50px;
+    top: 32px;
     left: 17.5%;
 }
 .domainTitle{
 	position: relative;
-    top: 25px;
+    /*top: 25px;*/
     font-weight: 600;
     letter-spacing: 1.2px;
 }
 .domainTitle1{
 	position: relative;
-    top: 55px;
+    top: 30px;
     font-weight: 600;
     letter-spacing: 1.2px;
 }
@@ -95,37 +96,38 @@
 
 .innerDomainRE {
     position: relative;
-    height: 135px;
-    top: 17px;
+    height: 125px;
+    top: 10px;
     left: 28%;
 }
 .domainTitleRE{
-		position: relative;   
+	position: relative;  
+    top: -20px; 
     font-weight: 600;
     letter-spacing: 1.2px;
 }
 .innerDomainED {
     position: relative;
-    height: 125px;
-    top: 36px;
-    left: 29.5%;
+    height: 115px;
+    top: 15px;
+    left: 31.5%;
 }
 .domainTitleED{
 	position: relative; 
-	top: 10px;  
+	top: -10px;  
     font-weight: 600;
     letter-spacing: 1.2px;
 
 }
 .innerDomainTL {
     position: relative;
-    height: 105px;
-    top: 32px;
-    left: 29.5%;
+    height: 100px;
+    top: 10px;
+    left: 30.5%;
 }
 .domainTitleTI{
 	position: relative; 
-	top: 25px;  
+	top: 5px;  
     font-weight: 600;
     letter-spacing: 1.2px;
 
@@ -133,12 +135,12 @@
 .innerDomainSU{
     position: relative;
     height: 88px;
-    top: 38px;
+    top: 20px;
     left: 25.6%;
 }
 .domainTitleSU{
 	position: relative; 
-	top: 40px;  
+	top: 18px;  
     font-weight: 600;
     letter-spacing: 1.2px;
 
@@ -176,8 +178,8 @@
 /*===================================================================================*/
 .xsindustryDomainsHt{
     height: 1850px;
-    margin-top: -200px;
-    background-color: #fff;
+    /*margin-top: -200px;*/
+    background-color: #f1f1f2;
     width: 100%;
 }
 

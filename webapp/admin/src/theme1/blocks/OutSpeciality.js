@@ -11,6 +11,7 @@ export default class OutSpeciality extends React.Component {
 		return (
 			<div className="container-fluid nopadding">
 			<div className="OurSpecialityHeight  hidden-sm hidden-xs">
+			<div className="mtop111">	
 				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs bhead">
 					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs ">
 						<ul className="dashBoxOS col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
@@ -33,12 +34,12 @@ export default class OutSpeciality extends React.Component {
 									<img src="/images/13.png" alt="enteprice" className="innerCircle"/>
 								</div>
 								<div className="sptextBox1">
-									<h2 className="text-center"><b>Enteprice</b></h2>
+									<h2 className="text-center"><b>Enterprise Apps</b></h2>
 									<div className="col-lg-12 col-md-12">
-										<p>Lorem Ipsum is simply dummy <br/>printing & typesetting industry.
+										<p>We have indepth expertise in developing large scale Enterprise grade web & mobile apps.
 									  	</p>
 									</div>
-									<p className="text-center rmore">Read More</p>
+									{/*<p className="text-center rmore">Read More</p>*/}
 								</div>
 
 							</div>
@@ -49,12 +50,12 @@ export default class OutSpeciality extends React.Component {
 									<img src="/images/14.png" alt="enteprice" className="innerCircle"/>
 								</div>
 								<div className="sptextBox1">
-									<h2 className="text-center"><b>Startup World</b></h2>
+									<h2 className="text-center"><b>Startup Specialist</b></h2>
 									<div className="col-xl-12 col-lg-12 col-md-12">
-										<p>Lorem Ipsum is simply dummy <br/>printing & typesetting industry.
+										<p>Specially made plans for Startups that are highly cost effective & value added services. Our quotations are absolutely unbeatable in the IT Industry.
 									  </p>
 									</div>
-									<p className="text-center rmore">Read More</p>
+									
 								</div>
 							</div>
 						</div>
@@ -64,16 +65,17 @@ export default class OutSpeciality extends React.Component {
 									<img src="/images/15.png" alt="enteprice" className="innerCircle"/>
 								</div>
 								<div className="sptextBox1">
-									<h2 className="text-center"><b>eCommerce</b></h2>
+									<h2 className="text-center"><b>Customised eCommerce</b></h2>
 									<div className="col-xl-12 col-lg-12 col-md-12">
-										<p>Lorem Ipsum is simply dummy <br/>printing & typesetting industry.
+										<p>Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores
 									  </p>
 									</div>
-									<p className="text-center rmore">Read More</p>
+									
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 				</div>
 			</div>
 {/*====================================== Mobile view ===================================*/}

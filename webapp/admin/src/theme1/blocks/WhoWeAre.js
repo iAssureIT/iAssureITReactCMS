@@ -23,16 +23,17 @@ export default class WhoWeAre extends React.Component {
 								</div>
 								<h1 className="wheadingb1">Who<b> We Are?</b>
 								</h1>
-								<p className="wpara1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
+								<p className="wpara1">iAssureIT is an innovative IT company with energetic, talented and ambitious pool of 30+ Software Engineers,
+								 passionate about bringing the disruptive change in technology arena.
+								<br/>We are the Change Makers.<br/>
 
-								</p>	
-								<p className="wpara1">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
+								&nbsp;&nbsp;&nbsp;&nbsp;Our world class quality application development with latest cutting-edge technologies used for rapid development and blazing fast performance.
+								A tremendous journey of 7 years started in 2011. We have developed over 150+ projects of small and large sizes. Our clientele is spread across the globe, from countries like USA, Europien Countries, South Africa, Gulf Region, Singapore and Australia.
+								<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;iAssureIT has customers from various industry domains that include Start ups too. Our clients are from industries like Financial Services, Healthcare, Manufacturing, Pharmaceuticals, Real Estate, Shipping and Logistics, Education, etc. We have been helping them to craft their
+								organizational level digital road map.
 								</p>
-								<h5  className="wrdmore"><span><u> Read More</u></span> >> </h5>
+								{/*<h5  className="wrdmore"><span><u> Read More</u></span> >> </h5>*/}
 
 							</div>
 
@@ -59,16 +60,13 @@ export default class WhoWeAre extends React.Component {
 								</div>
 								<h1 className="wheadingb1">Mission<b> Vision</b>
 								</h1>
-								<p className="wpara1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
-
-								</p>	
-								<p className="wpara1">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
-								</p>
-								<h5  className="wrdmore"><span><u> Read More</u></span> >> </h5>
+								<p className="wpara1"><b>VISION</b><br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;Our Vision is to become a multinational IT Organisation that provides premium,
+								 cutting-edge, advanced IT Solutions & Products at extremely affordable costs.
+								 <br/><br/><b>MISSION</b><br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;We are working on setting up the worldclass standards in IT Organisation 
+								to give our customers, employee and stakeholders the real value of their invested trust.</p>
+								{/*<h5  className="wrdmore"><span><u> Read More</u></span> >> </h5>*/}
 							</div>
 						</div>
 					</div>
@@ -92,14 +90,15 @@ export default class WhoWeAre extends React.Component {
 								</div>
 								<h1 className="wheadingb1xs">Who<b> We Are?</b>
 								</h1>
-								<p className="wpara1xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
+								<p className="wpara1">iAssureIT is an innovative IT company with energetic, talented and ambitious pool of 30+ Software Engineers,
+								 passionate about bringing the disruptive change in technology arena.
+								<br/>We are the Change Makers.<br/>
 
-								</p>	
-								<p className="wpara1xs">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
+								&nbsp;&nbsp;&nbsp;&nbsp;Our world class quality application development with latest cutting-edge technologies used for rapid development and blazing fast performance.
+								A tremendous journey of 7 years started in 2011. We have developed over 150+ projects of small and large sizes. Our clientele is spread across the globe, from countries like USA, Europien Countries, South Africa, Gulf Region, Singapore and Australia.
+								<br/>
+								&nbsp;&nbsp;&nbsp;&nbsp;iAssureIT has customers from various industry domains that include Start ups too. Our clients are from industries like Financial Services, Healthcare, Manufacturing, Pharmaceuticals, Real Estate, Shipping and Logistics, Education, etc. We have been helping them to craft their
+								organizational level digital road map.
 								</p>
 								<h5  className="wrdmorexs"><span><u> Read More</u></span> >> </h5>
 
@@ -128,15 +127,11 @@ export default class WhoWeAre extends React.Component {
 								</div>
 								<h1 className="wheadingb1xs">Mission<b> Vision</b>
 								</h1>
-								<p className="wpara1xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
+								<p className="wpara1xs">VISION
+Our Vision is to become a multinational IT Organisation that provides premium, cutting-edge, advanced IT Solutions & Products at extremely affordable costs.
 
-								</p>	
-								<p className="wpara1xs">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
-								</p>
+MISSION
+We are working on setting up the worldclass standards in IT Organisation to give our customers, employee and stakeholders the real value of their invested trust.</p>
 								<h5  className="wrdmorexs"><span><u> Read More</u></span> >> </h5>
 							</div>
 						</div>

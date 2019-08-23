@@ -4,6 +4,10 @@
 	background-size: 100% 100%;
 	width: 100%;
 }
+.mtop111{
+    position: relative;
+    top:150px;
+}
 
 .whiteclr{
   color: #fff;
@@ -15,20 +19,20 @@
 .osDiv{
 	
 	height: 350px;
-	top: -30px;
+	top: 85px;
 	position: relative;
 }
 .bhead{
 	position: relative;
-	top: -100px;
+	/*top: -100px;*/
 }
 .col1{
-	height: 350px;
+	height: 375px;
 	background-color: #fff;
 	border-radius: 10px;
 }
 .col2{
-	height: 350px;
+	height: 375px;
 	background-color: #fff;
 	border: 1px solid #aaa;
 	border-radius: 10px;
@@ -115,7 +119,7 @@
 }
 .xsOurSpecialityHeight{
     height: 1080px;
-    top: -290px;
+    /*top: -290px;*/
     position: relative;
     background-image: url(/images/12.png);
     background-size: 200% 108%;

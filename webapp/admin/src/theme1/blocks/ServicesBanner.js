@@ -16,12 +16,9 @@ export default class ServicesBanner extends React.Component {
 						</div>
 						<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 							<div className="pull-right mtop100SB">
-								<span className="h1TitleSB">iAssureIT
-								</span><br/>
-								<span className="h2TitleSB">SERVICES
-								</span><br/>
-								<span className="h3TitleSB">Lorem ipsum dolor sit amet,
-								</span>
+								<span className="h1TitleSB">Our</span><br/>
+								<span className="h2TitleSB">SERVICES</span><br/>
+								<span className="h3TitleSB">With Cutting Edge Technology Expertise, <br/> Innovation & Creativity</span>
 							</div>	
 						</div>
 						<div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 row">

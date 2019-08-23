@@ -12,44 +12,48 @@ export default class ContactForm extends React.Component {
 			<div>
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 containerCon">
 					
-					<div className="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
 						<form className="conatctform">
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<h3 className="text-center"> CONTACT US</h3>
+								<h3 className="text-center"> Drop Us a Line</h3>
 							</div>
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30">
-								<label class="col-md-4 col-lg-4 col-xs-4 col-sm-4 labelmargin">Your Name</label>
-								<div className="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+								
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									{/*<label class="col-md-4 col-lg-4 col-xs-4 col-sm-4 nopadding">Your Name</label>*/}
 									<input className="form-control" name="from" type="text" placeholder="Your name"/>
 								</div>
 							</div>
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<label class="col-md-4 col-lg-4 col-xs-4 col-sm-4 labelmargin">Your Email address</label>
-								<div className="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									{/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Your Email address</label>*/}
 									<input className="form-control" name="from" type="email" placeholder="Your@email.com"/>
 								</div>
 							</div>
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<label className="col-md-4 col-lg-4 col-xs-4 col-sm-4 labelmargin">Subject</label>
-								<div className="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+								
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									{/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Subject</label>*/}
 									<input className="form-control" name="from" type="text" placeholder="Subject" />
 								</div>
 							</div>
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<label className="col-md-4 col-lg-4 col-xs-4 col-sm-4 labelmargin">Message</label>
-								<div className="col-lg-8 col-md-8 col-xs-8 col-sm-8">
-									<div>
+								
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									{/*<label class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopadding">Message</label>*/}
 							          <textarea className="form-control" name="message" placeholder="How can we help?" rows="4"></textarea>
-							        </div>
+							        
 								</div>
 							</div>
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<button type="button" class="btn btn-success col-lg-2 col-md-2 col-xs-4 col-sm-4 pull-right">Submit</button>
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									<button type="button" className="btn col-lg-5 col-md-5 col-xs-12 col-sm-12 sbtn">Send A Message</button>
+								</div>
 							</div>
 						</form>
 					</div>{/* 1 st half*/}
 					
-					<div className="col-lg-5 col-md-5 col-sm-12 col-xs-10">
+					<div className="col-lg-5 col-md-5 col-sm-12 col-xs-10 pull-left">
 						<AddressBlock />
 					</div>
 					
@@ -58,12 +62,3 @@ export default class ContactForm extends React.Component {
 		);
 	}
 }
-
-
-/*
-#323, Amanora Chambers,
-Amanora Town Center East Block,
-Opposite Magarpatta City,
-Pune, India 400 028
-Ph: +91 - 9923 393 733
-*/

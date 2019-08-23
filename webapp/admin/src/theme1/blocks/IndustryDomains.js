@@ -30,11 +30,13 @@ export default class IndustryDomains extends React.Component {
 							<div className="row">
 								<div className="col-lg-4 col-md-4">
 									<div className="col-lg-12 col-md-12 idcol1">
-										<img src="/images/18.png" alt="enteprice" className="innerDomain1"/>
+										
+											<img src="/images/18.png" alt="enteprise" className="innerDomain1"/>
+										
 										<h3 className="domainTitle text-center">Finance<br/>Industry</h3>
 									</div>
 								</div>
-								<div className="col-lg-4 col-md-4 ">
+								<div className="col-lg-4 col-md-4">
 									<div className="col-lg-12 col-md-12 idcol1">
 										<img src="/images/19.png" alt="enteprice" className="innerDomain2"/>
 										<h3 className="domainTitle1 text-center">Manufactuering<br/>Industry</h3>

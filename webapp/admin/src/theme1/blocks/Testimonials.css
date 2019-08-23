@@ -27,12 +27,12 @@
 
 
 
-.owl-theme .item{
+.testimonialBoxxs .owl-theme .item{
 	height: 295px !important;
 }
 .testimonialList{
 	position: relative;
-	top: 30px;
+	/*top: 30px;*/
 	z-index: 20;
 	padding: 0px 10px;
 }

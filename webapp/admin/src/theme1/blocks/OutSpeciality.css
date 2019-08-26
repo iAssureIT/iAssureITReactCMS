@@ -55,6 +55,7 @@
 .sptextBox1{
 	position: relative;
 	top: 27px;
+    color: #555;
 }
 .sptextBox1 h2{
 	font-weight: 500;

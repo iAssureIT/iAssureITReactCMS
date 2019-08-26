@@ -1,6 +1,7 @@
 import React from 'react';
 import "./ServicesList.css"
 import { Helmet } 		from "react-helmet";
+import ContactModal 	from '../blocks/contactModal.js';
 
 import ServicesBanner 	from '../blocks/ServicesBanner.js';
 import ListofServices 	from '../blocks/ListofServices.js';
@@ -39,6 +40,7 @@ export default class ServicesList extends React.Component {
 				</Helmet>
 				{/*<Header/>*/}
 				<Headernew/>
+				<ContactModal/>
 				
 				<ServicesBanner />
 

@@ -28,7 +28,7 @@ export default class AddressOnGoogleMap extends React.Component {
 	render() {
 		return (
 			<div className="gmapwrapper">
-				<div class="demogmap_canvas col-lg-offset-2 hidden-xs hidden-sm">
+				<div class="demogmap_canvas col-lg-offset-1 col-lg-10 hidden-xs hidden-sm">
 					
 					<div class="mapcontainer" id="mapcontainer">
 					  <img src="/images/demomap.png" alt="Avatar" class="image" style={{width:"100%"}}/>
@@ -39,7 +39,7 @@ export default class AddressOnGoogleMap extends React.Component {
 					</div>
 					<div class="mapouter" id="mapouter">
 						<div class="gmap_canvas">
-							<iframe width="1000" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=iAssureIT%20hadapsar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+							<iframe width="1070" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=iAssureIT%20hadapsar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 							</iframe>
 							<a href="https://www.emojilib.com">emojilib.com</a>
 						</div>

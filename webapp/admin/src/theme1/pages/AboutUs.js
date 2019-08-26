@@ -5,6 +5,7 @@ import Awards 			from '../blocks/Awards.js';
 import OurTeam 			from '../blocks/OurTeam.js';
 import MissionVision 	from '../blocks/MissionVision.js';
 import { Helmet } from "react-helmet";
+import ContactModal 	from '../blocks/contactModal.js';
 
 import Header from '../common/Header.js';
 import Footer 			from '../common/Footer.js';
@@ -42,13 +43,14 @@ export default class AboutUs extends React.Component {
 				</Helmet>
 				{/*<Header/>*/}
 				<Headernew/>
+				<ContactModal/>
 				<AboutBanner />
 
 				<WhoWeAre />
 
 				<Awards />
 			
-				<OurTeam />
+				{/*<OurTeam />*/}
 
 				<MissionVision />
 	{/*

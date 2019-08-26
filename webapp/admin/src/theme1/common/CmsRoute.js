@@ -26,7 +26,7 @@ const CmsRoute = (props) => {
   return (
     <Router>
     	<Switch>
-    		<Route path = "/homepage" exact component = {Homepage} />
+    		<Route path = "/" exact component = {Homepage} />
     		<Route path = "/services" exact component = {ServicesList} />
     		<Route path = "/aboutus" exact component = {AboutUs} />
     		<Route path = "/header" exact component = {Header} />

@@ -49,7 +49,7 @@ export default class Headernew extends React.Component {
 				<div id="myNav" className="openMenu">
 					<a href="javascript:void(0)" className="closebtn1">&times;</a>
 					<div className="topm text-center">
-				  		<a href="/homepage">
+				  		<a href="/">
 							<h1 className="home">Home</h1>
 						</a>
 					  	<a href="/services">						
@@ -58,9 +58,9 @@ export default class Headernew extends React.Component {
 					  	<a href="/aboutus">
 							<h1 className="aboutus">About Us </h1>
 						</a>
-						<a href="/services">
+						{/*<a href="/services">
 							<h1 className="aboutus">Portfolio </h1>
-						</a>
+						</a>*/}
 						<a href="/contactus">
 							<h1 className="aboutus">Contact Us </h1>
 						</a>

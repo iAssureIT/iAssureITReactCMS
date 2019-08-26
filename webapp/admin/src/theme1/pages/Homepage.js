@@ -8,6 +8,11 @@ import Portfolio 		from '../blocks/Portfolio.js';
 import Blogs 			from '../blocks/Blogs.js';
 import Videos 			from '../blocks/Videos.js';
 import Testimonials 	from '../blocks/Testimonials.js';
+import AddressOnGoogleMap 	from '../blocks/AddressOnGoogleMap.js';
+
+import ContactModal 	from '../blocks/contactModal.js';
+
+
 import Footer 	from '../common/Footer.js';
 import Header from '../common/Header.js';
 /*import fullheader from '../common/fullheader.js';*/
@@ -41,7 +46,7 @@ export default class Homepage extends React.Component {
 
 	render() {
 		return (
-			<div className="" style={{backgroundColor:"#f1f1f1"}}>
+			<div className="">
 				{/*<pagehead/>*/}
 				<Helmet>
 					<meta charset="UTF-8" />
@@ -54,6 +59,7 @@ export default class Homepage extends React.Component {
 				{/*<homeCarousel/>*/}
 				{/*<Header />*/}
 				<Headernew/>
+				<ContactModal/>
 				{/*<Banner />*/}
 				<HomeCarousel/>
 				{/*<Services />*/}
@@ -64,6 +70,7 @@ export default class Homepage extends React.Component {
 				<Blogs />
 				<Videos />*/}
 				<Testimonials />
+				<AddressOnGoogleMap />
 				<Footer />
 			</div>
 		);

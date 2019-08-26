@@ -59,7 +59,7 @@ export default class ListofServices extends React.Component {
 					 	<div className="col-lg-3 col-md-3 col-sm-3 col-xl-3 hexListS1">
 					 		<div className="col-lg-12">
 								<img src="./images/8.png" className="inhexaImg1" alt="webAppImg"/>
-								<h4 className="inhexaContext1 text-center">STAFF AUGM<br/>ENTATION</h4>
+								<h4 className="inhexaContext1 text-center">STAFF AUGMENTATION</h4>
 							</div>
 
 					 	</div>

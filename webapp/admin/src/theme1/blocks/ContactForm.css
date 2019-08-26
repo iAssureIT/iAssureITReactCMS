@@ -89,9 +89,10 @@ textarea.form-control {
 }
 
 .sbtn{
-	    background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);
+	    /*background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);*/
 	    height: 50px;
-	    color: #fff;
+	    background-color: #18ccf7;
+	    /*color: #fff;*/
 	    font-weight: 600;
 	    font-size: 16px;
 }

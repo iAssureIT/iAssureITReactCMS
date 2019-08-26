@@ -1,18 +1,38 @@
 import React from 'react';
-import "./ContactForm.css";
-import AddressBlock from "./AddressBlock.js";
+import $ from "jquery";
+import ContactForm from "./ContactForm.js";
 
-export default class ContactForm extends React.Component {
 
+import "./contactModal.css";
+
+
+export default class ContactModal extends React.Component {
 	constructor(props) {
 		super(props);
 	}
+	componantDidMount(){
+			var modal = document.getElementById('myModalOne');
+      		
+          
+	}
+OpenMyOrderModal(event){
+    event.preventDefault();
+    
+    $('#myModalOne').show();
+  }
+Modalclose(event){
+    event.preventDefault();
+    
+    $('#myModalOne').hide();
+  }
 	render() {
 		return (
 			<div>
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 containerCon">
-					
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
+				<button type="button" className="btn btn-lg madalbtn" onClick={this.OpenMyOrderModal.bind(this)} >Contact Us</button>
+				
+				<div id="myModalOne" className="modal addressmodal col-lg-6 col-lg-offset-3">
+                    <span className="addressmodalclose pull-right" onClick={this.Modalclose.bind(this)}>X</span>
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<form className="conatctform">
 							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
 								<h3 className="text-center"> Drop Us a Line</h3>
@@ -51,13 +71,8 @@ export default class ContactForm extends React.Component {
 								</div>
 							</div>
 						</form>
-					</div>{/* 1 st half*/}
-					
-					<div className="col-lg-5 col-md-5 col-sm-12 col-xs-10 pull-left">
-						<AddressBlock />
 					</div>
-					
-				</div>
+					</div>
 			</div>
 		);
 	}

@@ -7,11 +7,14 @@
 
 .wwBox1{
 	height: 610px;
-	background-color: #f3f0f0;
+	/*background-color: #f3f0f0;*/
+    background-color: #21336c;
+    color: #fff;
 }
 .wwBox2{
 	height: 610px;
 	/*background-color: #f3f0f0;*/
+    /*background-color: #f3f0f0;*/
 }
 .winfoImg1 {
     height: 405px;

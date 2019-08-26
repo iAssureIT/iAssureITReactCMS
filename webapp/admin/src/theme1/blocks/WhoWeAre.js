@@ -9,7 +9,7 @@ export default class WhoWeAre extends React.Component {
 	render() {
 		return (
 			<div className="container-fluid nopadding">
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wwrapper container-fluid hidden-sm hidden-xs ">
+				<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wwrapper container-fluid hidden-sm hidden-xs nopadding">
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wwBox2">
 						
 						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6">

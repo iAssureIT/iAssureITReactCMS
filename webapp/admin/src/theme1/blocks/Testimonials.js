@@ -44,11 +44,11 @@ export default class Testimonials extends React.Component {
 						{/*<div id="mercury" class="orbit">
 					        <div class="planet"></div> 
 					      </div>*/}
-						<div class="col-lg-12 col-md-12 hidden-sm hidden-xs">
-							<div class="col-lg-9 col-md-9">
-								<div class="col-lg-10 col-md-11  testimonialBox col-lg-offset-1">
+						<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
+							<div className="col-lg-9 col-md-9">
+								<div className="col-lg-10 col-md-11  testimonialBox col-lg-offset-1">
 									<OwlCarousel className="owl-theme arrows owl-carousel" loop  autoplay={true} animateOut={false} animateIn={false} autoplaySpeed={500} items={1} nav dots={false}>
-									    <div class="item col-lg-12">
+									    <div className="item col-lg-12">
 									    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
 										    	<h3>"One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would go in from their end implementing these.
 Really happy & satisfied with the quality of the work."
@@ -65,7 +65,7 @@ Really happy & satisfied with the quality of the work."
 									    	</div>
 
 									    </div>
-									    <div class="item col-lg-12">
+									    <div className="item col-lg-12">
 									    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
 										    	<h3>"Very much overwhelmed and satisfied with iAssureIT work. 
 										    	These guys have tremendous potential to handle any size of the
@@ -86,7 +86,7 @@ Keep up the good work guys and you rock !!!"
 											    </div>
 									    	</div>
 									    </div>
-									    <div class="item col-lg-12">
+									    <div className="item col-lg-12">
 									    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
 										    	<h3>"It's an IT company, which provides innovative 
 										    	IT solutions using latest technology."
@@ -127,11 +127,11 @@ Keep up the good work guys and you rock !!!"
 								</h1>
 							</div>
 						</div>
-						<div class="col-xs-12 col-sm-12 hidden-lg hidden-md">
+						<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
 							
-								<div class="col-xs-12 col-sm-10 testimonialBoxxs">
+								<div className="col-xs-12 col-sm-10 testimonialBoxxs">
 									<OwlCarousel className="owl-theme arrows" loop autoplay={true} items={1} nav dots={false}>
-									    <div class="item col-xs-12 col-sm-10">
+									    <div className="item col-xs-12 col-sm-10">
 									    	<div className="testimonialListxs col-xs-12 col-sm-12">
 										    	<h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 											    	sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -149,7 +149,7 @@ Keep up the good work guys and you rock !!!"
 											    </div>
 									    	</div>
 									    </div>
-									    <div class="item col-xs-12 col-sm-10">
+									    <div className="item col-xs-12 col-sm-10">
 									    	<div className="testimonialListxs col-xs-12 col-sm-12">
 										    	<h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 											    	sed do eiusmod tempor incididunt ut labore et dolore magna 
@@ -167,7 +167,7 @@ Keep up the good work guys and you rock !!!"
 											    </div>
 									    	</div>
 									    </div>
-									    <div class="item col-xs-12 col-sm-10">
+									    <div className="item col-xs-12 col-sm-10">
 									    	<div className="testimonialListxs col-xs-12 col-sm-12">
 										    	<h3>"It's an IT company, which provides innovative 
 										    	IT solutions using latest technology."

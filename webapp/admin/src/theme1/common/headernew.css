@@ -1,9 +1,11 @@
 .customSpan{
-  font-size:30px;cursor:pointer;
+  font-size:40px;
+  cursor:pointer;
   position: fixed;
   top: 50px;
   right: 61px;
-  z-index: 90;
+  color: #46b8da;
+  z-index: 9;
 }
 .closebtn1 {
   position: absolute;
@@ -57,11 +59,7 @@
   transition: 0.5s;
   color: #fff;
 }
-/*.home .Services .aboutus :hover{
-  transform: scale(1.15);
-  transition: 0.5s;
-  color: #fff;
-}*/
+
 .openMenu .closebtn1 {
   position: absolute;
   z-index: 999;
@@ -77,32 +75,29 @@
 .homehover{
   background-image: url("/images/2.png");
   background-repeat: no-repeat;
-  
-
 }
 .Serviceshover{
   background-image: url("/images/37.png");
   background-repeat: no-repeat;
-  
-
 }
-
-
-
 .aboutushover{
   background-image: url("/images/6ec.png");
   background-repeat: no-repeat;
-  
-
 }
 .portfoliohover{
   background-image: url("/images/32.png");
   background-repeat: no-repeat;
-  
-
 }
 .contactushover{
   background-image: url("/images/38.png");
   background-repeat: no-repeat;
+}
 
+.myModalq{
+  z-index: 10;
+}
+.mbtn{
+  z-index: 9;
+  position: fixed;
+  top: 20px;
 }

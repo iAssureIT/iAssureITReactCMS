@@ -1,5 +1,5 @@
 .industryDomainsHt{
-	height: 800px;
+	height: 700px;
 	background-color: #f1f1f1;
 	width: 100%;
 }
@@ -35,14 +35,16 @@
 }
 
 .iDomainBlock{
-	height: 700px;
+	height: 600px;
 	/*background-color: #aaa;*/
 	position: relative;
 }
 .idcol1{
-	height: 190px;
+	height: 130px;
 	background-color: #fff;
-	/*border-radius: 10px;*/
+	border-radius: 0px 25px;
+    margin-bottom: 25px;
+    padding: 5px;
 	position: relative;
 	top: 25px;
 	box-shadow: 2px 2px 20px 5px #dad6d6;
@@ -58,9 +60,11 @@
 }
 .innerDomain1{
     position: relative;
-    height:  104px;
-    top: 10px;
-    left: 29.5%;
+    width: 100%;
+    top: 15px;
+    height: 75px;
+
+    /*left: 29.5%;*/
 
 }
 .innerDomain2{
@@ -76,10 +80,13 @@
     left: 17.5%;
 }
 .domainTitle{
-	position: relative;
-    /*top: 25px;*/
+    position: relative;
+    left: 15px;
+    font-size: 19px;
+    top: 20px;
     font-weight: 600;
     letter-spacing: 1.2px;
+    text-align: center;
 }
 .domainTitle1{
 	position: relative;

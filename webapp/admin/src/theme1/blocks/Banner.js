@@ -35,6 +35,7 @@ export default class Banner extends React.Component {
 					<div className=" col-lg-5 col-md-5 hidden-sm hidden-xs row">
 						<img className="bannerImg img-responsive" src="./images/2.png" alt="Bannerpng"/>
 					</div>
+					
 				</div>
 
 	{/*  ================================ mobile view =====================================*/}

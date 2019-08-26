@@ -5,9 +5,71 @@ export default class IndustryDomains extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.state={
+        	allData:[
+        			  { 
+					    "_id": 1,
+					    "industryName": "Finance Industry",
+					    "industryImg": "/images/18.png",
+					  },
+					  {
+					    "_id": 2,
+					    "industryName": "Manufactuering Industry",
+					    "industryImg": "/images/19.png",
+    				  },
+					  {
+					    "_id": 3,
+					    "industryName": "Transport Industry",
+					    "industryImg": "/images/20.png",
+					    
+					  },
+					   { 
+					    "_id": 4,
+					    "industryName": "Healthcare Industry",
+					    "industryImg": "/images/21.png",
+					  },
+					  {
+					    "_id": 5,
+					    "industryName": "Real Estate Industry",
+					    "industryImg": "/images/22.png",
+    				  },
+					  {
+					    "_id": 6,
+					    "industryName": "Education Industry",
+					    "industryImg": "/images/23.png",
+					    
+					  },
+					   { 
+					    "_id": 7,
+					    "industryName": "eCommerce Industry",
+					    "industryImg": "/images/24.png",
+					  },
+					  {
+					    "_id": 8,
+					    "industryName": "Travel Industry",
+					    "industryImg": "/images/25.png",
+    				  },
+					  {
+					    "_id": 9,
+					    "industryName": "Startup Industry",
+					    "industryImg": "/images/26.png",
+					    
+					  }
+
+
+
+
+
+
+        	]
+      
+      
+    	}
 	}
 
 	render() {
+		var data = this.state.allData;
+    	console.log("all data ",data);
 		return (
 			<div className=" container-fluid nopadding">
 				<div className="industryDomainsHt container-fluid hidden-sm hidden-xs">
@@ -27,69 +89,29 @@ export default class IndustryDomains extends React.Component {
 					</div>
 					<div className="col-lg-12 col-md-12 col-xl-12">
 						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 iDomainBlock">
-							<div className="row">
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 idcol1">
-										
-											<img src="/images/18.png" alt="enteprise" className="innerDomain1"/>
-										
-										<h3 className="domainTitle text-center">Finance<br/>Industry</h3>
-									</div>
-								</div>
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 idcol1">
-										<img src="/images/19.png" alt="enteprice" className="innerDomain2"/>
-										<h3 className="domainTitle1 text-center">Manufactuering<br/>Industry</h3>
-									</div>
-								</div>
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 idcol1">
-										<img src="/images/20.png" alt="enteprice" className="innerDomain3"/>
-										<h3 className="domainTitle1 text-center">Transport<br/>Industry</h3>
-									</div>
-								</div>
-							</div>
-							<div className="row mtop25">
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 idcol1">
-										<img src="/images/21.png" alt="enteprice" className="innerDomain1"/>
-										<h3 className="domainTitle text-center">Healthcare<br/>Industry</h3>
-									</div>
-								</div>
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 idcol1">
-										<img src="/images/22.png" alt="enteprice" className="innerDomainRE"/>
-										<h3 className="domainTitleRE text-center">Real Estate<br/>Industry</h3>
-									</div>
-								</div>
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 idcol1">
-										<img src="/images/23.png" alt="enteprice" className="innerDomainED"/>
-										<h3 className="domainTitleED text-center">Education<br/>Industry</h3>
-									</div>
-								</div>
-							</div>
-							<div className="row mtop25">
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 idcol1">
-										<img src="/images/24.png" alt="enteprice" className="innerDomain1"/>
-										<h3 className="domainTitle text-center">eCommerce<br/>Industry</h3>
-									</div>
-								</div>
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 idcol1">
-										<img src="/images/25.png" alt="enteprice" className="innerDomainTL"/>
-										<h3 className="domainTitleTI text-center">Travel<br/>Industry</h3>
-									</div>
-								</div>
-								<div className="col-lg-4 col-md-4">
-									<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 idcol1">
-										<img src="/images/26.png" alt="enteprice" className="innerDomainSU"/>
-										<h3 className="domainTitleSU text-center">Startup<br/>Industry</h3>
-									</div>
-								</div>
-							</div>
 						
+							{
+		                		data && data.length > 0 ?
+				      				data.map((data, index)=>{
+		                					return(
+	                							<div key={index} className="col-lg-4 col-md-4">
+													<div className="idcol1">
+														<div className="col-lg-5 col-md-5 row">
+															<img src={data.industryImg} alt="enteprise" className="innerDomain1"/>
+														</div>
+														<div className="col-md-7 col-lg-7 row">
+															<h3 className="domainTitle text-center">{data.industryName}</h3>
+														</div>
+													</div>
+						                		</div>	
+		                					);
+	                					})
+	                				:
+	                				null
+		                		}				
+						                		
+								
+							
 						</div>
 					</div>
 				</div>

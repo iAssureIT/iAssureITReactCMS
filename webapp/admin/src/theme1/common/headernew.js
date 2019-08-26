@@ -67,6 +67,7 @@ export default class Headernew extends React.Component {
 					</div>
 				</div>
 				<span className="customSpan pull-right" onClick={this.handleContent.bind(this)} >&#9776;</span>
+				
 			</div>
 		);
 	}

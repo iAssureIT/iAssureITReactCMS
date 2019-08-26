@@ -11,56 +11,56 @@ export default class Footer extends React.Component {
 				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs footerTop">
 					<div className="row mtop70">
 						<div className="col-lg-3 col-md-3 col-lg-3 col-xs-3">
-							<ul class="">
-								<li class="clrwt"><b>Menu</b></li>
-							  	<li class="">Home</li>
-							  	<li class="">Who We Are</li>
-							  	<li class="">What We Do</li>
-							  	<li class="">Portfolio</li>
-							  	<li class="">Contact Us</li>
+							<ul className="">
+								<li className="clrwt"><b>Menu</b></li>
+							  	<li className="">Home</li>
+							  	<li className="">Who We Are</li>
+							  	<li className="">What We Do</li>
+							  	<li className="">Portfolio</li>
+							  	<li className="">Contact Us</li>
 							</ul>
 						</div>
 						<div className="col-lg-3 col-md-3 col-lg-3 col-xs-3">
-							<ul class="">
-								<li class="clrwt"><b>Support</b></li>
-							  	<li class="">Careers</li>
-							  	<li class="">Resources</li>
-							  	<li class="">Blog</li>
-							  	<li class="">Contact Us</li>
+							<ul className="">
+								<li className="clrwt"><b>Support</b></li>
+							  	<li className="">Careers</li>
+							  	<li className="">Resources</li>
+							  	<li className="">Blog</li>
+							  	<li className="">Contact Us</li>
 							</ul>
 						</div>
 						<div className="col-lg-3 col-md-3 col-lg-3 col-xs-6">
-							<ul class="">
-								<li class="clrwt"><b>Address</b></li>
-							  	<li class="">#323,Amanora Chambers,Magarpatta,<br/>
+							<ul className="">
+								<li className="clrwt"><b>Address</b></li>
+							  	<li className="">#323,Amanora Chambers,Magarpatta,<br/>
 							  		Pune,Maharastra 411028</li>
-							  	<li class=""> +91 99233 93733</li>
+							  	<li className=""> +91 99233 93733</li>
 							</ul>
 						</div>
 						<div className="col-lg-3 col-md-3 col-lg-3 col-xs-9">
-							<ul class="pull-right">
-								<li class="clrwt lm"><b>Connect</b></li>
-							  	<li class="">
+							<ul className="pull-right">
+								<li className="clrwt lm"><b>Connect</b></li>
+							  	<li className="">
 							  		<img src="/images/fb.png" alt="Facebook" className="fbPng"/>
 							  		<img src="/images/tw.png" alt="Twitter" className="fbPng"/>
 							  		<img src="/images/li.png" alt="Linkdin" className="fbPng"/>
 							  	</li>
-							  	<li class=""><button  class="contactBtn">Click To Contact</button></li>
+							  	<li className=""><button  className="contactBtn">Click To Contact</button></li>
 							</ul>
 						</div>
 					</div>	
 				</div>
 				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs footerBottom">
 					<div className="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
-						<ul class="mtop10">
-							<li class="">Copyright &copy; 2019 iAssure International Technologies Pvt. Ltd All rights reserved</li>	
+						<ul className="mtop10">
+							<li className="">Copyright &copy; 2019 iAssure International Technologies Pvt. Ltd All rights reserved</li>	
 						</ul>
 					</div>
 					<div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5 copyr2">
-						<ul class="pull-right bpadding">
-							<li class="">Privacy Policy</li>
-						  	<li class="">Terms of Use</li>
-						  	<li class="">Site Map</li>
+						<ul className="pull-right bpadding">
+							<li className="">Privacy Policy</li>
+						  	<li className="">Terms of Use</li>
+						  	<li className="">Site Map</li>
 						</ul>
 					</div>
 				</div>
@@ -69,55 +69,55 @@ export default class Footer extends React.Component {
 			<div className="hidden-lg hidden-md col-sm-12 col-xs-12 footerTopxs">
 					<div className="row ">
 						<div className="col-sm-4 col-xs-4 row">
-							<ul class="">
-								<li class="clrwt"><b>Menu</b></li>
-							  	<li class="">Home</li>
-							  	<li class="">Who We Are</li>
-							  	<li class="">What We Do</li>
-							  	<li class="">Portfolio</li>
-							  	<li class="">Contact Us</li>
+							<ul className="">
+								<li className="clrwt"><b>Menu</b></li>
+							  	<li className="">Home</li>
+							  	<li className="">Who We Are</li>
+							  	<li className="">What We Do</li>
+							  	<li className="">Portfolio</li>
+							  	<li className="">Contact Us</li>
 							</ul>
 						</div>
 						<div className="col-sm-3 col-xs-3">
-							<ul class="">
-								<li class="clrwt"><b>Support</b></li>
-							  	<li class="">Careers</li>
-							  	<li class="">Resources</li>
-							  	<li class="">Blog</li>
-							  	<li class="">Contact Us</li>
+							<ul className="">
+								<li className="clrwt"><b>Support</b></li>
+							  	<li className="">Careers</li>
+							  	<li className="">Resources</li>
+							  	<li className="">Blog</li>
+							  	<li className="">Contact Us</li>
 							</ul>
 						</div>
 						<div className="col-sm-5 col-xs-5">
-							<ul class="pull-right">
-								<li class="clrwt"><b>Address</b></li>
-							  	<li class="">#323,<br/>Amanora Chambers,<br/>Magarpatta,
+							<ul className="pull-right">
+								<li className="clrwt"><b>Address</b></li>
+							  	<li className="">#323,<br/>Amanora Chambers,<br/>Magarpatta,
 							  		Pune,<br/>Maharastra 411028</li>
-							  	<li class=""> +91 99233 93733</li>
+							  	<li className=""> +91 99233 93733</li>
 							</ul>
 						</div>
 						<div className=" col-sm-9 col-xs-9">
-							<ul class="pull-right">
-								<li class="clrwt lm"><b>Connect</b></li>
-							  	<li class="">
+							<ul className="pull-right">
+								<li className="clrwt lm"><b>Connect</b></li>
+							  	<li className="">
 							  		<img src="/images/fb.png" alt="Facebook" className="fbPng"/>
 							  		<img src="/images/tw.png" alt="Twitter" className="fbPng"/>
 							  		<img src="/images/li.png" alt="Linkdin" className="fbPng"/>
 							  	</li>
-							  	<li class=""><button  class="contactBtn">Click To Contact</button></li>
+							  	<li className=""><button  className="contactBtn">Click To Contact</button></li>
 							</ul>
 						</div>
 					</div>	
 				</div>
 				<div className="col-xs-12 col-sm-12 hidden-lg hidden-md footerBottomxs">
 					<div className="col-xs-12 col-sm-12">
-						<ul class="mtop10">
-							<li class="">Copyright &copy; 2019 iAssure International Technologies Pvt. Ltd All rights reserved</li>	
-							<li class="">Privacy Policy Terms of Use Site Map.</li>
+						<ul className="mtop10">
+							<li className="">Copyright &copy; 2019 iAssure International Technologies Pvt. Ltd All rights reserved</li>	
+							<li className="">Privacy Policy Terms of Use Site Map.</li>
 						</ul>
 					</div>
 				{/*	<div className="col-sm-5 col-xs-5 copyr2">
-						<ul class="pull-right">
-							<li class="">Privacy Policy Terms of Use Site Map</li>
+						<ul className="pull-right">
+							<li className="">Privacy Policy Terms of Use Site Map</li>
 						  	
 						</ul>
 					</div>*/}

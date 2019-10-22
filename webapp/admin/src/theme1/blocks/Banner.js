@@ -15,12 +15,6 @@ export default class Banner extends React.Component {
 				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs container">
 					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs logoBox">
 						<img className="logo img-responsive" src="./images/Logo.png" alt="logo"/>
-						{/*<img className="menuimg img-responsive pull-right" src="./images/3menubar.png" alt="logo"/>*/}
-						{/*<button type="button" class="hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
-			            <span class="hamb-top"></span>
-			            <span class="hamb-middle"></span>
-			            <span class="hamb-bottom"></span>
-			            </button>*/}
 					</div>
 					<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs">
 						<div className="pull-right mtop100">

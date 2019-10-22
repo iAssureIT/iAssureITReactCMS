@@ -28,7 +28,8 @@ Modalclose(event){
 	render() {
 		return (
 			<div>
-				<button type="button" className="btn btn-lg madalbtn" onClick={this.OpenMyOrderModal.bind(this)} >Contact Us</button>
+				<button type="button" className="btn btn-lg madalbtn btnbg" onClick={this.OpenMyOrderModal.bind(this)}  >Contact Us
+				</button>
 				
 				<div id="myModalOne" className="modal addressmodal col-lg-6 col-lg-offset-3">
                     <span className="addressmodalclose pull-right" onClick={this.Modalclose.bind(this)}>X</span>

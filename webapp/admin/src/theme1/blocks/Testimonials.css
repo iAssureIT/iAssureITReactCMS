@@ -2,8 +2,21 @@
 	height: 700px!important;
 	/*background-color: #fff;*/
 	/*width: 100%;*/
-  background-image: url("/images/33.png");
+  background-image: url("/images/portbg.png");
+  background-color: #fefefe;
   background-size: 100% 100%;
+  color: #555;
+}
+.hlimit600{
+    height: 172px;
+    text-align: justify-all;
+    text-overflow: ellipsis;
+}
+.hlimit600xs{
+       height: 272px;
+       font-size: 20px;
+       text-align: justify-all;
+    text-overflow: ellipsis;
 }
 .demoTitle{
 	margin-left: 44%;
@@ -97,7 +110,7 @@
 
 .profileTesti{
 	position: relative;
-    top: 20px;
+    top: 10px;
     height: 65px;
     width: 69px !important;
     border-radius: 50%;
@@ -108,7 +121,7 @@
 .custName{
     line-height: 1.25;
     position: relative;
-    top: 18px;
+    top: 5px;
 }
 .nmclr{
 	color: #376bff;
@@ -192,4 +205,7 @@
     font-size: 32px!important;
     padding: 0 !important;
     font: inherit;
+}
+.bgw{
+    background-color: #fff;
 }

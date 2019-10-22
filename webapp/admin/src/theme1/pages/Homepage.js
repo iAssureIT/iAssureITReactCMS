@@ -10,6 +10,9 @@ import Videos 			from '../blocks/Videos.js';
 import Testimonials 	from '../blocks/Testimonials.js';
 import AddressOnGoogleMap 	from '../blocks/AddressOnGoogleMap.js';
 
+import DemoAnim 	from '../blocks/demoAnim.js';
+
+
 import ContactModal 	from '../blocks/contactModal.js';
 
 
@@ -62,8 +65,10 @@ export default class Homepage extends React.Component {
 				<ContactModal/>
 				{/*<Banner />*/}
 				<HomeCarousel/>
+				{/*	*/}
 				{/*<Services />*/}
 				<ListofServices />
+
 				<OutSpeciality />
 				<IndustryDomains />
 				{/*<Portfolio />

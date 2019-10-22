@@ -11,13 +11,13 @@ export default class Footer extends React.Component {
 				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs footerTop">
 					<div className="row mtop70">
 						<div className="col-lg-3 col-md-3 col-lg-3 col-xs-3">
-							<ul className="">
+							<ul className="f1ooter">
 								<li className="clrwt"><b>Menu</b></li>
-							  	<li className="">Home</li>
-							  	<li className="">Who We Are</li>
-							  	<li className="">What We Do</li>
-							  	<li className="">Portfolio</li>
-							  	<li className="">Contact Us</li>
+							  	<a href="/"><li className="">Home</li></a>
+							  	<a href="/aboutus"><li className="">About Us</li></a>
+							  	<a href="/services"><li className="">Services</li></a>
+							  	{/*<li className="">Portfolio</li>*/}
+							  	<a href="/contactus"><li className="">Contact Us</li></a>
 							</ul>
 						</div>
 						<div className="col-lg-3 col-md-3 col-lg-3 col-xs-3">

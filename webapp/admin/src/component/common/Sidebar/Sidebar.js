@@ -17,7 +17,7 @@ export default class Sidebar extends Component{
 	render(){
 		return (
 			<div className="row">
-				<div className="logo">
+				<div className="logocms">
 				</div>
 				<div className="upper">
 					<ul className="navbar-primary-menu">

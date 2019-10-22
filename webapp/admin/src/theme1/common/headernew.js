@@ -52,11 +52,15 @@ export default class Headernew extends React.Component {
 				  		<a href="/">
 							<h1 className="home">Home</h1>
 						</a>
-					  	<a href="/services">						
-							<h1 className="Services">Services</h1>
-						</a>
+					  	
 					  	<a href="/aboutus">
 							<h1 className="aboutus">About Us </h1>
+						</a>
+						<a href="/services">						
+							<h1 className="Services">Services</h1>
+						</a>
+						<a href="/ecommerce-page">						
+							<h1 className="Services">eCommerce</h1>
 						</a>
 						{/*<a href="/services">
 							<h1 className="aboutus">Portfolio </h1>

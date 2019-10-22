@@ -9,6 +9,31 @@ export default class Testimonials extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.state = {
+
+			"Testimonials": [
+								{
+									testContent:"One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would go in from their end implementing these.Really happy & satisfied with the quality of the work.",
+									testimonialWriter:"Mr Paras Surana,",
+									writerDetails:"Director - Prabandhan Management Consulting",
+									writerImg:"/images/6.png"
+								},
+								{
+									testContent:"Very much overwhelmed and satisfied with iAssureIT work.These guys have tremendous potential to handle any size of the project and I strongly recommend this company to others.The best of the company is they are 100% committed to work and provide out of the box service. Working with iAssureIT is simply an amazing and memorable experience.Keep up the good work guys and you rock !!!",
+									testimonialWriter:"Mr Mohd Imran,",
+									writerDetails:"Founder & CEO - Mag InfoTech, Hydrabad",
+									writerImg:"/images/6.png"
+								},
+								{
+									testContent:"It's an IT company, which provides innovative IT solutions using latest technology.",
+									testimonialWriter:"Nitin Thakrey,",
+									writerDetails:"Operations Director - Innowave IT Solutions",
+									writerImg:"/images/6.png"
+								},
+
+							]
+	};
+
 	}
 /*    componentDidMount(){
 		$(".owl-carousel").owlCarousel({
@@ -23,6 +48,8 @@ export default class Testimonials extends React.Component {
 	}*/
 
 	render() {
+		var data =this.state.Testimonials;
+		console.log("data==>",data);
 		return (
 				<div className="container-fluid nopadding">
 					<div className="TestimonialsHT container-fluid hidden-sm hidden-xs">
@@ -48,60 +75,31 @@ export default class Testimonials extends React.Component {
 							<div className="col-lg-9 col-md-9">
 								<div className="col-lg-10 col-md-11  testimonialBox col-lg-offset-1">
 									<OwlCarousel className="owl-theme arrows owl-carousel" loop  autoplay={true} animateOut={false} animateIn={false} autoplaySpeed={500} items={1} nav dots={false}>
-									    <div className="item col-lg-12">
-									    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
-										    	<h3>"One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would go in from their end implementing these.
-Really happy & satisfied with the quality of the work."
-											    </h3>
-											    <div className="col-sm-12 col-lg-8 col-md-8">
-											    	<div className="col-md-3 col-lg-3 col-sm-2">
-											    		<img src="./images/6.png" alt="example" className="img-responsive profileTesti"/>
-											    	</div>
-											    	<div className="col-md-8 col-lg-8 col-sm-10">
-													    <h4 className="custName"><span className="nmclr">Mr Paras Surana,</span><br/>
-													    Director - Prabandhan Management Consulting</h4>
-											    	</div>
-											    </div>
-									    	</div>
-
-									    </div>
-									    <div className="item col-lg-12">
-									    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
-										    	<h3>"Very much overwhelmed and satisfied with iAssureIT work. 
-										    	These guys have tremendous potential to handle any size of the
-										    	 project and I strongly recommend this company to others.
-										    	  The best of the company is they are 100% committed to work and
-										    	   provide out of the box service. Working with iAssureIT is simply 
-										    	   an amazing and memorable experience. 
-Keep up the good work guys and you rock !!!"
-											    </h3>
-											    <div className="col-sm-12 col-lg-8 col-md-8">
-											    	<div className="col-md-3 col-lg-3 col-sm-2">
-											    		<img src="./images/6.png" alt="example" className="img-responsive profileTesti"/>
-											    	</div>
-											    	<div className="col-md-8 col-lg-8 col-sm-10">
-													    <h5 className="custName"><span className="nmclr">Mr Mohd Imran</span><br/>
-													     Founder & CEO - Mag InfoTech, Hydrabad</h5>
-											    	</div>
-											    </div>
-									    	</div>
-									    </div>
-									    <div className="item col-lg-12">
-									    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
-										    	<h3>"It's an IT company, which provides innovative 
-										    	IT solutions using latest technology."
-											    </h3>
-											    <div className="col-sm-12 col-lg-8 col-md-8">
-											    	<div className="col-md-3 col-lg-3 col-sm-2">
-											    		<img src="./images/6.png" alt="example" className="img-responsive profileTesti"/>
-											    	</div>
-											    	<div className="col-md-8 col-lg-8 col-sm-10">
-													    <h4 className="custName"><span className="nmclr">Nitin Thakrey</span><br/>
-													    Operations Director - Innowave IT Solutions</h4>
-											    	</div>
-											    </div>
-									    	</div>
-									    </div>
+										{
+					                		data && data.length > 0 ?
+							      				data.map((data, index)=>{
+		                							return(
+													    <div className="item col-lg-12">
+												    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
+													    	<h3 className="hlimit600">{data.testContent}
+														    </h3>
+														    <div className="col-sm-12 col-lg-8 col-md-8">
+														    	<div className="col-md-3 col-lg-3 col-sm-2">
+														    		<img src={data.writerImg} alt="example" className="img-responsive profileTesti"/>
+														    	</div>
+														    	<div className="col-md-8 col-lg-8 col-sm-10">
+																    <h4 className="custName"><span className="nmclr">{data.testimonialWriter}</span><br/>
+																    {data.writerDetails}</h4>
+														    	</div>
+														    </div>
+												    	</div>
+												    	  </div>
+													);
+	                							})
+	                						:
+	                						null
+		                				}				
+									
 									 
 									</OwlCarousel>
 
@@ -131,58 +129,31 @@ Keep up the good work guys and you rock !!!"
 							
 								<div className="col-xs-12 col-sm-10 testimonialBoxxs">
 									<OwlCarousel className="owl-theme arrows" loop autoplay={true} items={1} nav dots={false}>
-									    <div className="item col-xs-12 col-sm-10">
-									    	<div className="testimonialListxs col-xs-12 col-sm-12">
-										    	<h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											    	sed do eiusmod tempor incididunt ut labore et dolore magna 
-											    	aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-											    	mollit anim id est laborum."
-											    </h3>
-											    <div className="col-sm-12 col-xs-12">
-											    	<div className="col-xs-4 col-sm-4 row">
-											    		<img src="./images/6.png" alt="example" className="img-responsive profileTesti"/>
-											    	</div>
-											    	<div className="col-xs-8 col-sm-8">
-													    <h4 className="custName"><span className="nmclr">Joan Doe</span><br/>
-													    CEO,Adevertising Corp</h4>
-											    	</div>
-											    </div>
-									    	</div>
-									    </div>
-									    <div className="item col-xs-12 col-sm-10">
-									    	<div className="testimonialListxs col-xs-12 col-sm-12">
-										    	<h3>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-											    	sed do eiusmod tempor incididunt ut labore et dolore magna 
-											    	aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-											    	mollit anim id est laborum."
-											    </h3>
-											    <div className="col-sm-12 col-xs-12">
-											    	<div className="col-xs-4 col-sm-4 row">
-											    		<img src="./images/6.png" alt="example" className="img-responsive profileTesti"/>
-											    	</div>
-											    	<div className="col-xs-8 col-sm-8">
-													    <h4 className="custName"><span className="nmclr">Mr Mohd Imran</span><br/>
-													     - Founder & CEO - Mag InfoTech, Hydrabad</h4>
-											    	</div>
-											    </div>
-									    	</div>
-									    </div>
-									    <div className="item col-xs-12 col-sm-10">
-									    	<div className="testimonialListxs col-xs-12 col-sm-12">
-										    	<h3>"It's an IT company, which provides innovative 
-										    	IT solutions using latest technology."
-											    </h3>
-											    <div className="col-sm-12 col-xs-12">
-											    	<div className="col-xs-4 col-sm-4 row">
-											    		<img src="./images/6.png" alt="example" className="img-responsive profileTesti"/>
-											    	</div>
-											    	<div className="col-xs-8 col-sm-8">
-													    <h4 className="custName"><span className="nmclr">Nitin Thakrey</span><br/>
-													    Operations Director - Innowave IT Solutions</h4>
-											    	</div>
-											    </div>
-									    	</div>
-									    </div>
+									    {
+					                		data && data.length > 0 ?
+							      				data.map((data, index)=>{
+		                							return(
+													    <div className="item col-xs-12 col-sm-10">
+													    	<div className="testimonialListxs col-xs-12 col-sm-12">
+														    	<h3 className="hlimit600xs">{data.testContent}
+															    </h3>
+															    <div className="col-sm-12 col-xs-12 bgw">
+															    	<div className="col-xs-4 col-sm-4 row">
+															    		<img src={data.writerImg} alt="example" className="img-responsive profileTesti"/>
+															    	</div>
+															    	<div className="col-xs-8 col-sm-8">
+																	    <h4 className="custName"><span className="nmclr">{data.testimonialWriter}</span><br/>
+																	    {data.writerDetails}</h4>
+															    	</div>
+															    </div>
+													    	</div>
+													    </div>
+									   				 );
+	                							})
+	                						:
+	                						null
+		                				}	
+									    
 									</OwlCarousel>
 								</div>
 						

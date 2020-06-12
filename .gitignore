@@ -1,1 +1,8 @@
-Api/admin/node_modules/
+/WebApp/admin/node_modules
+/WebApp/admin/.env
+
+/WebApp/website/node_modules
+/WebApp/website/.env
+
+/Api/node_modules
+/Api/nodemon.js

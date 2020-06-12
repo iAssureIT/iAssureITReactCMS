@@ -7,7 +7,8 @@ import axios from 'axios';
 // import Layout from './coreAdmin/Layout/Layout.js';
 import CmsRoute from './lib/CmsRoute.js';
 
-axios.defaults.baseURL = 'http://qaiassureitapi.iassureit.com';
+// axios.defaults.baseURL = 'http://qaiassureitapi.iassureit.com';
+axios.defaults.baseURL = 'http://localhost:3060';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 function App() {
   return (

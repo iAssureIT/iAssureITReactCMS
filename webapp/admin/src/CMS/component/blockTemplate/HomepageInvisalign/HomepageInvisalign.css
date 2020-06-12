@@ -1,0 +1,102 @@
+
+
+.hpInviwrapper{
+	height: 700px;
+	color: #333;
+}
+.bghpI{
+	background-color: #fff;
+	height: 700px;
+
+}
+.mtop19perHI{
+	margin-top: 29%;
+    margin-bottom: 25px;
+    padding: 0% 12%; 
+    letter-spacing: 1.5px;
+}
+.custbtnhbtnonimgHI{
+	position: relative;
+    height: 45px;
+    background-color: #27a7ff;
+     /*width: 100%; */
+    text-align: center;
+    border: 2px solid #27a7ff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px !important;
+    line-height: 37px;
+    letter-spacing: 0px;
+    /*font-weight: 600;*/
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#owlCarHIpage .owl-carousel .owl-stage-outer {
+     border-right: none; 
+}
+
+
+
+#owlCarHIpage .owl-nav button.owl-prev{
+    position: relative;
+    content: '&rarr' !important ;
+    left: 0px;
+    /*top: 5px;*/
+	z-index: 25;
+    width: 45px !important;
+    height: 45px !important;
+    background-color: #eee !important;
+    border-radius: 52%!important;
+    margin-left: 0px;
+    width: 25px;
+    height: 32px;  
+    color: #000;
+    text-align: center;
+    border: none !important;
+    font-size: 32px!important;
+    padding: 0 !important;
+    font: inherit;
+}
+#owlCarHIpage .owl-nav  button.owl-next{
+    position: relative;
+    /*right:  0px;*/
+    /*top: 10px;*/
+    background: transparent !important;
+    border-radius: 0px !important;
+ 	width: 45px !important;
+    height: 45px !important;
+    background-color: #eeeeee !important;
+    border-radius: 52%!important;
+    color: #000;
+    text-align: center;
+    border: none !important;
+    font-size: 32px!important;
+    padding: 0 !important;
+    font: inherit;
+}
+#owlCarHIpage{
+	background-color: #333;
+	height:700px; 
+}
+.marTop15perHI{
+	margin-top: 25%;
+}
+.imgRoundHI{
+	height: 300px;
+	width: 300px !important;
+	border-radius: 50%;
+	margin-left: 25.5%;
+}
+.clorwht{
+	color: #fff;
+}
+.clorcyan{
+	color: cyan;
+}
+
+.left, .CountIncrement, .CountDecreBackArrow {
+    display: block;
+}

@@ -5,47 +5,52 @@ import { Route } from 'react-router';
 
 /*========================================*/
 
-import Footer from '../common/footer/Footer.js';
-import Header from '../common/header/Header.js';
-import Leftsidebar from '../common/leftSidebar/Leftsidebar.js';
+import CircleMenuBars from '../CMS/component/circlemenubars.js';
+import Cmspage from '../CMS/component/cmspage.js';
+import ViewPage_1 from '../CMS/component/createnewpage/ViewPage1.js';
+import ViewPage_2 from '../CMS/component/createnewpage/Viewpage.js';
+import ViewBlock_1 from '../CMS/component/createnewblock/viewblock1.js';
+import ViewBlock_2 from '../CMS/component/createnewblock/ViewBlock_2.js';
+import ViewBlock_3 from '../CMS/component/createnewblock/ViewBlock_3.js';
+import MasterPage from '../CMS/component/MasterPage/MasterPage.js';
+import CmsHeader from '../CMS/component/common/Header/Header.js'; 
+import CmsDashBoard from '../CMS/CmsDashBoard/CmsDashBoard.js'; 
 
-import ViewPage1         from '../CMS/component/createnewpage/ViewPage1.js';
+/*blogs*/
 
-// import Sidebarcms from '../common/Sidebar/Sidebar';
-/*
-import CircleMenuBars from '../../component/circlemenubars.js';
-import Cmspage from '../../component/cmspage.js';
-import Awsfile from '../../component/Awsfile.js';
-import DesignPageMaster from '../../component/designpagemaster/designpagemaster.js';
-import Selectpagedesign from '../../component/selectpagedesign/selectpagedesign.js';
+import SingleBlogPage                   from '../CMS/component/Blogs/SingleBlogPage/SingleBlogPage.js';
+// import AllBlog                          from './component/AllBlog/AllBlog.js';
+// import Blogcomponents                   from './component/Blogcomponents/Blogcomponents.js';
+// import AllBlogsList                     from '../allBlocks/AllBlogsList/AllBlogsList.js';
 
-import ViewPage_1 from '../../component/createnewpage/viewpage_1.js';
-import ViewPage_2 from '../../component/createnewpage/ViewPages.js';
-import BlockDesignMaster from '../../component/blockdesignmaster/blockdesignmaster.js';
+/*============================ /Blog==============================================*/
 
-import SelectBlockDesign from '../../component/selectblockdesign/selectblockdesign.js';
+/*import Rightsidebar     from '../common/rightSidebar/Rightsidebar.js';*/
+import BlogsFormPage    from "../CMS/component/Blogs/BlogsForm/BlogsFormPage.js";
+import AllBlogs          from "../CMS/component/Blogs/AllBlogs/AllBlogs.js";
+import JobForm          from "../CMS/component/JobApplication/JobApplication.js";
 
-import ViewBlock_1 from '../../component/createnewblock/viewblock1.js';
-import ViewBlock_2 from '../../component/createnewblock/viewblock2.js';*/
+
 
 /*========================================*/
 
 import Homepage from '../theme1/pages/Homepage.js';
-/*import ServicesList from '../pages/ServicesList.js';
-import ContactUs from '../pages/ContactUs.js';
-import Ecommerce from '../pages/ecommerce.js';
-import Bussinessportal from '../pages/bussinessportal.js';*/
-/*
-import AboutUs from '../pages/AboutUs.js';
-import Header from './Header.js';
-import fullheader from './fullheader.js';
-import headernew from './headernew.js';
+import ServicesList from '../theme1/pages/ServicesList.js';
+import ContactUs from '../theme1/pages/ContactUs.js';
+import Ecommerce from '../theme1/pages/ecommerce.js';
+import Bussinessportal from '../theme1/pages/bussinessportal.js';
+
+import AboutUs from '../theme1/pages/AboutUs.js';
+import Header from '../theme1/common/Header.js';
+import fullheader from '../theme1/common/fullheader.js';
+import headernew from '../theme1/common/headernew.js';
 
 
-import mobileApp from '../blocks/mobileApp.js';
-import staffaBanner from '../blocks/staffaBanner.js';
-import eCommerce from '../blocks/eCommerce.js';
-import webapp from '../blocks/webapp.js';*/
+import mobileApp from '../theme1/blocks/mobileApp.js';
+import staffaBanner from '../theme1/blocks/staffaBanner.js';
+import eCommerce from '../theme1/blocks/eCommerce.js';
+import webapp from '../theme1/blocks/webapp.js';
+
 
 
 
@@ -56,10 +61,12 @@ const CmsRoute = (props) => {
   return (
     <Router>
     	<Switch>
-    		<Route path = "/" exact component = {Homepage} />
-    	{/*	<Route path = "/services" exact component = {ServicesList} />
-    		<Route path = "/aboutus" exact component = {AboutUs} />
-    		<Route path = "/header" exact component = {Header} />
+    		   
+            <Route path = "/" exact component = {Homepage} />
+
+            <Route path = "/services" exact component = {ServicesList} />
+            <Route path = "/aboutus" exact component = {AboutUs} />
+            <Route path = "/header" exact component = {Header} />
             <Route path = "/fullheader" exact component = {fullheader} />
             <Route path = "/contactus" exact component = {ContactUs} />
             <Route path = "/mobileapp" exact component = {mobileApp} />
@@ -68,46 +75,30 @@ const CmsRoute = (props) => {
             <Route path = "/webapp" exact component = {webapp} />
             <Route path = "/headernew" exact component = {headernew} />
             <Route path = "/ecommerce-page" exact component = {Ecommerce} />
-            <Route path = "/bussinessportal-page" exact component = {Bussinessportal} />*/}
-            <div className="">
-                <header className="">
-                  <div className="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-                    <Leftsidebar />
-                  </div>
-
-                  <div className="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                    <Header />
-                  </div>
-
-                  <div className="col-lg-10 col-md-10 col-sm-10 col-xs-12 bgwrapper"style={{backgroundColor:"#eee"}}>
-                      <div className="contentWrapper">
-                            <Route path = "/ViewPage1" exact component = { ViewPage1 } />
-
-
-
-                            {/*<Route path = "/" exact component = {App}/>*/}
-                            {/* <Route path = "/about" exact component = {CircleMenuBars} />
-                            <Route path = "/cmspage/:id" exact component = {Cmspage} />*/}
-                            {/*<Route path = "/example/:id" exact component = {Example} />*/}
-                           {/* <Route path = "/aws" exact component = { Awsfile } />
-                            <Route path = "/designpagemaster" exact component = { DesignPageMaster } />
-                            <Route path = "/selectpagedesign" exact component = { Selectpagedesign } />
-                            <Route path = "/viewpage1" exact component = { ViewPage_1 } />
-                            <Route path = "/viewpage2/:id"exact component = { ViewPage_2 } />
-                            <Route path = "/viewpage2" exact component = { ViewPage_2 } />
-                            <Route path = "/blockdesignmaster" exact component = { BlockDesignMaster } />
-                            <Route path = "/selectblockdesign" exact component = { SelectBlockDesign } />
-                            <Route path = "/viewblock1" exact component = { ViewBlock_1 } />
-                            <Route path = "/viewblock2" exact component = { ViewBlock_2 } />*/}
-                      </div>
-                  </div>
-
-                  <div className="col-lg-10 col-md-10 col-sm-10 col-xs-12">
-                    <Footer />
-                  </div>
-                 
-                </header>
-              </div>
+            <Route path = "/bussinessportal-page" exact component = {Bussinessportal} />
+            
+            <div>
+            <CmsHeader />
+            <Route path="/cms/dashboard"                      exact strict component={CmsDashBoard}  />
+            <Route path="/cms/create-new-page"                         exact strict component={ViewPage_1}  />
+            <Route path="/cms/new-page-add-block"                         exact strict component={ViewPage_2}  />
+            <Route path="/cms/new-page-add-block/:id"                     exact strict component={ViewPage_2}  />
+            <Route path="/cms/select-new-block"                        exact strict component={ViewBlock_1}  />
+            <Route path="/cms/create-new-block"                        exact strict component={ViewBlock_2}  />
+            <Route path="/cms/view-blocks"                        exact strict component={ViewBlock_3}  />
+            
+            <Route path="/cms/masterpage/:pageurl"          component={ MasterPage } /> 
+            
+            <Route path="/cms/singleblog"           component={ SingleBlogPage }  />   
+            <Route path="/cms/blogs-form"           component={ BlogsFormPage }  />   
+            <Route path="/cms/blogs-form/:blogURL"          component={ BlogsFormPage }  />   
+            <Route path="/cms/AllBlogs"           component={ AllBlogs }  />   
+            <Route path="/cms/singleblog/:selectedUrl"          component={ SingleBlogPage }  />   
+            {/*<Route path="/cms/contact-us"          component={ SingleBlogPage }  />   */}
+            {/* <Route path="/cms/job-application"           component={ JobForm }  /> */} 
+           {/* <Route path="/cms/homepage"           component={ CmsHomepage }  />  */} 
+                                                 
+            </div>
             
     	</Switch>
     </Router>

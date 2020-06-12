@@ -1,0 +1,108 @@
+.nopadding{
+  padding: 0px;
+}
+.ImgVideocontainer {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  /*margin: 0 auto;*/
+}
+
+.homepagebgvideo{
+  height: 725px;
+  width: 100%;
+  /*object-fit: fill;*/
+}
+
+
+.ImgVideocontainer .Videocontent {
+  position: absolute;
+  top :0px;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.65); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height:  725px;
+  padding: 20px;
+}
+.mtop100{
+  margin-top: 20%;
+}
+.fs40{
+  font-size: 45px;
+  margin-left: 100px;
+}
+
+
+.Hcmpbtn{
+    position: relative;
+    height: 45px;
+    background-color: #27a7ff;
+     width: 100%; 
+    text-align: center;
+    border: 2px solid #27a7ff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 30px !important;
+    line-height: 37px;
+    letter-spacing: 0px;
+    /*font-weight: 600;*/
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    
+}
+
+.h2cmpbtn{
+    position: relative;
+    height: 45px;
+    background-color: transparent;
+    /*width: 101px;*/
+    text-align: center;
+    border: 2px solid #27a7ff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-radius: 30px !important;
+    line-height: 37px;
+    letter-spacing: 0px;
+    /*font-weight: 600;*/
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    /*z-index: 999;*/
+}
+/*.h2cmpbtn:hover{
+  background-color: #407dfa;
+  color: #fff;
+}*/
+
+
+/*@media (min-aspect-ratio: 16/9) {
+    .homepagebgvideo {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .homepagebgvideo { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .homepagebgvideo {
+        display: none;
+    }
+    
+}
+*/
+#indicatorHBpage{
+  position: relative;
+  left: 20%;
+}
+#indicatorHBpage li{
+  margin: 5px;
+}
+#indicatorHBpage .active{
+  background-color: #27a7ff;
+}

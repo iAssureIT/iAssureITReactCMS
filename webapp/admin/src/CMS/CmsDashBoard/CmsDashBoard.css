@@ -1,0 +1,70 @@
+.boxItem1{
+	height: 250px;
+	background-color: #fff;
+	margin: 5px 0px;
+}
+.boxItem2{
+	height: 250px;
+	background-color: #fff;
+	margin-top: 20px;
+}
+.boxItem3{
+	min-height: 500px;
+	background-color: #fff;
+	margin-top: 20px;
+}
+
+.fs30{
+	font-size: 30px;
+    margin-top: 20px;
+    margin-bottom:  2px;
+    color: #333;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.fs20{
+	font-size: 20px;
+
+    color: #444;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.f20s{
+	font-size: 20px;
+
+    color: #444;
+    font-weight: 500;
+}
+.w20px{
+	width: 17px;
+	font-weight: 600;
+}
+.fs16andml10{
+	font-size: 16px;
+	margin-top: 10px;
+    color: #444;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.fs16{
+	font-size: 16px;
+	margin-top: 10px;
+    color: #444;
+    font-weight: 500;
+
+}
+.custBtn{
+	height: 50px;
+	/*background-color: #09d9c9;*/
+	border: none;
+}
+.mtop10{
+	margin-top: 10px;
+}
+.clrchange{
+	color: #17c5bd;
+}
+.line5{
+	border-bottom: 1px solid #eee;
+	margin: 5px 0px;
+}

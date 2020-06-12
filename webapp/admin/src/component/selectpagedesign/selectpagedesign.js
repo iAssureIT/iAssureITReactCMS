@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import axios 				from 'axios';
 
 /*import { browserHistory ,withRouter } from 'react-router';*/
-import history from '../../history';
+// import history from '../../history';
 
  
 
@@ -71,13 +71,13 @@ class Selectpagedesign extends Component {
     	console.log("id",id);
     	console.log("props = ",this.props);
     	/*var data = this.state.allData;*/
-    	history.push('/viewpage2/'+id);
+    	// this.props.history.push('/viewpage2/'+id);
     	/*{<Redirect push to="/viewpage2"/>}*/
     }
       selectDesign1(event){
     	
     	console.log("=this.props=>",this.props);
-    	this.props.history.push('/viewpage2');
+    	// this.props.history.push('/viewpage2');
     	
     }
 

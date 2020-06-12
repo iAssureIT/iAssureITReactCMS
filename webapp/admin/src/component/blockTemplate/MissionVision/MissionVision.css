@@ -1,0 +1,153 @@
+.MVwrapper{
+	padding: 0px;
+	
+}
+
+.mvBox1{
+	height: 610px;
+	/*background-color: #f3f0f0;*/
+    background-color: #21336c;
+    color: #fff;
+}
+.mvBox2{
+height: 610px;
+    /*background-color: #21336c;*/
+    /*background-color: #f3f0f0;*/
+    color: #111;
+}
+.mvinfoImg1 {
+    height: 405px;
+    margin-top: 85px;
+}
+.mvinfotext1{
+	position: relative;
+	top: 120px;
+}
+.mvheadingb1{
+	position: relative;
+}
+.mvpara1{
+	position: relative;
+	    top: 28px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+.mvrdmore{
+	position: relative;
+	top: 60px;
+	letter-spacing: 1px !important;
+    color: #376bff !important;
+    font-weight: 600;
+}
+.mvrdmore span{
+
+}
+
+
+/*dash ===== ======================== =============*/
+.dashBoxmv{
+    list-style: none;
+    position: relative;
+    left: -31px;
+    top: 0px;
+    margin-bottom: 20px;
+}
+.dashBoxmv li{
+  float: left;
+}
+.dash1mv,.dash3mv {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.dash2mv{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
+
+
+
+/*===============================================================================*/
+/*-------------------------------------------------------------------------------*/
+/*===============================================================================*/
+.MVwrapperxs{
+    padding: 0px;
+    
+}
+
+.mvBox1xs{
+    height: 750px;
+    background-color: #f3f0f0;
+}
+.mvBox2xs{
+    height: 710px;
+    /*background-color: #f3f0f0;*/
+}
+.mvinfoImg1xs {
+    height: 235px;
+    margin-top: 85px;
+    margin-left: 25px;
+}
+.mvinfoImg2xs {
+    height: 235px;
+    margin-top: 32px;
+    margin-left: 55px;
+}
+.mvinfotext1xs{
+    position: relative;
+    top: 75px;
+}
+.mvheadingb1xs{
+    position: relative;
+    text-align: center;
+}
+.mvpara1xs{
+    position: relative;
+        top: 28px;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+}
+.mvrdmorexs{
+    position: relative;
+    top: 25px;
+    letter-spacing: 1px !important;
+    color: #376bff !important;
+    font-weight: 600;
+}
+.mvrdmore span{
+
+}
+
+
+/*dash ===== ======================== =============*/
+.dashBoxmvxs{
+    list-style: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-bottom: 20px;
+}
+.dashBoxmvxs li{
+  float: left;
+}
+.dash1mvxs,.dash3mvxs {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.dash2mvxs{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/

@@ -1,0 +1,40 @@
+.listHeading{
+	padding: 5px;
+	text-align: center;
+}
+.clrwht{
+	color: #fff;
+}
+.deletIcon:hover{
+	color: #f00;
+	cursor: pointer;
+}
+.onHoverClick:hover{
+	color: #f00;
+	cursor: pointer;
+}
+.CNPBtn{
+	position: relative;
+	top: -8px;
+	margin: 0px !important;
+}
+.CNPBtn .btn{
+	margin: 0px !important;
+}
+.c350{
+	height: 325px !important;
+	width: 100%;
+}
+.h315{
+	height: 315px;
+}
+
+.box-body2{
+	background: #fff;
+    min-height: 400px;
+    color: #333;
+}
+.thead-dark{
+	background-color: #666;
+	color: #fff;
+}

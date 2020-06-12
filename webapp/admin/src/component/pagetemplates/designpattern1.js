@@ -23,28 +23,24 @@ render(){
 		return( 
 			<div className="pageHeight">
 				<PageHead pageUrl={this.props.currentUrl}  />
-					<div className="height1" style={{"backgroundImage":"url("+data.backimage+")"}}>
-						<div>
-							<p className="dp-pageTitle">{data.pageTitle}</p>
-						</div>
-						<div className="row inputrow">
-                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div className="form-group col-lg-12 col-md-6 col-xs-12 col-sm-12 dp-pageswscription">
-                               		<label className="label-category page-Description">{data.cmspageDescription}</label>
-                              	</div>
-                            </div>
-                         	<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 row">
-                          		<div className="form-group">
-                          			<img src={data.pageimage} className="img-responsive pageimage1"  />
-                          		</div>
-                        	</div>
-				        </div>
+				<div className="height1" style={{"backgroundImage":"url("+data.backimage+")"}}>
+					<div>
+						<p className="dp-pageTitle">{data.pageTitle}</p>
 					</div>
-				<div>
-					
-
-
+					<div className="row inputrow">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div className="form-group col-lg-12 col-md-6 col-xs-12 col-sm-12 dp-pageswscription">
+                           		<label className="label-category page-Description">{data.cmspageDescription}</label>
+                          	</div>
+                        </div>
+                     	<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 row">
+                      		<div className="form-group">
+                      			<img src={data.pageimage} className="img-responsive pageimage1"  />
+                      		</div>
+                    	</div>
+			        </div>
 				</div>
+				
 				<div className="col-lg-12 col-md-6">
 					<button type="button" className=" col-lg-4 col-lg-offset-4 btn b1 success btn-lg" data-pageurl={this.props.pageUrl} data-toggle="modal" data-target="#myModal">Add new Block</button>
 				  	{/*<!-- Modal -->*/}

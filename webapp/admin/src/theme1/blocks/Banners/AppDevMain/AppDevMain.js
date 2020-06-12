@@ -16,7 +16,7 @@ export default class AppDevMain extends React.Component {
 		return (
 			<div>
 				<div className="b1banerheight container-fluid ">
-					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs container">
+					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
 						<div className="col-lg-12 col-md-12 hidden-sm hidden-xs logoBox">
 							<img className="logoIMG img-responsive" src="./images/Logo.png" alt="logo"/>
 						</div>

@@ -1,0 +1,152 @@
+.ecBox1{
+    background-image: url("/images/ec2.png");
+    background-size: 100% 100.5%;
+}
+.ecBox2{
+    background-image: url("/images/ec3.png");
+    background-size: 100% 100%;
+    height: 575px;
+    color: #fff;
+}
+.ecBox3{
+    background-image: url("/images/ec4.png");
+    background-size: 100% 100%;
+    /*color: #fff;*/
+}
+.ecBox4ab{
+    background-image: url("/images/ec4a1.png");
+    background-size: 100% 100%;
+    /*color: #fff;*/
+}
+.ecBox5a{
+
+    height: 475px;
+}
+.ecBox5{
+     background-image: url("/images/eca3.png");
+    background-size: 100% 100%;
+    height: 575px;
+}
+.egimg1{
+    position: absolute;
+    height: 750px;
+    top: -100px;
+    
+    z-index: 1;
+}
+.ecimgec14{
+    position: absolute;
+    height: 550px;
+    top: -100px;
+    z-index: 1;
+}
+.ecBox6{
+    background-image: url("/images/eca4.png");
+    background-size: 100% 100%;
+    color: #fff;
+
+}
+.ecBox6a{
+    height: 575px;
+ 
+}
+.ecBox6b{
+    height: 475px;
+}
+.ecBox7{
+    background-image: url("/images/eca2.png");
+    background-size: 100% 100%;
+    /*height: 575px;*/
+    height: 475px;
+    color: #fff;
+
+
+}
+.b1h1{
+    font-size: 31px;
+    /*letter-spacing: 1.5px;*/
+    line-height: 1.25;
+}
+.nopadding{
+    padding: 0px;
+}
+
+.wwBox1{
+	height: 610px;
+	/*background-color: #f3f0f0;*/
+    background-color: #21336c;
+    color: #fff;
+}
+.wwBox2{
+	height: 610px;
+	/*background-color: #f3f0f0;*/
+    /*background-color: #f3f0f0;*/
+}
+.winfoImg1 {
+    height: 405px;
+    margin-top: 85px;
+}
+.winfotext1{
+	position: relative;
+	top: 120px;
+}
+.wheadingb1{
+	position: relative;
+}
+
+.ecparab1{
+	position: relative;
+	/*top: 28px;*/
+    font-size: 14px;
+    letter-spacing: 1.05px;
+}
+.wrdmore{
+	position: relative;
+	top: 60px;
+	letter-spacing: 1px !important;
+    color: #376bff !important;
+    font-weight: 600;
+}
+.wrdmore span{
+
+}
+.ecb1fotext{
+    margin-top: 30px;
+}
+.ecb1fotext2{
+    margin-top: 115px;
+}
+.ecb1Img1{
+    height: 500px;
+}
+.ecb100{
+    margin-top: 100px;
+}
+.ec4mtop100{
+      margin-top: 10px;  
+}
+/*dash ===== ======================== =============*/
+.dashBoxWwA{
+    list-style: none;
+    position: relative;
+    left: -31px;
+    top: 0px;
+    margin-bottom: 20px;
+}
+.dashBoxWwA li{
+  float: left;
+}
+.dash1WwA,.dash3WwA {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.dash2WwA{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}

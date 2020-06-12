@@ -37,3 +37,13 @@
 .bgwrapper{
   background-color: #efefef !important;
 }
+
+.leftsidebarbackgroundcolor{
+  position: fixed!important;
+  left: 15px;
+}
+
+.dasbordbackgroundcolor{
+  background-color: #eee;
+  height:auto;
+}

@@ -86,7 +86,7 @@ export default class Ecommerce extends React.Component {
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>{this.state.title}</title>
 				</Helmet>
-				<Headernew/>
+				{/*<Headernew/>*/}
 				<ServiceBanner bannerText = {this.state.bannerText}/>
 				<Bdesignblock/>
 				<EcommBlock1 EcommBlock1 = {this.state.EcommBlock1}/>

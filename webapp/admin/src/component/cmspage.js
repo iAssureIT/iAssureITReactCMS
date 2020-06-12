@@ -421,7 +421,6 @@ render(){
                         </div>
                         <div className="savetemp col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right sendtxtmsgbtn" onClick={() => this.submitData()} >{this.state.buttonText}</button>
-                            
                         </div>
                     </div> 
 	            </div>

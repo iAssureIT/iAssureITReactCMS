@@ -1,0 +1,30 @@
+
+Block
+
+	url = "static-block-list"
+	Static Block List ==>  one url. add all blocks statically. 
+	Hover and select, highlight the block. 
+	when selected, the id & all data fields will be passed to next form of "Create Block"  
+
+	url = "create-new-block"
+	Create Block
+	on this form, show all fields as per the data-field received. Remaining fields will data is to be saved in database.be hidden. 
+		
+
+	url = "dynamic-block-list"
+	View Block in a list
+	this list of block will be 100% dynamic in nature.
+
+
+
+Unique blocks folder
+	BlockTemplate1
+	BlockTemplate2
+	BlockTemplate3
+	BlockTemplate4
+	BlockTemplate5
+	BlockTemplate6
+	BlockTemplate7
+	BlockTemplate8
+	BlockTemplate9
+	BlockTemplate10

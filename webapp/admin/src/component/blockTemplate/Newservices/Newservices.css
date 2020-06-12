@@ -1,0 +1,72 @@
+.formht{
+
+}
+.h500{
+  
+    height: 785px;
+
+    background-image: url("/images/33.png");
+    background-size: 100% 100%;
+    background-color: #fff;
+}
+
+.boxheader{
+background-color: #00AFEF;
+height: 100px;
+}
+.divbox{
+height: 270px;
+background-color: #fff;
+
+}
+.tepeatedTitle{
+font-weight: 600;
+margin-top: 35px;
+}
+.readMoretxt{
+color:#00AFEF;
+}
+.endline{
+height: 4px;
+background-color:#00AFEF;
+}
+.mainDiv{
+    box-shadow: 0px 0px 10px 10px #e2d8d8;
+   /* margin-left: 25px;*/
+        margin-top: 25px;
+    margin-bottom: 35px;
+
+}
+.NOPadding{
+padding: 0;
+}
+.roundDiv{
+/*height: 86px;
+    background: #00AFEF;
+    width: 86px;
+    border-radius: 100%;
+    border: 5px solid #ffffff;
+    position: relative;
+    bottom:25px;*/
+    height: 105px;
+    background: #00AFEF;
+    width: 105px;
+    left: 28.5%;
+    border-radius: 100%;
+    border: 7px solid #ffffff;
+    position: relative;
+    bottom: 48px;
+}
+.faIcon{
+    font-size: 34px;
+    color: #ffffff;
+    margin-left: 37%;
+    margin-top: 37%;
+}
+
+
+.faIconImg{
+    height:  38px;
+    margin-left: 26%;
+    margin-top: 25%;
+}

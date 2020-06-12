@@ -1,0 +1,20 @@
+.blogFormBox{
+	    font-family:'Montserrat-Regular';
+
+	margin: 25px 0px;
+}
+.ckbox{
+	height: 375px !important;
+	margin-top: 50px !important;
+}
+.boxform1{
+	position: relative;
+	top: 25px;
+}
+.createBlogLabel{
+	font-size: 20px;
+}
+.noBorder{
+	height: 22px;
+	width: 400px;
+}

@@ -25,7 +25,7 @@ export default class Sidebar extends Component{
 					       
 					       <Link to="/cmspage" className="ptop65">Dashboard</Link>
 					        <Link to="/viewpage1">Create New Page</Link>
-					        <Link to="/viewblock1">Create New Block</Link>
+					        <Link to="/static-block-list">Static Blocks</Link>
 					        <Link to="/cmspage">List of Page</Link>
 					        <Link to="/cmspage">List of block</Link>
 					       

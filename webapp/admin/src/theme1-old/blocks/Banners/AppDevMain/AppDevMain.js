@@ -20,14 +20,13 @@ export default class AppDevMain extends React.Component {
 						<div className="col-lg-12 col-md-12 hidden-sm hidden-xs logoBox">
 							<img className="logoIMG img-responsive" src="./images/Logo.png" alt="logo"/>
 						</div>
-						<div className="container-fluid">
-						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715 homecarousal1 " dots={true}  autoplay={true} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1}  >
+						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715" loop nav={true}  autoplay={true} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1}  dots={false} >
 							<div className="item active ">
 								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
 									<div className="mtop100">
-										<span className="b1h1Title">APPLICATIONS
+										<span className="b1h1Title">Applications
 										</span><br/>
-										<span className="b1h2Title">DEVELOPMENT <span className="b1h00">MAINTENANCE</span> 
+										<span className="b1h2Title">Development Maintenance
 										</span><br/>
 										<span className="b1h3Title">Highly Professional,Reliable & Affordable Cost.
 										</span>
@@ -55,9 +54,9 @@ export default class AppDevMain extends React.Component {
 							<div className="item">
 								<div className="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
 									<div className="mtop100">
-										<span className="b10h1Title">AWARD WINNING
+										<span className="b1h1Title">Award Winning
 										</span><br/>
-										<span className="b10h2Title">IT COMPANY
+										<span className="b1h2Title">IT Company
 										</span><br/>
 										<span className="b1h3Title">
 										</span>
@@ -84,7 +83,7 @@ export default class AppDevMain extends React.Component {
 							<div className="item">
 								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
 									<div className="mtop100">
-										<span className="b5h1TitleB5">CUSTOMISED ECOMMERCE 
+										<span className="b5h1TitleB5">Customised eCommerce
 										</span><br/>
 										<span className="b5h2TitleB5">SOLUTIONS
 										</span><br/>
@@ -97,7 +96,6 @@ export default class AppDevMain extends React.Component {
 							</div>
 						</OwlCarousel>
 
-					</div>
 					</div>
 					{/*  ================================ mobile view =====================================*/}
 					<div className="hidden-lg hidden-md col-xl-12 col-sm-12">

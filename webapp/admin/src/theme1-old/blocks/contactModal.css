@@ -8,15 +8,13 @@
 	cursor: pointer;
 }
 .btnbg{
-    background-image: url(/images/contact.png);
+    /*background-image: url(/images/cu.png);*/
     width: 115px;
-    background-color:#f03759;
-    /* background-color: #fff; */
+    background-color: #fff;
     box-shadow: 1px 1px 20px 0px #999;
     border-radius: 40px 0px 0px 40px;
-    height: 55px;
+    height: 45px;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
 }
 
 .btnbg:focus {

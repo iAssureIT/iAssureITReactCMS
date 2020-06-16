@@ -10,35 +10,19 @@ export default class ListofServices extends React.Component {
 		return (
 			<div className="container-fluid nopadding">
 				<div className="listofServicesBox hidden-xs hidden-sm">
-					{/* <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
 						<ul className="dashBoxLs col-lg-4 col-lg-offset-5 col-md-4 col-md-offset-5">
 						  <li className="dash1Ls"></li>
 						  <li className="dash2Ls"></li>
 						  <li className="dash3Ls"></li>
 						</ul>
-					</div> */}
-					<div className="col-lg-2 col-lg-offset-5 services"><h1 className="services1">Services</h1></div>
-					<div className="col-lg-8 col-lg-offset-2 Hexagonwrapper">
-					  <div className="hexagon1"><div className="images1"></div><h1 className="eprizeapps">ENTERPRISE APPS</h1></div>
-					  <div className="hexagon2"></div>
-					  <div className="hexagon3"></div>
-					  <div className="hexagon4"></div>
-					  <div className="hexagon5"></div>
-					  <div className="hexagon6"></div>
-					  <div className="hexagon7"></div>
-
-
-
-
-						
-
-						
 					</div>
-
-
-
-
-						{/* <div className="col-lg-10 col-lg-offset-2 col-md-10
+					<div className="text-center">
+						<h1 className="mtop30">
+							<b>Services</b>
+						</h1>
+					</div>
+					<div className="col-lg-10 col-lg-offset-2 col-md-10
 					 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xl-10 col-xl-offset-1">
 					 	<div className="col-lg-3 col-md-3 col-sm-3 col-xl-3 hexListS1">
 					 		<div className="col-lg-12">
@@ -62,8 +46,8 @@ export default class ListofServices extends React.Component {
 
 					 	</div>
 
-					</div> */}
-					{/* <div className="col-lg-10 col-lg-offset-2 col-md-10
+					</div>
+					<div className="col-lg-10 col-lg-offset-2 col-md-10
 					 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xl-10 col-xl-offset-1">
 					 	<div className="col-lg-3 col-md-3 col-sm-3 col-xl-3 hexListS1">
 					 		<div className="col-lg-12">
@@ -85,7 +69,7 @@ export default class ListofServices extends React.Component {
 								<h4 className="inhexaContext1 text-center">eCOMMERCE <br/>PORTAL</h4>
 							</div>
 					 	</div>
-					</div> */}
+					</div>
 				</div>
 		{/*=========================================== mobile view ==========*/}
 

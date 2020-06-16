@@ -4,7 +4,7 @@
 .b1banerheight{
 	height: 675px;
 	background-image: url("/images/b1background.png");
-    background-size: 100% 100%;
+	background-size: 100% 100%;
 }
 .b1bannerImg{
     height: 317px;
@@ -40,131 +40,56 @@
 	color: #fff;
 }
 .b1h1Title{
-    
-	font-size: 40px;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
+	font-size: 36px;
+	letter-spacing: 1px;
 }
 .b1h2Title{
-    
-    font-size: 80px;
+	    font-size: 41px;
     line-height: 1;
     letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto';
-    margin-left: -35px;
-
-     /* font-family: 'Roboto', sans-serif !important;  */
-
-    /* font-family: 'Roboto', sans-serif; */
-
-
-}
-.b1h00{
-    
-    font-size: 80px;
-    line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto';
-    margin-left: -35px;
- 
+    font-weight: 1000;;
 }
 .b1h3Title{
 	font-size: 24px;
     letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
-
-    
 }
-.b10h1Title{
-    font-size: 40px;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
-
-} 
-.b10h2Title{
-    font-size: 65px;
-    line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
-
-
-
-} 
-
 /*0000000000000000000*/
 .b4h1TitleB4{
-    font-size: 40px;
+    font-size: 34px;
     letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
-
 }
 .b4h2TitleB4{
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     letter-spacing: 2.5px;
     font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
-
-
 }
 .b5h1TitleB5{
-   font-size: 40px;
+   font-size: 43px;
     letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
-
 }
 .b5h2TitleB5{
-    font-size: 80px;
+    font-size: 56px;
     line-height: 1;
     letter-spacing: 2.5px;
     font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
-
-
 }
 
 /*============*/
 
 .h1TitleMobile{
-	font-size: 40px;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
+	font-size: 34px;
+	letter-spacing: 1px;
 }
 .h2TitleMobile{
-	font-size: 80px;
+	font-size: 81px;
     line-height: 1;
     letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
-
-
+    font-weight: 1000;;
 }
 .h3TitleMobile{
 	font-size: 24px;
     letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
-
 }
 
 /*===========*/
@@ -212,7 +137,7 @@
     padding: 0 !important;
     font: inherit;
 }
- .homecarousel .owl-nav  button.owl-next{
+.homecarousel .owl-nav  button.owl-next{
     position: absolute;
     right:  0px;
     top: -205px;
@@ -228,20 +153,7 @@
     font-size: 32px!important;
     padding: 0 !important;
     font: inherit;
-} 
-.homecarousel.owl-theme .owl-dots .owl-dot span{
-    
-    width: 10px;
-    height: 10px;
-    background: #D6D6D6;
-    display: block;  
-    transition: opacity 200ms ease; 
-    border-radius: 30px; 
 }
- .homecarousal1{
-    margin-top: 122px!important;
-    margin-left: 45px;
-} 
 /*.homecarousel .owl-nav  button.owl-next:hover{
 	background-color: #44e!important;
 }*/

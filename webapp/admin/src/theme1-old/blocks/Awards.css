@@ -1,0 +1,105 @@
+.AwardsWrapper{
+	height: 950px;
+	background-image: url("/images/45.png");
+	background-size: 100% 100%;
+	padding: 0px 0px;
+	color: #eee;
+}
+.AwardsTitle{
+	    /* position: relative; */
+    font-size: 55px;
+    line-height: 1.3;
+    font-weight: 600;
+    /* top: 0px; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.AwardsRead{
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+.AwardsImg{
+	list-style: none;
+	position: relative;
+}
+.AwardsImg li{
+	float: left;
+	position: relative;
+}
+.aImg1{
+	position: relative;
+	left: 85px;
+	top: 25px;
+}
+.aImg2{
+	position: relative;
+	    left: 100px;
+	
+}
+.aImg3{
+	position: relative;
+	left: 95px;
+    top: 118px;
+}
+.aImg4{
+	position: relative;
+	left: 100px;
+    top: 39px;
+}
+/*============================================
+	===============================================
+		=================================================*/
+.AwardsWrapperxs{
+	height: 865px;
+	background-image: url("/images/45.png");
+	background-size: 100% 100%;
+	padding: 0px 0px;
+	color: #eee;
+}
+.AwardsTitlexs{
+	    /* position: relative; */
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 600;
+    /* top: 0px; */
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.AwardsReadxs{
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.AwardsImgxs{
+	list-style: none;
+	position: relative;
+}
+.AwardsImgxs li{
+	float: left;
+	position: relative;
+}
+.aImg1xs img{
+	position: relative;
+	height: 220px;
+	top: 25px;
+
+}
+.aImg2xs img{
+	position: relative;
+	  height: 220px;
+	  top: 25px;
+	
+}
+.aImg3xs img{
+	position: relative;
+	height: 220px;
+    top: 40px;
+    left: 30px;
+}
+.aImg4xs img{
+	position: relative;
+	height: 220px;
+	top: 40px;
+    left: 55px;
+
+}

@@ -1,0 +1,500 @@
+.serviceheight{
+	height: 700px;
+	/*background-color: #a3a;*/
+  background-image: url("/images/3.png");
+  background-size: 100% 100%;
+	width: 100%;
+}
+.whiteclr{
+  color: #fff;
+}
+.demoTitle{
+	margin-left: 44%;
+    margin-top: 20%;
+}
+.mtop30{
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+.dotCircle{
+  height: 500px !important;
+  width: 500px !important;
+  border: 1px dashed ;
+  z-index: 1000;
+  border-radius: 100%;
+}
+
+
+
+
+/* images */
+
+
+
+/*=================================================================*/
+.ahex0{
+  position: relative;
+  -webkit-animation: slide-in-blurred-top 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation: slide-in-blurred-top 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+}
+.ahex1{position: relative;
+  -webkit-animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+.ahex2{position: relative;
+  -webkit-animation: slide-in-blurred-right 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation: slide-in-blurred-right 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+}
+.ahex3{position: relative;
+  -webkit-animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+          animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-left {
+  0% {
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-right {
+  0% {
+    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+            transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation slide-in-blurred-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-bottom {
+  0% {
+    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+/*dash ===== ======================== =============*/
+.dashBoxS{
+  list-style: none;
+    position: relative;
+    left: 35px;
+    height: 20px;
+    top: 20px;
+    margin-top: 20px;
+}
+.dashBoxS li{
+  float: left;
+}
+.dash1S,.dash3S {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.dash2S{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
+
+/*========================================*/
+
+.hex1{
+  background-image: url("/images/10.png");
+  height: 175px;
+  background-size: 100% 100%;
+
+}
+.hex2{
+  background-image: url("/images/11.png");
+  height: 175px;
+  background-size: 100% 100%;
+
+}
+.l1hex1{
+  position: relative;
+  right: 45px;
+    top: -100px;
+}
+.l1hex2{
+  position: relative;
+  left: 42px;
+    top: -100px;
+}
+.l1hex3{
+  position: relative;
+  top: -196px;
+}
+.l1hex4{
+  position: relative;
+      top: -293px;
+    right: 41px;
+}
+
+.l1hex5{
+  position: relative;
+      top: -293px;
+    left: 41px;
+}
+
+.l1hex6{
+  position: relative;
+      top: -390px;
+    
+}
+.hexaImg2{
+    position: relative;
+    top: 33px;
+    height: 50px;
+    left: 32.5%;
+  }
+
+  .hexaContext1{
+    margin-top: 43px;
+    font-weight: 900;
+    text-align: center;
+    left: 0px;
+}
+.hexaImg3{
+    position: relative;
+    top: 43px;
+    height: 50px;
+    left: 29%;
+  }
+  .hexaContext2{
+    margin-top: 48px;
+    font-weight: 900;
+    text-align: center;
+    left: 0px;
+}
+.hexaImg4{
+    position: relative;
+    top: 38px;
+    height: 48px;
+    left: 29.5%;
+  }
+.hexaContext3{
+    position: relative;
+    top: 70px;
+    font-weight: 900;
+    text-align: center;
+    left: 0px;
+
+}
+
+
+/*==================================================================================*/
+/*==================================================================================*/
+/*=============================  mobile view =======================================*/
+/*==================================================================================*/
+/*==================================================================================*/
+
+
+
+.xsmtop30{
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.xsdotCircle{
+  height: 500px !important;
+  width: 500px !important;
+  border: 1px dashed ;
+  z-index: 1000;
+  border-radius: 100%;
+}
+
+.xsserhex{
+  position: relative;
+  top: 50px;
+}
+/*=================================================================*/
+
+
+/*dash ===== ======================== =============*/
+.xsdashBoxS{
+  list-style: none;
+  position: relative; 
+  left: 10px;
+  top: 20px;
+}
+.xsdashBoxS li{
+  float: left;
+}
+.xsdash1S,.xsdash3S {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.xsdash2S{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
+
+/*========================================*/
+
+.xshex1{
+  background-image: url("/images/10.png");
+  height: 150px;
+  left: 5px;
+  background-size: 100% 100%;
+
+}
+.xshex2{
+  background-image: url("/images/11.png");
+  height: 150px;
+  background-size: 100% 100%;
+
+}
+.xsl1hex1{
+  position: relative;
+    right: 20px;
+    top: -91px;
+}
+.xsl1hex2{
+     position: relative;
+    left: 19px;
+    top: -92px
+}
+.xsl1hex3{
+  position: relative;
+    top: -182px;
+    left: 5px;
+}
+.xsl1hex4{
+  position: relative;
+    top: -273px;
+    right: 20px;
+}
+
+.xsl1hex5{
+  position: relative;
+    top: -274px;
+    left: 19px;
+}
+
+.xsl1hex6{
+  position: relative;
+     top: -364px;
+    
+}
+.xshexaImg2{
+    position: relative;
+    top: 43px;
+    height: 35px;
+    left: 30%;
+  }
+
+  .xshexaContext1{
+    margin-top: 48px;
+    font-weight: 900;
+    text-align: center;
+    left: 0px;
+    margin-left: -3px;
+    font-size: 13px;
+}
+.xshexaImg3{
+    position: relative;
+    top: 40px;
+    height: 35px;
+    left: 24%;
+  }
+  .xshexaContext2{
+    margin-top: 46px;
+    font-weight: 900;
+    margin-left: -1px;
+    text-align: center;
+    font-size: 13px;
+    left: 0px;
+}
+.xshexaImg4{
+    position: relative;
+    top: 38px;
+    height: 35px;
+    left: 27%;
+  }
+.xshexaContext3{
+    position: relative;
+    top: 70px;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    left: -5px;
+
+}

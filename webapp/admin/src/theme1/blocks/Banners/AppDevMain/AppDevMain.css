@@ -44,7 +44,7 @@
 	font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 }
 .b1h2Title{
@@ -54,7 +54,7 @@
     letter-spacing: 2.5px;
     font-weight: 1000;
     font-family: 'Roboto';
-    margin-left: -35px;
+    margin-left: -100px!important;
 
      /* font-family: 'Roboto', sans-serif !important;  */
 
@@ -69,14 +69,14 @@
     letter-spacing: 2.5px;
     font-weight: 1000;
     font-family: 'Roboto';
-    margin-left: -35px;
+    margin-left: -100px!important;
  
 }
 .b1h3Title{
 	font-size: 24px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 
     
@@ -85,8 +85,7 @@
     font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
+    margin-left: -100px!important;
 
 } 
 .b10h2Title{
@@ -95,8 +94,7 @@
     letter-spacing: 2.5px;
     font-weight: 1000;
     font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
-
+    margin-left: -100px!important;
 
 
 } 
@@ -106,7 +104,7 @@
     font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 
 }
@@ -116,7 +114,7 @@
     letter-spacing: 2.5px;
     font-weight: 1000;
     font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 
 }
@@ -124,8 +122,7 @@
    font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
+    margin-left: -100px!important;
 
 }
 .b5h2TitleB5{
@@ -134,7 +131,7 @@
     letter-spacing: 2.5px;
     font-weight: 1000;
     font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 
 }
@@ -145,8 +142,7 @@
 	font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
-
+    margin-left: -100px!important;
 }
 .h2TitleMobile{
 	font-size: 80px;
@@ -154,7 +150,7 @@
     letter-spacing: 2.5px;
     font-weight: 1000;
     font-family: 'Roboto', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 
 }
@@ -162,7 +158,7 @@
 	font-size: 24px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -35px;
+    margin-left: -100px!important;
 
 
 }

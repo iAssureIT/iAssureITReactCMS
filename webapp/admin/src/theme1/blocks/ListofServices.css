@@ -122,7 +122,8 @@
   text-align: center;
   letter-spacing: 2.0px;
   font-weight: bold;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
   padding-top: -10px;
 
 
@@ -200,14 +201,15 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.eprizeapps{
+.heprizeapps{
   height: 50px;
   width: 150px;
   margin-left: 84px;
- font-size: 20px;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
-  /* font-family: 'Roboto', sans-serif; */
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
 
 }
 .hexagon2{
@@ -220,6 +222,21 @@
   margin-top: 231px;
 
 }
+.h1services{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 125px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+
+
+}
+
 .hexagon3{
   background-image: url("/images/10.png");
   height: 270px; 
@@ -230,6 +247,29 @@
   margin-top: 468px;
 
 }
+.images2{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 64px;
+  margin-left: 124px;
+  background-image: url("/images/8.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hstaffaugmtion{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+
+
+} 
 .hexagon4{
   background-image: url("/images/10.png");
   height: 270px; 
@@ -240,6 +280,29 @@
   margin-top: 115px;
 
 }
+.images3{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/4.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hwebapps{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+
+}
+
 .hexagon5{
   background-image: url("/images/10.png");
   height: 270px; 
@@ -247,6 +310,28 @@
   position: absolute;
   left: 217px;
   margin-top: 351px;
+
+}
+.images4{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/9.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hbportals{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
 
 }
 .hexagon6{
@@ -259,6 +344,28 @@
   margin-top: 114px;
 
 }
+.images5{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/6.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hmapps{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+
+}
 .hexagon7{
   background-image: url("/images/10.png");
   height: 270px; 
@@ -267,6 +374,28 @@
   position: absolute;
   left: 639px;
   margin-top: 350px;
+
+}
+.images6{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/7.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.heportal{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
 
 }
 

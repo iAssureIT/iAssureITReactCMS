@@ -19,20 +19,13 @@ export default class ListofServices extends React.Component {
 					</div> */}
 					<div className="col-lg-2 col-lg-offset-5 services"><h1 className="services1">Services</h1></div>
 					<div className="col-lg-8 col-lg-offset-2 Hexagonwrapper">
-					  <div className="hexagon1"><div className="images1"></div><h1 className="eprizeapps">ENTERPRISE APPS</h1></div>
-					  <div className="hexagon2"></div>
-					  <div className="hexagon3"></div>
-					  <div className="hexagon4"></div>
-					  <div className="hexagon5"></div>
-					  <div className="hexagon6"></div>
-					  <div className="hexagon7"></div>
-
-
-
-
-						
-
-						
+						<div className="hexagon1"><div className="images1"></div><h1 className="heprizeapps">ENTERPRISE APPS</h1></div>
+						<div className="hexagon2"><h1 className="h1services">SERVICES</h1></div>
+						<div className="hexagon3"><div className="images2"></div><h1 className="hstaffaugmtion">STAFF AUGMEN-TATION</h1></div>
+						<div className="hexagon4"><div className="images3"></div><h1 className="hwebapps">WEB APPS</h1></div>
+						<div className="hexagon5"><div className="images4"></div><h1 className="hbportals">BUSINESS PORTALS</h1></div>
+						<div className="hexagon6"><div className="images5"></div><h1 className="hmapps">MOBILES APPS</h1></div>
+						<div className="hexagon7"><div className="images6"></div><h1 className="heportal">eCOMMERCE PORTAL</h1></div>
 					</div>
 
 

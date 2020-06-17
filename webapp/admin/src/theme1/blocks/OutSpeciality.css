@@ -1,33 +1,39 @@
 .OurSpecialityHeight{
-	height: 965px;
-	background-image: url("/images/12.png");
-	background-size: 100% 100%;
-	width: 100%;
+	height: 1210px;
+	background-image: url("/images/12.png"); 
+    background-size: 100% 100%;
+    margin-top: -340px;
+    
+    
 }
+
 .mtop111{
     position: relative;
     top:150px;
 }
 
 .whiteclr{
-  color: #fff;
+    font-size: 45px;
+   color: #fff;
+   font-family: 'Montserrat', sans-serif;
+
 }
 .demoTitle{
 	margin-left: 44%;
     margin-top: 20%;
 }
 .osDiv{
-	
+	/* background-color: red; */
 	height: 350px;
-	top: 85px;
+	top: -180px;
 	position: relative;
 }
 .bhead{
 	position: relative;
-	/*top: -100px;*/
+	
 }
 .col1{
-	height: 375px;
+	height: 427px;
 	background-color: #fff;
 	border-radius: 10px;
 }
@@ -37,20 +43,22 @@
 	border: 1px solid #aaa;
 	border-radius: 10px;
 }
+
 .iconCircle{
-	height: 115px;
-    position: relative;
-    width: 115px;
-    left: 27.50%;
-    top: 25px;
-    background-color: #effbee;
+	height: 130px;
+    position: relative;  
+    width: 130px; 
+    left: 33%; 
+    top: 41px; 
+     background-color: #e3f1e2; 
+    /* background-color: #b5ecb0; */
     border-radius: 50%;
 }
 .innerCircle{
 	position: relative;
     height: 45px;
-    top: 30px;
-    left: 35px;
+    top: 39px;
+    left: 41px;
 }
 .sptextBox1{
 	position: relative;
@@ -82,13 +90,17 @@
 /* ================================================================= */
 /*dash ===== ======================== =============*/
 .dashBoxOS{
-  list-style: none;
-  position: relative; 
-  left: 25px;
-  top: 0px;
+    height: 70px;
+    width: 300px;
+    list-style: none;
+    position: relative; 
+    left: 25px;
+    top: -268px;
+    
 }
 .dashBoxOS li{
   float: left;
+  
 }
 .dash1OS,.dash3OS {
     height: 1px;
@@ -104,6 +116,50 @@
     border: 2px solid #fff;
     border-radius: 10px;
 }
+.dash1OS{
+    margin-left:84px ;
+}
+.mainheading{
+    height: 100px;
+    width: 400px;
+    /* background-color: red; */
+    margin-top: -333px;
+}
+.text-center{
+    margin-top: 36px!important;
+    position: relative;
+    
+
+
+}
+.mheading{
+    font-weight:bold!important;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.paragraph{
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.rmore {
+    height: 100px;
+    width: 300px;
+    /* background-color: red; */
+     font-size: 15px;  
+    position: absolute;
+    top: 95px;
+    letter-spacing: 1.2px !important;
+    color: #376bff !important;
+    /* font-weight: bold; */
+    cursor: pointer;
+    left: 50px;
+    padding-top: 18px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
 /*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
 
 

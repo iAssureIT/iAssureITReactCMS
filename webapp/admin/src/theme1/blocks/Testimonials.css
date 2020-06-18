@@ -1,12 +1,13 @@
 .TestimonialsHT{
 	height: 700px!important;
-	/*background-color: #fff;*/
-	/*width: 100%;*/
-  background-image: url("/images/portbg.png");
-  background-color: #fefefe;
-  background-size: 100% 100%;
+	 background-color: red!important; 
+      background-image: url("/images/portbg.png"); 
+     background-color: #fefefe; 
+    background-size: 100% 100%;
+    margin-top: 500px;
   color: #555;
 }
+
 .hlimit600{
     height: 172px;
     text-align: justify-all;
@@ -26,7 +27,7 @@
 	height: 295px;
 	position: relative;
 	left: 25px;
-    top: 130px;
+    top: 4px;
 	background-color: #fff;
 	border: 1px solid #efefef;
 	border-radius: 10px;
@@ -34,9 +35,7 @@
 	box-shadow: 2px 2px 20px 5px #dad6d6;
 }
 
-.testimonialList{
 
-}
 
 
 
@@ -129,10 +128,13 @@
 
 /*dash ===== ======================== =============*/
 .dashBoxTm{
+    height: 100px;
+    width: 300px;
+    background-color: red;
   list-style: none;
   position: relative; 
   left: 25px;
-  top: 10px;
+  top: 508px;
 }
 .dashBoxTm li{
   float: left;
@@ -208,4 +210,19 @@
 }
 .bgw{
     background-color: #fff;
+}
+.testimonialscarousel{
+    margin-top: 300px!important;
+    
+}
+.clienttestmonials{
+    margin-top: 500px!important;
+    height: 100px;
+    width: 400px;
+    background-color: yellow;
+    left: 100px;
+}
+.carousal1{
+    margin-top: -10px;
+    background-color: #44e;
 }

@@ -6,133 +6,164 @@
 	background-image: url("/images/b1background.png");
     background-size: 100% 100%;
 }
+ .b1banerheight2{
+    height: 1100px!important;
+
+} 
+
 .b1bannerImg{
-    height: 317px;
-    margin-top: 95px;
-    width: 80% !important;
+    /* height: 450px; */
+     margin-top: 278px; 
+     width: 100% !important; 
 }
-.b1bannerImg2{
-	/*height: 445px;*/
-    margin-top: 62px;
-    width: 80% !important;
-}
-.b1bannerImg3{
-	/*height: 245px;*/
-    margin-top: 90px;
-    /*width: 100% !important;*/
-}
+ .b1bannerImg2{
+    height: 550px;
+     /* background-color: red;  */
+     margin-top: 190px!important; 
+     width: 100% !important; 
+} 
+ .b1bannerImg3{
+    height: 345px;
+    /* background-color: red; */
+    margin-top: 220px;
+    width: 90% !important;
+    margin-left: 150px;
+ }  
 .b1bannerImg4{
-    /*height: 400px;*/
-    margin-top: 72px;
-    width: 74% !important;
+     height: 450px; 
+    margin-top: 188px; 
+    
 }
 .b1bannerImg5{
-    /*height: 392px;*/
-    margin-top: 37px;
-    width: 84% !important;
+    /* height: 492px; */
+    margin-top: 100px;
+    /* width: 90% !important; */
+    /* background-position: 100% 100%; */
+    /* margin-left: 10px; */
 }
+.slide1{
+ height: 400px;
+ margin-top: 130px;
+}
+.slide2{
+    height: 400px;
+    margin-top: 170px;
+    /* background-color: red; */
+ }
+ .slide3{
+    height: 400px;
+    margin-top: 180px;
+    line-height: 3px;
+      
+ }
+ .slide4{
+  height: 400px;
+ margin-top: 180px;
+
+ }
+ .slide5{
+    height: 400px;
+   margin-top: 170px;
+   /* background-color: red; */
+  
+   }
+   
 .mtop100{
-	margin-top: 200px;
-	color: #fff;
+position: absolute; 
+color: #fff;
 }
 .mtop180{
-		margin-top: 180px;
-	color: #fff;
+margin-top: 180px;
+color: #fff;
 }
 .b1h1Title{
     
-	font-size: 40px;
+    font-size: 40px;
+    line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
+    margin-left: -50px!important;
+    padding-top: -400px!important;  
 
+}
+.h1applications{
+    margin-top: auto;
 }
 .b1h2Title{
     
     font-size: 80px;
     line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto';
-    margin-left: -100px!important;
-
-     /* font-family: 'Roboto', sans-serif !important;  */
-
-    /* font-family: 'Roboto', sans-serif; */
-
-
+    letter-spacing: 1px;
+    margin-left: -50px!important;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .b1h00{
     
     font-size: 80px;
     line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto';
-    margin-left: -100px!important;
+    letter-spacing: 1px;
+    margin-left: -50px!important;
+    font-family: 'Roboto Condensed', sans-serif;
+
  
 }
 .b1h3Title{
-	font-size: 24px;
+    font-size: 24px;
+    line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
-
+    margin-left: -50px!important;
 
     
 }
 .b10h1Title{
     font-size: 40px;
     letter-spacing: 1px;
+    line-height: 1;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
-
+    margin-left: -50px!important;
 } 
 .b10h2Title{
     font-size: 65px;
+    letter-spacing: 1px;
     line-height: 1;
-    letter-spacing: 2.5px;
     font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -100px!important;
-
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: -50px!important;
 
 } 
 
 /*0000000000000000000*/
 .b4h1TitleB4{
     font-size: 40px;
+    line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
-
+    margin-left: -50px!important;
 
 }
 .b4h2TitleB4{
     font-size: 80px;
-    line-height: 1;
-    letter-spacing: 2.5px;
+     line-height: 1; 
+    letter-spacing: 1px;
     font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -100px!important;
-
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: -50px!important;
 
 }
 .b5h1TitleB5{
    font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
-
+    margin-left: -50px!important;
 }
 .b5h2TitleB5{
     font-size: 80px;
     line-height: 1;
-    letter-spacing: 2.5px;
+    letter-spacing: 1px;
     font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -100px!important;
-
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: -50px!important;
 
 }
 
@@ -142,24 +173,20 @@
 	font-size: 40px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
-}
+    margin-left: -40px!important;}
 .h2TitleMobile{
 	font-size: 80px;
     line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;
-    font-family: 'Roboto', sans-serif;
-    margin-left: -100px!important;
-
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: -40px!important;
 
 }
 .h3TitleMobile{
 	font-size: 24px;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -100px!important;
-
+    margin-left: -40px!important;
 
 }
 
@@ -192,7 +219,7 @@
 .homecarousel .owl-nav button.owl-prev{
     position: absolute;
     left: 0px;
-    top: -205px;
+    top: -250px;
 	z-index: 25;
     width: 45px !important;
     height: 45px !important;
@@ -211,7 +238,7 @@
  .homecarousel .owl-nav  button.owl-next{
     position: absolute;
     right:  0px;
-    top: -205px;
+    top: -250px;
     background: transparent !important;
     border-radius: 0px !important;
  	width: 45px !important;
@@ -225,7 +252,7 @@
     padding: 0 !important;
     font: inherit;
 } 
-.homecarousel.owl-theme .owl-dots .owl-dot span{
+/* .homecarousel.owl-theme .owl-dots .owl-dot span{
     
     width: 10px;
     height: 10px;
@@ -233,11 +260,8 @@
     display: block;  
     transition: opacity 200ms ease; 
     border-radius: 30px; 
-}
- .homecarousal1{
-    margin-top: 122px!important;
-    margin-left: 45px;
-} 
+} */
+ 
 /*.homecarousel .owl-nav  button.owl-next:hover{
 	background-color: #44e!important;
 }*/
@@ -262,7 +286,8 @@
 /*   mobile view*/
 /*=====================================================================================*/
 .mtop100xs{
-	margin-top: 109px;
+    margin-top: 109px;
+    
 	color: #fff;
 	position: relative;
 	right: 15px;

@@ -53,28 +53,28 @@ export default class Testimonials extends React.Component {
 		return (
 				<div className="container-fluid nopadding">
 					<div className="TestimonialsHT container-fluid hidden-sm hidden-xs">
-						<div className="col-lg-12 col-md-12">
+						{/* <div className="col-lg-12 col-md-12">
 							<ul className="dashBoxTm col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
 							  <li className="dash1Tm"></li>
 							  <li className="dash2Tm"></li>
 							  <li className="dash3Tm"></li>
-							</ul>
-						</div>
-						<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-							<div className="text-center">
+							</ul> */}
+						{/* </div> */}
+						{/* <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
+							 <div className=" col-lg-4 col-lg-offset-4 text-center clienttestmonials">
 
 								<h1>
 									<b>Client Testimonials</b>
 								</h1>
-							</div>
-						</div>
+							</div> 
+						</div> */}
 						{/*<div id="mercury" class="orbit">
 					        <div class="planet"></div> 
 					      </div>*/}
 						<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
 							<div className="col-lg-9 col-md-9">
-								<div className="col-lg-10 col-md-11  testimonialBox col-lg-offset-1">
-									<OwlCarousel className="owl-theme arrows owl-carousel" loop  autoplay={true} animateOut={false} animateIn={false} autoplaySpeed={500} items={1} nav dots={false}>
+								{/* <div className="col-lg-10 col-md-11  testimonialBox col-lg-offset-1"> */}
+									{/* <OwlCarousel className="owl-theme arrows owl-carousel" loop  autoplay={true} animateOut={false} animateIn={false} autoplaySpeed={500} items={1} nav dots={false}>
 										{
 					                		data && data.length > 0 ?
 							      				data.map((data, index)=>{
@@ -101,10 +101,10 @@ export default class Testimonials extends React.Component {
 		                				}				
 									
 									 
-									</OwlCarousel>
+									</OwlCarousel> */}
 
 
-								</div>
+								{/* </div> */}
 							</div>
 						</div>						
 					</div>

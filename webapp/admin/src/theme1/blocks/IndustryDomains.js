@@ -5,71 +5,71 @@ export default class IndustryDomains extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state={
-        	allData:[
-        			  { 
-					    "_id": 1,
-					    "industryName": "Finance Industry",
-					    "industryImg": "/images/18.png",
-					  },
-					  {
-					    "_id": 2,
-					    "industryName": "Manufactuering Industry",
-					    "industryImg": "/images/19.png",
-    				  },
-					  {
-					    "_id": 3,
-					    "industryName": "Transport Industry",
-					    "industryImg": "/images/20.png",
+		// this.state={
+        // 	allData:[
+        // 			  { 
+		// 			    "_id": 1,
+		// 			    "industryName": "Finance Industry",
+		// 			    "industryImg": "/images/18.png",
+		// 			  },
+		// 			  {
+		// 			    "_id": 2,
+		// 			    "industryName": "Manufactuering Industry",
+		// 			    "industryImg": "/images/19.png",
+    	// 			  },
+		// 			  {
+		// 			    "_id": 3,
+		// 			    "industryName": "Transport Industry",
+		// 			    "industryImg": "/images/20.png",
 					    
-					  },
-					   { 
-					    "_id": 4,
-					    "industryName": "Healthcare Industry",
-					    "industryImg": "/images/21.png",
-					  },
-					  {
-					    "_id": 5,
-					    "industryName": "Real Estate Industry",
-					    "industryImg": "/images/22.png",
-    				  },
-					  {
-					    "_id": 6,
-					    "industryName": "Education Industry",
-					    "industryImg": "/images/23.png",
+		// 			  },
+		// 			   { 
+		// 			    "_id": 4,
+		// 			    "industryName": "Healthcare Industry",
+		// 			    "industryImg": "/images/21.png",
+		// 			  },
+		// 			  {
+		// 			    "_id": 5,
+		// 			    "industryName": "Real Estate Industry",
+		// 			    "industryImg": "/images/22.png",
+    	// 			  },
+		// 			  {
+		// 			    "_id": 6,
+		// 			    "industryName": "Education Industry",
+		// 			    "industryImg": "/images/23.png",
 					    
-					  },
-					   { 
-					    "_id": 7,
-					    "industryName": "eCommerce Industry",
-					    "industryImg": "/images/24.png",
-					  },
-					  {
-					    "_id": 8,
-					    "industryName": "Travel Industry",
-					    "industryImg": "/images/25.png",
-    				  },
-					  {
-					    "_id": 9,
-					    "industryName": "Startup Industry",
-					    "industryImg": "/images/26.png",
+		// 			  },
+		// 			   { 
+		// 			    "_id": 7,
+		// 			    "industryName": "eCommerce Industry",
+		// 			    "industryImg": "/images/24.png",
+		// 			  },
+		// 			  {
+		// 			    "_id": 8,
+		// 			    "industryName": "Travel Industry",
+		// 			    "industryImg": "/images/25.png",
+    	// 			  },
+		// 			  {
+		// 			    "_id": 9,
+		// 			    "industryName": "Startup Industry",
+		// 			    "industryImg": "/images/26.png",
 					    
-					  }
+		// 			  }
 
 
 
 
 
 
-        	]
+        // 	]
       
       
-    	}
+    	// }
 	}
 
 	render() {
-		var data = this.state.allData;
-    	console.log("all data ",data);
+		// var data = this.state.allData;
+    	// console.log("all data ",data);
 		return (
 			<div className=" container-fluid nopadding">
 				<div className="industryDomainsHt container-fluid hidden-sm hidden-xs">
@@ -81,23 +81,123 @@ export default class IndustryDomains extends React.Component {
 						</ul>
 					</div>
 					<div className="col-lg-12 col-md-12 col-xl-12 ">
-						<div className="text-center">
-							<h1>
+						<div className="col-lg-4 col-lg-offset-4 text-center industrydomain">
+							<h1 >
 								<b>Industry Domains</b>
+							</h1>
+						</div>
+					</div>
+					<div className="col-lg-12 col-md-12 col-xl-12 ">
+						<div className="col-lg-2 col-lg-offset-5 text-center weserve">
+							<h1 >We Serve
 							</h1>
 						</div>
 					</div>
 					<div className="col-lg-12 col-md-12 col-xl-12">
 						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 iDomainBlock">
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+									<img src="/images/50.png" alt="18" className="center"/> 
+									<div className="text-center htitle">
+										<h3>Finance Industry</h3>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								  <img src="/images/51.png" alt="18" className="center"/> 
+								  <div className="text-center htitle">
+										<h3>Manufactuering Industry</h3>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/52.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Transport Industry</h3>
+								</div>
+							</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/53.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Healthcare Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/54.png" alt="18" className="center"/>
+								<div className="text-center htitle">
+										<h3>Real Estate Industry</h3>
+									</div> 
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/55.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Education Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/56.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>eCommerce Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/57.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Travel Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/58.png" alt="18" className="center"/>
+								<div className="text-center htitle">
+										<h3>Start Up Industry</h3>
+									</div> 
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+							
+							
 						
-							{
+							{/* {
 		                		data && data.length > 0 ?
 				      				data.map((data, index)=>{
 		                					return(
 	                							<div key={index} className="col-lg-4 col-md-4">
 													<div className="idcol1">
 														<div className="col-lg-5 col-md-5 row">
-															<img src={data.industryImg} alt="enteprise" className="innerDomain1"/>
+															<img src={data.industryImg} alt="enteprise" className="innerDomain1"/> 
 														</div>
 														<div className="col-md-7 col-lg-7 row">
 															<h3 className="domainTitle text-center">{data.industryName}</h3>
@@ -109,11 +209,11 @@ export default class IndustryDomains extends React.Component {
 	                				:
 	                				null
 		                		}				
-						                		
+						                		 */}
 								
 							
-						</div>
-					</div>
+						
+					
 				</div>
 			{/*=========== mobile view ================================*/}
 				<div className="xsindustryDomainsHt container-fluid hidden-lg hidden-md">

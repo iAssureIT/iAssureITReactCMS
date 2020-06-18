@@ -15,17 +15,17 @@ export default class AppDevMain extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="b1banerheight container-fluid ">
+				<div className="b1banerheight container-fluid b1banerheight2 ">
 					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
 						<div className="col-lg-12 col-md-12 hidden-sm hidden-xs logoBox">
 							<img className="logoIMG img-responsive" src="./images/Logo.png" alt="logo"/>
 						</div>
 						<div className="container-fluid">
-						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715 homecarousal1 " dots={true}  autoplay={true} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1}  >
+						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715 homecarousal1 "loop nav={true}  autoplay={false} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1} dots={false} >
 							<div className="item active ">
-								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
+								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd slide1">
 									<div className="mtop100">
-										<span className="b1h1Title">APPLICATIONS
+										<span className="b1h1Title h1applications">APPLICATIONS
 										</span><br/>
 										<span className="b1h2Title">DEVELOPMENT <span className="b1h00">MAINTENANCE</span> 
 										</span><br/>
@@ -33,12 +33,12 @@ export default class AppDevMain extends React.Component {
 										</span>
 									</div>	
 								</div>
-								<div className=" col-lg-5 col-md-5 hidden-sm hidden-xs row">
+								<div className=" col-lg-4 col-md-4 hidden-sm hidden-xs row ">
 									<img className="b1bannerImg img-responsive" src="./images/b1graphic.png" alt="Bannerpng"/>
 								</div>
 							</div>
 							<div className="item row">
-								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
+								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd slide2">
 									<div className="mtop180">
 										<span className="h1TitleMobile">MOBILE
 										</span><br/>
@@ -53,7 +53,7 @@ export default class AppDevMain extends React.Component {
 								</div>
 							</div>
 							<div className="item">
-								<div className="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
+								<div className="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd slide3">
 									<div className="mtop100">
 										<span className="b10h1Title">AWARD WINNING
 										</span><br/>
@@ -68,7 +68,7 @@ export default class AppDevMain extends React.Component {
 								</div>
 							</div>
 							<div className="item">
-								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
+								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd slide4">
 									<div className="mtop100">
 										<span className="b4h1TitleB4">STAFF
 										</span><br/>
@@ -82,7 +82,7 @@ export default class AppDevMain extends React.Component {
 								</div>
 							</div>
 							<div className="item">
-								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
+								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd slide5">
 									<div className="mtop100">
 										<span className="b5h1TitleB5">CUSTOMISED ECOMMERCE 
 										</span><br/>

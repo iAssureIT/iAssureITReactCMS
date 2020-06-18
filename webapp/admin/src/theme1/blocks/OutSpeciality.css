@@ -106,18 +106,18 @@
     height: 1px;
     width: 20px;
     margin:2px;
-    border: 2px solid #fff;
+    border: 2px solid #00ccff;
     border-radius: 10px;
 }
 .dash2OS{
     height: 1px;
     width: 50px;
     margin:2px;
-    border: 2px solid #fff;
+    border: 2px solid #00ccff;
     border-radius: 10px;
 }
 .dash1OS{
-    margin-left:84px ;
+    margin-left:63px ;
 }
 .mainheading{
     height: 100px;

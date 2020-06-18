@@ -120,18 +120,19 @@
 .services1{
   font-size: 45px!important;
   text-align: center;
-  letter-spacing: 2.0px;
+  letter-spacing: 1.0px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
 
-  padding-top: -10px;
+  
 
 
 }
 .Hexagonwrapper{
   height: 998px;
-   /* background-color: #ccc;  */
-   margin-top: -20px;
+    /* background-color: #ccc;   */
+    margin-top: 70px; 
 }
 
 /* .hexagon {

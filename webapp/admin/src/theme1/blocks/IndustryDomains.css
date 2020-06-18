@@ -1,6 +1,6 @@
 .industryDomainsHt{
-	height: 700px;
-	/*background-color: #f1f1f1;*/
+	height: 900px;
+	/* background-color: #f1f1f1; */
 	width: 100%;
 }
 .demoTitle{
@@ -33,22 +33,41 @@
 	width: 25px;
 
 }
-
+/* ---------------------------------blocksection--------------------------------------------- */
 .iDomainBlock{
-	height: 600px;
-	/*background-color: #aaa;*/
+	height: 700px;
+	/* background-color: #ddd; */
 	position: relative;
 }
+
 .idcol1{
-	height: 130px;
+	height: 205px;
 	background-color: #fff;
-	border-radius: 0px 25px;
+	border-radius: 0px 25px; 
     margin-bottom: 25px;
     padding: 5px;
 	position: relative;
-	top: 25px;
+	 top: 4px; 
 	box-shadow: 2px 2px 20px 5px #dad6d6;
 }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 28%;
+    margin-top: 20px;
+  }
+  .htitle{
+    height: 100px;
+    position: relative;
+    margin-top: -14px!important;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: -50px;
+    cursor: pointer;
+
+  }
+/* ---------------------------------blocksection--------------------------------------------- */
+
 .mtop25{
 	margin-top: 25px;
 }
@@ -170,6 +189,9 @@
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
+.dash1ID{
+    margin-left: 58px;
+}
 .dash2ID{
     height: 1px;
     width: 50px;
@@ -177,6 +199,23 @@
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
+.industrydomain{
+    height: 100px;
+    margin-top: 1px!important;  
+    font-family: 'Montserrat', sans-serif;
+
+    
+    
+}
+.weserve{
+    height: 100px;
+    margin-top:-50px!important;
+    padding-top: 10px!important;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
 /*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
 /*===================================================================================*/
 /*===================================================================================*/
@@ -204,9 +243,7 @@
     margin-bottom: 7px;
     box-shadow: 2px 2px 20px 5px #dad6d6;
 }
-.xsmtop25{
-    
-}
+
 .xsinnerDomain{
     position: relative;
     height: 45px;

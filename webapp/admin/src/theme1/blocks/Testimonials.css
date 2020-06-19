@@ -1,17 +1,20 @@
 .TestimonialsHT{
-	height: 700px!important;
-	 background-color: red!important; 
-      background-image: url("/images/portbg.png"); 
-     background-color: #fefefe; 
+	height: 790px!important;
+	background-color: red!important; 
+    background-image: url("/images/portbg.png"); 
+    background-color: #fefefe; 
     background-size: 100% 100%;
-    margin-top: 500px;
-  color: #555;
+    margin-top: 13px;  
+    color: #555;
 }
 
 .hlimit600{
-    height: 172px;
+    font-size: 22px;
+     height: 172px; 
     text-align: justify-all;
     text-overflow: ellipsis;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 .hlimit600xs{
        height: 272px;
@@ -24,21 +27,16 @@
     margin-top: 20%;
 }
 .testimonialBox{
-	height: 295px;
+	height: 328px;
 	position: relative;
-	left: 25px;
-    top: 4px;
+    left: auto; 
+    right: auto;
+    /* top: 94px; */
 	background-color: #fff;
 	border: 1px solid #efefef;
 	border-radius: 10px;
-	
 	box-shadow: 2px 2px 20px 5px #dad6d6;
 }
-
-
-
-
-
 .testimonialBoxxs .owl-theme .item{
 	height: 295px !important;
 }
@@ -80,7 +78,7 @@
    left: 250px;
     background: transparent !important;
     border-radius: 0px !important;
- width: 45px !important;
+    width: 45px !important;
     height: 45px !important;
     background-color: #376bff !important;
     border-radius: 52%!important;
@@ -121,20 +119,24 @@
     line-height: 1.25;
     position: relative;
     top: 5px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 .nmclr{
-	color: #376bff;
+    color: #376bff;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 /*dash ===== ======================== =============*/
 .dashBoxTm{
-    height: 100px;
-    width: 300px;
-    background-color: red;
-  list-style: none;
-  position: relative; 
-  left: 25px;
-  top: 508px;
+height: 100px;
+/* width: 300px; */
+/* background-color: red; */
+list-style: none;
+position: relative; 
+left: 25px;
+top: -19px; 
 }
 .dashBoxTm li{
   float: left;
@@ -145,6 +147,9 @@
     margin:2px;
     border: 2px solid #00ccff;
     border-radius: 10px;
+}
+.dash1Tm{
+    margin-left: 63px;
 }
 .dash2Tm{
     height: 1px;
@@ -216,11 +221,14 @@
     
 }
 .clienttestmonials{
-    margin-top: 500px!important;
+    margin-top: -111px!important;
     height: 100px;
     width: 400px;
-    background-color: yellow;
+    /* background-color: yellow; */
     left: 100px;
+    font-family: 'Montserrat', sans-serif;
+
+    
 }
 .carousal1{
     margin-top: -10px;

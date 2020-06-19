@@ -308,12 +308,11 @@ color: #fff;
 .h3Titlexs{
 	font-size: 27px;
 	text-align: center;
-
     letter-spacing: 1px;
 }
 
 .abbannerImgxs{
-
+height: 0px;
 }
 
 .logoxsb1{
@@ -343,8 +342,30 @@ position: absolute;
 
 }
 
-/*=====================================================================================*/
-/*  / mobile view*/
+/*====================================*Mobile view=================================================*/
+    /* @media screen and (min-width: 768px) {
+    .b1h1Title {
+      font-size: 30px; 
+      padding-left: 50px;
+      position:absolute;
+      
+     }    */
+     /* .b1h2Title,.b1h00{
+         font-size: 40px;
+         margin-left: 50px!important;
+     }
+     .b1h3Title{
+         font-size: 15px;
+         margin-left: 60px!important;
+     } */
+    /* }     */
+   
+
+
+
+
+
+
 /*=====================================================================================*/
 
 

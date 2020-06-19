@@ -5,22 +5,28 @@ export default class ListofServices extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.state={
+			
+		}
 	}
 	render() {
 		return (
 			<div className="container-fluid nopadding">
-				<div className="listofServicesBox hidden-xs hidden-sm">
-					 {/* <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
-						<ul className="dashBoxLs col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-5">
+				<div className="listofServicesBox">
+					  <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
+						<ul className="dashBoxLs col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-sm-12 col-xs-12">
 						  <li className="dash1Ls"></li>
 						  <li className="dash2Ls"></li>
 						  <li className="dash3Ls"></li>
 						</ul>
-					</div>  */}
-					<div className="col-lg-2 col-lg-offset-5 services">
-						<h1 className="services1">Services</h1>
+					</div> 
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+						<div className="col-lg-2 col-lg-offset-5  col-md-2 col-md-offset-5 services">
+							<h1 className="services1">Services</h1>
+						</div>
 					</div>
-					<div className="col-lg-8 col-lg-offset-2 Hexagonwrapper">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div className="col-lg-8 col-lg-offset-2 col-md-8 col-lg-offset-2 col-sm-12 col-xs-12 Hexagonwrapper">
 						<div className="hexagon1">
 						   <div className="images1"></div>
 						   <h1 className="heprizeapps">ENTERPRISE APPS</h1>
@@ -48,6 +54,8 @@ export default class ListofServices extends React.Component {
 							<div className="images6"></div>
 							<h1 className="heportal">eCOMMERCE PORTAL</h1>
 						</div>
+					</div>
+
 					</div>
 
 
@@ -102,8 +110,12 @@ export default class ListofServices extends React.Component {
 					 	</div>
 					</div> */}
 				</div>
+				</div>
+		);
+	}
+}
 		{/*=========================================== mobile view ==========*/}
-
+{/* 
 			<div className="listofServicesBoxxs hidden-lg hidden-md">
 				<div className="hidden-lg hidden-md col-sm-12 col-xs-12 ">
 					<ul className="dashBoxLsxs col-sm-5 col-sm-offset-5 col-xs-7 col-xs-offset-2">
@@ -160,9 +172,6 @@ export default class ListofServices extends React.Component {
 						</div>
 				 	</div>
 				</div>
-			</div>
+			</div> */}
 
-		</div>
-		);
-	}
-}
+

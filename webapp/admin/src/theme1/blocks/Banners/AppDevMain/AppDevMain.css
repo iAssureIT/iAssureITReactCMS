@@ -7,14 +7,15 @@
     background-size: 100% 100%;
 }
  .b1banerheight2{
-    height: 1100px!important;
+    height: 1170px!important;
 
 } 
+
 
 .b1bannerImg{
     /* height: 450px; */
      margin-top: 278px; 
-     width: 100% !important; 
+     width: 75% !important; 
 }
  .b1bannerImg2{
     height: 550px;
@@ -77,33 +78,34 @@ margin-top: 180px;
 color: #fff;
 }
 .b1h1Title{
-    
+    margin-top: 20px; 
     font-size: 40px;
     line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -50px!important;
-    padding-top: -400px!important;  
-
+    margin-left: -82px!important;
 }
 .h1applications{
     margin-top: auto;
 }
-.b1h2Title{
-    
-    font-size: 80px;
+
+.b1h2Title{    
+    font-size: 60px;
     line-height: 1;
     letter-spacing: 1px;
-    margin-left: -50px!important;
+    margin-left: -96px!important;
     font-family: 'Roboto Condensed', sans-serif;
+    margin-top: -16px;
 }
+
 .b1h00{
     
-    font-size: 80px;
+    font-size: 60px;
     line-height: 1;
     letter-spacing: 1px;
-    margin-left: -50px!important;
+    margin-left: -96px!important;
     font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
 
  
 }
@@ -112,7 +114,8 @@ color: #fff;
     line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: -50px!important;
+    margin-left: -100px!important;
+    margin-top: -16px;
 
     
 }
@@ -149,6 +152,7 @@ color: #fff;
     font-weight: 1000;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: -50px!important;
+    margin-top: -20px;
 
 }
 .b5h1TitleB5{
@@ -164,6 +168,7 @@ color: #fff;
     font-weight: 1000;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: -50px!important;
+    margin-top: -20px;
 
 }
 
@@ -180,6 +185,8 @@ color: #fff;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: -40px!important;
+    margin-top: -25px;
+
 
 }
 .h3TitleMobile{
@@ -187,6 +194,8 @@ color: #fff;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: -40px!important;
+    margin-top: -16px;
+
 
 }
 
@@ -286,29 +295,41 @@ color: #fff;
 /*   mobile view*/
 /*=====================================================================================*/
 .mtop100xs{
-    margin-top: 109px;
     
-	color: #fff;
+    color: #fff;
 	position: relative;
-	right: 15px;
+    right: 25px!important; 
+    margin-top: 32px!important;
 }
 .h1Titlexs{
-	font-size: 36px;
-	letter-spacing: 1px;
-	text-align: center;
+	font-size: 29px!important;
+	line-height: 1;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 61px!important;
+    font-weight: 900;
+    
+    
 }
 .h2Titlexs{
-	font-size: 52px;
+	font-size: 45px!important;
     line-height: 1;
     letter-spacing: 2.5px;
     font-weight: 1000;
-	text-align: center;
+    text-align: center;
+    margin-left: 35px!important;
+    font-family: 'Roboto Condensed', sans-serif;
+
 
 }
 .h3Titlexs{
-	font-size: 27px;
-	text-align: center;
+	font-size: 38px!important;
+	text-align: center!important;
     letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center!important;
+
+
 }
 
 .abbannerImgxs{
@@ -336,36 +357,111 @@ position: absolute;
 }
 
 .bannerImgxs{
-	    height: 285px;
-    margin-left: 30px;
+	height: 285px!important;
+    margin-left: 63px!important;
+    margin-top: -75px!important;
 	
 
 }
+#homecarouselMobile.owl-nav button.owl-prev{
+    position: absolute;
+    left: 0px;
+    /* top: -250px; */
+	z-index: 25;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: #eee !important;
+    border-radius: 52%!important;
+    /* margin-left: -7px; */
+    width: 25px;
+    height: 32px;  
+    color: #000;
+    text-align: center;
+    border: none !important;
+    font-size: 32px!important;
+    padding: 0 !important;
+    font: inherit;
+}
+ #homecarouselMobile.owl-nav  button.owl-next{
+    position: absolute;
+    right:  0px;
+    top: -250px;
+    background: transparent !important;
+    border-radius: 0px !important;
+ 	width: 45px !important;
+    height: 45px !important;
+    background-color: #eeeeee !important;
+    border-radius: 52%!important;
+    color: #000;
+    text-align: center;
+    border: none !important;
+    font-size: 32px!important;
+    padding: 0 !important;
+    font: inherit;
+}
+/* ==========================================Media Query======================================================== */
 
-/*====================================*Mobile view=================================================*/
-    /* @media screen and (min-width: 768px) {
-    .b1h1Title {
-      font-size: 30px; 
-      padding-left: 50px;
-      position:absolute;
-      
-     }    */
-     /* .b1h2Title,.b1h00{
-         font-size: 40px;
-         margin-left: 50px!important;
+@media (min-width: 992px) { 
+
+ }
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+ }
+
+ @media (max-width: 767px) {
+    
+     .logoimg{
+        
+            position: absolute;
+            top: 45px;
+            left: -10px !important; 
+           
+    } 
+    .b1h1Title{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    } 
+
+    .b1h2Title{    
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px; 
+    }
+    .logoIMG{
+        /* position: absolute; */
+        top: 31px;
+        left: 10px !important;
+       
+    }
+    .b1h00{
+        font-size: 29px;
+        margin-left: 28px!important;
+         margin-top: 6px; 
+    }
+    .b1h3Title{
+        font-size: 21px;
+        margin-left: 22px!important;
+        margin-top: -14px;
+        
      }
-     .b1h3Title{
-         font-size: 15px;
-         margin-left: 60px!important;
-     } */
-    /* }     */
-   
+     .b1bannerImg{
+        /* height: 450px; */
+         margin-top: -195px; 
+         width: 80%!important;
+         margin-left: 46px;
+          
+    }
+    
+    
+   }
 
 
 
 
 
-
-/*=====================================================================================*/
 
 

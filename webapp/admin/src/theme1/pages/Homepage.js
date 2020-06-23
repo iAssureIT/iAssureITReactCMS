@@ -59,24 +59,24 @@ export default class Homepage extends React.Component {
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>{this.state.title}</title>
 				</Helmet>
-				{/*<homeCarousel/>*/}
-				{/*<Header />*/}
-				<Headernew/>
-				<ContactModal/>
-				{/*<Banner />*/}
+				 {/* <homeCarousel/>  */}
+				{/* <Header /> */}
+				   <Headernew/>   
+				 {/* <ContactModal/>   */}
+				 {/* <Banner />  */}
 				<HomeCarousel/>
 				{/*	*/}
 				{/*<Services />*/}
-				<ListofServices />
+				{/* <ListofServices /> */}
 
-				<OutSpeciality />
-				<IndustryDomains />
+				{/* <OutSpeciality /> */}
+				{/* <IndustryDomains /> */}
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				<Testimonials />
-				<AddressOnGoogleMap />
-				<Footer />
+				{/* <Testimonials /> */}
+				{/* <AddressOnGoogleMap /> */}
+				{/* <Footer /> */}
 			</div>
 		);
 	}

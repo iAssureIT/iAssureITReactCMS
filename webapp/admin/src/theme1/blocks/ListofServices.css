@@ -45,7 +45,7 @@
     border-radius: 10px;
 }
 .dash1Ls{
-  margin-left: 66px;
+  margin-left: 18px;
 }
 .dash2Ls{
     height: 1px;
@@ -116,8 +116,17 @@
 /* ---------------------------**** heading-------------------------------------------- */
 .services{
   height: 100px;
-  margin-top: -65px!important;
-  margin-left: 740px;
+   /* background-color: #00ccff;  */
+  font-size: 45px!important;
+  text-align: center;
+  letter-spacing: 1.0px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: -50px;
+  margin-top: -13px;
+ 
+  /* margin-top: -65px!important; */
+  /* margin-left: 740px; */
   
 }
 .services1{
@@ -134,7 +143,7 @@
 }
 .Hexagonwrapper{
   height: 998px;
-    /* background-color: #ccc;   */
+     /* background-color: #ccc;    */
     margin-top: 70px; 
 }
 

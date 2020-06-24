@@ -28,7 +28,78 @@ export default class Services extends React.Component {
         	$('#ahex6').removeClass('ahex1');
         	$('#ahex7').removeClass('ahex2');
         	$('#ahex8').removeClass('ahex3');           
-        }
+        }<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
+						<ul className="xsdashBoxS col-sm-7 col-sm-offset-5 col-xs-7 col-xs-offset-3">
+						  <li className="xsdash1S "></li>
+						  <li className="xsdash2S"></li>
+						  <li className="xsdash3S"></li>
+						</ul>
+					</div>
+					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
+						<div className="text-center">
+							<h1 className="xsmtop30">
+								<b>Services</b>
+							</h1>
+						</div>
+						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4  hidden-lg hidden-md xshex1">
+							<div className="col-xs-12 col-sm-12 ">
+								<img src="./images/5.png" className="xshexaImg2" alt="webAppImg"/>
+								<h4 className="xshexaContext1 text-center">ENTERPRISE<br/> APPS</h4>
+							</div>
+						</div>
+						
+							<div className="hidden-lg hidden-md col-sm-6 col-xs-6 xsl1hex1">
+								<div className="row">
+									<div className="hidden-lg hidden-md col-sm-10 col-xs-12 xshex1  pull-right">
+										<div className="col-xs-12 col-sm-12">
+											<img src="./images/4.png" className="xshexaImg3" alt="webAppImg"/>
+											<h4 className="xshexaContext2">WEB APPS</h4>
+										</div>	
+									</div>
+								</div>
+							</div>
+							<div className="hidden-lg hidden-md col-xs-6 col-sm-6 xsl1hex2">
+								<div className="row">
+									<div className="hidden-lg hidden-md col-sm-10 col-xs-12 pull-left xshex1">
+										<div className="col-xs-12 col-sm-12">
+											<img src="./images/6.png" className="xshexaImg4" alt="webAppImg"/>
+											<h4 className="xshexaContext2">MOBILE <br/>APPS</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4 hidden-lg hidden-md xshex2 xsl1hex3">
+							<div className="col-xs-12 col-sm-12">
+								<h4 className="xshexaContext3">SERVICES</h4>
+							</div>
+						</div>
+						
+							<div className="col-xs-6 col-sm-6 hidden-lg hidden-md xsl1hex4">
+								<div className="row">
+									<div className="col-xs-12  col-sm-10 hidden-lg hidden-md xshex1 pull-right">
+										<div className="col-xs-12 col-sm-12">
+												<img src="./images/7.png"className="xshexaImg3" alt="webAppImg"/>
+												<h4 className="xshexaContext2">BUSINESS<br/> PORTAL</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="col-xs-6 col-sm-6 hidden-lg hidden-md xsl1hex5">
+								<div className="row">
+									<div className="col-xs-12  col-sm-10 hidden-lg hidden-md xshex1 pull-left">
+										<div className="col-xs-12 col-sm-12">
+											<img src="./images/8.png" className="xshexaImg3" alt="webAppImg"/>
+											<h4 className="xshexaContext2">STAFF AUGME<br/>NTATION</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4 hidden-lg hidden-md xshex1 xsl1hex6">
+							<div className="col-xs-12 col-sm-12">
+								<img src="./images/9.png" className="xshexaImg2" alt="webAppImg"/>
+								<h4 className="xshexaContext1">eCOMMERCE <br/>PORTAL</h4>
+							</div>
+					
     	});*/
 	}
 

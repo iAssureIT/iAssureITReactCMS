@@ -22,11 +22,11 @@ export default class ListofServices extends React.Component {
 					</div> 
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
 						<div className="col-lg-2 col-lg-offset-5  col-md-2 col-md-offset-5 services">
-							<h1 className="services1">Services</h1>
+							Services
 						</div>
 					</div>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div className="col-lg-8 col-lg-offset-2 col-md-8 col-lg-offset-2 col-sm-12 col-xs-12 Hexagonwrapper">
+					
+					<div className="col-lg-12  col-md-12 col-sm-12 col-xs-12 Hexagonwrapper">
 						<div className="hexagon1">
 						   <div className="images1"></div>
 						   <h1 className="heprizeapps">ENTERPRISE APPS</h1>
@@ -56,7 +56,9 @@ export default class ListofServices extends React.Component {
 						</div>
 					</div>
 
-					</div>
+					
+
+					
 
 
 

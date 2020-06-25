@@ -353,18 +353,28 @@
 
 }
 
+/* ======================================Media Query=================================================== */
+
 
 /*==================================================================================*/
 /*==================================================================================*/
 /*=============================  mobile view =======================================*/
 /*==================================================================================*/
 /*==================================================================================*/
-
+.mobilewrapper{
+  height: 532px;
+   /* background-color: red;  */
+   padding: 0px;
+   margin: 0px;
+   /* margin-left: 10px; */
+}
 
 
 .xsmtop30{
   margin-top: 15px;
   margin-bottom: 50px;
+  /* background-color: red; */
+  margin-left: 44px;
 }
 .xsdotCircle{
   height: 500px !important;
@@ -412,7 +422,7 @@
 .xshex1{
   background-image: url("/images/10.png");
   height: 150px;
-  left: 5px;
+  left: 14px;
   background-size: 100% 100%;
 
 }
@@ -435,7 +445,7 @@
 .xsl1hex3{
   position: relative;
     top: -182px;
-    left: 5px;
+    left: 14px;
 }
 .xsl1hex4{
   position: relative;
@@ -469,6 +479,11 @@
     margin-left: -3px;
     font-size: 13px;
 }
+.xshexaContext01{
+  font-size: 13px;
+  padding-top: 10px!important;
+
+}
 .xshexaImg3{
     position: relative;
     top: 40px;
@@ -497,4 +512,11 @@
     text-align: center;
     left: -5px;
 
+}
+ .htitleservices{
+  margin-top: -10px; 
+} 
+.htitleservices{
+  margin-top: -2px; 
+  margin-left: 7px;
 }

@@ -2,7 +2,7 @@
 	height: 1210px;
 	background-image: url("/images/12.png"); 
     background-size: 100% 100%;
-    margin-top: -340px;
+     margin-top: 840px; 
     
     
 }
@@ -35,13 +35,17 @@
 .col1{
 	height: 427px;
 	background-color: #fff;
-	border-radius: 10px;
+    border-radius: 10px;
+    /* background-color: red; */
+    margin-top: 35px;
+
 }
 .col2{
 	height: 375px;
 	background-color: #fff;
 	border: 1px solid #aaa;
-	border-radius: 10px;
+    border-radius: 10px;
+     /* background-color: red;  */
 }
 
 .iconCircle{
@@ -74,13 +78,11 @@
     padding-left: 15px;
     padding-right: 0px;
     color: #666;
-    letter-spacing: 1.2px;
+    letter-spacing: px;
 }
 
 .rmore{
 
-  
-        /*margin-top: 8px;*/
     position: relative;
     top: 20px;
     letter-spacing: 1.2px !important;
@@ -95,7 +97,7 @@
     list-style: none;
     position: relative; 
     left: 25px;
-    top: -268px;
+    top: -400px;
     
 }
 .dashBoxOS li{
@@ -109,6 +111,9 @@
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
+.dash1OS{
+    margin-left: 21px;
+}
 .dash2OS{
     height: 1px;
     width: 50px;
@@ -116,14 +121,14 @@
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash1OS{
+/* .dash1OS{
     margin-left:63px ;
-}
+} */
 .mainheading{
     height: 100px;
     width: 400px;
     /* background-color: red; */
-    margin-top: -333px;
+    margin-top: -476px;
 }
 .text-center{
     margin-top: 36px!important;
@@ -141,24 +146,36 @@
 .paragraph{
     position: relative;
     font-family: 'Montserrat', sans-serif;
+    
+    
 
 }
 .rmore {
     height: 100px;
     width: 300px;
-    /* background-color: red; */
-     font-size: 15px;  
+    font-size: 15px;  
     position: absolute;
-    top: 95px;
+    top: 114px;
     letter-spacing: 1.2px !important;
     color: #376bff !important;
-    /* font-weight: bold; */
     cursor: pointer;
-    left: 50px;
-    padding-top: 18px;
+    left: 40;
+    padding-top: 23px;
     font-family: 'Montserrat', sans-serif;
 
 }
+/* ==================================Media Query================================================= */
+@media (max-width: 767px){
+    .OurSpecialityHeight{
+        background-size: 200% 108%;
+    }
+    .dashBoxOS{
+        margin-left: 50px;
+
+    }
+
+}
+/* ==================================Media Query================================================= */
 
 /*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
 
@@ -174,38 +191,57 @@
 .nopadding{
     padding: 0px;
 }
+.mwrapper{
+    height: 800px;
+    background-color: red;
+    margin-top: 796px;
+}
 .xsOurSpecialityHeight{
-    height: 1080px;
-    /*top: -290px;*/
+    height: 2286px;
+    
     position: relative;
-    background-image: url(/images/12.png);
+     background-image: url(/images/12.png); 
     background-size: 200% 108%;
     /* width: 100%; */
 }
 
 .xswhiteclr{
-  color: #111;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
+  .mainheading00{
+      height: 40px;
+      margin-top: auto;
+      padding-top: 1px;
+
+  }
+  
+  
+  
+
 .demoTitle{
     margin-left: 44%;
     margin-top: 20%;
 }
 .xsosDiv{
-    height: 350px;
+    height: 450px;
     top: 58px;
     position: relative;
 }
 .xsbhead{
     position: relative;
-    /*top: -100px;*/
+    top: 291px;
 }
 .xscol1{
-    height: 290px;
+    height: 410px;
+    width: 115%;
     margin-bottom: 10px;
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #aaa;
     box-shadow: 0px 0px 20px 2px;
+    margin-left: -20px;
+    
 }
 .xscol2{
     height: 290px;
@@ -218,23 +254,27 @@
     height: 90px;
     position: relative;
     width: 90px;
-    left: 67px;
-    top: 10px;
-    background-color: #effbee;
+    left: 66px;
+    top: 17px;
+    background-color: #e3f1e2;
     border-radius: 50%;
 }
 .xsinnerCircle{
     position: relative;
     height: 45px;
     top: 20px;
-    left: 25px;
+    left: 20px;
 }
 .xssptextBox1{
     position: relative;
     top: -7px;
+    /* font-family: 'Montserrat', sans-serif; */
+
 }
 .xssptextBox1 h2{
-    font-weight: 500;
+    /* font-weight: 500; */
+     font-family: 'Montserrat', sans-serif; 
+
 
 }
 .xssptextBox1 p{
@@ -242,26 +282,29 @@
     padding-left: 15px;
     padding-right: 0px;
     color: #666;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.0px;
+     /* font-family: 'Montserrat', sans-serif;  */
+
 }
 
 .xsrmore{
-
-  
-        /*margin-top: 8px;*/
     position: relative;
     top: 20px;
     letter-spacing: 1.2px !important;
     color: #376bff !important;
     font-weight: 600;
 }
+
+.ourspeciliaty{
+    margin-top: -100px;
+}
 /* ================================================================= */
 /*dash ===== ======================== =============*/
 .xsdashBoxOS{
   list-style: none;
   position: relative; 
-  left: 25px;
-  top: 0px;
+  left: -3px;
+  top: 32px;
 }
 .xsdashBoxOS li{
   float: left;
@@ -279,5 +322,10 @@
     margin:2px;
     border: 2px solid #00ccff;
     border-radius: 10px;
+}
+.xsrmore3{
+    height: 50px;
+    background-color: red;
+    margin-top: -200px!important;
 }
 /*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/

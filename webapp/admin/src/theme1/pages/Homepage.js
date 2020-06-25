@@ -66,10 +66,10 @@ export default class Homepage extends React.Component {
 				 {/* <Banner />  */}
 				<HomeCarousel/>
 				{/*	*/}
-				 <Services /> 
-				   {/* <ListofServices />    */}
+				   <Services />   
+				    {/* <ListofServices />     */}
 
-				{/* <OutSpeciality /> */}
+				    <OutSpeciality />      
 				{/* <IndustryDomains /> */}
 				{/*<Portfolio />
 				<Blogs />

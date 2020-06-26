@@ -70,13 +70,13 @@ export default class Homepage extends React.Component {
 				    {/* <ListofServices />     */}
 
 				    <OutSpeciality />      
-				{/* <IndustryDomains /> */}
+				 <IndustryDomains /> 
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				{/* <Testimonials /> */}
-				{/* <AddressOnGoogleMap /> */}
-				{/* <Footer /> */}
+				 <Testimonials /> 
+				 {/* <AddressOnGoogleMap />  */}
+				 {/* <Footer />  */}
 			</div>
 		);
 	}

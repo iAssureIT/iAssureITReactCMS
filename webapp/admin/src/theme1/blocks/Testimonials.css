@@ -1,6 +1,6 @@
 .TestimonialsHT{
 	height: 790px!important;
-	background-color: red!important; 
+	/* background-color: red!important;  */
     background-image: url("/images/portbg.png"); 
     background-color: #fefefe; 
     background-size: 100% 100%;
@@ -233,4 +233,62 @@ top: -19px;
 .carousal1{
     margin-top: -10px;
     background-color: #44e;
+}
+/* ===========================================================Media Query============================= */
+@media (max-width:767px){
+    .dashBoxTm{
+         
+        padding-top: 87px;
+        padding-left: 54px;
+        
+      
+       } 
+       .clienttestmonials{
+            left: -19px; 
+            /* font-size: 15px!important;   */
+           
+       }  
+       .xsclientview{
+           font-size: 42px;
+           margin-top: 175px;
+           margin-left: 41px;
+       }
+       .testimonialBox{
+           height: 498px;
+           width: 117%;
+            left: -4px; 
+            /* background-color: red;  */
+           
+       }
+       .arrows .owl-nav button.owl-next{
+           left: 101px;
+           top:-118px;
+       }
+      .arrows .owl-nav button.owl-prev{
+       left: 102px;
+       top:-118px;
+       }
+       .profileTesti{
+           top: -40px;
+
+
+       }
+       .hlimit600{
+           font-size: 17px;
+            height: 350px;
+            width: 100%;
+            
+            
+            
+       }
+        
+       .custName{
+          height: 107px;
+          margin-top: -32px;
+          font-size: 15px;
+      } 
+
+
+       
+       
 }

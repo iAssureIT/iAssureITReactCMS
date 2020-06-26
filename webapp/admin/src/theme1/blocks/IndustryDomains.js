@@ -72,7 +72,7 @@ export default class IndustryDomains extends React.Component {
     	// console.log("all data ",data);
 		return (
 			<div className=" container-fluid nopadding">
-				<div className="industryDomainsHt container-fluid hidden-sm hidden-xs">
+				<div className="industryDomainsHt container-fluid">
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
 						<ul className="dashBoxID col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
 						  <li className="dash1ID "></li>
@@ -80,26 +80,26 @@ export default class IndustryDomains extends React.Component {
 						  <li className="dash3ID"></li>
 						</ul>
 					</div>
-					<div className="col-lg-12 col-md-12 col-xl-12 ">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
 						<div className="col-lg-4 col-lg-offset-4 text-center industrydomain">
-							<h1 >
-								<b>Industry Domains</b>
+							<h1 className="mobileview">
+								<b >Industry Domains</b>
 							</h1>
 						</div>
 					</div>
-					<div className="col-lg-12 col-md-12 col-xl-12 ">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
 						<div className="col-lg-2 col-lg-offset-5 text-center weserve">
-							<h1 >We Serve
+							<h1 className="xsview" >We Serve
 							</h1>
 						</div>
 					</div>
-					<div className="col-lg-12 col-md-12 col-xl-12">
-						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 iDomainBlock">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 row">
+						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 iDomainBlock">
 							<div className="col-lg-4 col-md-4">
 								<div className="idcol1">
 									<img src="/images/50.png" alt="18" className="center"/> 
 									<div className="text-center htitle">
-										<h3>Finance Industry</h3>
+										<h3 className="xshmview00">Finance Industry</h3>
 									</div>
 								</div>
 							</div>
@@ -107,7 +107,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								  <img src="/images/51.png" alt="18" className="center"/> 
 								  <div className="text-center htitle">
-										<h3>Manufactuering Industry</h3>
+										<h3 className="xshmview">Manufactuering Industry</h3>
 									</div>
 								</div>
 							</div>
@@ -115,7 +115,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/52.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3>Transport Industry</h3>
+										<h3 className="xshmview">Transport Industry</h3>
 								</div>
 							</div>
 
@@ -124,7 +124,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/53.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3>Healthcare Industry</h3>
+										<h3 className="xshmview">Healthcare Industry</h3>
 									</div>
 
 
@@ -135,7 +135,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/54.png" alt="18" className="center"/>
 								<div className="text-center htitle">
-										<h3>Real Estate Industry</h3>
+										<h3 className="xshmview">Real Estate Industry</h3>
 									</div> 
 
 
@@ -146,7 +146,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/55.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3>Education Industry</h3>
+										<h3 className="xshmview">Education Industry</h3>
 									</div>
 
 
@@ -157,7 +157,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/56.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3>eCommerce Industry</h3>
+										<h3 className="xshmview">eCommerce Industry</h3>
 									</div>
 
 
@@ -168,7 +168,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/57.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3>Travel Industry</h3>
+										<h3 className="xshmview000">Travel Industry</h3>
 									</div>
 
 
@@ -179,7 +179,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/58.png" alt="18" className="center"/>
 								<div className="text-center htitle">
-										<h3>Start Up Industry</h3>
+										<h3 className="xshmview">Start Up Industry</h3>
 									</div> 
 
 
@@ -215,8 +215,12 @@ export default class IndustryDomains extends React.Component {
 						
 					
 				</div>
+				</div>
+		);
+	}
+}
 			{/*=========== mobile view ================================*/}
-				<div className="xsindustryDomainsHt container-fluid hidden-lg hidden-md">
+				{/* <div className="xsindustryDomainsHt container-fluid hidden-lg hidden-md">
 					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md ">
 						<ul className="xsdashBox col-xs-8 col-xs-offset-3 col-sm-offset-4 col-sm-7 ">
 						  <li className="xsdash1 "></li>
@@ -304,4 +308,4 @@ export default class IndustryDomains extends React.Component {
 			</div>
 		);
 	}
-}
+} */}

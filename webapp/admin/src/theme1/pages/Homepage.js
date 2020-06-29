@@ -74,9 +74,9 @@ export default class Homepage extends React.Component {
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				 <Testimonials /> 
-				 {/* <AddressOnGoogleMap />  */}
-				 {/* <Footer />  */}
+				   <Testimonials />   
+				 <AddressOnGoogleMap />  
+				  <Footer />  
 			</div>
 		);
 	}

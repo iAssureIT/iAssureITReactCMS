@@ -13,7 +13,7 @@
 }
 
 .whiteclr{
-    font-size: 45px;
+    font-size: 36px;
    color: #fff;
    font-family: 'Montserrat', sans-serif;
 
@@ -23,7 +23,7 @@
     margin-top: 20%;
 }
 .osDiv{
-	/* background-color: red; */
+	 /* background-color: red;  */
 	height: 350px;
 	top: -180px;
 	position: relative;
@@ -150,6 +150,10 @@
     
 
 }
+.xsparagraph{
+    font-family: 'Montserrat', sans-serif;
+
+}
 .rmore {
     height: 100px;
     width: 300px;
@@ -167,12 +171,30 @@
 /* ==================================Media Query================================================= */
 @media (max-width: 767px){
     .OurSpecialityHeight{
+        height: 2026px;
         background-size: 200% 108%;
     }
     .dashBoxOS{
-        margin-left: 50px;
-
+        
+        left: 87px;
+        top: 157px;
+        
     }
+    .mainheading{
+        width: 99%;
+         /* background-color: red;  */
+        margin-top: 189px;
+        text-align: center;
+        margin-left: 5%;
+    }
+    .osDiv{
+        background-color: red; 
+        width: 88%;
+       height: 920px;
+       top: 250px;
+       left: -2%;
+      
+   }
 
 }
 /* ==================================Media Query================================================= */
@@ -197,7 +219,7 @@
     margin-top: 796px;
 }
 .xsOurSpecialityHeight{
-    height: 2286px;
+    height: 2026px;
     
     position: relative;
      background-image: url(/images/12.png); 
@@ -233,14 +255,14 @@
     top: 291px;
 }
 .xscol1{
-    height: 410px;
-    width: 115%;
-    margin-bottom: 10px;
+    height: 335px;
+    width: 145%;
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid #aaa;
     box-shadow: 0px 0px 20px 2px;
-    margin-left: -20px;
+    margin-left: -22%;
     
 }
 .xscol2{
@@ -254,7 +276,7 @@
     height: 90px;
     position: relative;
     width: 90px;
-    left: 66px;
+    left: 98px;
     top: 17px;
     background-color: #e3f1e2;
     border-radius: 50%;
@@ -289,10 +311,22 @@
 
 .xsrmore{
     position: relative;
-    top: 20px;
+    top: 10px;
     letter-spacing: 1.2px !important;
     color: #376bff !important;
     font-weight: 600;
+}
+.xsrmore1{
+    color: #376bff !important;
+    font-weight: 600;
+    top:-10px
+}
+.xsrmore2{
+    color: #376bff !important;
+    font-weight: 600;
+    top: 50px;
+
+
 }
 
 .ourspeciliaty{

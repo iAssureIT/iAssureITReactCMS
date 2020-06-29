@@ -48,7 +48,8 @@
     padding: 5px;
 	position: relative;
 	 top: 4px; 
-	box-shadow: 2px 2px 20px 5px #dad6d6;
+    box-shadow: 2px 2px 20px 5px #dad6d6;
+    
 }
 .center {
     display: block;
@@ -60,7 +61,7 @@
   .htitle{
     height: 100px;
     position: relative;
-    margin-top: -14px!important;
+    margin-top: 28px!important;
     font-family: 'Montserrat', sans-serif;
     padding-top: -50px;
     cursor: pointer;
@@ -216,8 +217,8 @@
 }
 /* =========================================Media Query========================================================== */
 @media (max-width:767px){
-    .mobileview{
-        font-size: 24px;
+.hmaintitle{
+        font-size: 36px;
         margin-top: 50px;
     } 
     .dash1ID{
@@ -232,20 +233,30 @@
     .idcol1{
         width:118%;
         margin-left: -9%;
+        height: 166px;
+        
 
     }
     .iDomainBlock{
-        height: 2059px;
+        height: 1700px;
+        
     }
     .xshmview{
-        font-size: 36px;
+        font-size: 24px;
+        margin-top: -31px;
+
+        
+
     }
     .xshmview00{
-        font-size: 37px;
+        font-size: 24px;
+        margin-top: -31px;
+
+        
     }
     .xshmview000{
-        font-size: 42px;
-        margin-top: 9px;
+        font-size: 24px;
+        margin-top: -31px;
 
     }
 

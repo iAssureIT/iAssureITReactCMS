@@ -53,14 +53,14 @@ export default class Testimonials extends React.Component {
 		return (
 				<div className="container-fluid nopadding">
 					<div className="TestimonialsHT container-fluid">
-						  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+						   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12row">
 							<ul className="dashBoxTm col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
 							  <li className="dash1Tm"></li>
 							  <li className="dash2Tm"></li>
 							  <li className="dash3Tm"></li>
 							</ul> 
-						 </div>  
-						    <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 row">
+						 </div>   
+						     <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
 							   <div className="row">
 							   <div className="col-lg-4 col-lg-offset-4 text-center clienttestmonials row">
 								   <h1 className="xsclientview">
@@ -68,11 +68,11 @@ export default class Testimonials extends React.Component {
                                 </h1> 
                               </div>  
 							</div>  
-						</div>    
+						</div>     
 						{/* <div id="mercury" class="orbit">
 					        <div class="planet"></div> 
 					      </div> */}
-						<div className="col-lg-12 col-md-12 col-sm- col-xs-12 row"> 
+						 <div className="col-lg-12 col-md-12 col-sm- col-xs-12 "> 
 							  <div className="col-lg-9 col-md-9"> 
 								 <div className="col-lg-10 col-md-11  testimonialBox col-lg-offset-1"> 
 									   <OwlCarousel className="owl-theme arrows owl-carousel" loop  autoplay={true}  autoplaySpeed={500} items={1} nav dots={false}>
@@ -80,15 +80,15 @@ export default class Testimonials extends React.Component {
 					                		 data && data.length > 0 ?
 							      				data.map((data, index)=>{
 		                							return(
-													    <div className="item col-lg-12 row">
-												    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12">
+													    <div className="item col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+												    	<div className="testimonialList col-lg-12 col-md-12 col-sm-12 col-xs-12">
 												    	<h3 className="hlimit600">{data.testContent}
 										 			    </h3>
-											 			    <div className="col-sm-12 col-lg-8 col-md-8">
+											 			    <div className="col-sm-12 col-lg-8 col-md-8 col-xs-12">
 											 			    	<div className="col-md-3 col-lg-3 col-sm-2">
 											 			    		<img src={data.writerImg} alt="example" className="img-responsive profileTesti"/>
 											 			    	</div>
-											 			    	<div className="col-md-8 col-lg-8 col-sm-10">
+											 			    	<div className="col-md-8 col-lg-8 col-sm-10 col-xs-12">
 											 					    <h4 className="custName"><span className="nmclr">{data.testimonialWriter}</span><br/>
 											 					    {data.writerDetails}</h4>
 											 			    	</div>
@@ -108,7 +108,7 @@ export default class Testimonials extends React.Component {
 
 								 </div> 
 							 </div>  
-						 </div>						  
+						 </div>						   
 					</div>
 					</div>
 		);

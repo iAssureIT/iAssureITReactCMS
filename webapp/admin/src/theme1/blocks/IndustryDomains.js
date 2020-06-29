@@ -82,24 +82,19 @@ export default class IndustryDomains extends React.Component {
 					</div>
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
 						<div className="col-lg-4 col-lg-offset-4 text-center industrydomain">
-							<h1 className="mobileview">
+							<h1 className="hmaintitle">
 								<b >Industry Domains</b>
 							</h1>
 						</div>
 					</div>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12">
-						<div className="col-lg-2 col-lg-offset-5 text-center weserve">
-							<h1 className="xsview" >We Serve
-							</h1>
-						</div>
-					</div>
+					
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 row">
 						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 iDomainBlock">
 							<div className="col-lg-4 col-md-4">
 								<div className="idcol1">
 									<img src="/images/50.png" alt="18" className="center"/> 
 									<div className="text-center htitle">
-										<h3 className="xshmview00">Finance Industry</h3>
+									<h3 className="xshmview00">Finance Industry</h3>
 									</div>
 								</div>
 							</div>

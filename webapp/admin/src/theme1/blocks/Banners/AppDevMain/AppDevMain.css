@@ -1,13 +1,20 @@
 .nopadd{
     padding: 0px;
 }
+.wrapper{
+    height: 1000px;
+    /* background-color: royalblue; */
+}
 .b1banerheight{
-	height: 675px;
+	/* height: 675px; */
 	background-image: url("/images/b1background.png");
     background-size: 100% 100%;
 }
  .b1banerheight2{
     height: 950px!important;
+    /* background-color: red; */
+    position: relative; 
+
 
 } 
 

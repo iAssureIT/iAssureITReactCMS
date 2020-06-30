@@ -1,8 +1,16 @@
+.specialhightwrapper{
+    height: 1189px;
+  /* background-color: saddlebrown;   */
+}
+
+
+
 .OurSpecialityHeight{
 	height: 1210px;
 	background-image: url("/images/12.png"); 
     background-size: 100% 100%;
-     margin-top: 840px; 
+    
+     
     
     
 }
@@ -37,7 +45,7 @@
 	background-color: #fff;
     border-radius: 10px;
     /* background-color: red; */
-    margin-top: 35px;
+    margin-top: 392px;
 
 }
 .col2{
@@ -78,7 +86,7 @@
     padding-left: 15px;
     padding-right: 0px;
     color: #666;
-    letter-spacing: px;
+    /* letter-spacing: px; */
 }
 
 .rmore{
@@ -97,7 +105,7 @@
     list-style: none;
     position: relative; 
     left: 25px;
-    top: -400px;
+    top: 68px;
     
 }
 .dashBoxOS li{
@@ -128,7 +136,7 @@
     height: 100px;
     width: 400px;
     /* background-color: red; */
-    margin-top: -476px;
+    margin-top: 0px;
 }
 .text-center{
     margin-top: 36px!important;
@@ -159,43 +167,64 @@
     width: 300px;
     font-size: 15px;  
     position: absolute;
-    top: 114px;
+    top: 142px;
     letter-spacing: 1.2px !important;
     color: #376bff !important;
     cursor: pointer;
     left: 40;
-    padding-top: 23px;
+    padding-top: 232627pxpx;
     font-family: 'Montserrat', sans-serif;
 
 }
+/* .rmore00{
+    margin-top:100px!important;
+} */
 /* ==================================Media Query================================================= */
 @media (max-width: 767px){
+    .specialhightwrapper{
+        height: 2589px;
+    }
     .OurSpecialityHeight{
-        height: 2026px;
+        height: 2590px;
         background-size: 200% 108%;
     }
     .dashBoxOS{
         
         left: 87px;
-        top: 157px;
+        top: 233px;
         
     }
     .mainheading{
         width: 99%;
          /* background-color: red;  */
-        margin-top: 189px;
+        margin-top: 270px;
         text-align: center;
         margin-left: 5%;
     }
     .osDiv{
-        background-color: red; 
-        width: 88%;
-       height: 920px;
-       top: 250px;
-       left: -2%;
+        /* background-color: red;  */
+        width: 91%;
+       height: 1420px;
+       top: 170px;
+       left: -4%;
       
    }
+   .col1{
+    height: 427px;
+     width: 106%; 
+     left:-3%;
+     margin-top: 27px;
+      
 
+
+}
+.iconCircle{
+    left: 27%; 
+
+}
+ .rmore00{
+    margin-top: 50px!important;
+} 
 }
 /* ==================================Media Query================================================= */
 

@@ -1,9 +1,9 @@
 .serviceheight{
-	height: 700px;
-	/*background-color: #a3a;*/
+	height: 665px;
+	 /* background-color: #a3a;  */
   background-image: url("/images/3.png");
   background-size: 100% 100%;
-	width: 100%;
+   /* position: relative;  */
 }
 .whiteclr{
   color: #fff;

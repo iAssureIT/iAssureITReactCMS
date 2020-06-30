@@ -1,14 +1,17 @@
 import React from 'react';
 
-import Banner 			from '../blocks/Banner.js';
-import Services 		from '../blocks/Services.js';
-import OutSpeciality 	from '../blocks/OutSpeciality.js';
-import IndustryDomains 	from '../blocks/IndustryDomains.js';
-import Portfolio 		from '../blocks/Portfolio.js';
-import Blogs 			from '../blocks/Blogs.js';
-import Videos 			from '../blocks/Videos.js';
-import Testimonials 	from '../blocks/Testimonials.js';
-import AddressOnGoogleMap 	from '../blocks/AddressOnGoogleMap.js';
+import Banner 			        from '../blocks/Banner.js';
+import Services 		        from '../blocks/Services.js';
+import OutSpeciality 	        from '../blocks/OutSpeciality.js';
+import IndustryDomains 	        from '../blocks/IndustryDomains.js';
+import Portfolio 		        from '../blocks/Portfolio.js';
+import Blogs 			        from '../blocks/Blogs.js';
+import Videos 			        from '../blocks/Videos.js';
+import Testimonials 	        from '../blocks/Testimonials.js';
+import AddressOnGoogleMap 	    from '../blocks/AddressOnGoogleMap.js';
+import FastrtrackFrameWork 	    from '../blocks/FasttrackFrameWork.js';
+import AutoPilotPlatform        from '../blocks/AutoPilotPlatform.js';
+
 
 import DemoAnim 	from '../blocks/demoAnim.js';
 
@@ -66,10 +69,12 @@ export default class Homepage extends React.Component {
 				 {/* <Banner />  */}
 				<HomeCarousel/>
 				{/*	*/}
-				   <Services />   
+				   <Services />  
+				      <FastrtrackFrameWork />    
 				    {/* <ListofServices />     */}
 
-				    <OutSpeciality />      
+				    <OutSpeciality /> 
+					<AutoPilotPlatform />
 				 <IndustryDomains /> 
 				{/*<Portfolio />
 				<Blogs />

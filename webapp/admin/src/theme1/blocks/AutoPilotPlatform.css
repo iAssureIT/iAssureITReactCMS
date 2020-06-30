@@ -1,0 +1,123 @@
+.autopilotwrapper00{
+    height: 1310px;
+    /* background-color: bisque; */
+}
+.autopilotwrapper{
+    height:1350px ;
+    width: 100%;
+    background-image: url("/images/0001.png"); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -21px;
+
+}
+.dashbox000{
+      margin-top: 237px;  
+    
+}
+.dash1OS,.dash3OS {
+   height: 1px;
+   width: 20px;
+   margin:2px;
+   border: 2px solid #f1f1f1;
+   border-radius: 10px;
+}
+.dash2OS{
+   height: 1px;
+   width: 50px;
+   margin:2px;
+   border: 2px solid #f1f1f1;
+   border-radius: 10px;
+}
+.mainrow{
+    height: 108px;
+     /* background-color: salmon;  */
+     width: 66%;
+     margin-left: 15%;
+     margin-top: 28px; 
+}
+.Auopilot{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #f1f1f1;
+
+}
+.ecomeplatofrm{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+
+}
+.Auotmaincontentwrapper{
+    height: 400px;
+    margin-top: -27px;
+}
+.leftimageframework{
+     height: 405px;
+    
+    
+}
+.leftsideimg{
+    height: 454px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto; 
+    margin-top: 64px; 
+    margin-left: -8%;
+
+}
+.autocontentframework{
+    height: 370px;
+    /* background-color: red;  */
+    
+}
+.paragraphfasttrack00{
+    
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+     /* margin-left:12%;  */
+    color: #f1f1ff;
+    letter-spacing: 0.5px;
+    font-weight: 550; 
+    padding-top: 160px;
+
+    
+
+}
+.loremIpsum1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.paragraphfasttrack02{
+   font-size: 18px;
+   font-family: 'Montserrat', sans-serif;
+   /* margin-left:12%;  */
+   color: #f1f1ff;
+   margin-top: 40px;
+   letter-spacing: 0.5px;
+   font-weight: 550; 
+
+
+}
+.ftracermore00{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    /* margin-left:12%; */
+    color: #f1f1f1;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1!important;
+    width: 19%;
+
+
+}
+.arrow00{
+    height: 100px;
+    width: 30%;
+    /* background-color: aquamarine;  */
+    margin-top: -45px;
+    margin-left: 128px;
+    font-size: 34px;
+    color: #f1f1f1;
+    padding-top: -10px;
+}

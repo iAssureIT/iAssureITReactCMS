@@ -9,7 +9,7 @@ export default class OutSpeciality extends React.Component {
 
 	render() {
 		return (
-			<div className="container-fluid nopadd">
+			<div className="container-fluid nopadd specialhightwrapper">
 			<div className="OurSpecialityHeight">
 			 <div className="mtop111">	 
 				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhead row">
@@ -30,8 +30,8 @@ export default class OutSpeciality extends React.Component {
 				</div>
 				<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 osDiv"> 
 					 <div className="row"> 
-					  <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-							 <div className="col-lg-12 col-md-12  col-sm-12 cpl-xs-12 col1"> 
+					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							 <div className="col-lg-12 col-md-12  col-sm-12 col-xs-12 col1"> 
 								 <div className="iconCircle">
 									<img src="/images/13.png" alt="enteprice" className="innerCircle"/> 
 								</div> 
@@ -45,9 +45,9 @@ export default class OutSpeciality extends React.Component {
 								</div>   
 
 							</div> 
-						 </div>   
-						  <div className="col-lg-4 col-md-4">
-							<div className="col-lg-12 col-md-12 col1">
+						 </div>     
+						    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col1 ">
 								<div className="iconCircle">
 									<img src="/images/14.png" alt="enteprice" className="innerCircle"/>
 								</div>
@@ -62,8 +62,8 @@ export default class OutSpeciality extends React.Component {
 									
 								</div> 
 							</div>
-						</div>  
-						  <div className="col-lg-4 col-md-4">
+						</div>    
+						   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 							<div className="col-lg-12 col-md-12 col1">
 								<div className="iconCircle">
 									<img src="/images/15.png" alt="enteprice" className="innerCircle"/>
@@ -74,10 +74,10 @@ export default class OutSpeciality extends React.Component {
 										<p className="paragraph">Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores
 									  </p>
 									</div> 
-									  <p className="text-center rmore">Read More</p>  
+									  <p className="text-center rmore rmore00">Read More</p>  
 								</div>
 							</div>
-						</div>  
+						</div>   
 					 </div> 
 				 </div> 		
 				 </div>  

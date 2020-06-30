@@ -14,7 +14,7 @@ export default class AppDevMain extends React.Component {
 
 	render() {
 		return (
-			<div className="">
+			<div className="wrapper">
 				<div className="col-lg-12 col-md-12  col-sm-12 col-xs-12 nopadd">
 				<div className="b1banerheight container-fluid b1banerheight2 ">
 				  <div className="col-lg-12 col-md-12  col-sm-12 col-xs-12">

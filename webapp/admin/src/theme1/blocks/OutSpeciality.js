@@ -10,24 +10,32 @@ export default class OutSpeciality extends React.Component {
 	render() {
 		return (
 			<div className="container-fluid nopadd specialhightwrapper">
-			<div className="OurSpecialityHeight">
+			 {/* <div className="OurSpecialityHeight">   */}
 			 <div className="mtop111">	 
 				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhead row">
 					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<ul className="dashBoxOS col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
+						<ul className="dashBoxOS dasboxssp col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
 						  <li className="dash1OS"></li>
 						  <li className="dash2OS"></li>
 						  <li className="dash3OS"></li>
 						</ul>
+					</div>
 					</div> 
-					<div className=" col-lg-2 col-lg-offset-5 mainheading">
+				</div>	
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 specialityheading row">
+                            <span className="ourheading">OUR</span >&nbsp;&nbsp;<span className="specialheading">SPECIALITY</span>
+                        </div>
+
+                  </div>
+					{/* <div className=" col-lg-2 col-lg-offset-5 mainheading">
 						<h1>
 							<b className="whiteclr">Our Speciality</b>
 						</h1>
-					</div> 
+					</div>  */}
 					
-					</div>
-				</div>
+					
+				
 				<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 osDiv"> 
 					 <div className="row"> 
 					   <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -83,7 +91,7 @@ export default class OutSpeciality extends React.Component {
 				 </div>  
 						   
 				    
-				  </div> 
+			//   </div> 
 		 ) 
 		}
 	}

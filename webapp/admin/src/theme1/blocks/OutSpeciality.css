@@ -1,11 +1,11 @@
 .specialhightwrapper{
-    height: 1189px;
-  /* background-color: saddlebrown;   */
+    height: 592px;
+    /* background-color: saddlebrown;     */
 }
 
 
 
-.OurSpecialityHeight{
+  /* .OurSpecialityHeight{
 	height: 1210px;
 	background-image: url("/images/12.png"); 
     background-size: 100% 100%;
@@ -13,9 +13,27 @@
      
     
     
+}   */
+.specialityheading{
+    height: 108px;
+      /* background-color: salmon;    */
+    text-align: center;
+    margin-top: -40px;    
+    
 }
+.ourheading{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #555555;
+}
+ .specialheading{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+} 
 
-.mtop111{
+/* .mtop111{
     position: relative;
     top:150px;
 }
@@ -25,7 +43,7 @@
    color: #fff;
    font-family: 'Montserrat', sans-serif;
 
-}
+} */
 .demoTitle{
 	margin-left: 44%;
     margin-top: 20%;
@@ -45,16 +63,17 @@
 	background-color: #fff;
     border-radius: 10px;
     /* background-color: red; */
-    margin-top: 392px;
+     margin-top: 200px; 
+    box-shadow: 2px 2px 8px 3px #dad6d6;
 
 }
-.col2{
+/* .col2{
 	height: 375px;
 	background-color: #fff;
 	border: 1px solid #aaa;
     border-radius: 10px;
      /* background-color: red;  */
-}
+/* }  */
 
 .iconCircle{
 	height: 130px;
@@ -104,9 +123,12 @@
     width: 300px;
     list-style: none;
     position: relative; 
-    left: 25px;
-    top: 68px;
+    left: 67px;
+      
     
+}
+.dasboxssp{
+    top: -140px;
 }
 .dashBoxOS li{
   float: left;

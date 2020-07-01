@@ -177,7 +177,7 @@
 .dashBoxID{
   list-style: none;
   position: relative; 
-  left: 25px;
+  left: 21px;
   top: 10px;
 }
 .dashBoxID li{
@@ -202,19 +202,17 @@
 }
 .industrydomain{
     height: 100px;
+    /* background-color: darkgoldenrod; */
     margin-top: 1px!important;  
-    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 
-    
-    
 }
-.weserve{
-    height: 100px;
-    margin-top:-50px!important;
-    padding-top: 10px!important;
+.hmaintitle{
+    font-size: 46px;
     font-family: 'Montserrat', sans-serif;
 
 }
+
 /* =========================================Media Query========================================================== */
 @media (max-width:767px){
 .hmaintitle{

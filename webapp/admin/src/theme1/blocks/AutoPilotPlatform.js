@@ -8,7 +8,7 @@ export default class AutoPilotPlatform extends Component{
                 <div className="autopilotwrapper">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
 					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<ul className="dashBoxOS dashbox000 col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
+						<ul className="dashBoxOS dashboxauto col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
 						  <li className="dash1OS"></li>
 						  <li className="dash2OS"></li>
 						  <li className="dash3OS"></li>
@@ -21,7 +21,7 @@ export default class AutoPilotPlatform extends Component{
                         </div>
 
                 </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Auotmaincontentwrapper">
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Auotmaincontentwrapper">
                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftimageframework ">
                          <img src="/images/0002.png" alt="002" className="leftsideimg"/>  
 
@@ -44,7 +44,7 @@ export default class AutoPilotPlatform extends Component{
 
                         </div>
 
-                </div>
+                </div> 
 
 
                 </div>

@@ -1,14 +1,264 @@
-.serviceheight{
-	height: 665px;
-	 /* background-color: #a3a;  */
-  background-image: url("/images/3.png");
+.serviceswrapper{
+  height: 909px;
+   /* background-color:#ccc;    */
+}
+ .serviceheight{
+	height: 1020px;
+	 background-image: url("/images/3.png"); 
   background-size: 100% 100%;
-   /* position: relative;  */
+  background-repeat: no-repeat;
+  
+} 
+.servicehiading{
+  height: 108px; 
+  margin-top: 28px;
+  text-align: center;
 }
-.whiteclr{
+.bheading{
+  font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #555555;
+    
+
+}
+.normalheading{
+  font-size: 46px;
+  font-family: 'Montserrat', sans-serif;
+  color: #555;
+}
+.Hexagonwrapper00{
+  height: 722px;
+   /* background-color: red;    */
+    /* margin-top: 70px;  */
+}
+.hexagon1{
+  background-image: url("/images/10.png");
+   height: 270px; 
+   width: 310px;
+	 background-size: 100% 100%; 
+	 position: absolute;
+   left: 428px; 
+    margin-top: -7px;
+
+  
+}
+.images1{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 64px;
+  margin-left: 124px;
+  background-image: url("/images/5.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.heprizeapps{
+  height: 50px;
+  width: 150px;
+  margin-left: 72px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.hexagon2{
+  background-image: url("/images/11.png");
+  height: 270px; 
+  width: 310px;
+  background-size: 100% 100%; 
+  position: absolute;
+  left: 428px;
+  margin-top: 231px;
+
+}
+.h1services{
+  height: 50px;
+  width: 150px;
+  margin-left: 75px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 125px;
   color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+
+
 }
-.demoTitle{
+
+.hexagon3{
+  background-image: url("/images/10.png");
+  height: 270px; 
+  width: 310px;
+  background-size: 100% 100%; 
+  position: absolute;
+  left: 428px;
+  margin-top: 468px;
+
+}
+.images2{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 64px;
+  margin-left: 124px;
+  background-image: url("/images/8.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hstaffaugmtion{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+
+
+} 
+.hexagon4{
+  background-image: url("/images/10.png");
+  height: 270px; 
+   width: 310px;
+  background-size: 100% 100%; 
+  position: absolute;
+  left: 219px;
+  margin-top: 115px;
+
+}
+.images3{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/4.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hwebapps{
+  height: 50px;
+  width: 150px;
+  margin-left: 80px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.hexagon5{
+  background-image: url("/images/10.png");
+  height: 270px; 
+  width: 310px;  background-size: 100% 100%; 
+  position: absolute;
+  left: 217px;
+  margin-top: 351px;
+
+}
+.images4{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/9.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hbportals{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.hexagon6{
+  background-image: url("/images/10.png");
+  height: 270px; 
+   width: 310px;
+  background-size: 100% 100%; 
+  position: absolute;
+  left: 636px;
+  margin-top: 114px;
+
+}
+.images5{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/6.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.hmapps{
+  height: 50px;
+  width: 150px;
+  margin-left: 84px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.hexagon7{
+  background-image: url("/images/10.png");
+  height: 270px; 
+  width: 310px;
+  background-size: 100% 100%; 
+  position: absolute;
+  left: 639px;
+  margin-top: 350px;
+
+}
+.images6{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+  background-image: url("/images/7.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+}
+.heportal{
+  height: 50px;
+  width: 150px;
+  margin-left: 69px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+/* ==============================last code=========================================== */
+
+
+
+/* .demoTitle{
 	margin-left: 44%;
     margin-top: 20%;
 }
@@ -24,7 +274,7 @@
   border: 1px dashed ;
   z-index: 1000;
   border-radius: 100%;
-}
+} */
 
 
 
@@ -246,7 +496,7 @@
 .dashBoxS{
   list-style: none;
     position: relative;
-    left: 35px;
+    left: 67px;
     height: 20px;
     top: 20px;
     margin-top: 20px;
@@ -276,6 +526,7 @@
   background-image: url("/images/10.png");
   height: 175px;
   background-size: 100% 100%;
+  
 
 }
 .hex2{

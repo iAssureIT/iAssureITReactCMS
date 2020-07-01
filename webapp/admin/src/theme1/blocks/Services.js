@@ -105,29 +105,68 @@ export default class Services extends React.Component {
 
 	render() {
 		return (
-			<div className="serviceheight container-fluid">	
+			
+				<div className="serviceswrapper">
+				<div className="serviceheight">	
 				<div className="col-lg-12 col-md-12 ">
-					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<ul className="dashBoxS col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
 						  <li className="dash1S "></li>
 						  <li className="dash2S"></li>
 						  <li className="dash3S"></li>
 						</ul>
 					</div>
-					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
-						<div className="text-center">
-							<h1 className="mtop30">
-								<b>Services</b>
-							</h1>
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 servicehiading row">
+                            <span className="bheading">WHAT</span >&nbsp;&nbsp;<span className="normalheading">WE DO</span>
+                        </div>
+					</div>
+					 <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 Hexagonwrapper00">
+
+							<div className="hexagon1">
+						   <div className="images1"></div>
+						   <h1 className="heprizeapps">ENTERPRISE APPS</h1>
 						</div>
-						<div id="ahex1" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex1 ">
+						<div className="hexagon2">
+						   <h1 className="h1services">SERVICES</h1>
+						</div>
+						<div className="hexagon3">
+							<div className="images2"></div>
+							<h1 className="hstaffaugmtion">STAFF AUGMEN-TATION</h1>
+						</div>
+						<div className="hexagon4">
+							<div className="images3"></div>
+							<h1 className="hwebapps">WEB  < br />APPS</h1>
+						</div>
+						<div className="hexagon5">
+							<div className="images4"></div>
+							<h1 className="hbportals">BUSINESS PORTALS</h1>
+						</div>
+						<div className="hexagon6">
+							<div className="images5"></div>
+							<h1 className="hmapps">MOBILE APPS</h1>
+						</div>
+						<div className="hexagon7">
+							<div className="images6"></div>
+							<h1 className="heportal">eCOMMERCE PORTAL</h1>
+						</div>
+					</div>  
+
+
+				</div>
+			</div>
+		</div>
+		);
+	}
+}
+						{/* <div id="ahex1" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex1 ">
 							<div className="col-lg-12 col-md-12">
 								<img src="./images/5.png" className="hexaImg2" alt="webAppImg"/>
 								<h4 className="hexaContext1 text-center">ENTERPRISE<br/> APPS</h4>
 							</div>
-						</div>
+						</div> */}
 						
-							<div id="ahex2" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex1">
+							{/* <div id="ahex2" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex1">
 								<div className="row">
 									<div className="col-lg-4  col-md-4  hex1  pull-right">
 										<div className="col-lg-12 col-md-12">
@@ -136,8 +175,8 @@ export default class Services extends React.Component {
 										</div>	
 									</div>
 								</div>
-							</div>
-							<div id="ahex3" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex2">
+							</div> */}
+							{/* <div id="ahex3" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex2">
 								<div className="row">
 									<div className="col-lg-4  col-md-4 pull-left hex1">
 										<div className="col-lg-12 col-md-12">
@@ -146,14 +185,14 @@ export default class Services extends React.Component {
 										</div>
 									</div>
 								</div>
-							</div>
-						<div id="ahex4" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex2 l1hex3">
+							</div> */}
+						{/* <div id="ahex4" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex2 l1hex3">
 							<div className="col-lg-12 col-md-12">
 								<h4 className="hexaContext3">SERVICES</h4>
 							</div>
-						</div>
+						</div> */}
 						
-							<div id="ahex5" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex4">
+							{/* <div id="ahex5" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex4">
 								<div className="row">
 									<div className="col-lg-4  col-md-4 hex1 pull-right">
 										<div className="col-lg-12 col-md-12">
@@ -178,11 +217,11 @@ export default class Services extends React.Component {
 								<img src="./images/9.png" className="hexaImg2" alt="webAppImg"/>
 								<h4 className="hexaContext1">eCOMMERCE <br/>PORTAL</h4>
 							</div>
-						</div>
+						</div> */}
 
-					</div>
+					
 {/*====================================================== mobile view======================*/}
-					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md row mobilewrapper row">
+					{/* <div className="col-xs-12 col-sm-12 hidden-lg hidden-md row mobilewrapper row">
 						<ul className="xsdashBoxS col-sm-7 col-sm-offset-5 col-xs-7 col-xs-offset-3 row">
 						  <li className="xsdash1S "></li>
 						  <li className="xsdash2S"></li>
@@ -261,4 +300,4 @@ export default class Services extends React.Component {
 			</div>
 		);
 	}
-}
+} */}

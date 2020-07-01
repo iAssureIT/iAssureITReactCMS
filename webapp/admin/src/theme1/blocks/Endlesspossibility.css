@@ -1,0 +1,135 @@
+.endpossibwrapper{
+    height: 719px;
+    width: 100%;
+     background-color:#FFFFFF;  
+     /* background-color: darkcyan;  */
+}
+.dashbox001{
+margin-top:0px;  
+position: absolute;
+      
+  
+}
+.dash1OS,.dash3OS {
+ height: 1px;
+ width: 20px;
+ margin:2px;
+ border: 2px solid #00ccff;
+ border-radius: 10px;
+}
+.dash2OS{
+ height: 1px;
+ width: 50px;
+ margin:2px;
+ border: 2px solid #00ccff;
+ border-radius: 10px;
+}
+.endmainrow{
+    height: 108px;
+    margin-top: 28px; 
+    /* background-color: darkgoldenrod; */
+    text-align: center;
+}
+.endlesspsb{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #555;
+
+}
+.endlesspsb00{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+
+}
+.endlesscontentwrapper{
+    height: 600px;
+    margin-top: -27px;
+    /* background-color: red; */
+    
+}
+.enpsbcontent{
+    height: 550px;
+    /* background-color: darkgoldenrod; */
+}
+.headingtitle{
+    height: 100px;
+    
+
+}
+.mobileappd{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 12%;
+    color: #555555;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.paragraphendpsb01{
+    
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    letter-spacing: 0.5px;
+    font-weight: 550; 
+    margin-left: 12%;
+
+    
+
+    
+
+}
+.loremIpsum1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.paragraphendpsb02{
+   font-size: 18px;
+   font-family: 'Montserrat', sans-serif;
+   color: #555555;
+   margin-top: 40px;
+   letter-spacing: 0.5px;
+   font-weight: 550; 
+   margin-left: 12%;
+
+
+
+}
+.enspsbrmrr{
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:12%; 
+    color: #376BFF;
+    cursor: pointer;
+    border-bottom: 1px solid #376BFF!important;
+     width: 19%;
+    
+    
+    }
+   .arrowenspsb{
+    height: 100px;
+    width: 30%;
+    margin-top: -45px;
+    margin-left: 206px; 
+    font-size: 34px;
+    color: #376BFF;
+    padding-top: -10px;
+   }
+   .rightsideendpsbfw{
+    height: 550px;
+    margin-top: 50px;
+       
+    }
+    .rightsideimgendpsw{
+        height: 597px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin: auto; 
+         margin-top: -51px;  
+         margin-left: -8%;
+    
+    }
+    
+

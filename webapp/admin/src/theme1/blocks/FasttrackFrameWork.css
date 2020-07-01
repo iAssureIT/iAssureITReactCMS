@@ -1,6 +1,7 @@
  .fastrachight{
     height: 1025px;
-      /* background-color:#ccc;      */
+     /* background-color:#ccc;       */
+      
      
  } 
  .ftrackwrapper{
@@ -13,7 +14,9 @@
 
  }
  .dashbox00{
-     margin-top: -278px;
+     margin-top: 247px; 
+     left: 67px;
+     position: absolute;
      
  }
  .dash1OS,.dash3OS {
@@ -33,13 +36,13 @@
  .heading{
      height: 108px;
      /* background-color: salmon; */
-     margin-top: -167px;
+      margin-top: 281px; 
+     text-align: center;
  }
  .ftitle0{
      font-size: 46px;
      font-family: 'Montserrat', sans-serif;
      font-weight: bold;
-     margin-left: -22%;
      color: #f1f1f1;
 
  }
@@ -51,7 +54,7 @@
  }
  .maincontentwrapper{
      height: 400px;
-     margin-top: -52px;
+     /* margin-top: -52px; */
  }
  .contentframework{
      height: 370px;
@@ -79,7 +82,7 @@
     font-family: 'Montserrat', sans-serif;
     margin-left:12%;
     color: #f1f1ff;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     letter-spacing: 0.5px;
     font-weight: 550; 
 
@@ -100,7 +103,7 @@
      height: 100px;
      width: 30%;
      /* background-color: aquamarine; */
-     margin-top: -45px;
+     /* margin-top: -45px; */
      margin-left: 208px;
      font-size: 34px;
      color: #f1f1f1;
@@ -116,7 +119,7 @@
     /* width: 100%; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin: auto; 
+    /* margin: auto;  */
     /* margin-top: -38px; */
     margin-left: 147px;
 }

@@ -11,6 +11,8 @@ import Testimonials 	        from '../blocks/Testimonials.js';
 import AddressOnGoogleMap 	    from '../blocks/AddressOnGoogleMap.js';
 import FastrtrackFrameWork 	    from '../blocks/FasttrackFrameWork.js';
 import AutoPilotPlatform        from '../blocks/AutoPilotPlatform.js';
+import ContentmanagementSystem  from  '../blocks/ContentmanagementSystem.js';
+import Endlesspossibility       from   '../blocks/Endlesspossibility.js';
 
 
 import DemoAnim 	from '../blocks/demoAnim.js';
@@ -68,20 +70,22 @@ export default class Homepage extends React.Component {
 				 {/* <ContactModal/>   */}
 				 {/* <Banner />  */}
 				<HomeCarousel/>
-				{/*	*/}
-				   <Services />  
-				      <FastrtrackFrameWork />    
-				    {/* <ListofServices />     */}
+				
+				    <Services />   
+				      <FastrtrackFrameWork />     
+				    {/* <ListofServices />      */}
 
-				    <OutSpeciality /> 
-					<AutoPilotPlatform />
-				 <IndustryDomains /> 
+				     <OutSpeciality />  
+					 <AutoPilotPlatform /> 
+				  <IndustryDomains /> 
+				  <ContentmanagementSystem /> 
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				   <Testimonials />   
-				 <AddressOnGoogleMap />  
-				  <Footer />  
+				    <Testimonials />  
+				   <Endlesspossibility />   
+				  <AddressOnGoogleMap />   
+				  <Footer />   
 			</div>
 		);
 	}

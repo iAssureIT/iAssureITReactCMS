@@ -81,7 +81,7 @@ export default class IndustryDomains extends React.Component {
 						</ul>
 					</div>
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
-						<div className="col-lg-4 col-lg-offset-4 text-center industrydomain">
+						<div className="col-lg-6 col-lg-offset-3  industrydomain">
 							<h1 className="hmaintitle">
 								<b >Industry Domains</b>
 							</h1>

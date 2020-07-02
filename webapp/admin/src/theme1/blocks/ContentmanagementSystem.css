@@ -37,6 +37,17 @@
      margin-left: 19%;
      margin-top: -43px; 
 }
+.htitle1 {
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+.htitle2 {
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+}
 .contentmgmtwrpp{
     height: 400px;
     margin-top: -41px;
@@ -56,6 +67,18 @@
     color: #f1f1ff;
     letter-spacing: 0.5px;
     font-weight: 550; 
+
+    
+
+}
+.paragraphfasttrackmgmtcontstm{
+ font-size: 18px;
+ font-family: 'Montserrat', sans-serif;
+ margin-left:12%;
+ color: #f1f1ff;
+ letter-spacing: 0.5px;
+ font-weight: 550; 
+ margin-top: 40px;
 
     
 
@@ -103,6 +126,61 @@
     height: 420px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* margin-top: -6px;   */
     margin-left: 132px; 
 }
+/* ===================================================Media Query================================================================================== */
+@media (max-width:767px){
+    .contentmgmtwrapper{
+        height: 2320px;
+    
+        }
+    .contantmgmtwrpper00{
+        height:5550px ;
+        background-size: 100% 40%;
+            }
+    .dashbox0000{
+        margin-left: 0px!important;
+        margin-top: 501px;
+
+    }
+    .contentmgmt{
+        height: 108px;
+        /* background-color: salmon;   */
+        width: 100%;
+        margin-left: 0px; 
+        margin-top: -43px; 
+        text-align: center;
+        
+    }
+    .htitle1{
+        font-size: 24px;
+        margin-left: -2%;
+       
+    }
+    .htitle2{
+        font-size: 24px;
+        
+    }
+    .paragraphfasttrackmgmt {
+     font-size: 18px;
+     margin-left: 0%; 
+    margin-top: 0px;
+    }
+    .paragraphfasttrackmgmtcontstm{
+        margin-left: 0px;
+    }
+    .sideimageftrackmgmt{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 253px;
+    }
+       
+}
+
+
+
+
+
+
+
+/* ======================================================Media Query End=============================================================================== */

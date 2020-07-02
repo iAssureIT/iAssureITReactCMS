@@ -53,7 +53,7 @@ export default class Testimonials extends React.Component {
 		return (
 				<div className="container-fluid nopadding">
 					<div className="TestimonialsHT container-fluid">
-						   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12row">
+						   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
 							<ul className="dashBoxTm col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
 							  <li className="dash1Tm"></li>
 							  <li className="dash2Tm"></li>

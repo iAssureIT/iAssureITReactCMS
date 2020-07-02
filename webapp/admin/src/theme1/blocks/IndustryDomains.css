@@ -215,6 +215,12 @@
 
 /* =========================================Media Query========================================================== */
 @media (max-width:767px){
+    .industryDomainsHt{
+        height: 1900px;
+       
+
+
+    }
 .hmaintitle{
         font-size: 36px;
         margin-top: 50px;

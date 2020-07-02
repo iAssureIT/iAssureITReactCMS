@@ -56,7 +56,18 @@
 .heprizeapps{
   height: 50px;
   width: 150px;
-  margin-left: 72px;
+  margin-left: 71px;
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+.apps{
+  height: 50px;
+  width: 150px;
+   margin-left: 13px; 
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -146,7 +157,7 @@
 .hwebapps{
   height: 50px;
   width: 150px;
-  margin-left: 80px;
+  margin-left: 78px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -179,7 +190,7 @@
 .hbportals{
   height: 50px;
   width: 150px;
-  margin-left: 84px;
+  margin-left: 78px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -212,7 +223,7 @@
 .hmapps{
   height: 50px;
   width: 150px;
-  margin-left: 84px;
+  margin-left: 78px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -254,6 +265,126 @@
   font-family: 'Montserrat', sans-serif;
 
 }
+.portal{
+  height: 50px;
+  width: 150px;
+  margin-left: 28px; 
+  font-size: 24px;
+   font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 9px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center!important;
+
+
+}
+
+
+/* ==========================================Media Query===================================================== */
+@media (max-width:767px){
+  .serviceswrapper{
+    height: 1900px;
+    width: 100%;
+     /* background-color:red;     */
+  }
+  .dashBoxS{
+    
+      left: 98px!important; 
+      
+  }
+  .bheading{
+    font-size: 24px;
+    margin-left: 34px;
+  }
+  .normalheading{
+    font-size: 24px;
+  }
+  .Hexagonwrapper00{
+    height: 1656px;
+    width: 100%;
+    /* background-color:yellow;       */
+  
+  } 
+  .hexagon1{
+    left:7%;
+  }
+  .hexagon2{
+    left:7%;
+
+  }
+  .hexagon3{
+    left:7%;
+
+  }
+  .hexagon4{
+    left: 7%;
+    top:593px;
+
+  }
+  .hexagon5{
+    left: 7%;
+    top:593px;
+
+
+  }
+  .hexagon6{
+    left: 7%;
+    top:1065px;
+
+
+  }
+  .hexagon7{
+    left: 7%;
+    top:1065px;
+  }
+
+
+  /* .hexagon1{
+    background-image: url("/images/10.png");
+     height: 270px; 
+     width: 310px;
+     background-size: 100% 100%; 
+     position: absolute;
+     left: 428px; 
+      margin-top: -7px;
+  
+    
+  } */
+  /* .images1{
+    height: 60px;
+    width: 60px;
+    background-color: red;
+    margin-top: 64px;
+    margin-left: 124px;
+    background-image: url("/images/5.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  } */
+  /* .heprizeapps{
+    height: 50px;
+    width: 150px;
+    margin-left: 72px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+  
+  } */
+
+}
+@media (max-width:768px){
+
+}
+
+
+
+
+
+
+
+
+/* ====================================================Media Query End============================================== */
 /* ==============================last code=========================================== */
 
 

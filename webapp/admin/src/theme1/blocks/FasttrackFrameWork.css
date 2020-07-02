@@ -115,13 +115,82 @@
      /* background-color: red;    */
 }
 .sideimageftrack{
-    height: 454px;
-    /* width: 100%; */
+    height: 440px;
+     /* width: 100%;  */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     /* margin: auto;  */
-    /* margin-top: -38px; */
+     /* margin-top: -38px;  */
     margin-left: 147px;
 }
- 
+/* =======================================Media Query==================================================== */
+ @media (max-width:767px){
+    .fastrachight{
+        height: 2125px;
+                
+      
+
+    }
+    .ftrackwrapper{
+        height:2050px ;
+        background-size: 200% 108%;
+    }
+    .dashbox00{
+          margin-top: 370px; 
+         
+        
+    }
+    .heading{
+        margin-top:408px
+    }
+    .dash1OS{
+        margin-left: 25%!important;
+    }
+ .ftitle0{
+
+    font-size: 24px;
+ }
+ .ftitle00{
+     
+     font-size: 24px;
+    
+ }
+ .contentframework{
+    height: 774px;
+    /* background-color: red;   */
+    margin-top: -50px;
+    
+}
+.loremIpsum{
+    font-size: 22px;
+
+}
+.paragraphfasttrack{
+    margin-left: 0%;
+    margin-top: 17px;
+    
+}
+.paragraphfasttrack01{
+    margin-left: 0%;
+    margin-top: 35px;
+}
+.ftracermore{
+    margin-left: 0%!important;
+    font-size: 18px!important;
+    width: 33%!important;
+    cursor: pointer;
+}
+.arrow{
+ font-size: 18px!important;
+ margin-left: 103px!important;
+  margin-top: -31px!important;   
+
+
+ }
+ .sideimageftrack{
+    margin-left:0px;
+    width: 100%;
+    margin-top: -38px;
+ }
+ }
    

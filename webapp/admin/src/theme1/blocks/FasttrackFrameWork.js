@@ -1,6 +1,6 @@
 import React, { Component } from "react";
- import "./FasttrackFrameWork.css";
- import '@fortawesome/fontawesome-free/css/all.min.css';
+import "./FasttrackFrameWork.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 export default class FastrackFrameWork extends Component{

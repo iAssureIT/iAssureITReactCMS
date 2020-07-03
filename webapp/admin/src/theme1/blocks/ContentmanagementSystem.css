@@ -112,9 +112,9 @@
 .arrow{
     height: 100px;
     width: 30%;
-    margin-top: -45px;
+    margin-top: -40px;
     margin-left: 208px;
-    font-size: 34px;
+    font-size: 30px;
     color: #f1f1f1;
     padding-top: -10px;
 }
@@ -131,16 +131,17 @@
 /* ===================================================Media Query================================================================================== */
 @media (max-width:767px){
     .contentmgmtwrapper{
-        height: 2320px;
+        height: 2120px;
+        /* background-color: blue; */
     
         }
     .contantmgmtwrpper00{
-        height:5550px ;
+        height:5331px ;
         background-size: 100% 40%;
             }
     .dashbox0000{
         margin-left: 0px!important;
-        margin-top: 501px;
+        margin-top: 453px;
 
     }
     .contentmgmt{

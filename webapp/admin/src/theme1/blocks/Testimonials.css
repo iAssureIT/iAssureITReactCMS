@@ -1,3 +1,8 @@
+.testimonialwrapper{
+    height: 850px;
+    /* background-color: chartreuse; */
+}
+
 .TestimonialsHT{
 	height: 790px!important;
 	/* background-color: red!important;  */
@@ -148,9 +153,7 @@ top: -19px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash1Tm{
-    margin-left: 63px;
-}
+
 .dash2Tm{
     height: 1px;
     width: 50px;
@@ -223,9 +226,8 @@ top: -19px;
 .clienttestmonials{
     margin-top: -111px!important;
     height: 100px;
-    width: 400px;
-    /* background-color: yellow; */
-    left: 100px;
+    /* background-color: yellow;  */
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
 
     
@@ -236,28 +238,31 @@ top: -19px;
 }
 /* ===========================================================Media Query============================= */
 @media (max-width:767px){
-    .nopadd{
-        padding: 0px;
-    }
+    /* .TestimonialsHT{
+        background-size:0 0;
+    } */
     .dashBoxTm{
+         width: 60%;
+         padding-top: 50px;
+         } 
          
-        padding-top: 87px;
-         }  
+         .dash1Tm{
+            margin-left: 29%;
+        }
        .clienttestmonials{
-            left: -53px; 
+           width: 100%;
+           margin-top: -62px!important;
+           /* background-color: blue; */
+            
              
            
        }  
-       .xsclientview{
-           font-size: 42px;
-           margin-top: 114px;
-           margin-left: 41px;
-       }
+       
        .testimonialBox{
-           height: 498px;
-           width: 117%;
-            left: -8%; 
-            top:181px
+           height: 523px;
+           width: 108%;
+            left: 1%; 
+            top:47px
             
             /* background-color: red;  */
            

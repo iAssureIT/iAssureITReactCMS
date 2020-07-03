@@ -34,12 +34,11 @@ export default class AddressOnGoogleMap extends React.Component {
 			<div className="gmapwrapper">
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div className="col-lg-4 col-lg-offset-4 col-md-4 col-lg-offset-4 col-sm-12 col-xs-12 Glocationmap">
-						<div className="text-center">
-							<h1 className="location">
+						<h1 className="location">
 								<b> Our Location</b>
 							</h1>
 
-						</div>
+						
 
 					</div>
 				</div>
@@ -52,7 +51,7 @@ export default class AddressOnGoogleMap extends React.Component {
 					    
 					  </div>
 					</div> */}
-					<div class="mapouter" id="mapouter">
+					<div className="mapouter" id="mapouter">
 						<div class="gmap_canvas">
 							<iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=iAssureIT%20hadapsar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 							</iframe>

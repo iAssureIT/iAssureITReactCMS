@@ -27,7 +27,7 @@ position: absolute;
 .endmainrow{
     height: 108px;
     margin-top: 28px; 
-    /* background-color: darkgoldenrod; */
+    /* background-color: darkgoldenrod;  */
     text-align: center;
 }
 .endlesspsb{
@@ -60,7 +60,7 @@ position: absolute;
 }
 .mobileappd{
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montseendpossibwrapperrrat', sans-serif;
     margin-left: 12%;
     color: #555555;
     letter-spacing: 0.5px;
@@ -111,15 +111,16 @@ position: absolute;
    .arrowenspsb{
     height: 100px;
     width: 30%;
-    margin-top: -45px;
+    margin-top: -40px;
     margin-left: 206px; 
-    font-size: 34px;
+    font-size: 30px;
     color: #376BFF;
     padding-top: -10px;
    }
    .rightsideendpsbfw{
     height: 550px;
     margin-top: 50px;
+    /* background-color: cadetblue; */
        
     }
     .rightsideimgendpsw{
@@ -131,5 +132,68 @@ position: absolute;
          margin-left: -8%;
     
     }
+ /* ====================================================Media Query==================================================================    */
+    @media(max-width:767px){
+        .endpossibwrapper{
+            height: 1400px;
+            /* background-color: chartreuse; */
+        }
+        .endmainrow{
+            height: 100px;
+            width: 100%;
+            margin-top: 28px; 
+            text-align: center;
+            /* background-color: cadetblue; */
+            margin-left: 0%;
+            
+            
+        }
+        .endlesspsb{
+            font-size: 24px;
+        }
+        .endlesspsb00{
+            font-size: 24px;
+        }
+        .mobileappd{
+            font-size: 24px;
+            margin-left: 0%;
+        }
+        .loremIpsum1{
+            font-size: 24px;
+        
+        }
+        .paragraphendpsb01{
+            margin-left: 0%;
+        } 
+        .paragraphendpsb02{
+            margin-left: 0%;
+        } 
+        .enspsbrmrr{
+            margin-left: 0%!important;
+            font-size: 18px!important;
+            width: 33%!important;
+            cursor: pointer;
+        }
+        .arrowenspsb{
+         font-size: 18px!important;
+         margin-left: 103px!important;
+         margin-top: -31px!important;   
+
+        } 
+        .rightsideendpsbfw{
+            margin-top: 250px;
+
+        }
+        
+        .rightsideimgendpsw{
+            margin-left: 0%;
+            width: 100%;
+        }
+        
+    }
+
+
+
+ /* =======================================================Media Query end============================================================== */
     
 

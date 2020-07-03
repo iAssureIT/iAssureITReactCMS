@@ -1,5 +1,6 @@
 .gmapwrapper{
-	height: 500px !important;
+  height: 500px !important;
+  
 }
 .mapouter{
 	position:relative;
@@ -26,10 +27,11 @@
 }
 .Glocationmap{
   height: 80px;
-  /* background-color: red; */
+  /* background-color: red;  */
+  text-align: center;
 }
 .location{
-  font-size: 36px;
+  font-size: 46px;
   font-family: 'Montserrat', sans-serif;
   color: #555555;
 
@@ -174,6 +176,13 @@
   font-size: 16px;
   padding: 16px 32px;
 }
-.mapouterxs{
-	/*display: none;*/
+/* =====================================Media Query================================= */
+@media (max-width:767px){
+  .location{
+  font-size: 24px;
+  }
+  .Glocationmap{
+    width: 100%;
+  }
+
 }

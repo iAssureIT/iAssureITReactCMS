@@ -15,18 +15,22 @@ export default class Footer extends React.Component {
 							<li className="clrwt hmenutitle"><b>Menu</b></li>
 							  <a href="/"><li className="footertitle hmenutitle">Home</li></a>
 							  <a href="/aboutus"><li className="footertitle hmenutitle">About Us</li></a>
-							  <a href="/services"><li className="footertitle hmenutitle">Services</li></a>
+							  <a href="/services"><li className="footertitle hmenutitle">Portfolio</li></a>
 							  <a href="/contactus"><li className="footertitle hmenutitle">Contact Us</li></a> 
+							  <li className="footertitle hmenutitle ">Career</li>
+							  <li className="footertitle hmenutitle ">Resources</li>
 							  
 						</ul>
 					</div>
 					<div className=" col-lg-3 col-md-3 col-sm-3 col-xs-6 ">
 						 <ul className="">
-							 <li className="clrwt supportheading"><b>Support</b></li>
-							   <li className="footertitle supportheading">Careers</li>
-							   <li className="footertitle supportheading">Resources</li>
-							  <li className="footertitle supportheading">Blog</li>
-							   <li className="footertitle supportheading">Portfolio</li>
+							 <li className="clrwt supportheading"><b>Services</b></li>
+							   <li className="footertitle supportheading">Enterprise Apps</li>
+							   <li className="footertitle supportheading">Web Apps</li>
+							  <li className="footertitle supportheading">Mobile Apps</li>
+							  <li className="footertitle supportheading">Business Portails</li> 
+							   <li className="footertitle supportheading">eCommerce Portails</li> 
+							    <li className="footertitle supportheading">Staff Augumentation</li> 
 						</ul>
 					 </div>
 					 <div className=" col-lg-3 col-md-3 col-sm-3 col-xs-6">
@@ -50,18 +54,18 @@ export default class Footer extends React.Component {
 					</div>
 					</div>	
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerBottom">
-				<div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+				<div className="col-lg-12 col-md-12 col-sm-7 col-xs-7">
 					<ul className="mtop10">
 						<li className="copyright">Copyright &copy; 2019 iAssure International Technologies Pvt. Ltd All rights reserved</li>	
 					</ul>
 				</div>
-				<div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 hidden-xs copyr2">
+				{/* <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5 hidden-xs copyr2">
 					<ul className="pull-right bpadding">
 						<li className="">Privacy Policy</li>
 						  <li className="">Terms of Use</li>
 						  <li className="">Site Map</li>
 					</ul>
-				</div>
+				</div> */}
 			</div>
 			</div>
 	);

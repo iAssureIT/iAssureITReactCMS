@@ -8,7 +8,7 @@ import axios from 'axios';
 import CmsRoute from './lib/CmsRoute.js';
 
 // axios.defaults.baseURL = 'http://qaiassureitapi.iassureit.com';
-axios.defaults.baseURL = 'http://localhost:3060';
+axios.defaults.baseURL = 'http://localhost:3066';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 function App() {
   return (

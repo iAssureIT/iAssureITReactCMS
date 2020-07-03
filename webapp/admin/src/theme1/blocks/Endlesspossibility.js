@@ -14,12 +14,12 @@ export default class Endlesspossibility extends Component{
 						</ul>
 					</div> 
                     </div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 endmainrow row">
                             <span className="endlesspsb">ENDLESS</span >&nbsp;&nbsp;<span className="endlesspsb00">POSSIBILITIES</span>
                         </div>
-                    </div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 endlesscontentwrapper">
+                    </div> 
+                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 endlesscontentwrapper">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 enpsbcontent">
                             <div className="headingtitle">
                                 <h1 className="mobileappd">Mobile App Development</h1>
@@ -31,22 +31,22 @@ export default class Endlesspossibility extends Component{
                              with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages. 
                              </p>
 
-                            <p className="paragraphendpsb02">
+                             <p className="paragraphendpsb02">
                              It is a long established fact that a reader will be distracted by the readable content of a page when
                              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
                              Ipsum passages, and more recently with desktop publishing software
                              </p>
-                             <h3 className="enspsbrmrr border">Read More </h3> <div className="arrowenspsb"><i className="fas fa-angle-double-right"></i></div>
+                             <h3 className="enspsbrmrr">Read More </h3> <div className="arrowenspsb"><i className="fas fa-angle-double-right"></i></div> 
 
 
                         </div>
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 rightsideendpsbfw">
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 rightsideendpsbfw">
                           <img src="/images/000001.png" alt="002" className="rightsideimgendpsw"/>  
 
 
-                        </div>
+                        </div> 
 
-                    </div>
+                    </div> 
 
                 </div>
 

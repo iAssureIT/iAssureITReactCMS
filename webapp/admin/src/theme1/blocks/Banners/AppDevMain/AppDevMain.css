@@ -243,7 +243,7 @@ color: #fff;
 .homecarousel .owl-nav button.owl-prev{
     position: absolute;
     left: 0px;
-    top: -112px;
+    top: -168px;
 	z-index: 25;
     width: 45px !important;
     height: 45px !important;
@@ -262,7 +262,7 @@ color: #fff;
  .homecarousel .owl-nav  button.owl-next{
     position: absolute;
     right:  0px;
-    top: -113px;
+    top: -168px;
     background: transparent !important;
     border-radius: 0px !important;
  	width: 45px !important;
@@ -562,7 +562,7 @@ color: #fff;
     }
 
     }
-    @media(max-width:992){
+    @media(max-width:991){
         
     }
 /* =================================================Media query=============================================== */

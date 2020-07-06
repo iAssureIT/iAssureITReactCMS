@@ -109,48 +109,48 @@ export default class Services extends React.Component {
 				<div className="serviceswrapper">
 				<div className="serviceheight">	
 				   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<ul className="dashBoxS col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
+						<ul className="dashBoxS col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-12">
 						  <li className="dash1S "></li>
 						  <li className="dash2S"></li>
 						  <li className="dash3S"></li>
 						</ul>
 					</div> 
 					
-					 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 servicehiading row">
                             <span className="bheading">WHAT</span >&nbsp;&nbsp;<span className="normalheading">WE DO</span>
                         </div>
-					</div> 
-					  <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 Hexagonwrapper00">
+					</div>   
+					   <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 Hexagonwrapper00">
 
-							  <div className="hexagon1">
+						 <div className="hexagon1">
 						   <div className="images1"></div>
 						   <h1 className="heprizeapps">ENTERPRISE <span className="apps">APPS</span></h1>
-						</div>  
-						 <div className="hexagon2">
+						</div>   
+						* <div className="hexagon2">
 						   <h1 className="h1services">SERVICES</h1>
-						</div>  
+						</div>   
 						 <div className="hexagon3">
 							<div className="images2"></div>
 							<h1 className="hstaffaugmtion">STAFF AUGMEN-TATION</h1>
-						</div>  
-						  <div className="hexagon4">
+						</div>   
+						   <div className="hexagon4">
 							<div className="images3"></div>
 							<h1 className="hwebapps">WEB  <br />APPS</h1>
-						</div>   
-						   <div className="hexagon5">
+						</div>    
+						    <div className="hexagon5">
 							<div className="images4"></div>
 							<h1 className="hbportals">BUSINESS PORTALS</h1>
-						</div>   
+						</div>    
 						   <div className="hexagon6">
 							<div className="images5"></div>
 							<h1 className="hmapps">MOBILE APPS</h1>
-						</div>   
-						   <div className="hexagon7">
+						</div>    
+						    <div className="hexagon7">
 							<div className="images6"></div>
 							<h1 className="heportal">eCOMMERCE <span className="portal"> PORTAL</span></h1>
-						</div>   
-					</div>   
+						</div>     
+					</div>    
 
 
 				</div>

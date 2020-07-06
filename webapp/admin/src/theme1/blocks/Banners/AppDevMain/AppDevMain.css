@@ -226,6 +226,7 @@ color: #fff;
     left: 100px !important;
     height: 75px !important;
     width: 125px !important;
+    cursor: pointer;
 }
 .menuimg{
 	height: 35px;

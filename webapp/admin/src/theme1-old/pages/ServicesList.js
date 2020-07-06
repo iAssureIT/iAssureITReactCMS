@@ -15,6 +15,7 @@ import Footer 			from '../common/Footer.js';
 import Headernew 		from '../common/headernew.js';
 
 
+
 export default class ServicesList extends React.Component {
 	constructor(props) {
 		super(props);
@@ -44,7 +45,7 @@ export default class ServicesList extends React.Component {
 				
 				<ServicesBanner />
 
-				<ListofServices />
+				{/* <ListofServices /> */}
 
 				<WhyiAssure />
 

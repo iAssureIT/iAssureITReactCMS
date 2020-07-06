@@ -28,9 +28,9 @@ export default class Footer extends React.Component {
 							   <li className="footertitle supportheading">Enterprise Apps</li>
 							   <li className="footertitle supportheading">Web Apps</li>
 							  <li className="footertitle supportheading">Mobile Apps</li>
-							  <li className="footertitle supportheading">Business Portails</li> 
+							   <li className="footertitle supportheading">Business Portails</li> 
 							   <li className="footertitle supportheading">eCommerce Portails</li> 
-							    <li className="footertitle supportheading">Staff Augumentation</li> 
+							    <li className="footertitle supportheading">Staff Augumentation</li>  
 						</ul>
 					 </div>
 					 <div className=" col-lg-3 col-md-3 col-sm-3 col-xs-6">
@@ -54,7 +54,7 @@ export default class Footer extends React.Component {
 					</div>
 					</div>	
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 footerBottom">
-				<div className="col-lg-12 col-md-12 col-sm-7 col-xs-7">
+				<div className="col-lg-7 col-md-7 col-sm-7 col-xs-7">
 					<ul className="mtop10">
 						<li className="copyright">Copyright &copy; 2019 iAssure International Technologies Pvt. Ltd All rights reserved</li>	
 					</ul>

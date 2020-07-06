@@ -19,9 +19,10 @@ export default class AppDevMain extends React.Component {
 				<div className="b1banerheight container-fluid b1banerheight2 ">
 				  <div className="col-lg-12 col-md-12  col-sm-12 col-xs-12">
 						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 logoBox">
-							<img className="logoIMG img-responsive"src="./images/Logo.png" alt="logo"/>
+						
+						<img className="logoIMG img-responsive"src="./images/Logo.png" alt="logo"/>  
 						</div>
-					 {/* <div className="container-fluid">  */}
+					 
 						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715 homecarousal1 "loop nav={true}  autoplay={false} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1} dots={false} >
 							
 								<div className="item active row ">
@@ -114,7 +115,7 @@ export default class AppDevMain extends React.Component {
 						
                      </OwlCarousel>
 
-					 {/* </div>  */}
+					 
 				</div>
 				 </div>				
 			</div>

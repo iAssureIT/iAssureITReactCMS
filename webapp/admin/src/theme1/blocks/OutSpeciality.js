@@ -15,9 +15,9 @@ export default class OutSpeciality extends React.Component {
 				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhead row">
 					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<ul className="dashBoxOS dasboxssp col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
-						  <li className="dash1OS"></li>
-						  <li className="dash2OS"></li>
-						  <li className="dash3OS"></li>
+						  <li className="dash1S"></li>
+						  <li className="dash2S"></li>
+						  <li className="dash3S"></li>
 						</ul>
 					</div>
 					</div> 

@@ -1,6 +1,6 @@
 .madalbtn{
 	position: fixed;
-	bottom:  65px;
+	bottom:  545px;
 	right: 0px;
 	z-index: 10;
 }
@@ -10,9 +10,9 @@
 .btnbg{
     background-image: url(/images/contact.png);
     width: 115px;
-    background-color:#f03759;
+    background-color:#f1f1f1;
     /* background-color: #fff; */
-    box-shadow: 1px 1px 20px 0px #999;
+    box-shadow: 1px 1px 10px 0px #f1f1f1;
     border-radius: 40px 0px 0px 40px;
     height: 55px;
     background-size: 100% 100%;

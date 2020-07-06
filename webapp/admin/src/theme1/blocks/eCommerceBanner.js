@@ -20,7 +20,7 @@ export default class eCommerceBanner extends React.Component {
 						<div  className="ecbheight container-fluid">
 							<div className="col-lg-12 col-md-12 hidden-sm hidden-xs container">
 								<div className="col-lg-12 col-md-12 hidden-sm hidden-xs logoBox">
-									<img className="logo img-responsive" src="./images/Logo.png" alt="logo"/>
+								<a href="/"><img className="logo img-responsive" src="./images/Logo.png" alt="logo"/> </a>
 						
 								</div>
 								<div className="col-lg-10 col-md-10 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs">

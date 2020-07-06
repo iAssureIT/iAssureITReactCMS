@@ -31,12 +31,14 @@
 
 .logoBox{
 	position: absolute;
+	z-index: 50!important;
 
 }
 .logo{
 	position: absolute;
     top: 45px;
-    left: 90px;
+	left: 90px;
+	
 }
 .menuimg{
 	height: 35px;

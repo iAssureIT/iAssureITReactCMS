@@ -1,6 +1,6 @@
 .serviceswrapper{
-  height: 909px;
-   /* background-color:#ccc;    */
+  height: 930px;
+   /* background-color:#ccc;     */
 }
  .serviceheight{
 	height: 1020px;
@@ -9,6 +9,35 @@
   background-repeat: no-repeat;
   
 } 
+.dashBoxS{
+  list-style: none;
+    position: relative;
+    height: 20px;
+    left: -67px;
+    top: 20px;
+    margin-top: 20px;
+   }
+.dashBoxS li{
+  float: left;
+}
+.dash1S,.dash3S {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+.dash2S{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+}
+/* .dash1S{
+  margin-left:22%;
+} */
+
 .servicehiading{
   height: 108px; 
   margin-top: 28px;
@@ -82,7 +111,7 @@
   background-size: 100% 100%; 
   position: absolute;
   left: 428px;
-  margin-top: 231px;
+  margin-top: 211px;
 
 }
 .h1services{
@@ -107,7 +136,7 @@
   background-size: 100% 100%; 
   position: absolute;
   left: 428px;
-  margin-top: 468px;
+  margin-top: 446px;
 
 }
 .images2{
@@ -140,7 +169,7 @@
   background-size: 100% 100%; 
   position: absolute;
   left: 219px;
-  margin-top: 115px;
+  margin-top: 98px;
 
 }
 .images3{
@@ -173,7 +202,7 @@
   width: 310px;  background-size: 100% 100%; 
   position: absolute;
   left: 217px;
-  margin-top: 351px;
+  margin-top: 333px;
 
 }
 .images4{
@@ -206,7 +235,7 @@
   background-size: 100% 100%; 
   position: absolute;
   left: 636px;
-  margin-top: 114px;
+  margin-top: 92px;
 
 }
 .images5{
@@ -239,7 +268,7 @@
   background-size: 100% 100%; 
   position: absolute;
   left: 639px;
-  margin-top: 350px;
+  margin-top: 330px;
 
 }
 .images6{
@@ -281,20 +310,97 @@
 
 
 /* ==========================================Media Query===================================================== */
-@media (max-width:767px){
+@media  screen and (max-width:1200px){
+  
+}
+@media  screen and (max-width:992px){
+  
   .serviceswrapper{
-    height: 1900px;
+    height: 930px;
     width: 100%;
-     /* background-color:red;     */
+    /* background-color: darkgoldenrod; */
+  }
+
+  .Hexagonwrapper00{
+     height: 1112px;
+   }
+   .dashBoxS{
+     width:100%;
+       margin-left: -67px!important;  
+       /* background-color: chartreuse; */
+       
+   }
+   .dash1S{
+     margin-left: 43%!important;
+   }
+   .servicehiading{
+     margin: auto;
+     margin-top: 20px;
+   
+   }
+   .hexagon1{
+     margin-left: -202px; 
+   
+ 
+ 
+   }
+   .hexagon2{
+     margin-left: -202px;
+   }
+   .hexagon3{
+     margin-left: -202px;
+   }
+   .hexagon4{
+     margin-left: -202px; 
+ 
+   }
+   .hexagon5{
+     margin-left:-202px ;
+   }
+   .hexagon6{
+     margin-left:-198px ;
+ 
+ 
+   }
+   .hexagon7{
+     margin-left:-198px ;
+ 
+ 
+   }
+ 
+ }
+ 
+
+
+
+
+
+@media screen and (max-width:767px){
+  .serviceswrapper{
+    height: 1850px;
+    width: 100%;
+     /* background-color:red;      */
+  }
+  .servicehiading{
+    margin: auto;
+    margin-top: 20px;
+   
+  
   }
   .dashBoxS{
-    
-      left: 98px!important; 
+    width: 100%;
+    margin: auto!important;
+    /* background-color: yellowgreen;  */
+     left: 0px!important;
+
       
+  }
+  .dash1S{
+    margin-left: 100px!important;
   }
   .bheading{
     font-size: 24px;
-    margin-left: 34px;
+    
   }
   .normalheading{
     font-size: 24px;
@@ -306,76 +412,41 @@
   
   } 
   .hexagon1{
-    left:7%;
-  }
+    left:63%;  }
   .hexagon2{
-    left:7%;
+    left:63%;
 
   }
   .hexagon3{
-    left:7%;
-
+    left:63%;
   }
   .hexagon4{
-    left: 7%;
+    left:63%;
     top:593px;
 
   }
   .hexagon5{
-    left: 7%;
+    left:63%;
     top:593px;
 
 
   }
   .hexagon6{
-    left: 7%;
+    left:63%;
     top:1065px;
 
 
   }
   .hexagon7{
-    left: 7%;
+    left:63%;
     top:1065px;
   }
 
 
-  /* .hexagon1{
-    background-image: url("/images/10.png");
-     height: 270px; 
-     width: 310px;
-     background-size: 100% 100%; 
-     position: absolute;
-     left: 428px; 
-      margin-top: -7px;
   
-    
-  } */
-  /* .images1{
-    height: 60px;
-    width: 60px;
-    background-color: red;
-    margin-top: 64px;
-    margin-left: 124px;
-    background-image: url("/images/5.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  } */
-  /* .heprizeapps{
-    height: 50px;
-    width: 150px;
-    margin-left: 72px;
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
-  
-  } */
 
 }
-@media (max-width:768px){
-
-}
+ 
 
 
 
@@ -624,31 +695,6 @@
 
 
 /*dash ===== ======================== =============*/
-.dashBoxS{
-  list-style: none;
-    position: relative;
-    left: 67px;
-    height: 20px;
-    top: 20px;
-    margin-top: 20px;
-}
-.dashBoxS li{
-  float: left;
-}
-.dash1S,.dash3S {
-    height: 1px;
-    width: 20px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
-.dash2S{
-    height: 1px;
-    width: 50px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
 /*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
 
 /*========================================*/

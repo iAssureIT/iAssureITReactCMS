@@ -11,7 +11,7 @@ export default class ServicesBanner extends React.Component {
 				<div className="banerSBheight hidden-sm hidden-xs">
 					<div className="col-lg-12 col-md-12 hidden-sm hidden-xs row">{/*3menubar*/}
 						<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
-							<img className="logo img-responsive" src="./images/Logo.png" alt="logo"/>
+						<a href="/" ><img className="logo img-responsive" src="./images/Logo.png" alt="logo"/></a>
 							{/*<img className="menuimg img-responsive pull-right" src="./images/3menubar.png" alt="logo"/>*/}
 						</div>
 						<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">

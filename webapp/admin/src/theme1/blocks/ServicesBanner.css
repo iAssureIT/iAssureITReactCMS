@@ -28,6 +28,7 @@
 }
 .logoBox{
 	position: absolute;
+	z-index: 50;
 
 }
 .logo{

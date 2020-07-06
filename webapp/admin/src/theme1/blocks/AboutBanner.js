@@ -12,7 +12,7 @@ export default class AboutBanner extends React.Component {
 			<div className="ABOUTbanerheight container-fluid">
 				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
 					<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
-						<img className="logoab img-responsive" src="./images/Logo.png" alt="logo"/>
+						<a href="/" ><img className="logoab img-responsive" src="./images/Logo.png" alt="logo"/></a>
 						{/*<img className="menuimgab img-responsive pull-right" src="./images/3menubar.png" alt="logo"/>*/}
 					</div>
 					<div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">

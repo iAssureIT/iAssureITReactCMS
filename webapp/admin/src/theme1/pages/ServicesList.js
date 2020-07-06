@@ -13,6 +13,7 @@ import Header 			from '../common/Header.js';
 import Footer 			from '../common/Footer.js';
 
 import Headernew 		from '../common/headernew.js';
+import Services         from  '../blocks/Services.js';
 
 
 export default class ServicesList extends React.Component {
@@ -43,8 +44,9 @@ export default class ServicesList extends React.Component {
 				<ContactModal/>
 				
 				<ServicesBanner />
+				<Services />
 
-				<ListofServices />
+				{/* <ListofServices /> */}
 
 				<WhyiAssure />
 

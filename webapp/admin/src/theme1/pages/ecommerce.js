@@ -5,7 +5,6 @@ import Footer 			from '../common/Footer.js';
 import Header 			from '../common/Header.js';
 import "./ServicesList.css";
 import Headernew 		from '../common/headernew.js';
-
 import ServiceBanner 	from '../blocks/eCommerceBanner.js';
 import Bdesignblock     from '../blocks/bdesignblock.js';
 import EcommBlock1 		from '../blocks/ecommBlock-1.js';
@@ -13,6 +12,8 @@ import EcommBlock2 		from '../blocks/ecommBlock2.js';
 import EcommBlock3 		from '../blocks/ecommBlock3.js';
 import EcommBlock4		from '../blocks/ecommBlock4.js';
 import Testimonials 	from '../blocks/Testimonials.js';
+import ContactModal 	from '../blocks/contactModal.js';
+
 
 
 
@@ -87,6 +88,10 @@ export default class Ecommerce extends React.Component {
 					<title>{this.state.title}</title>
 				</Helmet>
 				{/*<Headernew/>*/}
+				<Headernew />
+				<ContactModal/>
+
+
 				<ServiceBanner bannerText = {this.state.bannerText}/>
 				<Bdesignblock/>
 				<EcommBlock1 EcommBlock1 = {this.state.EcommBlock1}/>

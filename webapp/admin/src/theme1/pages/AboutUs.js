@@ -10,6 +10,8 @@ import ContactModal 	from '../blocks/contactModal.js';
 import Header from '../common/Header.js';
 import Footer 			from '../common/Footer.js';
 import Headernew 		from '../common/headernew.js';
+import ScrollButton     from '../blocks/ScrollButton.js';
+
 
 
 import "./ServicesList.css";
@@ -42,6 +44,7 @@ export default class AboutUs extends React.Component {
 					<title>{this.state.title}</title>
 				</Helmet>
 				{/*<Header/>*/}
+				
 				<Headernew/>
 				<ContactModal/>
 				<AboutBanner />
@@ -53,6 +56,7 @@ export default class AboutUs extends React.Component {
 				{/*<OurTeam />*/}
 
 				<MissionVision />
+				<ScrollButton />
 	{/*
 
 				<Portfolio />

@@ -130,15 +130,38 @@
     margin-left: 147px;
 }
 /* =======================================Media Query==================================================== */
-/* @media  screen and (max-width:992px){
-   .dashbox00{
-        height: 50px;
+ /* @media  screen and (max-width:992px){
+    .fastrachight{
+        height: 1525px;
+
+      
+
+    }
+    .ftrackwrapper{
+        height:50px ;
+        background-size: 200% 108%;
+    }
+    
+    .smdash1{
+        height: 100px;
         width: 100%;
-        background-color: darkgoldenrod;
-   }
+        margin-top: -140px; 
+       
+      
+  }
+  .dashbox00{
+      left: 30px!important;
+  }
+  .fstrack1{
+      margin-left: 43%!important;
+  }
+  .heading{
+    height: 108px;
+     margin-top: -113px!important;
+     margin: auto;
+  }
     
-    
-}  */
+}   */
 
 @media screen and (max-width:767px){
     .fastrachight{

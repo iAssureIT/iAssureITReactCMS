@@ -10,8 +10,8 @@ export default class FastrackFrameWork extends Component{
                 <div className="ftrackwrapper">
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
 					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-						<ul className="dashBoxOS dashbox00 col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
-						  <li className="dash1OS"></li>
+						<ul className="dashBoxOS dashbox00 smdash1 col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
+						  <li className="dash1OS fstrack1"></li>
 						  <li className="dash2OS"></li>
 						  <li className="dash3OS"></li>
 						</ul>

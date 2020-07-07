@@ -11,9 +11,9 @@ export default class WhyiAssure extends React.Component {
 
 	render() {
 		return (
-			<div className="container-fluid nopadding">
+			<div className="nopadding">
 				<div className="WhyiAssureheight hidden-xs hidden-sm">
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wBox1">
+					{/* <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wBox1">
 						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6 ">
 							<img className="infoImg1 img-responsive pull-right" src="./images/29.png" alt="Bannerpng"/>
 						</div>
@@ -43,8 +43,8 @@ export default class WhyiAssure extends React.Component {
 
 						</div>
 
-					</div>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wBox2">
+					</div> */}
+					{/* <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wBox2">
 						
 						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6">
 							<div className="infotext1 col-lg-10 col-md-10 col-sm-10 col-xl-10 pull-right">
@@ -108,8 +108,8 @@ export default class WhyiAssure extends React.Component {
 
 						</div>
 
-					</div>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wBox2">
+					</div> */}
+					{/* <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 wBox2">
 						
 						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6">
 
@@ -142,10 +142,15 @@ export default class WhyiAssure extends React.Component {
 
 						</div>
 
-					</div>				
+					</div>				 */}
 				</div>
+				</div>
+
+);
+}
+}
 {/*=========================== Mobile view ===========================================*/}
-				<div className="WhyiAssureheight hidden-lg hidden-md">
+				{/* <div className="WhyiAssureheight hidden-lg hidden-md">
 					<div className="col-sm-12 col-xs-12 wBox1xs">
 						<div className="hidden-md hidden-lg col-sm-6 col-sm-offset-3 col-xs-12 ">
 							<img className="infoImg1xs img-responsive pull-right" src="./images/29.png" alt="Bannerpng"/>
@@ -281,4 +286,4 @@ export default class WhyiAssure extends React.Component {
 
 		);
 	}
-}
+} */}

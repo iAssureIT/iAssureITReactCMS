@@ -14,6 +14,8 @@ import Footer 			from '../common/Footer.js';
 
 import Headernew 		from '../common/headernew.js';
 import Services         from  '../blocks/Services.js';
+import ScrollButton     from  '../blocks/ScrollButton.js';
+import CostAdvantage    from  '../blocks/CostAdvantage.js';
 
 
 export default class ServicesList extends React.Component {
@@ -41,21 +43,25 @@ export default class ServicesList extends React.Component {
 				</Helmet>
 				{/*<Header/>*/}
 				<Headernew/>
+				
+
 				<ContactModal/>
 				
 				<ServicesBanner />
 				<Services />
+				<CostAdvantage />
 
 				{/* <ListofServices /> */}
 
-				<WhyiAssure />
+				{/* <WhyiAssure /> */}
 
-				<Technologies />
+				<Technologies /> 
+				<ScrollButton />
 
 				{/*<Portfolio />*/}
-				<Testimonials />
+				 {/* <Testimonials />  */}
 
-				<Footer />
+				{/* <Footer /> */}
 			</div>
 		);
 	}

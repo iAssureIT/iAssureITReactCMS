@@ -13,6 +13,8 @@ import EcommBlock2 		from '../blocks/ecommBlock2.js';
 import EcommBlock3 		from '../blocks/ecommBlock3.js';
 import EcommBlock4		from '../blocks/ecommBlock4.js';
 import Testimonials 	from '../blocks/Testimonials.js';
+import ScrollButton     from '../blocks/ScrollButton.js';
+
 
 export default class bussinessportal extends React.Component {
 	constructor(props) {
@@ -56,6 +58,8 @@ export default class bussinessportal extends React.Component {
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>{this.state.title}</title>
 				</Helmet>
+				<ScrollButton />
+
 				<Headernew/>
 				<ServiceBanner bannerText = {this.state.bannerText}/>
 				<Bdesignblock/>

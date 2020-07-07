@@ -1,16 +1,64 @@
 .footerBlock{
 	height: 340px;
-	 /* background-color: #1aa;   */
+    background-color: #376bff; 
+    width: 100%;  
     
     
 }
-.footerTop{
+ .footerTop{
 height: 291px;
-background-color:#376bff;
-/*background-image: url("/images/wmpng.png");*/
-background-size: 100% 100%;
-/* margin-top: -17px; */
+/* background-color:#000; */
+/* background-image: url("/images/wmpng.png"); */
+background-size: 100% 100%; 
+ /* margin-top: -17px;  */
+ }  
+ .wrap1{
+     height: 291px;
+      /* background-color: red;  */
+ }
+ .wrap2{
+     height: 291px;
+     /* background-color: blueviolet; */
+ }
+ .wrap3{
+    height: 291px;
+    /* background-color: rgb(43, 255, 0); */
 }
+.wrap4{
+    height: 291px;
+    /* background-color: yellow; */
+}
+
+.bgcolor{
+    height: 291px;
+     /* background-color: burlywood;  */
+}
+.f1ooter{
+    height: 290px;
+    width: 100%;
+    /* background-color: chartreuse; */
+    
+}
+.footer2{
+    height: 290px;
+    width: 100%;
+    /* background-color: chartreuse; */
+ 
+}
+.footer3{
+    height: 290px;
+    width: 100%;
+    /* background-color: chartreuse; */
+
+
+}
+.backgroundpng{
+    height: 100px;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+
 .footerBottom{
 	height: 50px;
 	background-color: #283592;
@@ -35,9 +83,9 @@ background-size: 100% 100%;
 }
 .contactBtn{
     position: relative;
-    top: 15px;
+    top: 31px;
     width: 150px;
-    left: 14px;
+    left: -27px; 
     border-width: 0px !important;
     height: 30px;
     border-radius: 20px;
@@ -59,12 +107,12 @@ background-size: 100% 100%;
 
 .clrwt{
     color: #fff;
-    margin-top: -60px;
-
-}
+   margin-left: -40px; 
+   padding-top: 30px;
+   }
 .clrwt b{
 
-        font-size: 18px;
+        font-size: 24px;
         font-family: 'Montserrat', sans-serif;
 
 }
@@ -76,10 +124,7 @@ background-size: 100% 100%;
 	padding: 17px 10px 0px 10px;
 	color: #fff;
 }
-.lm{
-	position: relative;
-	left: 14px;
-}
+
 .footerBottom ul{
 	list-style: none;
 }
@@ -113,8 +158,9 @@ background-size: 100% 100%;
 }
 .footertitle{
     color: #f1f1f1f1;
-    font-size: 14px;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    margin-left: -40px; 
  
 }
 .copyright{
@@ -159,9 +205,9 @@ background-size: 100% 100%;
     .addresstitle{
         margin-left: -30px;
     }
-    .hmenutitle{
+    /* .hmenutitle{
         margin-left: -15px;
-    }
+    } */
    
     .copyright{
         color: #f1f1f1f1;

@@ -48,10 +48,6 @@ export default class ContactUs extends React.Component {
 				<ContactForm />
 
 				<AddressOnGoogleMap />
-				
-				
-
-				<br/>
 				<Footer />
 			</div>
 		);

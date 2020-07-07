@@ -13,6 +13,8 @@ import EcommBlock3 		from '../blocks/ecommBlock3.js';
 import EcommBlock4		from '../blocks/ecommBlock4.js';
 import Testimonials 	from '../blocks/Testimonials.js';
 import ContactModal 	from '../blocks/contactModal.js';
+import ScrollButton     from '../blocks/ScrollButton.js';
+
 
 
 
@@ -89,6 +91,8 @@ export default class Ecommerce extends React.Component {
 				</Helmet>
 				{/*<Headernew/>*/}
 				<Headernew />
+				{/* <ScrollButton /> */}
+
 				<ContactModal/>
 
 
@@ -100,6 +104,7 @@ export default class Ecommerce extends React.Component {
 				<EcommBlock3/>
 				<EcommBlock4/>
 				<Bdesignblock/>
+				<ScrollButton />
 
 				<Testimonials/>
 				<Footer />

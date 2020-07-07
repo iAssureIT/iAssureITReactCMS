@@ -34,6 +34,7 @@ import { Helmet } from "react-helmet";
 
 import pagehead 			from '../pagehead/pagehead.js';
 import ListofServices 	from '../blocks/ListofServices.js';
+import ScrollButton     from '../blocks/ScrollButton.js';
 
 
 
@@ -66,26 +67,28 @@ export default class Homepage extends React.Component {
 				</Helmet>
 				 {/* <homeCarousel/>  */}
 				{/* <Header /> */}
+				
 				   <Headernew/>   
 				      <ContactModal/>        
 				 {/* <Banner />  */}
 				<HomeCarousel/>
 				
 				 <Services />        
-				 <FastrtrackFrameWork />               
+				 <FastrtrackFrameWork />                
 				 {/* <ListofServices />       */}
 
-				  <OutSpeciality />            
-				  <AutoPilotPlatform />         
-				  <IndustryDomains />        
-				  <ContentmanagementSystem />          
+				   <OutSpeciality />             
+				  <AutoPilotPlatform />          
+				   <IndustryDomains />         
+				   <ContentmanagementSystem />           
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				  <Testimonials />            
-			      <Endlesspossibility />           
-			      <AddressOnGoogleMap />          
-			     <Footer />           
+				   <Testimonials />             
+			       <Endlesspossibility />            
+			       <AddressOnGoogleMap />           
+			      <Footer /> 
+				  <ScrollButton />           
 			</div>
 		);
 	}

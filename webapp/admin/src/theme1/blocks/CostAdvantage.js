@@ -23,23 +23,23 @@ export default class CostAdvantage extends Component{
                     </div>
                 </div>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 wrapperimgtext">
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
-                            <p className="paragraphfasttrack">
-                            <span className="loremIpsum">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. 
+                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 costadvantagewrapp">
+                            <p className="paragraphcostadvantage01">
+                            <span className="loremIpsumadtge">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. 
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently
                              with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages, 
                              </p>
 
-                            <p className="paragraphfasttrack01">
+                            <p className="paragraphcostadvantage02">
                              It is a long established fact that a reader will be distracted by the readable content of a page when
                              looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
                              Ipsum passages, and more recently with desktop publishing software
                              </p>
-                             <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
+                             <h3 className="cadtgeracermore">Read More </h3> <div className="arrowcadtge"><i className="fas fa-angle-double-right"></i></div>
 
                  </div> 
-                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
-                         <img src="/images/advantage01.png" alt="001" className="sideimageftrack"/>  
+                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframeworkadtage ">
+                         <img src="/images/advantage01.png" alt="001" className="sideimagecostadvatge"/>  
                  </div>        
 
 

@@ -8,7 +8,7 @@ import ListofServices 	from '../blocks/ListofServices.js';
 import WhyiAssure 		from '../blocks/WhyiAssure.js';
 import Technologies 	from '../blocks/Technologies.js';
 import Testimonials 	from '../blocks/Testimonials.js';
-/*import Portfolio 		from '../blocks/Portfolio.js';*/
+// import Portfolio 		from '../blocks/Portfolio.js';
 import Header 			from '../common/Header.js';
 import Footer 			from '../common/Footer.js';
 
@@ -16,6 +16,10 @@ import Headernew 		from '../common/headernew.js';
 import Services         from  '../blocks/Services.js';
 import ScrollButton     from  '../blocks/ScrollButton.js';
 import CostAdvantage    from  '../blocks/CostAdvantage.js';
+import Mtechnology      from   '../blocks/Mtechnology.js';
+import DomailExperise   from  '../blocks/DomailExperise.js';
+import PerformanceApps from   '../blocks/PerformanceApps.js';
+
 
 
 export default class ServicesList extends React.Component {
@@ -50,18 +54,23 @@ export default class ServicesList extends React.Component {
 				<ServicesBanner />
 				<Services />
 				<CostAdvantage />
+				<Mtechnology />
+				<DomailExperise />
+				<PerformanceApps />
+				
+				 
 
 				{/* <ListofServices /> */}
 
-				{/* <WhyiAssure /> */}
+				 {/* <WhyiAssure />  */}
 
-				<Technologies /> 
+				{/* <Technologies />  */}
 				<ScrollButton />
 
-				{/*<Portfolio />*/}
+				{/* <Portfolio /> */}
 				 {/* <Testimonials />  */}
 
-				{/* <Footer /> */}
+				 <Footer /> 
 			</div>
 		);
 	}

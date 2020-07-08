@@ -1,133 +1,127 @@
-.costadvantagewrpp{
-    height: 930px;
-  /* background-color: chocolate;   */
+.mtechnologywrapper{
+    height: 600px;
+    background-color: #FFFFFF;
 }
-.backgroundimgadnt{
-    height: 920px;
-    background-image: url(/images/costadvantage.png); 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-.barspace{
+.boxspace{
     height: 20px;
     /* background-color: red; */
-    margin-top: 159px;
+    margin-top:23px;
 }
-
-.dashcostadntage{
+.dashmtechnology{
     list-style: none;
-    margin: auto;
+    /* margin: auto; */
     
   
 }
-.dashcostadntage li{
+.dashmtechnology li{
   float: left;
 }
-.dash1costavtge{
+.dash1mtechnology{
     height: 1px;
     width: 20px;
     margin:2px 2px 2px 10px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash2costavtge{
+.dash2mtechnology{
     height: 1px;
     width: 50px;
     margin:2px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash3costavtge {
+.dash3mtechnology {
     height: 1px;
     width: 20px;
     margin:2px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.textwrapper{
+.mtelogytextwrapper{
     height: 60px;
-    /* background-color: chocolate; */
+     /* background-color: chocolate;  */
     text-align: center;
     margin-top: 7px;
 }
-.h1cost{
+.h1mtech{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: #F1F1F1;
+    color: #555555;
 }
-.h2advantage{
+.h2mtech{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
-    color:#F1F1F1;
+    color:#555555;
 }
-.wrapperimgtext{
+.bgwrapper{
     height: 494px;
     /* background-color: coral; */
     margin-top: 53px;
 }
-.costadvantagewrapp{
+.mtechlogywrapp{
     height: 370px;
     /* background-color: red;  */
     
 }
-.paragraphcostadvantage01{
+.paragraphmtech01{
     
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
     margin-left:12%;
-    color: #f1f1ff;
+    color: #555555;
     letter-spacing: 0.5px;
     font-weight: 550; 
 
     
 
 }
-.loremIpsumadtge{
+.loremIpsummtech{
     font-size: 30px;
     font-weight: bold;
 }
-.paragraphcostadvantage02{
+.paragraphmtech02{
    font-size: 18px;
    font-family: 'Montserrat', sans-serif;
    margin-left:12%;
-   color: #f1f1ff;
-   margin-top: 25px; 
+   color: #555555;;
+    margin-top: 25px; 
    letter-spacing: 0.5px;
    font-weight: 550; 
 
 
 }
-.cadtgeracermore{
+.mtechracermore{
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     margin-left:12%;
-    color: #f1f1f1;
+    color: #376BFF;
     cursor: pointer;
-    border-bottom: 1px solid #f1f1f1!important;
+    border-bottom: 1px solid #376BFF!important;
     width: 19%;
 
 
 }
-.arrowcadtge{
+.arrowmtech{
     height: 100px;
     width: 30%;
     /* background-color: aquamarine; */
     margin-top: -40px; 
     margin-left: 208px;
     font-size:30px;
-    color: #f1f1f1;
+    color: #376BFF;
     
 }
 
-.imageframeworkadtage{
-   height: 370px;
-   /* margin-top: -37px; */
-   /* background-color: red;     */
+.imageframemtechlogy{
+   height: 428px;
+    
 }
-.sideimagecostadvatge{
+.sideimagemtechlogy{
    height: 440px;
    background-size: 100% 100%;
    background-repeat: no-repeat;
-   margin-left: 113px;
+   margin-left: 86px;
 }
+
+

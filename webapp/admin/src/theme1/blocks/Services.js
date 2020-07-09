@@ -1,106 +1,83 @@
 import React from 'react';
 import "./Services.css";
 import $ from "jquery";
+import axios from 'axios';
 
 export default class Services extends React.Component {
 
+
+
 	constructor(props) {
 		super(props);
-	} 
+		this.state = {
+		  blocks: {
+			"blockTitle": "<b>Our</b> Speciality",
+			"blockSubTitle": "We are passionate about our work",
+			"blockDescription": 'iAssureIT is an innovative IT company with energetic, talented and ambitious pool of 30+ Software Engineers, passionate about bringing the disruptive change in technology arena.<br/>We are the Change Makers.<br/>&nbsp;&nbsp;&nbsp;&nbsp;Our world class quality application development with latest cutting-edge technologies used for rapid development and blazing fast performance.A tremendous journey of 7 years started in 2011. We have developed over 150+ projects of small and large sizes. Our clientele is spread across the globe, from countries like USA, Europien Countries, South Africa, Gulf Region, Singapore and Australia.<br/>&nbsp;&nbsp;&nbsp;&nbsp;iAssureIT has customers from various industry domains that include Start ups too. Our clients are from industries like Financial Services, Healthcare, Manufacturing, Pharmaceuticals, Real Estate, Shipping and Logistics, Education, etc. We have been helping them to craft their organizational level digital road map.',
+			"blockComponentName": "",
+			"blockType": "",
+			"bgImage": "/images/1.png",
+			"fgImage": "/images/37.png",
+			"repeatedBlocks": [
+								{ 
+									Title: "<b>Enterprise<b/>", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/13.png",
+									Description: "We have indepth expertise in developing large scale Enterprise grade web & mobile apps."
+								},
+								{ 
+									Title: "<b>Startup</b> World", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/14.png",
+									Description: "Specially made plans for Startups that are highly cost effective & value added services. Our quotations are absolutely unbeatable in the IT Industry."
+								},
+								{ 
+									Title: "<b>eCommerce</b>", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/15.png",
+									Description: "Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores"
+								}
+			],
+	
+		  
+			"bgVideo"				: "",
+			"fgVideo"				: "",
+			"blockGroup"			: "",
+			"blockAppearOnPage"		: ""
+		  },
+		  blockID:"",
+		  block_id:""
+		}; 
+	
+		
+	  }
 	componentDidMount(){
-		/*$(window).scroll(function () {
-        if ($(this).scrollTop() > 135) {
-        $('#ahex1').addClass('ahex0'); 
-        $('#ahex2').addClass('ahex1'); 
-        $('#ahex3').addClass('ahex2');
-        $('#ahex4').addClass('ahex4'); 
-        $('#ahex5').addClass('ahex1'); 
-        $('#ahex6').addClass('ahex1'); 
-        $('#ahex7').addClass('ahex2'); 
-        $('#ahex8').addClass('ahex3');   		       
-        }else
-        {
-        	$('#ahex1').removeClass('ahex0');
-        	$('#ahex2').removeClass('ahex1');
-        	$('#ahex3').removeClass('ahex2');
-        	$('#ahex4').removeClass('ahex1');
-        	$('#ahex5').removeClass('ahex1');
-        	$('#ahex6').removeClass('ahex1');
-        	$('#ahex7').removeClass('ahex2');
-        	$('#ahex8').removeClass('ahex3');           
-        }<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
-						<ul className="xsdashBoxS col-sm-7 col-sm-offset-5 col-xs-7 col-xs-offset-3">
-						  <li className="xsdash1S "></li>
-						  <li className="xsdash2S"></li>
-						  <li className="xsdash3S"></li>
-						</ul>
-					</div>
-					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
-						<div className="text-center">
-							<h1 className="xsmtop30">
-								<b>Services</b>
-							</h1>
-						</div>
-						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4  hidden-lg hidden-md xshex1">
-							<div className="col-xs-12 col-sm-12 ">
-								<img src="./images/5.png" className="xshexaImg2" alt="webAppImg"/>
-								<h4 className="xshexaContext1 text-center">ENTERPRISE<br/> APPS</h4>
-							</div>
-						</div>
-						
-							<div className="hidden-lg hidden-md col-sm-6 col-xs-6 xsl1hex1">
-								<div className="row">
-									<div className="hidden-lg hidden-md col-sm-10 col-xs-12 xshex1  pull-right">
-										<div className="col-xs-12 col-sm-12">
-											<img src="./images/4.png" className="xshexaImg3" alt="webAppImg"/>
-											<h4 className="xshexaContext2">WEB APPS</h4>
-										</div>	
-									</div>
-								</div>
-							</div>
-							<div className="hidden-lg hidden-md col-xs-6 col-sm-6 xsl1hex2">
-								<div className="row">
-									<div className="hidden-lg hidden-md col-sm-10 col-xs-12 pull-left xshex1">
-										<div className="col-xs-12 col-sm-12">
-											<img src="./images/6.png" className="xshexaImg4" alt="webAppImg"/>
-											<h4 className="xshexaContext2">MOBILE <br/>APPS</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4 hidden-lg hidden-md xshex2 xsl1hex3">
-							<div className="col-xs-12 col-sm-12">
-								<h4 className="xshexaContext3">SERVICES</h4>
-							</div>
-						</div>
-						
-							<div className="col-xs-6 col-sm-6 hidden-lg hidden-md xsl1hex4">
-								<div className="row">
-									<div className="col-xs-12  col-sm-10 hidden-lg hidden-md xshex1 pull-right">
-										<div className="col-xs-12 col-sm-12">
-												<img src="./images/7.png"className="xshexaImg3" alt="webAppImg"/>
-												<h4 className="xshexaContext2">BUSINESS<br/> PORTAL</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-xs-6 col-sm-6 hidden-lg hidden-md xsl1hex5">
-								<div className="row">
-									<div className="col-xs-12  col-sm-10 hidden-lg hidden-md xshex1 pull-left">
-										<div className="col-xs-12 col-sm-12">
-											<img src="./images/8.png" className="xshexaImg3" alt="webAppImg"/>
-											<h4 className="xshexaContext2">STAFF AUGME<br/>NTATION</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4 hidden-lg hidden-md xshex1 xsl1hex6">
-							<div className="col-xs-12 col-sm-12">
-								<img src="./images/9.png" className="xshexaImg2" alt="webAppImg"/>
-								<h4 className="xshexaContext1">eCOMMERCE <br/>PORTAL</h4>
-							</div>
-					
-    	});*/
+	/*console.log("==>",this.props.block_id);*/
+			  {
+				 axios
+					.get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+					.then((response)=>{
+						if(response.data){
+							// console.log("ListofServices =",response.data);
+						  this.setState({
+							  blocks:response.data
+						  });
+						}                  
+					  })           
+					.catch(function(error){
+					  console.log(error);
+						if(error.message === "Request failed with status code 401")
+						  {
+							  // swal("Your session is expired! Please login again.","", "error");
+						  }
+				  })
+				}
+		  this.setState({
+					block_id:this.props.block_id
+				  });
 	}
 
 	render() {
@@ -159,145 +136,4 @@ export default class Services extends React.Component {
 		);
 	}
 }
-						{/* <div id="ahex1" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex1 ">
-							<div className="col-lg-12 col-md-12">
-								<img src="./images/5.png" className="hexaImg2" alt="webAppImg"/>
-								<h4 className="hexaContext1 text-center">ENTERPRISE<br/> APPS</h4>
-							</div>
-						</div> */}
 						
-							{/* <div id="ahex2" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex1">
-								<div className="row">
-									<div className="col-lg-4  col-md-4  hex1  pull-right">
-										<div className="col-lg-12 col-md-12">
-											<img src="./images/4.png" className="hexaImg3" alt="webAppImg"/>
-											<h4 className="hexaContext2">WEB APPS</h4>
-										</div>	
-									</div>
-								</div>
-							</div> */}
-							{/* <div id="ahex3" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex2">
-								<div className="row">
-									<div className="col-lg-4  col-md-4 pull-left hex1">
-										<div className="col-lg-12 col-md-12">
-											<img src="./images/6.png" className="hexaImg4" alt="webAppImg"/>
-											<h4 className="hexaContext2">MOBILE <br/>APPS</h4>
-										</div>
-									</div>
-								</div>
-							</div> */}
-						{/* <div id="ahex4" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex2 l1hex3">
-							<div className="col-lg-12 col-md-12">
-								<h4 className="hexaContext3">SERVICES</h4>
-							</div>
-						</div> */}
-						
-							{/* <div id="ahex5" className="col-lg-6 col-md-6 hidden-sm hidden-xs l1hex4">
-								<div className="row">
-									<div className="col-lg-4  col-md-4 hex1 pull-right">
-										<div className="col-lg-12 col-md-12">
-												<img src="./images/7.png"className="hexaImg3" alt="webAppImg"/>
-												<h4 className="hexaContext2">BUSINESS<br/> PORTAL</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div id="ahex7" className="col-lg-6 col-md-6  hidden-sm hidden-xs l1hex5">
-								<div className="row">
-									<div className="col-lg-4  col-md-4 hex1 pull-left">
-										<div className="col-lg-12 col-md-12">
-											<img src="./images/8.png" className="hexaImg3" alt="webAppImg"/>
-											<h4 className="hexaContext2">STAFF AUGM<br/>ENTATION</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						<div id="ahex8" className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 hidden-sm hidden-xs hex1 l1hex6">
-							<div className="col-lg-12 col-md-12">
-								<img src="./images/9.png" className="hexaImg2" alt="webAppImg"/>
-								<h4 className="hexaContext1">eCOMMERCE <br/>PORTAL</h4>
-							</div>
-						</div> */}
-
-					
-{/*====================================================== mobile view======================*/}
-					{/* <div className="col-xs-12 col-sm-12 hidden-lg hidden-md row mobilewrapper row">
-						<ul className="xsdashBoxS col-sm-7 col-sm-offset-5 col-xs-7 col-xs-offset-3 row">
-						  <li className="xsdash1S "></li>
-						  <li className="xsdash2S"></li>
-						  <li className="xsdash3S"></li>
-						</ul>
-					
-					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md row">
-						<div className="text-center">
-							<h1 className="xsmtop30">
-								<b>Services</b>
-							</h1>
-						</div>
-						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4  hidden-lg hidden-md xshex1 row">
-							<div className="col-xs-12 col-sm-12 ">
-								<img src="./images/5.png" className="xshexaImg2" alt="webAppImg"/>
-								<h4 className="xshexaContext1  xshexaContext01 text-center">ENTERPRISE<br/> APPS</h4>
-							</div>
-						</div>
-						
-							<div className="hidden-lg hidden-md col-sm-6 col-xs-6 xsl1hex1">
-								<div className="row">
-									<div className="hidden-lg hidden-md col-sm-10 col-xs-12 xshex1  pull-right">
-										<div className="col-xs-12 col-sm-12">
-											<img src="./images/4.png" className="xshexaImg3" alt="webAppImg"/>
-											<h4 className="xshexaContext2">WEB APPS</h4>
-										</div>	
-									</div>
-								</div>
-							</div>
-							<div className="hidden-lg hidden-md col-xs-6 col-sm-6 xsl1hex2">
-								<div className="row">
-									<div className="hidden-lg hidden-md col-sm-10 col-xs-12 pull-left xshex1">
-										<div className="col-xs-12 col-sm-12">
-											<img src="./images/6.png" className="xshexaImg4" alt="webAppImg"/>
-											<h4 className="xshexaContext2">MOBILE <br/>APPS</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4 hidden-lg hidden-md xshex2 xsl1hex3">
-							<div className="col-xs-12 col-sm-12">
-								<h4 className="xshexaContext3 htitleservices">SERVICES</h4>
-							</div>
-						</div>
-						
-							<div className="col-xs-6 col-sm-6 hidden-lg hidden-md xsl1hex4">
-								<div className="row">
-									<div className="col-xs-12  col-sm-10 hidden-lg hidden-md xshex1 pull-right">
-										<div className="col-xs-12 col-sm-12">
-												<img src="./images/7.png"className="xshexaImg3" alt="webAppImg"/>
-												<h4 className="xshexaContext2">BUSINESS<br/> PORTAL</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="col-xs-6 col-sm-6 hidden-lg hidden-md xsl1hex5">
-								<div className="row">
-									<div className="col-xs-12  col-sm-10 hidden-lg hidden-md xshex1 pull-left">
-										<div className="col-xs-12 col-sm-12">
-											<img src="./images/8.png" className="xshexaImg3" alt="webAppImg"/>
-											<h4 className="xshexaContext2">STAFF AUGME<br/>NTATION</h4>
-										</div>
-									</div>
-								</div>
-							</div>
-						<div className="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-4 hidden-lg hidden-md xshex1 xsl1hex6">
-							<div className="col-xs-12 col-sm-12">
-								<img src="./images/9.png" className="xshexaImg2" alt="webAppImg"/>
-								<h4 className="xshexaContext1">eCOMMERCE <br/>PORTAL</h4>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-
-			</div>
-		);
-	}
-} */}

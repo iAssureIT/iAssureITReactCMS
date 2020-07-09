@@ -61,21 +61,7 @@ export default class AppDevMain extends React.Component {
 
 									</div>
 						      </div> 
-							  {/* <div className="item">
-								<div className="col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1 hidden-sm hidden-xs nopadd">
-									<div className="mtop100">
-										<span className="b1h1Title">AWARD WINNING
-										</span><br/>
-										<span className="b1h2Title">IT COMPANY
-										</span><br/>
-										<span className="b1h3Title">
-										</span>
-									</div>	
-								</div>
-								<div className=" col-lg-7 col-md-7 hidden-sm hidden-xs row">
-									<img className="b1bannerImg3 img-responsive" src="./images/Graphic_3.png" alt="Bannerpng"/>
-								</div>
-								</div> */}
+							 
 						
 						 <div className="item row">
 								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 nopadd slide4">

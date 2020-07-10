@@ -154,12 +154,21 @@ span.round-tab:hover {
   /*padding: 20px;  Some padding */
 }
 .boxItem1CPage{
-    height: 200px;
+    height: 135px;
     background-color: #fff;
     margin: 20px 15px;
+    padding-top: 10px;
+    margin: 20px 15px;
+    border: 1px solid #e1e1e1;
+        box-shadow: 0px 0px 10px 7px #e1e1e1;
 }
 .boxItem1CMBlock{
-    height: 200px;
+    height: 135px;
     background-color: #fff;
     margin: 20px 15px;
+    padding-top: 10px;
+    margin: 20px 15px;
+    border: 1px solid #e1e1e1;
+        box-shadow: 0px 0px 10px 7px #e1e1e1;
+    
 }

@@ -246,8 +246,15 @@ class Viewpage extends React.Component {
         return (
         		<div>	
 					<div className="  ">
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bglightgclr">
 								
 						<CircleMenuBars />
+						</div>
+						<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+							<div className="  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                                <h2 className="text-center"> Add new blocks in your page</h2>
+                            </div>
+                        </div>
 							
 						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
 							<div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
@@ -270,7 +277,7 @@ class Viewpage extends React.Component {
 												// console.log("componentTemp",componentTemp);
 												return(
 													<Suspense fallback={<div>Loading...</div>} key={index}>
-														<i className="fa fa-trash deletbtnIcon pull-right" id={block_id} onClick={this.deleteBlocks.bind(this)}></i>
+														{/*<i className="fa fa-trash deletbtnIcon pull-right" id={block_id} onClick={this.deleteBlocks.bind(this)}></i>*/}
 														<i className="fa fa-pencil editIcon pull-right" id={Block_id} onClick={this.editBlock.bind(this)} data-toggle="modal" data-target="#editBlockFormM"></i>
 											    		<NewPageComponent block_id={Block_id}/>
 											    	</Suspense>
@@ -288,15 +295,15 @@ class Viewpage extends React.Component {
 									{
 										this.state.listOfBlocks === true ?
 										<section>
-											<div className="row">
+											<div className="">
 												
-													<div className="noPadLR  selectBox col-lg-12 col-md-12 col-xs-12 col-sm-12 nopadding">
-														<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 noPadLR">
-						                					<div className="panel panel-default bgcolorO">
+													<div className="selectBox col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+														<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+						                					<div className="panel panel-default bgcolorO" id="collaspePanelID">
 															    <div className="panel-heading bgPanelHead">
 															        <h4 className="panel-title">
 																        <button className="cloneBtn btn-primary">
-																         	<a href="/cms-pages/cms-page-1">Back</a>
+																         	<a href="/cms/create-new-page">Back</a>
 																        </button>
 																        <button className="cloneBtn btn-primary pull-right" id="cnBlock">
 																        <a className="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
@@ -350,7 +357,7 @@ class Viewpage extends React.Component {
 																	var block_id=result._id;
 																		// console.log("block_id",block_id);
 																	return(
-												                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bottomBorder2px">
+												                			<div key={index} className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bottomBorder2px NOpadding">
 								                            					<button  type="submit" className="col-lg-2 col-md-3 col-sm-6 col-xs-12 btn btn-primary pull-right AddBlockbtn" onClick={this.addBlock.bind(this)} id={block_id} >Add this block</button>
 												                				<div className="checkbox ml15">
 																			        <label className="fs15">

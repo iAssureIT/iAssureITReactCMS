@@ -13,12 +13,13 @@ class ViewPage1 extends Component {
         		<div>	
 					<div className="contentWrapper">
 						<div className="">{/*pageContent*/}
-							<div className="row">
+							<div className="">
 								
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bglightgclr">
 									<CircleMenuBars />
 								</div>
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgwhitclr">
 									<ListOfPages/>
 								</div>
 							</div>

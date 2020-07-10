@@ -44,9 +44,9 @@ export default class CircleMenuBars extends Component{
                     <div className="  col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
                         
                         <div className="wizard boxItem1CPage">
-                            <div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            {/*<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                 <h2 className="text-center">Create New Page </h2>
-                            </div>
+                            </div>*/}
                             <div className="wizard-inner col-lg-12 col-md-12 col-xs-12 col-sm-12">
                                 <div className="connecting-line"></div>
                                 <ul className="nav nav-tabs" role="tablist">

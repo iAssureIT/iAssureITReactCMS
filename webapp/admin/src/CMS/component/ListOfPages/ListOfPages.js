@@ -51,7 +51,7 @@ componentDidMount(){
     }, "Please enter valid Sub-Activity Name.");
 */
 
-    $("#newTemplateForm").validate({
+{/*    $("#newTemplateForm").validate({
       rules: {
         basicPageName: {
           required: true,
@@ -65,7 +65,7 @@ componentDidMount(){
         subActivityName: {
           required: true,
           regxtypeofCenter: /^[A-za-z']+( [A-Za-z']+)*$/,
-        },*/
+        },
       },
       errorPlacement: function(error, element) {
         if (element.attr("name") === "basicPageName"){
@@ -79,9 +79,9 @@ componentDidMount(){
         }
         if (element.attr("name") === "subActivityName"){
           error.insertAfter("#subActivityNameError");
-        }*/
+        }
       }
-    });
+    });*/}
     
 	this.getListOfPages();
 
@@ -198,7 +198,7 @@ updatePageData(){
 
 }
 submitData(){
-	if($('#newTemplateForm').valid()){
+/*	if($('#newTemplateForm').valid()){*/
 		var AttachmentValues = {    
 					  	// "componentName"			: this.state.pageDesigns ? this.state.pageDesigns.componentName : null,
      					// "pagediscription" 		: this.refs.cmspageDescription.value,
@@ -229,7 +229,7 @@ submitData(){
 		  	});
 
    		// console.log("AttachmentValues =>",AttachmentValues);
-   	}
+   /*	}*/
 }
 urlPage(event){
 	var id = event.target.id;
@@ -242,6 +242,11 @@ urlPage(event){
 		// console.log("ListOfPages",this.state.ListOfPages)
 		return (
 			<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
+				<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div className="  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                        <h2 className="text-center"> Your Pages</h2>
+                    </div>
+                </div>
 				<div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
 					<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 boxItem-LOPages">
 						<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -272,8 +277,8 @@ urlPage(event){
 												      <td >{result.pageTitle}</td>
 												      {/*<td id={result.pageURL} className="onHoverClick" onClick={this.urlPage.bind(this)} data-placement="top" title="Click here to view Page">{result.pageURL}</td>*/}
 												      <td><i className="fa fa-edit deletIcon" id={result.pageURL} data-toggle="collapse" data-toggle="modal" data-target="#createnewPageModal" onClick={this.editPage.bind(this)} data-placement="top" title="Edit Page"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-												      		<i className="fa fa-trash deletIcon" id={result.pageURL} onClick={this.deletePage.bind(this)} data-placement="top" title="Delete page"></i>&nbsp;&nbsp;&nbsp;&nbsp;
-												      		<i className="fa fa-eye"  id={result.pageURL} onClick={this.urlPage.bind(this)}></i>
+												      		{/*<i className="fa fa-trash deletIcon" id={result.pageURL} onClick={this.deletePage.bind(this)} data-placement="top" title="Delete page"></i>&nbsp;&nbsp;&nbsp;&nbsp;*/}
+												      		<i className="fa fa-eye deletIcon"  id={result.pageURL} onClick={this.urlPage.bind(this)} title="View this Page"></i>
 												      </td>
 												    </tr>
 											    	)
@@ -289,47 +294,47 @@ urlPage(event){
 					</div>
 				</div>
 				<div className="col-lg-6 col-md-6 col-xs-12 col-sm-12">
-					<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 boxItem-LOPages">
+					<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 boxItem-LOPages2">
 						
 					    {/*<button type="button" className="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Large Modal</button>*/}
 					        <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
 					        	<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-									<h2>Create New Page</h2>
+									<h2>Create New Page here :</h2>
 								</div>
 					        	{/*<div className="lineHr"></div>*/}
 	                        	<form className="newTemplateForm" id="newTemplateForm">
 	                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	                                    <div className="form-group m3all" id="pageTitle">
-	                                    	<label className="label-category lb666">Page Title<span className="astrick">* </span></label>
-	                                        <input type="text" ref="pageTitle" value={this.state.pageTitle} id="basicPageName" name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} />
+	                                    	<label className="label-category lb666 labelform">Page Title<span className="astrick">* </span></label>
+	                                        <input type="text" ref="pageTitle" value={this.state.pageTitle} id="basicPageName" name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)} />
 	                                    </div>
 	                                </div>
 	                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	                                    <div className="form-group m3all">
-	                                    	<label className="label-category lb666">Page URL<span className="astrick"></span></label>
-	                                        <input type="text" ref="pageUrl" id="basicPageName" value={this.state.pageUrl} name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} disabled/>
+	                                    	<label className="label-category lb666 labelform">Page URL<span className="astrick"></span></label>
+	                                        <input type="text" ref="pageUrl" id="basicPageName" value={this.state.pageUrl} name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)} disabled/>
 	                                    </div>
 	                                </div>
 		                            
 		                                
 	                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	                                    <div className="form-group m3all">
-	                                    	<label className="label-category lb666">Keywords<span className="astrick"></span></label>
-	                                        <input type="text" ref="pageHeadKeyWords" value={this.state.pageHeadKeyWords} id="pageHeadKeyWords" name="pageHeadKeyWords"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} />
+	                                    	<label className="label-category lb666 labelform">Keywords<span className="astrick"></span></label>
+	                                        <input type="text" ref="pageHeadKeyWords" value={this.state.pageHeadKeyWords} id="pageHeadKeyWords" name="pageHeadKeyWords"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)} />
 	                                    </div>
 	                                </div>
 		                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		                                <div className="form-group m3all">
-		                                    <label className="label-category lb666">Author<span className="astrick"></span></label>
-		                                    <input type="text" ref="pageHeadAuther" id="pageHeadAuther" value={this.state.pageHeadAuther} name="pageHeadAuther"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} />
+		                                    <label className="label-category lb666 labelform">Author<span className="astrick"></span></label>
+		                                    <input type="text" ref="pageHeadAuther" id="pageHeadAuther" value={this.state.pageHeadAuther} name="pageHeadAuther"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)} />
 		                                </div>
 		                            </div>
 	                            	
 	                            	<div className="row inputrow">
 		                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		                                  <div className="form-group m3all">
-		                                   <label className="label-category lb666">Description<span className="astrick"></span></label>
-		                                        <textarea ref="pageHeadDescription" value={this.state.pageHeadDescription} id="pageHeadDescription" name="pageHeadDescription"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12  hinput30" rows="6" onChange={this.handleChange.bind(this)} />
+		                                   <label className="label-category lb666 labelform">Description<span className="astrick"></span></label>
+		                                        <textarea ref="pageHeadDescription" value={this.state.pageHeadDescription} id="pageHeadDescription" name="pageHeadDescription"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12  hinput30 form-control" rows="6" onChange={this.handleChange.bind(this)} />
 		                                  </div>
 		                                </div>
 	                            	</div>

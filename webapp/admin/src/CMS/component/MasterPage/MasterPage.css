@@ -39,5 +39,8 @@
 }
 .create-basic-block-wrapper {
     
-    border: 1px solid #aaa;
+    border: 1px solid #e1e1e1;
+    border-top: 2px solid #2a88bc;
+    border-radius: 5px;
+
 }

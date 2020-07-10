@@ -11,11 +11,12 @@ export default class ViewBlock_2 extends React.Component {
 		return (
 			<div className="">
 					<div className="">
-						<div className="row">
+						<div className="">
 							
-							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bglightgclr">
 								<CircleBlockMenuBars />
 							</div>
+							
 							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								<CmsBlock />
 							</div>

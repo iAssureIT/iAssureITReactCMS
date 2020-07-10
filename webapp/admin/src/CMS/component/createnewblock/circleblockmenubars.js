@@ -26,9 +26,7 @@ export default class CircleBlockMenuBars extends Component{
                 <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
                    
                     <div className="wizard  boxItem1CMBlock">
-                        <div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <h2 className="text-center">Select Required Block from Following list </h2>
-                        </div>
+                        
                         <div className="wizard-inner col-lg-12 col-md-12 col-xs-12 col-sm-12">
                             <div className="connecting-line"></div>
                             <ul className="nav nav-tabs" role="tablist">

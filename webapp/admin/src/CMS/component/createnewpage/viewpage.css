@@ -47,7 +47,7 @@
 }
 
 .bgcolorO{
-  background-color: #fdf3e1 !important;
+  /*background-color: #fdf3e1 !important;*/
   margin-top: 20px;
   border-bottom: 2px solid #ff6600;
 }
@@ -103,4 +103,7 @@
 }
 .fs15{
   font-size: 16px;
+}
+#collaspePanelID a{
+  color: #fff;
 }

@@ -181,24 +181,30 @@ export default class ViewBlock_3 extends React.Component {
 
 			return (
 				<div className="contentWrapper">
-						<div className="box-body">
-							<div className="row">
+						<div className="">
+							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 								
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bglightgclr">
 									<CircleBlockMenuBars />
 								</div>
+								<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+									<div className="  col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+		                                <h2 className="text-center"> All Blocks</h2>
+		                            </div>
+		                        </div>
 								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 									{
 										this.state.ListOfBlocks && this.state.ListOfBlocks.length> 0
 										?
 											this.state.ListOfBlocks.map((result, index)=>{
-												var component = result.blockComponentName ? result.blockComponentName : "TitleDesc";
+												var component = result.blockComponentName ? result.blockComponentName : "Typecomponent1";
+												console.log("component",component);
 												const NewPageComponent = React.lazy(() => import('../blockTemplate/'+component+'/'+component+'.js'));
 												var block_id=result._id;
 												return(
 													<Suspense fallback={<div>Loading...</div>} key={index}>
 														<div className="">
-															<i className="fa fa-trash deletIcon pull-right fsm15" id={block_id} onClick={this.deleteblock.bind(this)}></i>&nbsp;&nbsp;&nbsp;&nbsp;
+															{/*<i className="fa fa-trash deletIcon pull-right fsm15" id={block_id} onClick={this.deleteblock.bind(this)}></i>&nbsp;&nbsp;&nbsp;&nbsp;*/}
 														</div>
 															<br/>
 											    		<NewPageComponent block_id={block_id}/>
@@ -206,7 +212,8 @@ export default class ViewBlock_3 extends React.Component {
 										    	)
 											})
 										:
-										null
+										<img className="img-responsive middlPageImage" src="/images/loader.gif" alt="Bannerpng"/>
+										
 									}
 								</div>
 							</div>

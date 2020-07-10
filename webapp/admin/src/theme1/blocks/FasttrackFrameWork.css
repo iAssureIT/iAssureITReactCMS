@@ -1,58 +1,52 @@
- .fastrachight{
-    height: 1025px;
-     /* background-color:#ccc;       */
+ .pagewrapperheight{
+    height: 850px;
+      /* background-color:#ccc;        */
       
      
  } 
- .ftrackwrapper{
-     height:1050px ;
+ .bgwrapperheight{
+     height:850px ;
      width: 100%;
-     background-image: url("/images/002.png"); 
-     background-size: 100% 100%;
+    background-size: 100% 100%;
      background-repeat: no-repeat;
-     margin-top: -21px;
+    
 
  }
- .dashBoxOS{
+ .dashwrapp{
+    height: 20px;
+    margin-top: 135px;
+}
+ .dashBox1{
     list-style: none;
-    position: relative; 
-    left: 25px;
-    top: 0px;
+    margin: auto;
   }
- .dashbox00{
-     margin-top: 247px; 
-     left: 67px;
-     position: absolute;
+ .dashBox1 li{
+     float: left;
+     
+     
      
  }
- .dash1OS,.dash3OS {
+ .dash01,.dash03{
     height: 1px;
     width: 20px;
     margin:2px;
     border: 2px solid #f1f1f1!important;
     border-radius: 10px;
 }
-.dash2OS{
+.dash02{
     height: 1px;
     width: 50px;
     margin:2px;
     border: 2px solid #f1f1f1!important;
     border-radius: 10px;
 }
- .heading{
+ .titlewrapper1{
      height: 108px;
-     /* background-color: salmon; */
-      margin-top: 281px; 
      text-align: center;
+     margin-top: 3px;
  }
- .ftitle0{
-     font-size: 46px;
-     font-family: 'Montserrat', sans-serif;
-     font-weight: bold;
-     color: #f1f1f1;
-
- }
- .ftitle00{
+ 
+ .h1title00{
      font-size: 46px;
      font-family: 'Montserrat', sans-serif;
      color: #f1f1f1;
@@ -60,14 +54,15 @@
  }
  .maincontentwrapper{
      height: 400px;
-     /* margin-top: -52px; */
+     margin-top: -12px;
+    
  }
  .contentframework{
      height: 370px;
-     /* background-color: red;  */
+    
      
  }
- .paragraphfasttrack{
+ .hdescription{
      
      font-size: 18px;
      font-family: 'Montserrat', sans-serif;
@@ -79,21 +74,7 @@
      
 
  }
- .loremIpsum{
-     font-size: 30px;
-     font-weight: bold;
- }
- .paragraphfasttrack01{
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left:12%;
-    color: #f1f1ff;
-    /* margin-top: 40px; */
-    letter-spacing: 0.5px;
-    font-weight: 550; 
-
-
- }
+ 
  .ftracermore{
      font-size: 22px;
      font-family: 'Montserrat', sans-serif;
@@ -101,7 +82,7 @@
      color: #f1f1f1;
      cursor: pointer;
      border-bottom: 1px solid #f1f1f1!important;
-     width: 19%;
+     width: 17%!important;
 
 
  }
@@ -110,7 +91,7 @@
      width: 30%;
      /* background-color: aquamarine; */
      margin-top: -40px; 
-     margin-left: 208px;
+     margin-left: 192px!important;
      font-size:30px;
      color: #f1f1f1;
      
@@ -118,15 +99,12 @@
  
  .imageframework{
     height: 370px;
-     /* background-color: red;    */
+
 }
 .sideimageftrack{
-    height: 440px;
-     /* width: 100%;  */
+    height: 390px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    /* margin: auto;  */
-     /* margin-top: -38px;  */
     margin-left: 147px;
 }
 /* =======================================Media Query==================================================== */

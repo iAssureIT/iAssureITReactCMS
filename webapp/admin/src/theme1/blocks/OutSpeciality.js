@@ -84,26 +84,22 @@ export default class OutSpeciality extends React.Component {
 
 		return (
 			<div className="specialhightwrapper">
-			 
-			 <div className="mtop111">	 
-				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bhead row">
-					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<ul className="dashBoxOS dasboxssp col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
-						  <li className="dash1S"></li>
-						  <li className="dash2S"></li>
-						  <li className="dash3S"></li>
-						</ul>
-					</div>
-					</div> 
-				</div>	 
-					 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashboxwrapper">
+                      <ul className="dashBox">
+						  <li className="dash1"></li>
+						  <li className="dash2"></li>
+					      <li className="dash3"></li> 
+				      </ul>
+                    </div>
+                </div>
+				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 specialityheading">
-                            <span className="ourheading" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></span>
+                            <span className="h2title" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></span>
                         </div>
-
-                  </div> 
+				 </div>   
 					
-					 <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 osDiv"> 
+					  <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1 osDiv"> 
 					 <div className="row"> 
 
 					 {
@@ -132,7 +128,7 @@ export default class OutSpeciality extends React.Component {
 		                		}
 					   
 					 </div> 
-				 </div> 		 
+				 </div> 		  
 				 </div>  
 						   
 				    

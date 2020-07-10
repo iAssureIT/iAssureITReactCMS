@@ -1,49 +1,56 @@
 .serviceswrapper{
-  height: 930px;
-   /* background-color:#ccc;     */
+  height: 820px;
+  /* background-color:#ccc;       */
 }
- .serviceheight{
-	height: 1020px;
+  .serviceheight{
+	height: 720px;
 	 background-image: url("/images/3.png"); 
   background-size: 100% 100%;
   background-repeat: no-repeat;
   
-} 
-.dashBoxS{
+}  
+.dashboxwrapper{
+  height: 20px;
+  /* background-color: chocolate; */
+  
+}
+.dashBox{
   list-style: none;
-    position: relative;
-    height: 20px;
-    left: -67px;
-    top: 20px;
-    margin-top: 20px;
-   }
-.dashBoxS li{
-  float: left;
+  margin: auto;
+  
+
 }
-.dash1S,.dash3S {
-    height: 1px;
-    width: 20px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
+.dashBox li{
+float: left;
 }
-.dash2S{
-    height: 1px;
-    width: 50px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
+.dash1{
+  height: 1px;
+  width: 20px;
+  margin:2px 2px 2px 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
 }
-/* .dash1S{
-  margin-left:22%;
-} */
+.dash2{
+  height: 1px;
+  width: 50px;
+  margin:2px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
+.dash3 {
+  height: 1px;
+  width: 20px;
+  margin:2px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+}
 
 .servicehiading{
   height: 108px; 
   margin-top: 28px;
   text-align: center;
 }
-.bheading{
+.h1titble00{
   font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
@@ -51,7 +58,7 @@
     
 
 }
-.normalheading{
+.h1title01{
   font-size: 46px;
   font-family: 'Montserrat', sans-serif;
   color: #555;

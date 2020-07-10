@@ -1,37 +1,25 @@
 .specialhightwrapper{
-    height: 592px;
-     /* background-color: saddlebrown;      */
+    height: 600px;
+     /* background-color: saddlebrown;       */
 }
 
-
-
-  /* .OurSpecialityHeight{
-	height: 1210px;
-	background-image: url("/images/12.png"); 
-    background-size: 100% 100%;
-    
-     
-    
-    
-}   */
 .specialityheading{
     height: 108px;
-    /* background-color: salmon;     */
     text-align: center;
-    margin-top: -40px;    
+    
     
 }
-.ourheading{
+.h2title{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #555555;
-    padding-top: 30px!important;
+    
 }
- .specialheading{
+ /* .specialheading{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #555555;
-} 
+}  */
 
 /* .mtop111{
     position: relative;
@@ -63,7 +51,7 @@
 	background-color: #fff;
     border-radius: 10px;
     /* background-color: red; */
-     margin-top: 200px; 
+     margin-top: 190px; 
     box-shadow: 2px 2px 8px 3px #dad6d6;
 
 }

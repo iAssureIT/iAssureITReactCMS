@@ -15,7 +15,7 @@ export default class AutoPilotPlatform extends Component{
             "blockDescription": " <span style='font-size:30px'>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recentlywith desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages. <p style='margin-top:25px'> It is a long established fact that a reader will be distracted by the readable content of a page whenlooking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software</p>", 
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/1.png",
+            "bgImage": "/images/0001.png",
             "fgImage": "/images/0002.png",
             "repeatedBlocks": [
                                 
@@ -62,23 +62,22 @@ export default class AutoPilotPlatform extends Component{
     render(){
         return(
             <div className="autopilotwrapper00">
-                <div className="autopilotwrapper">
-                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
-					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<ul className="dashBoxOS dashboxauto col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12">
-						  <li className="dash1OS"></li>
-						  <li className="dash2OS"></li>
-						  <li className="dash3OS"></li>
-						</ul>
-					</div> 
-                </div> 
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row container-fluid">
-                        <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 mainrow">
-                            <div className="Auopilot" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
-                        
-                </div> 
-                </div> 
-                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Auotmaincontentwrapper">
+                <div className="autopilotwrapper" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                     <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 wrapperdashbox">
+                      <ul className="dashBox3">
+						            <li className="dash0a1"></li>
+						            <li className="dash0a2"></li>
+					            	<li className="dash0a3"></li> 
+				            	</ul>
+                    </div> 
+                 </div> 
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper2 ">
+                        <div className=" text-center ">
+                            <div className="h1title000" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+                        </div> 
+                </div>    
+                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper001">
                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftimageframework ">
                          <img src={this.state.blocks.fgImage} alt="002" className="leftsideimg"/>  
 
@@ -93,7 +92,7 @@ export default class AutoPilotPlatform extends Component{
 
                         </div> 
 
-                 </div>  
+                 </div>   
 
 
                 </div>

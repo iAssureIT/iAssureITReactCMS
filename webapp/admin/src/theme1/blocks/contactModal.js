@@ -3,28 +3,29 @@ import $ from "jquery";
 import ContactForm from "./ContactForm.js";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
+ 
 
 
 import "./contactModal.css";
 export default class ContactModal extends React.Component {
-	constructor(props) {
-		super(props);
-	}
-	componantDidMount(){
-			var modal = document.getElementById('myModalOne');
+// 	constructor(props) {
+// 		super(props);
+// 	}
+// 	componantDidMount(){
+// 			var modal = document.getElementById('myModalOne');
       		
           
-	}
-OpenMyOrderModal(event){
-    event.preventDefault();
+// 	}
+// OpenMyOrderModal(event){
+//     event.preventDefault();
     
-    $('#myModalOne').show();
-  }
-Modalclose(event){
-    event.preventDefault();
+//     $('#myModalOne').show();
+//   }
+// Modalclose(event){
+//     event.preventDefault();
     
-    $('#myModalOne').hide();
-  }
+//     $('#myModalOne').hide();
+//   }
 	render() {
 		return (
 			<div>

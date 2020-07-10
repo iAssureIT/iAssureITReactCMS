@@ -1,9 +1,9 @@
-.madalbtn{
+ .madalbtn{
 	position: fixed;
 	bottom:  525px;
 	right: 0px;
 	z-index: 10;
-}
+} 
 /* .addressmodalclose:hover{
     cursor: pointer;
     

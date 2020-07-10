@@ -28,3 +28,33 @@ Unique blocks folder
 	BlockTemplate8
 	BlockTemplate9
 	BlockTemplate10
+
+
+	1)block add in block folder same name with file in CMS/component/blockTemplate
+
+2) Go to follwing path
+	a) CMS/complnent/createnewblock/staticblock.js
+	b) import that file added in blocktemplate
+	c) duplicate follwing code
+
+		<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="FasttrackFrameWork" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<FasttrackFrameWork /> 
+					</section>
+
+
+	i)Now replace the id and component name as per imported file name.
+	ii)change fileds according to the content of this block
+	 eg:
+		data-blockTitle="blockTitle" 
+		data-blockDescription="blockDescription" 
+		data-fgImage="fgImage" 
+		data-bgImage="bgImage"

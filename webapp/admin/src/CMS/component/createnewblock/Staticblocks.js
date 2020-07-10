@@ -3,6 +3,9 @@ import {Route, withRouter} 			from 'react-router-dom';
 
 import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
 import FastrackFrameWork                from "../blockTemplate/FastrackFrameWork/FastrackFrameWork.js";
+import FasttrackFrameWork                from "../blockTemplate/FasttrackFrameWork/FasttrackFrameWork.js";
+import AutoPilotPlatform                from "../blockTemplate/AutoPilotPlatform/AutoPilotPlatform.js";
+import OutSpeciality                from "../blockTemplate/OutSpeciality/OutSpeciality.js";
 
 
 
@@ -122,6 +125,7 @@ class Staticblocks extends React.Component {
                     	<h2 className="text-center">Select Required Design from Following list </h2>
             		</div>
             	</div>
+{/*
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 			            <button id="FastrackFrameWork" 
 								data-blockTitle="blockTitle" 
@@ -133,6 +137,47 @@ class Staticblocks extends React.Component {
 			                	Select this Design
 			            </button>		            
 						<FastrackFrameWork /> 
+					</section>*/}
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="FasttrackFrameWork" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<FasttrackFrameWork /> 
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="AutoPilotPlatform" 
+								data-blockTitle="blockTitle" 
+			                	data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<AutoPilotPlatform /> 
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="OutSpeciality" 
+								data-blockTitle="blockTitle" 
+								data-RepetedBlock="RepetedBlock" 
+								data-rBlocksTitle="rBlocksTitle" 
+								data-rBlocksDescription="rBlocksDescription" 
+								data-rBlocksImage="rBlocksImage" 
+			                	
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<OutSpeciality /> 
 					</section>
 					
 				

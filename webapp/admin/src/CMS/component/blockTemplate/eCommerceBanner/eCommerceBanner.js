@@ -8,13 +8,13 @@ export default class eCommerceBanner extends React.Component {
         super(props);
         this.state = {
           blocks: {
-		      	"blockTitle": "eCommerce",
-		      	"blockSubTitle": " <b>WEBSITE DEVELOPMENT </b>",
+			"blockTitle": "eCommerce",
+			"blockSubTitle": " <b>WEBSITE DEVELOPMENT </b>",
             "blockDescription": "You need eCommerce website thay is supeb beautiful, user friendly & that grows your business exponetially",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
             "bgImage": "/images/e01.png",
-            "fgImage": "/images/ecom2.png",
+            "fgImage": "./images/ecom2.png",
             "repeatedBlocks": [
                                 
                                 { 

@@ -1,21 +1,21 @@
 import React,{Component} from 'react';
-import "./Mtechnology.css";
+import './Customisable.css';
 import axios from 'axios';
 
-export default class Mtechnology extends Component{
+export default class Customisable extends Component{
 
     constructor(props) {
         super(props);
         this.state = {
           blocks: {
-            "blockTitle": "<b>MODERN</b> TECHNOLOGY",
+            "blockTitle": "<b>CUSTOMISABLE </b>",
             
             "blockSubTitle": "We are passionate about our work",
             "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/ecom4.png",
-            "fgImage": "/images/mtech.png",
+            "bgImage": "/images/002.png",
+            "fgImage": "/images/ecom3.png",
             "repeatedBlocks": [
                                 
                                 { 
@@ -56,36 +56,53 @@ export default class Mtechnology extends Component{
                     block_id:this.props.block_id
                   });
     }
-
+    
 
     render(){
         return(
-            <div className="mtechnologywrapper">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 boxspace">
-                    <ul className="dashmtechnology">
-						  <li className="dash1mtechnology"></li>
-						 <li className="dash2mtechnology"></li>
-						<li className="dash3mtechnology"></li> 
-					</ul>
-                    </div>
-                </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 mtelogytextwrapper">
-                    <div className="text-center">
-                        <div className="h1title00mm" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+            <div>
+                <div className="customisablewrapper">
+                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                         <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashboxwrapper">
+                             <ul className="dashBox">
+						                    <li className="dash1"></li>
+						                     <li className="dash2"></li>
+					                       <li className="dash3"></li> 
+				                    </ul>
+                        </div>
                      </div>
+                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hcustomtitlewrapp">
+                        <div className="text-center">
+                            <div className="h2titlecustom" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+                        </div>
+				            </div> 
+                    <div className="col-lg-12 col-sm-12 col-sm-12 col-xs-12 custmowrapper">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customIMGwrapp">
+                        <   img src={this.state.blocks.fgImage} alt="001" className="customleftimage"/>
+                        </div>
+
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customtextwrapp">
+                             <p className="h1titlecustom"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}>
+                                
+                            </p> 
+                                                      
+                           
+                             <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div>
+                            
+
+                            
+                        </div>   
+
+                            
+                                
+
+                            
+                        
+                    </div>  
+				
+
                 </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgwrapper">
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 mtechlogywrapp">
-                    <p className="paragraphmtech01"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}>
-                    </p>
-                     <h3 className="mtechracermore">Read More </h3> <div className="arrowmtech"><i className="fas fa-angle-double-right"></i></div>
-                </div> 
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframemtechlogy ">
-                   <img src={this.state.blocks.fgImage} alt="001" className="sideimagemtechlogy"/>  
-                 </div> 
-             </div>
-         </div>
+            </div>
         )
     }
 }

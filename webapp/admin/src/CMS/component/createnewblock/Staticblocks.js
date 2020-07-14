@@ -6,6 +6,7 @@ import FastrackFrameWork                from "../blockTemplate/FastrackFrameWork
 import FasttrackFrameWork                from "../blockTemplate/FasttrackFrameWork/FasttrackFrameWork.js";
 import AutoPilotPlatform                from "../blockTemplate/AutoPilotPlatform/AutoPilotPlatform.js";
 import OutSpeciality                from "../blockTemplate/OutSpeciality/OutSpeciality.js";
+import CommerceBanner              from "../blockTemplate/eCommerceBanner/eCommerceBanner.js";
 
 
 
@@ -179,6 +180,22 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<OutSpeciality /> 
 					</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="eCommerceBanner" 
+								data-blockTitle="blockTitle" 
+								data-blockSubTitle="blockSubTitle" 
+								data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage" 
+								
+			                	
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<CommerceBanner /> 
+					</section>
+					
 					
 				
 

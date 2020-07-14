@@ -14,7 +14,7 @@ export default class Footer extends React.Component {
 					<ul className="f1ooter">
 							<li className="clrwt hmenutitle"><b>Menu</b></li>
 							 <a href="/"><li className="footertitle hmenutitle">Home</li></a>
-							  <a href="/aboutus"><li className="footertitle hmenutitle">About Us</li></a>
+							  <a href="/cms/masterpage/demo-1"><li className="footertitle hmenutitle">About Us</li></a>
 							  <a href="/services"><li className="footertitle hmenutitle">Portfolio</li></a>
 							  <a href="/contactus"><li className="footertitle hmenutitle">Contact Us</li></a> 
 							  <li className="footertitle hmenutitle ">Career</li>

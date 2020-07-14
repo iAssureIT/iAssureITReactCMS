@@ -14,6 +14,14 @@ import EcommBlock4		from '../blocks/ecommBlock4.js';
 import Testimonials 	from '../blocks/Testimonials.js';
 import ContactModal 	from '../blocks/contactModal.js';
 import ScrollButton     from '../blocks/ScrollButton.js';
+import Customisable     from  '../blocks/Customisable.js';
+import SuperPerformance from  '../blocks/SuperPerformance.js';
+import DigitalMarkiting from   '../blocks/DigitalMarkiting.js';
+import CreateOnlineStore from  '../blocks/CreateOnlineStore';
+import OnlineStore       from   '../blocks/OnlineStore.js';
+import BusinessGrows     from   '../blocks/BusinessGrows.js';
+import AffordableCost    from   '../blocks/AffordableCost.js';
+import Userexperience    from   '../blocks/Userexperience.js';
 
 
 
@@ -89,25 +97,24 @@ export default class Ecommerce extends React.Component {
 					<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 					<title>{this.state.title}</title>
 				</Helmet>
-				{/*<Headernew/>*/}
+				
 				<Headernew />
-				{/* <ScrollButton /> */}
-
 				<ContactModal/>
-
-
-				<ServiceBanner bannerText = {this.state.bannerText}/>
-				<Bdesignblock/>
-				<EcommBlock1 EcommBlock1 = {this.state.EcommBlock1}/>
-				<EcommBlock2/>
-				<Bdesignblock/>
-				<EcommBlock3/>
-				<EcommBlock4/>
-				<Bdesignblock/>
+                <ServiceBanner bannerText = {this.state.bannerText}/>
+				  <Customisable/> 
+				  <SuperPerformance /> 
+				  <DigitalMarkiting />
+				  <CreateOnlineStore/>
+				  <OnlineStore />
+				  <BusinessGrows />
+				  <AffordableCost />
+				  <CreateOnlineStore/>
+				  <Userexperience />
+				
 				<ScrollButton />
 
-				<Testimonials/>
-				<Footer />
+				{/* <Testimonials/> */}
+				 <Footer /> 
 			</div>
 		);
 	}

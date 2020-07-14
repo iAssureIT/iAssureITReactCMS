@@ -76,6 +76,7 @@ const CmsRoute = (props) => {
             <Route path = "/headernew" exact component = {headernew} />
             <Route path = "/ecommerce-page" exact component = {Ecommerce} />
             <Route path = "/bussinessportal-page" exact component = {Bussinessportal} />
+            <Route path= "/cms/masterpage/:pageurl"          component={ MasterPage } /> 
             
             <div>
             <CmsHeader />
@@ -87,7 +88,6 @@ const CmsRoute = (props) => {
             <Route path="/cms/create-new-block"                        exact strict component={ViewBlock_2}  />
             <Route path="/cms/view-blocks"                        exact strict component={ViewBlock_3}  />
             
-            <Route path="/cms/masterpage/:pageurl"          component={ MasterPage } /> 
             
             <Route path="/cms/singleblog"           component={ SingleBlogPage }  />   
             <Route path="/cms/blogs-form"           component={ BlogsFormPage }  />   

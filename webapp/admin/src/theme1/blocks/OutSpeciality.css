@@ -9,33 +9,48 @@
     
     
 }
+.dashboxwrapper{
+    height: 20px;
+    /* background-color: chocolate; */
+    
+  }
+  .dashBox{
+    list-style: none;
+    margin: auto;
+    
+  
+  }
+  .dashBox li{
+  float: left;
+  }
+  .dash1{
+    height: 1px;
+    width: 20px;
+    margin:2px 2px 2px 10px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+  }
+  .dash2{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+  }
+  .dash3 {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+  }
 .h2title{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #555555;
     
 }
- /* .specialheading{
-    font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    color: #555555;
-}  */
-
-/* .mtop111{
-    position: relative;
-    top:150px;
-}
-
-.whiteclr{
-    font-size: 36px;
-   color: #fff;
-   font-family: 'Montserrat', sans-serif;
-
-} */
-.demoTitle{
-	margin-left: 44%;
-    margin-top: 20%;
-}
+ 
 .osDiv{
 	/* background-color: red;   */
 	height: 350px;
@@ -55,13 +70,6 @@
     box-shadow: 2px 2px 8px 3px #dad6d6;
 
 }
-/* .col2{
-	height: 375px;
-	background-color: #fff;
-	border: 1px solid #aaa;
-    border-radius: 10px;
-     /* background-color: red;  */
-/* }  */
 
 .iconCircle{
 	height: 130px;
@@ -104,44 +112,7 @@
     color: #376bff !important;
     font-weight: 600;
 }
-/* ================================================================= */
-/*dash ===== ======================== =============*/
-.dashBoxOS{
-    height: 70px;
-    width: 300px;
-    list-style: none;
-    position: relative; 
-    left: 67px;
-      
-    
-}
-.dasboxssp{
-    top: -130px!important;
-}
-.dashBoxOS li{
-  float: left;
-  
-}
-.dash1OS,.dash3OS {
-    height: 1px;
-    width: 20px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
-.dash1OS{
-    margin-left: 21px;
-}
-.dash2OS{
-    height: 1px;
-    width: 50px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
-/* .dash1OS{
-    margin-left:63px ;
-} */
+
 .mainheading{
     height: 100px;
     width: 400px;
@@ -186,9 +157,7 @@
     font-family: 'Montserrat', sans-serif;
 
 }
-/* .rmore00{
-    margin-top:100px!important;
-} */
+
 /* ==================================Media Query================================================= */
 @media (max-width: 767px){
     .specialhightwrapper{
@@ -246,169 +215,6 @@
     margin-top: 50px!important;
 } 
 }
-/* ==================================Media Query================================================= */
-
-/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/
-
-
-/*===================================================================================*/
-/*===================================================================================*/
-/*============================ Mobile view ==========================================*/
-/*===================================================================================*/
-/*===================================================================================*/
 
 
 
-.nopadding{
-    padding: 0px;
-}
-.mwrapper{
-    height: 800px;
-    background-color: red;
-    margin-top: 796px;
-}
-.xsOurSpecialityHeight{
-    height: 2026px;
-    
-    position: relative;
-     background-image: url(/images/12.png); 
-    background-size: 200% 108%;
-    /* width: 100%; */
-}
-
-.xswhiteclr{
-    color: #fff;
-    font-family: 'Montserrat', sans-serif;
-}
-  .mainheading00{
-      height: 40px;
-      margin-top: auto;
-      padding-top: 1px;
-
-  }
-  
-  
-  
-
-.demoTitle{
-    margin-left: 44%;
-    margin-top: 20%;
-}
-.xsosDiv{
-    height: 450px;
-    top: 58px;
-    position: relative;
-}
-.xsbhead{
-    position: relative;
-    top: 291px;
-}
-.xscol1{
-    height: 335px;
-    width: 145%;
-    margin-bottom: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    border: 1px solid #aaa;
-    box-shadow: 0px 0px 20px 2px;
-    margin-left: -22%;
-    
-}
-.xscol2{
-    height: 290px;
-    margin-bottom: 10px;
-    background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 10px;
-}
-.xsiconCircle{
-    height: 90px;
-    position: relative;
-    width: 90px;
-    left: 98px;
-    top: 17px;
-    background-color: #e3f1e2;
-    border-radius: 50%;
-}
-.xsinnerCircle{
-    position: relative;
-    height: 45px;
-    top: 20px;
-    left: 20px;
-}
-.xssptextBox1{
-    position: relative;
-    top: -7px;
-    /* font-family: 'Montserrat', sans-serif; */
-
-}
-.xssptextBox1 h2{
-    /* font-weight: 500; */
-     font-family: 'Montserrat', sans-serif; 
-
-
-}
-.xssptextBox1 p{
-    margin-top: 0px;
-    padding-left: 15px;
-    padding-right: 0px;
-    color: #666;
-    letter-spacing: 1.0px;
-     /* font-family: 'Montserrat', sans-serif;  */
-
-}
-
-.xsrmore{
-    position: relative;
-    top: 10px;
-    letter-spacing: 1.2px !important;
-    color: #376bff !important;
-    font-weight: 600;
-}
-.xsrmore1{
-    color: #376bff !important;
-    font-weight: 600;
-    top:-10px
-}
-.xsrmore2{
-    color: #376bff !important;
-    font-weight: 600;
-    top: 50px;
-
-
-}
-
-.ourspeciliaty{
-    margin-top: -100px;
-}
-/* ================================================================= */
-/*dash ===== ======================== =============*/
-.xsdashBoxOS{
-  list-style: none;
-  position: relative; 
-  left: -3px;
-  top: 32px;
-}
-.xsdashBoxOS li{
-  float: left;
-}
-.xsdash1OS,.xsdash3OS {
-    height: 1px;
-    width: 20px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
-.xsdash2OS{
-    height: 1px;
-    width: 50px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
-.xsrmore3{
-    height: 50px;
-    background-color: red;
-    margin-top: -200px!important;
-}
-/*  /  /  / /  /  / / /  / Dash   /   /   / /   /   /   /   /   /   /  / / /*/

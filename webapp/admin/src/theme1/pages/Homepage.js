@@ -79,15 +79,15 @@ export default class Homepage extends React.Component {
 
 				<OutSpeciality />               
 				  <AutoPilotPlatform />           
-				   {/* <IndustryDomains />           */}
-				   {/* <ContentmanagementSystem />            */}
+				    <IndustryDomains />           
+				    <ContentmanagementSystem />            
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				   {/* <Testimonials />              */}
-			       {/* <Endlesspossibility />             */}
-			       {/* <AddressOnGoogleMap />            */}
-			      {/* <Footer />  */}
+				   <Testimonials />              
+			        <Endlesspossibility />             
+			        <AddressOnGoogleMap />            
+			     <Footer />  
 				  <ScrollButton />           
 			</div>
 		);

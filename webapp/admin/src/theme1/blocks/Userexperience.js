@@ -1,21 +1,21 @@
-import React,{Component} from 'react';
-import "./Mtechnology.css";
+import React,{Component}from 'react';
+import './Userexperience.css';
 import axios from 'axios';
 
-export default class Mtechnology extends Component{
+export default class Userexperience extends Component{
 
     constructor(props) {
         super(props);
         this.state = {
           blocks: {
-            "blockTitle": "<b>MODERN</b> TECHNOLOGY",
+            "blockTitle": "RICH USER <b>EXPERIENCE</b>",
             
             "blockSubTitle": "We are passionate about our work",
             "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
             "bgImage": "/images/ecom4.png",
-            "fgImage": "/images/mtech.png",
+            "fgImage": "/images/ecom14.png",
             "repeatedBlocks": [
                                 
                                 { 
@@ -57,10 +57,10 @@ export default class Mtechnology extends Component{
                   });
     }
 
-
     render(){
         return(
-            <div className="mtechnologywrapper">
+            <div className="uexperiencewrapp">
+                
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 boxspace">
                     <ul className="dashmtechnology">
@@ -85,7 +85,8 @@ export default class Mtechnology extends Component{
                    <img src={this.state.blocks.fgImage} alt="001" className="sideimagemtechlogy"/>  
                  </div> 
              </div>
-         </div>
+                
+            </div>
         )
     }
 }

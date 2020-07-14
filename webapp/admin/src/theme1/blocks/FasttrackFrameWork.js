@@ -63,7 +63,7 @@ export default class FastrackFrameWork extends Component{
     render(){
         return(
             <div className="pagewrapperheight">
-                <div className="bgwrapperheight"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+                <div className="bgwrapperheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 
                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                      <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
@@ -75,8 +75,8 @@ export default class FastrackFrameWork extends Component{
                     </div> 
                  </div> 
                 
-                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 titlewrapper1">
+                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
+                        <div className=" text-center">
                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
                    </div>  

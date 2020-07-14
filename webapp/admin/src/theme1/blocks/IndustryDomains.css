@@ -201,8 +201,7 @@
     border-radius: 10px;
 }
 .industrydomain{
-    height: 100px;
-    /* background-color: darkgoldenrod; */
+    height: 100px; 
     margin-top: 1px!important;  
     text-align: center;
 
@@ -210,7 +209,8 @@
 .hmaintitle{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
-
+    color: #555555;
+    margin-top: -28px;
 }
 
 /* =========================================Media Query========================================================== */

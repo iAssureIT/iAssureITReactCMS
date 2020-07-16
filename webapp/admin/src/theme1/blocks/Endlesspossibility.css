@@ -2,50 +2,58 @@
     height: 719px;
     width: 100%;
      background-color:#FFFFFF;  
-     /* background-color: darkcyan;  */
+     
 }
-.dashbox001{
-margin-top:0px;  
-position: absolute;
-      
+.dashboxwrapper{
+    height: 20px;
+    
+  }
+  .dashBox{
+    list-style: none;
+    margin: auto;
+    
   
-}
-.dash1OS,.dash3OS {
- height: 1px;
- width: 20px;
- margin:2px;
- /* border: 2px solid #00ccff; */
- border-radius: 10px;
-}
-.dash2OS{
- height: 1px;
- width: 50px;
- margin:2px;
- /* border: 2px solid #00ccff; */
- border-radius: 10px;
-}
-.enddash{
-    border: 2px solid #00ccff!important;  
-}
+  }
+  .dashBox li{
+  float: left;
+  }
+  .dash1{
+    height: 1px;
+    width: 20px;
+    margin:2px 2px 2px 10px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+  }
+  .dash2{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff;
+    border-radius: 10px;
+  }
+  .dash3 {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px 2px solid #00ccff;
+    border-radius: 10px;
+  }
+  
+
+
 .endmainrow{
     height: 108px;
     margin-top: 28px; 
-    /* background-color: darkgoldenrod;  */
-    text-align: center;
+    
 }
-.endlesspsb{
-    font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #555;
-
-}
-.endlesspsb00{
+.h1titleless{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #555;
+    margin-top: -53px;
 
 }
+
 .endlesscontentwrapper{
     height: 600px;
     margin-top: -27px;
@@ -84,22 +92,7 @@ position: absolute;
     
 
 }
-.loremIpsum1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.paragraphendpsb02{
-   font-size: 18px;
-   font-family: 'Montserrat', sans-serif;
-   color: #555555;
-   margin-top: 25px;
-   letter-spacing: 0.5px;
-   font-weight: 550; 
-   margin-left: 12%;
 
-
-
-}
 .enspsbrmrr{
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
@@ -127,12 +120,12 @@ position: absolute;
        
     }
     .rightsideimgendpsw{
-        height: 597px;
+        height: 500px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         margin: auto; 
          margin-top: -51px;  
-         margin-left: -8%;
+         /* margin-left: -8%; */
     
     }
  /* ====================================================Media Query==================================================================    */
@@ -199,4 +192,5 @@ position: absolute;
 
  /* =======================================================Media Query end============================================================== */
     
+
 

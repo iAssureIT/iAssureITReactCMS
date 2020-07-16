@@ -1,51 +1,92 @@
 import React,{Component}from 'react';
 import './CostAdvantage.css';
+import axios from 'axios';
 
 export default class CostAdvantage extends Component{
+
+    constructor(props) {
+        super(props);
+        this.state = {
+          blocks: {
+            "blockTitle": "<b>COST </b>ADVANTAGE",
+            
+            "blockSubTitle": "We are passionate about our work",
+            "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
+            "blockComponentName": "TemplateOverview",
+            "blockType": "",
+            "bgImage": "/images/costadvantage.png",
+            "fgImage": "/images/advantage01.png",
+            "repeatedBlocks": [
+                                
+                                { 
+                                    Title: "Sample 5", 
+                                    SubTitle: "", 
+                                    Image: "/images/4.png",
+                                    Link: "", 
+                                    Description: ""
+                                }
+            ],
+            "bgVideo"				: "",
+            "fgVideo"				: "",
+            "blockGroup"			: "",
+            "blockAppearOnPage"		: ""
+          },
+          blockID:"",
+          block_id:""
+        };   
+      }
+    componentDidMount(){
+    /*console.log("==>",this.props.block_id);*/
+              {
+                 axios
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .then((response)=>{
+                        if(response.data){
+                            // console.log("ListofServices =",response.data);
+                          this.setState({
+                              blocks:response.data
+                          });
+                        }                  
+                      })           
+                    .catch(function(error){
+                      console.log(error);
+                  })
+                }
+          this.setState({
+                    block_id:this.props.block_id
+                  });
+    }
+
     render(){
         return(
             <div className="costadvantagewrpp"> 
-            <div className="backgroundimgadnt">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 barspace">
-                    <ul className="dashcostadntage">
-						  <li className="dash1costavtge"></li>
-						 <li className="dash2costavtge"></li>
-						<li className="dash3costavtge"></li> 
-					</ul>
-                    </div>
-                </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-4 col-lg-offset-4 col-md-4 col-sm-12 col-xs-12 textwrapper">
-                        <span className="h1cost">COST</span>
-                       &nbsp; <span className="h2advantage">ADVANTAGE</span>
-
-                    </div>
-                </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 wrapperimgtext">
-                <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 costadvantagewrapp">
-                            <p className="paragraphcostadvantage01">
-                            <span className="loremIpsumadtge">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently
-                             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages, 
-                             </p>
-
-                            <p className="paragraphcostadvantage02">
-                             It is a long established fact that a reader will be distracted by the readable content of a page when
-                             looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                             Ipsum passages, and more recently with desktop publishing software
-                             </p>
-                             <h3 className="cadtgeracermore">Read More </h3> <div className="arrowcadtge"><i className="fas fa-angle-double-right"></i></div>
-
+            <div className="backgroundimgadnt"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                     <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
+                      <ul className="dashBox1">
+						  <li className="dash01"></li>
+						   <li className="dash02"></li>
+					        <li className="dash03"></li> 
+				        </ul>
+                    </div> 
                  </div> 
-                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframeworkadtage ">
-                         <img src="/images/advantage01.png" alt="001" className="sideimagecostadvatge"/>  
-                 </div>        
-
-
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
+                        <div className=" text-center">
+                            <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+                        </div>
                 </div>
-            </div>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper"> 
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
+                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
 
+                             <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
+                         </div>
+
+                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
+                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
+                          </div>   
+                      </div>
+                 </div>
             </div>
         )
     }

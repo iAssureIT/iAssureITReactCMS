@@ -6,14 +6,13 @@ export default class ServicesBanner extends React.Component {
         super(props);
         this.state = {
           blocks: {
-            "blockTitle": "<b>SUPER</b> PERFORMANCE",
-            
-            "blockSubTitle": "We are passionate about our work",
-            "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
+            "blockTitle": "OUR",
+            "blockSubTitle": "<b>SERVICES</b>",
+            "blockDescription": "With Cutting Edge Technology Expertise, <br/> Innovation & Creativity",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/ecom4.png",
-            "fgImage": "/images/ecom5.png",
+            "bgImage": "/images/27.png",
+            "fgImage": "./images/28.png",
             "repeatedBlocks": [
                                 
                                 { 
@@ -59,23 +58,21 @@ export default class ServicesBanner extends React.Component {
 		return (
 			<div>
 				<div className="banerpageheight">
-					<div className="banerSBheight">
-						<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
-						  <a href="/"><img className="logo img-responsive" src="./images/Logo.png" alt="logo"/></a>
-							
-						</div> 
-						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							 <div className="pull-right mtop100SB"> 
-								<span className="h1TitleSB">Our</span><br/>
-								<span className="h2TitleSB">SERVICES</span><br/>
-								<span className="h3TitleSB">With Cutting Edge Technology Expertise, <br/> Innovation & Creativity</span>
-							 </div>	 
-						</div>
-						<div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 row">
-							<img className="bannerImgSB img-responsive" src="./images/28.png" alt="Bannerpng"/>
-						</div>
-							
+				   	<div className="banerSBheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+						   <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
+						      <a href="/"><img className="logo img-responsive" src="./images/Logo.png" alt="logo"/></a>
+						   </div> 
+					   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					    	<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+							     <div className="mtop100SB"> 
+                      <div className="h1TitleSB" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div><br/>
+                      <div className="h2TitleSB" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div><br/>
+                      <div className="h3TitleSB" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div>
+							    </div>	 
+					    	</div>
+					  	<div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 row">
+							 <img className="bannerImgSB img-responsive" src={this.state.blocks.fgImage} alt="Bannerpng"/>
+						  </div>
 						</div> 
 
 					</div>
@@ -89,4 +86,4 @@ export default class ServicesBanner extends React.Component {
 );
 }
 }
-						
+				

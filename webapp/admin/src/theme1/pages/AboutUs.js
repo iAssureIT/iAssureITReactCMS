@@ -4,14 +4,16 @@ import WhoWeAre 		from '../blocks/WhoWeAre.js';
 import Awards 			from '../blocks/Awards.js';
 import OurTeam 			from '../blocks/OurTeam.js';
 import MissionVision 	from '../blocks/MissionVision.js';
-import { Helmet } from "react-helmet";
+import { Helmet }       from "react-helmet";
 import ContactModal 	from '../blocks/contactModal.js';
 
-import Header from '../common/Header.js';
+import Header           from '../common/Header.js';
 import Footer 			from '../common/Footer.js';
 import Headernew 		from '../common/headernew.js';
 import ScrollButton     from '../blocks/ScrollButton.js';
-
+import Advantage        from  '../blocks/Advantage.js';  
+import NationalAwards   from  '../blocks/NationalAwards.js';
+import Whychhose        from   '../blocks/WhyChhose.js';      
 
 
 import "./ServicesList.css";
@@ -50,12 +52,16 @@ export default class AboutUs extends React.Component {
 				<AboutBanner />
 
 				<WhoWeAre />
+				<MissionVision />
+				<Advantage />
+				<NationalAwards />
+				<Whychhose />
 
-				<Awards />
+				{/* <Awards /> */}
 			
 				{/*<OurTeam />*/}
 
-				<MissionVision />
+				
 				<ScrollButton />
 	{/*
 

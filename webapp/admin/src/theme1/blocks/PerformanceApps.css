@@ -1,68 +1,64 @@
 .highperformaoncewrapp{
-    height: 618px;
+    height: 600px;
     background-color: #FFFFFF;
 }
-.performancesbar{
+.boxspace{
     height: 20px;
     /* background-color: red; */
     margin-top:23px;
 }
-.dashperformance{
+.dashmtechnology{
     list-style: none;
-      
+    /* margin: auto; */
+    
+  
 }
-.dashperformance li{
+.dashmtechnology li{
   float: left;
 }
-.dash1perapp{
+.dash1mtechnology{
     height: 1px;
     width: 20px;
     margin:2px 2px 2px 10px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash2perapp{
+.dash2mtechnology{
     height: 1px;
     width: 50px;
     margin:2px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.dash3perapp {
+.dash3mtechnology {
     height: 1px;
     width: 20px;
     margin:2px;
     border: 2px solid #00ccff;
     border-radius: 10px;
 }
-.pertextwrapper{
+.mtelogytextwrapper{
     height: 60px;
-     /* background-color: chocolate;  */
-    text-align: center;
-    margin-top: 7px;
+    
+
 }
-.h1per{
+.h1title00mm{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     color: #555555;
+    margin-top: -28px!important;
 }
-.h2per{
-    font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    color:#555555;
-}
-.perbgwrapper{
-    height: 394px;
-    /* background-color: coral;  */
+.bgwrapper{
+    height: 494px;
+    /* background-color: coral; */
     margin-top: 53px;
 }
-.highperwrappcont{
+.mtechlogywrapp{
     height: 370px;
-     /* background-color: red;   */
+    /* background-color: red;  */
     
 }
-.paragraphper01{
+.paragraphmtech01{
     
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
@@ -74,51 +70,64 @@
     
 
 }
-.loremIpsumper{
-    font-size: 30px;
-    font-weight: bold;
-}
-.paragraphper02{
-   font-size: 18px;
-   font-family: 'Montserrat', sans-serif;
-   margin-left:12%;
-   color: #555555;;
-    margin-top: 25px; 
-   letter-spacing: 0.5px;
-   font-weight: 550; 
 
-
-}
-.perracermore{
+.mtechracermore{
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
     margin-left:12%;
     color: #376BFF;
     cursor: pointer;
     border-bottom: 1px solid #376BFF!important;
-    width: 19%;
+    width: 17%;
 
 
 }
-.arrowper{
+.arrowmtech{
     height: 100px;
     width: 30%;
     /* background-color: aquamarine; */
     margin-top: -40px; 
-    margin-left: 208px;
+    margin-left: 190px;
     font-size:30px;
     color: #376BFF;
     
 }
-.performaoncewrapp{
-    height: 428px;
 
+.imageframemtechlogy{
+   height: 428px;
+    
 }
-.sideimageperformance{
-    height: 440px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    margin-left: 86px;
- }
+.sideimagemtechlogy{
+   height: 440px;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   margin-left: 86px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

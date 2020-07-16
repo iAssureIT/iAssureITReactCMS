@@ -1,119 +1,98 @@
 .dexpertisewrapper{
-    height: 930px;
+    height: 950px;
     /* background-color: coral; */
 }
 .dexpertizebgwrapper{
-height: 920px;
-background-image: url(/images/dexpertize.png); 
-background-repeat: no-repeat;
+height: 950px;
+ background-repeat: no-repeat;
 background-size: 100% 100%;
+
 }
-.domainspace{
+
+.wrapperdashbox{
     height: 20px;
-    /* background-color: red; */
-     margin-top: 128px;
-    
+    margin-top: 129px;
+   
 }
-.dashdomalexperise{
+.dashBox3{
     list-style: none;
     margin: auto;
-    
-  
-}
-.dashdomalexperise li{
-  float: left;
-}
-.dash1dexpertise{
+  }
+ .dashBox3 li{
+     float: left;
+     
+     
+     
+ }
+ .dash0a1,.dash0a3{
     height: 1px;
     width: 20px;
-    margin:2px 2px 2px 10px;
-    border: 2px solid #00ccff;
+    margin:2px;
+    border: 2px solid #f1f1f1!important;
     border-radius: 10px;
+    margin-top: 45px;
 }
-.dash2dexpertise{
+.dash0a2{
     height: 1px;
     width: 50px;
     margin:2px;
-    border: 2px solid #00ccff;
+    border: 2px solid #f1f1f1!important;
     border-radius: 10px;
+    margin-top: 45px;
+
 }
-.dash3dexpertise {
-    height: 1px;
-    width: 20px;
-    margin:2px;
-    border: 2px solid #00ccff;
-    border-radius: 10px;
-}
-.domailtextwrapper{
+
+
+
+  .titlewrapper2{
     height: 60px;
-    /* background-color: chocolate; */
-    text-align: center;
-    margin-top: 7px;
-}
-.domailh1{
+    margin-top: -43px!important; 
+ } 
+
+.h1title000{
     font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #F1F1F1;
-}
-.domailh2{
-    font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    color:#F1F1F1;
-}
-.domailwrapper{
-    height: 472px;
-    /* background-color: coral; */
-}
-.leftwrapperdomail{
-     height: 405px;
+    color: #f1f1f1;
+    margin-top: 100px;
+    
+
+}   
+ .maincontentwrapper001{
+    height: 400px;
+  
+} 
+.leftimageframework{
+    height: 405px;
+    margin-top: 179px;
     
     
 }
-.leftsideimgdomail{
-    height: 454px;
+.leftsideimg{
+    height: 391px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin: auto; 
-     margin-top: 36px;  
-    margin-left: 8%; 
+    margin-top: -23px;  
+    
 
 }
-.domailcontentframework{
-    height: 472px;
-    /* background-color: coral; */
-     padding-top: 74px; 
-
+.autocontentframework{
+    height: 370px;
+    margin-top: 151px;
     
     
 }
-.paragraphdomail00{
+.paragraphfasttrack00{
     
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-     /* margin-left:12%;  */
     color: #f1f1ff;
     letter-spacing: 0.5px;
     font-weight: 550; 
-   
+     padding-top: 48px;   
+
     
 
 }
-.loremIpsum1{
-    font-size: 30px;
-    font-weight: bold;
-}
-.paragraphdomail02{
-   font-size: 18px;
-   font-family: 'Montserrat', sans-serif;
-   margin-right:12%;  
-   color: #f1f1ff;
-   margin-top: 25px;
-   letter-spacing: 0.5px;
-   font-weight: 550; 
 
-
-}
 .ftracermore00{
     font-size: 22px;
     font-family: 'Montserrat', sans-serif;
@@ -121,7 +100,7 @@ background-size: 100% 100%;
     color: #f1f1f1;
     cursor: pointer;
     border-bottom: 1px solid #f1f1f1!important;
-    width: 19%;
+    width: 17%!important;
 
 
 }
@@ -130,7 +109,7 @@ background-size: 100% 100%;
     width: 30%;
     /* background-color: aquamarine;  */
     margin-top: -40px;
-    margin-left: 128px;
+    margin-left: 113px!important;
     font-size: 30px;
     color: #f1f1f1;
     padding-top: -10px;

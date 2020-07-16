@@ -1,140 +1,96 @@
 import React from 'react';
-import "./MissionVision.css"
+import "./MissionVision.css";
+import axios from 'axios';
 
 export default class MissionVision extends React.Component {
 
 	constructor(props) {
-		super(props);
-	}
+        super(props);
+        this.state = {
+          blocks: {
+            "blockTitle": "MISSION <b>VISION</b> ",
+            
+            "blockSubTitle": "We are passionate about our work",
+            "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
+            "blockComponentName": "TemplateOverview",
+            "blockType": "",
+            "bgImage": "/images/costadvantage.png",
+            "fgImage": "/images/US4.png",
+            "repeatedBlocks": [
+                                
+                                { 
+                                    Title: "Sample 5", 
+                                    SubTitle: "", 
+                                    Image: "/images/4.png",
+                                    Link: "", 
+                                    Description: ""
+                                }
+            ],
+            "bgVideo"				: "",
+            "fgVideo"				: "",
+            "blockGroup"			: "",
+            "blockAppearOnPage"		: ""
+          },
+          blockID:"",
+          block_id:""
+        };   
+      }
+    componentDidMount(){
+    /*console.log("==>",this.props.block_id);*/
+              {
+                 axios
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .then((response)=>{
+                        if(response.data){
+                            // console.log("ListofServices =",response.data);
+                          this.setState({
+                              blocks:response.data
+                          });
+                        }                  
+                      })           
+                    .catch(function(error){
+                      console.log(error);
+                  })
+                }
+          this.setState({
+                    block_id:this.props.block_id
+                  });
+    }
+
 
 	render() {
 		return (
-			<div className="container-fluid nopadding">
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 MVwrapper hidden-sm hidden-xs">
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 mvBox2">
-						
-						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6">
-							<div className="mvinfotext1 col-lg-10 col-md-10 col-sm-10 col-xl-10 pull-right">
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
-									<ul className="dashBoxmv col-lg-4">
-									  <li className="dash1mv"></li>
-									  <li className="dash2mv"></li>
-									  <li className="dash3mv"></li>
-									</ul>
-								</div>
-								<h1 className="mvheadingb1"><b>Advantage</b>
-								</h1>
-								<p className="mvpara1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
+			    <div className="mvisionwrapp">
+					<div className="mvisionBgIMG" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+					   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                          <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
+                             <ul className="dashBox1">
+                               <li className="dash01"></li>
+                               <li className="dash02"></li>
+                               <li className="dash03"></li> 
+                            </ul>
+                         </div> 
+                     </div>
+					   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
+                          <div className=" text-center">
+                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+                           </div>
+                      </div>
+					  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper"> 
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
+                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
 
-								</p>	
-								<p className="mvpara1">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
-								</p>
-								<h5  className="mvrdmore"><span><u> Read More</u></span> >> </h5>
-
-							</div>
-
-						</div>
-						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6 ">
-							<img className="mvinfoImg1 img-responsive" src="./images/46.png" alt="Bannerpng"/>
-
-						</div>
+                             <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
+                         </div>
+						 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
+                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
+                          </div>
 
 					</div>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 mvBox1">
-						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6 ">
-							<img className="mvinfoImg1 img-responsive pull-right" src="./images/47.png" alt="Bannerpng"/>
 
-						</div>
-						<div className="col-lg-6 col-md-6 col-sm-6 col-xl-6">
-							<div className="mvinfotext1 col-lg-10 col-md-10 col-sm-10 col-xl-10">
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
-									<ul className="dashBoxmv col-lg-4	">
-									  <li className="dash1mv"></li>
-									  <li className="dash2mv"></li>
-									  <li className="dash3mv"></li>
-									</ul>
-								</div>
-								<h1 className="mvheadingb1">Why<b>Choose ?</b>
-								</h1>
-								<p className="mvpara1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
-
-								</p>	
-								<p className="mvpara1">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
-								</p>
-								<h5  className="mvrdmore"><span><u> Read More</u></span> >> </h5>
-							</div>
-						</div>
-					</div>
+				  </div>
 				</div>
-				{/*mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm*/}	
-				{/*===============================================================*/}
-				{/*wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/}
-				<div className="col-sm-12 col-xs-12 MVwrapperxs hidden-lg hidden-md">
-					<div className="col-sm-12 col-xs-12 mvBox2xs">
-						<div className="col-sm-12 col-xs-12">
-							<div className="mvinfotext1xs col-sm-12 col-xs-12 pull-right">
-								<div className="col-sm-12 col-xs-12 ">
-									<ul className="dashBoxmvxs col-xs-6 col-xs-offset-4 col-sm-6 col-sm-offset-5">
-									  <li className="dash1mvxs"></li>
-									  <li className="dash2mvxs"></li>
-									  <li className="dash3mvxs"></li>
-									</ul>
-								</div>
-								<h1 className="mvheadingb1xs"><b>Advantage</b>
-								</h1>
-								<p className="mvpara1xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
-
-								</p>	
-								<p className="mvpara1xs">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
-								</p>
-								<h5  className="mvrdmorexs"><span><u> Read More</u></span> >> </h5>
-							</div>
-						</div>
-						<div className="col-sm-6 col-sm-offset-3 col-xs-12 ">
-							<img className="mvinfoImg1xs img-responsive  col-sm-offset-3" src="./images/46.png" alt="Bannerpng"/>
-						</div>
-					</div>
-					<div className="col-sm-12 col-xs-12 mvBox1xs">
-						<div className="col-sm-6 col-xs-12 col-sm-offset-3">
-							<img className="mvinfoImg2xs img-responsive  " src="./images/47.png" alt="Bannerpng"/>
-						</div>
-						<div className="col-sm-12 col-xs-12">
-							<div className="mvinfotext1xs col-sm-12 col-xs-12">
-								<div className="col-sm-12 col-xs-12 ">
-									<ul className="dashBoxmvxs col-xs-6 col-xs-offset-4 col-sm-6 col-sm-offset-5">
-									  <li className="dash1mvxs"></li>
-									  <li className="dash2mvxs"></li>
-									  <li className="dash3mvxs"></li>
-									</ul>
-								</div>
-								<h1 className="mvheadingb1xs">Why<b>Choose ?</b>
-								</h1>
-								<p className="mvpara1xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-								Sed feu-giat euismod leo sed efficitur. Sed quis ultricies
-								ante. Donec quistristique magna.
-								</p>	
-								<p className="mvpara1xs">Etiam sit amet maximus dui. Phasellus iaculis consequat 
-								tempus. Sed lorem nunc, tempor a vehicula et, molestie 
-								sedmetus. Morbi feugiat nulla tincidunt nisl mattis sollicitudin.
-								</p>
-								<h5  className="mvrdmorexs"><span><u> Read More</u></span> >> </h5>
-							</div>
-						</div>
-					</div>
-				</div>	
-			</div>
 		);
 	}
 }
+        

@@ -17,7 +17,7 @@ export default class FastrackFrameWork extends Component{
             "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/002.png",
+            "bgImage": "/images/ecom4.png",
             "fgImage": "/images/001.png",
             "repeatedBlocks": [
                                 
@@ -65,7 +65,7 @@ export default class FastrackFrameWork extends Component{
             <div className="pagewrapperheight">
                 <div className="bgwrapperheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 
-                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                      <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
                       <ul className="dashBox1">
 						            <li className="dash01"></li>
@@ -74,8 +74,7 @@ export default class FastrackFrameWork extends Component{
 				            	</ul>
                     </div> 
                  </div> 
-                
-                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
                         <div className=" text-center">
                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
@@ -83,7 +82,7 @@ export default class FastrackFrameWork extends Component{
                     
 					            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper"> 
                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
-                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
+                            <p className="hdescription" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
 
                              <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
                          </div>

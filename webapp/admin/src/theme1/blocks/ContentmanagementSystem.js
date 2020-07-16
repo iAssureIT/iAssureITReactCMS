@@ -8,13 +8,13 @@ export default class ContentmanagementSystem extends Component{
     super(props);
     this.state = {
       blocks: {
-        "blockTitle": "<b>CONTENT </b>MANAGEMENT SYSTEM",
+        "blockTitle": "<b>CONTENT</b> MANAGEMENT SYSTEM",
         
         "blockSubTitle": "We are passionate about our work",
         "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
         "blockComponentName": "TemplateOverview",
         "blockType": "",
-        "bgImage": "/images/002.png",
+        "bgImage": "/images/costadvantage.png",
         "fgImage": "/images/00002.png",
         "repeatedBlocks": [
                             
@@ -66,16 +66,15 @@ componentDidMount(){
             <div className="contentmgmtwrapper">
                 <div className="contantmgmtwrpper00"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}} >
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-                     <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
+                      <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
                       <ul className="dashBox1">
 						            <li className="dash01"></li>
 						            <li className="dash02"></li>
 					            	<li className="dash03"></li> 
 				            	</ul>
-                    </div> 
+                    </div>  
                  </div> 
-
-                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
                         <div className="text-center">
                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
@@ -94,7 +93,7 @@ componentDidMount(){
 
                         </div>  
 
-                </div>   
+                </div>    
 
 
                 </div>

@@ -1,5 +1,6 @@
 import React 						from 'react';
 import {Route, withRouter} 			from 'react-router-dom';
+import 									 './Staticblocks.css';
 
 import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
 import FastrackFrameWork                from "../blockTemplate/FastrackFrameWork/FastrackFrameWork.js";
@@ -7,10 +8,14 @@ import FasttrackFrameWork                from "../blockTemplate/FasttrackFrameWo
 import AutoPilotPlatform                from "../blockTemplate/AutoPilotPlatform/AutoPilotPlatform.js";
 import OutSpeciality                from "../blockTemplate/OutSpeciality/OutSpeciality.js";
 import CommerceBanner              from "../blockTemplate/eCommerceBanner/eCommerceBanner.js";
+import Customisable                from "../blockTemplate/Customisable/Customisable.js";
+import Superperformance            from "../blockTemplate/Superperformance/Superperformance.js";
+import Creditonlinestore           from "../blockTemplate/CreateOnlineStore/CreateOnlineStore.js";
+import Userexperience              from  "../blockTemplate/Userexperience/Userexperience.js";
 
 
 
-import 									 './Staticblocks.css';
+
 
 
 
@@ -104,7 +109,7 @@ class Staticblocks extends React.Component {
 							+"&blockLink="+blockLink
 							+"&RepetedBlock="+RepetedBlock
 							+"&rBlocksTitle="+rBlocksTitle
-							+"&rBlocksSubTitle="+rBlocksSubTitle
+							+"&rBlocksSubTiSuperperformancetle="+rBlocksSubTitle
 							+"&rBlocksDescription="+rBlocksDescription
 							+"&rBlocksImage="+rBlocksImage
 							+"&rBlocksVideo="+rBlocksVideo
@@ -195,6 +200,63 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<CommerceBanner /> 
 					</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Customisable" 
+								data-blockTitle="blockTitle" 
+								 data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								 
+								
+			                	
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Customisable /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Superperformance" 
+								data-blockTitle="blockTitle" 
+								 data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage"
+								 className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Superperformance /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="CreateOnlineStore" 
+								data-blockTitle="blockTitle" 
+								 data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								
+								data-bgImage="bgImage"
+								 className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Creditonlinestore /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Userexperience" 
+								data-blockTitle="blockTitle" 
+								data-blockDescription="blockDescription" 
+								data-fgImage="fgImage" 
+								className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Userexperience /> 
+					</section>
+
+
+
+
 					
 					
 				

@@ -1,0 +1,51 @@
+.Nawardswrapp{
+    height: 850px;
+   
+}
+.NawardsBgIMG{
+    height: 850px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.awardwrapp{
+    height: 20px;
+    margin-top: 155px;
+}
+ .dashBoxNA{
+    list-style: none;
+    margin: auto;
+  }
+ .dashBoxNA li{
+     float: left;
+     
+     
+     
+ }
+ .NAdash1,.NAdash3{
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #f1f1f1!important;
+    border-radius: 10px;
+}
+.NAdash2{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #f1f1f1!important;
+    border-radius: 10px;
+}
+.NAh1title{
+    height: 108px;
+    /* background-color: chartreuse; */
+   
+    
+}
+
+.nah1title00{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f1f1f1;
+    margin-top: -28px;
+
+}

@@ -1,51 +1,100 @@
 import React,{Component}from 'react';
 import './DomailExperise.css';
+import axios from 'axios';
 
 export default class DomailExperise extends Component{
+    constructor(props) {
+        super(props);
+        this.state = {
+          blocks: {
+            "blockTitle": "<b>DOMAIN</b> EXPERTISE",
+            
+            "blockSubTitle": "We are passionate about our work",
+            "blockDescription": " <span style='font-size:30px'>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recentlywith desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages. <p style='margin-top:25px'> It is a long established fact that a reader will be distracted by the readable content of a page whenlooking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software</p>", 
+            "blockComponentName": "TemplateOverview",
+            "blockType": "",
+            "bgImage": "/images/dexpertize.png",
+            "fgImage": "/images/domail.png",
+            "repeatedBlocks": [
+                                
+                                { 
+                                    Title: "Sample 5", 
+                                    SubTitle: "", 
+                                    Image: "/images/4.png",
+                                    Link: "", 
+                                    Description: ""
+                                }
+            ],
+            "bgVideo"				: "",
+            "fgVideo"				: "",
+            "blockGroup"			: "",
+            "blockAppearOnPage"		: ""
+          },
+          blockID:"",
+          block_id:""
+        };   
+      }
+    componentDidMount(){
+    /*console.log("==>",this.props.block_id);*/
+              {
+                 axios
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .then((response)=>{
+                        if(response.data){
+                            // console.log("ListofServices =",response.data);
+                          this.setState({
+                              blocks:response.data
+                          });
+                        }                  
+                      })           
+                    .catch(function(error){
+                      console.log(error);
+                  })
+                }
+          this.setState({
+                    block_id:this.props.block_id
+                  });
+    }
+
+
+
+
+
     render(){
         return(
             <div className="dexpertisewrapper">
-                <div className="dexpertizebgwrapper">
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 domainspace">
-                    <ul className="dashdomalexperise">
-						  <li className="dash1dexpertise"></li>
-						 <li className="dash2dexpertise"></li>
-						<li className="dash3dexpertise"></li> 
-					</ul>
-                    </div>
+                <div className="dexpertizebgwrapper" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                     <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 wrapperdashbox">
+                        <ul className="dashBox3">
+                          <li className="dash0a1"></li>
+                          <li className="dash0a2"></li>
+                          <li className="dash0a3"></li> 
+				                </ul>
+                    </div> 
+                 </div> 
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper2 ">
+                        <div className=" text-center ">
+                            <div className="h1title000" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+                        </div> 
                 </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 domailtextwrapper">
-                        <span className="domailh1">DOMAIN</span>
-                       &nbsp; <span className=" domailh2">EXPERTISE</span>
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper001">
+                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftimageframework ">
+                         <img src={this.state.blocks.fgImage} alt="002" className="leftsideimg"/>  
 
-                    </div>
-                </div>
-                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 domailwrapper">
-                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftwrapperdomail ">
-                         <img src="/images/domail.png" alt="domail" className="leftsideimgdomail"/>
-                    </div>
-                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 domailcontentframework">
-                        <p className="paragraphdomail00">
-                            <span className="loremIpsum1">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently
-                             with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages. 
-                        </p>
 
-                       <p className="paragraphdomail02">
-                             It is a long established fact that a reader will be distracted by the readable content of a page when
-                             looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                             Ipsum passages, and more recently with desktop publishing software
-                        </p>
+                    </div> 
+
+                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 autocontentframework">
+                            <p className="paragraphfasttrack00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
+
+                            
                              <h3 className="ftracermore00">Read More </h3> <div className="arrow00"><i className="fas fa-angle-double-right"></i></div>
 
-                    </div>      
+                        </div> 
 
-
-                    
-
-                </div>
+                 </div>                 
+                  
                 </div>
 
             </div>

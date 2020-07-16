@@ -23,7 +23,7 @@ export default class AppDevMain extends React.Component {
 						<img className="logoIMG img-responsive"src="./images/Logo.png" alt="logo"/>  
 						</div>
 					 
-						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715 homecarousal1 "loop nav={true}  autoplay={false} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1} dots={false} >
+						<OwlCarousel className="owl-theme  owl-carousel homecarousel h715 homecarousal1 "loop nav={true}  autoplay={true} animateOut={'fadeOut'} animateIn={false} autoplaySpeed={900} items={1} dots={false} >
 							
 								<div className="item active row ">
 									<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 nopadd slide1">

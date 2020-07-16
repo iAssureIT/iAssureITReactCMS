@@ -58,7 +58,7 @@ export default class BusinessGrows extends Component{
     render(){
         return(
             <div className="businesswrapp">
-                <div className="businessbgIMG"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+                <div className="businessbgIMG" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                      <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
                         <ul className="dashBox1">

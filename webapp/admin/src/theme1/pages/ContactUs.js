@@ -3,8 +3,7 @@ import ContactBanner 	from '../blocks/ContactBanner.js';
 import ContactForm 	from '../blocks/ContactForm.js';
 import AddressOnGoogleMap 	from '../blocks/AddressOnGoogleMap.js';
 import { Helmet } from "react-helmet";
-
-import Footer 			from '../common/Footer.js';
+import Footer   from '../common/Footer.js';
 import Header from '../common/Header.js';
 import "./ServicesList.css";
 
@@ -47,8 +46,8 @@ export default class ContactUs extends React.Component {
 
 				<ContactForm />
 
-				<AddressOnGoogleMap />
-				<Footer />
+				{/* <AddressOnGoogleMap /> */}
+				{/* <Footer /> */}
 			</div>
 		);
 	}

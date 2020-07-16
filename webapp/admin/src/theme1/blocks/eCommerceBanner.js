@@ -62,7 +62,7 @@ export default class eCommerceBanner extends React.Component {
 				return (
 				
 						<div  className="ecbwrapper">
-							<div className="ecombgimg"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+							<div className="ecombgimg" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 							     <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
 						             <a href="/" ><img className="logo img-responsive" src="./images/Logo.png" alt="logo"/></a>
 							

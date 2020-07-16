@@ -1,54 +1,83 @@
 import React from 'react';
-import "./AboutBanner.css"
+import "./AboutBanner.css";
+import axios from 'axios';
+
+
 export default class AboutBanner extends React.Component {
 
-
 	constructor(props) {
-		super(props);
-	}
+        super(props);
+        this.state = {
+          blocks: {
+		      	"blockTitle": "<b>ABOUT US </b>",
+		      	"blockSubTitle": "We are passionate about our work",
+            "blockDescription": "You need eCommerce website thay is supeb beautiful, user friendly & that grows your business exponetially",
+            "blockComponentName": "TemplateOverview",
+            "blockType": "",
+            "bgImage": "/images/about1.png",
+            "fgImage": "/images/us2.png",
+            "repeatedBlocks": [
+                                
+                                { 
+                                    Title: "Sample 5", 
+                                    SubTitle: "", 
+                                    Image: "/images/4.png",
+                                    Link: "", 
+                                    Description: ""
+                                }
+            ],
+            "bgVideo"				: "",
+            "fgVideo"				: "",
+            "blockGroup"			: "",
+            "blockAppearOnPage"		: ""
+          },
+          blockID:"",
+          block_id:""
+        };   
+      }
+    componentDidMount(){
+    /*console.log("==>",this.props.block_id);*/
+              {
+                 axios
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .then((response)=>{
+                        if(response.data){
+                            // console.log("ListofServices =",response.data);
+                          this.setState({
+                              blocks:response.data
+                          });
+                        }                  
+                      })           
+                    .catch(function(error){
+                      console.log(error);
+                  })
+                }
+          this.setState({
+                    block_id:this.props.block_id
+                  });
+    }
+
 
 	render() {
 		return (
-			<div className="ABOUTbanerheight container-fluid">
-				<div className="col-lg-12 col-md-12 hidden-sm hidden-xs">
-					<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
-						<a href="/" ><img className="logoab img-responsive" src="./images/Logo.png" alt="logo"/></a>
-						{/*<img className="menuimgab img-responsive pull-right" src="./images/3menubar.png" alt="logo"/>*/}
-					</div>
-					<div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<div className="pull-right mtop305">
-							
-							<span className="h2Title monFont">ABOUT US
-							</span><br/>
-							<span className="h3Title monFont">We are passionate about our work
-							</span>
-						</div>	
-					</div>
-					<div className=" col-lg-5 col-md-5 col-sm-6 col-xs-6 row">
-						<img className="abbannerImg img-responsive" src="./images/37.png" alt="Bannerpng"/>
-					</div>
-				</div>
-				<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
-					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md logoBox">
-						<img className="logoabxs img-responsive" src="./images/Logo.png" alt="logo"/>
-						{/*<img className="menuimgabxs img-responsive pull-right" src="./images/3menubar.png" alt="logo"/>*/}
-					</div>
-					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md">
-						<div className="mtop305xs text-center">
-							
-							<span className="h2Titlexs">ABOUT US
-							</span><br/>
-							<span className="h3Titlexs">We are passionate about our work
-							</span>
-						</div>	
-					</div>
-					<div className="col-xs-12 col-sm-12 hidden-lg hidden-md row">
-						<img className="abbannerImgxs img-responsive col-sm-offset-3" src="./images/37.png" alt="Bannerpng"/>
-					</div>
-				</div>	
-				
-				
+			<div className="aboutbannerwrapp">
+				<div className="ABOUTbanerheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+				    <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox row">
+					    <a href="/" ><img className="logoab img-responsive" src="./images/Logo.png" alt="logo"/></a>
+					 </div>
+					 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutwannerwrpp">
+						     <div className="h1Titleus" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div><br/>
+							  <div className="h2Titleus" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
+						 </div>
+						 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutfgwrapp">
+							 <img src={this.state.blocks.fgImage} className="rightIMGUS"></img>
+
+						 </div>
+					 </div>
+			   </div> 
 			</div>
 		);
 	}
 }
+					

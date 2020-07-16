@@ -1,0 +1,235 @@
+ .fastrachight{
+    height: 1025px;
+     /* background-color:#ccc;       */
+      
+     
+ } 
+ .ftrackwrapper{
+     height:1050px ;
+     width: 100%;
+     background-image: url("/images/002.png"); 
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     margin-top: -21px;
+
+ }
+ .dashBoxOS{
+    list-style: none;
+    position: relative; 
+    left: 25px;
+    top: 0px;
+  }
+ .dashbox00{
+     margin-top: 247px; 
+     left: 67px;
+     position: absolute;
+     
+ }
+ .dash1OS,.dash3OS {
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #f1f1f1!important;
+    border-radius: 10px;
+}
+.dash2OS{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #f1f1f1!important;
+    border-radius: 10px;
+}
+ .heading{
+     height: 108px;
+     /* background-color: salmon; */
+      margin-top: 281px; 
+     text-align: center;
+ }
+ .ftitle0{
+     font-size: 46px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: bold;
+     color: #f1f1f1;
+
+ }
+ .ftitle00{
+     font-size: 46px;
+     font-family: 'Montserrat', sans-serif;
+     color: #f1f1f1;
+
+ }
+ .maincontentwrapper{
+     height: 400px;
+     /* margin-top: -52px; */
+ }
+ .contentframework{
+     height: 370px;
+     /* background-color: red;  */
+     
+ }
+ .paragraphfasttrack{
+     
+     font-size: 18px;
+     font-family: 'Montserrat', sans-serif;
+     margin-left:12%;
+     color: #f1f1ff;
+     letter-spacing: 0.5px;
+     font-weight: 550; 
+
+     
+
+ }
+ /* .loremIpsum{
+     font-size: 30px;
+     font-weight: bold;
+ } */
+ .paragraphfasttrack01{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:12%;
+    color: #f1f1ff;
+    /* margin-top: 40px; */
+    letter-spacing: 0.5px;
+    font-weight: 550; 
+
+
+ }
+ .ftracermore{
+     font-size: 22px;
+     font-family: 'Montserrat', sans-serif;
+     margin-left:12%;
+     color: #f1f1f1;
+     cursor: pointer;
+     border-bottom: 1px solid #f1f1f1!important;
+     width: 19%;
+
+
+ }
+ .arrow{
+     height: 100px;
+     width: 30%;
+     /* background-color: aquamarine; */
+     margin-top: -40px; 
+     margin-left: 208px;
+     font-size:30px;
+     color: #f1f1f1;
+     
+ }
+ 
+ .imageframework{
+    height: 370px;
+     /* background-color: red;    */
+}
+.sideimageftrack{
+    height: 440px;
+     /* width: 100%;  */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* margin: auto;  */
+     /* margin-top: -38px;  */
+    margin-left: 147px;
+}
+/* =======================================Media Query==================================================== */
+ /* @media  screen and (max-width:992px){
+    .fastrachight{
+        height: 1525px;
+
+      
+
+    }
+    .ftrackwrapper{
+        height:50px ;
+        background-size: 200% 108%;
+    }
+    
+    .smdash1{
+        height: 100px;
+        width: 100%;
+        margin-top: -140px; 
+       
+      
+  }
+  .dashbox00{
+      left: 30px!important;
+  }
+  .fstrack1{
+      margin-left: 43%!important;
+  }
+  .heading{
+    height: 108px;
+     margin-top: -113px!important;
+     margin: auto;
+  }
+    
+}   */
+
+@media screen and (max-width:767px){
+    .fastrachight{
+        height: 2125px;
+                
+      
+
+    }
+    .ftrackwrapper{
+        height:2050px ;
+        background-size: 200% 108%;
+    }
+    .dashbox00{
+          margin-top: 370px; 
+         
+        
+    }
+    .heading{
+        margin-top:408px
+    }
+    .dash1OS{
+        margin-left: 25%!important;
+    }
+ .ftitle0{
+
+    font-size: 24px;
+ }
+ .ftitle00{
+     
+     font-size: 24px;
+    
+ }
+ .contentframework{
+    height: 774px;
+    /* background-color: red;   */
+    margin-top: -50px;
+    
+}
+.loremIpsum{
+    font-size: 22px;
+
+}
+.paragraphfasttrack{
+    margin-left: 0%;
+    margin-top: 17px;
+    
+}
+.paragraphfasttrack01{
+    margin-left: 0%;
+    margin-top: 35px;
+}
+.ftracermore{
+    margin-left: 0%!important;
+    font-size: 18px!important;
+    width: 33%!important;
+    cursor: pointer;
+}
+.arrow{
+ font-size: 18px!important;
+ margin-left: 103px!important;
+  margin-top: -31px!important;   
+
+
+ }
+ .sideimageftrack{
+    margin-left:0px;
+    width: 100%;
+    margin-top: -38px;
+ }
+ }
+   

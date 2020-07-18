@@ -62,7 +62,6 @@ export default class AppDevMain extends React.Component {
 									</div>
 						      </div> 
 							 
-						
 						 <div className="item row">
 								<div className="col-lg-6 col-md-6 col-lg-offset-1 col-md-offset-1 col-sm-12 col-xs-12 nopadd slide4">
 									<div className="mtop100">
@@ -109,4 +108,4 @@ export default class AppDevMain extends React.Component {
 		);
 	}
 }	 
-					
+										

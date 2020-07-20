@@ -1,6 +1,6 @@
  .madalbtn{
 	position: fixed;
-	bottom:  525px;
+	bottom:  510px;
 	right: 0px;
 	z-index: 10;
 } 
@@ -25,14 +25,15 @@
      outline: 0px auto -webkit-focus-ring-color; 
     /* outline-offset: -2px; */
 }
-/* #myModalOne{
+ /* #myModalOne{
 	background-color: #fff;
-	height: 750px; */
-    /* box-shadow: 2px 2px 20px 2px #666; */
-    /* margin-top: 56px; */
-    /* border-radius: 10px; */
-    /* opacity: 0.9; */
-/* } */
+	height: 750px; 
+     box-shadow: 2px 2px 20px 2px #666; 
+     margin-top: 56px; 
+     border-radius: 10px; 
+    
+ }  */
+ 
 /* =============================================contactus page css=============== */
 .contactmodealswrapper{
     height: 500px;

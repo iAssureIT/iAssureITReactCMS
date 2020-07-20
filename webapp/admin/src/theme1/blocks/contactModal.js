@@ -1,8 +1,8 @@
 import React from 'react';
 import $ from "jquery";
-import ContactForm from "./ContactForm.js";
+// import ContactForm from "./ContactForm.js";
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
+// import 'bootstrap/dist/js/bootstrap.min.js';
 // import 'bootstrap-modal.js';
 
  
@@ -31,12 +31,14 @@ export default class ContactModal extends React.Component {
 	render() {
 		return (
 			<div>
+
+				
              	{/* <button type="button" className="btn btn-lg madalbtn btnbg" onClick={this.OpenMyOrderModal.bind(this)}  >Contact Us */}
-             	<button type="button" className="btn btn-lg madalbtn btnbg" data-toggle="modal" data-target="#myModal"  >Contact Us
+             	<button type="button" className="btn btn-lg madalbtn btnbg" data-toggle="modal" data-target="#contactpage"  >Contact Us
 				</button>
 
 				{/* <!-- Modal --> */}
-				<div id="myModal" class="modal fade" role="dialog">
+				<div id="contactpage" class="modal fade" role="dialog">
 				<div class="modal-dialog">
 
 					{/* <!-- Modal content--> */}

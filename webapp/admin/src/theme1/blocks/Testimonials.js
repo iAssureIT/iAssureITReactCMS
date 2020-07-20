@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Testimonials.css";
 import $ from "jquery";
+// import 'bootstrap/dist/js/bootstrap.min.js';
 
 export default class Testimonials extends React.Component {
 

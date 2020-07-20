@@ -1,9 +1,10 @@
 import React from 'react';
 import './AppDevMain.css';
 
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 export default class AppDevMain extends React.Component {
 
@@ -14,7 +15,116 @@ export default class AppDevMain extends React.Component {
 
 	render() {
 		return (
-			<div className="wrapper">
+			<div className="carouselBannerwrapper">
+				<div className="b1banerheight">
+				  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 logoBox">
+						<img className="logoIMG img-responsive"src="./images/Logo.png" alt="logo"/>  
+					</div>
+					<div id="demo" className="carousel slide" data-ride="carousel">
+				
+
+				{/* <!-- Wrapper for slides --> */}
+				<div className="carousel-inner">
+					<div className="item active">
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
+							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
+								<div className="mtop100">
+									<div className="b1h1Title">APPLICATION</div><br/>
+									<div className="b1h2Title">DEVELOPMENT &MAINTENANCE</div><br/>
+									<div className="b1h3Title">Highly Professional,Reliable & Affordable Cost.</div>
+								</div>
+							</div>
+							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
+							<img className="b1bannerImg img-responsive" src="./images/b1graphic.png" alt="Bannerpng"/>
+
+
+							</div>
+					
+					</div>
+					</div>
+
+					<div className="item">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
+					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
+					    <div className="mtop180">
+						   <div className="h1TitleMobile">MOBILE</div><br/>
+							<div className="h2TitleMobile">SOLUTIONS</div><br/>
+							<div className="h3TitleMobile">We Build Robust & Scalable Mobile Applications.</div>
+						</div>
+					</div>
+						<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
+						<img className="b1bannerImg2 img-responsive" src="./images/2.png" alt="Bannerpng"/>
+
+
+					
+					
+						</div>
+					</div>
+					</div>
+
+					<div className="item">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
+					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
+					    <div className="mtop100">
+							<div className="b4h1TitleB4">STAFF</div><br/>
+							<div className="b4h2TitleB4">AUGMENTATAION</div><br/>
+						</div>
+
+					</div>
+					
+					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
+					<img className="b1bannerImg3 img-responsive" src="./images/Graphic4.png" alt="Bannerpng"/>
+
+					</div>
+
+					
+					</div>
+					</div>
+					<div className="item">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
+					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
+					   <div className="mtop100">
+						  <div className="b5h1TitleB5">CUSTOMISED ECOMMERCE </div><br/>
+							<div className="b5h2TitleB5">SOLUTIONS</div><br/>
+						</div>
+						
+					</div>
+					
+					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
+					<img className="b1bannerImg4 img-responsive" src="./images/Graphic_5.png" alt="Bannerpng"/>
+
+					</div>
+
+					
+					</div>
+					</div>
+				</div>
+
+				{/* <!-- Left and right controls --> */}
+				<a class="left carousel-control carousel-control-prev" href="#demo" data-slide="prev">
+					<div className="glyphicon glyphicon-chevron-left"></div>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control carousel-control-next" href="#demo" data-slide="next">
+				   <div className="glyphicon glyphicon-chevron-right"></div>
+					<span class="sr-only">Next</span>
+				</a>
+				</div>
+
+									
+										
+
+					 
+				</div>
+				 </div>				
+			
+			
+		);
+	}
+}	 
+
+// ===============================owl carousel===========================
+{/* <div className="wrapper">
 				<div className="col-lg-12 col-md-12  col-sm-12 col-xs-12 nopadd">
 				<div className="b1banerheight container-fluid b1banerheight2 ">
 				  <div className="col-lg-12 col-md-12  col-sm-12 col-xs-12">
@@ -105,7 +215,4 @@ export default class AppDevMain extends React.Component {
 				 </div>				
 			</div>
 			</div>
-		);
-	}
-}	 
-										
+ */}

@@ -52,26 +52,29 @@
     border-radius: 10px;
 } 
 .onlimnewrapp{
-    height: 100px;
+    height: 70px;
    
 }
 
-.deswrapponline{
+/* .deswrapponline{
     height: 100px;
     background-color: burlywood;
     margin-top: -22px;
-}
+} */
 .onlineh1title00{
     font-size: 34px;
     font-family: 'Montserrat', sans-serif;
     color: #f1f1f1;
-    margin-top: -13px;
+    margin-top: 12px;
+   
 
 } 
 .onlineh1title01{
-    font-size: 18px;
+    font-size: 17px;
     color: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+
 }
 .Imgwrapp000{
     height: 250px;

@@ -1,6 +1,6 @@
 .carouselBannerwrapper{
     height: 1040px;
-    /* background-color: red;    */
+     background-color: #FFFFFF;    
 }
 .b1banerheight{
 	 height: 1040px; 
@@ -123,7 +123,7 @@
      letter-spacing: 1px;
      font-weight: bold;
      font-family: 'Roboto Condensed', sans-serif;
-     margin-left: 50px!important;
+     margin-left: 58px!important;
      margin-top: -20px;
  
  }

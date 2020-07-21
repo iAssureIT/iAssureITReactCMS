@@ -1,6 +1,6 @@
  .pagewrapperheight{
     height: 850px;
-     /* background-color:#ccc;         */
+    /* background-color:#FFFFFF;          */
       
      
  } 
@@ -12,11 +12,13 @@
     
 
  }
- .dashwrapp{
+ .dashwrapp {
     height: 20px;
-    margin-top: 117px;
-    /* background-color: yellowgreen; */
-}
+    /* background-color: red; */
+    margin-top: 139px;
+    padding-top: 17px;
+ }
+ 
  .dashBox1{
     list-style: none;
     margin: auto;
@@ -49,11 +51,10 @@
 }
 
 .h1title00{
-    font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    color: #f1f1f1;
-    margin-top: -28px;
-
+     font-size: 46px;
+     font-family: 'Montserrat', sans-serif;
+     color: #f1f1f1;
+    margin-top: 14px;
 }
  .maincontentwrapper{
      height: 400px;
@@ -62,6 +63,7 @@
  }
  .contentframework{
      height: 370px;
+     margin-top: 22px;
     
      
  }

@@ -1,6 +1,6 @@
 .contentmgmtwrapper{
     height: 850px;
-    /* background-color: red;  */
+    /* background-color: #FFF;   */
 }
 .contantmgmtwrpper00{
     height:850px ; 
@@ -10,11 +10,14 @@
     
 
 }
-
-.dashwrapp{
+.dashwrapp {
     height: 20px;
-    margin-top: 117px;
+    /* background-color: red; */
+    margin-top: 139px;
+    padding-top: 17px;
 }
+
+
  .dashBox1{
     list-style: none;
     margin: auto;
@@ -46,11 +49,13 @@
     
 }
 
+
 .h1title00{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #f1f1f1;
-    margin-top: -28px;
+    margin-top: 14px;
+
 
 }
 .maincontentwrapper{

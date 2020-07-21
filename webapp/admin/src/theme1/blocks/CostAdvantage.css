@@ -1,5 +1,6 @@
 .costadvantagewrpp{
     height: 850px;
+    /* background-color: red; */
   
 }
 .backgroundimgadnt{
@@ -7,9 +8,11 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.dashwrapp{
+.dashwrapp {
     height: 20px;
-    margin-top: 117px;
+    /* background-color: red; */
+    margin-top: 139px;
+    padding-top: 17px;
 }
  .dashBox1{
     list-style: none;

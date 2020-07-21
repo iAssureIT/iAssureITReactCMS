@@ -40,12 +40,13 @@
     .hcustomtitlewrapp{
         height: 100px;
         
+        
     }
     .h2titlecustom{
       font-size: 46px;
       font-family: 'Montserrat', sans-serif;
       color: #555555;
-      margin-top: -28px;
+      margin-top: 14px; 
     
     
     }

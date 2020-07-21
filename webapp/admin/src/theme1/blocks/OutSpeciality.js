@@ -93,8 +93,8 @@ export default class OutSpeciality extends React.Component {
 				      </ul>
                     </div>
                 </div>
-				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 specialityheading">
+				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 specialityheading">
+                        <div className="text-center ">
                             <div className="h2title" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
 				 </div>   
@@ -112,7 +112,7 @@ export default class OutSpeciality extends React.Component {
 												   <img src={data.Image} alt="enteprice" className="innerCircle"/> 
 											   </div> 
 												 <div className="sptextBox1">
-												   <h2 className="text-center mheading" dangerouslySetInnerHTML={{ __html: data.Title } }></h2>
+												   <h2 className="text-center" dangerouslySetInnerHTML={{ __html: data.Title } }></h2>
 													<div className="col-lg-12 col-md-12">
 													   <p className="paragraph">{data.Description}</p>
 												   </div>

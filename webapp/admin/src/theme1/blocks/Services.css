@@ -1,6 +1,7 @@
 .serviceswrapper{
-  height: 820px;
-  /* background-color:#ccc;       */
+  height: 879px;
+  background-color:#fff; 
+        
 }
   .serviceheight{
 	height: 720px;
@@ -9,10 +10,20 @@
   background-repeat: no-repeat;
   
 }  
+.textwrapper{
+  height: 50px;
+  padding-top: 15px;
+
+  
+}
 .dashboxwrapper{
   height: 20px;
   /* background-color: chocolate; */
   
+}
+.Hexagonwrapper00{
+  height: 722px;
+  margin-top: 70px;  
 }
 .dashBox{
   list-style: none;
@@ -63,19 +74,15 @@ float: left;
   font-family: 'Montserrat', sans-serif;
   color: #555;
 }
-.Hexagonwrapper00{
-  height: 722px;
-   /* background-color: red;    */
-    /* margin-top: 70px;  */
-}
+
 .hexagon1{
   background-image: url("/images/10.png");
    height: 270px; 
    width: 310px;
 	 background-size: 100% 100%; 
 	 position: absolute;
-   left: 428px; 
-    margin-top: -7px;
+   left: 441px; 
+    margin-top: -33px;
 
   
 }
@@ -117,15 +124,15 @@ float: left;
   width: 310px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 428px;
-  margin-top: 211px;
+  left: 441px;
+  margin-top: 198px;
 
 }
 .h1services{
   height: 50px;
   width: 150px;
-  margin-left: 75px;
-  font-size: 24px;
+  margin-left: 79px;
+  font-size: 21px;
   text-align: center;
   font-weight: bold;
   margin-top: 125px;
@@ -142,8 +149,8 @@ float: left;
   width: 310px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 428px;
-  margin-top: 446px;
+  left: 441px;
+  margin-top: 426px;
 
 }
 .images2{
@@ -160,7 +167,7 @@ float: left;
 .hstaffaugmtion{
   height: 50px;
   width: 150px;
-  margin-left: 84px;
+  margin-left: 78px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;
@@ -175,8 +182,8 @@ float: left;
    width: 310px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 219px;
-  margin-top: 98px;
+  left: 231px;
+  margin-top: 82px;
 
 }
 .images3{
@@ -208,8 +215,8 @@ float: left;
   height: 270px; 
   width: 310px;  background-size: 100% 100%; 
   position: absolute;
-  left: 217px;
-  margin-top: 333px;
+  left: 231px;
+  margin-top: 315px;
 
 }
 .images4{
@@ -241,8 +248,8 @@ float: left;
    width: 310px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 636px;
-  margin-top: 92px;
+  left: 650px;
+  margin-top: 82px;
 
 }
 .images5{
@@ -274,8 +281,8 @@ float: left;
   width: 310px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 639px;
-  margin-top: 330px;
+  left: 650px;
+  margin-top: 315px;
 
 }
 .images6{
@@ -292,7 +299,7 @@ float: left;
 .heportal{
   height: 50px;
   width: 150px;
-  margin-left: 69px;
+  margin-left: 73px;
   font-size: 24px;
   text-align: center;
   font-weight: bold;

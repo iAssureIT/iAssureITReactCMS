@@ -1,7 +1,7 @@
 .endpossibwrapper{
     height: 719px;
     width: 100%;
-     background-color:#FFFFFF;  
+     background-color:#fff;  
      
 }
 .dashboxwrapper{
@@ -43,14 +43,15 @@
 
 .endmainrow{
     height: 108px;
-    margin-top: 28px; 
+    
     
 }
 .h1titleless{
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #555;
-    margin-top: -53px;
+    margin-top: 14px;
+    
 
 }
 

@@ -110,7 +110,7 @@ export default class Services extends React.Component {
 						   <h1 className="heprizeapps">ENTERPRISE <span className="apps">APPS</span></h1>
 						</div>   
 						 <div className="hexagon2">
-						   <h1 className="h1services">SERVICES</h1>
+						   <h1 className="h1services">WHAT WE DO</h1>
 						</div>   
 						 <div className="hexagon3">
 							<div className="images2"></div>

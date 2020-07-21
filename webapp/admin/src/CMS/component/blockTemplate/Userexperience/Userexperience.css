@@ -1,5 +1,5 @@
 .uexperiencewrapp{
-    height: 600px;
+    height: 700px;
    
 }
 .boxspace{
@@ -38,7 +38,8 @@
     border-radius: 10px;
 }
 .mtelogytextwrapper{
-    height: 60px;
+    height: 108px;
+    
     
 
 }
@@ -46,7 +47,7 @@
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #555555;
-    /* margin-top: -28px!important; */
+    margin-top: 14px; 
 }
 
 .bgwrapper{

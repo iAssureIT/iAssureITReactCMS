@@ -1,9 +1,5 @@
 import React from 'react';
-import $ from "jquery";
 // import ContactForm from "./ContactForm.js";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.min.js';
-// import 'bootstrap-modal.js';
 
  
 
@@ -38,21 +34,56 @@ export default class ContactModal extends React.Component {
 				</button>
 
 				{/* <!-- Modal --> */}
-				<div id="contactpage" class="modal fade" role="dialog">
-				<div class="modal-dialog">
+				<div id="contactpage" class="modal fade modalwrapphight" role="dialog">
+				<div class="modal-dialog modalhight">
 
 					{/* <!-- Modal content--> */}
-					<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title">Modal Header</h4>
+					<div class="modal-content ">
+					<div class="modal-header modal-header00">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					      <h1 className="hiconnecttitle">Connect With Us</h1>
+					   </div>
+					   <form>
+					    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
+						  <input className="form-control bgcolor00" name="from" type="text" placeholder="Your name"/>
+					    </div>
+						<div className="row">
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
+						    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							   <input className="form-control bgcolor00" name="from" type="text" placeholder="Mobile"/>
+
+							</div>
+							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+							<input className="form-control bgcolor00 wrapwidth" name="from" type="text" placeholder="@gmail.com"/>
+
+							</div>
+							</div>
+
+						</div>
+							 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
+							
+							   <input className="form-control bgcolor00" name="from" type="text" placeholder="Subject"/>
+							</div> 
+							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  bgdiv1">
+									
+							<textarea className="form-control bgcolor00" name="message" placeholder="How can we help?" rows="4"></textarea>
+							        
+							</div> 
+							 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+								<button type="button" className="btn col-lg-5 col-md-7 col-xs-12 col-sm-12 sbtn button1">Send A Message</button>
+							</div> 
+						</form>
 					</div>
-					<div class="modal-body">
-						<p>Some text in the modal.</p>
-					</div>
-					<div class="modal-footer">
+
+					
+	
+	
+	
+					{/* <div class="modal-footer modal-footer00">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>
+					</div> */}
 					</div>
 
 				</div>
@@ -136,7 +167,7 @@ export default class ContactModal extends React.Component {
 					</form>
 					
 					</div> */}
-
+</div>
 			</div>
 		);
 	}

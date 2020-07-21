@@ -1,5 +1,6 @@
 .Nawardswrapp{
     height: 850px;
+    /* background-color: #fff; */
    
 }
 .NawardsBgIMG{
@@ -46,6 +47,6 @@
     font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     color: #f1f1f1;
-    margin-top: -28px;
+    /* margin-top: -28px; */
 
 }

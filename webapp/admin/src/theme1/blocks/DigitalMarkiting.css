@@ -1,6 +1,6 @@
 .dmbgwrapp{
     height: 600px;
-    /* background-color: blue; */
+     /* background-color: #fff;  */
 }
 .dashboxwrapper{
   height: 20px;
@@ -44,7 +44,7 @@
   font-size: 46px;
   font-family: 'Montserrat', sans-serif;
   color: #555555;
-  margin-top: -28px;
+  margin-top: 14px; 
 
 
 }

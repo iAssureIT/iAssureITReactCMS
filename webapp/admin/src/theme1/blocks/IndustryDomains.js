@@ -31,12 +31,81 @@ export default class IndustryDomains extends React.Component {
 								{ 
                                     Title: "Manufactuering Industry", 
                                     SubTitle: "", 
-                                    Image: "/images/50.png",
+                                    Image: "/images/51.png",
                                     Link: "", 
 									Description: ""
 									
 									
-                                }
+								},
+								{ 
+                                    Title: "Transport Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/52.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								},
+								{ 
+                                    Title: "Healthcare Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/53.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								},
+								{ 
+                                    Title: "Real Estate Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/54.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								},
+								{ 
+                                    Title: "Education Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/55.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								},
+								{ 
+                                    Title: "eCommerce Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/56.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								},
+								{ 
+                                    Title: "Travel Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/57.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								},
+								{ 
+                                    Title: "Start Up Industry", 
+                                    SubTitle: "", 
+                                    Image: "/images/58.png",
+                                    Link: "", 
+									Description: ""
+									
+									
+								}
+								
+								
+								
+																
+								
+								
 								
             ],
             "bgVideo"				: "",
@@ -94,19 +163,32 @@ export default class IndustryDomains extends React.Component {
 					
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 row">
 						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 iDomainBlock">
+						{
+                		this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length > 0 ?
+						this.state.blocks.repeatedBlocks.map((data, index)=>{
+                		return(
+					
 							<div className="col-lg-4 col-md-4">
 								<div className="idcol1">
-									<img src="/images/50.png" alt="18" className="center"/> 
-									<div className="text-center htitle">
-									<h3 className="xshmview00">Finance Industry</h3>
+									<img src={data.Image} alt="18" className="center"/> 
+									<div className="text-center">
+										<div className="htitle" dangerouslySetInnerHTML={{ __html: data.Title } }></div>
+										
+								
 									</div>
 								</div>
 							</div>
-							<div className="col-lg-4 col-md-4">
+							);
+						})
+					:
+					null
+				}
+
+							{/* <div className="col-lg-4 col-md-4">
 								<div className="idcol1">
 								  <img src="/images/51.png" alt="18" className="center"/> 
 								  <div className="text-center htitle">
-										<h3 className="xshmview">Manufactuering Industry</h3>
+										<h3>Manufactuering Industry</h3>
 									</div>
 								</div>
 							</div>
@@ -114,7 +196,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/52.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3 className="xshmview">Transport Industry</h3>
+										<h3>Transport Industry</h3>
 								</div>
 							</div>
 
@@ -123,7 +205,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/53.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3 className="xshmview">Healthcare Industry</h3>
+										<h3>Healthcare Industry</h3>
 									</div>
 
 
@@ -134,7 +216,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/54.png" alt="18" className="center"/>
 								<div className="text-center htitle">
-										<h3 className="xshmview">Real Estate Industry</h3>
+										<h3>Real Estate Industry</h3>
 									</div> 
 
 
@@ -145,7 +227,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/55.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3 className="xshmview">Education Industry</h3>
+										<h3>Education Industry</h3>
 									</div>
 
 
@@ -156,7 +238,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/56.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3 className="xshmview">eCommerce Industry</h3>
+										<h3>eCommerce Industry</h3>
 									</div>
 
 
@@ -167,7 +249,7 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/57.png" alt="18" className="center"/> 
 								<div className="text-center htitle">
-										<h3 className="xshmview000">Travel Industry</h3>
+										<h3>Travel Industry</h3>
 									</div>
 
 
@@ -178,12 +260,12 @@ export default class IndustryDomains extends React.Component {
 								<div className="idcol1">
 								<img src="/images/58.png" alt="18" className="center"/>
 								<div className="text-center htitle">
-										<h3 className="xshmview">Start Up Industry</h3>
+										<h3>Start Up Industry</h3>
 									</div> 
 
 
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 								

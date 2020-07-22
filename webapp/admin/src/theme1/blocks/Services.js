@@ -11,7 +11,7 @@ export default class Services extends React.Component {
 		super(props);
 		this.state = {
 		  blocks: {
-			"blockTitle": "<b>Our</b> Speciality",
+			"blockTitle": "<b>WHAT</b> WE DO",
 			"blockSubTitle": "We are passionate about our work",
 			"blockDescription": 'iAssureIT is an innovative IT company with energetic, talented and ambitious pool of 30+ Software Engineers, passionate about bringing the disruptive change in technology arena.<br/>We are the Change Makers.<br/>&nbsp;&nbsp;&nbsp;&nbsp;Our world class quality application development with latest cutting-edge technologies used for rapid development and blazing fast performance.A tremendous journey of 7 years started in 2011. We have developed over 150+ projects of small and large sizes. Our clientele is spread across the globe, from countries like USA, Europien Countries, South Africa, Gulf Region, Singapore and Australia.<br/>&nbsp;&nbsp;&nbsp;&nbsp;iAssureIT has customers from various industry domains that include Start ups too. Our clients are from industries like Financial Services, Healthcare, Manufacturing, Pharmaceuticals, Real Estate, Shipping and Logistics, Education, etc. We have been helping them to craft their organizational level digital road map.',
 			"blockComponentName": "",
@@ -20,21 +20,49 @@ export default class Services extends React.Component {
 			"fgImage": "/images/37.png",
 			"repeatedBlocks": [
 								{ 
-									Title: "<b>Enterprise<b/>", 
+									Title: "<b>ENTERPRISE APPS<b/>", 
 									SubTitle: "", 
 									Link: "", 
 									Image: "/images/13.png",
 									Description: "We have indepth expertise in developing large scale Enterprise grade web & mobile apps."
 								},
 								{ 
-									Title: "<b>Startup</b> World", 
+									Title: "<b>WHAT WE DO </b>", 
 									SubTitle: "", 
 									Link: "", 
 									Image: "/images/14.png",
 									Description: "Specially made plans for Startups that are highly cost effective & value added services. Our quotations are absolutely unbeatable in the IT Industry."
 								},
 								{ 
-									Title: "<b>eCommerce</b>", 
+									Title: "<b>STAFF AUGMEN-TATION</b>", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/15.png",
+									Description: "Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores"
+								},
+								{ 
+									Title: "<b>WEB APPS</b>", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/15.png",
+									Description: "Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores"
+								},
+								{ 
+									Title: "<b>BUSINESS PORTALS</b>", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/15.png",
+									Description: "Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores"
+								},
+								{ 
+									Title: "<b>MOBILE APPS</b>", 
+									SubTitle: "", 
+									Link: "", 
+									Image: "/images/15.png",
+									Description: "Boost Your eCommerce business with our Flexible, Scalable & Robust eCommerce Platform AutoPilot with the blazing fast performance and SEO Friendly Online Stores"
+								},
+								{ 
+									Title: "<b>eCOMMERCE PORTAL</b>", 
 									SubTitle: "", 
 									Link: "", 
 									Image: "/images/15.png",
@@ -97,9 +125,7 @@ export default class Services extends React.Component {
 
 				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 textwrapper">
                     <div className="text-center ">
-                        <span className="h1titble00">WHAT</span>
-                       &nbsp; <span className="h1title01">WE DO</span>
-
+                        <div className="h1titble00"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                     </div>
                 </div>	
 				  	
@@ -107,31 +133,31 @@ export default class Services extends React.Component {
 
 						 <div className="hexagon1">
 						   <div className="images1"></div>
-						   <h1 className="heprizeapps">ENTERPRISE <span className="apps">APPS</span></h1>
+						   <div className="heprizeapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[0].Title}}></div>
 						</div>   
 						 <div className="hexagon2">
-						   <h1 className="h1services">WHAT WE DO</h1>
+						   <div className="h1services text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[1].Title}}></div>
 						</div>   
 						 <div className="hexagon3">
 							<div className="images2"></div>
-							<h1 className="hstaffaugmtion">STAFF AUGMEN-TATION</h1>
+							<div className="hstaffaugmtion text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[2].Title}}></div>
 						</div>   
 						   <div className="hexagon4">
 							<div className="images3"></div>
-							<h1 className="hwebapps">WEB  <br />APPS</h1>
+							<div className=" text-center hwebapps" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[3].Title}}></div>
 						</div>    
 						    <div className="hexagon5">
 							<div className="images4"></div>
-							<h1 className="hbportals">BUSINESS PORTALS</h1>
+							<div className="hbportals text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[4].Title}}></div>
 						</div>    
 						   <div className="hexagon6">
 							<div className="images5"></div>
-							<h1 className="hmapps">MOBILE APPS</h1>
+							<div className="hmapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[5].Title}}></div>
 						</div>    
-						    <div className="hexagon7">
+						<div className="hexagon7">
 							<div className="images6"></div>
-							<h1 className="heportal">eCOMMERCE <span className="portal"> PORTAL</span></h1>
-						</div>     
+							<div className="heportal text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[6].Title}}></div>
+						</div>      
 					</div>     
 
 

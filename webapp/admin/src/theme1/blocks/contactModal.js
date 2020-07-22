@@ -33,20 +33,62 @@ export default class ContactModal extends React.Component {
              	<button type="button" className="btn btn-lg madalbtn btnbg" data-toggle="modal" data-target="#contactpage"  >Contact Us
 				</button>
 
-				{/* <!-- Modal --> */}
+				
 				<div id="contactpage" class="modal fade modalwrapphight" role="dialog">
 				<div class="modal-dialog modalhight">
+				 <div className="bgimage1">
+					<img src="/images/cmodel05.png" alt="cmodel05" className="modelimg1"></img>
+				</div> 
+				<div className="bgimage2">
+						<img src="/images/cmodel01.png" alt="cmodel04" className="modelimg2"></img>
+					</div>
 
-					{/* <!-- Modal content--> */}
+				 <div className="bgimage4">
+						<img src="/images/cmodel2.png" alt="cmodel2" className="modelimg4"></img>
+				</div> 
+				 <div className="bgimage5">
+						<img src="/images/cmodel10.png" alt="cmodel10" className="modelimg5"></img>
+				</div> 
+				<div className="bgimage7">
+						<img src="/images/cmodel06.png" alt="cmodel06" className="modelimg7"></img>
+				</div>
+				<div className="bgimage8">
+						<img src="/images/cmodel08.png" alt="cmodel08" className="modelimg8"></img>
+				</div>
+				<div className="bgimage11">
+						<img src="/images/arrow12.png" alt="cmodel08" className="modelimg11"></img>
+				</div>  
+				
+
+				
+
+
+			
+
+				
 					<div class="modal-content ">
 					<div class="modal-header modal-header00">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					
 						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						 <div className="bgimage3">
+							<img src="/images/cmodel04.png" alt="cmodel04" className="modelimg3"></img>
+						</div> 
+						<div className="bgimage6">
+						    <img src="/images/cmodel03.png" alt="cmodel03" className="modelimg6"></img>
+					    </div> 
+						 <div className="bgimage10">
+						   <img src="/images/cmodel07.png" alt="cmodel07" className="modelimg10"></img>
+					    </div> 
+
 					      <h1 className="hiconnecttitle">Connect With Us</h1>
 					   </div>
 					   <form>
 					    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
+						 <div className="bgimage9">
+							<img src="/images/cmodel09.png" alt="cmodel03" className="modelimg9"></img>
+					     </div>
 						  <input className="form-control bgcolor00" name="from" type="text" placeholder="Your name"/>
 					    </div>
 						<div className="row">
@@ -81,9 +123,7 @@ export default class ContactModal extends React.Component {
 	
 	
 	
-					{/* <div class="modal-footer modal-footer00">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div> */}
+					
 					</div>
 
 				</div>

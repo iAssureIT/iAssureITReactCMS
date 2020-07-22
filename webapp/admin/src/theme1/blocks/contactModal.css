@@ -1,5 +1,5 @@
  .madalbtn{
-	position: absolute;
+	position: fixed;
 	right: 0px;
     z-index: 10;
     margin-top: 180px;
@@ -20,10 +20,12 @@
      outline: 0px auto -webkit-focus-ring-color;   
       outline-offset: -2px;  
  } 
- .modalwrapphight{
-    
-     top: 100px;
- } 
+ 
+ .modalhight{
+     /* width:500px!important; */
+     top: 100px; 
+
+ }
  .modal-header00{
      border-bottom: none;
  }
@@ -69,18 +71,17 @@
 .bgimage1{
     height: 100px;
     width: 150px;
-    /* background-color: brown; */
     position: absolute;
-    margin-left: 256px;
-    margin-top: 125px;
+     margin-left: -234px;
+    margin-top:-2px; 
 }
 .bgimage2{
     height: 223px;
     width: 247px;
-     /* background-color: brown;  */
+     /* background-color: brown;   */
     position: absolute;
-    margin-left: 287px;
-    margin-top: 20px;
+    margin-left: -200px;
+    margin-top: -124px;
     
 
 
@@ -93,14 +94,14 @@
     width: 217px;
      /* background-color: brown;     */
     position: absolute;
-    margin-left: -167px;
-    margin-top: 24px;
+    margin-left: -180px;
+    margin-top: 28px;
    
 
 }
 .modelimg3{
-    height: 445px;
-    margin-top: 5px; 
+    height: 439px;
+    margin-top: 16px; 
     
 }
 .bgimage4{
@@ -108,8 +109,8 @@
     width: 107px;
     /* background-color: brown;      */
     position: absolute;
-    margin-left: 390px;
-    margin-top: 490px;
+    margin-left: -85px;
+    margin-top: 359px;
 
 }
 .modelimg4{
@@ -123,21 +124,24 @@
      /* background-color: brown;       */
     position: absolute;
     /* margin-left: 628px; */
-    margin-left: 654px;
-    margin-top: 57px;
+    margin-left: 270px;
+    margin-top: -83px;
+}
+.modelimg5{
+    height: 85px;
 }
 
 .bgimage6{
     height: 162px;
-    width: 42%;
+    /* width: 42%; */
     /* background-color: brown;        */
     position: absolute;
     /* margin-left: 241px;  */
-    margin-left: 263px;
-     margin-top: -130px; 
+    margin-left: 363px;
+     margin-top: -141px; 
 }
 .modelimg6{
-    height: 160px;
+    height: 169px;
    
 }
 .bgimage7{
@@ -145,8 +149,8 @@
     width: 150px;
     /* background-color: brown; */
     position: absolute;
-    margin-left: 954px;
-    margin-top: 117px
+    margin-left: 631px;
+    margin-top: -42px
 
 
 }
@@ -154,8 +158,8 @@
     height: 290px;
      /* background-color: brown;  */
     position: absolute;
-     margin-left: 922px;
-    margin-top: 343px 
+     margin-left: 591px;
+    margin-top: 212px 
 
 
 }
@@ -164,38 +168,37 @@
     width: 217px;
      /* background-color: brown;      */
     position: absolute;
-    margin-left: 362px;
-    margin-top: -89px;
+    margin-left: 458px;
+     margin-top: -41px; 
     
     
 
 }
 .modelimg9{
-    height: 445px;
-    margin-top: 5px; 
-    margin-left: -14px;
-    
+    height: 456px;
+    margin-top: 5px;
+    margin-left: -46
 }
 .bgimage10{
-    height: 188px;
-    /* width: 217px; */
-    /* background-color: brown; */
-    position: absolute;
-    margin-left: 290px;
-    margin-top: 350px
-
+     
+        height: 138px;
+        /* width: 217px; */
+        /* background-color: brown; */
+        position: absolute;
+        margin-left: 410px;
+        margin-top: 392px
 }
 .modelimg10{
     height: 129px;
-    margin-top: 13px;
+    margin-top: -7px;
 }
 
 .bgimage11{
     height: 188px;
     /* background-color: brown;  */
     position: absolute;
-    margin-left: 570px;
-    margin-top: 6px
+    margin-left: 112px;
+    margin-top: -127px
 
     
 }

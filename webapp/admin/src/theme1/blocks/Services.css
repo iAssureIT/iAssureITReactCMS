@@ -63,16 +63,10 @@ float: left;
 }
 .h1titble00{
   font-size: 46px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: #555555;
+  font-family: 'Montserrat', sans-serif;
+  color: #555555;
     
 
-}
-.h1title01{
-  font-size: 46px;
-  font-family: 'Montserrat', sans-serif;
-  color: #555;
 }
 
 .hexagon1{
@@ -97,27 +91,17 @@ float: left;
   background-repeat: no-repeat;
 }
 .heprizeapps{
-  height: 50px;
-  width: 150px;
-  margin-left: 71px;
+   height: 68px; 
+   width: 164px; 
+   /* background-color: red; */
+   margin-left: 72px; 
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 16px;
 
 }
-.apps{
-  height: 50px;
-  width: 150px;
-   margin-left: 13px; 
-  font-size: 24px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-family: 'Montserrat', sans-serif;
 
-}
 .hexagon2{
   background-image: url("/images/11.png");
   height: 270px; 
@@ -129,13 +113,12 @@ float: left;
 
 }
 .h1services{
-  height: 50px;
-  width: 150px;
-  margin-left: 79px;
-  font-size: 21px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 125px;
+  height: 68px;
+  width: 164px;
+  /* background-color: red; */
+  margin-left: 74px;
+  margin-top: 119px;
+  font-size: 23px;
   color: #fff;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -165,14 +148,14 @@ float: left;
 
 }
 .hstaffaugmtion{
-  height: 50px;
-  width: 150px;
-  margin-left: 78px;
+  
+  width: 164px;
+  /* background-color: red; */
+  margin-left: 72px;
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
+  margin-top: 7px;
 
 
 } 
@@ -191,19 +174,18 @@ float: left;
   width: 60px;
   /* background-color: red; */
   margin-top: 81px;
-  margin-left: 124px;
+  margin-left: 130px;
   background-image: url("/images/4.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
 }
 .hwebapps{
-  height: 50px;
-  width: 150px;
-  margin-left: 78px;
+  height: 68px;
+  width: 164px;
+  /* background-color: red; */
+  margin-left: 72px;
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
   letter-spacing: 1px;
   margin-top: 9px;
   font-family: 'Montserrat', sans-serif;
@@ -231,12 +213,11 @@ float: left;
 
 }
 .hbportals{
-  height: 50px;
-  width: 150px;
-  margin-left: 78px;
+  height: 68px;
+  width: 164px;
+  /* background-color: red;  */
+  margin-left: 72px;
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
   letter-spacing: 1px;
   margin-top: 9px;
   font-family: 'Montserrat', sans-serif;
@@ -264,12 +245,11 @@ float: left;
 
 }
 .hmapps{
-  height: 50px;
-  width: 150px;
-  margin-left: 78px;
+  height: 68px;
+  width: 164px;
+  /* background-color: red; */
+  margin-left: 72px;
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
   letter-spacing: 1px;
   margin-top: 9px;
   font-family: 'Montserrat', sans-serif;
@@ -297,30 +277,16 @@ float: left;
 
 }
 .heportal{
-  height: 50px;
-  width: 150px;
-  margin-left: 73px;
+  height: 68px;
+  width: 164px;
+  margin-left: 72px;
   font-size: 24px;
-  text-align: center;
-  font-weight: bold;
   letter-spacing: 1px;
   margin-top: 9px;
   font-family: 'Montserrat', sans-serif;
 
 }
-.portal{
-  height: 50px;
-  width: 150px;
-  margin-left: 28px; 
-  font-size: 24px;
-   font-weight: bold;
-  letter-spacing: 1px;
-  margin-top: 9px;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center!important;
 
-
-}
 
 
 /* ==========================================Media Query===================================================== */

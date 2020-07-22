@@ -1,5 +1,6 @@
 import React from 'react';
 import './AppDevMain.css';
+import axios from 'axios';
 
 
 // import OwlCarousel from 'react-owl-carousel';
@@ -9,9 +10,79 @@ import './AppDevMain.css';
 export default class AppDevMain extends React.Component {
 
 
-	constructor(props) {
-		super(props);
-	}
+		constructor(props) {
+        super(props);
+        this.state = {
+          blocks: {
+            "blockTitle": "ECOMMERCE PLATFORM",
+            
+            "blockSubTitle": "We are passionate about our work",
+            "blockDescription": " ", 
+            "blockComponentName": "TemplateOverview",
+            "blockType": "",
+            "bgImage": "/images/dexpertize.png",
+            "fgImage": "/images/0002.png",
+            "repeatedBlocks": [
+                                
+                                { 
+                                    Title: "APPLICATION", 
+                                    SubTitle: "DEVELOPMENT &MAINTENANCE", 
+                                    Image: "/images/b1graphic.png",
+                                    Link: "", 
+                                    Description: "Highly Professional,Reliable & Affordable Cost."
+								},
+								{ 
+                                    Title: " MOBILE", 
+                                    SubTitle: "SOLUTIONS", 
+                                    Image: "/images/2.png",
+                                    Link: "", 
+                                    Description: "We Build Robust & Scalable Mobile Applications."
+								},
+								{ 
+                                    Title: "STAFF", 
+                                    SubTitle: "AUGMENTATAION", 
+                                    Image: "/images/Graphic4.png",
+                                    Link: "", 
+                                    Description: ""
+								},
+								{ 
+                                    Title: "CUSTOMISED ECOMMERCE ", 
+                                    SubTitle: "SOLUTIONS", 
+                                    Image: "/images/Graphic_5.png",
+                                    Link: "", 
+                                    Description: ""
+                                }
+            ],
+            "bgVideo"				: "",
+            "fgVideo"				: "",
+            "blockGroup"			: "",
+            "blockAppearOnPage"		: ""
+          },
+          blockID:"",
+          block_id:""
+        };   
+      }
+    componentDidMount(){
+    /*console.log("==>",this.props.block_id);*/
+              {
+                 axios
+                    .get('/api/blocks/get/'+this.props.block_id)
+                    .then((response)=>{
+                        if(response.data){
+                            // console.log("ListofServices =",response.data);
+                          this.setState({
+                              blocks:response.data
+                          });
+                        }                  
+                      })           
+                    .catch(function(error){
+                      console.log(error);
+                  })
+                }
+          this.setState({
+                    block_id:this.props.block_id
+                  });
+    }
 
 	render() {
 		return (

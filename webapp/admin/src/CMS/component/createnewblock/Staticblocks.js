@@ -12,6 +12,11 @@ import Customisable                from "../blockTemplate/Customisable/Customisa
 import Superperformance            from "../blockTemplate/Superperformance/Superperformance.js";
 import Creditonlinestore           from "../blockTemplate/CreateOnlineStore/CreateOnlineStore.js";
 import Userexperience              from  "../blockTemplate/Userexperience/Userexperience.js";
+import IndustryDomains      		from  "../blockTemplate/IndustryDomains/IndustryDomains.js";
+import Endlesspossibility           from   "../blockTemplate/Endlesspossibility/Endlesspossibility.js";
+import AboutBanner					from "../blockTemplate/AboutBanner/AboutBanner.js";
+import NationalAwards                from  "../blockTemplate/NationalAwards/NationalAwards.js";
+import ServicesBanner				from  "../blockTemplate/ServicesBanner/ServicesBanner.js";
 
 
 
@@ -177,7 +182,8 @@ class Staticblocks extends React.Component {
 								data-RepetedBlock="RepetedBlock" 
 								data-rBlocksTitle="rBlocksTitle" 
 								data-rBlocksDescription="rBlocksDescription" 
-								data-rBlocksImage="rBlocksImage" 
+								data-rBlocksImage="rBlocksImage"
+								data-rBlocksLink="rBlocksLink" 
 			                	
 			                	className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
@@ -253,6 +259,84 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<Userexperience /> 
 					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="IndustryDomains" 
+								data-blockTitle="blockTitle" 
+								data-RepetedBlock="RepetedBlock" 
+								data-rBlocksTitle="rBlocksTitle" 
+								data-rBlocksImage="rBlocksImage"
+								data-rBlocksLink="rBlocksLink" 
+			                	
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<IndustryDomains /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Endlesspossibility" 
+								data-blockTitle="blockTitle" 
+								data-blockSubTitle="blockSubTitle" 
+								data-blockDescription="blockDescription" 
+								data-fgImage="fgImage"
+								data-blockLink="blockLink"
+								 
+								
+			                	
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Endlesspossibility /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="AboutBanner" 
+								data-blockTitle="blockTitle" 
+								 data-blocksubTitle="blocksubTitle" 
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage"
+								 className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<AboutBanner /> 
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="NationalAwards" 
+								data-blockTitle="blockTitle" 
+								 data-blocksubTitle="blocksubTitle" 
+								 data-blockDescription="blockDescription"
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage"
+								data-rBlocksImage="rBlocksImage"
+								 className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<NationalAwards /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="ServicesBanner" 
+								data-blockTitle="blockTitle" 
+								 data-blocksubTitle="blocksubTitle" 
+								 data-blockDescription="blockDescription"
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage"
+								className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<ServicesBanner /> 
+					</section>
+
+
+
+					
 
 
 

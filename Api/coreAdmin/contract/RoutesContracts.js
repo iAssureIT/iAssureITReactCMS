@@ -13,6 +13,8 @@ router.patch('/patch/corporateapprovalstatus', contract.UpdateCorporateApprovalS
 
 router.patch('/patch/updatepackage', contract.updatePackage);
 
+router.patch('/patch/contractsign', contract.contractSign);
+
 router.post('/get/list', contract.fetchContracts);
 
 router.get('/get/list', contract.getContracts);
@@ -24,6 +26,8 @@ router.get('/get/joincontract/:contractID', contract.joincontract);
 router.get('/get/joincontractlist', contract.joincontractlist);
 
 router.get('/get/one/:contractID', contract.fetchSingleContract);
+
+router.get('/get/one/entity/:entityID', contract.fetchSingleEntityContract);
 
 router.patch('/patch', contract.updateContract);
 

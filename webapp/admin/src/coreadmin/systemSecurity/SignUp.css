@@ -37,7 +37,7 @@
   background-image: url("/images/background.png");
   border-radius: 5px;
   background-size: 100% 100%;
-  text-align: center;
+  /*text-align: center;*/
   vertical-align: middle !important;
   float: unset;
   height: 472px;
@@ -136,7 +136,8 @@
 .loginBtn{
   border-radius: 25px;
   padding: 10px 15px;
-  background-color: var(--blue-color);  
+  background-color: dodgerblue;  
+  /*background-color: var(--blue-color);  */
   color: #fff !important;
 }
 .resetBtn{

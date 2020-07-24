@@ -23,7 +23,7 @@ exports.insertVehicle = (req,res,next)=>{
                             workLocationId            : req.body.workLocationId,
                             companyName               : req.body.companyName,
                             status                    : req.body.status,
-                            vehicleDocument           : req.body. vehicleDocument,
+                            vehicleDocument           : req.body.vehicleDocument,
                             categoryId                : req.body.categoryId,
                             category                  : req.body.category,  
                             brandId                   : req.body.brandId,
@@ -111,6 +111,9 @@ exports.filterVehicles = (req,res,next)=>{
         if (key=='company_Id') {
             selector.company_Id =  req.body.company_Id
         }
+        if (key=='workLocationId' && req.body.workLocationId.length > 0) {
+            selector.workLocationId = { $in: req.body.workLocationId } 
+        }
         if (req.body.initial && req.body.initial != 'All') {
             selector.brand = { $regex : "^"+req.body.initial,$options: "i"}
         }
@@ -164,6 +167,7 @@ exports.searchVehicle = (req, res, next)=>{
         }); 
 };
 exports.updateVehicle = (req, res, next)=>{
+    console.log("updateVehicle",req.body);
     VehicleMaster.updateOne(
             { _id:req.body.vehicleID },  
             {
@@ -175,7 +179,7 @@ exports.updateVehicle = (req, res, next)=>{
                             "workLocationId"            : req.body.workLocationId,
                             "companyName"               : req.body.companyName,
                             'vehicleImage'              : req.body.vehicleImage,
-                            "vehicleDocument"           : req.body. vehicleDocument,
+                            "vehicleDocument"           : req.body.vehicleDocument,
                             'categoryId'                : req.body.categoryId,
                             'category'                  : req.body.category,
                             'brandId'                   : req.body.brandId,
@@ -208,6 +212,7 @@ exports.updateVehicle = (req, res, next)=>{
         )
         .exec()
         .then(data=>{
+            console.log("data",data)
             if(data.nModified == 1){
                 VehicleMaster.updateOne(
                 { _id:req.body.vehicleID},
@@ -297,7 +302,17 @@ exports.vehicleListMapping = (req,res,next)=>{
         }); 
 };
 exports.getVehicleList = (req,res,next)=>{ 
-    VehicleMaster.find({company_Id: req.body.company_Id,status:{$in:req.body.status}},{ vehicleImage:1, brand: 1, model:1, fuelType: 1,vehicleNumber:1,category:1,vehiclecolor:1,status:1,statusLog:1})
+    var selector = {};
+    for (var key in req.body) {
+        if(key=='company_Id' && req.body.company_Id!=='All') {
+            selector.company_Id = req.body.company_Id 
+        }
+        if(key=='status') {
+            selector.status =  { $in: req.body.status } 
+        }
+    }
+    console.log("selector",selector);
+    VehicleMaster.find(selector)
     .sort({createdAt : -1})
     .then(data=>{
         res.status(200).json( data );
@@ -311,15 +326,25 @@ exports.getVehicleList = (req,res,next)=>{
 exports.getVehicleListForAllocation = (req,res,next)=>{ 
     var desiredFromDate = req.body.fromDate;
     var desiredToDate   = req.body.toDate;
-
-    VehicleMaster.find({company_Id: req.body.company_Id, category: req.body.vehicleCategory,status:'Active'})
+    var type = req.body.type;
+    var selector = {};
+    if(type === "Category"){
+        selector = {company_Id: req.body.company_Id, category: req.body.vehicleCategory, status:'Active',workLocation: { $regex : req.body.city, $options: "i"}};
+    }else if(type=== "Others"){
+        selector = {company_Id: req.body.company_Id, category: {$nin:req.body.vehicleCategory}, status:'Active',workLocation: { $regex : req.body.city, $options: "i"}};
+    }
+    VehicleMaster.find(selector)
         .then(validVehicles=>{
             let vehicleIDArray = validVehicles.map(vehicles => vehicles._id);
             if(validVehicles && validVehicles.length > 0){
                 for(var i=0; i<validVehicles.length; i++){
-                    if(new Date(validVehicles[i].insuranceDate) <= new Date(desiredToDate) || 
-                        new Date(validVehicles[i].PUCValidUpto) <= new Date(desiredToDate) || 
-                        new Date(validVehicles[i].permitValidUpto) <= new Date(desiredToDate)){
+                    var insurance = validVehicles[i].vehicleDocument.filter((elem)=>{return elem.documentName==="Insurance"})
+                    var puc       = validVehicles[i].vehicleDocument.filter((elem)=>{return elem.documentName==="PUC"})
+                    var permit    = validVehicles[i].vehicleDocument.filter((elem)=>{return elem.documentName==="Permit"})
+                    if((insurance.length > 0 && puc.length > 0 && permit.length > 0) &&
+                        (new Date(insurance[0].insuranceDate) <= new Date(desiredToDate) || 
+                        new Date(insurance[0].PUCValidUpto) <= new Date(desiredToDate) || 
+                        new Date(insurance[0].permitValidUpto) <= new Date(desiredToDate))){
                         validVehicles[i] = {...validVehicles[i]._doc, 
                                             availabilityStatus  : 'Not Ready',
                                             driverID            : '',

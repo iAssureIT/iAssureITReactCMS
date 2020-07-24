@@ -4,9 +4,6 @@ const ProjectSettings   = require('./ModelProjectSettings.js');
 exports.create_projectSettings = (req, res, next) => {
     var conditionQuery      = "";
     var listRequiredFields  = ""; 
-    console.log("req.body.authID===>",req.body.authID);
-    console.log("req.body.authToken===>",req.body.authToken);
-    console.log("req.body.sourceMobile===>",req.body.sourceMobile);
     switch(req.body.type){
         case 'S3'       :
             conditionQuery      = req.body.key && req.body.secret && req.body.bucket && req.body.region;
@@ -15,6 +12,10 @@ exports.create_projectSettings = (req, res, next) => {
         case 'SMS'      :
             conditionQuery      = req.body.authID && req.body.authToken && req.body.sourceMobile;
             listRequiredFields  = "authID and authToken and sourceMobile";
+            break; 
+        case 'EMAIL'      :
+            conditionQuery      = req.body.user && req.body.password && req.body.port && req.body.emailHost && req.body.projectName;
+            listRequiredFields  = "user and password and port";
             break;  
         case 'GOOGLE'   :
             conditionQuery      = req.body.googleapikey;
@@ -25,7 +26,6 @@ exports.create_projectSettings = (req, res, next) => {
             break;
     }
     if(conditionQuery){
-        console.log("req.body.type===>",req.body.type);
     	ProjectSettings.findOne({type:req.body.type})
     		.exec()
     		.then(data =>{
@@ -46,6 +46,12 @@ exports.create_projectSettings = (req, res, next) => {
                     authID          : req.body.authID,
                     authToken       : req.body.authToken,
                     sourceMobile    : req.body.sourceMobile,
+
+                    user           : req.body.user,
+                    password       : req.body.password,
+                    port           : req.body.port,
+                    emailHost      : req.body.emailHost,
+                    projectName    : req.body.projectName,
 
                     type            : req.body.type
                 });
@@ -114,16 +120,18 @@ exports.fetch_projectsettings_all = (req, res, next)=>{
 exports.patch_projectsettings = (req, res, next)=>{
     var conditionQuery      = "";
     var listRequiredFields  = ""; 
-    console.log("req.body.key===>",req.body.googleapikey);
-    console.log("req.body.type===>",req.body.type);
     switch(req.body.type){
         case 'S3'       :
             conditionQuery      = req.body.key && req.body.secret && req.body.bucket && req.body.region;
             listRequiredFields  = "Keys, secret, bucket and region";
             break;
         case 'SMS'      :
-            conditionQuery      = req.body.key && req.body.secret;
-            listRequiredFields  = "Keys and secret";
+            conditionQuery      = req.body.authID && req.body.authToken && req.body.sourceMobile;
+            listRequiredFields  = "authID and authToken";
+            break; 
+        case 'EMAIL'      :
+            conditionQuery      = req.body.user && req.body.password && req.body.port && req.body.emailHost && req.body.projectName;
+            listRequiredFields  = "user and password and port";
             break;  
         case 'GOOGLE'   :
             conditionQuery      = req.body.googleapikey;
@@ -134,8 +142,6 @@ exports.patch_projectsettings = (req, res, next)=>{
             break;
     }
     if(conditionQuery){
-        console.log("req.params.type===>",req.params.type);
-        console.log("conditionQuery===>",conditionQuery);
         ProjectSettings.updateOne(
                                     {"type": req.params.type},
                                     {
@@ -147,7 +153,12 @@ exports.patch_projectsettings = (req, res, next)=>{
                                                 "key"         : req.body.key,
                                                 "secret"      : req.body.secret,
                                                 "bucket"      : req.body.bucket,
-                                                "region"      : req.body.region,                    
+                                                "region"      : req.body.region, 
+                                                "user"           : req.body.user,
+                                                "password"       : req.body.password,
+                                                "port"           : req.body.port,
+                                                "emailHost"      : req.body.emailHost,
+                                                "projectName"    : req.body.projectName,                   
                                         }
                                     }
                                 )
@@ -287,7 +298,7 @@ exports.insertS3Data = (req, res, next) => {
                             })
                         }else{
                             res.status(200).json({ 
-                                updated : true, 
+                                updated : false, 
                                 "message"    : "S3 Details not modified", 
                             });
                             // res.status(200).json({ updated : false });

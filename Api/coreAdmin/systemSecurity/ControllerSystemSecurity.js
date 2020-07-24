@@ -5,6 +5,7 @@ var ObjectID = require('mongodb').ObjectID;
 var request = require('request-promise');
 const User = require('../userManagement/ModelUsers.js');
 const Role = require('../rolesManagement/ModelRoles.js');
+const EntityMaster = require('../entityMaster/ModelEntityMaster.js');
 const globalVariable = require("../../nodemon.js");
 
 function getRandomInt(min, max) {
@@ -14,6 +15,7 @@ function getRandomInt(min, max) {
 };
 
 exports.user_signup_user = (req, res, next) => {
+	console.log("req.body==>>", req.body)
 	var username = "EMAIL";
 	if(req.body.username){
 		if(req.body.username === "EMAIL"){
@@ -25,8 +27,8 @@ exports.user_signup_user = (req, res, next) => {
 	if(username==="EMAIL"){
 		if(req.body.email && req.body.pwd && req.body.role){
 			var emailId = req.body.email;
-			var role_lower = (req.body.role).toLowerCase();
-			console.log("role ", role_lower);
+			var role_lower = req.body.role.slice(0,1);
+			console.log("role_lower==>",role_lower);  
 			if (role_lower && emailId) {
 				Role.findOne({ role: role_lower })
 					.exec()
@@ -64,16 +66,23 @@ exports.user_signup_user = (req, res, next) => {
 														email: emailId.toLowerCase(),
 														mobile: req.body.mobNumber,
 														companyID: req.body.companyID,
+														passwordreset: false,
 														companyName: req.body.companyName,
-														createdAt: new Date(),
+														department	: req.body.department,
+														designation	: req.body.designation,
+														city: req.body.cityName,
+														states: req.body.states,
 														status: req.body.status ? req.body.status : "Block",
 														createdBy: req.body.createdBy,
+														createdAt: new Date(),
 													},
-													roles: [role_lower]
+													roles: req.body.role,
 												});
+												// console.log("roles==>",roles);  
 												if (!req.body.firstname) {
 													user.profile.fullName = req.body.fullName;
 												}
+												
 												user.save()
 													.then(result => {
 														res.status(200).json({
@@ -210,6 +219,7 @@ exports.user_signup_user = (req, res, next) => {
 		}
 	}	
 };
+
 exports.user_signup_user_otp = (req, res, next) => {
 	var username = "EMAIL";
 	if(req.body.username){
@@ -521,6 +531,7 @@ exports.check_userID_MobileOTP = (req, res, next) => {
 			});
 		});
 };
+
 exports.check_username_EmailOTP = (req, res, next) => {
 	console.log("req.parmas", req.params);
 	User.find({ username: req.params.username, "profile.otpEmail": req.params.emailotp })
@@ -565,9 +576,11 @@ exports.check_username_EmailOTP = (req, res, next) => {
 			});
 		});
 };
+
 exports.user_login_using_email = (req, res, next) => {
 	var emailId = (req.body.email).toLowerCase();
 	var role = (req.body.role).toLowerCase();
+	console.log('role', role);
 	User.findOne({
 		"username": emailId,
 		"roles": role,
@@ -602,6 +615,7 @@ exports.user_login_using_email = (req, res, next) => {
 										$push: {
 											"services.resume.loginTokens": {
 												whenLogin: new Date(),
+												loginTimeStamp: new Date(),
 												hashedToken: token
 											}
 										}
@@ -609,7 +623,7 @@ exports.user_login_using_email = (req, res, next) => {
 								)
 									.exec()
 									.then(updateUser => {
-
+										console.log("updateUser ==>",updateUser)
 										if (updateUser.nModified == 1) {
 											res.status(200).json({
 												message: 'Login Auth Successful',
@@ -671,7 +685,6 @@ exports.user_login_using_email = (req, res, next) => {
 		});
 };
 
-
 exports.user_login_using_mobile = (req, res, next) => {
 	var mobNumber = req.body.mobNumber;
 	var role = (req.body.role).toLowerCase();
@@ -715,32 +728,37 @@ exports.user_login_using_mobile = (req, res, next) => {
 							)
 								.exec()
 								.then(updateUser => {
-
-									if (updateUser.nModified == 1) {
-										res.status(200).json({
-											message: 'Login Auth Successful',
-											token: token,
-											roles: user.roles,
-											ID: user._id,
-											companyID: user.profile.companyID,
-											userDetails: {
-												firstName: user.profile.firstname,
-												lastName: user.profile.lastname,
-												email: user.profile.email,
-												phone: user.profile.phone,
-												city: user.profile.city,
-												companyID: user.profile.companyID,
-												locationID: user.profile.locationID,
-												user_id: user._id,
-												roles: user.roles,
+									main();
+    								async function main(){
+										var companyContacts = await getCompanyContacts(user.profile.companyID);
+										console.log("companyContacts",companyContacts);
+										if (updateUser.nModified == 1) {
+											res.status(200).json({
+												message: 'Login Auth Successful',
 												token: token,
-											}
-										});
-									} else {
-										return res.status(200).json({
-											message: 'Auth failed'
-										});
-									}
+												roles: user.roles,
+												ID: user._id,
+												companyID: user.profile.companyID,
+												userDetails: {
+													firstName: user.profile.firstname,
+													lastName: user.profile.lastname,
+													email: user.profile.email,
+													phone: user.profile.phone,
+													city: user.profile.city,
+													companyID: user.profile.companyID,
+													locationID: user.profile.locationID,
+													user_id: user._id,
+													roles: user.roles,
+													token: token,
+												},
+												companyContacts : companyContacts 
+											});
+										} else {
+											return res.status(200).json({
+												message: 'Auth failed'
+											});
+										}
+									}		
 								})
 
 								.catch(err => {
@@ -777,25 +795,37 @@ exports.user_login_using_mobile = (req, res, next) => {
 	});
 };
 
+function getCompanyContacts(companyID){
+	console.log("companyID",companyID)
+   return new Promise(function(resolve,reject){
+        EntityMaster.findOne({"companyID" : companyID},{"contactPersons":1})
+             .exec()
+             .then(data=>{
+			console.log("data",data)
+              var contacts = data.contactPersons.map((a, i)=>a.phone);
+				console.log("contacts",contacts)
+              resolve(contacts);
+             })
+            .catch(err =>{
+                console.log("err",err)
+            });
+    });
+}
+
 exports.user_login_with_companyID = (req, res, next) => {
-	console.log("req.body in login with companyid ==>",req.body);
 	var emailId = (req.body.email).toLowerCase();
 	var role = (req.body.role).toLowerCase();
-	
 	User.findOne({
 		"username": emailId,
 		"roles": role,
-		// "profile.status"	: "active",
 	})
 		.exec()
 		.then(user => {
 			if (user) {
-				console.log("User in ==>",user.profile.companyID)
+				var loginTokenscount = user.services.resume.loginTokens.length;
 				if (user.profile.companyID != "") {
-					console.log("user.profile.companyID IN ==>")
 					if ((user.profile.status).toLowerCase() == "active") {
 						var pwd = user.services.password.bcrypt;
-						console.log('pwd==>', pwd);
 						if (pwd) {
 							bcrypt.compare(req.body.password, pwd, (err, result) => {
 								if (err) {
@@ -812,21 +842,21 @@ exports.user_login_with_companyID = (req, res, next) => {
 											expiresIn: "365d"
 										}
 									);
-
 									User.updateOne(
 										{ "username": emailId.toLowerCase() },
 										{
 											$push: {
 												"services.resume.loginTokens": {
 													whenLogin: new Date(),
-													hashedToken: token
+													loginTimeStamp: new Date(),
+													hashedToken: token,
 												}
 											}
 										}
 									)
 										.exec()
 										.then(updateUser => {
-
+											console.log("Login details===>>",user.profile.passwordreset)
 											if (updateUser.nModified == 1) {
 												res.status(200).json({
 													message: 'Login Auth Successful',
@@ -834,17 +864,22 @@ exports.user_login_with_companyID = (req, res, next) => {
 													roles: user.roles,
 													ID: user._id,
 													companyID: user.profile.companyID,
+													loginTime: user.services.resume.loginTokens,
+													passwordreset: user.profile.passwordreset,
 													userDetails: {
 														firstName: user.profile.firstname,
 														lastName: user.profile.lastname,
 														email: user.profile.email,
 														phone: user.profile.phone,
+														passwordreset: user.profile.passwordreset,
 														city: user.profile.city,
 														companyID: user.profile.companyID,
 														locationID: user.profile.locationID,
 														user_id: user._id,
 														roles: user.roles,
 														token: token,
+														// loginTime: user.services.resume.loginTokens
+														// loginTime: user.services.resume.loginTokens[loginTokenscount-1].logoutTimeStamp,
 													}
 												});
 											} else {
@@ -853,7 +888,6 @@ exports.user_login_with_companyID = (req, res, next) => {
 												});
 											}
 										})
-
 										.catch(err => {
 											console.log("500 err ", err);
 											res.status(500).json({
@@ -891,6 +925,143 @@ exports.user_login_with_companyID = (req, res, next) => {
 			});
 		});
 };
+// exports.user_login_with_companyID = (req, res, next) => {
+// 	var emailId = (req.body.email).toLowerCase();
+// 	var role = (req.body.role).toLowerCase();
+// 	User.findOne({
+// 		"username": emailId,
+// 		"roles": role,
+// 	})
+// 		.exec()
+// 		.then(user => {
+// 			if (user) {
+// 				var loginTokenscount = user.services.resume.loginTokens.length;
+// 				if (user.profile.companyID != "") {
+// 					if ((user.profile.status).toLowerCase() == "active") {
+// 						var pwd = user.services.password.bcrypt;
+// 						if (pwd) {
+// 							bcrypt.compare(req.body.password, pwd, (err, result) => {
+// 								if (err) {
+// 									return res.status(200).json({
+// 										message: 'Auth failed'
+// 									});
+// 								}
+// 								if (result) {
+// 									const token = jwt.sign({
+// 										email: req.body.email,
+// 										userId: user._id,
+// 									}, globalVariable.JWT_KEY,
+// 										{
+// 											expiresIn: "365d"
+// 										}
+// 									);
+// 									User.updateOne(
+// 										{ "username": emailId.toLowerCase() },
+// 										{
+// 											$push: {
+// 												"services.resume.loginTokens": {
+// 													whenLogin: new Date(),
+// 													loginTimeStamp: new Date(),
+// 													hashedToken: token,
+// 													logoutTimeStamp : null
+// 												}
+// 											}
+// 										}
+// 									)
+// 										.exec()
+// 										.then(updateUser => {
+// 											if (updateUser.nModified == 1) {
+// 												var alllogings = user.services.resume.loginTokens;
+// 												console.log("user after alllogings corporate===>",alllogings)
+// 												res.status(200).json({
+// 													message: 'Login Auth Successful',
+// 													token: token,
+// 													roles: user.roles,
+// 													ID: user._id,
+// 													companyID: user.profile.companyID,
+// 													lastLogin: alllogings,
+// 													userDetails: {
+// 														firstName: user.profile.firstname,
+// 														lastName: user.profile.lastname,
+// 														email: user.profile.email,
+// 														phone: user.profile.phone,
+// 														city: user.profile.city,
+// 														companyID: user.profile.companyID,
+// 														locationID: user.profile.locationID,
+// 														user_id: user._id,
+// 														roles: user.roles,
+// 														token: token,
+// 														lastLogin: alllogings,
+
+// 													}
+// 												});
+// 											} else {
+// 												return res.status(200).json({
+// 													message: 'Auth failed'
+// 												});
+// 											}
+// 										})
+// 										.catch(err => {
+// 											console.log("500 err ", err);
+// 											res.status(500).json({
+// 												message: "Failed to save token",
+// 												error: err
+// 											});
+// 										});
+// 								} else {
+// 									return res.status(200).json({
+// 										message: 'INVALID_PASSWORD'
+// 									});
+// 								}
+// 							})
+// 						} else {
+// 							res.status(200).json({ message: "INVALID_PASSWORD" });
+// 						}
+// 					} else if ((user.profile.status).toLowerCase() == "blocked") {
+// 						console.log("user.USER_BLOCK IN ==>")
+// 						res.status(200).json({ message: "USER_BLOCK" });
+// 					} else if ((user.profile.status).toLowerCase() == "unverified") {
+// 						res.status(200).json({ message: "USER_UNVERIFIED" });
+// 					}
+// 				} else if (user.profile.companyID == "") {
+// 					res.status(200).json({ message: "NO_COMPANYID" });
+// 				}
+// 			} else {
+// 				res.status(200).json({ message: "NOT_REGISTER" });
+// 			}
+// 		})
+// 		.catch(err => {
+// 			console.log(err);
+// 			res.status(500).json({
+// 				message: "Failed to find the User",
+// 				error: err
+// 			});
+// 		});
+// };
+
+exports.logouthistory = (req, res, next) => {
+	var emailId = (req.body.emailId).toLowerCase();
+	User.updateOne(
+		{"username": emailId,},
+		{
+			$push: {
+				"services.resume.loginTokens": {
+					logoutTimeStamp: new Date(),
+				}
+			}
+		}
+	)	.exec()
+		.then(data => {
+				res.status(201).json({data})
+		})
+		.catch(err => {
+			res.status(500).json({
+				message: "Failed to update User",
+				error: err
+			});
+		});
+};
+
 exports.user_update_password_withoutotp_ID = (req, res, next) => {
 	User.findOne({ _id: req.params.ID })
 		.exec()
@@ -906,13 +1077,36 @@ exports.user_update_password_withoutotp_ID = (req, res, next) => {
 										bcrypt: hash
 									},
 								},
+								"profile.passwordreset": true,
 							}
 						}
 					)
 						.exec()
 						.then(data => {
+							console.log('update user data ',data);
 							if (data.nModified == 1) {
 								res.status(200).json("PASSWORD_RESET");
+								// User.updateOne(
+								// 	{ "username": req.body.emailId.toLowerCase() },
+								// 	{
+								// 		$push: {
+								// 			"services.resume.loginTokens": {
+								// 				hashedToken: token,
+								// 			}
+								// 		}
+								// 	}
+								// )
+								// 	.exec()
+								// 	.then(data => {
+										
+								// 		});
+								// 		.catch(err => {
+								// 			console.log(err);
+								// 			res.status(500).json({
+								// 				error: err
+								// 			});
+								// 		});
+								
 							} else {
 								res.status(401).json("PASSWORD_NOT_RESET");
 							}
@@ -935,6 +1129,7 @@ exports.user_update_password_withoutotp_ID = (req, res, next) => {
 			});
 		});
 };
+
 exports.user_update_password_withoutotp_username = (req, res, next) => {
 	User.findOne({ username: req.params.username })
 		.exec()
@@ -980,6 +1175,7 @@ exports.user_update_password_withoutotp_username = (req, res, next) => {
 			});
 		});
 };
+
 exports.user_update_password_with_emailOTP_ID = (req, res, next) => {
 	User.findOne({
 		"_id": req.params.ID,
@@ -1027,6 +1223,7 @@ exports.user_update_password_with_emailOTP_ID = (req, res, next) => {
 			});
 		});
 };
+
 exports.user_update_password_with_emailOTP_username = (req, res, next) => {
 	User.findOne({
 		"username": req.params.username,
@@ -1074,6 +1271,7 @@ exports.user_update_password_with_emailOTP_username = (req, res, next) => {
 			});
 		});
 };
+
 exports.set_send_emailotp_usingID = (req, res, next) => {
 	var otpEmail = getRandomInt(1000, 9999);
 	User.updateOne(

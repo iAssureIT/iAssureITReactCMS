@@ -10,13 +10,16 @@ import OutSpeciality                from "../blockTemplate/OutSpeciality/OutSpec
 import CommerceBanner              from "../blockTemplate/eCommerceBanner/eCommerceBanner.js";
 import Customisable                from "../blockTemplate/Customisable/Customisable.js";
 import Superperformance            from "../blockTemplate/Superperformance/Superperformance.js";
-import Creditonlinestore           from "../blockTemplate/CreateOnlineStore/CreateOnlineStore.js";
+import CreateOnlineStore           from "../blockTemplate/CreateOnlineStore/CreateOnlineStore.js";
 import Userexperience              from  "../blockTemplate/Userexperience/Userexperience.js";
-import IndustryDomains      		from  "../blockTemplate/IndustryDomains/IndustryDomains.js";
-import Endlesspossibility           from   "../blockTemplate/Endlesspossibility/Endlesspossibility.js";
-import AboutBanner					from "../blockTemplate/AboutBanner/AboutBanner.js";
-import NationalAwards                from  "../blockTemplate/NationalAwards/NationalAwards.js";
-import ServicesBanner				from  "../blockTemplate/ServicesBanner/ServicesBanner.js";
+import HomepageBanner              from  "../blockTemplate/HomepageBanner/HomepageBanner.js";
+import AboutBanner              from  "../blockTemplate/AboutBanner/AboutBanner.js";
+import Endlesspossibility              from  "../blockTemplate/Endlesspossibility/Endlesspossibility.js";
+import IndustryDomains              from  "../blockTemplate/IndustryDomains/IndustryDomains.js";
+import ServicesBanner              from  "../blockTemplate/ServicesBanner/ServicesBanner.js";
+import NationalAwards              from  "../blockTemplate/NationalAwards/NationalAwards.js";
+import Testimonials              from  "../blockTemplate/Testimonials/Testimonials.js";
+import Services              from  "../blockTemplate/Services/Services.js";
 
 
 
@@ -114,7 +117,7 @@ class Staticblocks extends React.Component {
 							+"&blockLink="+blockLink
 							+"&RepetedBlock="+RepetedBlock
 							+"&rBlocksTitle="+rBlocksTitle
-							+"&rBlocksSubTiSuperperformancetle="+rBlocksSubTitle
+							+"&rBlocksSubTitle="+rBlocksSubTitle
 							+"&rBlocksDescription="+rBlocksDescription
 							+"&rBlocksImage="+rBlocksImage
 							+"&rBlocksVideo="+rBlocksVideo
@@ -151,6 +154,40 @@ class Staticblocks extends React.Component {
 					</section>*/}
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="HomepageBanner" 
+								data-RepetedBlock="RepetedBlock" 
+							 
+			                	 
+								data-bgImage="bgImage" 
+								data-rBlocksTitle="rBlocksTitle" 
+								data-rBlocksSubTitle="rBlocksSubTitle" 
+								data-rBlocksDescription="rBlocksDescription" 
+								data-rBlocksImage="rBlocksImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<HomepageBanner /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Services" 
+								data-RepetedBlock="RepetedBlock" 
+								data-rBlocksLink="rBlocksLink" 
+			                	 
+								data-bgImage="bgImage" 
+								data-rBlocksTitle="rBlocksTitle" 
+								data-rBlocksSubTitle="rBlocksSubTitle" 
+								data-rBlocksDescription="rBlocksDescription" 
+								data-rBlocksImage="rBlocksImage" 
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Services /> 
+					</section>
+					
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 			            <button id="FasttrackFrameWork" 
 								data-blockTitle="blockTitle" 
 			                	data-blockDescription="blockDescription" 
@@ -162,6 +199,52 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<FasttrackFrameWork /> 
 					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="AboutBanner" 
+								data-blockTitle="blockTitle" 
+								data-blocksubTitle="blocksubTitle" 
+								data-blockDescription="blockDescription"
+
+								data-fgImage="fgImage" 
+								data-bgImage="bgImage"
+								className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<AboutBanner /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="Endlesspossibility" 
+								data-blockTitle="blockTitle" 
+								data-blockSubTitle="blockSubTitle" 
+								data-blockDescription="blockDescription" 
+								data-fgImage="fgImage"
+								data-blockLink="blockLink"
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<Endlesspossibility /> 
+					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+			            <button id="IndustryDomains" 
+								data-blockTitle="blockTitle" 
+								data-RepetedBlock="RepetedBlock" 
+								data-rBlocksTitle="rBlocksTitle" 
+								data-rBlocksImage="rBlocksImage"
+								data-rBlocksLink="rBlocksLink" 
+			                	
+			                	className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<IndustryDomains /> 
+					</section>
+
+
 					
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 			            <button id="AutoPilotPlatform" 
@@ -182,8 +265,7 @@ class Staticblocks extends React.Component {
 								data-RepetedBlock="RepetedBlock" 
 								data-rBlocksTitle="rBlocksTitle" 
 								data-rBlocksDescription="rBlocksDescription" 
-								data-rBlocksImage="rBlocksImage"
-								data-rBlocksLink="rBlocksLink" 
+								data-rBlocksImage="rBlocksImage" 
 			                	
 			                	className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
@@ -245,7 +327,7 @@ class Staticblocks extends React.Component {
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            
-						<Creditonlinestore /> 
+						<CreateOnlineStore /> 
 					</section>
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
@@ -261,59 +343,14 @@ class Staticblocks extends React.Component {
 					</section>
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-			            <button id="IndustryDomains" 
-								data-blockTitle="blockTitle" 
-								data-RepetedBlock="RepetedBlock" 
-								data-rBlocksTitle="rBlocksTitle" 
-								data-rBlocksImage="rBlocksImage"
-								data-rBlocksLink="rBlocksLink" 
-			                	
-			                	className="btn zIndexmtop pull-right" 
-			                	onClick={this.selectComponent.bind(this)} > 
-			                	Select this Design
-			            </button>		            
-						<IndustryDomains /> 
-					</section>
-
-					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-			            <button id="Endlesspossibility" 
-								data-blockTitle="blockTitle" 
-								data-blockSubTitle="blockSubTitle" 
-								data-blockDescription="blockDescription" 
-								data-fgImage="fgImage"
-								data-blockLink="blockLink"
-								 
-								
-			                	
-			                	className="btn zIndexmtop pull-right" 
-			                	onClick={this.selectComponent.bind(this)} > 
-			                	Select this Design
-			            </button>		            
-						<Endlesspossibility /> 
-					</section>
-
-					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-			            <button id="AboutBanner" 
-								data-blockTitle="blockTitle" 
-								 data-blocksubTitle="blocksubTitle" 
-								data-fgImage="fgImage" 
-								data-bgImage="bgImage"
-								 className="btn zIndexmtop pull-right" 
-			                	onClick={this.selectComponent.bind(this)} > 
-			                	Select this Design
-			            </button>		            
-						<AboutBanner /> 
-					</section>
-					
-					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 			            <button id="NationalAwards" 
 								data-blockTitle="blockTitle" 
-								 data-blocksubTitle="blocksubTitle" 
-								 data-blockDescription="blockDescription"
+								data-blocksubTitle="blocksubTitle" 
+								data-blockDescription="blockDescription"
 								data-fgImage="fgImage" 
 								data-bgImage="bgImage"
 								data-rBlocksImage="rBlocksImage"
-								 className="btn zIndexmtop pull-right" 
+								className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            
@@ -321,29 +358,19 @@ class Staticblocks extends React.Component {
 					</section>
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-			            <button id="ServicesBanner" 
+			            <button id="Testimonials" 
 								data-blockTitle="blockTitle" 
-								 data-blocksubTitle="blocksubTitle" 
-								 data-blockDescription="blockDescription"
+								data-blocksubTitle="blocksubTitle" 
+								data-blockDescription="blockDescription"
 								data-fgImage="fgImage" 
 								data-bgImage="bgImage"
 								className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            
-						<ServicesBanner /> 
+						<Testimonials /> 
 					</section>
 
-
-
-					
-
-
-
-
-					
-					
-				
 
 				</div>
 			</div>

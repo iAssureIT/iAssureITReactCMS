@@ -5,7 +5,7 @@ const User 				    = require('../userManagement/ModelUsers.js');
 const PersonMaster          = require('../personMaster/ModelPersonMaster.js');
 const EntityMaster          = require('../entityMaster/ModelEntityMaster.js');
 const nodeMailer            = require('nodemailer');
-const GlobalMaster        = require('../globalMaster/ModelGlobalMaster.js');
+const GlobalMaster        = require('../projectSettings/ModelProjectSettings.js');
 const plivo             = require('plivo');
 
 
@@ -65,7 +65,6 @@ exports.list_masternotification = (req,res,next)=>{
 };
 
 exports.list_mode_masternotification = (req,res,next)=>{
-    console.log('req.body: ',req.body)
     Masternotifications.find({"templateType":req.body.mode,"event":req.body.event})
         .exec()
         .then(data=>{
@@ -93,29 +92,52 @@ exports.detail_masternotification = (req,res,next)=>{
 };
 exports.update_masternotification = (req,res,next)=>{
     Masternotifications.updateOne(
-                                    { _id:req.params.ID},  
-                                    {
-                                        $set:{
-                                            status          : req.body.status,
-                                            subject         : req.body.subject,
-                                            content         : req.body.content
-                                        }
-                                    }
-                                )
-                                .exec()
-                                .then(data=>{
-                                    if(data.nModified == 1){
-                                        res.status(200).json({ message:"Master notifications Updated"});
-                                    }else{
-                                        res.status(401).json({ message:"Master notifications Found"});
-                                    }
-                                })
-                                .catch(err =>{
-                                    console.log(err);
-                                    res.status(500).json({
-                                        error: err
-                                    });
-                                });
+        { _id:req.params.ID},  
+        {
+            $set:{
+                status          : req.body.status,
+                subject         : req.body.subject,
+                content         : req.body.content
+            }
+        }
+    )
+    .exec()
+    .then(data=>{
+        if(data.nModified == 1){
+            res.status(200).json({ message:"Master notifications Updated"});
+        }else{
+            res.status(401).json({ message:"Master notifications Found"});
+        }
+    })
+    .catch(err =>{
+        console.log(err);
+        res.status(500).json({
+            error: err
+        });
+    });
+};
+
+exports.update_status = (req,res,next)=>{
+    Masternotifications.updateOne(
+        { _id:req.body.notifId},  
+        {
+            $set:{
+                status          : req.body.status,
+            }
+        }
+    )
+    .exec()
+    .then(data=>{
+        if(data.nModified == 1){
+            res.status(200).json({ updated : true });
+        }
+    })
+    .catch(err =>{
+        console.log(err);
+        res.status(500).json({
+            error: err
+        });
+    });
 };
 exports.delete_masternotification = (req,res,next)=>{
     Masternotifications.deleteOne({_id:req.params.ID})
@@ -153,6 +175,36 @@ exports.deleteall_masternotification = (req,res,next)=>{
         });
 };
 
+exports.filterTemplate = (req,res,next)=>{
+    var selector = {}; 
+    selector['$and']=[];
+
+    if (req.body.filterEvent) {
+        selector["$and"].push({ event : { $regex : req.body.filterEvent, $options: "i"}  })
+    }
+    if (req.body.filterRole) {
+        selector["$and"].push({ role : { $regex : req.body.filterRole, $options: "i"}  })
+    }
+    if (req.body.filterStatus) {
+        selector["$and"].push({ status : { $regex : req.body.filterStatus, $options: "i"}  })
+    }
+    if (req.body.filterCompany) {
+        selector["$and"].push({ company : req.body.filterCompany })
+    }
+    
+    Masternotifications.find(selector)
+    .sort({createdAt : -1})
+    .exec()
+    .then(data=>{
+        res.status(200).json(data);
+    })
+    .catch(err =>{
+        res.status(500).json({
+            error: err
+        });
+    });
+};
+
 
 exports.send_notifications = (req, res, next) => {
     Masternotifications.find({event: req.body.event,status:'active'})
@@ -161,75 +213,66 @@ exports.send_notifications = (req, res, next) => {
     .then(data=>{
         main();
         async function main(){
-            var returnData = [];
-            if(data && data.length > 0){
-                for(k = 0 ; k < data.length ; k++){
-                    returnData.push({
-                        role: data[k].role,
-                        mode : data[k].templateType,
-                        event : data[k].event,
-                        company : data[k].company
-                    })
-                }//k
-            }//if
-            console.log('!!!!!!!!!!!!!!!!')
-            console.log('returnData: ',returnData)
+             console.log('========================================================')
+            var returnData = data
+            console.log('returnData=>',returnData)
             if(returnData && returnData.length > 0){
                 for(var i=0 ; i< returnData.length ; i++){
+                    console.log("Entering for loop for returnData at : ",i)
                     var role = returnData[i].role;
+                    var company = req.body.company_id;
                     var templateName = returnData[i].event;
-                    var mode = returnData[i].mode;
-                    var company = returnData[i].company;
+                    var mode = returnData[i].templateType;
                     console.log('========================================================')
-                    console.log('role,templateName,mode=>',role,templateName,mode)
 
+                    console.log(role,templateName,mode)
 
-                    switch(role){
-                        case 'admin':
-                                    var userData = await getAdminUserId();
-                                    break;
-                        case 'manager':
-                                    var userData = await getManagerData(req.body.toUserId)
-                                    break;
-                        case 'employee':
-                                    var userData = await getProfileByUserId(req.body.toUserId);
-                                    break;
-                        case 'corporateadmin':
-                                    var userData = await getCorporateAdminData(req.body.toUserId);
-                                    break;
-                        case 'vendoradmin':
-                                    var userData = await getVendorAdminUserId(req.body.company);
-                                    break;
+                    if(role == 'admin'){
+                        console.log('admin==>',mode,templateName,company)
+                        var userData = await getAdminUserData();
+                        if(userData && userData.length > 0){
+                           for(var j=0 ; j<userData.length ; j++){
+                            var userRole = userData[j].role
+                            var checkRole = userRole.includes(role);
+                            if(checkRole){
+                                await callTemplates(mode,userData[j],role,templateName,company,req.body.variables,req.body.attachment)
+                            }
+                           }//j 
+                        }
+                        
+                    }else if(role === req.body.toUserRole){
+                         console.log('self==>',mode,templateName,company)
+                        var userData = await getSelfUserData(req.body.toUser_id);
+                        var userRole = userData.role
+                        var checkRole = userRole.includes(role);
+                        if(checkRole){
+                            await callTemplates(mode,userData,role,templateName,company,req.body.variables,req.body.attachment)
+                        }
+                    }else if(role === req.body.intendedUserRole){
+                         console.log('manager==>',mode,templateName,company)
+                        var userData = await getIntendedUserData(req.body.intendedUser_id);
+                        var userRole = userData.role
+                        var checkRole = userRole.includes(role);
+                        if(checkRole){
+                            await callTemplates(mode,userData,role,templateName,company,req.body.variables,req.body.attachment)
+                        }
+                    }else if(role === req.body.otherAdminRole && req.body.company_id){
+                         console.log('corporate==>',mode,templateName,company)
+                        var userData = await getOtherAdminData(req.body.otherAdminRole,req.body.company_id);
+                        if(userData && userData.length > 0){
+                           for(var j=0 ; j<userData.length ; j++){
+                            var userRole = userData[j].role
+                            var checkRole = userRole.includes(role);
+                            if(checkRole){
+                                await callTemplates(mode,userData[j],role,templateName,company,req.body.variables,req.body.attachment)
+                            }
+                           }//j 
+                        }
+                    }else{
+                        console.log('No data found')
                     }
 
-                   
-                     // //==============  SEND EMAIL ================
-                    if(mode === 'Email'){
-                        console.log('1')
-                        var toEmail = userData.email;
-                        const emailDetails = await getTemplateDetailsEmail(company,templateName,role,req.body.variables);
-                        const sendMail = await sendEmail(toEmail,emailDetails.subject,emailDetails.content)
-                        
-                    } // mode == 'Email'
-
-                      // //==============  SEND INAPP ================
-                    if(mode === 'Notification'){
-                        console.log('2')
-                        var toUserId = userData.id;
-                        const notificationDetails = await getTemplateDetailsInApp(company,templateName,role,req.body.variables); 
-                        const sendNotification = await sendInAppNotification(toUserId,userData.email,req.body.event,notificationDetails)
-                       
-                    }//mode == 'Notification'
-
-                       // //==============  SEND SMS ================
-                    if(mode === 'SMS'){
-                        console.log('................3.................')
-                        var toMobile = userData.mobile;
-                        const SMSDetails = await getTemplateDetailsSMS(company,templateName,role,req.body.variables);
-                        var text = SMSDetails.content.replace(/<[^>]+>/g, '');
-                        const SMS = await sendSMS(toMobile,text); 
-                        
-                    }// mode == 'SMS'
+                    console.log('***************************************************')
 
                 }//i
             }//returnData
@@ -241,109 +284,69 @@ exports.send_notifications = (req, res, next) => {
     
 }
 
-function getProfileByUserId(toUserId) {
-    return new Promise(function (resolve, reject) {
-        User
-            .findOne({ "_id": toUserId })
-            .exec()
-            .then(data => {
-                resolve({email:data.profile.email,
-                        id: data._id,
-                        mobile: data.profile.mobile
-                });
-            })
-            .catch(err => {
-                console.log(err);
-                reject({
-                    error: err
-                });
-            });
-
-    });
+function callTemplates(mode,userData,role,templateName,company,variables,attachment){
+    sub();
+        async function sub(){
+             // //==============  SEND EMAIL ================
+            if(mode === 'Email'){
+                var toEmail = userData.email;
+                const emailDetails = await getTemplateDetailsEmail(company,templateName,userData.role,variables);
+                const sendMail = await sendEmail(toEmail,emailDetails.subject,emailDetails.content,attachment)
+                
+            }else if(mode === 'Notification'){
+                var toUserId = userData.id;
+                const notificationDetails = await getTemplateDetailsInApp(company,templateName,userData.role,variables); 
+                const sendNotification = await sendInAppNotification(toUserId,userData.email,templateName,notificationDetails)
+               
+            }else if(mode === 'SMS'){
+                var toMobile = userData.mobile;
+                const SMSDetails = await getTemplateDetailsSMS(company,templateName,userData.role,variables);
+                var text = SMSDetails.content.replace(/<[^>]+>/g, '');
+                const SMS = await sendSMS(toMobile,text); 
+                
+            }// mode == 'SMS'
+        }
 }
 
-function getManagerData(toUserId) {
+function getAdminUserData() {
     return new Promise(function (resolve, reject) {
-        PersonMaster.findOne({'userId':toUserId})
+        User.find({"roles":"admin"})
         .exec()
-        .then(data=>{
-            if(data.approvingAuthorityId1){
-                PersonMaster.findOne({'employeeId':data.approvingAuthorityId1})
-                .exec()
-                .then(res=>{
-                    User
-                    .findOne({ "_id": res.userId })
-                    .exec()
-                    .then(data => {
-                        resolve({email:data.profile.email,
-                                id: data._id,
-                                mobile: data.profile.mobile
+        .then(data => {
+            if(data && data.length>0){
+                var userData = []
+                for(var i=0 ; i<data.length ; i++){
+                    if(data[i].profile){
+                        userData.push({email:data[i].profile.email,
+                                id: data[i]._id,
+                                mobile: data[i].profile.mobile,
+                                role:"admin"
                         });
-                    })
-                    .catch(err => {
-                        console.log(err);
-                        reject({
-                            error: err
-                        });
-                    });
-                })
-                .catch(err=>{
-                    console.log('error: ',err)
-                })
+                    }
+                }//i
+                resolve(userData)
             }
-            
         })
-        .catch(error=>{
-            reject({error:error})
-        })
-        
+        .catch(err => {
+            console.log(err);
+            reject({
+                error: err
+            });
+        });
 
     });
 }
 
-function getCorporateAdminData(toUserId){
+function getSelfUserData(toUserId) {
     return new Promise(function (resolve, reject) {
         User
             .findOne({ "_id": toUserId })
             .exec()
             .then(data => {
-                if(data.profile && data.profile.companyID){
-                    User
-                    .findOne({ "profile.companyID": data.profile.companyID, "roles":"corporateadmin"})
-                    .exec()
-                    .then(data => {
-                        resolve({email:data.profile.email,
-                                id: data._id,
-                                mobile: data.profile.mobile
-                        });
-                    })
-                    .catch(err => {
-                        console.log(err);
-                        reject({
-                            error: err
-                        });
-                    });
-                }
-            })
-            .catch(err => {
-                console.log(err);
-                reject({
-                    error: err
-                });
-            });
-
-    });
-}
-
-function getAdminUserId() {
-    return new Promise(function (resolve, reject) {
-        User
-            .findOne({"roles":"admin"})
-            .exec()
-            .then(data => {
                 resolve({email:data.profile.email,
                         id: data._id,
-                        mobile: data.profile.mobile
+                        mobile: data.profile.mobile,
+                        role:data.roles
                 });
             })
             .catch(err => {
@@ -356,19 +359,22 @@ function getAdminUserId() {
     });
 }
 
-function getVendorAdminUserId(company){
+function getIntendedUserData(toUserId) {
     return new Promise(function (resolve, reject) {
-        EntityMaster.findOne({'_id':company})
+        PersonMaster.findOne({'_id':toUserId})
         .exec()
-        .then(result => {
-            User
-            .findOne({"roles":"vendoradmin","profile.companyID":result.companyID})
+        .then(result=>{
+         User
+            .findOne({ "_id": result.userId })
             .exec()
             .then(data => {
+                if(data && data.profile){
                 resolve({email:data.profile.email,
                         id: data._id,
-                        mobile: data.profile.mobile
+                        mobile: data.profile.mobile,
+                        role:data.roles
                 });
+                }
             })
             .catch(err => {
                 console.log(err);
@@ -378,11 +384,54 @@ function getVendorAdminUserId(company){
             });
         })
         .catch(err =>{
+            console.log('personMaster error: ',err)
+        })
+
+    });
+}
+
+
+function getOtherAdminData(role,company_id){
+    return new Promise(function (resolve, reject) {
+        EntityMaster.findOne({'_id':company_id})
+        .exec()
+        .then(result => {
+        
+            if(result.companyID){
+                User
+                .find({ "profile.companyID": result.companyID, "roles":role})
+                .exec()
+                .then(data => {
+                    if(data && data.length>0){
+                        var userData = []
+                        for(var i=0 ; i<data.length ; i++){
+                            if(data[i].profile){
+                                userData.push({email:data[i].profile.email,
+                                        id: data[i]._id,
+                                        mobile: data[i].profile.mobile,
+                                        role:data[i].roles
+                                });
+                            }
+                        }//i
+                        resolve(userData)
+                    }
+                })
+                .catch(err => {
+                    console.log(err);
+                    reject({
+                        error: err
+                    });
+                });
+            }
+            
+        })
+        .catch(err =>{
             console.log('entityMaster error: ',err)
         })
 
     });
 }
+
 
 function sendSMS(MobileNumber,text){
     console.log('=====INSIDE SMS======',MobileNumber,text)
@@ -391,6 +440,7 @@ function sendSMS(MobileNumber,text){
         GlobalMaster.findOne({type:'SMS'})
         .exec() 
         .then(data=>{
+            console.log('data.authID,data.authToken,data.sourceMobile: ',data.authID,data.authToken,data.sourceMobile)
             const client = new plivo.Client(data.authID,data.authToken);   // Vowels LLP
             const sourceMobile = data.sourceMobile;
             client.messages.create(
@@ -402,6 +452,7 @@ function sendSMS(MobileNumber,text){
                 return(result)
             })
             .catch(error => {
+                console.log('sms error inside: ',error)
                 return(error);
             });
         })
@@ -435,10 +486,15 @@ function sendInAppNotification(toUserId,email,event,notificationDetails){
     })
 }
 
-function sendEmail(toEmail,subject,content){
-    console.log('====**INSIDE EMAIL**=====',toEmail,subject,content)
+function sendEmail(toEmail,subject,content,attachment){
+    console.log('====**INSIDE EMAIL**=====',toEmail,subject,content,attachment)
+    if(attachment == null || attachment == undefined || attachment == ""){
+        var attachment = []
+    }else{
+        var attachment = [attachment]
+    }
     // async function main() { 
-      GlobalMaster.findOne({type:'Email'})
+      GlobalMaster.findOne({type:'EMAIL'})
         .exec() 
         .then(data=>{
             const senderEmail = data.user;
@@ -460,6 +516,7 @@ function sendEmail(toEmail,subject,content){
                     to: toEmail, // list of receiver
                     subject: subject, // Subject line
                     html: "<pre>" + content + "</pre>", // html body
+                    attachments: attachment,
                 };
                let info =  transporter.sendMail(mailOptions, (error, info) => {
                     console.log("Message sent: %s", error,info);
@@ -475,7 +532,7 @@ function sendEmail(toEmail,subject,content){
 
         })
         .catch(err =>{
-            res.status(500).json({ error: err });
+            console.log('mail error=>',err)
         });
          // main().catch(err=>{console.log('mail error=>',err)});
       
@@ -739,5 +796,6 @@ function getTemplateDetailsInApp(company, templateName,role,variables) {
             });
     });
 }
+
 
 

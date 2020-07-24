@@ -13,6 +13,7 @@ import ViewBlock_1 from '../CMS/component/createnewblock/viewblock1.js';
 import ViewBlock_2 from '../CMS/component/createnewblock/ViewBlock_2.js';
 import ViewBlock_3 from '../CMS/component/createnewblock/ViewBlock_3.js';
 import MasterPage from '../CMS/component/MasterPage/MasterPage.js';
+import Typemaster from '../CMS/component/Typemaster/Typemaster.js';
 import CmsHeader from '../CMS/component/common/Header/Header.js'; 
 import CmsDashBoard from '../CMS/CmsDashBoard/CmsDashBoard.js'; 
 
@@ -87,6 +88,8 @@ const CmsRoute = (props) => {
             <Route path="/cms/select-new-block"                        exact strict component={ViewBlock_1}  />
             <Route path="/cms/create-new-block"                        exact strict component={ViewBlock_2}  />
             <Route path="/cms/view-blocks"                        exact strict component={ViewBlock_3}  />
+            <Route path="/cms/typemaster"                 exact strict component={Typemaster}  />
+            <Route path="/cms/typemaster/:editId"                  strict component={Typemaster}  />
             
             
             <Route path="/cms/singleblog"           component={ SingleBlogPage }  />   

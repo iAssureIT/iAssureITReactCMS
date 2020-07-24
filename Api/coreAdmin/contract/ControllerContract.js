@@ -5,7 +5,7 @@ var   ObjectId          = require('mongodb').ObjectId;
 exports.insertContract = (req,res,next)=>{
     Contract.findOne({"companyId" : req.body.companyId, "companyLocationId" : req.body.companyLocationId, "entityId" : req.body.entityId, "entityLocationId" :  { $in: req.body.entityLocationId }})
     .then(data=>{
-        console.log('data', data)
+        // console.log('data', data)
         if(data){
             res.status(200).json({ message : "DUPLICATE" });
         }else{
@@ -35,15 +35,24 @@ exports.insertContract = (req,res,next)=>{
     .catch(error=>{});
 };
 exports.savePackage = (req,res,next)=>{
+  // console.log("savePackage = ",req.body.packages);
     var packages = req.body.packages;
     Contract.updateOne(
         { "_id":ObjectId(req.body.contractID)},  
         {
-            $set:   { 'packages' : packages}
+            $set:   { 
+              'packages'                    : packages,
+              'earlyMorningChargesFromTime' : req.body.earlyMorningChargesFromTime,
+              'earlyMorningChargesToTime'   : req.body.earlyMorningChargesToTime,
+              'nightChargesFromTime'        : req.body.nightChargesFromTime,
+              'nightChargesToTime'          : req.body.nightChargesToTime,
+            }
+            
         }
     )
     .exec()
     .then(data=>{
+        // console.log("data response = ", data);
         res.status(200).json({ updated : true });
     })
     .catch(err =>{
@@ -82,22 +91,19 @@ exports.saveCondition = (req,res,next)=>{
         res.status(500).json({ error: err });
     });
 };
+
 exports.updatePackage = (req,res,next)=>{
-    var packages = req.body.packages[0];
+  console.log("body = ",req.body);
+    var packages    = req.body.packages;
     Contract.updateOne(
-        { "_id":ObjectId(req.body.contractID), "packages._id": ObjectId(req.body.packageID)},  
+        { "_id":ObjectId(req.body.contractID)},  
         {
             $set:   { 
-                'packages.$.packageId'      : packages.packageId,
-                'packages.$.packageName'    : packages.packageName,
-                'packages.$.MaxHrs'         : packages.MaxHrs,
-                'packages.$.MaxKm'          : packages.MaxKm,
-                'packages.$.nightChargesFromTime'        : packages.nightChargesFromTime,
-                'packages.$.nightChargesToTime'          : packages.nightChargesToTime,
-                'packages.$.earlyMorningChargesFromTime' : packages.earlyMorningChargesFromTime,
-                'packages.$.earlyMorningChargesToTime'   : packages.earlyMorningChargesToTime,
-                'packages.$.fixCharges'     : packages.fixCharges,
-                'packages.$.extras'         : packages.extras
+              'packages'                    : packages,
+              'earlyMorningChargesFromTime' : req.body.earlyMorningChargesFromTime,
+              'earlyMorningChargesToTime'   : req.body.earlyMorningChargesToTime,
+              'nightChargesFromTime'        : req.body.nightChargesFromTime,
+              'nightChargesToTime'          : req.body.nightChargesToTime,
             }
         }
     )
@@ -109,6 +115,50 @@ exports.updatePackage = (req,res,next)=>{
         res.status(500).json({ error: err });
     });
 };
+
+exports.contractSign = (req,res,next)=>{
+  console.log("body = ",req.body);
+    Contract.updateOne(
+            { "_id":req.body.contractID},  
+            {
+                $set:   { 
+                    'status'                      : req.body.status,
+                }
+            }
+        )
+        .exec()
+        .then(data=>{
+            if(data.nModified == 1){
+                Contract.updateOne(
+                { _id:req.body.contractID},
+                {
+                    $push:  { 'statusLog' : [{ 
+                                              status        : req.body.status,
+                                              statusAt      : new Date(),
+                                              statusBy      : {
+                                                            userid      : req.body.userid,
+                                                            username    : req.body.username,
+                                                            empid       : req.body.empid, 
+                                                            companyId   : req.body.companyId, 
+                                                            department  : req.body.department,  
+                                                            designation : req.body.designation, 
+                                              },
+                                            }] 
+                            }
+                })
+                .exec()
+                .then(data=>{
+                    res.status(200).json({ updated : true });
+                })
+            }else{
+                res.status(200).json({ updated : false });
+            }
+        })
+        .catch(err =>{
+            res.status(500).json({ error: err });
+        });
+};
+
 exports.countContracts = (req, res, next)=>{
     Contract.find().count()
         .exec()
@@ -133,10 +183,11 @@ exports.fetchContracts = (req, res, next)=>{
         }); 
 };
 exports.getContracts = (req, res, next)=>{
+  // console.log("In getContracts ");
     Contract.aggregate([
         {
            $lookup: {
-              from: "companysettings",
+              from: "entitymasters",
               localField: "companyId",    
               foreignField: "_id",  
               as: "company"
@@ -160,6 +211,7 @@ exports.getContracts = (req, res, next)=>{
         .sort({createdAt : -1})
         .exec()
         .then(data=>{
+          // console.log("In getContracts Data = ",data);
             res.status(200).json(data);
         })
         .catch(err =>{
@@ -167,11 +219,12 @@ exports.getContracts = (req, res, next)=>{
         }); 
 };
 exports.joincontract = (req, res, next)=>{
+  console.log("in join contract body = ", req.params.contractID);
     Contract.aggregate([
-        { "$match" : {"_id": ObjectId(req.params.contractID)}},
+        
         {
             $lookup: {
-               from: "companysettings",
+               from: "entitymasters",
                localField: "companyId",    
                foreignField: "_id",  
                as: "company"
@@ -191,10 +244,12 @@ exports.joincontract = (req, res, next)=>{
          {
             $unwind:"$entity"
          },
+         { "$match" : {"_id": ObjectId(req.params.contractID)}},
      ])
         .sort({createdAt : -1})
         .exec()
         .then(data=>{
+          // console.log("Data ==> ", data);
             res.status(200).json(data);
         })
         .catch(err =>{
@@ -235,8 +290,45 @@ exports.joincontractlist = (req, res, next)=>{
             res.status(500).json({ error: err });
         }); 
 };
+
 exports.fetchSingleContract = (req, res, next)=>{
     Contract.findOne({ _id: req.params.contractID })
+        .exec()
+        .then(data=>{
+            res.status(200).json( data );
+        })
+        .catch(err =>{
+            res.status(500).json({ error: err });
+        }); 
+};
+
+exports.fetchSingleEntityContract = (req, res, next)=>{
+  // console.log("company id = ", req.params.entityID);
+    Contract.aggregate([
+        {
+            $lookup: {
+               from         : "entitymasters",
+               localField   : "companyId",    
+               foreignField : "_id",  
+               as           : "company"
+            }
+         },
+         {
+            $unwind:"$company"
+         },
+         {
+            $lookup: {
+               from         : "entitymasters",
+               localField   : "entityId",   
+               foreignField : "_id",  
+               as           : "entity"
+            }
+         },
+         {
+            $unwind : "$entity"
+         },
+         { "$match" : {"entityId" : ObjectId(req.params.entityID)}},
+     ])
         .exec()
         .then(data=>{
             res.status(200).json( data );
@@ -323,7 +415,7 @@ exports.deletePackageInContract = (req,res,next)=>{
 
 
 exports.filterContract = (req, res, next)=>{
-
+    console.log("In filterContract",req.body);
     var selector = {};
     // selector['$or']=[];
     for (var key in req.body) {
@@ -358,7 +450,7 @@ exports.filterContract = (req, res, next)=>{
     Contract.aggregate([
         {
             $lookup: {
-               from: "companysettings",
+               from: "entitymasters",
                localField: "companyId",    
                foreignField: "_id",  
                as: "company"
@@ -385,6 +477,7 @@ exports.filterContract = (req, res, next)=>{
         .sort({createdAt : -1})
         .exec()
         .then(data=>{
+          console.log("In filterContract data = ",data);
             res.status(200).json(data);
         })
         .catch(err =>{

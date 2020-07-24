@@ -66,7 +66,13 @@ router.get('/get/files/count/:type', personMaster.fetch_file_count);
 
 router.get('/get/UserID/:employeeId/:corporateId',personMaster.getUserByEmpID);
 
+router.get('/get/User/:employeeId',personMaster.getEmpByEmpID);
+
 router.get('/get/emailID/:emailId',personMaster.getUserByEmail);
+
+router.get('/get/guest/:email/:corporateId',personMaster.getGuestByEmail);
+
+router.get('/getUserByUserId/:userId',personMaster.getUserByUserId);
 
 router.get('/get/ID/:userId',personMaster.getUserByID);
 

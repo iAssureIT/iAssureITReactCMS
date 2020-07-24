@@ -65,7 +65,7 @@ export default class Leftsidebar extends Component{
           <div className="wrapper">
             <nav id="sidebar">
               <div className="sidebar-header textAlignCenter">
-                <label  className="headerImage">Five Bees</label>
+                <label  className="headerImage logoText"><i className="fa fa-smile-o"></i>&nbsp;trüUSmiles</label>
                 <img className="sidebarLogoName shortlogo strong" src="/images/logof.jpeg"/>
               </div>
               <ul className="list-unstyled components scrollBox" style={{height:  sidebarHeight+"px"}}>
@@ -75,7 +75,7 @@ export default class Leftsidebar extends Component{
                     <span className="iconTitle">Dashboard</span>
                   </a>
                 </li>
-                <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="/All_Bookings" title="All Booking">
                     <i className="fa fa-ticket" aria-hidden="true"></i>
                      <span className="iconTitle">All Booking</span>
@@ -86,15 +86,15 @@ export default class Leftsidebar extends Component{
                     <i className="fa fa-money" aria-hidden="true"></i>
                      <span className="iconTitle">Billing Management</span>
                   </a>
-                </li>
-                 <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                </li> */}
+                 {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="/coming_soon" title="Reporting System ">
                     <i className="fa fa-database" />
                      <span className="iconTitle">Reporting System</span>
                     <i className="leftarrow rotate fa fa-angle-left  pull-right" id="ReportingSystem"></i>
                   </a>
-                  </li>
-                  <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                  </li> */}
+                  {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="#Contract" data-toggle="collapse" className="menuContent"  aria-expanded="false" title=" Contract Management ">
                     <i className="fa fa-file" />
                      <span className="iconTitle">Contract Management</span>
@@ -114,8 +114,8 @@ export default class Leftsidebar extends Component{
                       </a>
                     </li>
                   </ul>
-                </li>
-                <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                </li> */}
+                {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="#EntityMappings" data-toggle="collapse" className="menuContent"  aria-expanded="false" title="Vendor Mapping">
                     <i className="fa fa-link" />
                      <span className="iconTitle">Vendor Mapping</span>
@@ -135,9 +135,9 @@ export default class Leftsidebar extends Component{
                       </a>
                     </li>
                   </ul>
-                </li>
+                </li> */}
 
-                <li className="sidebarMenuText" onClick={this.eventclk1.bind(this)}>
+                {/* <li className="sidebarMenuText" onClick={this.eventclk1.bind(this)}>
                   <a  href="#Corporate" data-toggle="collapse" aria-expanded="false" className="menuContent" title="Corporate Master">
                     <i className="fa fa-user" />
                     <span className="iconTitle">Corporate</span>
@@ -164,8 +164,36 @@ export default class Leftsidebar extends Component{
                       </a>
                     </li>
                   </ul>
+                </li>  */}
+                <li className="sidebarMenuText" onClick={this.eventclk1.bind(this)}>
+                  <a  href="#Corporate" data-toggle="collapse" aria-expanded="false" className="menuContent" title="Patients">
+                    <i className="fa fa-user" />
+                    <span className="iconTitle">Patients</span>
+                    <i className="leftarrow rotate fa fa-angle-left  pull-right"  id="CorporateMaster"></i> 
+                  </a>
+                  <ul className="collapse   list-unstyled activeClass" id="Corporate">
+                    <li>
+                      <a href="/patient/personal-info" title="Add Patients">
+                        <i className="fa fa-circle-o" />
+
+                        <span className="sidebarMenuSubText">Add Patients</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/patient/allpatientlist" title="Patient List">
+                        <i className="fa fa-circle-o" />
+                        <span className="sidebarMenuSubText">Patient List</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/patients/location" title="Patients Location">
+                        <i className="fa fa-circle-o" />
+                        <span className="sidebarMenuSubText">Patients Location</span>
+                      </a>
+                    </li>
+                  </ul>
                 </li> 
-                <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="#Vendor" data-toggle="collapse" className="menuContent" aria-expanded="false" title="Vendor Master">
                     <i className="fa fa-book" />
                       <span className="iconTitle">Vendors</span>
@@ -197,8 +225,41 @@ export default class Leftsidebar extends Component{
                       </a>
                     </li>
                   </ul>
+                </li> */}
+                <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                  <a href="#Vendor" data-toggle="collapse" className="menuContent" aria-expanded="false" title="Appointment">
+                    <i className="fa fa-book" />
+                      <span className="iconTitle">Appointment</span>
+                    <i className="leftarrow rotate fa fa-angle-left  pull-right"  id="VendorMaster"></i>
+                  </a>
+                  <ul className="collapse   list-unstyled activeClass" id="Vendor">
+                    <li>
+                      <a href="/appointment/manager" title="Set Appointment">
+                        <i className="fa fa-circle-o" /> 
+                        <span className="sidebarMenuSubText">Set Appointment</span>
+                      </a>
+                    </li> 
+                    <li>
+                      <a href="/appointment/appointmentlist" title="Appointment List">
+                        <i className="fa fa-circle-o" />
+                        <span className="sidebarMenuSubText">Appointment List</span>
+                      </a>
+                    </li>
+                    {/* <li>
+                      <a href="/vehicle-list" title="Vehicle List">
+                        <i className="fa fa-circle-o" />
+                        <span className="sidebarMenuSubText">Vehicle Master</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/driver/lists" title="Driver List">
+                        <i className="fa fa-circle-o" />
+                        <span className="sidebarMenuSubText">Driver Master</span>
+                      </a>
+                    </li> */}
+                  </ul>
                 </li>
-                 <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                 {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="#MasterData" data-toggle="collapse" className="menuContent" aria-expanded="false" title="Master Data">
                     <i className="fa fa-address-book" />
                       <span className="iconTitle">Master Data</span>
@@ -287,8 +348,8 @@ export default class Leftsidebar extends Component{
                     
  
                   </ul>
-                </li>
-                <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                </li> */}
+                {/* <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
                   <a href="#BulkUpload" data-toggle="collapse" className="menuContent"  aria-expanded="false" title="Bulk Upload">
                     <i className="fa fa-upload" />
                      <span className="iconTitle">Bulk Upload</span>
@@ -350,7 +411,13 @@ export default class Leftsidebar extends Component{
                     </li>
                      
                   </ul>*/}
-                </li>  
+                 <li className="sidebarMenuText"  onClick={this.eventclk1.bind(this)}>
+                  <a href="/coming_soon" title="Reporting System ">
+                    <i className="fa fa-database" />
+                     <span className="iconTitle">Reporting System</span>
+                    <i className="leftarrow rotate fa fa-angle-left  pull-right" id="ReportingSystem"></i>
+                  </a>
+                  </li>
               </ul>
             </nav>
           </div>

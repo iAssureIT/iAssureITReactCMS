@@ -24,7 +24,9 @@ class ListOfPages extends React.Component {
 			"pageHeadKeyWords"	: "",
 			"pageHeadDescription":"",
 			"pageHeadAuther"	:"",
-			"ListOfPagest"		:"",
+			"ListOfPages"		:"",
+			"ListOfPageTypes"		:"",
+			"pagetype"		:"",
 
 			"buttonText"		:"Submit",
 
@@ -44,6 +46,17 @@ handleChange(event){
 			"pageHeadAuther"				: this.refs.pageHeadAuther.value,
 			});
 }
+selectpageType(event){
+		event.preventDefault();
+		this.setState({
+       		
+			/*"cmspageDescription" 			: this.refs.cmspageDescription.value,*/
+			"pagetype"						: this.refs.pagetype.value,
+			
+			});
+}
+
+
 componentDidMount(){
 	axios.defaults.headers.common['Authorization'] = 'Bearer '+ localStorage.getItem("token");
    /* $.validator.addMethod("regxtypeofCenter", function(value, element, regexpr) {        
@@ -84,9 +97,26 @@ componentDidMount(){
     });*/}
     
 	this.getListOfPages();
+	this.getListOfPageType();
 
 }
-getListOfPages(){
+
+	getListOfPageType(){
+		axios
+			.get('/api/typemaster/get/list')
+			.then((response)=>{    
+				// console.log("response",response.data);    
+			      	this.setState({
+		      			ListOfPageTypes:response.data
+		      		});
+				})
+		  	.catch(function (error) {
+		    // handle error
+		    	console.log(error);
+		  	});
+
+	}
+	getListOfPages(){
 	/*/get/list*/
 		axios
 			.get('/api/pages/get/list')
@@ -207,6 +237,7 @@ submitData(){
 						"pageWords"				: this.refs.pageHeadKeyWords.value,
 						"pageDescription"		: this.refs.pageHeadDescription.value,
 						"pageAuthor"			: this.refs.pageHeadAuther.value,
+						"pageType"				: this.refs.pagetype.value,
 						// "pageimage"				: this.state.imgPath ? this.state.imgPath : null,
       					// "pagebackgroundimage"			: this.state.backImgPath ? this.state.backImgPath : null,
       
@@ -224,7 +255,7 @@ submitData(){
 		   		// swal(" Your page Created successfully ");
 		  	})
 		  	.catch(function (error) {
-		    // handle error
+		    
 		    	console.log(error);
 		  	});
 
@@ -239,7 +270,7 @@ urlPage(event){
 
 }
 	render() {
-		// console.log("ListOfPages",this.state.ListOfPages)
+		// console.log("ListOfPageTypes",this.state.ListOfPageTypes);
 		return (
 			<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 ">
 				<div className=" txtCenter col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -304,6 +335,28 @@ urlPage(event){
 					        	{/*<div className="lineHr"></div>*/}
 	                        	<form className="newTemplateForm" id="newTemplateForm">
 	                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	                                    <div className="form-group m3all" id="pageType">
+	                                       <div class="form-group">
+											      <label className="label-category lb666 labelform">Select Page Type</label>
+											      <select className="form-control hinput30" id="pagetype"  value={this.state.pagetype} ref="pagetype" name="pagetype"  onChange={this.selectpageType.bind(this)}>
+                                                    <option disabled={true} selected={true}>--Select Page type--</option>
+                                                    { this.state.ListOfPageTypes  && this.state.ListOfPageTypes.length ?
+                                                    	this.state.ListOfPageTypes.map((result,index)=>{
+                                                    		return(
+
+											        			<option value={result.facility}>{result.facility}</option>
+                                                    			)
+                                                    	})
+                                                    	:
+                                                    	""
+                                                    }
+											       
+											      </select>
+											    
+											    </div>
+	                                    </div>
+	                                </div>
+	                                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	                                    <div className="form-group m3all" id="pageTitle">
 	                                    	<label className="label-category lb666 labelform">Page Title<span className="astrick">* </span></label>
 	                                        <input type="text" ref="pageTitle" value={this.state.pageTitle} id="basicPageName" name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)} />
@@ -334,7 +387,7 @@ urlPage(event){
 		                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 		                                  <div className="form-group m3all">
 		                                   <label className="label-category lb666 labelform">Description<span className="astrick"></span></label>
-		                                        <textarea ref="pageHeadDescription" value={this.state.pageHeadDescription} id="pageHeadDescription" name="pageHeadDescription"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12  hinput30 form-control" rows="6" onChange={this.handleChange.bind(this)} />
+		                                        <textarea ref="pageHeadDescription" value={this.state.pageHeadDescription} id="pageHeadDescription" name="pageHeadDescription"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12   form-control" rows="4" onChange={this.handleChange.bind(this)} />
 		                                  </div>
 		                                </div>
 	                            	</div>

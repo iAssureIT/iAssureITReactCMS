@@ -62,9 +62,9 @@ export default class AboutBanner extends React.Component {
 		return (
 			<div className="aboutbannerwrapp">
 				<div className="ABOUTbanerheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
-				    <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox row">
+				    {/*<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox row">
 					    <a href="/" ><img className="logoab img-responsive" src="./images/Logo.png" alt="logo"/></a>
-					 </div>
+					 </div>*/}
 					 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 aboutwannerwrpp">
 						     <div className="h1Titleus" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div><br/>

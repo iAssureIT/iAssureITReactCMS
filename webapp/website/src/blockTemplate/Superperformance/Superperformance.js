@@ -1,8 +1,8 @@
 import React,{Component} from  'react';
-import './SuperPerformance.css';
+import './Superperformance.css';
 import axios from 'axios';
 
-export default class Superperformance extends Component{
+export default class SuperPerformance extends Component{
 
     constructor(props) {
         super(props);
@@ -39,7 +39,7 @@ export default class Superperformance extends Component{
     /*console.log("==>",this.props.block_id);*/
               {
                  axios
-                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .get('/api/blocks/get/'+this.props.block_id)
                     .then((response)=>{
                         if(response.data){
                             // console.log("ListofServices =",response.data);

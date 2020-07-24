@@ -143,7 +143,8 @@ export default class IndustryDomains extends React.Component {
 
 
 	render() {
-	
+	//  var data = this.state.allData;
+    	// console.log("all data ",data);
 		return (
 			<div className=" container-fluid nopadding">
 				<div className="industryDomainsHt container-fluid">
@@ -183,7 +184,88 @@ export default class IndustryDomains extends React.Component {
 					null
 				}
 
+							{/* <div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								  <img src="/images/51.png" alt="18" className="center"/> 
+								  <div className="text-center htitle">
+										<h3>Manufactuering Industry</h3>
+									</div>
+								</div>
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/52.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Transport Industry</h3>
+								</div>
+							</div>
 
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/53.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Healthcare Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/54.png" alt="18" className="center"/>
+								<div className="text-center htitle">
+										<h3>Real Estate Industry</h3>
+									</div> 
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/55.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Education Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/56.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>eCommerce Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/57.png" alt="18" className="center"/> 
+								<div className="text-center htitle">
+										<h3>Travel Industry</h3>
+									</div>
+
+
+								</div>
+
+							</div>
+							<div className="col-lg-4 col-md-4">
+								<div className="idcol1">
+								<img src="/images/58.png" alt="18" className="center"/>
+								<div className="text-center htitle">
+										<h3>Start Up Industry</h3>
+									</div> 
+
+
+								</div>
+							</div> */}
 						</div>
 					</div>
 								

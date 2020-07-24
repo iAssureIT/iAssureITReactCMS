@@ -27,7 +27,7 @@
   -o-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
   margin-bottom: 0;
- /* margin-left: 230px;*/
+  margin-left: 230px;
   border: none;
   min-height: 65px !important;
   border-radius: 0;
@@ -185,7 +185,7 @@
   -o-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
   margin-bottom: 0;
-  /*margin-left: 230px;*/
+  margin-left: 230px;
   border: none;
   min-height: 50px;
   border-radius: 0;

@@ -1,10 +1,10 @@
 const mongoose	= require("mongoose");
 const Role      = require('./ModelRoles.js');
+const RolesEntityMaster = require('../RoleEntityMaster/Model.js');
 exports.create_role = (req,res,next)=>{
     console.log("in roles");
     if(req.body.fieldValue){
-
-    	Role.findOne({role:req.body.fieldValue})
+    	Role.findOne({role:req.body.fieldValue,rolesentityId:req.body.dropdownID})
     		.exec()
     		.then(data =>{
                 console.log("data",data)
@@ -16,6 +16,7 @@ exports.create_role = (req,res,next)=>{
     			}else{
     				const role = new Role({
                         _id         : new mongoose.Types.ObjectId(),
+                        rolesentityId: req.body.dropdownID,
                         role        : req.body.fieldValue,
                         createdBy   : req.body.user_ID,
                         // createdAt   : new Date(),
@@ -47,21 +48,78 @@ exports.create_role = (req,res,next)=>{
         res.status(200).json("Role is Madatory");
     }
 };
-exports.list_role = (req,res,next)=>{
-    Role.find()
-        .skip(req.body.startRange)
-        .limit(req.body.limitRange)
+
+
+// exports.list_role = (req,res,next)=>{
+//     Role.find()
+//         .exec()
+//         .then(data=>{
+//             res.status(200).json(data);
+//         })
+//         .catch(err =>{
+//             console.log(err);
+//             res.status(500).json({
+//                 error: err
+//             });
+//         });
+// };
+exports.fetchSingleDocument = (req, res, next) => {
+    RolesEntityMaster.findOne({ _id: req.params.fieldID })
+        .exec()
+        .then(data => {
+            res.status(200).json(data);
+        })
+        .catch(err => {
+            res.status(500).json({ error: err });
+        });
+};
+exports.entitylist_role = (req, res, next)=>{
+    console.log("req.params.rolecor for rolesss=>",req.params.rolecor);
+    Role.find({ rolesentityId: req.params.rolecor })
         .exec()
         .then(data=>{
+            console.log("data for rolesss=>",data);
+           
             res.status(200).json(data);
         })
         .catch(err =>{
-            console.log(err);
-            res.status(500).json({
-                error: err
-            });
-        });
+            res.status(500).json({ error: err });
+        }); 
 };
+exports.list_role = (req, res, next)=>{
+    Role.aggregate([
+        {
+        $lookup:
+            {
+                from: "rolesentitymasters",
+                localField: "rolesentityId",
+                foreignField: "_id",
+                as: "rolesEntityDetails"
+            }
+        },
+        { "$unwind": "$rolesEntityDetails" },
+        {$addFields: { rolesentity : "$rolesEntityDetails.rolesentity"}}
+    ])
+        
+        .exec()
+        .then(data=>{
+            // console.log("data =>",data);
+            var alldata = data.map((a, i)=>{
+                    console.log("a =>",a);
+                    return {
+                        "_id"                : a._id,
+                        "rolesentity"        : a.rolesentity,
+                        "role"               : a.role,
+                        "rolesentityId"   : a.rolesentityId  
+                    }
+            })
+            res.status(200).json(alldata);
+        })
+        .catch(err =>{
+            res.status(500).json({ error: err });
+        }); 
+};
+
 exports.detail_role = (req,res,next)=>{
     Role.findOne({_id:req.params.ID})
         .exec()
@@ -95,7 +153,8 @@ exports.update_role = (req,res,next)=>{
                                 { _id:req.body.fieldID},  
                                 {
                                     $set:{
-                                        "role" : req.body.fieldValue
+                                        "role" : req.body.fieldValue,
+                                        'rolesentityId': req.body.dropdownID,
                                     }
                                 }
                             )

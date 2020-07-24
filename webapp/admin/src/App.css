@@ -48,3 +48,8 @@
   background-color: #eee;
   height:auto;
 }
+
+.hinput30{
+      height: 30px !important;
+    margin: 5px 0px;
+}

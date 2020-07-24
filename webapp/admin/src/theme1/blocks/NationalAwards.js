@@ -10,8 +10,8 @@ export default class NationalAwards extends Component{
           blocks: {
             "blockTitle": "<b>NATIONAL</b> AWARDS",
             
-            "blockSubTitle": "The Company Of The Year 2018",
-            "blockDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a.",
+            "blockSubTitle": "We are passionate about our work",
+            "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
             "bgImage": "/images/ecom11.png",
@@ -19,17 +19,12 @@ export default class NationalAwards extends Component{
             "repeatedBlocks": [
                                 
                                 { 
-                                     Image: "/images/41.png"
-                                },
-                                { 
-                                  Image: "/images/40.png"
-                             },
-                             { 
-                              Image: "/images/42.png"
-                         },
-                         { 
-                          Image: "/images/43.png"
-                         }
+                                    Title: "Sample 5", 
+                                    SubTitle: "", 
+                                    Image: "/images/4.png",
+                                    Link: "", 
+                                    Description: ""
+                                }
             ],
             "bgVideo"				: "",
             "fgVideo"				: "",
@@ -79,52 +74,6 @@ export default class NationalAwards extends Component{
                             <div className="nah1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
                    </div>
-                   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 narionalawardwrapp">
-                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 awardleftwrapp">
-                       <img src="/images/awardn.png" alt="awardn" className="awardIMG"/>
-
-                     </div>
-                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NATextwrapp">
-                      
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NAtextwrapp1">
-                        <div className="NAh1title" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
-                        <div className="NAhetitle"dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div> 
-
-                           <h3 className="NArmore">Read More </h3> <div className="NAarrow"><i className="fas fa-angle-double-right"></i></div>
-                     
-                      <div>
-                        {
-                          
-                          this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0
-                          ?
-                          this.state.blocks.repeatedBlocks.map((data,index)=>{
-                            return(
-                              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                              <img src={data.Image} alt="40" className="awaed1" /> 
-                             </div>
-                            )
-
-                          })
-                          :
-                          null
-                          
-                        }
-                          {/* <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                                <img src="/images/41.png" alt="40" className="awaed1" /> 
-                          </div>
-                          <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                              <img src="/images/40.png" alt="40" className="awaed1" /> 
-                          </div>
-                          <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                              <img src="/images/42.png" alt="40" className="awaed1" />
-                            </div> 
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                                  <img src="/images/43.png" alt="40" className="awaed1" />
-                            </div>  */}
-                      </div>
-                   </div>
-                 </div>
-              </div>
 
                 </div>
                 

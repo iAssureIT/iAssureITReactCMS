@@ -192,7 +192,7 @@ export default class ViewBlock_3 extends React.Component {
 		                                <h2 className="text-center"> All Blocks</h2>
 		                            </div>
 		                        </div>
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NOpadding">
 									{
 										this.state.ListOfBlocks && this.state.ListOfBlocks.length> 0
 										?

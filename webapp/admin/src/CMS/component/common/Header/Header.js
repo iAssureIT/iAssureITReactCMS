@@ -148,6 +148,7 @@ class Header extends React.Component {
                       <li><a href="/cms/select-new-block">Blocks</a></li>
                       <li className=""><a href="/cms/create-new-page">Pages</a></li>
                       <li><a href="/cms/blogs-form">Blogs</a></li>
+                      <li><a href="/cms/typemaster">Type Master</a></li>
                       {/*
                       <li className="dropdown">
                         <a className="dropdown-toggle" data-toggle="dropdown" href="#">Blogs Management

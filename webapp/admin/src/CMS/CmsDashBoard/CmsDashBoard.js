@@ -145,7 +145,7 @@ export default class CmsDashBoard extends React.Component {
 	                        						<div className="fontawBox col-lg-2 col-md-2 col-sm-4 col-xs-4 NOpadding">
 	                        							<i className="fa fa-plus  fs16"></i>   
 	                        						</div>
-	                        						<a href="/cms/select-new-page">
+	                        						<a href="/cms/create-new-page">
 	                        							<div className="col-lg-10 col-md-10 col-sm-8 col-xs-8 marAlltop7">Create New Page</div>
 	                        						</a>
 	                        					</div>

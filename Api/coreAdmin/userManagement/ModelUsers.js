@@ -11,9 +11,9 @@ const userSchema = mongoose.Schema({
 		resume: {
 			loginTokens:[
 				{
-					loginTimeStamp: Date,
-					logoutTimeStamp: Date,
-					ValidateTill: Date,
+					loginTimeStamp: {type:Date},
+					logoutTimeStamp: {type:Date},
+					ValidateTill: {type:Date},
 					hashedToken : String
 				}
 			]
@@ -34,10 +34,14 @@ const userSchema = mongoose.Schema({
 						mobileVerified			: Boolean,
 						email 					: String,
 						otpEmail	  			: String,
+						passwordreset	  		: Boolean,
 						otpMobile	  			: String,
 						emailVerified			: Boolean,
-						mobileVerified			: Boolean,
 						status					: String,
+						department				: String,
+						designation				: String,
+						city					: String,
+						states					: String,
 						createdOn 				: String,
 					},
 	roles       : [String],

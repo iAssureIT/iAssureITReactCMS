@@ -125,6 +125,16 @@ import Notfound from "../Notfound/Notfound.js"
 //=============== Broadcast System ================
 import BroadcastSystem from "../BroadcastSystem/BroadcastSystem.js";
 
+//=============== Patient Master ================
+import PatientMaster from '../../projectadmin/PatientMaster/PatientMaster.js';
+import PatientMasterList from '../../projectadmin/PatientMaster/PatientMasterList.js';
+import Appointment from '../../projectadmin/Appointments/Appointments.js';
+import AppointmentList from '../../projectadmin/Appointments/AppointmentList.js';
+import PatientLocation from '../../projectadmin/PatientMaster/PatientLocation.js';
+import EventManagement from '../../projectadmin/EventManagement/EventManagement.js';
+import AppointmentSlots from '../../projectadmin/Appointments/AppointmentSlots.js';
+
+
 
 
 class CoreLayout extends Component {
@@ -370,6 +380,26 @@ class CoreLayout extends Component {
 
                 {/* Broadcast-System */}
                 <Route path="/broadcast-system" exact strict component={BroadcastSystem} />
+
+                {/* ====================================== PatientMaster ==============================================*/}
+
+                <Route path="/patient/personal-info" exact strict component={PatientMaster} />
+                <Route path="/patient/edit/:patientId" exact strict component={PatientMaster} />
+                <Route path="/patient/allpatientlist" exact strict component={PatientMasterList} />
+                <Route path="/patients/location" exact strict component={PatientLocation} />
+
+                {/* ====================================== Appointment Manager ==============================================*/}
+
+                <Route path="/appointment/manager" exact strict component={Appointment} />
+                <Route path="/appointment/edit/:appointmentId" exact strict component={Appointment} />
+                <Route path="/appointment/appointmentlist" exact strict component={AppointmentList} />
+                <Route path="/appointment/slots/:appointmentId" exact strict component={AppointmentSlots} />
+                
+                 {/* ====================================== EventManagement ==============================================*/}
+
+                <Route path="/event/manager" exact strict component={EventManagement} />
+                <Route path="/events/edit/:eventId" exact strict component={EventManagement} />
+                <Route path="/events/all" exact strict component={AppointmentList} />
                 
             </Switch>
         );

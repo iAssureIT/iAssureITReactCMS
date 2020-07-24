@@ -3,7 +3,7 @@ const DocumentListMaster = require('./Model.js');
 const DocumentEntityMaster = require('../DocumentEntityMaster/Model.js');
 
 exports.insertDocumentListMaster = (req, res, next) => {
-
+    // console.log("Document Data = ", req.body);
     processData();
     async function processData(){
     var documents = await fetchDocumentList();
@@ -16,6 +16,7 @@ exports.insertDocumentListMaster = (req, res, next) => {
         if (documentName.length > 0) {
             res.status(200).json({ duplicated : true });
         }else{
+                // console.log("No Data");
                 const documentListMaster = new DocumentListMaster({
                     _id: new mongoose.Types.ObjectId(),
                     documententityId: req.body.dropdownID,
@@ -55,7 +56,7 @@ var fetchDocumentList = async (req,res,next)=>{
         .then(data=>{
             console.log("data =>",data);
             var alldata = data.map((a, i)=>{
-                    console.log("a =>",a);
+                    // console.log("a =>",a);
                     return {
                         "_id"                : a._id,
                         "documententity"     : a.documententity,
@@ -64,9 +65,11 @@ var fetchDocumentList = async (req,res,next)=>{
                     }
             })
             resolve( data )
+            // console.log("data =>",data);
         })
         .catch(err =>{
             res.status(500).json({ error: err });
+            console.log("data Error=>",err);;
         }); 
     });
 };
@@ -211,9 +214,9 @@ exports.fetchDocumentList = (req, res, next)=>{
         .limit(req.body.limitRange)
         .exec()
         .then(data=>{
-            console.log("data =>",data);
+            // console.log("data =>",data);
             var alldata = data.map((a, i)=>{
-                    console.log("a =>",a);
+                    // console.log("a =>",a);
                     return {
                         "_id"                : a._id,
                         "documententity"     : a.documententity,
@@ -242,17 +245,17 @@ exports.getDocumentList = (req, res, next) => {
 };
 
 exports.getDriverData = (req, res, next) => {
-    console.log("req.body.entityname==>",req.params.entityname);
+    // console.log("req.body.entityname==>",req.params.entityname);
     DocumentEntityMaster.find({documententity : req.params.entityname})
         .sort({ createdAt: -1 })
         .exec()
         .then(data => {
-            console.log("driver data==>",data);
+            // console.log("driver data==>",data);
             DocumentListMaster.find({documententityId:data[0]._id})
                     .sort({ createdAt: -1 })
                     .exec()
                     .then(driverdata => {
-                        console.log("driver data in list ==>",driverdata);
+                        // console.log("driver data in list ==>",driverdata);
                         res.status(200).json(driverdata);
                     })
                     .catch(err => {
@@ -276,7 +279,7 @@ exports.fetchSingleDocumentList = (req, res, next) => {
 
 exports.updateDocumentList = (req, res, next) => {
     
-    console.log("req.params.fieldID==>",req.body.fieldID)
+    // console.log("req.params.fieldID==>",req.body.fieldID)
     DocumentListMaster.updateOne(
         { _id: req.body.fieldID },
         {
@@ -288,7 +291,7 @@ exports.updateDocumentList = (req, res, next) => {
     )
         .exec()
         .then(data => {
-            console.log("reqdata==>",data)
+            // console.log("reqdata==>",data)
             if (data.nModified == 1) {
                 DocumentListMaster.updateOne(
                     { _id: req.body.fieldID },

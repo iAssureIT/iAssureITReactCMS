@@ -41,6 +41,20 @@ exports.list_notification = (req,res,next)=>{
             });
         });
 }
+exports.alllist_notification = (req,res,next)=>{
+    Notifications.find({toUserId:req.params.userID})
+        .sort({createdAt : -1})
+        .exec()
+        .then(data=>{
+            res.status(200).json(data);
+        })
+        .catch(err =>{
+            console.log(err);
+            res.status(500).json({
+                error: err
+            });
+        });
+}
 
 exports.detail_notification = (req,res,next)=>{
     Notifications.findOne({_id:req.params.notification_ID})

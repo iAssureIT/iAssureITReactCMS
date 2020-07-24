@@ -77,15 +77,12 @@
   margin-top: 50px;
 }
 .bell_Icon{
-  font-size: 15px;
-    /* font-weight: bold; */
-    /*padding-top: 12px;*/
-    /*padding-bottom: 12px;*/
-    color: #fff;
-    /* overflow: hidden; */
-    /* text-overflow: ellipsis; */
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #aaa;
     cursor: pointer;
-    padding-left:5px;
+    /* padding-left:5px; */
 }
 .logoutDiv{
   margin-bottom: 35px;
@@ -104,9 +101,9 @@
   z-index: 5;
   right: 0;
   height: 50px;
-  background-color: #3c8dbc;
+  background-color: #f8f8f8;
   transition: all .8s;
-  box-shadow: 0 10px 14px rgba(92,141,255,.2);
+  /* box-shadow: 0 10px 14px rgba(92,141,255,.2); */
   transition-duration: 0.4s;
 }
 
@@ -134,7 +131,7 @@
 .headicon{
     font-size: 14px;
     padding-top: 18px;
-    color: #fff;
+    color: #aaa;
     cursor: pointer;
 }
 .dropbtn {
@@ -188,6 +185,8 @@
 }
 .padd0{
   padding: 0px;
+  margin-bottom: 0px;
+  height: 50px;
 }
 .marTop{
   margin-top: 16px;
@@ -346,6 +345,9 @@ padding: 5px 5px !important;
   margin-top: 11px;
   color: #333;
  }
+ .fa-bell:hover{
+   color: #333;
+ }
 .notification .badge {
   position: absolute;
   top: 5px;
@@ -408,9 +410,6 @@ padding: 5px 5px !important;
   padding-top: 10px;
   color: #fff;
 }
-.circleBorder{
-
-}
 .user-closernoti{
   color: #0c0c0c;
   font-weight: 600;
@@ -440,7 +439,8 @@ padding: 5px 5px !important;
   width:25px;
 }
 .onHoverEffect:hover{
-  background-color: #367EA8 !important;
+  background-color: #fefefe !important;
+  color: #222;
 
 }
 @media only screen and (width: 1400px) {
@@ -534,3 +534,62 @@ padding: 5px 5px !important;
 }
 
 
+.headerbgcolor{
+  background-color: #337ab7;
+}
+
+.clrwhtbgtp ul li a{
+  color: #fff;
+  background-color: transparent;
+}
+.whtclrHeaderBrand{
+  color: #fff;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+      color: #333;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 105px !important;
+    height: 65px;
+    left: 0px;
+    top:48px;
+    text-align: center;
+    box-shadow: none !important;
+    z-index: 1;
+    /*padding: 15px;*/
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #1b1a1a;
+}
+.dropbtn:hover .dropdown-content{
+      display: block;
+}
+.dropdown-content li a{
+  color: #333 !important;
+  text-align: center!important;
+  margin:5px;
+  padding: 15px !important;
+}
+#blogbtnid{
+  background: transparent !important;
+  /*color: #fff;*/
+  border: none;
+}
+
+#blogbtnidA :hover a{
+  /*background: transparent !important;*/
+  color: #333;
+}
+.dpdnBoxLi{
+  height: 28px;
+  padding-top: 5px;
+}
+.dpdnBoxLi:hover{
+  background-color: #ddd;
+}

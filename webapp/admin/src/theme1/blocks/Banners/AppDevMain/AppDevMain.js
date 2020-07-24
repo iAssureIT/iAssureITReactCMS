@@ -1,6 +1,7 @@
 import React from 'react';
 import './AppDevMain.css';
 import axios from 'axios';
+import $ 			from 'jquery';
 
 
 // import OwlCarousel from 'react-owl-carousel';
@@ -64,6 +65,13 @@ export default class AppDevMain extends React.Component {
       }
     componentDidMount(){
     /*console.log("==>",this.props.block_id);*/
+    $(document).ready(function(){
+			
+
+			  $("#cItemHBpage div:nth-child(1)").addClass("active");
+
+
+		});
               {
                  axios
                     .get('/api/blocks/get/'+this.props.block_id)
@@ -88,106 +96,55 @@ export default class AppDevMain extends React.Component {
 		return (
 			<div className="carouselBannerwrapper">
 				<div className="b1banerheight">
-				  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 logoBox">
-						<img className="logoIMG img-responsive"src="./images/Logo.png" alt="logo"/>  
-					</div>
-					<div id="demo" className="carousel slide" data-ride="carousel">
-				
+				  	
+					
 
-				{/* <!-- Wrapper for slides --> */}
-				<div className="carousel-inner">
-					<div className="item active">
-						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
-							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
-								<div className="mtop100">
-									<div className="b1h1Title">APPLICATION</div><br/>
-									<div className="b1h2Title">DEVELOPMENT &MAINTENANCE</div><br/>
-									<div className="b1h3Title">Highly Professional,Reliable & Affordable Cost.</div>
+					<div id="myCarousel" className="carousel " data-ride="carousel"  data-interval="false" data-pause="hover">
+									
+							  		<div className="carousel-inner" id="cItemHBpage">
+									{
+									  	this.state.blocks.repeatedBlocks.map((result, index)=>{
+									  	
+									  	return(
+											    <div className="item " key={index}>
+											      {/*<img src="la.jpg" alt="Los Angeles"/>*/}
+											      
+									    			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
+														<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
+															<div className="mtop100">
+																<div className="b1h1Title"  dangerouslySetInnerHTML={ { __html:result.Title}}></div><br/>
+																<div className="b1h2Title"  dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div><br/>
+																<div className="b1h3Title"  dangerouslySetInnerHTML={ { __html:result.Description}}></div>
+															</div>
+														</div>
+														<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
+															<img className="b1bannerImg img-responsive" src={result.Image} alt="Bannerpng"/>
+
+
+														</div>
+												
+													</div>
+											    </div>
+									    	)
+											})
+									}	
+									</div>
+									<a class="left carousel-control carousel-control-prev" href="#myCarousel" data-slide="prev">
+										<div className="glyphicon glyphicon-chevron-left"></div>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control carousel-control-next" href="#myCarousel" data-slide="next">
+									   <div className="glyphicon glyphicon-chevron-right"></div>
+										<span class="sr-only">Next</span>
+									</a>
 								</div>
-							</div>
-							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
-							<img className="b1bannerImg img-responsive" src="./images/b1graphic.png" alt="Bannerpng"/>
-
-
-							</div>
-					
-					</div>
-					</div>
-
-					<div className="item">
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
-					    <div className="mtop180">
-						   <div className="h1TitleMobile">MOBILE</div><br/>
-							<div className="h2TitleMobile">SOLUTIONS</div><br/>
-							<div className="h3TitleMobile">We Build Robust & Scalable Mobile Applications.</div>
-						</div>
-					</div>
-						<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
-						<img className="b1bannerImg2 img-responsive" src="./images/2.png" alt="Bannerpng"/>
-
-
-					
-					
-						</div>
-					</div>
-					</div>
-
-					<div className="item">
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
-					    <div className="mtop100">
-							<div className="b4h1TitleB4">STAFF</div><br/>
-							<div className="b4h2TitleB4">AUGMENTATAION</div><br/>
-						</div>
-
-					</div>
-					
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
-					<img className="b1bannerImg3 img-responsive" src="./images/Graphic4.png" alt="Bannerpng"/>
-
-					</div>
-
-					
-					</div>
-					</div>
-					<div className="item">
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 carouselbannerwrapp">
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
-					   <div className="mtop100">
-						  <div className="b5h1TitleB5">CUSTOMISED ECOMMERCE </div><br/>
-							<div className="b5h2TitleB5">SOLUTIONS</div><br/>
-						</div>
-						
-					</div>
-					
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
-					<img className="b1bannerImg4 img-responsive" src="./images/Graphic_5.png" alt="Bannerpng"/>
-
-					</div>
-
-					
-					</div>
-					</div>
-				</div>
-
-				{/* <!-- Left and right controls --> */}
-				<a class="left carousel-control carousel-control-prev" href="#demo" data-slide="prev">
-					<div className="glyphicon glyphicon-chevron-left"></div>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control carousel-control-next" href="#demo" data-slide="next">
-				   <div className="glyphicon glyphicon-chevron-right"></div>
-					<span class="sr-only">Next</span>
-				</a>
-				</div>
 
 									
 										
 
 					 
 				</div>
-				 </div>				
+			</div>				
 			
 			
 		);

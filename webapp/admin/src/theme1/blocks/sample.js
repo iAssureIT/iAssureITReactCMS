@@ -40,13 +40,13 @@ export default class HomepageBanner extends React.Component {
   }
 componentDidMount(){
 		/*console.log("==>",this.props.block_id);*/
-		// $(document).ready(function(){
+		$(document).ready(function(){
 			
 
-		// 	  $("#cItemHBpage div:nth-child(1)").addClass("active");
+			  $("#cItemHBpage div:nth-child(1)").addClass("active");
 
 
-		// });
+		});
           {
              axios
                 .get('/api/blocks/get/'+this.props.block_id)

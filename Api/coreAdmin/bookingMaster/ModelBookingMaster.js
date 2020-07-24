@@ -7,7 +7,10 @@ const bookingMasterSchema = mongoose.Schema({
     contractId                  : { type: mongoose.Schema.Types.ObjectId, ref: 'contracts' },
     bookingId                   : Number,
     tripType                    : String,
+    fileName                    : String,
+    pickupFrom                  : String,
     from                        : {
+                                        address1     : String,
                                         address     : String,
                                         area        : String,
                                         city        : String,
@@ -19,6 +22,7 @@ const bookingMasterSchema = mongoose.Schema({
                                         longitude   : Number,
                                 },
     to                          : {
+                                        address1     : String,
                                         address     : String,
                                         area        : String,
                                         city        : String,
@@ -35,6 +39,7 @@ const bookingMasterSchema = mongoose.Schema({
     returnTime                  : String,
     specialInstruction          : String,
     purposeOfTravel             : String,
+    purposeOfTravelOther        : String,
     reasonForSelectingVehicle   : String,
     signature                   : String,
     vehicleCategoryId           : { type: mongoose.Schema.Types.ObjectId, ref: 'categorymasters' },
@@ -55,6 +60,7 @@ const bookingMasterSchema = mongoose.Schema({
     approvalRequired            : String,
     estimatedCost               : Number,
     intermediateStops           : [{
+                                    address1     : String,
                                     address     : String,
                                     area        : String,
                                     city        : String,
@@ -64,6 +70,7 @@ const bookingMasterSchema = mongoose.Schema({
                                     latitude    : String,
                                     longitude   : String    
                                 }],
+    allocatedToDriver           : { type: mongoose.Schema.Types.ObjectId, ref: 'personmasters' },                            
     status                      : [{
                                     value               : String,
                                     statusBy            : { type: mongoose.Schema.Types.ObjectId, ref: 'users' },
@@ -87,6 +94,10 @@ const bookingMasterSchema = mongoose.Schema({
                                     stop                : Boolean,
                                 }],
     tripExpenses                : Array,
+    ratingToPassenger           : {
+                                    rating : Number,
+                                    remark : String    
+                                },
     createdBy                   : { type: mongoose.Schema.Types.ObjectId, ref: 'users' },
     createdAt                   : Date,
     updateLog                   : [{

@@ -1,0 +1,759 @@
+.carouselBannerwrapper{
+    height: 1040px;
+     background-color: #FFFFFF;    
+}
+.b1banerheight{
+	 height: 1040px; 
+	background-image: url("/images/b1background.png");
+    background-size: 100% 100%;
+}
+.logoBox{
+	position: absolute;
+
+}
+.logoIMG{
+	position: absolute;
+    top: 45px;
+    left: 100px !important;
+    height: 75px !important;
+    width: 125px !important;
+    cursor: pointer;
+}
+ .carouselbannerwrapp{
+     height: 470px;
+     margin-top: 137px;
+ }
+ .slide1{
+    height: 465px;
+     
+    
+   }
+   .mtop100{
+    position: absolute; 
+    color: #fff;
+    }
+   .b1h1Title{
+     
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 64px!important;
+    margin-top: -67px;
+}
+.b1h2Title{    
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin-left: 62px!important;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: -11px;
+    font-weight: bold;
+}
+.b1h3Title{
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 64px!important;
+    margin-top: -11px;
+
+    
+}
+.mtop180 {
+    margin-top: 180px;
+    color: #fff;
+}
+.h1TitleMobile{
+	font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 65px!important;
+     margin-top: -67px;  
+
+}
+.h2TitleMobile{
+	font-size: 80px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 58px!important;
+    margin-top: -25px; 
+    font-weight: bold;
+
+
+}
+.h3TitleMobile{
+	font-size: 24px;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 64px!important;
+    margin-top: -16px;
+}
+.b4h1TitleB4{
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 1px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 64px!important;
+    margin-top: -67px;
+
+}
+.b4h2TitleB4{
+    font-size: 80px;
+     line-height: 1; 
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 50px!important;
+    margin-top: -20px;
+
+}
+.b5h1TitleB5{
+    font-size: 40px;
+     letter-spacing: 1px;
+     font-family: 'Roboto Condensed', sans-serif;
+     margin-left: 64px!important;
+     margin-top: -67px; 
+ 
+ }
+ .b5h2TitleB5{
+     font-size: 80px;
+     line-height: 1;
+     letter-spacing: 1px;
+     font-weight: bold;
+     font-family: 'Roboto Condensed', sans-serif;
+     margin-left: 58px!important;
+     margin-top: -20px;
+ 
+ }
+ .appIMGwrapp{
+     height: 300px;
+     /* background-color:red;    */
+     margin-top: 54px;
+ }
+ .b1bannerImg{
+    height: 330px; 
+    margin-left: 12%; 
+    
+   
+     
+    
+}
+.b1bannerImg2{
+    height: 448px;
+     margin-left: 12%;
+     margin-top: -6%;
+       
+    
+} 
+ .b1bannerImg3{
+    height: 345px;
+    margin-left: 24%;
+    margin-top: -6%;
+
+    
+     
+ }  
+.b1bannerImg4{
+     height: 370px; 
+     margin-left: 12%;
+     margin-top: -6%;
+ 
+      
+}
+.b1bannerImg5{
+     height: 408px; 
+    margin-top: 114px; 
+     width: 90% !important; 
+     background-position: 100% 100%; 
+     margin-left: 10px; 
+ }
+ 
+ .carousel-control-prev{
+
+    height: 50px!important;
+    width: 50px;
+    background-color: black!important;
+    margin-top: 314px;
+    margin-left: 10px;
+    border-radius: 50%; 
+ } 
+ .carousel-control-next{
+    height: 50px!important;
+    width: 50px;
+    background-color: black!important;
+    margin-top: 314px;
+     margin-right: 10px;
+     border-radius: 50%; 
+
+
+ }
+ .glyphicon-chevron-left{
+     margin-top: -15px!important;
+     margin-left: -15px!important;
+    } 
+ .glyphicon-chevron-right{
+    margin-top: -15px!important;
+    margin-right: -15px!important;
+   
+
+ }
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================Media Query======================================================== */
+
+/* @media (min-width: 992px) { 
+
+ } */
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+     /* .logoimg{
+        
+        position: absolute;
+        top: 45px;
+        left: -400px!important; 
+       }  */
+
+       .b1h1Title{
+        margin-left: 119px !important;
+        font-size: 52px;
+        margin-top: -168px; 
+        
+    }
+    .b1h2Title{    
+        font-size:60px;
+        margin-left: 113px!important;
+         margin-top: -16px;  
+    }
+    .b1h00{
+        font-size: 60px;
+        margin-left: 110px!important;
+         margin-top: 6px; 
+    }
+    .b1h3Title{
+        font-size: 33px;
+        margin-left: 113px!important;
+        margin-top: -14px;
+        
+     }
+    .h1TitleMobile{
+    font-size: 40px;
+    margin-left: 110px!important;
+    margin-top: -168px; 
+}
+   .h2TitleMobile{
+    font-size: 80px;
+    margin-left: 102px!important;
+   }
+
+   .h3TitleMobile{
+	font-size: 28px;
+    margin-left: 103px!important;
+    
+    }
+
+    .b1bannerImg2{
+        height: 260px!important;
+        margin-top: -165px!important; 
+        width: 49% !important; 
+        margin-left: 198px !important;
+    }
+    .b4h1TitleB4{
+        font-size: 40px;
+        margin-left: 119px !important;
+        margin-top: -168px; 
+    }
+    .b4h2TitleB4{
+        font-size: 60px;
+        margin-left: 110px!important;
+    }
+    .b1bannerImg4{
+    height: 252px; 
+    margin-top: -230px; 
+    margin-left: 258px;
+    width: 36%!important;
+       
+   }
+   .b5h1TitleB5{
+    font-size: 40px;
+     margin-left: 116px!important;
+     margin-top: -168px; 
+ 
+ }
+ .b5h2TitleB5{
+    font-size: 80px;
+    margin-left: 112px!important;
+    margin-top: -20px;
+
+}
+    .b1bannerImg5{
+    height: 350px;  
+    margin-top:-36%;
+     width: 58%; 
+      margin-left: 65px;
+
+
+}     
+/* .b1bannerImg5{
+    height: 158px;  
+    margin-top:-228px!important;
+} */
+    
+ }
+/* ================================================Media query===================================== */
+ @media (max-width: 767px) {
+    .customSpan {
+        font-size: 40px;
+        cursor: pointer;
+        position: fixed;
+        top: 50px;
+        right: 19px;
+        color: #fff;
+        z-index: 9;
+    }
+    
+     .logoimg{
+        
+            position: absolute;
+            top: 45px;
+            left: -10px !important; 
+           
+    } 
+    .b1h1Title{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    } 
+
+    .b1h2Title{    
+        font-size: 29px;
+        margin-left: 36px!important;
+        margin-top: -16px; 
+    }
+    .logoIMG{
+        /* position: absolute; */
+        top: 31px;
+        left: 10px !important;
+       
+    }
+    .b1h00{
+        font-size: 29px;
+        margin-left: 35px!important;
+         margin-top: 6px; 
+    }
+    .b1h3Title{
+        font-size: 20px;
+        margin-left: 34px!important;
+        margin-top: -14px;
+        
+     }
+     /* .b1bannerImg{
+         height: 160px; 
+         margin-top: -182px; 
+         margin-left: 52px;
+          
+    } */
+    .homecarousel .owl-nav button.owl-prev{
+        top: -116px;
+        margin-left: -19px;
+
+    }
+    .homecarousel .owl-nav  button.owl-next{
+        top: -116px;
+        margin-right: -13px;
+    }
+
+    .h1TitleMobile{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    }
+    .h2TitleMobile{
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px;   
+    }
+    .h3TitleMobile{
+        font-size: 19px;
+        margin-left: 36px!important;
+        margin-top: -14px;
+    
+    }
+    .b1bannerImg2{
+     height: 200px;  
+        margin-top:-219px!important;
+        position: absolute; 
+         width: 60%!important; 
+          margin-left: 52px; 
+    }
+
+    .b4h1TitleB4{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    } 
+    .b4h2TitleB4{
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px; 
+
+    }
+    .b1bannerImg4{
+        height: 176px;  
+        margin-top:-252px!important;
+        position: absolute; 
+         width: 50%!important; 
+          margin-left: 97px;
+
+    }
+    .b5h1TitleB5{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+
+    }
+    .b5h2TitleB5{
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px;
+
+    }
+    .b1bannerImg5{
+        height: 158px;  
+        margin-top:-228px!important;
+         width: 58%!important; 
+          margin-left: 65px;
+
+
+    }
+
+    }
+    @media(max-width:991){
+        
+    }
+/* =================================================Media query=============================================== */
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================Media Query======================================================== */
+
+/* @media (min-width: 992px) { 
+
+ } */
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+     /* .logoimg{
+        
+        position: absolute;
+        top: 45px;
+        left: -400px!important; 
+       }  */
+
+       .b1h1Title{
+        margin-left: 119px !important;
+        font-size: 52px;
+        margin-top: -168px; 
+        
+    }
+    .b1h2Title{    
+        font-size:60px;
+        margin-left: 113px!important;
+         margin-top: -16px;  
+    }
+    .b1h00{
+        font-size: 60px;
+        margin-left: 110px!important;
+         margin-top: 6px; 
+    }
+    .b1h3Title{
+        font-size: 33px;
+        margin-left: 113px!important;
+        margin-top: -14px;
+        
+     }
+        .h1TitleMobile{
+    font-size: 40px;
+    margin-left: 110px!important;
+    margin-top: -168px; 
+}
+   .h2TitleMobile{
+    font-size: 80px;
+    margin-left: 102px!important;
+   }
+
+   .h3TitleMobile{
+	font-size: 28px;
+    margin-left: 103px!important;
+    
+    }
+
+    .b1bannerImg2{
+        height: 260px!important;
+        margin-top: -165px!important; 
+        width: 49% !important; 
+        margin-left: 198px !important;
+    }
+    .b4h1TitleB4{
+        font-size: 40px;
+        margin-left: 119px !important;
+        margin-top: -168px; 
+    }
+    .b4h2TitleB4{
+        font-size: 60px;
+        margin-left: 110px!important;
+    }
+    .b1bannerImg4{
+    height: 252px; 
+    margin-top: -230px; 
+    margin-left: 258px;
+    width: 36%!important;
+       
+   }
+   .b5h1TitleB5{
+    font-size: 40px;
+     margin-left: 116px!important;
+     margin-top: -168px; 
+ 
+ }
+ .b5h2TitleB5{
+    font-size: 80px;
+    margin-left: 112px!important;
+    margin-top: -20px;
+
+}
+    .b1bannerImg5{
+    height: 350px;  
+    margin-top:-36%;
+     width: 58%; 
+      margin-left: 65px;
+
+
+}     
+/* .b1bannerImg5{
+    height: 158px;  
+    margin-top:-228px!important;
+} */
+    
+ }
+/* ================================================Media query===================================== */
+ @media (max-width: 767px) {
+    .customSpan {
+        font-size: 40px;
+        cursor: pointer;
+        position: fixed;
+        top: 50px;
+        right: 19px;
+        color: #fff;
+        z-index: 9;
+    }
+    
+     .logoimg{
+        
+            position: absolute;
+            top: 45px;
+            left: -10px !important; 
+           
+    } 
+    .b1h1Title{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    } 
+
+    .b1h2Title{    
+        font-size: 29px;
+        margin-left: 36px!important;
+        margin-top: -16px; 
+    }
+    .logoIMG{
+        /* position: absolute; */
+        top: 31px;
+        left: 10px !important;
+       
+    }
+    .b1h00{
+        font-size: 29px;
+        margin-left: 35px!important;
+         margin-top: 6px; 
+    }
+    .b1h3Title{
+        font-size: 20px;
+        margin-left: 34px!important;
+        margin-top: -14px;
+        
+     }
+     .b1bannerImg{
+         height: 160px; 
+         margin-top: -182px; 
+         margin-left: 52px;
+          
+    }
+    .homecarousel .owl-nav button.owl-prev{
+        top: -116px;
+        margin-left: -19px;
+
+    }
+    .homecarousel .owl-nav  button.owl-next{
+        top: -116px;
+        margin-right: -13px;
+    }
+
+    .h1TitleMobile{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    }
+    .h2TitleMobile{
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px;   
+    }
+    .h3TitleMobile{
+        font-size: 19px;
+        margin-left: 36px!important;
+        margin-top: -14px;
+    
+    }
+    .b1bannerImg2{
+     height: 200px;  
+        margin-top:-219px!important;
+        position: absolute; 
+         width: 60%!important; 
+          margin-left: 52px; 
+    }
+
+    .b4h1TitleB4{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+    } 
+    .b4h2TitleB4{
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px; 
+
+    }
+    .b1bannerImg4{
+        height: 176px;  
+        margin-top:-252px!important;
+        position: absolute; 
+         width: 50%!important; 
+          margin-left: 97px;
+
+    }
+    .b5h1TitleB5{
+        margin-left: 38px !important;
+        font-size: 30px;
+        margin-top: -178px;
+
+    }
+    .b5h2TitleB5{
+        font-size: 29px;
+        margin-left: 36px!important;
+         margin-top: -16px;
+
+    }
+    .b1bannerImg5{
+        height: 158px;  
+        margin-top:-228px!important;
+         width: 58%!important; 
+          margin-left: 65px;
+
+
+    }
+
+    }
+    @media(max-width:991){
+        
+    }
+/* =================================================Media query=============================================== */
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

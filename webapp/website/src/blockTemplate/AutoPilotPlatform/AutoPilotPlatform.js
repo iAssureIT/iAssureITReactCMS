@@ -40,7 +40,7 @@ export default class AutoPilotPlatform extends Component{
     /*console.log("==>",this.props.block_id);*/
               {
                  axios
-                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .get('/api/blocks/get/'+this.props.block_id)
                     .then((response)=>{
                         if(response.data){
                             // console.log("ListofServices =",response.data);

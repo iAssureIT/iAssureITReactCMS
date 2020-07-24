@@ -1,0 +1,209 @@
+ .madalbtn{
+	position: fixed;
+	right: 0px;
+    z-index: 10;
+    margin-top: 180px;
+    margin-right: 0px;
+} 
+
+.btnbg{
+    background-image: url(/images/contact.png);
+    width: 115px;
+    background-color:#f1f1f1;
+    box-shadow: 1px 1px 10px 0px #f1f1f1;
+    border-radius: 40px 0px 0px 40px !important;
+    height: 55px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.btnbg:focus { 
+     outline: 0px auto -webkit-focus-ring-color;   
+      outline-offset: -2px;  
+ } 
+ 
+ .modalhight{
+     /* width:500px!important; */
+     top: 100px; 
+
+ }
+ .modal-header00{
+     border-bottom: none;
+ }
+ .modal-footer00{
+     border-top: none;
+ }
+ 
+ 
+ 
+/* =============================================contactus page css=============== */
+   
+.connectwrapper{
+    height: 50px;
+    /* background-color: red; */
+    margin-top: 30px;
+    margin-left: -10px;
+
+    
+
+}
+.hiconnecttitle{
+    font-size: 18px;
+    color: #555555;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ .bgcolor00{
+    
+    background-color: #e3f2fd!important;
+} 
+.bgdiv1{
+    margin-top: 25px;
+} 
+  
+.button1{
+    background-color: #337ab7;
+    margin-left: 2px;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.bgimage1{
+    height: 100px;
+    width: 150px;
+    position: absolute;
+     margin-left: -234px;
+    margin-top:-2px; 
+}
+.bgimage2{
+    height: 223px;
+    width: 247px;
+     /* background-color: brown;   */
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -124px;
+    
+
+
+}
+.modelimg2{
+    margin-left: 49px;
+}
+.bgimage3{
+    height: 450px;
+    width: 217px;
+     /* background-color: brown;     */
+    position: absolute;
+    margin-left: -180px;
+    margin-top: 28px;
+   
+
+}
+.modelimg3{
+    height: 439px;
+    margin-top: 16px; 
+    
+}
+.bgimage4{
+    height: 206px;
+    width: 107px;
+    /* background-color: brown;      */
+    position: absolute;
+    margin-left: -85px;
+    margin-top: 359px;
+
+}
+.modelimg4{
+    height: 150px;
+    
+    
+}
+.bgimage5{
+    height: 110px;
+    width: 107px;
+     /* background-color: brown;       */
+    position: absolute;
+    /* margin-left: 628px; */
+    margin-left: 270px;
+    margin-top: -83px;
+}
+.modelimg5{
+    height: 85px;
+}
+
+.bgimage6{
+    height: 162px;
+    /* width: 42%; */
+    /* background-color: brown;        */
+    position: absolute;
+    /* margin-left: 241px;  */
+    margin-left: 363px;
+     margin-top: -141px; 
+}
+.modelimg6{
+    height: 169px;
+   
+}
+.bgimage7{
+    height: 131px;
+    width: 150px;
+    /* background-color: brown; */
+    position: absolute;
+    margin-left: 631px;
+    margin-top: -42px
+
+
+}
+.bgimage8{
+    height: 290px;
+     /* background-color: brown;  */
+    position: absolute;
+     margin-left: 591px;
+    margin-top: 212px 
+
+
+}
+.bgimage9{
+    height: 450px;
+    width: 217px;
+     /* background-color: brown;      */
+    position: absolute;
+    margin-left: 458px;
+     margin-top: -41px; 
+    
+    
+
+}
+.modelimg9{
+    height: 456px;
+    margin-top: 5px;
+    margin-left: -46
+}
+.bgimage10{
+     
+        height: 138px;
+        /* width: 217px; */
+        /* background-color: brown; */
+        position: absolute;
+        margin-left: 410px;
+        margin-top: 392px
+}
+.modelimg10{
+    height: 129px;
+    margin-top: -7px;
+}
+
+.bgimage11{
+    height: 188px;
+    /* background-color: brown;  */
+    position: absolute;
+    margin-left: 112px;
+    margin-top: -127px
+
+    
+}
+
+
+
+

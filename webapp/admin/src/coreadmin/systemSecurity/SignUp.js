@@ -124,12 +124,13 @@ class SignUp extends Component {
 
 			var passwordVar = this.refs.signupPassword.value;
 			var signupConfirmPasswordVar = this.refs.signupConfirmPassword.value;
+				console.log("auth",auth);
 
 				if (passwordVar === signupConfirmPasswordVar) {
 					return (passwordVar.length >= 6) ?
 						(true,
 							document.getElementById("signUpBtn").innerHTML = 'Sign Up',
-							axios.post('/api/auth/post/signup/user/emailotp', auth)
+							axios.post('/api/auth/post/signup/user/otp', auth)
 							.then((response) => {
 								if(response.data.message === 'USER_CREATED'){
 									swal('Great, Information submitted successfully and OTP is sent to your registered Email.');

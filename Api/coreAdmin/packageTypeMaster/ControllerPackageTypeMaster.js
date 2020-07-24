@@ -73,6 +73,16 @@ exports.fetchSinglePackageType = (req, res, next)=>{
             res.status(500).json({ error: err });
         }); 
 };
+exports.fetchOnePackageType = (req, res, next)=>{
+    PackageTypeMaster.findOne({ _id: req.params.packageID })
+        .exec()
+        .then(data=>{
+           res.status(200).json(data);
+        })
+        .catch(err =>{
+            res.status(500).json({ error: err });
+        }); 
+};
 exports.searchPackageType = (req, res, next)=>{
     PackageTypeMaster.find({ packageType: { $regex : req.params.str ,$options: "i" }  })
         .exec()

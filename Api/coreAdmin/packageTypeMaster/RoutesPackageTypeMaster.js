@@ -11,7 +11,9 @@ router.get('/get/list', packageTypeMaster.getPackageTypes);
 
 router.get('/get/count', packageTypeMaster.countPackageTypes);
 
-router.get('/get/one/:fieldID', packageTypeMaster.fetchSinglePackageType);
+router.get('/get/one/:packageID', packageTypeMaster.fetchOnePackageType);
+
+// router.get('/get/one/:fieldID', packageTypeMaster.fetchSinglePackageType);
 
 router.get('/search/:str', packageTypeMaster.searchPackageType);
 

@@ -20,11 +20,14 @@ class CmsBlock extends Component {
             uploadedbackImage     : [],
             rBImage 			        : "",
             imgbackPath           : {},
-      			blockTitle 	          : "",
+      			ListOfPages 	          : "",
+            ListOfBlockTypes            : "",
+            blockTitle            : "",
       			blocksubTitle         : "",
       			blockBody		          : "",
       			componentName		      : "",
       			blockType			        : "",
+            pageType             : "",
       			buttonText		        : "Submit",
       			blockDescription   		: "",
       			repBlockContent   	  : "",
@@ -78,12 +81,13 @@ class CmsBlock extends Component {
   }
   handleChange(event){
 		event.preventDefault();
-      // console.log("handleChange===>in Componant===>",this.state.parsed);
+      // console.log("handleChange===>in Componant===>",this.refs.blockType.value);
 
     	this.setState({
        		"blockTitle"       : this.state.parsed.blockTitle ? this.refs.blockTitle.value : "",
 			    "blocksubTitle"    : this.state.parsed.blocksubTitle ? this.refs.blocksubTitle.value :"",
-			    "blockType"		     : this.state.parsed.blockType ? this.refs.blockType.value :"",
+			    // "blockType"		     : this.refs.blockType.value ,
+          "pageType"         : this.refs.pageType.value ,
 			    "componentName"		 : this.state.parsed.componentName,
 
 			// "blockBody"	 : this.refs.blockBody.value,
@@ -163,18 +167,19 @@ class CmsBlock extends Component {
   		blockSubTitle 		 : this.state.blocksubTitle,
   		blockDescription 	 : this.state.blockDescription,
   		blockComponentName : this.state.parsed.componentName,
-  		blockType 			   : this.state.blockType,
+  		// blockType 			   : this.state.blockType,
+      pageType           : this.state.pageType,
   		fgImage 			     : this.state.imgbPath ? this.state.imgbPath.path: "",
   		bgImage 			     : this.state.imgbackPath ? this.state.imgbackPath.path: "" ,
       bgVideo            : this.state.videobPath ? this.state.videobPath.path: "" ,
   		repeatedBlocks 		 : this.state.repetedGroup,				
 		};
 
-		// console.log("formValues=blocks>",formValues);
+		console.log("formValues=blocks>",formValues);
 		axios
 			.post('/api/blocks/post',formValues)
 		  	.then( (response)=> {
-		    // handle success
+		  
 		    	// console.log("data in block========",response.data);
           this.props.history.push("/cms/view-blocks");
 		    	swal("Thank you. Your Block is Created.");
@@ -186,7 +191,63 @@ class CmsBlock extends Component {
 		  	});
    		// console.log("formValues =>",formValues);	
 	}
+  getListOfPageType(){
+    axios
+      // .get('/api/pages/get/list')
+      .get('/api/typemaster/get/list')     
+      .then((response)=>{    
+        console.log("response",response.data);    
+              this.setState({
+                ListOfPages:response.data
+              },()=>{
+                // console.log("ListOfPageslll==ll",this.state.ListOfPages);
+              });
+        })
+        .catch(function (error) {
+        // handle error
+          console.log(error);
+        });
 
+  }
+/*    getListOfPageType(){
+    axios
+      .get('/api/typemaster/get/list')
+      .then((response)=>{    
+        // console.log("response",response.data);    
+              this.setState({
+                ListOfPageTypes:response.data
+              });
+        })
+        .catch(function (error) {
+        // handle error
+          console.log(error);
+        });
+
+  }*/
+  getListOfBlockType(){
+    axios
+      .get('/api/blocktypemaster/get/list')
+      .then((response)=>{    
+        // console.log("response",response.data);    
+              this.setState({
+                ListOfBlockTypes:response.data
+              });
+        })
+        .catch(function (error) {
+        // handle error
+          console.log(error);
+        });
+
+  }
+  selectpageType(event){
+    event.preventDefault();
+    this.setState({
+          
+      /*"cmspageDescription"      : this.refs.cmspageDescription.value,*/
+      "pagetype"            : this.refs.pagetype.value,
+      
+      });
+  }
   componentDidMount(){	
     var block_id= this.props.block_id;
     // console.log("zzzzz  block_id  zzzzzzz",block_id);	  
@@ -194,6 +255,8 @@ class CmsBlock extends Component {
     const parsed = queryString.parse(this.props.location.search);
     // console.log("parsed = ",parsed);
     this.getBlockData(block_id);
+    this.getListOfPageType();
+    this.getListOfBlockType();
     this.setState({ 
                     
         block_id              : block_id,
@@ -237,7 +300,8 @@ class CmsBlock extends Component {
                   blocksubTitle  : response.data.blockSubTitle,
                   // blockBody    : response.data.,
                   componentName  : response.data.blockComponentName,
-                  blockType      : response.data.blockType,
+                  // blockType      : response.data.blockType,
+                  pageType       : response.data.pageType,
                   fgImage        : response.data.fgImage,
                   bgImage        : response.data.bgImage,
                   bgVideo        : response.data.bgVideo,
@@ -266,7 +330,8 @@ class CmsBlock extends Component {
               			blocksubTitle    : response.data.blockSubTitle,
               			// blockBody		: response.data.,
               			componentName	   : response.data.blockComponentName,
-              			blockType			   : response.data.blockType,
+              			// blockType			   : response.data.blockType,
+                    pageType         : response.data.pageType,
               			fgImage 			   : response.data.fgImage,
               			bgImage 			   : response.data.bgImage,
               			bgVideo 			   : response.data.bgVideo,
@@ -284,7 +349,8 @@ class CmsBlock extends Component {
             blocksubTitle    : response.data.blockSubTitle,
             // blockBody    : response.data.,
             componentName    : response.data.blockComponentName,
-            blockType        : response.data.blockType,
+            // blockType        : response.data.blockType,
+            pageType         : response.data.pageType,
             fgImage          : response.data.fgImage,
             bgImage          : response.data.bgImage,
             bgVideo          : response.data.bgVideo,
@@ -309,16 +375,17 @@ class CmsBlock extends Component {
       });
   }
   UpdateBlockInfo(event){
-	    // console.log("in up");
+	    console.log("in up");
 			event.preventDefault();
   		var formValues = {
   			blockTitle 			   :  this.state.blockTitle, 	
   			blockSubTitle		   :  this.state.blocksubTitle, 	
   			blockDescription   :  this.state.blockDescription, 
-  			blockType			     :  this.state.blockType,
+  			// blockType			     :  this.state.blockType,
+        pageType           :  this.state.pageType,
   			blockComponentName :  this.state.componentName,		
         fgImage            :  this.state.imgbPath.path,
-        bgImage            :  this.state.bgImage,
+        bgImage            :  this.state.imgbackPath.path,
         repeatedBlocks     :  this.state.repetedGroup, 
 
   		};
@@ -743,11 +810,58 @@ class CmsBlock extends Component {
                             {/*<h1 className="ctext text-center">Create Block</h1>  */}   
                         </div>
                         <form className="newTemplateForm">  
-            							
+                          <div className="row"> 
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div className="form-group m3all" id="pageType">
+                                    <div class="form-group">
+                                      <label className="label-category lb666 labelform">Select Page type in which you add this block</label>
+                                      <select className="form-control hinput30" id="pageType"  value={this.state.pageType} ref="pageType" name="pageType"  onChange={this.handleChange.bind(this)}>
+                                            <option disabled={true} selected={true}>--Select Page type--</option>
+                                            { this.state.ListOfPages  && this.state.ListOfPages.length 
+                                              ?
+                                                this.state.ListOfPages.map((result,index)=>{
+                                                 
+                                                return(
+                                                        <option value={result.facility}>{result.facility}</option>
+                                                    )
+                                                  })
+                                              :
+                                                ""
+                                              }
+                                       
+                                      </select>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+              							{/*<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
+                                  <div className="form-group m3all" id="pageType">
+                                      <div class="form-group">
+                                        <label className="label-category lb666 labelform">Select Block Type </label>
+                                        <select className="form-control hinput30" id="blockType"  value={this.state.blockType} ref="blockType" name="blockType"  onChange={this.handleChange.bind(this)}>
+                                              <option disabled={true} selected={true}>--Select Block type--</option>
+                                              { this.state.ListOfBlockTypes  && this.state.ListOfBlockTypes.length 
+                                                ?
+                                                  this.state.ListOfBlockTypes.map((result,index)=>{
+                                                  return(
+                                                          <option value={result.facility}>{result.facility}</option>
+                                                      )
+                                                    })
+                                                :
+                                                  ""
+                                                }
+                                         
+                                        </select>
+                                      
+                                      </div>
+                                  </div>
+                              </div>*/}
+                          
             							  { this.state.parsed.blockTitle === ""
         											? null
         											: 
-              								<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOpadding">
+              								<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NOpadding">
               											<div className="form-group">
               												<label className="label-category labelform">Block Title<span className="astrick"></span></label>
               												<input type="text" ref="blockTitle" id="basicBlockName" value={this.state.blockTitle} name="blockTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)}/>
@@ -757,7 +871,7 @@ class CmsBlock extends Component {
             								{ this.state.parsed.blocksubTitle === ""
         											? null
         											:
-            								    <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            								    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             										    <div className="form-group">
             										   		<label className="label-category labelform">Sub Title<span className="astrick"></span></label>
             										        <input type="text" ref="blocksubTitle" id="blocksubTitle" value={this.state.blocksubTitle} name="blocksubTitle"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handleChange.bind(this)}/>
@@ -767,7 +881,7 @@ class CmsBlock extends Component {
             							
             							 {/*<div className="formcontent col-lg-12 col-md-12 col-sm-12 col-xs-12 mt20">*/}
                            
-  			                    	{ this.state.parsed.blockType === ""
+  			                    	{ /*this.state.parsed.blockType === ""
             											? null
             											: 
                     								<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 NOpadding">
@@ -786,7 +900,7 @@ class CmsBlock extends Component {
                                             </div>
               			                  </div>
               			                </div>
-            					          }
+            					          */}
             			           {/*</div>*/}
               							
                               { this.state.parsed.blockDescription === "" ||  this.state.parsed.blockDescription === null
@@ -814,7 +928,7 @@ class CmsBlock extends Component {
                             {/*============================================================================================*/}
 							
               							<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 m20 NOpadding">
-                                {console.log("this.state.parsed.RepetedBlock",this.state.parsed)}
+                                {/*console.log("this.state.parsed.RepetedBlock",this.state.parsed)*/}
                               {
                                 this.state.parsed.RepetedBlock === "" || this.state.parsed.RepetedBlock === null
                                   ? null
@@ -843,8 +957,7 @@ class CmsBlock extends Component {
                     												</div>
               														}
               												    {   
-                                            this.state.rBlocksSubTitle === ""
-                                            ?
+                                            
                                                  this.state.parsed.rBlocksSubTitle === ""
                                                   ? null
                                                   :
@@ -855,14 +968,13 @@ class CmsBlock extends Component {
                                                     </div>
                                                   </div>
 
-                                            : ""
+                                            
                                                  
               														}
               											
               											
               							              { 
-                                            this.state.rBlocksLink === ""
-                                            ?
+                                            
                                             this.state.parsed.rBlocksLink === ""
                                             ? null
                                             :
@@ -872,7 +984,7 @@ class CmsBlock extends Component {
                       										        		<input type="text" ref="repetedLink" id="repetedLink" value={this.state.repetedLink} name="repetedLink"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30 form-control" onChange={this.handle1Change.bind(this)}/>
                       												    </div>
                       												</div>
-                                               : ""
+                                               
                                               
                                           }
                                           { 

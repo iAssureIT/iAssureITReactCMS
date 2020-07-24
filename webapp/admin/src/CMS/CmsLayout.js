@@ -12,6 +12,7 @@ import ViewBlock_3 from './component/createnewblock/ViewBlock_3.js';
 import MasterPage from './component/MasterPage/MasterPage.js';
 import Header from './component/common/Header/Header.js'; 
 import CmsDashBoard from './CmsDashBoard/CmsDashBoard.js'; 
+import Typemaster from './component/Typemaster/Typemaster.js';
 
 /*blogs*/
 
@@ -55,6 +56,7 @@ export default class CmsLayout extends React.Component {
                         <Route path="/cms/view-blocks"                        exact strict component={ViewBlock_3}  />
                         
     					<Route path="/cms/masterpage/:pageurl"       		component={ MasterPage } /> 
+                        <Route path="/cms/typemaster"                 exact strict component={Typemaster}  />
      					
      					<Route path="/cms/singleblog" 					component={ SingleBlogPage }  />   
      					<Route path="/cms/blogs-form" 					component={ BlogsFormPage }  />   

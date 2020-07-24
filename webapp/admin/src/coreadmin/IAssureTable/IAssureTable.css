@@ -103,3 +103,7 @@
 #tableComponent{
   margin-top:20px;
 }
+
+#section-to-print thead{
+  background-color: #337ab7 !important;
+}

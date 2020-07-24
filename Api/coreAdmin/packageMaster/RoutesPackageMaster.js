@@ -9,9 +9,13 @@ router.post('/get/list', packageMaster.fetchPackages);
 
 router.get('/get/list', packageMaster.fetchListPackages);
 
+router.get('/get/grouped/list/:packageEntity', packageMaster.fetchGroupedListPackages);
+
 router.get('/get/count', packageMaster.countPackages);
 
 router.get('/get/one/:packageID', packageMaster.fetchSinglePackage);
+
+router.get('/get/one/sorted/:packageID', packageMaster.fetchSortedSinglePackage);
 
 router.patch('/patch', packageMaster.updatePackage);
 

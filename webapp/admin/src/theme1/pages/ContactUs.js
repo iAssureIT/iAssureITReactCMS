@@ -46,8 +46,8 @@ export default class ContactUs extends React.Component {
 
 				<ContactForm />
 
-				{/* <AddressOnGoogleMap /> */}
-				{/* <Footer /> */}
+				 <AddressOnGoogleMap /> 
+				 <Footer /> 
 			</div>
 		);
 	}

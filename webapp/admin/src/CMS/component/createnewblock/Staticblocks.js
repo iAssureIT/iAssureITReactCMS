@@ -3,7 +3,7 @@ import {Route, withRouter} 			from 'react-router-dom';
 import 									 './Staticblocks.css';
 
 import Typecomponent1                from "../blockTemplate/Typecomponent1/Typecomponent1.js";
-import FastrackFrameWork                from "../blockTemplate/FastrackFrameWork/FastrackFrameWork.js";
+// import FastrackFrameWork                from "../blockTemplate/FastrackFrameWork/FastrackFrameWork.js";
 import FasttrackFrameWork                from "../blockTemplate/FasttrackFrameWork/FasttrackFrameWork.js";
 import AutoPilotPlatform                from "../blockTemplate/AutoPilotPlatform/AutoPilotPlatform.js";
 import OutSpeciality                from "../blockTemplate/OutSpeciality/OutSpeciality.js";

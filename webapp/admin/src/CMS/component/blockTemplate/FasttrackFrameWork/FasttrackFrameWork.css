@@ -1,19 +1,20 @@
  .pagewrapperheight{
     height: 850px;
-      /* background-color:#ccc;        */
+    background-color:#FFF;        
       
      
  } 
  .bgwrapperheight{
      height:850px ;
      width: 100%;
-    background-size: 100% 100%;
+      background-size: 100% 100%;
      background-repeat: no-repeat;
     
 
- }
- .dashwrapp{
+ } 
+  .dashwrapp{
     height: 20px;
+    /* background-color: yellow; */
     margin-top: 117px;
 }
  .dashBox1{
@@ -89,7 +90,7 @@
  .arrow{
      height: 100px;
      width: 30%;
-     /* background-color: aquamarine; */
+      /* background-color: aquamarine;  */
      margin-top: -40px; 
      margin-left: 192px!important;
      font-size:30px;
@@ -106,7 +107,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     margin-left: 110px;
-}
+} 
 /* =======================================Media Query==================================================== */
  /* @media  screen and (max-width:992px){
     .fastrachight{
@@ -141,16 +142,32 @@
     
 }   */
 
-@media screen and (max-width:767px){
-    .fastrachight{
-        height: 2125px;
-                
-      
-
+@media (max-width:467px){
+    .pagewrapperheight{
+        height: 1850px;
+        /* background-color:#f05;   */
+        margin: auto;      
+          
+         
+     }  
+     .bgwrapperheight{
+        height:1850px ;
+        background-size: 200% 108%; 
+       
+        
+         
+     }
+     .dashwrapp{
+        height: 20px!important;
+        /* background-color: yellow; */
+        margin-top: 0px!important;
     }
+               
+      
+    
     .ftrackwrapper{
         height:2050px ;
-        background-size: 200% 108%;
+        background-size: 200% 100%;
     }
     .dashbox00{
           margin-top: 370px; 
@@ -174,7 +191,7 @@
  }
  .contentframework{
     height: 774px;
-    /* background-color: red;   */
+     /* background-color: red;    */
     margin-top: -50px;
     
 }
@@ -210,4 +227,4 @@
     margin-top: -38px;
  }
  }
-   
+    

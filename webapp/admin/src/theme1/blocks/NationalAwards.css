@@ -50,3 +50,69 @@
     /* margin-top: -28px; */
 
 }
+.narionalawardwrapp{
+    height: 350px;
+     /* background-color: red;  */
+}
+.awardleftwrapp{
+    height: 350px;
+    /* background-color: rosybrown; */
+}
+.awardIMG{
+    height: 345px;
+    margin-left: 10%;;
+}
+.NATextwrapp{
+    height: 350px;
+    /* background-color: rosybrown; */
+}
+.NAtextwrapp1{
+    height: 350px;
+    /* background-color: royalblue; */
+    /* margin-top: 35px; */
+    
+}
+.NAh1title{
+    
+    font-size: 24px;
+    color: #f1f1f1;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    
+}
+.NAhetitle{
+    font-size: 18px;
+    color: #f1f1f1;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -57px;
+}
+.NArmore{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:0%;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-bottom: 1px solid #f1f1f1!important;
+    width: 14%!important;
+
+
+}
+.NAarrow{
+
+    width: 4%;
+    /* background-color: aquamarine; */
+    margin-top: -38px; 
+    margin-left: 91px!important;
+    font-size:27px;
+    color: #f1f1f1;
+    
+}
+.award1wrapp{
+    height: 140px;
+    margin-top: 10px;
+    /* background-color: saddlebrown; */
+}
+.awaed1{
+    height: 140px;
+}

@@ -2,15 +2,22 @@
     height: 550px;
     background-color: #FFF;        
 }
-.bgIMG{
-    height: 550px;
-    background-image: url("/images/tbgIMG.png"); 
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+
+.testimonialBox{
+	height: 350px;
+	position: relative;
+  left: auto; 
+  right: auto;
+  top: 31px;  
+	background-color: #fff;
+	border: 1px solid #efefef;
+	border-radius: 10px;
+	box-shadow: 2px 2px 20px 5px #dad6d6;
 }
+
 .dashBoxTmwrapp{
     height: 20px;
-    /* background-color: red;  */
+    
     
     }
     .dashBoxTm{
@@ -41,22 +48,29 @@
         /* background-color: yellow;  */
         font-size: 46px;
         font-family: 'Montserrat', sans-serif;
-        color: #FFFFFF;
+        color: #555555;
         text-align:center ;
 
          
         
     }
+    .itemwrapp{
+        height: 290px;
+        /* background-color: red; */
+    }
    .carousel-control.left, .carousel-control.right{
        background-color: transparent;
    }
-   .img-area{
-       width: 150px;
-       height: 150px;
-       margin: auto;
-       border: 2px solid #FFFFFF;
+   .testimonialwrapper .img-area{
+       width: 100px;
+       height: 100px;
        border-radius: 50%;
+       /*margin-top:30px ; */
+       margin-left: 42px; 
+       box-shadow: 2px 2px 17px 2px #666;
        overflow: hidden;
+       
+
    }
    .img-area img{
        width: 100%;
@@ -66,38 +80,62 @@
        padding-bottom: 15px;
        padding-top: 0px;
    }
-   .testimonialWriter,.writerDetails{
-       font-size: 26px;
-       margin-bottom: 15px;
-       margin-top: 25px;
+  .testimonialwrapper .testimonialWriter{
+       position: absolute;
+       font-size: 21px;
+       margin-left: 160px;
+       margin-top: 21px;
+       font-weight: bold;
+       color: #0073e6;
+   }
+  .testimonialwrapper .writerDetails{
+    position: absolute;
+    font-size: 21px;
+    margin-left: 160px;
+    margin-top: 41px;
+    font-weight: bold;
+
+
    }
    .carousel-indicators{
        bottom: -35px;
 
    }
    
-   .testContent{
-       font-size: 18px;
-       width: 70%;
+  .testimonialwrapper .testContent{
+       font-size: 19px;
+       width: 90%;
        margin: auto;
-       margin-top: 10px;
+       margin-top: 40px;
+       color: #333333;
+       text-align: justify;
+       font-family: 'Montserrat', sans-serif;
+       letter-spacing: 1px;
    }
   
-    .carousel-control.left,.carousel-control.right{
+  .testimonialwrapper  .carousel-control.left,.carousel-control.right{
        background-image: none;
    } 
-   
+  .testimonialwrapper .test-carousel-control-left{
+    height: 50px!important;
+    width: 50px;
+    margin-top: 235px;
+    margin-left: 706px;
+    border-radius: 50px;      
+    background-color: #eee;
+    z-index: 25;
 
-
-
-
-
-
-
-
-
-
-
+    box-shadow: 2px 2px 10px 2px solid #dad6d6;
+   }
+  .testimonialwrapper .test-carousel-control-right{
+    height: 50px!important;
+    width: 50px;
+    margin-top: 235px;
+    margin-left: -10%!important;
+    border-radius: 50px;      
+    background-color:#0073e6!important;
+   }
+  
 
 
 

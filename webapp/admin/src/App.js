@@ -12,9 +12,9 @@ import axios from 'axios';
 import CmsRoute from './lib/CmsRoute.js';
 
 // axios.defaults.baseURL = 'http://qaiassureitapi.iassureit.com';
-axios.defaults.baseURL = 'http://localhost:6066';
+// axios.defaults.baseURL = 'http://localhost:6066';
 // axios.defaults.headers.post['Content-Type'] = 'application/json';
-// axios.defaults.baseURL =  process.env.REACT_APP_BASE_URL;
+axios.defaults.baseURL =  process.env.REACT_APP_BASE_URL;
 console.log("REACT_APP_BASE_URL",axios.defaults.baseURL);
 // axios.defaults.baseURL = 'http://localhost:6065';
 axios.defaults.headers.post['Content-Type'] = 'application/json';

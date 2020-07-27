@@ -117,41 +117,41 @@ export default class Services extends React.Component {
                     </div>
                 </div>
 
-				 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 textwrapper">
+				  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 textwrapper">
                     <div className="text-center ">
                         <div className="h1titble00"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                     </div>
-                </div>	
+                </div>	 
 				  	
 				   <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 Hexagonwrapper00">
 
-						 <div className="hexagon1">
+						  <div className="hexagon1">
 						   <div className="images1"  style={{backgroundImage:"url("+this.state.blocks.repeatedBlocks[0].Image+")"}}></div>
 						   <div className="heprizeapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[0].Title}}></div>
-						</div>   
-						 <div className="hexagon2">
+						</div>    
+						   <div className="hexagon2">
 						   <div className="h1services text-center" ><b>WHAT WE DO </b></div>
-						</div>   
-						 <div className="hexagon3">
+						</div>     
+						   <div className="hexagon3">
 							<div className="images2"  style={{backgroundImage:"url("+this.state.blocks.repeatedBlocks[1].Image+")"}}></div>
 							<div className="hstaffaugmtion text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[1].Title}}></div>
-						</div>   
-						   <div className="hexagon4">
+						</div>     
+						     <div className="hexagon4">
 							<div className="images3"  style={{backgroundImage:"url("+this.state.blocks.repeatedBlocks[2].Image+")"}}></div>
 							<div className=" text-center hwebapps" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[2].Title}}></div>
-						</div>    
-						    <div className="hexagon5">
+						</div>      
+						     <div className="hexagon5">
 							<div className="images4"  style={{backgroundImage:"url("+this.state.blocks.repeatedBlocks[3].Image+")"}}></div>
 							<div className="hbportals text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[3].Title}}></div>
-						</div>    
-						   <div className="hexagon6">
+						</div>      
+						     <div className="hexagon6">
 							<div className="images5"  style={{backgroundImage:"url("+this.state.blocks.repeatedBlocks[4].Image+")"}}></div>
 							<div className="hmapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[4].Title}}></div>
-						</div>    
-						<div className="hexagon7">
+						</div>      
+						 <div className="hexagon7">
 							<div className="images6"  style={{backgroundImage:"url("+this.state.blocks.repeatedBlocks[5].Image+")"}}></div>
 							<div className="heportal text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[5].Title}}></div>
-						</div>      
+						</div>         
 					</div>     
 
 

@@ -51,6 +51,8 @@ import mobileApp from '../theme1/blocks/mobileApp.js';
 import staffaBanner from '../theme1/blocks/staffaBanner.js';
 import eCommerce from '../theme1/blocks/eCommerce.js';
 import webapp from '../theme1/blocks/webapp.js';
+import Responsive from '../Responsive.js';
+
 
 
 
@@ -64,6 +66,7 @@ const CmsRoute = (props) => {
     	<Switch>
     		   
             <Route path = "/" exact component = {Homepage} />
+            <Route path = "/responsive" exact component = {Responsive} />
 
             <Route path = "/services" exact component = {ServicesList} />
             <Route path = "/aboutus" exact component = {AboutUs} />

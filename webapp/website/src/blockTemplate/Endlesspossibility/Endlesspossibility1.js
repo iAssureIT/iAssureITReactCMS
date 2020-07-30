@@ -1,24 +1,21 @@
-import React, { Component } from "react";
-import "./FasttrackFrameWork.css";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import React,{Component} from 'react';
+import './Endlesspossibility.css';
 import axios from 'axios';
 
-
-export default class FastrackFrameWork extends Component{
-
+export default class Endlesspossibility extends Component{
 
     constructor(props) {
         super(props);
         this.state = {
           blocks: {
-            "blockTitle": "<b>FASTTRACK </b>FRAMEWORK",
+            "blockTitle": "<b>ENDLESS </b> POSSIBILITIES",
             
-            "blockSubTitle": "We are passionate about our work",
+            "blockSubTitle": "Mobile App Development",
             "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/ecom4.png",
-            "fgImage": "/images/001.png",
+            "bgImage": "/images/costadvantage.png",
+            "fgImage": "/images/000001.png",
             "repeatedBlocks": [
                                 
                                 { 
@@ -42,7 +39,7 @@ export default class FastrackFrameWork extends Component{
     /*console.log("==>",this.props.block_id);*/
               {
                  axios
-                    .get('/api/blocks/get/'+this.props.block_id)
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                     .then((response)=>{
                         if(response.data){
                             // console.log("ListofServices =",response.data);
@@ -62,38 +59,37 @@ export default class FastrackFrameWork extends Component{
     
     render(){
         return(
-            <div className="pagewrapperheight">
-                <div className="bgwrapperheight"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
-
-                 
-                     <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
-                      <ul className="dashBox1">
-						            <li className="dash01"></li>
-						            <li className="dash02"></li>
-					            	<li className="dash03"></li> 
-				            	</ul>
-                    </div> 
-                  
-                
-                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 titlewrapper1">
-                            <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
+            <div className="endpossibwrapper">
+                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashboxwrapper">
+                      <ul className="dashBox">
+						  <li className="dash1"></li>
+						  <li className="dash2"></li>
+					      <li className="dash3"></li> 
+				      </ul>
+                    </div>
+                </div>
+   
+                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 endmainrow">
+                        <div className="text-center">
+                            <div className="h1titleless" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div >
                         </div>
-                   </div>    
-                    
-					             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper">  
-                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
-                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
-
-                             <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
+                    </div> 
+                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 endlesscontentwrapper">
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 enpsbcontent">
+                            <div className="headingtitle">
+                                <div className="mobileappd"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
+                            </div>
+                            <div className="paragraphendpsb01"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div>
+                              <h3 className="enspsbrmrr">Read More </h3> <div className="arrowenspsb"><i className="fas fa-angle-double-right"></i></div> 
+                         </div>
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 rightsideendpsbfw">
+                            <img src={this.state.blocks.fgImage} alt="002" className="rightsideimgendpsw"/>  
                          </div> 
+                    </div> 
+                </div>
 
-                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
-                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
-                          </div>    
-                       </div>    
-					       </div> 
-              </div>
+            
         )
     }
 }

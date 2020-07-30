@@ -4,16 +4,21 @@
 	
 }
 
- .aboutbannerwrapp .ABOUTbanerheight{
+.ABOUTbanerheight{
 	height: 735px;
 	background-size: 100% 100%;
 }
-.aboutbannerwrapp .logoBox{
+.logoBox{
 	position: absolute;
 	/* z-index: 50; */
 
 }
-
+.logoab{
+	position: absolute;
+    top: 30px;
+    height: 56px;
+    left: 130px;
+}
 .aboutwannerwrpp{
 	height: 400px;
 	/* background-color: burlywood; */

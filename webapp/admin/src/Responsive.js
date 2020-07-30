@@ -25,7 +25,7 @@ export default class Responsive extends React.Component {
 		return (
 			<div className="">
                  <HomepageBanner /> 
-                   {/* <Services />     */}
+                    <Services />     
                  <FasttrackFrameWork />  
 		   </div>
 		);

@@ -18,7 +18,7 @@
 }
 
 .btnbg:focus { 
-     outline: 0px auto -webkit-focus-ring-color;   
+     outline: 0px auto -webkit-focus-ring-color!important;   
       outline-offset: -2px;  
  } 
  
@@ -32,6 +32,9 @@
  }
  .modal-footer00{
      border-top: none;
+ }
+ .btn{
+     margin-right: 10px;
  }
  
  
@@ -202,6 +205,13 @@
     margin-top: -127px
 
     
+}
+/* =====================================Media Query================================================ */
+/* =======================================mobileview=============================================== */
+@media (max-width: 468px){
+    .madalbtn{
+        margin-top: 148px;
+    }
 }
 
 

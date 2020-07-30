@@ -103,5 +103,45 @@
 }
 .logoab{
   margin-top: 3.25%;
-  margin-left: 5%;
+  margin-left: 8%;
+}
+/* ==============================================Media Query ========================================= */
+@media (min-width:769px) and (max-width:991px){
+  .logoab{
+    margin-top: 5.25%!important;
+  
+  }
+  .customSpan {
+   margin-top:2.25%!important;
+     right: 6%;
+   }
+  
+
+}
+/* ================================================mobile view  ========================================== */
+@media (min-width:469px) and  (max-width: 768px){
+  .logoab{
+    margin-top: 7.25%!important;
+    margin-left: 4%!important;
+  }
+  .customSpan {
+   
+   margin-top:2.25%!important;
+    right: 6%;
+  }
+
+}
+
+
+@media (max-width: 468px){
+  .customSpan {
+   
+    top: 46px;
+    margin-right: -39px;
+  }
+  .logoab{
+    margin-top: 11.25%;
+    margin-left: 1%;
+  }
+   
 }

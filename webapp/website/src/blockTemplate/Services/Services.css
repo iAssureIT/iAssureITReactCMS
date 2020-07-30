@@ -1,4 +1,4 @@
-/* .serviceswrapper{
+.serviceswrapper{
   height: 879px;
   background-color:#fff; 
         
@@ -9,21 +9,11 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   
-}  
-.textwrapper{
-  height: 50px;
-  padding-top: 15px;
-
-  
 }
 .dashboxwrapper{
   height: 20px;
-   background-color: chocolate; 
+  /* background-color: chocolate; */
   
-}
-.Hexagonwrapper00{
-  height: 722px;
-  margin-top: 70px;  
 }
 .dashBox{
   list-style: none;
@@ -56,11 +46,19 @@ float: left;
   border-radius: 10px;
 }
 
-.servicehiading{
-  height: 108px; 
-  margin-top: 28px;
-  text-align: center;
+
+.textwrapper{
+  height: 50px;
+  padding-top: 15px;
+
+  
 }
+.Hexagonwrapper00{
+  height: 722px;
+  margin-top: 70px;  
+}
+
+
 .h1titble00{
   font-size: 46px;
   font-family: 'Montserrat', sans-serif;
@@ -80,20 +78,25 @@ float: left;
 
   
 }
-.images1{
+.serviceimgblock{
   height: 60px;
   width: 60px;
-  background-color: red; 
-  margin-top: 64px;
+  /* background-color: #00ccff;  */
   margin-left: 124px;
-  background-image: url("/images/5.png");
+  margin-top: 64px;
+
+}
+.images1{
+  height: 60px;
+  width: 60px; 
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  
 }
 .heprizeapps{
    height: 68px; 
    width: 164px; 
-    background-color: red; 
+   /* background-color: red; */
    margin-left: 72px; 
   font-size: 24px;
   letter-spacing: 1px;
@@ -115,7 +118,7 @@ float: left;
 .h1services{
   height: 68px;
   width: 164px;
-  background-color: red; 
+  /* background-color: red; */
   margin-left: 74px;
   margin-top: 119px;
   font-size: 23px;
@@ -136,13 +139,18 @@ float: left;
   margin-top: 426px;
 
 }
+.serviceimgblock2{
+  height: 60px;
+  width: 60px;
+  margin-top: 64px;
+  margin-left: 124px;
+ 
+
+
+}
 .images2{
   height: 60px;
   width: 60px;
-   background-color: red; 
-  margin-top: 64px;
-  margin-left: 124px;
-  background-image: url("/images/8.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -150,7 +158,7 @@ float: left;
 .hstaffaugmtion{
   
   width: 164px;
-  background-color: red; 
+  /* background-color: red; */
   margin-left: 72px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -169,13 +177,19 @@ float: left;
   margin-top: 82px;
 
 }
+.serviceimgblock3{
+  height: 60px;
+  width: 60px;
+  margin-top: 81px;
+  margin-left: 130px;
+ 
+
+}
 .images3{
   height: 60px;
   width: 60px;
-  background-color: red; 
-  margin-top: 81px;
-  margin-left: 130px;
-  background-image: url("/images/4.png");
+  /* background-color: red; */
+  /* background-image: url("/images/4.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -183,7 +197,7 @@ float: left;
 .hwebapps{
   height: 68px;
   width: 164px;
-   background-color: red; 
+  /* background-color: red; */
   margin-left: 72px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -201,13 +215,19 @@ float: left;
   margin-top: 315px;
 
 }
+.serviceimgblock4{
+  height: 60px;
+  width: 60px;
+  margin-top: 81px;
+  margin-left: 124px;
+
+
+}
 .images4{
   height: 60px;
   width: 60px;
-  background-color: red; 
-  margin-top: 81px;
-  margin-left: 124px;
-  background-image: url("/images/9.png");
+  /* background-color: red; */
+  /* background-image: url("/images/9.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -215,7 +235,7 @@ float: left;
 .hbportals{
   height: 68px;
   width: 164px;
-   background-color: red;  
+  /* background-color: red;  */
   margin-left: 72px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -233,13 +253,17 @@ float: left;
   margin-top: 82px;
 
 }
+.serviceimgblock5{
+  height: 60px;
+  width: 60px;
+  margin-top: 81px;
+  margin-left: 124px;
+
+}
 .images5{
   height: 60px;
   width: 60px;
-  background-color: red; 
-  margin-top: 81px;
-  margin-left: 124px;
-  background-image: url("/images/6.png");
+  /* background-image: url("/images/6.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -247,7 +271,7 @@ float: left;
 .hmapps{
   height: 68px;
   width: 164px;
-   background-color: red; 
+   /* background-color: red;  */
   margin-left: 72px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -265,13 +289,18 @@ float: left;
   margin-top: 315px;
 
 }
+.serviceimgblock6{
+  height: 60px;
+  width: 60px;
+  /* background-color: red; */
+  margin-top: 81px;
+  margin-left: 124px;
+
+}
 .images6{
   height: 60px;
   width: 60px;
-  background-color: red; 
-  margin-top: 81px;
-  margin-left: 124px;
-  background-image: url("/images/7.png");
+  /* background-image: url("/images/7.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -286,16 +315,194 @@ float: left;
   font-family: 'Montserrat', sans-serif;
 
 }
- */
 
 
 
+/* ==========================================Media Query===================================================== */
+/* @media (max-width:1200px){ */
+  
+/* } */
+/* @media (max-width:992px){
+  
+  .serviceswrapper{
+    height: 930px;
+    width: 100%;
+    
+  }
+
+  .Hexagonwrapper00{
+     height: 1112px;
+   }
+   .dashBoxS{
+     width:100%;
+       margin-left: -67px!important;  
+      
+       
+   }
+   .dash1S{
+     margin-left: 43%!important;
+   }
+   .servicehiading{
+     margin: auto;
+     margin-top: 20px;
+   
+   }
+   .hexagon1{
+     margin-left: -202px; 
+   
+ 
+ 
+   }
+   .hexagon2{
+     margin-left: -202px;
+   }
+   .hexagon3{
+     margin-left: -202px;
+   }
+   .hexagon4{
+     margin-left: -202px; 
+ 
+   }
+   .hexagon5{
+     margin-left:-202px ;
+   }
+   .hexagon6{
+     margin-left:-198px ;
+ 
+ 
+   }
+   .hexagon7{
+     margin-left:-198px ;
+ 
+ 
+   }
+ 
+ } */
+ 
+/* ================================================Tablets and  ipad===================== */
+
+@media  (min-width:769px) and (max-width: 991px){
+  .serviceswrapper{
+    height: 870px!important;
+    width: 100%;
+    background-color: red;
+          
+  }
+  
+  .dash1{
+    margin-left: 36%!important;
+    
+   }
+  }
+  
+ /* ================================================Mobile view===================== */
+ @media (max-width: 768px){
+
+  .serviceswrapper{
+    height: 1850px!important;
+    background-color: tomato;
+    }
+    /* .serviceheight{
+      height: 1770px;
+       background-color: violet; 
+    } */
+    /* .Hexagonwrapper00{
+      height: 100px;
+      background-color: whitesmoke;
+     
+  
+    } */
+
+ } 
+
+
+
+@media (max-width: 468px){
+  .serviceswrapper{
+    height: 1850px!important;
+    
+     
+          
+  }
+  .serviceheight{
+    height: 1770px;
+    /* background-color: violet; */
+  }
+  .Hexagonwrapper00{
+    height: 1700px;
+   
+
+  }
+  .dashboxwrapper{
+    height: 20px;
+    /* background-color: chocolate;  */
+    
+  }
+  
+  
+  .dashBox{
+   
+    margin-top: 5px!important;
+    
+  
+  }
+  .dash1{
+    margin-left: 24%!important; 
+   
+  }
+  .textwrapper{
+    height: 50px;
+    padding-top: 0px;
+    /* background-color: violet; */
+   
+  
+    
+  }
+   .h1titble00{
+    font-size:40px ;
+  } 
+  
+  .hexagon1{
+    left:7%; 
+   }
+   .hexagon2{
+    left:7%;
+
+  } 
+  .hexagon3{
+    left:8%;
+  } 
+   .hexagon4{
+    left:7%;
+    top:572px;
+
+  } 
+  .hexagon5{
+    left:7%;
+    top:570px;
+
+
+  } 
+   .hexagon6{
+    left:7%;
+    top:1035px;
+
+
+  } 
+   .hexagon7{
+    left:7%;
+    top:1035px;
+  }  
 
 
   
 
+}
+@media (max-width: 375px){
 
+}
  
+
 
 
 

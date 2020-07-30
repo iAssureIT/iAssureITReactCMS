@@ -174,11 +174,8 @@ class Staticblocks extends React.Component {
 			            <button id="Services" 
 								data-RepetedBlock="RepetedBlock" 
 								data-rBlocksLink="rBlocksLink" 
-			                	 
-								data-bgImage="bgImage" 
+			                	data-bgImage="bgImage" 
 								data-rBlocksTitle="rBlocksTitle" 
-								data-rBlocksSubTitle="rBlocksSubTitle" 
-								data-rBlocksDescription="rBlocksDescription" 
 								data-rBlocksImage="rBlocksImage" 
 			                	className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 

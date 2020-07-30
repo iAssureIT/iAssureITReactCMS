@@ -78,15 +78,20 @@ float: left;
 
   
 }
-.images1{
+.serviceimgblock{
   height: 60px;
   width: 60px;
-  background-image: url("/images/5.png"); 
-  /* background-color: red; */
-  margin-top: 64px;
+  /* background-color: #00ccff;  */
   margin-left: 124px;
+  margin-top: 64px;
+
+}
+.images1{
+  height: 60px;
+  width: 60px; 
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  
 }
 .heprizeapps{
    height: 68px; 
@@ -134,13 +139,18 @@ float: left;
   margin-top: 426px;
 
 }
+.serviceimgblock2{
+  height: 60px;
+  width: 60px;
+  margin-top: 64px;
+  margin-left: 124px;
+ 
+
+
+}
 .images2{
   height: 60px;
   width: 60px;
-  /* background-color: red; */
-  margin-top: 64px;
-  margin-left: 124px;
-  background-image: url("/images/8.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -167,13 +177,19 @@ float: left;
   margin-top: 82px;
 
 }
+.serviceimgblock3{
+  height: 60px;
+  width: 60px;
+  margin-top: 81px;
+  margin-left: 130px;
+ 
+
+}
 .images3{
   height: 60px;
   width: 60px;
   /* background-color: red; */
-  margin-top: 81px;
-  margin-left: 130px;
-  background-image: url("/images/4.png");
+  /* background-image: url("/images/4.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -199,13 +215,19 @@ float: left;
   margin-top: 315px;
 
 }
+.serviceimgblock4{
+  height: 60px;
+  width: 60px;
+  margin-top: 81px;
+  margin-left: 124px;
+
+
+}
 .images4{
   height: 60px;
   width: 60px;
   /* background-color: red; */
-  margin-top: 81px;
-  margin-left: 124px;
-  background-image: url("/images/9.png");
+  /* background-image: url("/images/9.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -231,12 +253,17 @@ float: left;
   margin-top: 82px;
 
 }
-.images5{
+.serviceimgblock5{
   height: 60px;
   width: 60px;
   margin-top: 81px;
   margin-left: 124px;
-  background-image: url("/images/6.png");
+
+}
+.images5{
+  height: 60px;
+  width: 60px;
+  /* background-image: url("/images/6.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 
@@ -262,13 +289,18 @@ float: left;
   margin-top: 315px;
 
 }
-.images6{
+.serviceimgblock6{
   height: 60px;
   width: 60px;
   /* background-color: red; */
   margin-top: 81px;
   margin-left: 124px;
-  background-image: url("/images/7.png");
+
+}
+.images6{
+  height: 60px;
+  width: 60px;
+  /* background-image: url("/images/7.png"); */
   background-size: 100% 100%;
   background-repeat: no-repeat;
 

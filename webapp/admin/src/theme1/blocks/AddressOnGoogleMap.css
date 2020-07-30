@@ -1,6 +1,6 @@
 .gmapwrapper{
-  height: 500px;
-  background-color: #4CAF50;
+  height: 600px;
+   background-color:#FFF; 
   
 }
 .mapouter{
@@ -95,28 +95,28 @@
 	display: none;
 }
 /*=====================================================================================================*/
-.gmapwrapper{
-	/*height: 500px !important;*/
+ /* .gmapwrapper{ 
+	height: 500px !important;
 	width: 100%;
-	/*background-color: #ddd !important;*/
+	background-color: #ddd ;
 }
 .mapouterxs{
 	position:relative;
 	text-align:right;
-	/*height:500px;*/
+	height:500px;
 	width:1000px;
 }
 .gmap_canvas{
 	overflow:hidden;
 	background:none!important;
-/*	height:500px;
-	width:900px;*/
+	height:500px;
+	width:900px;
 }
 .demogmap_canvasxs{
 	overflow:hidden;
-	/*background:#aaa !important;*/
-	/*background-image: url("/images/demomap.png");*/
-	/*opacity: 0.3;*/
+	background:#aaa !important;
+	background-image: url("/images/demomap.png");
+	opacity: 0.3;
 
 	height:400px;
 	width:375px;
@@ -161,7 +161,7 @@
 
 .mapcontainerxs .imagexs {
   opacity: 0.3;
-  /*cursor: pointer;*/
+  cursor: pointer;
 
 }
 
@@ -176,7 +176,7 @@
   color: white;
   font-size: 16px;
   padding: 16px 32px;
-}
+} */
 /* =====================================Media Query================================= */
 @media (max-width:767px){
   .location{

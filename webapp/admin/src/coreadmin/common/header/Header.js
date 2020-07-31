@@ -140,7 +140,7 @@ class Header extends React.Component {
               <nav className="navbar clrwhtbgtp">
                   <div className="container-fluid">
                     <div className="navbar-header">
-                      <a className="navbar-brand whtclrHeaderBrand" href="/"><b>iOG CMS</b></a>
+                      <a className="navbar-brand whtclrHeaderBrand" href="/"><b>iAssureIT CMS</b></a>
                     </div>
                     <ul className="nav navbar-nav">
                       <li><a href="/cms/select-new-block">Blocks</a></li>
@@ -153,11 +153,14 @@ class Header extends React.Component {
                         <div className="dropdown-content">
                           <li className="dpdnBoxLi"><a href="/cms/blogs-form" className="whtclrHeaderBrand">Blogs</a></li>
                           <li className="dpdnBoxLi"><a href="/cms/AllBlogs" className="whtclrHeaderBrand">All Blogs</a></li>
+                          {/*<li className="dpdnBoxLi"><a href="/cms/typemaster"  className="whtclrHeaderBrand">Type Master</a></li>*/}
+
                           
                           
                         </div>
-                      </a></li>
-                      
+                      </a>
+                      </li>
+                      <li className=""><a href="/cms/typemaster"  className="">Type Master</a></li>
                       {/*
                       <li className="dropdown">
                         <a className="dropdown-toggle" data-toggle="dropdown" href="#">Blogs Management
@@ -227,7 +230,7 @@ class Header extends React.Component {
                       <span className="col-lg-12 col-md-12 col-sm-12 col-xs-12 colorboxbefore hoverText onHoverEffect ">
                         
                         <span className="col-lg-11 nopadding ">
-                          <img src="/images/useuser.png" className="userIcon"/>
+                          <img src="/images/person.png" className="userIcon"/>
                           <label><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.fullname ? this.state.fullname : ""}</b></label>
                         </span>
                         <span className="textAlignCenter" style={{"marginTop": "4px"}}>

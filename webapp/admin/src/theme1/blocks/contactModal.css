@@ -32,6 +32,30 @@
  .modal-footer00{
      border-top: none;
  }
+ .form-control {
+    display: block;
+    width: 100%;
+    height: 50px !important;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+/* .sbtn{ */
+    /*background: -webkit-linear-gradient(left,#ffc600 0%,#ff4200 50%,#ffc600 100%);*/
+    /* height: 50px; */
+    /* background-color: #18ccf7; */
+    /*color: #fff;*/
+    /* font-weight: 600; */
+    /* font-size: 16px; */
+/* } */
+
  
  
  
@@ -63,10 +87,15 @@
 } 
   
 .button1{
-    background-color: #337ab7;
+    /* background-color: #337ab7; */
     margin-left: 2px;
     color: #FFFFFF;
     margin-top: 20px;
+    height: 50px;
+    background-color: #18ccf7;
+    font-weight: 600;
+    font-size: 16px;
+
 }
 .bgimage1{
     height: 100px;
@@ -201,6 +230,13 @@
     margin-top: -127px
 
     
+}
+/* ======================================Media query========================================== */
+@media (max-width: 468px){
+
+   .madalbtn {
+        margin-top: 117px;
+       }
 }
 
 

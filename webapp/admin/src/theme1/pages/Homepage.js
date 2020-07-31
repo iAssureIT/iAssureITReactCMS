@@ -27,13 +27,14 @@ import Header from '../common/Header.js';
 
 import Headernew from '../common/headernew.js';
 
-import HomeCarousel 	from '../blocks/HomeCarousel.js';
+
+import HomepageBanner  from '../blocks/Banners/AppDevMain/HomepageBanner.js'
 
 
 import { Helmet } from "react-helmet";
 
 import pagehead 			from '../pagehead/pagehead.js';
-import ListofServices 	from '../blocks/ListofServices.js';
+
 import ScrollButton     from '../blocks/ScrollButton.js';
 
 
@@ -69,26 +70,27 @@ export default class Homepage extends React.Component {
 				{/* <Header /> */}
 				
 				<Headernew/>   
-				<ContactModal/>        
+				<ContactModal/>
+				<HomepageBanner />        
 				 {/* <Banner />  */}
-				<HomeCarousel/>
 				
-				<Services />        
-				<FastrtrackFrameWork />                 
-				 {/* <ListofServices />       */}
+				
+				 <Services />         
+				 <FastrtrackFrameWork />                  
+				 
 
-				<OutSpeciality />               
-				<AutoPilotPlatform />           
-				<IndustryDomains />           
-				<ContentmanagementSystem />            
+				 <OutSpeciality />                
+				 <AutoPilotPlatform />            
+				 <IndustryDomains />            
+				 <ContentmanagementSystem />             
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				<Testimonials />               
-		        <Endlesspossibility />             
-		        <AddressOnGoogleMap />            
-			    <Footer />  
-				<ScrollButton />           
+				 <Testimonials />                
+		         <Endlesspossibility />              
+		         <AddressOnGoogleMap />             
+			    <Footer />   
+				 <ScrollButton />            
 			</div>
 		);
 	}

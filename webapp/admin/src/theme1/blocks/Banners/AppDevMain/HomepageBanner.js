@@ -4,24 +4,22 @@ import axios from 'axios';
 import $ 			from 'jquery';
 
 
-// import OwlCarousel from 'react-owl-carousel';
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-export default class AppDevMain extends React.Component {
+
+export default class HomepageBanner extends React.Component {
 
 
 		constructor(props) {
         super(props);
         this.state = {
           blocks: {
-            "blockTitle": "ECOMMERCE PLATFORM",
+            "blockTitle": "",
             
             "blockSubTitle": "We are passionate about our work",
             "blockDescription": " ", 
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/dexpertize.png",
+            "bgImage": "/images/b1background.png",
             "fgImage": "/images/0002.png",
             "repeatedBlocks": [
                                 
@@ -95,7 +93,7 @@ export default class AppDevMain extends React.Component {
 	render() {
 		return (
 			<div className="carouselBannerwrapper">
-				<div className="b1banerheight">
+				<div className="b1banerheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 				  	
 					
 
@@ -107,8 +105,6 @@ export default class AppDevMain extends React.Component {
 									  	
 									  	return(
 											    <div className="item " key={index}>
-											      
-											      
 									    			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 homepagecontentwrapp">
 														<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
 															<div className="mtop100">
@@ -138,12 +134,7 @@ export default class AppDevMain extends React.Component {
 										<span class="sr-only">Next</span>
 									</a>
 								</div>
-
-									
-										
-
-					 
-				</div>
+            </div>
 			</div>				
 			
 			

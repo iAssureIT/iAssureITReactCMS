@@ -150,7 +150,7 @@ class Staticblocks extends React.Component {
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            
-						<FastrackFrameWork /> 
+					blockTitle	<FastrackFrameWork /> 
 					</section>*/}
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
@@ -174,7 +174,8 @@ class Staticblocks extends React.Component {
 			            <button id="Services" 
 								data-RepetedBlock="RepetedBlock" 
 								data-rBlocksLink="rBlocksLink" 
-			                	data-bgImage="bgImage" 
+								data-bgImage="bgImage"
+								data-blockTitle="blockTitle" 
 								data-rBlocksTitle="rBlocksTitle" 
 								data-rBlocksImage="rBlocksImage" 
 			                	className="btn zIndexmtop pull-right" 

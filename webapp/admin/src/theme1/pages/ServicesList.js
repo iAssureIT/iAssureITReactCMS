@@ -4,7 +4,7 @@ import { Helmet } 		from "react-helmet";
 import ContactModal 	from '../blocks/contactModal.js';
 
 import ServicesBanner 	from '../blocks/ServicesBanner.js';
-import ListofServices 	from '../blocks/ListofServices.js';
+
 import WhyiAssure 		from '../blocks/WhyiAssure.js';
 import Technologies 	from '../blocks/Technologies.js';
 import Testimonials 	from '../blocks/Testimonials.js';
@@ -60,7 +60,7 @@ export default class ServicesList extends React.Component {
 				
 				 
 
-				{/* <ListofServices /> */}
+				
 
 				 {/* <WhyiAssure />  */}
 

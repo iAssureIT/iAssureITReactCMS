@@ -1,30 +1,22 @@
-.carouselBannerwrapper{
+ .carouselBannerwrapper{
     height: 1040px;
      background-color: #FFFFFF;    
 }
-.b1banerheight{
-	 height: 1040px; 
-	background-image: url("/images/b1background.png");
-    background-size: 100% 100%;
-}
-.logoBox{
-	position: absolute;
+.b1banerheight{ 
+	height: 1040px;  
+	background-repeat: no-repeat;
+    background-size: 100% 100%; 
+ }  
 
-}
-.logoIMG{
-	position: absolute;
-    top: 45px;
-    left: 100px !important;
-    height: 75px !important;
-    width: 125px !important;
-    cursor: pointer;
-}
- /* .carouselbannerwrapp{
-     height: 470px;
-     margin-top: 137px;
+
+  .homepagecontentwrapp{
+    height: 470px;
+    margin-top: 137px;
+    
  }
  .slide1{
     height: 465px;
+    
      
     
    }
@@ -38,14 +30,14 @@
     line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 64px!important;
+    margin-left: 80px;
     margin-top: -67px;
 }
 .b1h2Title{    
     font-size: 60px;
     line-height: 1;
     letter-spacing: 1px;
-    margin-left: 62px!important;
+    margin-left: 76px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: -11px;
     font-weight: bold;
@@ -55,120 +47,23 @@
     line-height: 1;
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 64px!important;
+    margin-left: 77px;
     margin-top: -11px;
 
     
 }
-.mtop180 {
-    margin-top: 180px;
-    color: #fff;
+.appIMGwrapp{
+    height: 300px;
+    margin-top: 54px;
 }
-.h1TitleMobile{
-	font-size: 40px;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 65px!important;
-     margin-top: -67px;  
-
-}
-.h2TitleMobile{
-	font-size: 80px;
-    line-height: 1;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 58px!important;
-    margin-top: -25px; 
-    font-weight: bold;
-
-
-}
-.h3TitleMobile{
-	font-size: 24px;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 64px!important;
-    margin-top: -16px;
-}
-.b4h1TitleB4{
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: 1px;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 64px!important;
-    margin-top: -67px;
-
-}
-.b4h2TitleB4{
-    font-size: 80px;
-     line-height: 1; 
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-left: 50px!important;
-    margin-top: -20px;
-
-}
-.b5h1TitleB5{
-    font-size: 40px;
-     letter-spacing: 1px;
-     font-family: 'Roboto Condensed', sans-serif;
-     margin-left: 64px!important;
-     margin-top: -67px; 
- 
- }
- .b5h2TitleB5{
-     font-size: 80px;
-     line-height: 1;
-     letter-spacing: 1px;
-     font-weight: bold;
-     font-family: 'Roboto Condensed', sans-serif;
-     margin-left: 58px!important;
-     margin-top: -20px;
- 
- }
- .appIMGwrapp{
-     height: 300px;
-      background-color:red;    
-     margin-top: 54px;
- }
- .b1bannerImg{
-    height: 330px; 
-    margin-left: 12%; 
+.b1bannerImg{
+   height: 330px; 
+   margin-left: 12%; 
+   
+  
     
    
-     
-    
 }
-.b1bannerImg2{
-    height: 448px;
-     margin-left: 12%;
-     margin-top: -6%;
-       
-    
-} 
- .b1bannerImg3{
-    height: 345px;
-    margin-left: 24%;
-    margin-top: -6%;
-
-    
-     
- }  
-.b1bannerImg4{
-     height: 370px; 
-     margin-left: 12%;
-     margin-top: -6%;
- 
-      
-}
-.b1bannerImg5{
-     height: 408px; 
-    margin-top: 114px; 
-     width: 90% !important; 
-     background-position: 100% 100%; 
-     margin-left: 10px; 
- }
  
  .carousel-control-prev{
 
@@ -199,8 +94,291 @@
    
 
  }
+  
  
  
 
 
- */
+ 
+ @media (min-width: 1024px) and (max-width:1200px)
+
+ {
+     .b1h1Title{
+  
+        margin-left: 57px;
+                   
+     }
+     .b1h2Title{   
+         font-size: 44px;  
+         margin-left: 52px;
+        
+     }
+     .b1h3Title{
+        font-size: 28px; 
+        margin-left: 52px;
+     }
+        
+    
+
+ }
+     @media (min-width:992px) and (max-width:1023px){
+         .b1h1Title{
+  
+             font-size: 27px; 
+              margin-left: 62px;
+           
+         }
+         .b1h2Title{   
+             font-size: 44px;  
+             margin-left: 55px;
+         }
+         .b1h3Title{
+            font-size: 28px; 
+           margin-left: 58px;
+            
+         
+             
+         }
+         .appIMGwrapp{
+             height: 350px;
+              /* background-color:red;        */
+             /* margin-top: 15px; */
+         }
+         .b1bannerImg{
+            height: 330px; 
+            margin-left: 6%; 
+            
+           
+             
+            
+         }
+       
+    } 
+/* ==============================================Tablets & ipad=========================================== */
+  @media (min-width:769px) and (max-width:991px){
+     .carouselBannerwrapper{
+         height: 1800px;
+         
+        
+     }
+     .b1banerheight{
+         height: 1800px;
+ 
+     }
+    
+     .homepagecontentwrapp{
+         height: 870px;
+         /* background-color: brown; */
+         
+                    
+      }
+      .b1h1Title{
+          width: 137%;
+          margin-left:6%; 
+         
+     
+      }
+      .b1h2Title{  
+       margin-left: 5%;
+         
+         
+     }
+     .b1h3Title{
+      margin-left: 5%;
+            
+         
+     }
+     .appIMGwrapp {
+        height: 300px;
+        margin-top: -31px;
+     }
+    .b1bannerImg{
+         margin: auto;
+         box-sizing: border-box;
+         
+     }
+     .carousel-control-prev{
+
+         margin-top: 615px;
+     
+         } 
+         .carousel-control-next{
+          margin-top: 615px;
+            
+        
+         }
+
+ }
+
+ 
+
+
+
+
+/* ===============================================Mobile view============================================== */
+@media(min-width: 469px) and  (max-width: 768px){
+ .carouselBannerwrapper{
+     height: 1840px!important;
+     
+       }
+ .b1banerheight{
+     height: 1830px;
+
+ }
+ .homepagecontentwrapp{
+     height: 870px;
+      
+     
+     
+ }
+ .slide1{
+     height:236px;
+    
+     
+  }
+  .b1h1Title{
+      font-size: 24px;
+     margin-left:2%; 
+     
+ 
+  }
+  .b1h2Title{  
+   margin-left: 1%;
+     
+     
+ }
+ .b1h3Title{
+  margin-left: 2%;
+        
+     
+ }
+ .appIMGwrapp{
+     height: 336px;
+     margin-top: 165px;   
+ }
+ .b1bannerImg{
+     height: 330px; 
+     margin: auto;
+     box-sizing: border-box;
+     
+ }
+ .carousel-control-prev{
+
+  margin-top: 672px;
+
+  } 
+  .carousel-control-next{
+   margin-top: 672px;
+     
+ 
+  }
+  .glyphicon-chevron-left{
+    font-size: 22px!important;
+    margin-top: -13px!important;
+    margin-left: -12px!important;
+
+} 
+.glyphicon-chevron-right{
+   font-size: 22px!important;
+   margin-top: -13px!important;
+   margin-right: -12px!important;
+}
+ 
+ 
+ 
+  } 
+
+ @media (max-width: 468px){
+ .carouselBannerwrapper{
+     height: 1485px;
+     background-color: red;
+     
+ }
+ .b1banerheight{
+     height: 1480px;
+     
+
+ }
+
+  
+  .homepagecontentwrapp{
+     height: 870px;
+     /* background-color: aqua; */
+      
+     
+     
+ }
+   .slide1{
+     height:236px;
+     /* background-color: blueviolet; */
+     
+  } 
+  
+   .b1h1Title{
+    font-size: 30px;
+     margin-left:-5px;
+     margin-top: -156px;  
+ 
+ }
+  .b1h2Title{  
+     font-size: 30px; 
+      margin-left: -7px; 
+     margin-top: -11px;
+     
+ } 
+  .b1h3Title{
+     font-size: 19px;
+      margin-left: -5px; 
+     margin-top: -11px;
+ 
+     
+ }  
+    .appIMGwrapp{
+     height: 300px;
+     /* background-color:red;          */
+     margin-top: 0px; 
+ } 
+    .b1bannerImg{
+     height: 278px; 
+     margin: auto;
+     box-sizing: border-box;
+     
+    
+      
+     
+  } 
+  .carousel-control-prev{
+     height: 38px!important;
+     width: 38px;
+     margin-top: 480px;
+     
+     
+  }  
+   .carousel-control-next{
+     height: 38px!important;
+     width: 38px;
+     margin-top: 481px;
+      margin-right: 10px;
+      
+ 
+ 
+  } 
+  .glyphicon-chevron-left{
+      font-size: 22px!important;
+      margin-top: -13px!important;
+      margin-left: -12px!important;
+
+  } 
+  .glyphicon-chevron-right{
+     font-size: 22px!important;
+     margin-top: -13px!important;
+     margin-right: -12px!important;
+ }
+ 
+
+
+
+
+}
+
+

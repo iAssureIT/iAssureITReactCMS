@@ -15,6 +15,17 @@
   right: 50px;
   font-size: 60px;
 }
+.logoBox{
+	/* position: absolute; */
+	z-index: 50; 
+
+}
+.logoab {
+  position: absolute;
+  top: 49px;
+  height: 56px;
+  left: 108px;
+}
 
 .openMenu {
   height: 0%;
@@ -100,4 +111,74 @@
   z-index: 9;
   position: fixed;
   top: 20px;
+}
+/* ==============================================Media Query ========================================= */
+@media (min-width: 1024px) and (max-width:1200px){
+
+  .logoab{
+    margin-left: -4%;
+    margin-top: 3%;
+  
+  }
+  .customSpan {
+    margin-top:3%;
+      right: 6%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1023px){
+  .logoab{
+    margin-left: -3%;
+    margin-top: 3%;
+  
+  }
+  .customSpan {
+    margin-top:2%;
+      right: 6%;
+    }
+ 
+
+}
+
+
+@media (min-width:769px) and (max-width:991px){
+  .logoab{
+    margin-left: -7%;
+    margin-top: 3%;
+  
+  }
+  .customSpan {
+   margin-top:2.25%!important;
+     right: 6%;
+   }
+  
+
+}
+/* ================================================mobile view  ========================================== */
+@media (min-width:469px) and  (max-width: 768px){
+  .logoab{
+    margin-top: 2%;
+    margin-left: -13%;
+  }
+  .customSpan {
+   
+   margin-top:2.25%!important;
+    right: 6%;
+  }
+
+}
+
+
+@media (max-width: 468px){
+  .customSpan {
+   
+    top: 46px;
+    margin-right: -39px;
+  }
+  .logoab{
+    margin-top: 1%;
+    margin-left: -30%; 
+  }
+   
 }

@@ -160,9 +160,9 @@ export default class ContactForm extends React.Component {
 				 
 				  var dataArray={
 				  "name"         : this.refs.name.value,
-				  "email"      : this.refs.email.value,
+				  "email"        : this.refs.email.value,
 				  "Subject"      : this.refs.Subject.value,
-				  "message"          : this.refs.message.value,
+				  "message"      : this.refs.message.value,
 			
 				 
 				}
@@ -173,52 +173,119 @@ export default class ContactForm extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 containerCon">
+				<div className="contactformBgwrapp">
 					
-					<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 pull-right">
-						<form className="conatctform">
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<h3 className="text-center"> Drop Us a Line</h3>
+						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactmainwrapp">
+							<div className="row">
+							<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 addresswrapp">
+							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 mtop30cf">
+								   <h1> Get in Touch</h1>
+							    </div>
+								<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt20">
+								   <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
+									<img src="/images/loca.png"  className="locationImg" alt="loca"/>
+								   </div>
+								   <div className="col-lg-10 col-md-10 col-xs-10 col-sm-10">
+									<label className="visittitle"><b>Visit Us:</b> </label><br/>
+									<p>#323, Amanora Chambers,Amanora Town Center East Block,
+										Opposite Magarpatta City,Pune, India 400028
+									</p>
+
+								   </div>
+								<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt20">
+									<div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
+										<img src="/images/mail.png" className="mailicon" alt="mail"/>
+
+									</div>
+									<div className="col-lg-10 col-md-10 col-xs-10 col-sm-10">
+										<label className="mailtitle"><b>Mail Us:</b> </label><br/>
+										<p className="titleiassureit">info@iassureit.com
+										</p>
+
+									</div>
+									<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt20">
+										<div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
+											<img src="/images/phn.png" className="phnicon" alt="phn"/>
+										</div>
+										<div className="col-lg-10 col-md-10 col-xs-10 col-sm-10">
+											<label className="phonrtitle"><b>Phone Us:</b> </label><br/>
+											<p className="numbertext">+91 - 9923 393 733</p>
+										</div>
+								   </div>
+							    </div>
 							</div>
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt30">
-								
+						</div>
+						<div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 contactformwrapp">
+						     <div className="cformbgimage1">
+					            <img src="/images/cmodel05.png" alt="cmodel05"/>
+				             </div>
+							  <div className="cformbgimage2">
+						         <img src="/images/cmodel01.png" alt="cmodel04"/> 
+					         </div>
+							 <div className="cformbgimage4">
+						         <img src="/images/cmodel2.png" alt="cmodel2"/>
+				            </div>
+							<div className="cformbgimage5">
+						        <img src="/images/cmodel10.png" alt="cmodel10"/>
+				           </div> 
+						   <div className="cformbgimage7">
+						        <img src="/images/cmodel06.png" alt="cmodel06"/>
+				          </div>
+						  <div className="cformbgimage8 pull-right">
+						      <img src="/images/cmodel08.png" alt="cmodel08"/>
+				          </div>
+						  <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 contactformwrapp2">
+						     <div className="cformbgimage3">
+							    <img src="/images/cmodel04.png" alt="cmodel04"/>
+						     </div>
+							 <div className="cformbgimage6">
+						       <img src="/images/cmodel03.png" alt="cmodel03"/>
+					         </div>
+							 <div className="cformbgimage10">
+						        <img src="/images/cmodel07.png" alt="cmodel07"/>
+					         </div>
+							  <h1 className="h1connecttitle">Connect With Us</h1>
+							  <form>
+							     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv2">
+								 <input className="form-control bg0color0" name="from" type="text" placeholder="Your name"/>
+
+							     </div>
+								 <div className="row">
+									<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
+										<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div className="cformbgimage9">
+							                <img src="/images/cmodel09.png" alt="cmodel03"></img>
+					                    </div>
+											<input className="form-control bg0color0" name="from" type="text" placeholder="Mobile"/>
+										</div>
+										<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+											<input className="form-control bg0color0" name="from" type="text" placeholder="@gmail.com"/>
+										</div>
+								    </div>
+							    </div>
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
+							      <input className="form-control bg0color0" name="from" type="text" placeholder="Subject"/>
+						        </div>
+								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12  bgdiv1">
+								  <textarea className="form-control bg0color0" name="message" placeholder="How can we help?" rows="4"></textarea>
+							    </div>
 								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-								<input className="form-control" name="from" type="text" placeholder="Your name" ref="name" value={this.state.name} onChange={this.handleChange.bind(this)}/>
-									
-								</div>
-							</div>
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-									<input className="form-control" name="from" type="email" placeholder="Your@email.com" ref="email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
-								</div>
-							</div>
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-					               <input className="form-control" name="from" type="text" placeholder="Subject" ref="Subject" value={this.state.Subject} onChange={this.handleChange.bind(this)}/>
-								</div>
-							</div>
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-							        <textarea className="form-control" name="message" placeholder="How can we help?" rows="4"ref="message" value={this.state.message} onChange={this.handleChange.bind(this)} ></textarea>
-							        
-								</div>
-							</div>
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12  bt30">
-								<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-									<button type="button" className="btn col-lg-7 col-md-7 col-xs-12 col-sm-12 sbtn" onClick={this.Submit.bind(this)}>Send A Message</button>
-								</div>
-							</div>
-						</form>
+								   <button type="button" className="btn col-lg-5 col-md-7 col-xs-12 col-sm-12 button2">Send A Message</button>
+							    </div>
+							 </form>
+						</div>
 					</div>
-					
-					<div className="col-lg-5 col-md-5 col-sm-12 col-xs-10 pull-left">
-						<AddressBlock />
-					</div>
-					
 				</div>
 			</div>
+		</div>
+	</div>
 		);
 	}
 }
+
+
+
+
+
+
+

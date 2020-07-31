@@ -29,9 +29,8 @@ export default class ContactModal extends React.Component {
 			<div>
 
 				
-             	{/* <button type="button" className="btn btn-lg madalbtn btnbg" onClick={this.OpenMyOrderModal.bind(this)}  >Contact Us */}
-             	<button type="button" className="btn btn-lg madalbtn btnbg" data-toggle="modal" data-target="#contactpage"  >Contact Us
-				</button>
+             	
+             	<button type="button" className="btn btn-lg madalbtn btnbg" data-toggle="modal" data-target="#contactpage"  >Contact Us</button>
 
 				
 				<div id="contactpage" class="modal fade modalwrapphight" role="dialog">
@@ -58,15 +57,7 @@ export default class ContactModal extends React.Component {
 				<div className="bgimage11">
 						<img src="/images/arrow12.png" alt="cmodel08" className="modelimg11"></img>
 				</div>  
-				
-
-				
-
-
-			
-
-				
-					<div class="modal-content ">
+				<div class="modal-content ">
 					<div class="modal-header modal-header00">
 					<button type="button" class="close" data-dismiss="modal">&times;</button>
 				    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -98,10 +89,9 @@ export default class ContactModal extends React.Component {
 
 							</div>
 							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<input className="form-control bgcolor00 wrapwidth" name="from" type="text" placeholder="@gmail.com"/>
-
+							  <input className="form-control bgcolor00 wrapwidth" name="from" type="text" placeholder="@gmail.com"/>
 							</div>
-							</div>
+						</div>
 
 						</div>
 							 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
@@ -114,7 +104,7 @@ export default class ContactModal extends React.Component {
 							        
 							</div> 
 							 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-								<button type="button" className="btn col-lg-5 col-md-7 col-xs-12 col-sm-12 sbtn button1">Send A Message</button>
+								<button type="button" className="btn col-lg-5 col-md-7 col-xs-12 col-sm-12  button1">Send A Message</button>
 							</div> 
 						</form>
 					</div>

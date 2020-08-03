@@ -114,7 +114,7 @@ export default class CmsLayout extends React.Component {
             <Router>
             	<Switch>
             		   
-                   {/* <Route path = "/" exact component = {Homepage} />
+                    <Route path = "/" exact component = {Homepage} />
 
                     <Route path = "/services" exact component = {ServicesList} />
                     <Route path = "/aboutus" exact component = {AboutUs} />
@@ -128,7 +128,7 @@ export default class CmsLayout extends React.Component {
                     <Route path = "/headernew" exact component = {headernew} />
                     <Route path = "/ecommerce-page" exact component = {Ecommerce} />
                     <Route path = "/bussinessportal-page" exact component = {Bussinessportal} />
-                    */}
+                    
                     <div>
                     <HeaderAdmin />
                     <Route path= "/cms/masterpage/:pageurl"          component={ MasterPage } /> 

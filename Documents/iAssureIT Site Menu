@@ -1,0 +1,77 @@
+iAssureIT Site Menu
+
+Current Menu
+
+HomePage (Ready)
+About Us  (Ready)
+Services (Ready)
+eCommerce Stores  (Ready)
+Contact Us  (Ready)
+
+3rd Aug - Entire site with above pages would be created.. Dummy content
+4th & 5th - Entire site with Real content will be created and handed over to QA
+6th & 7th - QA would finish the testing and give defects. Developers should finish them by 7th. 
+8th - Handed over to Digital Marketing Team
+
+15th Aug - Formal Launch Date
+
+
+============================
+
+Next Plan
+
+1) Create eCommerce Website Using CMS
+   So blocks would be made of two things
+    - One type of block will be made from CMS
+    - Second Type of Blocks would be made from eCommerce Engine
+
+
+2) Using SSR, we have to ensure our page is 100% SEO ready. This is the most critical work. Must be done. 
+
+
+3) Master Skeleton to be created fro each type of page. for example, Services. 
+   Once this master page is created, blocks are added, then we should always use this skeleton to 
+   create this Services Type page. We should not do the same task of adding blocks every time. 
+
+   Using this master page skeleton, we will create 6 types of Services pages as given in below menu. 
+   We will also create hundreds of Portfolio pages, using similar page layout. 
+
+
+
+
+==================================
+
+Future Menu
+
+HomePage 
+About Us 
+    - Who we are 
+    - Mission & vision
+    - Management
+    - Awards
+
+Services 
+    - Web Application
+    - Mobile Application 
+    - eCommerce Stores  
+    - Business Portals
+    - Enterprise Apps
+    - Staff Augmentation
+
+Products
+    - Product1
+    - Product2
+    - Product3
+    - Product4
+    - Product5
+    - Product6
+    
+Career
+    - Apply for Jobs
+    - Life @ iAssureIT 
+    - iAssureIT Family
+
+Portfolio
+
+Contact Us  
+

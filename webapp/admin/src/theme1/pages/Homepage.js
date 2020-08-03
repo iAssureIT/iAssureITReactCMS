@@ -75,22 +75,22 @@ export default class Homepage extends React.Component {
 				 {/* <Banner />  */}
 				
 				
-				 <Services />         
-				 <FastrtrackFrameWork />                  
+				  <Services />          
+				  <FastrtrackFrameWork />                   
 				 
 
-				 <OutSpeciality />                
-				 <AutoPilotPlatform />            
-				 <IndustryDomains />            
-				 <ContentmanagementSystem />             
+				 <OutSpeciality />                 
+				  <AutoPilotPlatform />             
+				  <IndustryDomains />             
+				  <ContentmanagementSystem />              
 				{/*<Portfolio />
 				<Blogs />
 				<Videos />*/}
-				 <Testimonials />                
-		         <Endlesspossibility />              
-		         <AddressOnGoogleMap />             
-			    <Footer />   
-				 <ScrollButton />            
+				 <Testimonials />                 
+		         <Endlesspossibility />               
+		         <AddressOnGoogleMap />              
+			     <Footer />    
+				  <ScrollButton />             
 			</div>
 		);
 	}

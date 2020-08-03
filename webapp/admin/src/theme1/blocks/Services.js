@@ -131,52 +131,50 @@ export default class Services extends React.Component {
 				  	
 				   <div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 Hexagonwrapper00">
 
-						  <div className="hexagon1">
+						    <div className="hexagon1">
 						 <div className="serviceimgblock">
 							  <img  src={this.state.blocks.repeatedBlocks[0].Image} className="images1" alt="images1"/>
 						</div>						   
 							<div className="heprizeapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[0].Title}}></div>
-						</div>    
-						  <div className="hexagon2">
+						</div>      
+						    <div className="hexagon2">
 						   <div className="h1services text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[1].Title}}></div>
-						</div>    
-						  <div className="hexagon3">
+						</div>      
+						   <div className="hexagon3">
 						 <div className="serviceimgblock2">
 							<img  src={this.state.blocks.repeatedBlocks[2].Image} className="images2"  alt="images2"/>
 
-							</div>
-							
-														
-						 <div className="hstaffaugmtion text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[2].Title}}></div>
-						</div>    
-						    <div className="hexagon4">
+						</div>
+						<div className="hstaffaugmtion text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[2].Title}}></div>
+						</div>      
+						      <div className="hexagon4">
 						   <div className="serviceimgblock3">
 							<img  src={this.state.blocks.repeatedBlocks[3].Image} className="images3" alt="images3"/>
 							</div>
 							<div className=" text-center hwebapps" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[3].Title}}></div>
-						</div>     
-						     <div className="hexagon5">
+						</div>       
+						      <div className="hexagon5">
 							<div className="serviceimgblock4">
 							<img  src={this.state.blocks.repeatedBlocks[4].Image} className="images4" alt="images4"/>
 
 							</div>
 
 							<div className="hbportals text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[4].Title}}></div>
-						</div>     
-						    <div className="hexagon6">
+						</div>       
+						      <div className="hexagon6">
 						   <div className="serviceimgblock5">
 							   <img   src={this.state.blocks.repeatedBlocks[5].Image} className="images5" alt="images5"/>
 
 							</div>
 							<div className="hmapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[5].Title}}></div>
-						</div>     
-						 <div className="hexagon7">
+						</div>       
+						  <div className="hexagon7">
 						<div className="serviceimgblock6">
 							<img  src={this.state.blocks.repeatedBlocks[5].Image} className="images6" alt="images6"/>
 
 							</div>
 							<div className="heportal text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[6].Title}}></div>
-						</div>       
+						</div>         
 					</div>     
 
 

@@ -142,9 +142,9 @@
 }
 
 
-@media (min-width:769px) and (max-width:991px){
+@media (min-width:768px) and (max-width:991px){
   .logoab{
-    margin-left: -7%;
+    margin-left: -11%;
     margin-top: 3%;
   
   }
@@ -156,10 +156,10 @@
 
 }
 /* ================================================mobile view  ========================================== */
-@media (min-width:469px) and  (max-width: 768px){
+@media (min-width:469px) and  (max-width: 767px){
   .logoab{
     margin-top: 2%;
-    margin-left: -13%;
+    margin-left: -18%;
   }
   .customSpan {
    

@@ -237,12 +237,14 @@
      
   }
   .b1h1Title{
+      width: 100%;
       font-size: 24px;
      margin-left:2%; 
      
  
   }
-  .b1h2Title{  
+  .b1h2Title{ 
+      font-size: 45px; 
    margin-left: 1%;
      
      
@@ -291,7 +293,7 @@
  @media (max-width: 468px){
  .carouselBannerwrapper{
      height: 1485px;
-     background-color: red;
+    
      
  }
  .b1banerheight{

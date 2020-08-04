@@ -173,6 +173,8 @@ class Staticblocks extends React.Component {
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 			            <button id="Services" 
 								data-RepetedBlock="RepetedBlock" 
+								data-blockTitle="blockTitle" 
+								
 								data-rBlocksLink="rBlocksLink" 
 								data-bgImage="bgImage"
 								data-blockTitle="blockTitle" 

@@ -76,7 +76,7 @@ export default class FastrackFrameWork extends Component{
                   
                 
                          <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 titlewrapper1">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1 text-center">
                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
                    </div>    

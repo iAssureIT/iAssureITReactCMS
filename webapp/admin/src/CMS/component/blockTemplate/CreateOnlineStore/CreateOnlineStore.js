@@ -8,6 +8,8 @@ export default class CreateOnlineStore extends Component{
     constructor(props) {
         super(props);
         this.state = {
+            "fgImage1": "/images/ecom9.png",
+
           blocks: {
             "blockTitle": "CREATE ONLINE <b>STORE </b>",
             
@@ -17,7 +19,6 @@ export default class CreateOnlineStore extends Component{
             "blockType": "",
             "bgImage": "/images/ecom7.png",
             "fgImage": "/images/ecom8.png",
-            "fgImage1": "/images/ecom9.png",
             "repeatedBlocks": [
                                 
                                 { 
@@ -87,7 +88,7 @@ export default class CreateOnlineStore extends Component{
                      </div> 
 
                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 Imgwrapp000">
-                     <img src={this.state.blocks.fgImage1} className="ecomimgleft"></img>
+                     <img src={this.state.fgImage1} className="ecomimgleft"></img>
 
 
                      </div>

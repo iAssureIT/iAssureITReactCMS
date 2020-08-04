@@ -179,10 +179,10 @@ editPage(event){
         this.setState({
         	"pageTitle"						: response.data.pageTitle,
 			"pageUrl"						: response.data.pageURL,
-			
-			"pageHeadKeyWords"				: response.data.pageHead.pageAuthor,
+			"pagetype"						: response.data.pageType,
+			"pageHeadKeyWords"				: response.data.pageHead.pageWords,
 			"pageHeadDescription"			: response.data.pageHead.pageDescription,
-			"pageHeadAuther"				: response.data.pageHead.pageWords,
+			"pageHeadAuther"				: response.data.pageHead.pageAuthor,
 			"UrlId"							: URL,
          
         });
@@ -198,6 +198,7 @@ updatePageData(){
  const formValues = {
    
 				"pageTitle"				: this.refs.pageTitle.value,
+				"pageType"				: this.refs.pagetype.value,
 				"pageURL"				: this.refs.pageUrl.value,
 				"pageWords"				: this.refs.pageHeadKeyWords.value,
 				"pageDescription"		: this.refs.pageHeadDescription.value,

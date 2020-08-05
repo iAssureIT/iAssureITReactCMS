@@ -13,20 +13,14 @@ import ContactModal 	from '../blockTemplate/ContactModal/ContactModal.js';
 
 
 
-const WebLayout = () => (
-<<<<<<< Updated upstream
+const WebLayout = () => 
         <div>
          	<Route path= "/:pageurl"          component={ Masterpage } /> 
           <Route path= "/"         exact component={ Homepage } /> 
         </div>
-=======
 
-           <Route path= "/:pageurl"          component={ Masterpage } /> 
-          
 
->>>>>>> Stashed changes
-
-	);
+	
 
 
 const Routes = (props) => {

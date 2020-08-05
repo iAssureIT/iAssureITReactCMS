@@ -12,12 +12,7 @@
 }
 .whatdowrapper{
   height: 20px;
-<<<<<<< Updated upstream
-  /* background-color: chocolate; */
-=======
   padding-top: 8px;
->>>>>>> Stashed changes
-  
 }
 .whatwedobox{
   list-style: none;
@@ -430,11 +425,7 @@ float: left;
   }
   
  /* ================================================Mobile view===================== */
-<<<<<<< Updated upstream
- @media (max-width: 768px){
-=======
  @media (min-width: 469px) and  (max-width: 767px){
->>>>>>> Stashed changes
 
   .serviceswrapper{
     height: 1800px;
@@ -449,23 +440,19 @@ float: left;
   .whatdowrapper{
     height: 20px;
     padding-top: 8px;
-    /* background-color: blueviolet; */
-    
-    
+    /* background-color: blueviolet; */  
   }
   
   
-   .whatdash1{
+  .whatdash1{
     margin-left: 32%!important; 
-   
   } 
  
   .whatdotextwrapper{
     height: 50px;
-    padding-top: 0px;
-   
+    padding-top: 0px; 
   }
-   .h1titble00{
+  .h1titble00{
     font-size:40px ;
   } 
   
@@ -502,13 +489,7 @@ float: left;
   }  
 
 
-  
-<<<<<<< Updated upstream
-    } */
-=======
->>>>>>> Stashed changes
-
- } 
+} 
 
 
 
@@ -521,24 +502,13 @@ float: left;
   }
   .serviceheight{
     height: 1770px;
-<<<<<<< Updated upstream
-    /* background-color: violet; */
   }
   .Hexagonwrapper00{
-    height: 1700px;
-=======
->>>>>>> Stashed changes
-   
+    height: 1700px;   
   }
   .whatdowrapper{
     height: 20px;
-<<<<<<< Updated upstream
-    /* background-color: chocolate;  */
-=======
-    padding-top: 8px;
-    
->>>>>>> Stashed changes
-    
+    padding-top: 8px;    
   }
   
   .whatdash1{
@@ -553,14 +523,6 @@ float: left;
   .whatdotextwrapper{
     height: 50px;
     padding-top: 0px;
-<<<<<<< Updated upstream
-    /* background-color: violet; */
-=======
-  
->>>>>>> Stashed changes
-   
-  
-    
   }
    .h1titble00{
     font-size:40px ;
@@ -603,227 +565,3 @@ float: left;
 
 }
  
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< Updated upstream
-/*=================================================================*/
-.ahex0{
-  position: relative;
-  -webkit-animation: slide-in-blurred-top 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-          animation: slide-in-blurred-top 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-
-}
-.ahex1{position: relative;
-  -webkit-animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-          animation: slide-in-blurred-left 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-}
-.ahex2{position: relative;
-  -webkit-animation: slide-in-blurred-right 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-          animation: slide-in-blurred-right 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-
-}
-.ahex3{position: relative;
-  -webkit-animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-          animation: slide-in-blurred-bottom 4s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-
-}
-
-/**
- * ----------------------------------------
- * animation slide-in-blurred-left
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-blurred-left {
-  0% {
-    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-blurred-left {
-  0% {
-    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
-    -webkit-transform-origin: 100% 50%;
-            transform-origin: 100% 50%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-/**
- * ----------------------------------------
- * animation slide-in-blurred-right
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-blurred-right {
-  0% {
-    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-blurred-right {
-  0% {
-    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-            transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-            transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
-/**
- * ----------------------------------------
- * animation slide-in-blurred-top
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-blurred-top {
-  0% {
-    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-blurred-top {
-  0% {
-    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
-
-/**
- * ----------------------------------------
- * animation slide-in-blurred-bottom
- * ----------------------------------------
- */
-@-webkit-keyframes slide-in-blurred-bottom {
-  0% {
-    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-blurred-bottom {
-  0% {
-    -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
-    -webkit-transform-origin: 50% 100%;
-            transform-origin: 50% 100%;
-    -webkit-filter: blur(40px);
-            filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-            transform: translateY(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    opacity: 1;
-  }
-}
-
-
-
-
-=======
->>>>>>> Stashed changes

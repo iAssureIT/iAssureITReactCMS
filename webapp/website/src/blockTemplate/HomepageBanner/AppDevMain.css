@@ -1,4 +1,4 @@
- .carouselBannerwrapper{
+.carouselBannerwrapper{
     height: 1040px;
      background-color: #FFFFFF;    
 }
@@ -31,7 +31,7 @@
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: 80px;
-    margin-top: -67px;
+    
 }
 .b1h2Title{    
     font-size: 60px;
@@ -54,7 +54,7 @@
 }
 .appIMGwrapp{
     height: 300px;
-    margin-top: 54px;
+    margin-top: -66px;
 }
 .b1bannerImg{
    height: 330px; 

@@ -107,33 +107,20 @@ export default class Services extends React.Component {
 		return (
 			
 				<div className="serviceswrapper">
-<<<<<<< Updated upstream
+
 				<div className="serviceheight"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashboxwrapper">
-	                      <ul className="dashBox">
-							  <li className="dash1"></li>
-							  <li className="dash2"></li>
-						      <li className="dash3"></li> 
+	                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 whatdowrapper">
+	                      <ul className="whatwedobox">
+							  <li className="whatdash1"></li>
+							  <li className="whatdash2"></li>
+						      <li className="whatdash3"></li> 
 					      </ul>
 	                    </div>
 	                </div>
 
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 textwrapper">
-=======
-				<div className="serviceheight">
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 whatdowrapper">
-                      <ul className="whatwedobox">
-						  <li className="whatdash1"></li>
-						  <li className="whatdash2"></li>
-					      <li className="whatdash3"></li> 
-				      </ul>
-                    </div>
-                </div>
 
-				  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 whatdotextwrapper">
->>>>>>> Stashed changes
                     <div className="text-center ">
                         <div className="h1titble00"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                     </div>

@@ -2,8 +2,8 @@ import React from 'react';
 import './AppDevMain.css';
 import axios from 'axios';
 import $ 			from 'jquery';
-// import 'bootstrap/js/carousel.js';
-// import 'bootstrap/js/collapse.js';
+ import 'bootstrap/js/carousel.js';
+ import 'bootstrap/js/collapse.js';
 
 
 

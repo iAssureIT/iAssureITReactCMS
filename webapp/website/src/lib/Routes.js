@@ -5,7 +5,7 @@ import Masterpage from '../MasterPage/MasterPage.js';
 import Headernew from '../blockTemplate/Headernew/headernew.js';
 // import Footer from '../blockTemplate/Footer/Footer.js';
 
-
+import Homepage from './Homepage.js';
 import ContactModal 	from '../blockTemplate/ContactModal/ContactModal.js';
 
 // import ScrollButton     from '../blockTemplate/ScrollButton/ScrollButton.js';
@@ -14,9 +14,10 @@ import ContactModal 	from '../blockTemplate/ContactModal/ContactModal.js';
 
 
 const WebLayout = () => (
-
-         	<Route path= "/masterpage/:pageurl"          component={ Masterpage } /> 
-
+        <div>
+         	<Route path= "/:pageurl"          component={ Masterpage } /> 
+          <Route path= "/"         exact component={ Homepage } /> 
+        </div>
 
 	);
 

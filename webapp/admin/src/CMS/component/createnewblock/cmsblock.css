@@ -35,18 +35,19 @@
 	width: 100%;
 }
 
-.middle {
+.repetedViewBlock .middle {
   transition: .5s ease;
   opacity: 0;
   position: absolute;
-  top: 4%;
- right: -2%;
+  top: 7%;
+  left: 83%;
+  /*right: -38%;*/
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.All1block1:hover .middle {
+.repetedViewBlock  .All1block1:hover .middle {
   opacity: 1;
 }
 .rclr{

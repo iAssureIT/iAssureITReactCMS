@@ -340,7 +340,7 @@ urlPage(event){
 	                                       <div class="form-group">
 											      <label className="label-category lb666 labelform">Select Page Type</label>
 											      <select className="form-control hinput30" id="pagetype"  value={this.state.pagetype} ref="pagetype" name="pagetype"  onChange={this.selectpageType.bind(this)}>
-                                                    <option disabled={true} selected={true}>--Select Page type--</option>
+                                                    <option  selected>--Select Page type--</option>
                                                     { this.state.ListOfPageTypes  && this.state.ListOfPageTypes.length ?
                                                     	this.state.ListOfPageTypes.map((result,index)=>{
                                                     		return(

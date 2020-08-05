@@ -53,7 +53,7 @@ componentDidMount(){
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
 	        console.log("a==>",a[1]); 
-	        const urlParam =a[2];
+	        const urlParam =a[1];
 	        // console.log("urlparam..",urlParam);
 	        this.setState({
 					      			urlParam:urlParam,

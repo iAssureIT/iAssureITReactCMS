@@ -114,7 +114,8 @@ export default class CmsLayout extends React.Component {
             <Router>
             	<Switch>
             		   
-                    <Route path = "/" exact component = {Homepage} />
+                    <Route path = "/homepage" exact component = {Homepage} />
+                    <Route path = "/responsive" exact component = {Responsive} />
 
                     <Route path = "/services" exact component = {ServicesList} />
                     <Route path = "/aboutus" exact component = {AboutUs} />

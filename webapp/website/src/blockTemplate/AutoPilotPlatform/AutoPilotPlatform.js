@@ -15,7 +15,7 @@ export default class AutoPilotPlatform extends Component{
             "blockDescription": " <span style='font-size:30px'>Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recentlywith desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages. <p style='margin-top:25px'> It is a long established fact that a reader will be distracted by the readable content of a page whenlooking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software</p>", 
             "blockComponentName": "TemplateOverview",
             "blockType": "",
-            "bgImage": "/images/0001.png",
+            "bgImage": "/images/dexpertize.png",
             "fgImage": "/images/0002.png",
             "repeatedBlocks": [
                                 
@@ -40,7 +40,7 @@ export default class AutoPilotPlatform extends Component{
     /*console.log("==>",this.props.block_id);*/
               {
                  axios
-                    .get('/api/blocks/get/'+this.props.block_id)
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                     .then((response)=>{
                         if(response.data){
                             // console.log("ListofServices =",response.data);

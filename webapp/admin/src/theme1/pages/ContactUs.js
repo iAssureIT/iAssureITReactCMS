@@ -8,6 +8,7 @@ import Header from '../common/Header.js';
 import "./ServicesList.css";
 
 import Headernew 		from '../common/headernew.js';
+import  GetInTouch   from '../blocks/GetInTouch.js';
 
 
 
@@ -43,6 +44,7 @@ export default class ContactUs extends React.Component {
 				<Headernew/>
 
 				<ContactBanner />
+				<GetInTouch />
 
 				<ContactForm /> 
 

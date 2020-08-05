@@ -2,6 +2,7 @@ import React from 'react';
 import HomepageBanner       from "./CMS/component/blockTemplate/HomepageBanner/HomepageBanner.js";
 import Services             from "./CMS/component/blockTemplate/Services/Services.js";
 import FasttrackFrameWork    from "./CMS/component/blockTemplate/FasttrackFrameWork/FasttrackFrameWork.js"
+import Headernew from './theme1/common/headernew.js';
 
 
 
@@ -24,6 +25,7 @@ export default class Responsive extends React.Component {
 	render() {
 		return (
 			<div className="">
+				<Headernew />
                  <HomepageBanner /> 
                     <Services />     
                  <FasttrackFrameWork />  

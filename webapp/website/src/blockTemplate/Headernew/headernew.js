@@ -46,7 +46,7 @@ export default class Headernew extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 logoBox">
+				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 logoBox headernewlogobox">
 					    <a href="/" ><img className="logoab img-responsive" src="/images/Logo.png" alt="logo"/></a>
 					</div>
 				<div id="myNav" className="openMenu">
@@ -56,19 +56,17 @@ export default class Headernew extends React.Component {
 							<h1 className="home">Home</h1>
 						</a>
 					  	
-					  	<a href="/aboutus">
+					  	<a href="/aboutus-page">
 							<h1 className="aboutus">About Us </h1>
 						</a>
-						<a href="/services">						
+						<a href="/services-page">						
 							<h1 className="Services">Services</h1>
 						</a>
 						<a href="/ecommerce-page">						
 							<h1 className="Services">eCommerce</h1>
 						</a>
-						{/*<a href="/services">
-							<h1 className="aboutus">Portfolio </h1>
-						</a>*/}
-						<a href="/contactus">
+						
+						<a href="/contactus-page">
 							<h1 className="aboutus">Contact Us </h1>
 						</a>
 					</div>

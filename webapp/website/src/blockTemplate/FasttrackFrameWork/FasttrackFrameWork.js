@@ -42,7 +42,7 @@ export default class FastrackFrameWork extends Component{
     /*console.log("==>",this.props.block_id);*/
               {
                  axios
-                    .get('/api/blocks/get/'+this.props.block_id)
+                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
                     .then((response)=>{
                         if(response.data){
                             // console.log("ListofServices =",response.data);
@@ -63,9 +63,9 @@ export default class FastrackFrameWork extends Component{
     render(){
         return(
             <div className="pagewrapperheight">
-                <div className="bgwrapperheight"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
+                <div className="bgwrapperheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 
-                 
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
                      <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashwrapp">
                       <ul className="dashBox1">
 						            <li className="dash01"></li>
@@ -73,25 +73,24 @@ export default class FastrackFrameWork extends Component{
 					            	<li className="dash03"></li> 
 				            	</ul>
                     </div> 
-                  
-                
-                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-12 col-xs-12 titlewrapper1">
+                 </div> 
+                <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1">
+                        <div className=" text-center">
                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
-                   </div>    
+                   </div>  
                     
-					             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper">  
-                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
-                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
+					            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper"> 
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
+                            <p className="hdescription" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
 
                              <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
-                         </div> 
+                         </div>
 
-                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
+                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
                             <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
-                          </div>    
-                       </div>    
+                          </div>   
+                      </div>   
 					       </div> 
               </div>
         )

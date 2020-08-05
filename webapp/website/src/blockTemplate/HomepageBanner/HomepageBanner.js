@@ -2,9 +2,10 @@ import React from 'react';
 import './AppDevMain.css';
 import axios from 'axios';
 import $ 			from 'jquery';
+// import 'bootstrap/js/carousel.js';
+// import 'bootstrap/js/collapse.js';
 
-import 'bootstrap/js/carousel.js';
-import 'bootstrap/js/collapse.js';
+
 
 
 
@@ -27,7 +28,7 @@ export default class HomepageBanner extends React.Component {
                                 
                                 { 
                                     Title: "APPLICATION", 
-                                    SubTitle:"DEVELOPMENT &MAINTENANCE", 
+                                    SubTitle: "DEVELOPMENT &MAINTENANCE", 
                                     Image: "/images/b1graphic.png",
                                     Link: "", 
                                     Description: "Highly Professional,Reliable & Affordable Cost."
@@ -109,10 +110,11 @@ export default class HomepageBanner extends React.Component {
 											    <div className="item " key={index}>
 									    			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 homepagecontentwrapp">
 														<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
+															<div className="mtop100">
 																<div className="b1h1Title"  dangerouslySetInnerHTML={ { __html:result.Title}}></div><br/>
 																<div className="b1h2Title"  dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div><br/>
 																<div className="b1h3Title"  dangerouslySetInnerHTML={ { __html:result.Description}}></div>
-															
+															</div>
 														</div>
 														<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 appIMGwrapp">
 															<img className="b1bannerImg img-responsive" src={result.Image} alt="Bannerpng"/>
@@ -135,12 +137,7 @@ export default class HomepageBanner extends React.Component {
 										<span class="sr-only">Next</span>
 									</a>
 								</div>
-
-									
-										
-
-					 
-				</div>
+            </div>
 			</div>				
 			
 			

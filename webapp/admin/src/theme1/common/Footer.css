@@ -1,87 +1,245 @@
 .footerBlock{
 	height: 341px;
     background-color: #376bff; 
-    width: 100%;  
+     
     
     
 }
  .footerTop{
-height: 291px;
-/* background-color:#000; */
-/* background-image: url("/images/wmpng.png"); */
-background-size: 100% 100%; 
- /* margin-top: -17px;  */
+   height: 291px;
+   background-size: 100% 100%; 
+ 
  }  
  .wrap1{
      height: 291px;
-      /* background-color: red;  */
+    /* background-color: red;   */
  }
  .wrap2{
-     height: 291px;
-     /* background-color: blueviolet; */
- }
- .wrap3{
     height: 291px;
-    /* background-color: rgb(43, 255, 0); */
+   /* background-color: red;   */
+}
+.wrap3{
+    height: 291px;
+   /* background-color: red;   */
 }
 .wrap4{
     height: 291px;
-    /* background-color: yellow; */
+   /* background-color: red;   */
 }
-
-.bgcolor{
+ .subwrapp1{
     height: 291px;
-     /* background-color: burlywood;  */
-}
-.f1ooter{
+    }
+    
+  .subwrapp2{
+        height: 291px;
+    }
+   .subwrapp3{
+        height: 291px;
+    }
+    .subwrapp4{
+        height: 291px;
+    }
+    
+    
+    
+.footer1{
     height: 290px;
     width: 100%;
-    /* background-color: chartreuse; */
-    
+        
 }
 .footer2{
     height: 290px;
     width: 100%;
-    /* background-color: chartreuse; */
+        
+}
+.footer3{
+    height: 290px;
+    width: 100%;
+        
+}
+.footer4{
+    height: 290px;
+    width: 100%;
+        
+}
+.menubartitle1{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+   margin-left: -40px;  
+   padding-top: 30px;
+   }
+   .menubartitle2{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+   margin-left: -40px;  
+   padding-top: 30px;
+   }
+   .menubartitle3{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+   margin-left: -40px;  
+   padding-top: 30px;
+   }
+   .menubartitle4{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+   margin-left: -40px;  
+   padding-top: 30px;
+   }
+
+
+
+   .footertitle1{
+    color: #f1f1f1f1;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -40px; 
+ 
+}
+.footertitle2{
+    color: #f1f1f1f1;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -40px; 
+ 
+}
+.footertitle3{
+    color: #f1f1f1f1;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: -40px; 
+ 
+}
+
+.footerTop ul{
+	list-style: none;
+}
+ .footer1 a{
+    text-decoration: none;
+    color: #fff;
+
+} 
+.facebookpng{
+    height: 36px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: -183px;
+   
+}
+.twitter{
+    height: 36px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: -112px;
+
+
+}
+.linkdin{
+    height: 36px;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: -41px;
+
+
+}
+.menubartitle2{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+   margin-left: -40px;  
+   padding-top: 30px;
+   }
+   .contactBtn{
+    position: relative;
+    top: 72px;
+    width: 150px;
+    left: -27px; 
+    border-width: 0px !important;
+    height: 30px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: normal;
+    text-align: center;
+    align-items: flex-start;
+    background-color: #68b8ef;
+    border-color: none !important;
+
+} 
+.contactBtn:hover{
+	color: #fff; 
+    background-color: #286090; 
+    border-color: #fff !important;  
+
+ }
+ .footerBottom{
+	height: 50px;
+	background-color: #283592;
+} 
+.mtop10{
+	margin-top: 14px;
+}
+.copyright{
+    color: #f1f1f1f1;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    
+
+
+}
+
+
+
+
+
+
+
+
+/* /* .f1ooter{
+    height: 290px;
+    width: 100%;
+        
+}
+.footer2{
+    height: 290px;
+    width: 100%;
+    
  
 }
 .footer3{
     height: 290px;
     width: 100%;
-    /* background-color: chartreuse; */
-
-
-}
-.backgroundpng{
+    
+} */
+/* .backgroundpng{
     height: 100px;
     width: 100%;
     background-color: cadetblue;
-}
+} */ 
 
 
-.footerBottom{
-	height: 50px;
-	background-color: #283592;
-}
-.bpadding{
+ 
+/* .bpadding{
     padding-bottom: 0px !important;
-}
-.footerTop ul{
-	list-style: none;
-}
-.mtop70{
+} */
+
+/* .mtop70{
 	position: relative;
 	top: 70px;
-}
-.fbPng{
+} */
+/* .fbPng{
     height: 36px;
     position: relative;
     padding: 4px;
     margin-top: 5px;
     top: 7px;
     margin: 0px 10px;
-}
-.contactBtn{
+}  */
+/* .contactBtn{
     position: relative;
     top: 31px;
     width: 150px;
@@ -97,40 +255,40 @@ background-size: 100% 100%;
     background-color: #68b8ef;
     border-color: none !important;
 
-}
-.contactBtn:hover{
+} */
+/* .contactBtn:hover{
 	    /* color: #fff; */
-    background-color: #286090;
-     border-color: #fff !important; 
+    /* background-color: #286090; */
+     /* border-color: #fff !important;  */
 
-}
+/* } */ 
 
-.clrwt{
+ /* .menubar1{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
-   margin-left: -40px; 
+   margin-left: -40px;  
    padding-top: 30px;
-   }
-.clrwt b{
+   } */
+/* .clrwt {
 
         font-size: 24px;
         font-family: 'Montserrat', sans-serif;
 
-}
-.copyr2 ul{
+}  */
+/* .copyr2 ul{
 	list-style: none;
-}
-.copyr2 li{
+} */
+/* .copyr2 li{
 	float: left;
 	padding: 17px 10px 0px 10px;
 	color: #fff;
-}
+} */
 
 .footerBottom ul{
 	list-style: none;
 }
-.mtop10{
-	margin-top: 14px;
-}
+
 
 /* .footerTopxs{
     height: 340px;
@@ -151,26 +309,8 @@ background-size: 100% 100%;
     background-color: #283592;
 
 }
-.f1ooter a{
-    text-decoration: none;
-    color: #fff;
-
-}
-.footertitle{
-    color: #f1f1f1f1;
-    font-size: 15px;
-    font-family: 'Montserrat', sans-serif;
-    margin-left: -40px; 
- 
-}
-.copyright{
-    color: #f1f1f1f1;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    
 
 
-}
 /* ================================Media Query================================================================= */
 @media (max-width:767px){
     .footerBlock{

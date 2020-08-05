@@ -172,49 +172,52 @@ export default class ContactForm extends React.Component {
 	  
 	render() {
 		return (
-			<div>
+			
 				<div className="contactformBgwrapp">
 					
 						<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactmainwrapp">
 							<div className="row">
 							<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 addresswrapp">
-							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 mtop30cf">
-								   <h1> Get in Touch</h1>
-							    </div>
-								<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt20">
-								   <div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
-									<img src="/images/loca.png"  className="locationImg" alt="loca"/>
+							   <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 mtop30cf">
+								   <div className="text-center">
+									   <div className="locationstext"><b>OUR LOCATIONS</b></div>
 								   </div>
-								   <div className="col-lg-10 col-md-10 col-xs-10 col-sm-10">
-									<label className="visittitle"><b>Visit Us:</b> </label><br/>
-									<p>#323, Amanora Chambers,Amanora Town Center East Block,
-										Opposite Magarpatta City,Pune, India 400028
-									</p>
-
+								</div>
+								<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt020">
+								   <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12  rect-block">
+										<img src="/images/ctlocation.png" alt="ctlocation"/>
+									</div>	
+								   <div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 bttitle20">
+									  <div className="locationtitle1">Delhi (INDIA)</div>
+									  <div className="locationtitle2"> #323, Amanora Chambers <br/> Magarpatta,  Pune<br/> Maharastra 411228</div>
 								   </div>
-								<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt20">
-									<div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
-										<img src="/images/mail.png" className="mailicon" alt="mail"/>
+							  </div>
+							  <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt020">
+								   <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12  rect-block">
+										<img src="/images/ctlocation.png" alt="ctlocation"/>
+									</div>	
+								<div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 bttitle20">
+									<div className="locationtitle1">Mumbai (INDIA)</div>
+									<div className="locationtitle2"> #323, Amanora Chambers <br/> Magarpatta,  Pune<br/> Maharastra 411228</div>
 
-									</div>
-									<div className="col-lg-10 col-md-10 col-xs-10 col-sm-10">
-										<label className="mailtitle"><b>Mail Us:</b> </label><br/>
-										<p className="titleiassureit">info@iassureit.com
-										</p>
+								</div>
+							</div>
+							<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt020">
+								   <div className="col-lg-2 col-md-2 col-sm-12 col-xs-12  rect-block">
+										<img src="/images/ctlocation.png" alt="ctlocation"/>
+									</div>	
+								<div className="col-lg-10 col-md-10 col-sm-10 col-xs-10 bttitle20">
+									<div className="locationtitle1">Bengaluru (INDIA)</div>
+									<div className="locationtitle2"> #323, Amanora Chambers <br/> Magarpatta,  Pune<br/> Maharastra 411228</div>
 
-									</div>
-									<div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 bt20">
-										<div className="col-lg-2 col-md-2 col-xs-2 col-sm-2">
-											<img src="/images/phn.png" className="phnicon" alt="phn"/>
-										</div>
-										<div className="col-lg-10 col-md-10 col-xs-10 col-sm-10">
-											<label className="phonrtitle"><b>Phone Us:</b> </label><br/>
-											<p className="numbertext">+91 - 9923 393 733</p>
-										</div>
-								   </div>
-							    </div>
+								</div>
 							</div>
 						</div>
+							
+
+
+
+
 						<div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 contactformwrapp">
 						     <div className="cformbgimage1">
 					            <img src="/images/cmodel05.png" alt="cmodel05"/>
@@ -244,6 +247,7 @@ export default class ContactForm extends React.Component {
 							 <div className="cformbgimage10">
 						        <img src="/images/cmodel07.png" alt="cmodel07"/>
 					         </div>
+							
 							  <h1 className="h1connecttitle">Connect With Us</h1>
 							  <form>
 							     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv2">
@@ -278,13 +282,11 @@ export default class ContactForm extends React.Component {
 				</div>
 			</div>
 		</div>
-	</div>
+	
 		);
 	}
 }
-
-
-
+                       
 
 
 

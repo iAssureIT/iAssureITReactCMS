@@ -15,6 +15,10 @@
   right: 50px;
   font-size: 60px;
 }
+.headernewlogobox{
+  position: absolute;
+}
+
 
 .openMenu {
   height: 0%;

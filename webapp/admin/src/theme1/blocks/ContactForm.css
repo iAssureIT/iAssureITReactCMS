@@ -1,6 +1,6 @@
 .contactformBgwrapp{
-	height: 700px;
-	background-color:#fff;
+	height: 800px;
+	background-color:#FFF;
 }
 .contactmainwrapp{
 	height: 700px;
@@ -8,46 +8,56 @@
 }
 .addresswrapp{
 	height:580px ;
-	background-color: #fff;
+	 
 }
 .mtop30cf{
 	margin-top: 100px;
-	margin-left: 25px;
-
-} 
-.locationImg{
-	height: 45px;
-	margin-top: 20px;
-}
-.visittitle{
-	margin-top: 20px;
-}
-.mailicon{
-	height: 45px;
-	margin-left: -18px;
-	margin-top: 20px;
-}
-.mailtitle{
-	margin-left: -11px;
-	margin-top: 20px;
-}
-.titleiassureit{
-	margin-left: -11px;
 	
 
+} 
+.locationstext{
+	font-size: 30px;
+	color: #555;
+	font-family: 'Montserrat', sans-serif;
+}
+.bt020{
+	height: 100px;
+	margin-top: 30px;
+}
+.rect-block{
+	height: 80px;
+	width: 80px;
+	background-color: #FFF;
+	box-shadow: 1px 1px 5px 1px  #dad6d6; 
+	z-index: 50;
+	
+	
+	
+}
+.rect-block img{
+	height: 69px;
+	width: 100%;
+	margin-top: 4px;
+	
+}
+.bttitle20{
+	height: 100px;
+	position: absolute; 
+	padding-left: 0px!important;
+	margin-left: 62px; 
+}
+.locationtitle1{
+	font-size: 21px;
+	margin-left: 38px;
+	color: #555555;
+	font-family: 'Montserrat', sans-serif;
+}
+.locationtitle2{
+	font-size: 17px;
+	margin-left: 38px;
+	color: #555555;
+	font-family: 'Montserrat', sans-serif;
 
-}
-.phnicon{
-	height: 45px;
-	margin-left: -34px;
-	margin-top: 20px;
-}
-.phonrtitle{
-	margin-left: -21px;
-	margin-top: 20px;
-}
-.numbertext{
-	margin-left: -26px;
 }
 .contactformwrapp{
 	height: 500px;
@@ -180,6 +190,7 @@
 		
 
 	}
+	
 	.cformbgimage9 {
 		height: 442px;
 		width: 217px; 

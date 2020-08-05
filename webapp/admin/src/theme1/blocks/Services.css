@@ -57,7 +57,9 @@ float: left;
 }
 .Hexagonwrapper00{
   height: 722px;
-  margin-top: 70px; 
+  margin-top: 70px;
+  background-color: #FFF!important;
+  
   
 }
 

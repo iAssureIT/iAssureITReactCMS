@@ -9,6 +9,7 @@ import "./ServicesList.css";
 
 import Headernew 		from '../common/headernew.js';
 import  GetInTouch   from '../blocks/GetInTouch.js';
+import ScrollButton     from '../blocks/ScrollButton.js';
 
 
 
@@ -47,9 +48,9 @@ export default class ContactUs extends React.Component {
 				<GetInTouch />
 
 				<ContactForm /> 
-
-				 <AddressOnGoogleMap /> 
+				<AddressOnGoogleMap /> 
 				 <Footer /> 
+				 <ScrollButton />
 			</div>
 		);
 	}

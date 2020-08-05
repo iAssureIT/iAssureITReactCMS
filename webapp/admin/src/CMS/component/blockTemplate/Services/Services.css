@@ -56,7 +56,8 @@ float: left;
 }
 .Hexagonwrapper00{
   height: 722px;
-  margin-top: 70px; 
+  margin-top: 70px;
+  background-color: #FFF!important; 
   
 }
 
@@ -294,7 +295,6 @@ float: left;
 .serviceimgblock6{
   height: 60px;
   width: 60px;
-  /* background-color: red; */
   margin-top: 81px;
   margin-left: 124px;
 

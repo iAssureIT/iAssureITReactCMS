@@ -26,7 +26,7 @@ export default class Testimonials extends React.Component {
                                     SubTitle: "Director - Prabandhan Management Consulting", 
                                     Image: "/images/t1.jpeg",
                                     Link: "", 
-									Description: "One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would goin from their end implementing these.Really happy & satisfied with the quality of the work.",
+									                  Description: "One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would goin from their end implementing these.Really happy & satisfied with the quality of the work.",
 									
 									
 								},
@@ -36,7 +36,7 @@ export default class Testimonials extends React.Component {
                                     SubTitle: "Director - Prabandhan Management Consulting", 
                                     Image: "/images/t2.jpeg",
                                     Link: "", 
-									Description: "One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would goin from their end implementing these.Really happy & satisfied with the quality of the work.",
+								                   	Description: "One important thing which differentiates iAssureIT from other IT companies is the thought process of complete team & their will to provide the best of features, thinking completely out of the box & without bothering the extra efforts which would goin from their end implementing these.Really happy & satisfied with the quality of the work.",
 									
 									
 									
@@ -121,15 +121,15 @@ export default class Testimonials extends React.Component {
 									  	
 									  	return(
 
-			                                  	<div className="item  itemwrapp">
-				                                 	<div className="carousel-caption">
+			                      <div className="item  itemwrapp">
+				                        <div className="carousel-caption">
 														<div className="testContent"   dangerouslySetInnerHTML={ { __html:result.Description}}></div>
 													</div>
 												    <div className="testimonialWriter"   dangerouslySetInnerHTML={ { __html:result.Title}}></div>
 													<div className="writerDetails"   dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div>   
 												    <div className="img-area">
-				                                          <img src="/images/t1.jpeg" alt="t1" className="d-block" />
-			                                        </div>
+				                           <img src="/images/t1.jpeg" alt="t1" className="d-block" />
+			                       </div>
 										        </div>
 										        )
 											})

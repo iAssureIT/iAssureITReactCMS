@@ -121,15 +121,15 @@ export default class Testimonials extends React.Component {
 									  	
 									  	return(
 
-			                                  	<div className="item  itemwrapp">
-				                                 	<div className="carousel-caption">
+			                      <div className="item  itemwrapp">
+				                      <div className="carousel-caption">
 														<div className="testContent"   dangerouslySetInnerHTML={ { __html:result.Description}}></div>
 													</div>
 												    <div className="testimonialWriter"   dangerouslySetInnerHTML={ { __html:result.Title}}></div>
 													<div className="writerDetails"   dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div>   
 												    <div className="img-area">
-				                                          <img src="/images/t1.jpeg" alt="t1" className="d-block" />
-			                                        </div>
+				                        <img src={result.Image} alt="t1" className="d-block" />
+			                       </div>
 										        </div>
 										        )
 											})

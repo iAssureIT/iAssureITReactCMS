@@ -8,19 +8,22 @@ import Footer from '../blockTemplate/Footer/Footer.js';
 import Homepage from './Homepage.js';
 import ContactModal 	from '../blockTemplate/ContactModal/ContactModal.js';
 
- import ScrollButton     from '../blockTemplate/ScrollButton/ScrollButton.js';
+import ScrollButton     from '../blockTemplate/ScrollButton/ScrollButton.js';
 
 
 
 
-const WebLayout = () => 
+
+const WebLayout = () => (
+
         <div>
          	<Route path= "/:pageurl"          component={ Masterpage } /> 
           <Route path= "/"         exact component={ Homepage } /> 
+          
         </div>
 
 
-	
+	);
 
 
 const Routes = (props) => {

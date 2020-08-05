@@ -9,6 +9,7 @@ export default class Homepage extends React.Component {
 	componentDidMount(){
 		this.props.history.push("/home-page");
 		
+		
 	}
 
 	render() {

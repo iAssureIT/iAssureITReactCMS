@@ -109,7 +109,7 @@ export default class Services extends React.Component {
 				<div className="serviceswrapper">
 
 				<div className="serviceheight"  style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
-					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
 	                    <div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 whatdowrapper">
 	                      <ul className="whatwedobox">
 							  <li className="whatdash1"></li>
@@ -117,17 +117,17 @@ export default class Services extends React.Component {
 						      <li className="whatdash3"></li> 
 					      </ul>
 	                    </div>
-	                </div>
+	                 </div> 
 
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 textwrapper">
 
-                    <div className="text-center ">
+                    <div className="text-center">
                         <div className="h1titble00"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                     </div>
                 </div>	 
 				  	
 
-				   	<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 Hexagonwrapper00">
+				   	<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 Hexagonwrapper00">
 
 						<div className="hexagon1">
 							  
@@ -146,13 +146,13 @@ export default class Services extends React.Component {
 							<div className="hstaffaugmtion text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[1]?this.state.blocks.repeatedBlocks[1].Title:""}}></div>
 
 						</div>     
-						<div className="hexagon4">
+						 <div className="hexagon4">
 							<div className="serviceimgblock3">
 							<img  src={this.state.blocks.repeatedBlocks[2]?this.state.blocks.repeatedBlocks[2].Image:"/images/5.png"} className="images3" alt="images3"/>
 							</div>
 							<div className=" text-center hwebapps" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[2]?this.state.blocks.repeatedBlocks[2].Title:""}}></div>
 
-						</div>      
+						</div>       
 						<div className="hexagon5">
 							<div className="serviceimgblock4">
 							<img  src={this.state.blocks.repeatedBlocks[3]?this.state.blocks.repeatedBlocks[3].Image:"/images/5.png"} className="images4" alt="images4"/>
@@ -160,21 +160,21 @@ export default class Services extends React.Component {
 							</div>
 							<div className="hbportals text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[3]?this.state.blocks.repeatedBlocks[3].Title:""}}></div>
 
-						</div>      
-						<div className="hexagon6">
+						</div>       
+						 <div className="hexagon6">
 							<div className="serviceimgblock5">
 							   <img   src={this.state.blocks.repeatedBlocks[4]?this.state.blocks.repeatedBlocks[4].Image:"/images/5.png"} className="images5" alt="images5"/>
 
 							</div>
 							<div className="hmapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[4]?this.state.blocks.repeatedBlocks[4].Title:""}}></div>
-						</div>      
-						<div className="hexagon7">
+						</div>       
+						 <div className="hexagon7">
 							<div className="serviceimgblock6">
 							<img  src={this.state.blocks.repeatedBlocks[5]?this.state.blocks.repeatedBlocks[5].Image:"/images/5.png"} className="images6" alt="images6"/>
 
 							</div>
 							<div className="heportal text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks[5]?this.state.blocks.repeatedBlocks[5].Title:""}}></div>
-						</div>         
+						</div>          
 					</div>
 
 				</div>

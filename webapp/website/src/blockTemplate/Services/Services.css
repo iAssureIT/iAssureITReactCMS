@@ -14,6 +14,7 @@
   height: 20px;
   padding-top: 8px;
   
+  
 }
 .whatwedobox{
   list-style: none;
@@ -50,18 +51,13 @@ float: left;
 }
 
 
-.whatdotextwrapper{
+.textwrapper{
   height: 50px;
-  margin-top: 10px;
+  
+  margin-top: 10px; 
+  
  
 }
-.Hexagonwrapper00{
-  height: 722px;
-  margin-top: 70px; 
-  
-}
-
-
 .h1titble00{
   font-size: 46px;
   font-family: 'Montserrat', sans-serif;
@@ -69,38 +65,39 @@ float: left;
     
 
 }
-
+.Hexagonwrapper00{
+  height: 722px;
+  margin-top: 60px; 
+  
+}
 .hexagon1{
   background-image: url("/images/10.png");
    height: 270px; 
-   width: 310px;
+   width: 301px;
 	 background-size: 100% 100%; 
 	 position: absolute;
-   left: 476px; 
-    margin-top: -33px;
+   margin-left: 39.15%; 
+   margin-top: -3%;
 
   
 }
 .serviceimgblock{
   height: 60px;
   width: 60px;
-  /* background-color: #00ccff;  */
-  margin-left: 124px;
+  margin-left: 117px;
   margin-top: 64px;
+  
 
 }
-.images1{
-  height: 60px;
-  width: 60px; 
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  
+.serviceimgblock img{
+  width: 100%;
+ 
 }
 .heprizeapps{
    height: 68px; 
    width: 164px; 
    /* background-color: red; */
-   margin-left: 72px; 
+   margin-left: 70px; 
   font-size: 24px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -109,20 +106,19 @@ float: left;
 }
 
 .hexagon2{
-  background-image: url("/images/11.png");
+   background-image: url("/images/11.png"); 
   height: 270px; 
-  width: 310px;
-  background-size: 100% 100%; 
-  position: absolute;
-  left: 477px;
-  margin-top: 198px;
+   width: 301px;
+	 background-size: 100% 100%; 
+	 position: absolute;
+   margin-left: 39.15%; 
+   margin-top: 12.5%;
 
 }
 .h1services{
   height: 68px;
   width: 164px;
-  /* background-color: red; */
-  margin-left: 74px;
+  margin-left: 70px;
   margin-top: 119px;
   font-size: 23px;
   color: #fff;
@@ -135,34 +131,31 @@ float: left;
 .hexagon3{
   background-image: url("/images/10.png");
   height: 270px; 
-  width: 310px;
+  width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 476px;
-  margin-top: 426px;
+  margin-left: 39.15%; 
+  margin-top: 28%;
+
 
 }
 .serviceimgblock2{
   height: 60px;
   width: 60px;
   margin-top: 64px;
-  margin-left: 124px;
+  margin-left: 117px;
  
 
 
 }
-.images2{
-  height: 60px;
-  width: 60px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
+.serviceimgblock2 img{
+  width: 100%;
+ 
 }
 .hstaffaugmtion{
   
   width: 164px;
-  /* background-color: red; */
-  margin-left: 72px;
+  margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
   font-family: 'Montserrat', sans-serif;
@@ -173,35 +166,29 @@ float: left;
 .hexagon4{
   background-image: url("/images/10.png");
   height: 270px; 
-   width: 310px;
+   width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  left: 266px;
-  margin-top: 82px;
+  margin-left: 25%;
+  margin-top: 4.75%;
 
 }
 .serviceimgblock3{
   height: 60px;
   width: 60px;
   margin-top: 81px;
-  margin-left: 130px;
+  margin-left: 123px;
  
 
 }
-.images3{
-  height: 60px;
-  width: 60px;
-  /* background-color: red; */
-  /* background-image: url("/images/4.png"); */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
+.serviceimgblock3 img{
+width: 100%;
 }
 .hwebapps{
   height: 68px;
   width: 164px;
   /* background-color: red; */
-  margin-left: 72px;
+  margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
   margin-top: 9px;
@@ -212,34 +199,29 @@ float: left;
 .hexagon5{
   background-image: url("/images/10.png");
   height: 270px; 
-  width: 310px;  background-size: 100% 100%; 
+  width: 301px;
+  background-size: 100% 100%; 
   position: absolute;
-  left: 266px;
-  margin-top: 315px;
+  margin-left: 25%;
+  margin-top: 20.75%;
 
 }
 .serviceimgblock4{
   height: 60px;
   width: 60px;
   margin-top: 81px;
-  margin-left: 124px;
+  margin-left: 123px;
 
 
 }
-.images4{
-  height: 60px;
-  width: 60px;
-  /* background-color: red; */
-  /* background-image: url("/images/9.png"); */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
+.serviceimgblock4 img{
+ width: 100%;
 }
 .hbportals{
   height: 68px;
   width: 164px;
   /* background-color: red;  */
-  margin-left: 72px;
+  margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
   margin-top: 9px;
@@ -249,33 +231,27 @@ float: left;
 .hexagon6{
   background-image: url("/images/10.png");
   height: 270px; 
-   width: 310px;
-  background-size: 100% 100%; 
-  position: absolute;
-  left: 680px;
-  margin-top: 82px;
-
+  width: 301px;
+	background-size: 100% 100%; 
+	position: absolute;
+  margin-left: 53.3%;  
+  margin-top: 4.75%;
+  
 }
 .serviceimgblock5{
   height: 60px;
   width: 60px;
   margin-top: 81px;
-  margin-left: 124px;
+  margin-left: 123px;
 
 }
-.images5{
-  height: 60px;
-  width: 60px;
-  /* background-image: url("/images/6.png"); */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
+.serviceimgblock5 img{
+ width: 100%;
 }
 .hmapps{
   height: 68px;
   width: 164px;
-   /* background-color: red;  */
-  margin-left: 72px;
+  margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
   margin-top: 9px;
@@ -285,33 +261,28 @@ float: left;
 .hexagon7{
   background-image: url("/images/10.png");
   height: 270px; 
-  width: 310px;
-  background-size: 100% 100%; 
-  position: absolute;
-  left: 685px;
-  margin-top: 315px;
+  width: 301px;
+	background-size: 100% 100%; 
+	position: absolute;
+  margin-left: 53.3%;  
+  margin-top: 20.75%;
+ 
 
 }
 .serviceimgblock6{
   height: 60px;
   width: 60px;
-  /* background-color: red; */
   margin-top: 81px;
-  margin-left: 124px;
+  margin-left: 123px;
 
 }
-.images6{
-  height: 60px;
-  width: 60px;
-  /* background-image: url("/images/7.png"); */
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
+.serviceimgblock6 img{
+  width: 100%;
 }
 .heportal{
   height: 68px;
   width: 164px;
-  margin-left: 72px;
+  margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
   margin-top: 9px;

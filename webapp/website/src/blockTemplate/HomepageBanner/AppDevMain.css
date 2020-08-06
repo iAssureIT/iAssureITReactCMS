@@ -21,6 +21,7 @@
     
    }
    .mtop100{
+    margin-top: 200px;
     position: absolute; 
     color: #fff;
     }
@@ -31,6 +32,7 @@
     letter-spacing: 1px;
     font-family: 'Roboto Condensed', sans-serif;
     margin-left: 80px;
+    margin-top: -67px;
     
 }
 .b1h2Title{    
@@ -54,7 +56,7 @@
 }
 .appIMGwrapp{
     height: 300px;
-    margin-top: -66px;
+    margin-top: 54px;
 }
 .b1bannerImg{
    height: 330px; 

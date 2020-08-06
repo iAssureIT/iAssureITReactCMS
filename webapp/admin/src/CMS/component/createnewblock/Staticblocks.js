@@ -174,7 +174,6 @@ class Staticblocks extends React.Component {
 			            <button id="Services" 
 								data-RepetedBlock="RepetedBlock" 
 								data-blockTitle="blockTitle" 
-								
 								data-rBlocksLink="rBlocksLink" 
 								data-bgImage="bgImage"
 								data-blockTitle="blockTitle" 
@@ -205,7 +204,6 @@ class Staticblocks extends React.Component {
 								data-blockTitle="blockTitle" 
 								data-blocksubTitle="blocksubTitle" 
 								data-blockDescription="blockDescription"
-
 								data-fgImage="fgImage" 
 								data-bgImage="bgImage"
 								className="btn zIndexmtop pull-right" 
@@ -236,7 +234,6 @@ class Staticblocks extends React.Component {
 								data-rBlocksTitle="rBlocksTitle" 
 								data-rBlocksImage="rBlocksImage"
 								data-rBlocksLink="rBlocksLink" 
-			                	
 			                	className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
@@ -266,7 +263,6 @@ class Staticblocks extends React.Component {
 								data-rBlocksTitle="rBlocksTitle" 
 								data-rBlocksDescription="rBlocksDescription" 
 								data-rBlocksImage="rBlocksImage" 
-			                	
 			                	className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
@@ -280,9 +276,7 @@ class Staticblocks extends React.Component {
 								data-blockDescription="blockDescription" 
 								data-fgImage="fgImage" 
 								data-bgImage="bgImage" 
-								
-			                	
-			                	className="btn zIndexmtop pull-right" 
+								className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            
@@ -291,12 +285,9 @@ class Staticblocks extends React.Component {
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
 			            <button id="Customisable" 
 								data-blockTitle="blockTitle" 
-								 data-blockDescription="blockDescription" 
+								data-blockDescription="blockDescription" 
 								data-fgImage="fgImage" 
-								 
-								
-			                	
-			                	className="btn zIndexmtop pull-right" 
+								className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            
@@ -321,7 +312,6 @@ class Staticblocks extends React.Component {
 								data-blockTitle="blockTitle" 
 								 data-blockDescription="blockDescription" 
 								data-fgImage="fgImage" 
-								
 								data-bgImage="bgImage"
 								 className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
@@ -358,13 +348,14 @@ class Staticblocks extends React.Component {
 					</section>
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-			            <button id="Testimonials" 
-								data-blockTitle="blockTitle" 
-								data-blocksubTitle="blocksubTitle" 
-								data-blockDescription="blockDescription"
-								data-fgImage="fgImage" 
-								data-bgImage="bgImage"
-								className="btn zIndexmtop pull-right" 
+						<button id="Testimonials" 
+						       data-blockTitle="blockTitle" 
+							   data-RepetedBlock="RepetedBlock" 
+							   data-rBlocksTitle="rBlocksTitle" 
+							   data-rBlocksSubTitle="rBlocksSubTitle"
+							   data-rBlocksDescription="rBlocksDescription" 
+							   data-rBlocksImage="rBlocksImage"
+							    className="btn zIndexmtop pull-right" 
 			                	onClick={this.selectComponent.bind(this)} > 
 			                	Select this Design
 			            </button>		            

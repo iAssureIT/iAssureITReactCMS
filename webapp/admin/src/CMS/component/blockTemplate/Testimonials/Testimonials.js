@@ -11,8 +11,7 @@ export default class Testimonials extends React.Component {
         super(props);
         this.state = {
           blocks: {
-            "blockTitle": "blockTitle here",
-            
+            "blockTitle": " <b>Client Testimonials</b>",
             "blockSubTitle": "We are passionate about our work",
             "blockDescription": "Lorem Ipsum",
             "blockComponentName": "TemplateOverview",
@@ -94,7 +93,7 @@ export default class Testimonials extends React.Component {
 	
 	
 	render() {
-		// var data =this.state.Testimonials;
+		
 				return (
 				<section className="testimonialwrapper">
 					<div className="col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5 col-sm-12 col-xs-12 dashBoxTmwrapp">
@@ -105,15 +104,13 @@ export default class Testimonials extends React.Component {
                         </ul>
 					</div>
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 clienttestmonials">
-					<h1>
-	                     <b>Client Testimonials</b>
-                     </h1> 
+				       	    <h1 dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></h1> 
                 </div>  
 				<div className="col-lg-12 col-md-12 col-sm- col-xs-12 row"> 
 					<div className="col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
 					   <div className="col-lg-10 col-md-11 col-lg-offset-1 col-sm-12 col-xs-12 testimonialBox"> 
 						  <div id="myCarouselT" className="carousel slide" data-ride="carousel">
-							 {/* <div class="carousel-inner" role="listbox">*/}
+							 
 
 									<div className="carousel-inner" id="cItemHBpageTest">
 									{

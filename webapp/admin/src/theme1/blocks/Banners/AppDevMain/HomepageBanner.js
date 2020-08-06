@@ -69,7 +69,8 @@ export default class HomepageBanner extends React.Component {
     $(document).ready(function(){
 			
 
-			  $("#cItemHBpage div:nth-child(1)").addClass("active");
+        $("#cItemHBpage div:nth-child(1)").addClass("active");
+        
 
 
 		});
@@ -100,7 +101,7 @@ export default class HomepageBanner extends React.Component {
 				  	
 					
 
-					<div id="myCarousel" className="carousel " data-ride="carousel"  data-interval="false" data-pause="hover">
+					<div id="myCarousel" className="carousel " data-ride="carousel"  data-interval="false" data-pause="hover" loop nav={true}  autoplay={true}  autoplaySpeed={900} items={1}>
 									
 							  		<div className="carousel-inner" id="cItemHBpage">
 									{

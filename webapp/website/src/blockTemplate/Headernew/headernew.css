@@ -1,5 +1,5 @@
 .customSpan{
-  font-size:40px;
+  font-size:30px;
   cursor:pointer;
   position: fixed;
   top: 50px;
@@ -15,9 +15,15 @@
   right: 50px;
   font-size: 60px;
 }
-.headernewlogobox{
-  position: absolute;
+.logoab {
+   position: absolute; 
+  top: 49px!important;
+  height: 56px!important;
+  left: 118px!important;
 }
+ .headernewlogobox{
+  position: absolute;
+} 
 
 
 .openMenu {
@@ -105,10 +111,7 @@
   position: fixed;
   top: 20px;
 }
-.logoab{
-  margin-top: 3.25%;
-  margin-left: 8%;
-}
+
 /* ==============================================Media Query ========================================= */
 @media (min-width:769px) and (max-width:991px){
   .logoab{

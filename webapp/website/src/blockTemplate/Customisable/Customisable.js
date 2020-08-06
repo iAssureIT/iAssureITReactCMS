@@ -85,9 +85,7 @@ export default class Customisable extends Component{
                              <p className="h1titlecustom"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}>
                                 
                             </p> 
-                                                      
-                           
-                             <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div>
+                            <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div>
                             
 
                             

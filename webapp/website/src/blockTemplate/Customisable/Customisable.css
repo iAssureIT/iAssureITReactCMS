@@ -1,10 +1,10 @@
 .customisablewrapper{
     height: 600px;
-    /* background-color: #ccc; */
+     background-color: #FFF!important; 
 }
 .dashboxwrapper{
     height: 20px;
-    /* background-color: chocolate; */
+    
     
   }
   .dashBox{
@@ -100,7 +100,7 @@
     margin-left: 111px;  
     font-size: 30px;
     color: #376BFF;
-    padding-top: -10px;
+    /* padding-top: -10px; */
    }
 
    

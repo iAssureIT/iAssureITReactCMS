@@ -1,6 +1,6 @@
 .dmbgwrapp{
     height: 600px;
-    /* background-color: blue; */
+    background-color: #FFF!important; 
 }
 .dashboxwrapper{
   height: 20px;
@@ -50,6 +50,7 @@
 }
 .custmowrapper{
    height: 450px;
+   
   
 }
 .customIMGwrapp{

@@ -1,6 +1,10 @@
 /webapp/admin/node_modules
 /webapp/admin/.env
 
+/webapp/website/node_modules
+/webapp/website/.env
+
+
 
 
 /Api/node_modules

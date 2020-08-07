@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ContactForm.css";
-import AddressBlock         from "./AddressBlock.js";
+
 import axios 				from 'axios';
 import swal                 from 'sweetalert2';
 

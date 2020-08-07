@@ -20,6 +20,9 @@ import ServicesBanner              from  "../blockTemplate/ServicesBanner/Servic
 import NationalAwards              from  "../blockTemplate/NationalAwards/NationalAwards.js";
 import Testimonials              from  "../blockTemplate/Testimonials/Testimonials.js";
 import Services              from  "../blockTemplate/Services/Services.js";
+import ContactBanner        from "../blockTemplate/ContactBanner/ContactBanner.js";
+import GetInTouch          from "../blockTemplate/GetInTouch/GetInTouch.js";
+import ContactForm      from "../blockTemplate/ContactForm/ContactForm.js"
 
 
 
@@ -361,6 +364,51 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<Testimonials /> 
 					</section>
+
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+						<button id="ContactBanner" 
+							   data-blockTitle="blockTitle"
+							   data-bgImage   = "bgImage"
+							   data-fgImage   ="fgImage"
+							   className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<ContactBanner /> 
+					</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+						<button id="GetInTouch" 
+							   data-blockTitle="blockTitle"
+							   data-blocksubTitle="blocksubTitle"
+							   data-RepetedBlock="RepetedBlock"
+							   data-rBlocksTitle="rBlocksTitle" 
+							   data-rBlocksSubTitle="rBlocksSubTitle"
+							   data-rBlocksDescription="rBlocksDescription"
+							   data-rBlocksImage="rBlocksImage"
+
+							   className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<GetInTouch /> 
+					</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+						<button id="ContactForm" 
+							   data-blockTitle="blockTitle"
+							   data-RepetedBlock="RepetedBlock"
+							   data-rBlocksTitle="rBlocksTitle" 
+							   data-rBlocksSubTitle="rBlocksSubTitle"
+							   data-rBlocksImage="rBlocksImage"
+
+							   className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<ContactForm /> 
+					</section>
+
+
+
 
 
 				</div>

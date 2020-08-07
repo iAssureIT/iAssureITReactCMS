@@ -1,0 +1,41 @@
+.contacwrapp{
+	height: 675px;
+	background-color: #fff;
+}
+
+.cAwrapper{
+	height: 670px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	
+}
+.contatcbannertext{
+	height: 350px;
+	/* background-color:yellow;  */
+	margin-top: 130px;
+}
+.contactbannertitlewrapp{
+	height: 300px;
+	 /* background-color: red;  */
+	
+
+} 
+.cbannerptext{
+	height: 400px;
+	 
+	
+}
+.cbannerptext img{
+	margin-top: -158px;
+	margin-left: 51px;
+}
+
+.bText{
+	
+	font-size: 93px;
+	color: #fff;
+	margin-top: 116px;
+	margin-left: 100px;
+	
+}
+

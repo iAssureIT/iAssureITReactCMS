@@ -10,7 +10,7 @@ export default class GetInTouch extends Component{
             "blockTitle": "GET IN TOUCH",
             
             "blockSubTitle": "Give us a call or drop by anything,we endeavour to answer all enquiries within 24 hours on business day.We will happy to answer your questuions",
-            "blockDescription": "<span style='font-size:30px'><b>Lorem Ipsum </b> </span> is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Ipsum passages,<p style='margin-top:20px'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution Ipsum passages, and more recently with desktop publishing software </p>",
+            "blockDescription": "<span  </b>   a Ipsum passages, and more recently with desktop publishing software </p>",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
             "bgImage": "/images/002.png",

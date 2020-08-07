@@ -353,7 +353,7 @@ width: 100%;
  
 /* ================================================Tablets and  ipad===================== */
 
-@media  (min-width:768px) and (max-width: 991px){
+/* @media  (min-width:768px) and (max-width: 991px){
   .serviceswrapper{
     height: 1370px!important;
     width: 100%;
@@ -392,14 +392,14 @@ width: 100%;
   }
   
  
-  }
+  } */
   
  /* ================================================Mobile view===================== */
- @media (min-width: 469px) and  (max-width: 767px){
+ /* @media (min-width: 469px) and  (max-width: 767px){
 
   .serviceswrapper{
     height: 1800px;
-    /* background-color: aqua; */
+    
      
           
   }
@@ -410,7 +410,7 @@ width: 100%;
   .whatdowrapper{
     height: 20px;
     padding-top: 8px;
-    /* background-color: blueviolet; */
+    
     
     
   }
@@ -466,10 +466,10 @@ width: 100%;
   
 
  } 
+ */
 
 
-
-@media (max-width: 468px){
+/* @media (max-width: 468px){
   .serviceswrapper{
     height: 1900px;
     
@@ -544,7 +544,7 @@ width: 100%;
   
 
 }
- 
+  */
 
 
 

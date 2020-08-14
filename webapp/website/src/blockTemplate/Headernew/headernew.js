@@ -52,21 +52,21 @@ export default class Headernew extends React.Component {
 				<div id="myNav" className="openMenu">
 					<a href="javascript:void(0)" className="closebtn1">&times;</a>
 					<div className="topm text-center">
-				  		<a href="/masterpage/home-page">
+				  		<a href="/home-page">
 							<h1 className="home">Home</h1>
 						</a>
 					  	
-					  	<a href="/aboutus-page">
+					  	<a href="/about-us">
 							<h1 className="aboutus">About Us </h1>
 						</a>
-						<a href="/services-page">						
+						<a href="/services">						
 							<h1 className="Services">Services</h1>
 						</a>
-						<a href="/ecommerce-page">						
+						<a href="/ecommerce">						
 							<h1 className="Services">eCommerce</h1>
 						</a>
 						
-						<a href="/contactus-page">
+						<a href="/contact-us">
 							<h1 className="aboutus">Contact Us </h1>
 						</a>
 					</div>

@@ -170,7 +170,7 @@ export default class Services extends React.Component {
 						</div>       
 						  <div className="hexagon7">
 						<div className="serviceimgblock6">
-							<img  src={this.state.blocks.repeatedBlocks[5].Image} className="images6" alt="images6"/>
+							<img  src={this.state.blocks.repeatedBlocks[6].Image} className="images6" alt="images6"/>
 
 							</div>
 							<div className="heportal text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks. repeatedBlocks[6].Title}}></div>

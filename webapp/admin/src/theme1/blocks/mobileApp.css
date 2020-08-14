@@ -20,13 +20,16 @@
     font-size: 74px;
     line-height: 1;
     letter-spacing: 2.5px;
-    font-weight: 600;
+	font-weight: 600;
+	margin-left: -48px;
 }
 .h3Titlema{
     font-size: 70px;
     line-height: 1;
     letter-spacing: 2.5px;
-    font-weight: 600;
+	font-weight: 600;
+	margin-left: -48px;
+	
 }
 
 .logoBox{

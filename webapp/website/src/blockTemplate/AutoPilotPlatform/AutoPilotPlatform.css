@@ -71,13 +71,15 @@
     height: 391px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -23px;  
+    margin-top: -23px; 
+    margin-left: 12px; 
     
 
 }
 .autocontentframework{
     height: 370px;
     margin-top: 151px;
+    margin-left: -67px;
     
     
 }

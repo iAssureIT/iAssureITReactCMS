@@ -1,6 +1,6 @@
 .contacwrapp{
 	height: 675px;
-	background-color: #fff;
+	background-color: #fff!important;
 }
 
 .cAwrapper{
@@ -11,28 +11,28 @@
 }
 .contatcbannertext{
 	height: 350px;
-	/* background-color:yellow;  */
 	margin-top: 130px;
 }
 .contactbannertitlewrapp{
 	height: 300px;
-	 /* background-color: red;  */
+	 
 	
 
 } 
 .cbannerptext{
 	height: 400px;
+	
 	 
 	
 }
 .cbannerptext img{
-	margin-top: -158px;
+	margin-top: -127px;
 	margin-left: 51px;
 }
 
 .bText{
 	
-	font-size: 93px;
+	font-size: 81px;
 	color: #fff;
 	margin-top: 116px;
 	margin-left: 100px;

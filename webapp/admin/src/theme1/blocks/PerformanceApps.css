@@ -78,14 +78,13 @@
     color: #376BFF;
     cursor: pointer;
     border-bottom: 1px solid #376BFF!important;
-    width: 17%;
+    width: 19%;
 
 
 }
 .arrowmtech{
     height: 100px;
     width: 30%;
-    /* background-color: aquamarine; */
     margin-top: -40px; 
     margin-left: 190px;
     font-size:30px;
@@ -101,7 +100,6 @@
    height: 440px;
    background-size: 100% 100%;
    background-repeat: no-repeat;
-   /*margin-left: 86px;*/
 }
 
 

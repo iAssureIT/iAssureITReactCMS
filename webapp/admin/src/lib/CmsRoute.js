@@ -45,7 +45,14 @@ import Homepage from '../theme1/pages/Homepage.js';
 import ServicesList from '../theme1/pages/ServicesList.js';
 import ContactUs from '../theme1/pages/ContactUs.js';
 import Ecommerce from '../theme1/pages/ecommerce.js';
-import Bussinessportal from '../theme1/pages/bussinessportal.js';
+// import Bussinessportal from '../theme1/pages/bussinessportal.js';
+ import Bussinessportal from '../theme1/pages/BusinessPortails.js';
+ import Enterpriseapp from '../theme1/pages/Enterpriseapp.js';
+ import Mobileapps from '../theme1/pages/Mobileapps.js';
+ import Webapps from '../theme1/pages/Webapps.js';
+ import StaffAugmentation from '../theme1/pages/StaffAugmentation.js';
+
+
 
 import AboutUs from '../theme1/pages/AboutUs.js';
 import Header from '../theme1/common/Header.js';
@@ -53,7 +60,7 @@ import fullheader from '../theme1/common/fullheader.js';
 import headernew from '../theme1/common/headernew.js';
 
 
-import mobileApp from '../theme1/blocks/mobileApp.js';
+// import mobileApp from '../theme1/blocks/mobileApp.js';
 import staffaBanner from '../theme1/blocks/staffaBanner.js';
 import eCommerce from '../theme1/blocks/eCommerce.js';
 import webapp from '../theme1/blocks/webapp.js';
@@ -122,13 +129,17 @@ export default class CmsLayout extends React.Component {
                     <Route path = "/header" exact component = {Header} />
                     <Route path = "/fullheader" exact component = {fullheader} />
                     <Route path = "/contactus" exact component = {ContactUs} />
-                    <Route path = "/mobileapp" exact component = {mobileApp} />
+                    {/* <Route path = "/mobileapp" exact component = {mobileApp} /> */}
                     <Route path = "/staffabanner" exact component = {staffaBanner} />
                     <Route path = "/eCommerce" exact component = {eCommerce} />
                     <Route path = "/webapp" exact component = {webapp} />
                     <Route path = "/headernew" exact component = {headernew} />
                     <Route path = "/ecommerce-page" exact component = {Ecommerce} />
-                    <Route path = "/bussinessportal-page" exact component = {Bussinessportal} />
+                    <Route path = "/bussinessportal" exact component = {Bussinessportal} />
+                    <Route path = "/enterpriseapp" exact component = {Enterpriseapp} /> 
+                    <Route path = "/mobileapps" exact component = {Mobileapps} />
+                    <Route path = "/webapps" exact component = {Webapps} /> 
+                    <Route path = "/staffAugmentation" exact component = {StaffAugmentation} /> 
                     
                     <div>
                     <HeaderAdmin />

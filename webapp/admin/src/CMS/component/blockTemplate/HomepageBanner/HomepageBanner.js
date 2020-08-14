@@ -4,9 +4,6 @@ import axios from 'axios';
 import $ 			from 'jquery';
 
 
-// import OwlCarousel from 'react-owl-carousel';
-// import 'owl.carousel/dist/assets/owl.carousel.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 export default class HomepageBanner extends React.Component {
 
@@ -136,12 +133,7 @@ export default class HomepageBanner extends React.Component {
 										<span class="sr-only">Next</span>
 									</a>
 								</div>
-
-									
-										
-
-					 
-				</div>
+              </div>
 			</div>				
 			
 			

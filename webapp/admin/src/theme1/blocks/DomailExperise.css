@@ -1,6 +1,6 @@
 .dexpertisewrapper{
     height: 950px;
-    /* background-color: #fff;  */
+    background-color: #fff!important;  
 }
 .dexpertizebgwrapper{
 height: 950px;
@@ -70,13 +70,17 @@ background-size: 100% 100%;
     height: 391px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    margin-top: -23px;  
+    margin-top: -23px; 
+    margin-left: 12px; 
     
 
 }
 .autocontentframework{
     height: 370px;
     margin-top: 151px;
+    margin-left: -67px;  
+
+
     
     
 }
@@ -87,9 +91,8 @@ background-size: 100% 100%;
     color: #f1f1ff;
     letter-spacing: 0.5px;
     font-weight: 550; 
-     padding-top: 48px;   
-
-    
+     padding-top: 48px; 
+       
 
 }
 
@@ -100,7 +103,7 @@ background-size: 100% 100%;
     color: #f1f1f1;
     cursor: pointer;
     border-bottom: 1px solid #f1f1f1!important;
-    width: 17%!important;
+    width: 18%!important;
 
 
 }

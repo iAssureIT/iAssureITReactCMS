@@ -960,7 +960,7 @@ class CmsBlock extends Component {
           										<div className="col-lg-12 col-md-12 repGBlock">
                               
           											
-      														{ this.state.rBlocksTitle === "" || this.state.rBlocksTitle === null  ||  this.state.rBlocksTitle === undefined
+      														{ this.state.rBlocksTitle === "" 
       															? null
       															:
             												<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -970,7 +970,7 @@ class CmsBlock extends Component {
         															</div>
             												</div>
       														}
-      												    { this.state.rBlocksSubTitle === "" ||  this.state.rBlocksSubTitle === null  ||  this.state.rBlocksSubTitle === undefined
+      												    { this.state.rBlocksSubTitle === "" 
                                       ? null
                                       :
                                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -983,7 +983,7 @@ class CmsBlock extends Component {
           											
       							              { 
                                     
-                                    this.state.rBlocksLink === "" || this.state.rBlocksLink === null  ||  this.state.rBlocksLink === undefined
+                                    this.state.rBlocksLink === "" 
                                     ? null
                                     :
                                       <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 nopadd">
@@ -997,7 +997,7 @@ class CmsBlock extends Component {
 
                                       { 
                                       
-                                        this.state.rbPath.path ===  "" || this.state.rbPath.path === null  ||  this.state.rbPath.path === undefined
+                                        this.state.rbPath.path ===  "" 
                                         ? null
                                         :
           												        <div className="">
@@ -1066,9 +1066,7 @@ class CmsBlock extends Component {
                                             </div>
                                             : ""
                                           }
-                                        { this.state.repBlockContent === "" || this.state.repBlockContent === null  ||  this.state.repBlockContent === undefined
-                                         ? null
-                                         :
+                                       
                     											<div className="marginTop17">
                     												<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 marginTop17">
                     												    <label className="label-category marginTop17 labelform">Block Content<span className="astrick"></span></label>
@@ -1081,7 +1079,7 @@ class CmsBlock extends Component {
             								                    </div>
                     												</div>
                     											</div>
-                                        }
+                                        
                                         {
                                           this.state.rep_idEdit
                                           ?

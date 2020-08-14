@@ -1,5 +1,6 @@
 .conlinewrapp{
     height: 450px;
+    background-color: #fff!important;
      
 }
 .createonlinebgimg{
@@ -62,7 +63,7 @@
     margin-top: -22px;
 } */
 .onlineh1title00{
-    font-size: 32px;
+    font-size: 31px;
     font-family: 'Montserrat', sans-serif;
     color: #f1f1f1;
     margin-top: 12px;
@@ -70,7 +71,7 @@
 
 } 
 .onlineh1title01{
-    font-size: 16px;
+    font-size: 15px;
     color: #f1f1f1;
     font-family: 'Montserrat', sans-serif;
     margin-left: 10px;

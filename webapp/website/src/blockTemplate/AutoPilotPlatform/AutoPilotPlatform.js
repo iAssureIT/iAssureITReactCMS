@@ -88,7 +88,7 @@ export default class AutoPilotPlatform extends Component{
                             <p className="paragraphfasttrack00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
 
                             
-                             <h3 className="ftracermore00">Read More </h3> <div className="arrow00"><i className="fas fa-angle-double-right"></i></div>
+                             {/* <h3 className="ftracermore00">Read More </h3> <div className="arrow00"><i className="fas fa-angle-double-right"></i></div> */}
 
                         </div> 
 

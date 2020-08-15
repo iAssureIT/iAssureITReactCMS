@@ -313,7 +313,7 @@ export default class ContactForm extends React.Component {
 						   <div className="cformbgimage7">
 						        <img src="/images/cmodel06.png" alt="cmodel06"/>
 				          </div>
-						  <div className="cformbgimage8 pull-right">
+						  <div className="cformbgimage8">
 						      <img src="/images/cmodel08.png" alt="cmodel08"/>
 				          </div>
 						  <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 contactformwrapp2">

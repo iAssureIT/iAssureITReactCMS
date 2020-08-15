@@ -4,26 +4,23 @@
 }
 
 .testimonialBox{
-	height: 350px;
-	position: relative;
-  left: auto; 
-  right: auto;
-  top: 31px;  
-	background-color: #fff;
-	border: 1px solid #efefef;
-	border-radius: 10px;
-	box-shadow: 2px 2px 20px 5px #dad6d6;
+height: 350px;
+position: relative;
+left: auto; 
+right: auto;
+top: 31px;  
+background-color: #fff;
+border: 1px solid #efefef;
+border-radius: 10px;
+box-shadow: 2px 2px 20px 5px #dad6d6;
 }
 
 .dashBoxTmwrapp{
     height: 20px;
-    
-    
-    }
+}
     .dashBoxTm{
         list-style: none;
-
-    }
+}
         
     .dashBoxTm li{
       float: left;
@@ -35,7 +32,6 @@
         border: 2px solid #00ccff;
         border-radius: 10px;
     }
-    
     .dash2Tm{
         height: 1px;
         width: 50px;
@@ -50,9 +46,6 @@
         font-family: 'Montserrat', sans-serif;
         color: #555555;
         text-align:center ;
-
-         
-        
     }
     .itemwrapp{
         height: 290px;
@@ -69,9 +62,7 @@
        margin-left: 42px; 
        box-shadow: 2px 2px 17px 2px #666;
        overflow: hidden;
-       
-
-   }
+     }
    .img-area img{
        width: 100%;
    }
@@ -94,15 +85,12 @@
     margin-left: 160px;
     margin-top: 41px;
     font-weight: bold;
-
-
-   }
+    }
    .carousel-indicators{
        bottom: -35px;
 
    }
-   
-  .testimonialwrapper .testContent{
+   .testimonialwrapper .testContent{
        font-size: 19px;
        width: 90%;
        margin: auto;
@@ -120,7 +108,7 @@
     height: 50px!important;
     width: 50px;
     margin-top: 235px;
-    margin-left: 706px;
+    margin-left: 650px;
     border-radius: 50px;      
     background-color: #eee;
     z-index: 25;

@@ -107,7 +107,7 @@ export default class HomepageBanner extends React.Component {
 									  	this.state.blocks.repeatedBlocks.map((result, index)=>{
 									  	
 									  	return(
-											    <div className="item " key={index}>
+											    <div className="item " key={index} >
 									    			<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 homepagecontentwrapp">
 														<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 slide1">
 															<div className="mtop100">

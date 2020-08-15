@@ -59,11 +59,13 @@
    }
  .customleftimage{
      height: 430px;
+     margin-left: 12%;
     
  }
  .customtextwrapp{
      height: 440px;
     padding-top: 40px;
+    margin-left: -67px;
  }
   
    .h1titlecustom{
@@ -73,6 +75,7 @@
     color: #555555;
     letter-spacing: 0.5px;
     font-weight: 550; 
+   
 }
 .h1titlecustom{
    font-size: 18px;

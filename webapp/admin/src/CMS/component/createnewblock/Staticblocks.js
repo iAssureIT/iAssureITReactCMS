@@ -22,7 +22,8 @@ import Testimonials              from  "../blockTemplate/Testimonials/Testimonia
 import Services              from  "../blockTemplate/Services/Services.js";
 import ContactBanner        from "../blockTemplate/ContactBanner/ContactBanner.js";
 import GetInTouch          from "../blockTemplate/GetInTouch/GetInTouch.js";
-import ContactForm      from "../blockTemplate/ContactForm/ContactForm.js"
+import ContactForm      from "../blockTemplate/ContactForm/ContactForm.js";
+import AddressOnGoogleMap from "../blockTemplate/AddressOnGoogleMap/AddressOnGoogleMap.js"
 
 
 
@@ -174,12 +175,11 @@ class Staticblocks extends React.Component {
 					</section>
 
 					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
-			            <button id="Services" 
+						<button id="Services"
+								data-blockTitle="blockTitle" 
 								data-RepetedBlock="RepetedBlock" 
-								data-blockTitle="blockTitle" 
 								data-rBlocksLink="rBlocksLink" 
-								data-bgImage="bgImage"
-								data-blockTitle="blockTitle" 
+								data-bgImage="bgImage" 
 								data-rBlocksTitle="rBlocksTitle" 
 								data-rBlocksImage="rBlocksImage" 
 			                	className="btn zIndexmtop pull-right" 
@@ -406,6 +406,17 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<ContactForm /> 
 					</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+						<button id="AddressOnGoogleMap" 
+							   data-blockTitle="blockTitle"
+							  
+							   className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<AddressOnGoogleMap /> 
+					</section>
+
 
 
 

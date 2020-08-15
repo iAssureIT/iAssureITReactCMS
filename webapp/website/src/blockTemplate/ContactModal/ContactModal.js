@@ -30,8 +30,8 @@ export default class ContactModal extends React.Component {
 			<div>
 
 				
-             	{/* <button type="button" className="btn btn-lg madalbtn btnbg" onClick={this.OpenMyOrderModal.bind(this)}  >Contact Us */}
-             	<button type="button" className="btn btn-lg madalbtn btnbg" data-toggle="modal" data-target="#contactpage"  >Contact Us
+             	
+             	<button type="button" className="btn btn-lg madalbtn btnbg " data-toggle="modal" data-target="#contactpage"  >Contact Us
 				</button>
 
 				
@@ -92,7 +92,7 @@ export default class ContactModal extends React.Component {
 
 							</div>
 							<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-							<input className="form-control bgcolor00 wrapwidth" name="from" type="text" placeholder="@gmail.com"/>
+							<input className="form-control bgcolor00 wrapwidth" name="from" type="text" placeholder="your email here"/>
 
 							</div>
 							</div>

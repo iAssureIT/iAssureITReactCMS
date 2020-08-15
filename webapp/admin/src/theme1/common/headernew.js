@@ -47,7 +47,7 @@ export default class Headernew extends React.Component {
 		return (
 			<div>
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 logoBox">
-					    <a href="/" ><img className="logoab img-responsive" src="./images/Logo.png" alt="logo"/></a>
+					    <a href="/" ><img className="logoab img-responsive" src="./images/iAssureIT.svg" alt="logo"/></a>
 					</div>
 				<div id="myNav" className="openMenu">
 					<a href="javascript:void(0)" className="closebtn1">&times;</a>

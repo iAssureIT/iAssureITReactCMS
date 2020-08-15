@@ -86,7 +86,7 @@ export default class DigitalMarkiting extends Component{
                             </p> 
                                                       
                            
-                             <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div>
+                             {/* <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div> */}
                             
 
                             

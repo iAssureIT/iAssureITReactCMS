@@ -1,4 +1,4 @@
-/* .carouselBannerwrapper{
+.carouselBannerwrapper{
     height: 1040px;
      background-color: #FFFFFF;    
 }
@@ -6,22 +6,10 @@
 	height: 1040px;  
 	background-repeat: no-repeat;
     background-size: 100% 100%; 
- }  */
-/* .logoBox{
-	position: absolute;
-
-}
-.logoIMG{
-	position: absolute;
-    top: 45px;
-    left: 100px !important;
-    height: 75px !important;
-    width: 125px !important;
-    cursor: pointer;
-} */
- /* .homepagecontentwrapp{
+ }  
+  .homepagecontentwrapp{
     height: 470px;
-    margin-top: 137px;
+    margin-top: 80px;
  }
  .slide1{
     height: 465px;
@@ -63,8 +51,7 @@
 }
 .appIMGwrapp{
     height: 300px;
-    background-color:red;      
-    margin-top: 54px;
+    margin-top: 54px; 
 }
 .b1bannerImg{
    height: 330px; 
@@ -104,13 +91,14 @@
    
 
  }
-  */
+  
   /* ===============================MOBILE VIEW================================================ */
   @media (min-width: 1024px) and (max-width:1200px)
 
  {
      .b1h1Title{
   
+        font-size: 29px;
         margin-left: 57px;
                    
      }
@@ -329,7 +317,7 @@
  
  }
   .b1h2Title{  
-     font-size: 30px; 
+     font-size: 23px; 
       margin-left: -7px; 
      margin-top: -11px;
      
@@ -342,19 +330,16 @@
      
  }  
     .appIMGwrapp{
-     height: 300px;
-     /* background-color:red;          */
-     margin-top: 0px; 
+     height: 330px;
+     
+     margin-top: 40px; 
  } 
-    .b1bannerImg{
-     height: 278px; 
+    .appIMGwrapp Img{
+    width: 85%;
      margin: auto;
      box-sizing: border-box;
      
-    
-      
-     
-  } 
+ } 
   .carousel-control-prev{
      height: 38px!important;
      width: 38px;

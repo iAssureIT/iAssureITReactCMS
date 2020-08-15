@@ -116,7 +116,7 @@ export default class OutSpeciality extends React.Component {
 													<div className="col-lg-12 col-md-12">
 													   <p className="paragraph"dangerouslySetInnerHTML={{ __html: data.Description } }></p>
 												   </div>
-												   <p className="text-center rmore">Read More</p>  
+												   {/* <p className="text-center rmore">Read More</p>   */}
 											   </div>   
 			   
 										   </div> 

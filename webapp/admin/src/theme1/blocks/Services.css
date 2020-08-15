@@ -1,4 +1,4 @@
-.serviceswrapper{
+/* .serviceswrapper{
   height: 879px;
   background-color:#fff; 
         
@@ -76,8 +76,8 @@ float: left;
    width: 301px;
 	 background-size: 100% 100%; 
 	 position: absolute;
-   /* margin-left: 39.15%;  */
-   /* margin-top: -3%; */
+   margin-left: 39.15%;  
+    margin-top: -3%; 
    margin-left: 38.4%;
    margin-top: -3%;
 
@@ -99,7 +99,7 @@ float: left;
 .heprizeapps{
    height: 68px; 
    width: 164px; 
-   /* background-color: red; */
+   background-color: red; 
    margin-left: 70px; 
   font-size: 24px;
   letter-spacing: 1px;
@@ -114,8 +114,8 @@ float: left;
    width: 301px;
 	 background-size: 100% 100%; 
 	 position: absolute;
-   /* margin-left: 39.15%; 
-   margin-top: 12.5%; */
+    margin-left: 39.15%; 
+   margin-top: 12.5%; 
    margin-left: 38.4%;
    margin-top: 13.5%;
 
@@ -140,8 +140,8 @@ float: left;
   width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  /* margin-left: 39.15%; 
-  margin-top: 28%; */
+  margin-left: 39.15%; 
+  margin-top: 28%; 
   margin-left: 38.4%;
   margin-top: 30%;
 
@@ -178,8 +178,8 @@ float: left;
    width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  /* margin-left: 25%;
-  margin-top: 4.75%; */
+  margin-left: 25%;
+  margin-top: 4.75%; 
   margin-left: 23%;
   margin-top: 5%;
 
@@ -199,7 +199,7 @@ width: 100%;
 .hwebapps{
   height: 68px;
   width: 164px;
-  /* background-color: red; */
+  background-color: red; 
   margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -214,8 +214,8 @@ width: 100%;
   width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  /* margin-left: 25%;
-  margin-top: 20.75%; */
+  margin-left: 25%;
+  margin-top: 20.75%; 
   margin-left: 23%;
   margin-top: 22%;
 
@@ -235,7 +235,7 @@ width: 100%;
 .hbportals{
   height: 68px;
   width: 164px;
-  /* background-color: red;  */
+  background-color: red;  
   margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -249,9 +249,9 @@ width: 100%;
   width: 301px;
 	background-size: 100% 100%; 
 	position: absolute;
-  /* margin-left: 53.3%;  
+   margin-left: 53.3%;  
   margin-top: 4.75%;
-   */
+   
    margin-left: 53.8%;
    margin-top: 5%;
 
@@ -282,9 +282,9 @@ width: 100%;
   width: 301px;
 	background-size: 100% 100%; 
 	position: absolute;
-  /* margin-left: 53.3%;  
+   margin-left: 53.3%;  
   margin-top: 20.75%;
-  */
+  
   margin-left: 53.8%;
   margin-top: 22%;
 
@@ -309,7 +309,7 @@ width: 100%;
   margin-top: 9px;
   font-family: 'Montserrat', sans-serif;
 
-}
+} 
 
 
 
@@ -376,7 +376,7 @@ width: 100%;
  
 /* ================================================Tablets and  ipad===================== */
 
-@media  (min-width:768px) and (max-width: 991px){
+/* @media  (min-width:768px) and (max-width: 991px){
   .serviceswrapper{
     height: 1370px!important;
     width: 100%;
@@ -415,16 +415,14 @@ width: 100%;
   }
   
  
-  }
+  } */
   
  /* ================================================Mobile view===================== */
- @media (min-width: 469px) and  (max-width: 767px){
+ /* @media (min-width: 469px) and  (max-width: 767px){
 
   .serviceswrapper{
     height: 1800px;
-    /* background-color: aqua; */
-     
-          
+    
   }
   .serviceheight{
     height: 1770px;
@@ -433,8 +431,6 @@ width: 100%;
   .whatdowrapper{
     height: 20px;
     padding-top: 8px;
-    /* background-color: blueviolet; */
-    
     
   }
   
@@ -488,11 +484,11 @@ width: 100%;
 
   
 
- } 
+ }  */
 
 
 
-@media (max-width: 468px){
+/* @media (max-width: 468px){
   .serviceswrapper{
     height: 1900px;
     
@@ -566,7 +562,7 @@ width: 100%;
 
   
 
-}
+} */
  
 
 

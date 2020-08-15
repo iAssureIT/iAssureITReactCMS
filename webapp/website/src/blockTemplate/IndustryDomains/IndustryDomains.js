@@ -145,8 +145,8 @@ export default class IndustryDomains extends React.Component {
 	render() {
 	
 		return (
-			<div className=" container-fluid nopadding">
-				<div className="industryDomainsHt container-fluid">
+			
+				<div className="industryDomainsHt">
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 ">
 						<ul className="dashBoxID col-lg-2 col-lg-offset-5 col-md-2 col-md-offset-5">
 						  <li className="dash1ID "></li>
@@ -163,7 +163,7 @@ export default class IndustryDomains extends React.Component {
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 row">
 						<div className="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12 iDomainBlock">
 						{
-                		this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length > 0 ?
+            this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length > 0 ?
 						this.state.blocks.repeatedBlocks.map((data, index)=>{
                 		return(
 					
@@ -191,7 +191,7 @@ export default class IndustryDomains extends React.Component {
 						
 					
 				</div>
-				</div>
+				
 		);
 	}
 }

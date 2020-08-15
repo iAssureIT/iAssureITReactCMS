@@ -76,7 +76,7 @@ float: left;
    width: 301px;
 	 background-size: 100% 100%; 
 	 position: absolute;
-   margin-left: 39.15%; 
+   margin-left: 38.4%; 
    margin-top: -3%;
 
   
@@ -96,6 +96,7 @@ float: left;
 .heprizeapps{
    height: 68px; 
    width: 164px; 
+   /* background-color: red; */
    margin-left: 70px; 
   font-size: 24px;
   letter-spacing: 1px;
@@ -106,12 +107,12 @@ float: left;
 
 .hexagon2{
    background-image: url("/images/11.png"); 
-   height: 270px; 
+  height: 270px; 
    width: 301px;
 	 background-size: 100% 100%; 
 	 position: absolute;
-   margin-left: 39.15%; 
-   margin-top: 12.5%;
+   margin-left: 38.4%; 
+   margin-top: 13.5%;
 
 }
 .h1services{
@@ -133,8 +134,8 @@ float: left;
   width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  margin-left: 39.15%; 
-  margin-top: 28%;
+  margin-left: 38.4%; 
+  margin-top: 30%;
 
 
 }
@@ -168,8 +169,8 @@ float: left;
    width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  margin-left: 25%;
-  margin-top: 4.75%;
+  margin-left: 23%;
+  margin-top: 5%;
 
 }
 .serviceimgblock3{
@@ -201,8 +202,8 @@ width: 100%;
   width: 301px;
   background-size: 100% 100%; 
   position: absolute;
-  margin-left: 25%;
-  margin-top: 20.75%;
+  margin-left: 23%;
+  margin-top: 22%;
 
 }
 .serviceimgblock4{
@@ -219,6 +220,7 @@ width: 100%;
 .hbportals{
   height: 68px;
   width: 164px;
+  /* background-color: red;  */
   margin-left: 70px;
   font-size: 24px;
   letter-spacing: 1px;
@@ -232,8 +234,8 @@ width: 100%;
   width: 301px;
 	background-size: 100% 100%; 
 	position: absolute;
-  margin-left: 53.3%;  
-  margin-top: 4.75%;
+  margin-left: 53.8%;  
+  margin-top: 5%;
   
 }
 .serviceimgblock5{
@@ -262,8 +264,8 @@ width: 100%;
   width: 301px;
 	background-size: 100% 100%; 
 	position: absolute;
-  margin-left: 53.3%;  
-  margin-top: 20.75%;
+  margin-left: 53.8%;  
+  margin-top: 22%;
  
 
 }
@@ -290,6 +292,7 @@ width: 100%;
 
 
 
+ 
 /* ==========================================Media Query===================================================== */
 /* @media (max-width:1200px){ */
   
@@ -469,7 +472,7 @@ width: 100%;
  */
 
 
-/* @media (max-width: 468px){
+ @media (max-width: 467px){
   .serviceswrapper{
     height: 1900px;
     
@@ -509,42 +512,49 @@ width: 100%;
   } 
   
   .hexagon1{
-    left:10%; 
+    margin-left: 4.4%; 
+   margin-top: -10%;
+ 
    }
    .hexagon2{
-    left:10%;
+    margin-left: 4.4%; 
+    margin-top: 55%;
+ 
 
   } 
   .hexagon3{
-    left:10%;
+   margin-left: 4.4%; 
+   margin-top: 120%;
+
   } 
    .hexagon4{
-    left:10%;
-    top:572px;
+    margin-left: 4.4%; 
+   margin-top: 185%;
 
   } 
   .hexagon5{
-    left:10%;
-    top:570px;
+    margin-left: 4.4%; 
+   margin-top: 200%;
 
 
   } 
    .hexagon6{
-    left:10%;
-    top:1035px;
-
+    margin-left: 4.4%; 
+    margin-top: 248%;
+ 
 
   } 
    .hexagon7{
-    left:10%;
-    top:1035px;
+    margin-left: 4.4%; 
+   margin-top: 315%;
+
   }  
 
 
   
 
 }
-  */
+  
 
 
 

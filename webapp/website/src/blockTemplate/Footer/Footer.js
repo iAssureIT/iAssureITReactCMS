@@ -14,11 +14,10 @@ export default class Footer extends React.Component {
 					<ul className="footer1">
 						<li className="menubartitle1"><b>Menu</b></li>
 						<a href="/"><li className="footertitle1">Home</li></a>
-						<a href="/cms/masterpage/demo-1"><li className="footertitle1">About Us</li></a>
-						<a href="/services"><li className="footertitle1">Portfolio</li></a>
-						<a href="/contactus"><li className="footertitle1">Contact Us</li></a> 
-						<li className="footertitle1">Career</li>
-						<li className="footertitle1">Resources</li>
+						<a href="/about-us"><li className="footertitle1">About Us</li></a>
+						<a href="/contact-us"><li className="footertitle1">Contact Us</li></a> 
+						{/* <li className="footertitle1">Career</li> */}
+						{/* <li className="footertitle1">Resources</li> */}
 							   
 						</ul>
 					</div>
@@ -27,12 +26,12 @@ export default class Footer extends React.Component {
 				    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 subwrapp2">
 						<ul className="footer2">
 							<li className="menubartitle2"><b>Services</b></li>
-							<li className="footertitle2">Enterprise Apps</li>
-							<li className="footertitle2">Business Portails</li> 
+							<li className="footertitle2">Web Application</li>
+							<li className="footertitle2">Mobile Application</li> 
 							<li className="footertitle2">eCommerce Portails</li> 
+							<li className="footertitle2">Enterprise Application</li>  
+							<li className="footertitle2">Business Portails</li>
 							<li className="footertitle2">Staff Augumentation</li>  
-							<li className="footertitle2">Web Apps</li>
-							<li className="footertitle2">Mobile Apps</li>  
 						</ul>
 					</div> 
 

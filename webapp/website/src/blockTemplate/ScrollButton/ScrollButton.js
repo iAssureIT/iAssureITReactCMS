@@ -1,5 +1,7 @@
 import React,{Component} from 'react';
 import './ScrollButton.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 export default class ScrollButton extends Component{
     constructor(props){

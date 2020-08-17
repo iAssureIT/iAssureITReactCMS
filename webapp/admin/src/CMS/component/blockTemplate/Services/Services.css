@@ -294,190 +294,143 @@ width: 100%;
 
  
 /* ==========================================Media Query===================================================== */
-/* @media (max-width:1200px){ */
-  
-/* } */
-/* @media (max-width:992px){
-  
-  .serviceswrapper{
-    height: 930px;
-    width: 100%;
-    
-  }
-
-  .Hexagonwrapper00{
-     height: 1112px;
-   }
-   .dashBoxS{
-     width:100%;
-       margin-left: -67px!important;  
-      
-       
-   }
-   .dash1S{
-     margin-left: 43%!important;
-   }
-   .servicehiading{
-     margin: auto;
-     margin-top: 20px;
-   
-   }
-   .hexagon1{
-     margin-left: -202px; 
-   
- 
- 
-   }
-   .hexagon2{
-     margin-left: -202px;
-   }
-   .hexagon3{
-     margin-left: -202px;
-   }
-   .hexagon4{
-     margin-left: -202px; 
- 
-   }
-   .hexagon5{
-     margin-left:-202px ;
-   }
-   .hexagon6{
-     margin-left:-198px ;
- 
- 
-   }
-   .hexagon7{
-     margin-left:-198px ;
- 
- 
-   }
- 
- } */
  
 /* ================================================Tablets and  ipad===================== */
 
-/* @media  (min-width:768px) and (max-width: 991px){
+ @media  (min-width:992px) and (max-width: 1200px){
   .serviceswrapper{
-    height: 1370px!important;
-    width: 100%;
-    
-   
+    height: 1750px;
+    background-color:#fff; 
           
   }
   .whatdowrapper{
     height: 20px;
     padding-top: 8px;
+    
+    
+    
     
   }
   .whatdash1{
-    margin-left: 39%!important; 
-   
-  } 
-  .hexagon1{
-   
-     left:243px; 
-     
+    margin-left: -25%;
+  }
   
-    
-  }
-  .hexagon2{
-   
-    left:243px; 
-  }
-  .hexagon3{
-   
-    left:243px; 
-  }
-  .hexagon4{
-    left: 160px;
-    
-  
-  }
   
  
-  } */
-  
- /* ================================================Mobile view===================== */
- /* @media (min-width: 469px) and  (max-width: 767px){
-
-  .serviceswrapper{
-    height: 1800px;
-    
-     
-          
-  }
-  .serviceheight{
-    height: 1770px;
-   
-  }
-  .whatdowrapper{
-    height: 20px;
-    padding-top: 8px;
-    
-    
-    
-  }
-  
-  
-   .whatdash1{
-    margin-left: 32%!important; 
-   
-  } 
- 
-  .whatdotextwrapper{
-    height: 50px;
-    padding-top: 0px;
-   
-  }
-   .h1titble00{
-    font-size:40px ;
-  } 
-  
   .hexagon1{
-    left:19%; 
+    margin-left: 33.8%;
+    margin-top: -3%
    }
    .hexagon2{
-    left:19%;
+    margin-left: 33.8%; 
+    margin-top: 20%;
+
 
   } 
   .hexagon3{
-    left:19%;
+    margin-left: 33.8%; 
+    margin-top: 43%;
+
   } 
    .hexagon4{
-    left:19%;
-    top:572px;
+    margin-left: 13%;
+    margin-top: 9%;
 
   } 
   .hexagon5{
-    left:19%;
-    top:570px;
+    margin-left: 13%; 
+   margin-top: 32%;
 
 
   } 
    .hexagon6{
-    left:19%;
-    top:1035px;
+    margin-left: 54.5%;  
+    margin-top: 9%;
 
 
   } 
    .hexagon7{
-    left:19%;
-    top:1035px;
-  }  
+    margin-left: 54.5%;  
+    margin-top: 32%;
 
+  }   
 
   
+  
+  
+}
+ 
 
- } 
- */
+   
+ 
+  
+  
+ /* ================================================Mobile view===================== */
+   @media (min-width: 768px) and  (max-width: 991px){
 
-
- @media (max-width: 467px){
-  .serviceswrapper{
-    height: 1900px;
+    .serviceswrapper{
+      height: 1750px;
+      
+    }
+    .Hexagonwrapper00{
+      height: 1760px;
+    }
     
-     
-          
+   .whatdash1{
+      margin-left: 40%;
+    }
+    .hexagon1{
+      margin-left: 28.5%;
+      margin-top: -3%
+     }
+     .hexagon2{
+      margin-left: 28.5%; 
+      margin-top: 27.5%;
+
+  
+    } 
+    .hexagon3{
+      margin-left: 28.5%; 
+      margin-top: 58%;
+
+    } 
+     .hexagon4{
+      margin-left: 0%;
+      margin-top: 12%;
+
+    } 
+    .hexagon5{
+      margin-left: 0%; 
+     margin-top: 42%;
+  
+  
+    } 
+     .hexagon6{
+      margin-left: 57%;  
+      margin-top: 12%;
+ 
+  
+    } 
+     .hexagon7{
+      margin-left: 57%;  
+      margin-top: 42%;
+ 
+    }  
+  
+    
+    
+    
+}
+   
+
+
+ @media (max-width: 767px){
+  .serviceswrapper{
+    height: 1750px;
+    
+  }
+  .Hexagonwrapper00{
+    height: 1760px;
   }
   .serviceheight{
     height: 1770px;
@@ -534,19 +487,19 @@ width: 100%;
   } 
   .hexagon5{
     margin-left: 4.4%; 
-   margin-top: 200%;
+   margin-top: 250%;
 
 
   } 
    .hexagon6{
     margin-left: 4.4%; 
-    margin-top: 248%;
+    margin-top: 315%;
  
 
   } 
    .hexagon7{
     margin-left: 4.4%; 
-   margin-top: 315%;
+   margin-top: 380%;
 
   }  
 

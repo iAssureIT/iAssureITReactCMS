@@ -13,12 +13,12 @@ export default class Footer extends React.Component {
 					<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 subwrapp1">
 					<ul className="footer1">
 						<li className="menubartitle1"><b>Menu</b></li>
-						<a href="/"><li className="footertitle1">Home</li></a>
-						<a href="/cms/masterpage/demo-1"><li className="footertitle1">About Us</li></a>
-						<a href="/services"><li className="footertitle1">Portfolio</li></a>
+						<a href="/homepage"><li className="footertitle1">Home</li></a>
+						<a href="/aboutus"><li className="footertitle1">About Us</li></a>
 						<a href="/contactus"><li className="footertitle1">Contact Us</li></a> 
-						<li className="footertitle1">Career</li>
-						<li className="footertitle1">Resources</li>
+						{/* <li className="footertitle1">Career</li> */}
+						{/* <li className="footertitle1">Resources</li> */}
+						{/* <a href="/services"><li className="footertitle1">Portfolio</li></a> */}
 							   
 						</ul>
 					</div>

@@ -28,7 +28,7 @@ export default class Responsive extends React.Component {
 				<Headernew />
                  <HomepageBanner /> 
                  <Services />      
-                 {/* <FasttrackFrameWork />   */}
+                 <FasttrackFrameWork />   
 		   </div>
 		);
 	}

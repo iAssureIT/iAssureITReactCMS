@@ -90,7 +90,7 @@ export default class NationalAwards extends Component{
                         <div className="NAh1title" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
                         <div className="NAhetitle"dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div> 
 
-                           <h3 className="NArmore">Read More </h3> <div className="NAarrow"><i className="fas fa-angle-double-right"></i></div>
+                           {/* <h3 className="NArmore">Read More </h3> <div className="NAarrow"><i className="fas fa-angle-double-right"></i></div> */}
                      
                       <div>
                         {

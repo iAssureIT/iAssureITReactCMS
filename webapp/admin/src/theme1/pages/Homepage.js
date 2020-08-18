@@ -13,6 +13,7 @@ import FastrtrackFrameWork 	    from '../blocks/FasttrackFrameWork.js';
 import AutoPilotPlatform        from '../blocks/AutoPilotPlatform.js';
 import ContentmanagementSystem  from  '../blocks/ContentmanagementSystem.js';
 import Endlesspossibility       from   '../blocks/Endlesspossibility.js';
+import MobileAppDevelopment     from    '../blocks/MobileAppDevelopment.js';
 
 
 import DemoAnim 	from '../blocks/demoAnim.js';
@@ -81,7 +82,8 @@ export default class Homepage extends React.Component {
 
 				    <OutSpeciality />                    
 				    <AutoPilotPlatform />                
-				     <IndustryDomains />                
+				     {/* <IndustryDomains />  */}
+					 <MobileAppDevelopment />               
 				     <ContentmanagementSystem />                 
 				{/*<Portfolio />
 				<Blogs />

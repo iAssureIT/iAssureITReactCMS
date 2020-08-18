@@ -1,0 +1,97 @@
+.Mappdevwrapp{
+    height: 1400px;
+    
+}
+.mobileboxwrapp {
+    height: 20px;
+    padding-top: 5px;
+    
+}
+
+
+ .MobileBox{
+    list-style: none;
+    margin: auto;
+  }
+ .MobileBox li{
+     float: left;
+}
+ .Mdash01,.Mdash03{
+    height: 1px;
+    width: 20px;
+    margin:2px;
+    border: 2px solid #00ccff!important;
+    border-radius: 10px;
+}
+
+.Mdash02{
+    height: 1px;
+    width: 50px;
+    margin:2px;
+    border: 2px solid #00ccff!important;
+    border-radius: 10px;
+}
+.mappdevtitlewrapp{
+    height: 100px;
+    
+}
+.h1mtitletext{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    margin-top: 14px;
+}
+.subtitlewrapp{
+    height: 200px;
+    
+    
+}
+.mh2subtitletext{
+    font-size: 19px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    text-align: justify;
+
+}
+.devimagewrapp{
+    height: 600px;
+    
+
+}
+.devimagewrapp img {
+    width: 100%;
+}
+.reptedblockwrapp{
+    height: 300px;
+    margin-top: 40px;
+    
+}
+.mobileimg1{
+    height: 300px;
+    
+    
+}
+.mobileimg2{
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4%;
+    
+    
+}
+.mobileimg2 img{
+    width: 100%;
+    
+    margin-left: 2%;
+    margin-top: 24px;
+}
+
+
+.mh1titletext{
+    font-size: 20px;
+    color: #555555;
+    margin-top: 5px;
+}
+
+
+
+

@@ -23,7 +23,8 @@ import Services              from  "../blockTemplate/Services/Services.js";
 import ContactBanner        from "../blockTemplate/ContactBanner/ContactBanner.js";
 import GetInTouch          from "../blockTemplate/GetInTouch/GetInTouch.js";
 import ContactForm      from "../blockTemplate/ContactForm/ContactForm.js";
-import AddressOnGoogleMap from "../blockTemplate/AddressOnGoogleMap/AddressOnGoogleMap.js"
+import AddressOnGoogleMap from "../blockTemplate/AddressOnGoogleMap/AddressOnGoogleMap.js";
+import MobileAppDevelopment from "../blockTemplate/MobileAppDevelopment/MobileAppDevelopment.js"
 
 
 
@@ -416,6 +417,21 @@ class Staticblocks extends React.Component {
 			            </button>		            
 						<AddressOnGoogleMap /> 
 					</section>
+					<section className="col-lg-12 col-md-12 col-sm-12 col-xl-12 selectHover m10">	
+						<button id="MobileAppDevelopment" 
+							   data-blockTitle="blockTitle"
+							   data-blocksubTitle="blocksubTitle"
+							   data-fgImage="fgImage"
+							   data-RepetedBlock="RepetedBlock"
+							   data-rBlocksTitle="rBlocksTitle" 
+							   data-rBlocksImage="rBlocksImage"
+     						   className="btn zIndexmtop pull-right" 
+			                	onClick={this.selectComponent.bind(this)} > 
+			                	Select this Design
+			            </button>		            
+						<MobileAppDevelopment /> 
+					</section>
+
 
 
 

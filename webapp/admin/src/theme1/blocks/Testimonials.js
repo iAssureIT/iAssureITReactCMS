@@ -113,7 +113,7 @@ export default class Testimonials extends React.Component {
 					<div className="col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
 					   <div className="col-lg-10 col-md-11 col-lg-offset-1 col-sm-12 col-xs-12 testimonialBox"> 
 						  <div id="myCarouselT" className="carousel slide" data-ride="carousel">
-							 {/* <div class="carousel-inner" role="listbox">*/}
+							 
 
 									<div className="carousel-inner" id="cItemHBpageTest">
 									{
@@ -125,11 +125,11 @@ export default class Testimonials extends React.Component {
 				                        <div className="carousel-caption">
 														<div className="testContent"   dangerouslySetInnerHTML={ { __html:result.Description}}></div>
 													</div>
-												    <div className="testimonialWriter"   dangerouslySetInnerHTML={ { __html:result.Title}}></div>
-													<div className="writerDetails"   dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div>   
-												    <div className="img-area">
+												     <div className="testimonialWriter"dangerouslySetInnerHTML={ { __html:result.Title}}></div> 
+													 <div className="writerDetails" dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div>    
+												     <div className="img-area">
 				                           <img src="/images/t1.jpeg" alt="t1" className="d-block" />
-			                       </div>
+			                       </div> 
 										        </div>
 										        )
 											})

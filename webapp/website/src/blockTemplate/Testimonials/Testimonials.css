@@ -1,26 +1,30 @@
 .testimonialwrapper{
-    height: 550px;
+    height: 650px;
     background-color: #FFF;        
 }
 
 .testimonialBox{
-height: 350px;
-position: relative;
-left: auto; 
-right: auto;
-top: 31px;  
-background-color: #fff;
-border: 1px solid #efefef;
-border-radius: 10px;
-box-shadow: 2px 2px 20px 5px #dad6d6;
+	height: 400px;
+	position: relative;
+    left: auto; 
+    right: auto;
+    top: 31px;  
+	background-color: #fff;
+	border: 1px solid #efefef;
+	border-radius: 10px;
+    box-shadow: 2px 2px 20px 5px #dad6d6;
+    
 }
 
 .dashBoxTmwrapp{
     height: 20px;
-}
+    
+    
+    }
     .dashBoxTm{
         list-style: none;
-}
+
+    }
         
     .dashBoxTm li{
       float: left;
@@ -32,6 +36,7 @@ box-shadow: 2px 2px 20px 5px #dad6d6;
         border: 2px solid #00ccff;
         border-radius: 10px;
     }
+    
     .dash2Tm{
         height: 1px;
         width: 50px;
@@ -41,15 +46,14 @@ box-shadow: 2px 2px 20px 5px #dad6d6;
     }
     .clienttestmonials{
         height: 100px;
-        /* background-color: yellow;  */
         font-size: 46px;
         font-family: 'Montserrat', sans-serif;
         color: #555555;
         text-align:center ;
     }
     .itemwrapp{
-        height: 290px;
-        /* background-color: red; */
+        height: 390px;
+        
     }
    .carousel-control.left, .carousel-control.right{
        background-color: transparent;
@@ -58,11 +62,13 @@ box-shadow: 2px 2px 20px 5px #dad6d6;
        width: 100px;
        height: 100px;
        border-radius: 50%;
-       margin-top:12px ; 
+       /*margin-top:30px ; */
        margin-left: 42px; 
        box-shadow: 2px 2px 17px 2px #666;
        overflow: hidden;
-     }
+       
+
+   }
    .img-area img{
        width: 100%;
    }
@@ -85,21 +91,29 @@ box-shadow: 2px 2px 20px 5px #dad6d6;
     margin-left: 160px;
     margin-top: 41px;
     font-weight: bold;
-    }
+
+
+   }
    .carousel-indicators{
        bottom: -35px;
 
    }
-   .testimonialwrapper .testContent{
-       font-size: 19px;
+   
+  .testimonialwrapper .testContent{
+       font-size: 18px;
+       height: 200px;
        width: 90%;
        margin: auto;
        margin-top: 40px;
-       color: #333333;
+       color: #555555;
        text-align: justify;
+       font-weight: none!important;
        font-family: 'Montserrat', sans-serif;
        letter-spacing: 1px;
    }
+   .carousel-caption{
+    text-shadow: none!important;
+}
   
   .testimonialwrapper  .carousel-control.left,.carousel-control.right{
        background-image: none;
@@ -107,18 +121,17 @@ box-shadow: 2px 2px 20px 5px #dad6d6;
   .testimonialwrapper .test-carousel-control-left{
     height: 50px!important;
     width: 50px;
-    margin-top: 235px;
+    margin-top: 290px;
     margin-left: 650px;
     border-radius: 50px;      
     background-color: #eee;
     z-index: 25;
-
     box-shadow: 2px 2px 10px 2px solid #dad6d6;
    }
   .testimonialwrapper .test-carousel-control-right{
     height: 50px!important;
     width: 50px;
-    margin-top: 235px;
+    margin-top: 290px;
     margin-left: -10%!important;
     border-radius: 50px;      
     background-color:#0073e6!important;

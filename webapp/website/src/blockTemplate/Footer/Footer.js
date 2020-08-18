@@ -16,8 +16,7 @@ export default class Footer extends React.Component {
 						<a href="/"><li className="footertitle1">Home</li></a>
 						<a href="/about-us"><li className="footertitle1">About Us</li></a>
 						<a href="/contact-us"><li className="footertitle1">Contact Us</li></a> 
-						{/* <li className="footertitle1">Career</li> */}
-						{/* <li className="footertitle1">Resources</li> */}
+						
 							   
 						</ul>
 					</div>
@@ -28,9 +27,9 @@ export default class Footer extends React.Component {
 							<li className="menubartitle2"><b>Services</b></li>
 							<li className="footertitle2">Web Application</li>
 							<li className="footertitle2">Mobile Application</li> 
-							<li className="footertitle2">eCommerce Portails</li> 
+							<li className="footertitle2">eCommerce Portals</li> 
 							<li className="footertitle2">Enterprise Application</li>  
-							<li className="footertitle2">Business Portails</li>
+							<li className="footertitle2">Business Portals</li>
 							<li className="footertitle2">Staff Augumentation</li>  
 						</ul>
 					</div> 
@@ -41,7 +40,8 @@ export default class Footer extends React.Component {
 				      <ul className="footer3">
 					    <li className="menubartitle3"><b>Address</b></li>
 					    <li className="footertitle3"><i class="fas fa-map-marker-alt"></i> 323 Amanora Chambers Magarpatta Pune Maharastra 411028</li>
-					    <li className="footertitle3"> +91 99233 93733</li>  
+						<li className="footertitle3"><i className="fas fa-mobile"></i> +91 99233 93733</li><h3 className="h1titlephone"> ( Whatsapp only )</h3> 
+						<li className="footertitle3"><i class="fas fa-envelope"></i> info@iassureit.com </li>   
 				      </ul>
 				   </div>
 				</div> 
@@ -49,9 +49,9 @@ export default class Footer extends React.Component {
 				<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 subwrapp4">
 				<ul className="footer4">
 					 <li className="menubartitle4"><b>Connect with us</b>
-					   <img src="/images/fb.png" alt="Facebook" className="facebookpng"/> 
-					   <img src="/images/tw.png" alt="Twitter" className="twitter"/>  
-					  <img src="/images/li.png" alt="Linkdin" className="linkdin"/> 
+					    <div className="linkedinwrap"><a href="https://www.linkedin.com/company/iassure-international-technologies-pvt-ltd/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin-in linkedinicon"></i></a></div>
+					    <div className="facebookwrap"><a href="https://www.facebook.com/iAssureIT" target="_blank"><i className="fab fa-facebook-f facebookicon"></i> </a></div>
+					    <div className="youttubewrap"><i class="fab fa-youtube youtubeicon" ></i></div>  
 					</li>	    
 							  
 					<li className=""><button  className="contactBtn">Click To Contact</button></li>  
@@ -77,6 +77,7 @@ export default class Footer extends React.Component {
 					
 
 
+{/* <i class="fab fa-linkedin-in linkedinicon"></i> */}
 
 
 

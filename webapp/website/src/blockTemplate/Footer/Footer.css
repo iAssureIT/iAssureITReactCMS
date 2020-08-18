@@ -123,28 +123,67 @@
     color: #fff;
 
 } 
-.facebookpng{
-    height: 36px;
+.linkedinwrap{
+    height: 40px;
+    width: 40px;
+    margin-top: 14px;
     position: absolute;
-    margin-top: 46px;
-    margin-left: -183px;
-   
+    border-radius: 50%;
+    background-color: #f1f1f1;   
 }
-.twitter{
-    height: 36px;
-    position: absolute;
-    margin-top: 46px;
-    margin-left: -112px;
-
-
+.linkedinicon{
+    font-size: 24px;
+    color: #00145b;
+    margin-top: 9px ;
+    margin-left: 9px;
 }
-.linkdin{
-    height: 36px;
+.linkedinwrap:hover{  
+    cursor: pointer;  
+    color : #fff; 
+    background-color: #376bff;
+    border: 1px solid #fff;     
+}
+ .facebookwrap{
+    height: 40px;
+    width: 40px;
+    margin-top: 14px;
     position: absolute;
-    margin-top: 46px;
-    margin-left: -41px;
-
-
+    border-radius: 50%;
+    background-color: #f1f1f1;  
+    margin-left: 65px; 
+}
+.facebookicon{
+    font-size: 24px;
+    color: #00145b;
+    margin-top: 10px ;
+    margin-left: 12px;
+}
+.facebookwrap:hover{  
+    cursor: pointer;  
+    color : #fff; 
+    background-color: #376bff;
+    border: 1px solid #fff;     
+} 
+.youttubewrap{
+    height: 40px;
+    width: 40px;
+    margin-top: 14px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f1f1f1;  
+    margin-left: 132px;
+}
+.youtubeicon{
+    font-size: 24px;
+    color: #00145b;
+    margin-top: 9px ;
+    margin-left: 6px;
+}
+.youttubewrap:hover{  
+    cursor: pointer;  
+    color : #fff; 
+    background-color: #376bff;
+    border: 1px solid #fff;     
 }
 .menubartitle2{
     font-size: 24px;
@@ -187,9 +226,13 @@
     color: #f1f1f1f1;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    
-
-
+}
+.h1titlephone{
+    color: #f1f1f1f1;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -19px;
+    margin-left: 96px;
 }
 
 /* ================================Media Query================================================================= */

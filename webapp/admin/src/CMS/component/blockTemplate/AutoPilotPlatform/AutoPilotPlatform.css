@@ -47,8 +47,7 @@
 
  .titlewrapper2{
     height: 60px;
-   
-     margin-top: 15px!important; 
+    margin-top: 15px!important; 
  } 
 
 .h1title000{
@@ -132,55 +131,3 @@
     color: #f1f1f1;
     padding-top: -10px;
 }
-/* ============================================= Media Query=================================================================== */
-@media (max-width:767px){
-    .autopilotwrapper00{
-        height: 2310px;
-         /* background-color:#ccc;   */
-         
-    }
-    .autopilotwrapper{
-        height:2320px;
-        background-size: 200% 108%;
-        
-        
-        
-    }
-    
-    .mainrow{
-        height: 200px;
-        width: 100%;
-        margin-left:0%;
-        text-align: center;
-
-    }
-    .Auopilot{
-        font-size: 24px;
-    }
-    .ecomeplatofrm{
-        font-size: 24px;
-    }
-    .leftsideimg{
-        width: 100%;
-        margin-left: -3%;
-
-    }
-    .ftracermore00{
-        font-size: 18px!important;
-        width: 33%!important;
-        cursor: pointer;
-    
-    }
-    .arrow00{
-        font-size: 18px!important;
-        margin-left: 103px!important;
-         margin-top: -31px!important;   
-       
-    }
-}
-
-
-
-
-
-/* ================================================Media Query end=============================================================== */

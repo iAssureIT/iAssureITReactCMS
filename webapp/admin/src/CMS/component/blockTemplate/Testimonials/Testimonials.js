@@ -103,16 +103,16 @@ export default class Testimonials extends React.Component {
                             <li className="dash3Tm"></li> 
                         </ul>
 					</div>
-                    <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 clienttestmonials">
-				       	    <h1 dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></h1> 
-                </div>  
-				<div className="col-lg-12 col-md-12 col-sm- col-xs-12 row"> 
+            <div className="col-lg-12 col-md-12 col-sm-12 col-xl-12 clienttestmonials">
+				       	<h1 dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></h1> 
+            </div>  
+				 <div className="col-lg-12 col-md-12 col-sm- col-xs-12 row"> 
 					<div className="col-lg-9 col-md-9 col-sm-12 col-xs-12"> 
 					   <div className="col-lg-10 col-md-11 col-lg-offset-1 col-sm-12 col-xs-12 testimonialBox"> 
 						  <div id="myCarouselT" className="carousel slide" data-ride="carousel">
-							 
+							  
 
-									<div className="carousel-inner" id="cItemHBpageTest">
+									 <div className="carousel-inner" id="cItemHBpageTest">
 									{
 									  	this.state.blocks.repeatedBlocks.map((result, index)=>{
 									  	
@@ -133,19 +133,19 @@ export default class Testimonials extends React.Component {
 									}	
 								
 								 
-								</div>
-								<a className="left carousel-control test-carousel-control-left" href="#myCarouselT" data-slide="prev">
+								</div> 
+								 <a className="left carousel-control test-carousel-control-left" href="#myCarouselT" data-slide="prev">
 									<div className="glyphicon glyphicon-chevron-left"></div>
 									<span className="sr-only">Previous</span>
-								</a>
-								<a className="right carousel-control test-carousel-control-right" href="#myCarouselT" data-slide="next">
+								</a> 
+								 <a className="right carousel-control test-carousel-control-right" href="#myCarouselT" data-slide="next">
 									<div className="glyphicon glyphicon-chevron-right"></div>
 									<span className="sr-only">Next</span>
-								</a>
-							</div>
+								</a> 
+							 </div>
 						</div> 
 					</div>  
-			  </div>	
+			  </div>	 
 		</section>
 	   );
 	}

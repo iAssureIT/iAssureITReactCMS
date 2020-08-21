@@ -30,7 +30,7 @@ export default class AddressOnGoogleMap extends React.Component {
 						<div class="gmap_canvas">
 							<iframe width="100%" height="480" id="gmap_canvas" src="https://maps.google.com/maps?q=iAssureIT%20hadapsar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
 							</iframe>
-							{/* <a href="https://www.emojilib.com">emojilib.com</a> */}
+							
 						</div>
 					</div>
 					

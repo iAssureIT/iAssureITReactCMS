@@ -120,12 +120,154 @@
 
 
 /* ============================================= Media Query=================================================================== */
-@media (max-width:767px){
+@media (min-width:992px) and (max-width:1200px){
+    .autopilotwrapper00{
+        height: 1190px!important;
+    }
+    .autopilotwrapper{
+        height:1160px!important ;
+        background-size: 100% 100%!important;
+        
+     }
+     .wrapperdashbox{
+        height: 20px;
+        margin-top: 211px!important;
+    }
+    .dashBox3{
+        margin-top: -37px!important;
+    }
+    .dash0a1{
+        margin-left: -25%!important;
+    }
+     .h1title000{
+        font-size: 46px;
+        color: #f1f1f1;
+        margin-top:70px!important;
+        font-family:'Montserrat', sans-serif ;
+    }
    
+    .maincontentwrapper001{
+        height: 556px!important;
+        margin-top: 140px;
+      
+    } 
+    .leftimageframework{
+        height: 505px!important;
+        margin-top: 0px!important;
+    }
+    .leftsideimg{
+        height: 391px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        margin-top: 23px!important;  
+    }
+    .autocontentframework{
+        height: 555px!important;
+        margin-top: 0px!important;
+        margin-left: 0px!important;
+     }
+    .paragraphfasttrack00{
+        text-align: justify;
+        padding-top: 0px; 
+    }
+       
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .autopilotwrapper00{
+        height: 1635px!important;
+    }
+    .autopilotwrapper{
+        height:1633px ;
+        background-size: 100% 100%!important;
+        
+     }
+     .wrapperdashbox{
+        height: 20px;
+        margin-top: 300px!important;
+    }
+    .dashBox3{
+        margin-top: -37px!important;
+    }
+    .dash0a1{
+        margin-left: 40%!important;
+    }
+    .h1title000{
+        font-size: 33px!important;
+        margin-top:68px!important;
+     }
+     .maincontentwrapper001{
+        height: 950px!important;
+        margin-top: 80px;
+    
+    }
+    .leftimageframework{
+        height: 500px!important;
+        margin-top: 50px!important;
+    }
+    .leftsideimg{
+        height: 494px!important;
+        margin-left: -10px!important;
+     }
+     .autocontentframework{
+        height: 450px!important;
+        margin-top: 0px!important;
+        margin-left: 0px!important;
+    }
+    .paragraphfasttrack00{
+        text-align: justify;
+        padding-top: 0px; 
+    }
+   
+
 }
 
-
-
-
+@media (max-width:767px){
+    .autopilotwrapper00{
+        height: 1880px!important;
+    }
+    .autopilotwrapper{
+        height:1860px ;
+        background-size: 200% 100%;
+        margin-top: -75px!important;
+    }
+    .wrapperdashbox{
+        height: 20px;
+        margin-top: 240px!important;
+    }
+    .dashBox3{
+        margin-top: -37px!important;
+    }
+    .dash0a1{
+        margin-left: 62px!important;
+    }
+     .h1title000{
+        font-size: 18px!important;
+        margin-top:68px!important;
+     }
+     .maincontentwrapper001{
+        height: 1050px!important;
+        margin-top: 80px;
+    }
+    .leftimageframework{
+        margin-top: 30px!important;
+    }
+    .leftsideimg{
+        margin-top: -10px; 
+        margin-left: -10px!important;  
+    }
+    .autocontentframework{
+        height: 570px!important;
+        margin-top: 0px!important;
+        margin-left: 0px!important;
+    }
+    .paragraphfasttrack00{
+        text-align: justify;
+        padding-top: 0px; 
+    }
+    
+    
+   
+}
 
 /* ================================================Media Query end=============================================================== */

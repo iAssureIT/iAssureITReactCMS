@@ -71,27 +71,27 @@ export default class Customisable extends Component{
 				                    </ul>
                         </div>
                      </div>
-                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hcustomtitlewrapp">
-                        <div className="text-center">
+                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 hcustomtitlewrapp"> 
+                         <div className="text-center">
                             <div className="h2titlecustom" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
-                        </div>
-				            </div> 
+                        </div> 
+				             </div>  
                     <div className="col-lg-12 col-sm-12 col-sm-12 col-xs-12 custmowrapper">
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customIMGwrapp">
-                        <   img src={this.state.blocks.fgImage} alt="001" className="customleftimage"/>
-                        </div>
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customIMGwrapp">
+                            <img src={this.state.blocks.fgImage} alt="001" className="customleftimage img-responsive"/>
+                        </div> 
 
-                        <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customtextwrapp">
-                             <p className="h1titlecustom"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}>
+                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customtextwrapp"> 
+                              <p className="h1titlecustom"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}>
                                 
-                            </p> 
+                              </p>  
                                                       
                            
-                             <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div>
+                              {/* <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div> */} 
                             
 
                             
-                        </div>   
+                         </div>
 
                             
                                 

@@ -73,24 +73,22 @@ export default class FastrackFrameWork extends Component{
 					            	<li className="dash03"></li> 
 				            	</ul>
                     </div> 
-                  
-                
-                         <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1 text-center">
+                  <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 titlewrapper1 ">
                             <div className="h1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                         </div>
-                   </div>    
+                   </div>     
                     
 					             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper">  
                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 contentframework">
-                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
+                            <p className="hdescription"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p> 
 
-                             <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div>
-                         </div> 
+                             {/* <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div> */}
+                          </div>  
 
-                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
-                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
-                          </div>    
+                             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
+                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack img-responsive"/>  
+                          </div>      
                        </div>    
 					       </div> 
               </div>

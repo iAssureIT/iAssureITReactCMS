@@ -111,106 +111,154 @@
     margin-left: 110px;
 } 
 /* =======================================Media Query==================================================== */
- /* @media  screen and (max-width:992px){
-    .fastrachight{
-        height: 1525px;
-
-      
-
-    }
-    .ftrackwrapper{
-        height:50px ;
-        background-size: 200% 108%;
-    }
-    
-    .smdash1{
-        height: 100px;
-        width: 100%;
-        margin-top: -140px; 
-       
-      
-  }
-  .dashbox00{
-      left: 30px!important;
-  }
-  .fstrack1{
-      margin-left: 43%!important;
-  }
-  .heading{
-    height: 108px;
-     margin-top: -113px!important;
-     margin: auto;
-  }
-    
-}   */
-
-/* @media screen and (max-width:767px){
-    .fastrachight{
-        height: 2125px;
-                
-      
-
-    }
-    .ftrackwrapper{
-        height:2050px ;
-        background-size: 200% 108%;
-    }
-    .dashbox00{
-          margin-top: 370px; 
-         
+@media (min-width:992px) and (max-width:1200px){
+    .pagewrapperheight{
+        height: 970px;
         
+    } 
+     .bgwrapperheight{
+        height:980px!important ;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
     }
-    .heading{
-        margin-top:408px
+    .dashwrapp{
+        height: 20px!important;
+        margin-top: 161px!important;
     }
-    .dash1OS{
-        margin-left: 25%!important;
+    .dashBox1{
+        margin-top: -12px!important;
     }
- .ftitle0{
+    .dash01{
+        margin-left: -25%!important;
+    }
+    .titlewrapper1{
+        height: 100px!important;
+    }
+    .maincontentwrapper{
+        height: 450px!important;
+        margin-top: 10px!important;
+    }
+    .contentframework{
+        height: 390px!important;
+    }
+      .hdescription{
+        text-align: justify; 
+        margin-left:10%!important; 
+    }
+    .imageframework{
+        height: 450px!important;
+    }
+    .sideimageftrack{
+         margin-left: 20px!important;
+    } 
 
-    font-size: 24px;
- }
- .ftitle00{
-     
-     font-size: 24px;
+
+}
+
+
+
+@media  (min-width:768px) and  (max-width:991px){
+.pagewrapperheight{
+    height: 1611px;
+} 
+ .bgwrapperheight{
+    height:1650px ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.dashwrapp{
+    height: 20px!important;
+    margin-top: 301px!important;
+}
+.dashBox1{
+    margin-top: -12px!important;
+}
+.dash01{
+    margin-left: 40%!important;
+}
+.titlewrapper1{
+    height: 100px!important;
+} 
+.maincontentwrapper{
+    height: 900px!important;
+    margin-top: 0px!important; 
+}
+.contentframework{
+    height: 390px!important;
     
  }
- .contentframework{
-    height: 774px;
-     background-color: red;   
-    margin-top: -50px;
-    
+  .hdescription{
+    text-align: justify; 
+    margin-left:0%!important; 
 }
-.loremIpsum{
-    font-size: 22px;
-
+.imageframework{
+    height: 500px!important;
+  }
+  .sideimageftrack{
+    height: 480px!important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
-.paragraphfasttrack{
-    margin-left: 0%;
-    margin-top: 17px;
-    
-}
-.paragraphfasttrack01{
-    margin-left: 0%;
-    margin-top: 35px;
-}
-.ftracermore{
-    margin-left: 0%!important;
-    font-size: 18px!important;
-    width: 33%!important;
-    cursor: pointer;
-}
-.arrow{
- font-size: 18px!important;
- margin-left: 103px!important;
-  margin-top: -31px!important;   
+   
 
 
- }
- .sideimageftrack{
-    margin-left:0px;
-    width: 100%;
-    margin-top: -38px;
- }
- }
-    */
+
+} 
+
+@media (max-width:767px){
+.pagewrapperheight{
+    height: 1670px!important;  
+}  
+.bgwrapperheight{
+   height:1650px ;
+   background-size: 200% 103%; 
+   margin-top: -168px;
+}
+ .dashwrapp{
+    height: 20px!important;
+    margin-top: 70px!important;
+}
+.dashBox1{
+    margin-top: -12px!important;
+}
+.dash01{
+    margin-left: 24%!important;
+}
+.titlewrapper1{
+    height: 150px!important;
+} 
+.h1title00{
+    font-size: 23px!important;
+         
+   }
+
+.maincontentwrapper{
+    height: 900px!important;
+    margin-top: -53px!important;
+}  
+  .hdescription{
+   text-align: justify;
+   margin-left:0%!important;
+} 
+.imageframework{
+    height: 300px!important;
+    margin-top: 80px;
+  }
+  .sideimageftrack{
+    height: 300px!important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left: 0px!important;
+    margin: auto;
+    box-sizing: border-box;
+}
+   
+  
+
+
+
+
+
+}
+ 

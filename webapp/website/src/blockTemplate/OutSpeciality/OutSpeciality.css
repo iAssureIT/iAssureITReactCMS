@@ -52,20 +52,20 @@
   }
 
  
-.osDiv{
+/* .osDiv{
 	height: 350px;
 	top: -180px;
 	position: relative;
-}
-.bhead{
+} */
+/* .bhead{
 	position: relative;
 	
-}
+} */
 .col1{
-	height: 427px;
+	height: 395px;
 	background-color: #fff;
     border-radius: 10px;
-     margin-top: 190px; 
+     /* margin-top: 190px;  */
     box-shadow: 2px 2px 8px 3px #dad6d6;
 
 }
@@ -148,61 +148,120 @@
 }
 
 /* ==================================Media Query================================================= */
+@media (min-width:992px) and (max-width:1200px){
+    .specialhightwrapper{
+        height: 640px!important;
+     }
+        .dashboxwrapper{
+            height: 20px;
+        }
+        .dashBox{
+            margin-top: 5px!important;
+        }
+        .dash1{
+            margin-left: -25%!important;
+        }
+        .specialityheading{
+            height: 130px;
+            
+        }
+        .iconCircle{
+            left: 21%; 
+        
+        }
+        .paragraph{
+            text-align: justify;
+           
+        }
+        .sptextBox1 p{
+            padding-left: 0px;
+        }
+
+
+       
+
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .specialhightwrapper{
+        height: 1516px!important;
+        
+        }
+        .dashboxwrapper{
+            height: 20px;
+            
+        }
+        .dashBox{
+            padding-top: 5px!important;
+        }
+        .dash1{
+            margin-left: 40%!important;
+        }
+        .specialityheading{
+            height: 130px;
+            
+        }
+        .col1{
+             margin-top: 36px;
+        }
+        .iconCircle{
+            left: 40%; 
+        
+        }
+        .paragraph{
+            text-align: justify;
+           
+        }
+        .sptextBox1 p{
+            padding-left: 0px;
+        }
+
+
+}
 @media (max-width: 767px){
     .specialhightwrapper{
         height: 1549px;
-        /* background-color: aqua; */
+        }
+    .dashboxwrapper{
+        height: 20px;
     }
-    
-    .dashBoxOS{
-        
-        left: 34px;
-        
-        
+    .dashBox{
+        padding-top: 5px!important;
+    }
+    .dash1{
+        margin-left: 22%!important;
     }
     .specialityheading{
-        padding-top: 7px;
+        height: 130px;
     }
-    .ourheading{
-    
-        font-size: 24px;
-        
-    }
-    .specialheading{
-        font-size: 24px;
-    }
-    
-    .mainheading{
-    width: 99%;
-    margin-top: 270px;
-    text-align: center;
-    margin-left: 5%;
+    .h2title{
+        font-size: 39px;
+        font-family: 'Montserrat', sans-serif;
+        color: #555555;
+        margin-top: 14px;
     }
     .osDiv{
     
-    width: 91%;
-    height: 1420px;
-    top: -48px; 
-    left: -4%;
-      
-   }
-   .col1{
+        width: 91%;
+        height: 1420px;
+        top: -48px; 
+        left: -4%;
+     }
+    .col1{
     height: 427px;
      width: 106%; 
-     left:-3%;
+     left:-2%;
      margin-top: 36px;
-      
-
-
+    } 
+    .iconCircle{
+        left: 27%; 
+    
+    }
+    .paragraph{
+        text-align: justify;
+       
+    }
+    .sptextBox1 p{
+        padding-left: 0px;
+    }  
 }
-.iconCircle{
-    left: 27%; 
-
-}
- .rmore00{
-    margin-top: 50px!important;
-} 
-}
-
-
-

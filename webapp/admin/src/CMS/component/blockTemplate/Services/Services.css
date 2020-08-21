@@ -299,7 +299,7 @@ width: 100%;
 
  @media  (min-width:992px) and (max-width: 1200px){
   .serviceswrapper{
-    height: 1750px;
+    height: 850px;
     background-color:#fff; 
           
   }
@@ -369,11 +369,10 @@ width: 100%;
    @media (min-width: 768px) and  (max-width: 991px){
 
     .serviceswrapper{
-      height: 1750px;
-      
+      height: 850px;
     }
     .Hexagonwrapper00{
-      height: 1760px;
+      height: 700px;
     }
     
    .whatdash1{

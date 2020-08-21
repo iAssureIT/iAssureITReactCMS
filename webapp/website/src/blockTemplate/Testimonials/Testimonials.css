@@ -136,77 +136,147 @@
     border-radius: 50px;      
     background-color:#0073e6!important;
    }
+   @media (min-width:992px) and (max-width:1200px){
+    .testimonialwrapper{
+        height: 630px!important;
+        
+    }
+    .dashBoxTmwrapp{
+        height: 20px;
+    }
+    .dashBoxTm{
+        margin-top: 5px;
+    }
+    .dash1Tm{
+        margin-left: -17%!important;
+    }
+    .testimonialBox{
+        height: 450px!important;
+    }
+    .testimonialwrapper .writerDetails {
+        position: absolute;
+        font-size: 20px!important;
+    }
+    .testimonialwrapper .test-carousel-control-left{
+        margin-top: 350px!important;
+        margin-left: 500px!important;       }
+       .testimonialwrapper .test-carousel-control-right{
+        height: 50px!important;
+        width: 50px;
+        margin-top: 350px!important;
+        margin-left: -10%px!important;
+        border-radius: 50px;      
+        
+       }
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .testimonialwrapper{
+        height: 619px!important;
+        
+    }
+    .dashBoxTmwrapp{
+        height: 20px;
+        
+    }
+    .dashBoxTm{
+        margin-top: 5px;
+    }
+    .dash1Tm{
+        margin-left: 40%!important;
+    }
+    .testimonialBox{
+        height: 450px!important;
+        margin-left: 2%;
+
+    }
+    .testimonialwrapper .test-carousel-control-left{
+        margin-top: 350px!important;
+        margin-left: 550px!important;
+       }
+       .testimonialwrapper .test-carousel-control-right{
+        height: 50px!important;
+        width: 50px;
+        margin-top: 350px!important;
+        margin-left: 0px!important;
+        border-radius: 50px;      
+        
+       }
+
+
+
+}
+@media (max-width:767px){
+    .testimonialwrapper{
+        height: 800px!important;
+                
+    }
+    .dashBoxTmwrapp{
+        height: 20px;
+    }
+    .dashBoxTm{
+        margin-top: 5px;
+    }
+    .dash1Tm{
+        margin-left: 25%!important;
+    }
+     .clienttestmonials{
+        padding-top: 20px;
+        font-size: 39px!important;
+        
+    } 
+    .testimonialBox{
+        height: 650px!important;
+        margin-left: 5%;
+
+    }
+    .itemwrapp{
+        height: 690px!important;
+     }
+    .testimonialwrapper .testContent{
+        font-size: 18px;
+        height: 200px;
+        width: 90%;
+        margin: auto;
+        margin-top: 10px!important;
+
+    }
+    .testimonialwrapper .img-area{
+        margin-left: 14px!important; 
+        box-shadow: 2px 2px 17px 2px #666;
+        margin-top: 200px;
+      }
+      .testimonialwrapper .testimonialWriter{
+        font-size: 21px;
+        margin-left: 0px!important;
+        margin-top: 321px!important;
+       
+    }
+   .testimonialwrapper .writerDetails{
+     font-size: 15px!important;
+     margin-left: 0px!important;
+     margin-top: 350px!important;
+      
+ 
+    }
+    .testimonialwrapper .test-carousel-control-left{
+        margin-top: 450px!important;
+        margin-left: 145px!important;
+       }
+       .testimonialwrapper .test-carousel-control-right{
+        height: 50px!important;
+        width: 50px;
+        margin-top: 450px!important;
+        margin-left: 145px!important;
+        border-radius: 50px;      
+        
+       }
+  
+    }
+ 
   
 
 
 
 
 
-/* ===========================================================Media Query============================= */
-@media (max-width:767px){
-    /* .TestimonialsHT{
-        background-size:0 0;
-    } */
-    .dashBoxTm{
-         width: 60%;
-         padding-top: 50px;
-         } 
-         
-         .dash1Tm{
-            margin-left: 29%;
-        }
-       .clienttestmonials{
-           width: 100%;
-           margin-top: -62px!important;
-           /* background-color: blue; */
-            
-             
-           
-       }  
-       
-       .testimonialBox{
-           height: 523px;
-           width: 108%;
-            left: 1%; 
-            top:47px
-            
-            /* background-color: red;  */
-           
-       }
-       .arrows .owl-nav button.owl-next{
-           left: 101px;
-           top:-118px;
-       }
-      .arrows .owl-nav button.owl-prev{
-       left: 102px;
-       top:-118px;
-       }
-       .profileTesti{
-           top: -40px;
-
-
-       }
-       .hlimit600{
-           font-size: 14px;
-            height: 350px;
-            width: 100%;
-            padding-top: 20px;
-            padding-left: 27px;
-            
-            
-            
-       }
-        
-       .custName{
-          height: 107px;
-          margin-top: -32px;
-          font-size: 15px;
-      } 
-      /* .dash1Tm{
-         margin-left:-0px!important;
-      } */
-
-
-       
-       
-}

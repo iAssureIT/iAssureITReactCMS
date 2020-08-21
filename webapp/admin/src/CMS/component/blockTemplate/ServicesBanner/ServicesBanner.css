@@ -50,136 +50,101 @@
 	height: 475px;
 	margin-top: 54px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ===========================previous design============================================ */
-/* .banerSBheight{
-	height: 635px;
-	width: 100%;
-	background-image: url("/images/27.png");
-	background-size: 100% 100%;
-} */
-/* .bannerImgSB{
-	height: 475px;
-	margin-top: 135px;
-} */
-/* .mtop100SB{
-	margin-top: 255px;
-	color: #fff;
-} */
-/* .h1TitleSB{
-	font-size: 36px;
-	letter-spacing: 1px;
+/* ============================================Media Query=============================================== */
+@media (min-width:992px) and (max-width:1200px){
+	.h3TitleSB{
+		font-size: 19px!important;
+	}
 }
-.h2TitleSB{
-	    font-size: 82px;
-    line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;;
-}
-.h3TitleSB{
-	font-size: 27px;
-    letter-spacing: 1px;
-} */
-/* .logoBox{
-	position: absolute;
-	z-index: 50;
+@media (min-width:768px) and (max-width:991px){
+	.banerpageheight{
+		height: 1440px!important;
+	  
+	}
+	.banerSBheight{
+		height: 1328px!important;
+		
+	}
+	.mtop100SB{
+		margin-top: 183px!important;
+		
+	} 
+	.h1TitleSB{
+	   margin-left: -10px!important;
+	
+	}
+	.h2TitleSB{
+		margin-left: -10px!important;
 
+    }
+	 .h3TitleSB{
+		 margin-left: -10px!important;
+	}
+	.bannerImgSB{
+		height: 475px;
+		margin-top: 0px!important;
+		margin-left: 16%;
+	}
 }
-.logo{
-	position: absolute;
-    top: 45px;
-    left: 90px;
-} */
-.menuimg{
-	height: 35px;
-    position: fixed;
-    top: 50px;
-    right: 95px;
-    z-index: 10;
-    /*filter: invert(100%);*/
-}
-.menuimg:hover{
-	cursor: pointer;
-	caret-color: red;
-}
-
-/*=======================================================================================*/
-/*=======================================================================================*/
-/*============================ Mobile view ==============================================*/
-/*=======================================================================================*/
-/*=======================================================================================*/
-
-.banerSBheightxs{
-	height: 685px;
-	width: 100%;
-	background-image: url("/images/27.png");
-	background-size: 100% 100%;
-}
-.bannerImgSBxs{
-    height: 335px;
-    margin-top: 0px;
-    margin-left: 33px;
-}
-.mtop100SBxs{
-    margin-top: 155px;
-    color: #fff;
-    margin-left: 35px;
-    text-align: center;
-}
-.h1TitleSBxs{
-	font-size: 36px;
-	letter-spacing: 1px;
-}
-.h2TitleSBxs{
-	font-size: 46px;
-    line-height: 1;
-    letter-spacing: 2.5px;
-    font-weight: 1000;;
-}
-.h3TitleSBxs{
-	font-size: 27px;
-    letter-spacing: 1px;
-}
-.logoBoxxs{
-	position: absolute;
+@media (max-width:767px){
+	.banerpageheight{
+		height: 1240px!important;
+		  
+	}
+	.banerSBheight{
+		height: 1028px!important;
+		width: 100%;
+		background-size: 100% 100%;
+	}
+	.mtop100SB{
+		height: 182px!important;
+		margin-top: 123px!important;
+		color: #fff;
+		margin-left: -5px;
+		
+	}
+	.h1TitleSB{
+		font-size: 29px!important;
+        margin-left: -53px!important;
+	
+	}
+	.h2TitleSB{
+		font-size: 29px!important;
+	    margin-left: -53px!important;
+	 }
+	 .h3TitleSB{
+		 font-size: 14px!important;
+		margin-left: -53px!important;
+	}
+	.bannerImgSB {
+		
+		 margin-top: 0px!important;
+	}
+	
+	 
+	
 
 }
-.logoxs{
-	position: absolute;
-    top: 45px;
-    left: 90px;
-}
-.menuimgxs{
-	height: 35px;
-    position: fixed;
-    top: 50px;
-    right: 95px;
-    z-index: 10;
-    /*filter: invert(100%);*/
-}
-.menuimgxs:hover{
-	cursor: pointer;
-	caret-color: red;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

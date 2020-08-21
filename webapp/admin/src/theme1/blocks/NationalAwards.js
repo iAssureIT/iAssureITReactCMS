@@ -11,25 +11,36 @@ export default class NationalAwards extends Component{
             "blockTitle": "<b>NATIONAL</b> AWARDS",
             
             "blockSubTitle": "The Company Of The Year 2018",
-            "blockDescription": "Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a.",
+            "blockDescription": "",
             "blockComponentName": "TemplateOverview",
             "blockType": "",
             "bgImage": "/images/ecom11.png",
             "fgImage": "/images/00.png",
             "repeatedBlocks": [
                                 
-                                { 
-                                     Image: "/images/41.png"
+                                  {
+                                     Title :"",
+                                     Description :"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a",
+                                     Image :"/images/41.png",
+                                  },
+                                  {
+                                    Title :"",
+                                    Description :"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a",
+                                    Image :"/images/40.png",
                                 },
-                                { 
-                                  Image: "/images/40.png"
-                             },
-                             { 
-                              Image: "/images/42.png"
-                         },
-                         { 
-                          Image: "/images/43.png"
-                         }
+                                 {
+                                   Title :"",
+                                   Description :"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a",
+                                   Image :"/images/42.png",
+                                },
+                                {
+                                  Title :"",
+                                  Description :"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a",
+                                  Image :"/images/43.png",
+                            }
+                               
+                            
+                        
             ],
             "bgVideo"				: "",
             "fgVideo"				: "",
@@ -44,7 +55,7 @@ export default class NationalAwards extends Component{
     /*console.log("==>",this.props.block_id);*/
               {
                  axios
-                    .get('http://qaiassureitapi.iassureit.com/api/blocks/get/'+this.props.block_id)
+                    .get('/api/blocks/get/'+this.props.block_id)
                     .then((response)=>{
                         if(response.data){
                             // console.log("ListofServices =",response.data);
@@ -60,6 +71,9 @@ export default class NationalAwards extends Component{
           this.setState({
                     block_id:this.props.block_id
                   });
+    }
+    displayDetails(event){
+
     }
     render(){
         return(
@@ -82,54 +96,65 @@ export default class NationalAwards extends Component{
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 narionalawardwrapp">
                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 awardleftwrapp">
                        <img src="/images/awardn.png" alt="awardn" className="awardIMG"/>
-
                      </div>
                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 NATextwrapp">
-                      
-                        <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NAtextwrapp1">
+                       <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NAtextwrapp1">
                         <div className="NAh1title" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
-                        <div className="NAhetitle"dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div> 
+                        <div className="row">
+                          <div className="col-lg-12 col-lg-md-12 col-sm-12 col-xs-12 tabwrap">
+                            <div class="tab-content">
+                              {
+                                this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length > 0 
+                                ?
+                                  this.state.blocks.repeatedBlocks.map((data, index)=>{
+                                  return(
+                                      <div key={"key1-"+index} id={"tab-"+index} className={"tab-pane fade in " + (index===0 ? "active" : "")}>
+                                        <p className="NAhetitle" dangerouslySetInnerHTML={{ __html: data.Description } }></p>
+                                      </div>
+                                    );
+                                  })
+                                :
+                                  null
+                              }
+                            </div>
 
-                           <h3 className="NArmore">Read More </h3> <div className="NAarrow"><i className="fas fa-angle-double-right"></i></div>
-                     
-                      <div>
-                        {
-                          
-                          this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length>0
-                          ?
-                          this.state.blocks.repeatedBlocks.map((data,index)=>{
-                            return(
-                              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                              <img src={data.Image} alt="40" className="awaed1" /> 
-                             </div>
-                            )
+                            <ul class="nav nav-pills">
+                              {
+                                this.state.blocks.repeatedBlocks && this.state.blocks.repeatedBlocks.length > 0 
+                                ?
+                                  this.state.blocks.repeatedBlocks.map((data, index)=>{
+                                  return(
+                                      <li class={"bgcolorhide "+(index===0 ? "active" : "")}>
+                                        <a href={"#tab-"+index} data-toggle="pill" className="bgcolorhide">
+                                          <img src={data.Image} alt="award" className="iassureaward"/>
+                                        </a>
+                                      </li>
+                                    );                                    
+                                  })
+                                :
+                                  null
+                              }
 
-                          })
-                          :
-                          null
-                          
-                        }
-                          {/* <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                                <img src="/images/41.png" alt="40" className="awaed1" /> 
-                          </div>
-                          <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                              <img src="/images/40.png" alt="40" className="awaed1" /> 
-                          </div>
-                          <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                              <img src="/images/42.png" alt="40" className="awaed1" />
-                            </div> 
-                            <div className="col-lg-3 col-md-3 col-sm-6 col-xs-12 award1wrapp">
-                                  <img src="/images/43.png" alt="40" className="awaed1" />
-                            </div>  */}
-                      </div>
-                   </div>
+                             
+                            </ul>
+
+                       </div>
+                       
                  </div>
-              </div>
-
-                </div>
-                
-
-            </div>
+               <div>
+           </div>
+       </div>
+   </div>
+   </div>
+</div>
+</div>
         )
     }
 }
+
+
+                    
+
+
+
+ 

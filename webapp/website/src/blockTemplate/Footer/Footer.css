@@ -234,65 +234,167 @@
     margin-top: -19px;
     margin-left: 96px;
 }
-
 /* ================================Media Query================================================================= */
-@media (max-width:767px){
+@media (min-width:992px) and (max-width:1200px){
     .footerBlock{
-        height: 565px;
-        /* background-color: red; */
-        
-    }    
-    .footerTop{
-        height: 500px;
-       
+        height: 273px!important;
     }
-    .clrwt{
-        margin-top: -100px;
-    }
-    .clrwt00{
-        margin-top: 50px;
+    .wrap1,.wrap2,.wrap3,.wrap4{
+        height: 200px;
         
     }
-    .clrwt000{
-        margin-top: 50px;
-
-
+    .subwrapp1,.subwrapp2,.subwrapp3,.subwrapp3{
+        height: 207px;
     }
-    .clrrr b{
-        margin-left: 37px;
-
+    .menubartitle4,.menubartitle3,.menubartitle2,.menubartitle1{
+        font-size: 18px;
     }
-    .supportheading{
-        margin-left: 20%;
- 
-    }
-    .addresstitle{
-        margin-left: -30px;
-    }
-    /* .hmenutitle{
-        margin-left: -15px;
-    } */
-   
-    .copyright{
-        color: #f1f1f1f1;
+    .footertitle1,.footertitle2,.footertitle3,.footertitle4{
         font-size: 13px;
-        width: 240%;
-        margin-left: -17%;
-        /* background-color: red; */
-        margin-top: -10px;
-        font-family: 'Montserrat', sans-serif;
+    }
+    .h1titlephone{
+        margin-top: 3px;
+        margin-left: 0px;
+    }
+    .linkedinwrap,.facebookwrap,.youttubewrap{
+        margin-top: 20px;;
+    }
+    .contactBtn{
+        margin-top: 8px!important;
+      }
+      .footerBottom{
+       margin-top: -67px;
+    }
+
+
+}
+@media (min-width:768px) and (max-width:991px){
+    .footerBlock{
+        height: 273px!important;
+        background-color: #376bff; 
+    }
+    .wrap1,.wrap2,.wrap3,.wrap4{
+        height: 200px;
+    }
+    .footertitle3 {
+        color: #f1f1f1f1;
+        font-size: 14px;
+       margin-left: -40px;
+    }
+    .menubartitle4,.menubartitle3,.menubartitle2,.menubartitle1 {
+        font-size: 16px;
+    }
+    .footertitle1,.footertitle2,.footertitle3,.footertitle4{
+        font-size: 12px;
+    }
+    .subwrapp4 {
+        height: 291px;
+        margin-left: -13%;
+    }
+    .linkedinwrap,.facebookwrap,.youttubewrap{
+        margin-top: 25px;;
+    }
+    .contactBtn{
+        margin-top: 19px!important;
+      }
+    .h1titlephone{
+        
+        font-size: 15px;
+        margin-top: 5px!important;
+        margin-left: -34px!important;
+    }
+    .footerBottom{
+        height: 50px;
+        background-color: #283592;
+        margin-top: -67px;
+    }
+    .copyright{
+        font-size: 15px;
+         width: 152%; 
+         margin-top: 0px!important; 
+            
         
 
-    }
-    .linkdin{
-        height: 36px;
-       margin-top: -62px;
-       right: -105px;
-        
-    
-    }
-   
-    
+     }
+     
    
 
 }
+@media (max-width:767px){
+    .footerBlock{
+        height: 470px!important;
+        background-color: #376bff; 
+    } 
+    .footerTop{
+        height: 422px;
+        background-size: 100% 100%; 
+        
+      
+      } 
+      .wrap1,.wrap2,.wrap3,.wrap4{
+        height: 199px;
+              
+    }
+   .menubartitle1{
+    font-size: 17px;
+        margin-left: -70px!important;  
+       
+       }
+    
+    .footertitle1{
+       
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        margin-left: -70px!important; 
+     
+    }
+    .menubartitle2{
+        font-size: 17px;
+        margin-left: -70px!important;  
+       padding-top: 30px;
+       }
+       .footertitle2{
+        font-size: 12px;
+        margin-left: -70px!important; 
+     
+    }
+    .menubartitle3{
+        font-size: 17px;
+        margin-left: -70px!important;  
+        padding-top: 30px;
+       }
+       .footertitle3{
+        
+        font-size: 12px;
+        margin-left: -70px!important; 
+     
+    }
+    .h1titlephone{
+        
+        font-size: 15px;
+        margin-top: 5px!important;
+        margin-left: -56px!important;
+    }
+    .menubartitle4{
+        font-size: 17px;
+        margin-left: -70px!important;
+    }
+    .contactBtn{
+      margin-left: -63px!important;
+    } 
+    .footerBottom{
+        height: 50px;
+        background-color: #283592;
+    } 
+        .copyright{
+        font-size: 9px;
+         width: 280%; 
+         margin-left: -51%!important; 
+         /* background-color: red;  */
+         margin-top: 0px!important; 
+    
+        
+
+     } 
+}
+

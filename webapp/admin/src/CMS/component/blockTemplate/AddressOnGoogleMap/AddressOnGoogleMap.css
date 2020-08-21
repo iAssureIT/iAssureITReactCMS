@@ -87,12 +87,42 @@
 }
 
 /* =====================================Media Query================================= */
-@media (max-width:767px){
-  .location{
-  font-size: 24px;
-  }
-  .Glocationmap{
-    width: 100%;
+@media (min-width:992px) and (max-width:1200px){
+  .gmapwrapper{
+    height: 724px!important;
   }
 
 }
+@media (min-width:768px) and (max-width:991px){
+  .gmapwrapper{
+    height: 615px!important;
+  }
+
+}
+ @media (max-width:767px){
+  .gmapwrapper{
+    height: 615px!important;
+  }
+  .Glocationmap{
+    height: 80px;
+    text-align: center;
+    
+  }
+  .location{
+    font-size: 46px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+  
+  }
+  .mapouter{
+    position:relative;
+    text-align:right;
+    
+  }
+  .gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+  
+  }
+  
+ }

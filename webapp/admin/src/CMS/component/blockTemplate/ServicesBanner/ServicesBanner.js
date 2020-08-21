@@ -56,29 +56,29 @@ export default class ServicesBanner extends React.Component {
 
 	render() {
 		return (
-			<div>
+			
 				<div className="banerpageheight">
 				   	<div className="banerSBheight" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 						   
-					   <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					    	<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-							     <div className="mtop100SB"> 
+					    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+					    	 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 "> 
+							      <div className="mtop100SB"> 
                       <div className="h1TitleSB" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div><br/>
                       <div className="h2TitleSB" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div><br/>
                       <div className="h3TitleSB" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div>
-							    </div>	 
-					    	</div>
-					  	<div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 row">
+							    </div>	  
+					    	 </div> 
+					  	  <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 row">
 							 <img className="bannerImgSB img-responsive" src={this.state.blocks.fgImage} alt="Bannerpng"/>
-						  </div>
-						</div> 
+						  </div>  
+						</div>  
 
 					</div>
 					
 						
 				</div>
 								
-			</div>
+			
 				
 
 );

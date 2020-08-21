@@ -1,4 +1,4 @@
-.specialhightwrapper{
+/* .specialhightwrapper{
     height: 650px;
     background-color: #FFF!important;        
 }
@@ -146,11 +146,11 @@
 
 }
 
-/* ==================================Media Query================================================= */
+ ==================================Media Query================================================= 
 @media (max-width: 767px){
     .specialhightwrapper{
         height: 1549px;
-        /* background-color: aqua; */
+         background-color: aqua; 
     }
     
     .dashBoxOS{
@@ -204,4 +204,4 @@
 }
 
 
-
+ */

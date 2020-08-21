@@ -78,19 +78,19 @@ export default class AutoPilotPlatform extends Component{
                         </div> 
                 </div>    
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper001">
-                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftimageframework ">
-                         <img src={this.state.blocks.fgImage} alt="002" className="leftsideimg"/>  
+                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftimageframework ">
+                         <img src={this.state.blocks.fgImage} alt="002" className="leftsideimg img-responsive"/>  
 
 
-                    </div> 
+                    </div>  
 
-                     <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 autocontentframework">
-                            <p className="paragraphfasttrack00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p>
+                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 autocontentframework">
+                            <p className="paragraphfasttrack00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></p> 
 
                             
-                             <h3 className="ftracermore00">Read More </h3> <div className="arrow00"><i className="fas fa-angle-double-right"></i></div>
+                             {/* <h3 className="ftracermore00">Read More </h3> <div className="arrow00"><i className="fas fa-angle-double-right"></i></div> */}
 
-                        </div> 
+                         </div>  
 
                  </div>   
 

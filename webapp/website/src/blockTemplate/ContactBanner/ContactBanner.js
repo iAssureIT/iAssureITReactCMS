@@ -69,7 +69,7 @@ export default class ContactBanner extends React.Component {
 							
 					  </div>
 					  <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 cbannerptext"> 
-					  <img src={this.state.blocks.fgImage} alt="c01" className="contactimg" />
+					  <img src={this.state.blocks.fgImage} alt="c01" className="contactimg img-responsive" />
 					</div>
 					</div> 
 

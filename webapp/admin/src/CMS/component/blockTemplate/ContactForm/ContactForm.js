@@ -299,35 +299,35 @@ export default class ContactForm extends React.Component {
 							
 						<div className="col-lg-8 col-md-8 col-sm-12 col-xs-12 contactformwrapp">
 						     <div className="cformbgimage1">
-					            <img src="/images/cmodel05.png" alt="cmodel05"/>
+					            <img src="/images/cmodel05.png" alt="cmodel05" className="img-responsive"/>
 				             </div>
 							  <div className="cformbgimage2">
-						         <img src="/images/cmodel01.png" alt="cmodel04"/> 
+						         <img src="/images/cmodel01.png" alt="cmodel04" className="img-responsive"/> 
 					         </div>
 							 <div className="cformbgimage4">
-						         <img src="/images/cmodel2.png" alt="cmodel2"/>
+						         <img src="/images/cmodel2.png" alt="cmodel2" className="img-responsive"/>
 				            </div>
 							<div className="cformbgimage5">
-						        <img src="/images/cmodel10.png" alt="cmodel10"/>
+						        <img src="/images/cmodel10.png" alt="cmodel10" className="img-responsive"/>
 				           </div> 
 						   <div className="cformbgimage7">
-						        <img src="/images/cmodel06.png" alt="cmodel06"/>
+						        <img src="/images/cmodel06.png" alt="cmodel06" className="img-responsive"/>
 				          </div>
 						  <div className="cformbgimage8">
-						      <img src="/images/cmodel08.png" alt="cmodel08"/>
+						      <img src="/images/cmodel08.png" alt="cmodel08" className="img-responsive"/>
 				          </div>
 						  <div className="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 contactformwrapp2">
 						     <div className="cformbgimage3">
-							    <img src="/images/cmodel04.png" alt="cmodel04"/>
+							    <img src="/images/cmodel04.png" alt="cmodel04" className="img-responsive"/>
 						     </div>
 							 <div className="cformbgimage6">
-						       <img src="/images/cmodel03.png" alt="cmodel03"/>
+						       <img src="/images/cmodel03.png" alt="cmodel03" className="img-responsive"/>
 					         </div>
 							 <div className="cformbgimage10">
-						        <img src="/images/cmodel07.png" alt="cmodel07"/>
+						        <img src="/images/cmodel07.png" alt="cmodel07" className="img-responsive"/>
 					         </div>
 							
-							  <h1 className="h1connecttitle">Connect With Us</h1>
+							 className="img-responsive"	  <h1 className="h1connecttitle">Connect With Us</h1>
 							  <form>
 							     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv2">
 								 <input className="form-control bg0color0" name="from" type="text" placeholder="Your name"/>
@@ -337,7 +337,7 @@ export default class ContactForm extends React.Component {
 									<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
 										<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 										<div className="cformbgimage9">
-							                <img src="/images/cmodel09.png" alt="cmodel03"></img>
+							                <img src="/images/cmodel09.png" alt="cmodel03" className="img-responsive"></img>
 					                    </div>
 											<input className="form-control bg0color0" name="from" type="text" placeholder="Mobile"/>
 										</div>

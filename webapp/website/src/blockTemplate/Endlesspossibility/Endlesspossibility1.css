@@ -129,65 +129,130 @@
          /* margin-left: -8%; */
     
     }
- /* ====================================================Media Query==================================================================    */
-    @media(max-width:767px){
-        .endpossibwrapper{
-            height: 1400px;
-            /* background-color: chartreuse; */
-        }
-        .endmainrow{
-            height: 100px;
-            width: 100%;
-            margin-top: 28px; 
-            text-align: center;
-            /* background-color: cadetblue; */
-            margin-left: 0%;
-            
-            
-        }
-        .endlesspsb{
-            font-size: 24px;
-        }
-        .endlesspsb00{
-            font-size: 24px;
-        }
-        .mobileappd{
-            font-size: 24px;
-            margin-left: 0%;
-        }
-        .loremIpsum1{
-            font-size: 24px;
-        
-        }
-        .paragraphendpsb01{
-            margin-left: 0%;
-        } 
-        .paragraphendpsb02{
-            margin-left: 0%;
-        } 
-        .enspsbrmrr{
-            margin-left: 0%!important;
-            font-size: 18px!important;
-            width: 33%!important;
-            cursor: pointer;
-        }
-        .arrowenspsb{
-         font-size: 18px!important;
-         margin-left: 103px!important;
-         margin-top: -31px!important;   
+/* ====================================================Media Query==================================================================    */
+@media (min-width:992px) and (max-width:1200px){
+    .endpossibwrapper {
+        height: 823px!important;
+    }
+    .dashboxwrapper{
+        height: 20px;
+    }
+     .dashBox {
+        margin-top: 5px!important;
+    } 
+     .dash1{
+      margin-left:-25%!important;
+    } 
+    .endmainrow {
+        height: 108px;
+    }
+    .paragraphendpsb01{
+        text-align: justify;
+    }
+    .rightsideimgendpsw {
+        margin-top: 49px!important;
+    }
 
-        } 
-        .rightsideendpsbfw{
-            margin-top: 250px;
+   
+ 
 
-        }
+ }
+ @media (min-width:768px) and (max-width:991px){
+   
+    .endpossibwrapper{
+        height: 1262px!important;
+    }
+     .dashboxwrapper{
+        height: 20px;
+    }
+    .dashBox {
+        padding-top: 5px!important;
+    }
+    .dash1{
+      margin-left:40%!important;
+    } 
+    .endmainrow{
+        height: 86px!important;
+    }
+    .endlesscontentwrapper{
+        height: 829px!important;
+        margin-top: 0px!important;
+     }
+    .enpsbcontent{
+        height: 370px!important;
         
-        .rightsideimgendpsw{
-            margin-left: 0%;
-            width: 100%;
-        }
         
     }
+    .paragraphendpsb01{
+        margin-left: 0%!important;
+        text-align: justify;
+    }
+    .rightsideendpsbfw{
+        height: 450px!important;
+        margin-top: 0px!important;
+        
+        
+           
+        }
+        .rightsideimgendpsw{
+            height: 500px;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+                       
+        }
+
+    
+
+
+ }
+    @media(max-width:767px){
+        .endpossibwrapper{
+            height: 1250px!important;
+        }
+        .dashboxwrapper{
+            height: 20px;
+        }
+        .dashBox {
+            padding-top: 5px!important;
+        }
+        .dash1{
+          margin-left:22%!important;
+        }
+        .endmainrow{
+            height: 86px!important;
+            
+        }
+        .h1titleless{
+            font-size: 25px!important;
+        }
+        .endlesscontentwrapper{
+            height: 1100px!important;
+            margin-top: 0px!important;
+            
+            
+        }
+        .enpsbcontent{
+            height: 650px!important;
+            
+        }
+        .paragraphendpsb01{
+            margin-left: 0%!important;
+            text-align: justify;
+        }
+        .rightsideendpsbfw{
+            height: 450px!important;
+            margin-top: 0px!important;
+            
+               
+            }
+        .rightsideimgendpsw{
+                height: 500px;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                           
+        }
+        
+   }
 
 
 

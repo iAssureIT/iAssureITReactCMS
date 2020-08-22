@@ -102,69 +102,15 @@
 
 
  
- @media (min-width: 1024px) and (max-width:1200px)
-
- {
-     .b1h1Title{
-  
-        margin-left: 57px;
-                   
-     }
-     .b1h2Title{   
-         font-size: 44px;  
-         margin-left: 52px;
-        
-     }
-     .b1h3Title{
-        font-size: 28px; 
-        margin-left: 52px;
-     }
-        
-    
-
- }
-     @media (min-width:992px) and (max-width:1023px){
-         .b1h1Title{
-  
-             font-size: 27px; 
-              margin-left: 62px;
-           
-         }
-         .b1h2Title{   
-             font-size: 44px;  
-             margin-left: 55px;
-         }
-         .b1h3Title{
-            font-size: 28px; 
-           margin-left: 58px;
-            
-         
-             
-         }
-         .appIMGwrapp{
-             height: 350px;
-              /* background-color:red;        */
-             /* margin-top: 15px; */
-         }
-         .b1bannerImg{
-            height: 330px; 
-            margin-left: 6%; 
-            
-           
-             
-            
-         }
-       
-    } 
 /* ==============================================Tablets & ipad=========================================== */
-  @media (min-width:769px) and (max-width:991px){
+  @media (min-width:992px) and (max-width:1200px){
      .carouselBannerwrapper{
-         height: 1800px;
+         height: 1180px;
          
         
      }
      .b1banerheight{
-         height: 1800px;
+         height: 1120px;
  
      }
     
@@ -176,17 +122,20 @@
       }
       .b1h1Title{
           width: 137%;
-          margin-left:6%; 
+          margin-left:9%; 
          
      
       }
       .b1h2Title{  
-       margin-left: 5%;
+       margin-left: 9%;
+       font-size: 50px;
+
          
          
      }
      .b1h3Title{
-      margin-left: 5%;
+        font-size: 31px;
+      margin-left: 9%;
             
          
      }
@@ -197,15 +146,16 @@
     .b1bannerImg{
          margin: auto;
          box-sizing: border-box;
+         margin-top: 105px;
          
      }
      .carousel-control-prev{
 
-         margin-top: 615px;
+         margin-top: 302px;
      
          } 
          .carousel-control-next{
-          margin-top: 615px;
+          margin-top: 302px;
             
         
          }
@@ -218,13 +168,13 @@
 
 
 /* ===============================================Mobile view============================================== */
-@media(min-width: 469px) and  (max-width: 768px){
+@media(min-width: 768px) and  (max-width: 991px){
  .carouselBannerwrapper{
-     height: 1840px!important;
+     height: 1700px!important;
      
        }
  .b1banerheight{
-     height: 1830px;
+     height: 1680px;
 
  }
  .homepagecontentwrapp{
@@ -240,18 +190,19 @@
   }
   .b1h1Title{
       width: 100%;
-      font-size: 24px;
+      font-size: 36px;
      margin-left:2%; 
      
  
   }
   .b1h2Title{ 
-      font-size: 45px; 
+      font-size: 46px; 
    margin-left: 1%;
      
      
  }
  .b1h3Title{
+     font-size: 27px;
   margin-left: 2%;
         
      
@@ -268,11 +219,11 @@
  }
  .carousel-control-prev{
 
-  margin-top: 672px;
+  margin-top: 598px;
 
   } 
   .carousel-control-next{
-   margin-top: 672px;
+   margin-top: 598px;
      
  
   }
@@ -292,14 +243,14 @@
  
   } 
 
- @media (max-width: 468px){
+ @media (max-width: 767px){
  .carouselBannerwrapper{
-     height: 1485px;
+     height: 1263px;
     
      
  }
  .b1banerheight{
-     height: 1480px;
+     height: 1251px;
      
 
  }
@@ -319,13 +270,13 @@
   } 
   
    .b1h1Title{
-    font-size: 30px;
+    font-size: 21px;
      margin-left:-5px;
      margin-top: -156px;  
  
  }
   .b1h2Title{  
-     font-size: 30px; 
+     font-size: 21px; 
       margin-left: -7px; 
      margin-top: -11px;
      
@@ -354,14 +305,14 @@
   .carousel-control-prev{
      height: 38px!important;
      width: 38px;
-     margin-top: 480px;
+     margin-top: 427px;
      
      
   }  
    .carousel-control-next{
      height: 38px!important;
      width: 38px;
-     margin-top: 481px;
+     margin-top: 427px;
       margin-right: 10px;
       
  

@@ -13,7 +13,11 @@ import React from 'react';
 //  import Aboutus       from './CMS/component/blockTemplate/AboutBanner/AboutBanner.js';
 //  import  Customisable     from './CMS/component/blockTemplate/Customisable/Customisable.js';
 //  import Nationalaward     from './CMS/component/blockTemplate/NationalAwards/NationalAwards.js';
- import ServicesBanner from './CMS/component/blockTemplate/ServicesBanner/ServicesBanner.js';
+//  import ServicesBanner from './CMS/component/blockTemplate/ServicesBanner/ServicesBanner.js';
+ import Ecommercebanner from './CMS/component/blockTemplate/eCommerceBanner/eCommerceBanner.js';
+//   import Digitalmarketing from './CMS/component/blockTemplate/DigitalMarkiting/DigitalMarkiting.js';
+  import Digitalmarketing   from './theme1/blocks/DigitalMarkiting.js';
+  import Createonlinestore from './CMS/component/blockTemplate/CreateOnlineStore/CreateOnlineStore.js';
 
 
 
@@ -50,7 +54,10 @@ export default class Responsive extends React.Component {
 				   {/* <Aboutus /> */}
 				   {/* <Customisable /> */}
 				   {/* <Nationalaward /> */}
-				   <ServicesBanner />
+				   {/* <ServicesBanner /> */}
+				   <Ecommercebanner />
+				   <Digitalmarketing /> 
+				   <Createonlinestore />
 		   </div>
 		);
 	}

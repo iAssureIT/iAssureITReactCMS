@@ -183,6 +183,9 @@
     height: 900px!important;
     margin-top: 0px!important; 
 }
+.h1title00 {
+    font-size: 35px;
+}
 .contentframework{
     height: 390px!important;
     
@@ -199,6 +202,7 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     box-sizing: border-box;
+    margin-top: -30px;
 }
    
 
@@ -208,16 +212,17 @@
 
 @media (max-width:767px){
 .pagewrapperheight{
-    height: 1670px!important;  
+    height: 1670px!important; 
+    
 }  
 .bgwrapperheight{
    height:1650px ;
-   background-size: 200% 103%; 
-   margin-top: -168px;
+   background-size: 200% 100%; 
+   
 }
  .dashwrapp{
     height: 20px!important;
-    margin-top: 70px!important;
+    margin-top: 213px!important;
 }
 .dashBox1{
     margin-top: -12px!important;
@@ -229,8 +234,11 @@
     height: 150px!important;
 } 
 .h1title00{
-    font-size: 23px!important;
+    font-size: 16px!important;
          
+   }
+   .contentframework{
+       margin-top: 0px!important;
    }
 
 .maincontentwrapper{
@@ -243,7 +251,7 @@
 } 
 .imageframework{
     height: 300px!important;
-    margin-top: 80px;
+    margin-top: 200px;
   }
   .sideimageftrack{
     height: 300px!important;

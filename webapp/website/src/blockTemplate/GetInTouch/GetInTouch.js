@@ -114,7 +114,7 @@ export default class GetInTouch extends Component{
                     
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 Getwrapp1">
                        <div className=" col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-12 col-xs-12 contact-img-block">
-                           <img src={data.Image} alt="c02"/>
+                           <img src={data.Image} alt="c02" className="img-responsive"/>
                         </div>
                        <div className="row">
                           <div className="col-lg-12 col-md-12 colsm-12 col-xs-12 Getwrapp02">

@@ -172,7 +172,7 @@
 }
 @media (min-width:768px) and (max-width:991px){
     .testimonialwrapper{
-        height: 619px!important;
+        height: 644px!important;
         
     }
     .dashBoxTmwrapp{
@@ -208,7 +208,7 @@
 }
 @media (max-width:767px){
     .testimonialwrapper{
-        height: 800px!important;
+        height: 905px!important;
                 
     }
     .dashBoxTmwrapp{
@@ -226,7 +226,7 @@
         
     } 
     .testimonialBox{
-        height: 650px!important;
+        height: 715px!important;
         margin-left: 5%;
 
     }
@@ -244,29 +244,29 @@
     .testimonialwrapper .img-area{
         margin-left: 14px!important; 
         box-shadow: 2px 2px 17px 2px #666;
-        margin-top: 200px;
+        margin-top: 259px;
       }
       .testimonialwrapper .testimonialWriter{
         font-size: 21px;
         margin-left: 0px!important;
-        margin-top: 321px!important;
+        margin-top: 373px!important;
        
     }
    .testimonialwrapper .writerDetails{
      font-size: 15px!important;
      margin-left: 0px!important;
-     margin-top: 350px!important;
+     margin-top: 408px!important;
       
  
     }
     .testimonialwrapper .test-carousel-control-left{
-        margin-top: 450px!important;
+        margin-top: 522px!important;
         margin-left: 145px!important;
        }
        .testimonialwrapper .test-carousel-control-right{
         height: 50px!important;
         width: 50px;
-        margin-top: 450px!important;
+        margin-top: 522px!important;
         margin-left: 145px!important;
         border-radius: 50px;      
         

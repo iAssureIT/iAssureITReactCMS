@@ -128,7 +128,7 @@ export default class Testimonials extends React.Component {
 												    <div className="testimonialWriter"   dangerouslySetInnerHTML={ { __html:result.Title}}></div>
 													<div className="writerDetails"   dangerouslySetInnerHTML={ { __html:result.SubTitle}}></div>   
 												    <div className="img-area">
-				                                          <img src="/images/t1.jpeg" alt="t1" className="d-block" />
+				                        <img src="/images/t1.jpeg" alt="t1" className="d-block" />
 			                                        </div>
 										        </div>
 										        )

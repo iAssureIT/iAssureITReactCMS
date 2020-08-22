@@ -89,7 +89,7 @@
 /* =====================================Media Query================================= */
 @media (min-width:992px) and (max-width:1200px){
   .gmapwrapper{
-    height: 723px!important;
+    height: 629px!important;
   }
 
 }

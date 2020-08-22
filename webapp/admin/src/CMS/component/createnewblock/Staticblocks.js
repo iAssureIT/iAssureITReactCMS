@@ -340,7 +340,6 @@ class Staticblocks extends React.Component {
 			            <button id="NationalAwards" 
 								data-blockTitle="blockTitle" 
 								data-blocksubTitle="blocksubTitle" 
-								data-blockDescription="blockDescription"
 								data-fgImage="fgImage" 
 								data-bgImage="bgImage"
 								data-RepetedBlock="RepetedBlock"

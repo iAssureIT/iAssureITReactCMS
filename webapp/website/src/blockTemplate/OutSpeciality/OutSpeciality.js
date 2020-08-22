@@ -109,7 +109,7 @@ export default class OutSpeciality extends React.Component {
 											<div className="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 											<div className="col-lg-12 col-md-12  col-sm-12 col-xs-12 col1"> 
 												<div className="iconCircle">
-												   <img src={data.Image} alt="enteprice" className="innerCircle"/> 
+												   <img src={data.Image} alt="enteprice" className="innerCircle img-responsive"/> 
 											   </div> 
 												 <div className="sptextBox1">
 												   <h2 className="text-center" dangerouslySetInnerHTML={{ __html: data.Title } }></h2>

@@ -79,7 +79,7 @@ export default class AutoPilotPlatform extends Component{
                 </div>    
                    <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 maincontentwrapper001">
                      <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 leftimageframework ">
-                         <img src={this.state.blocks.fgImage} alt="002" className="leftsideimg"/>  
+                         <img src={this.state.blocks.fgImage} alt="002" className="leftsideimg img-responsive"/>  
 
 
                     </div> 

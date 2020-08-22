@@ -82,7 +82,7 @@ export default class Userexperience extends Component{
                      {/* <h3 className="mtechracermore">Read More </h3> <div className="arrowmtech"><i className="fas fa-angle-double-right"></i></div> */}
                 </div> 
                 <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframemtechlogy ">
-                   <img src={this.state.blocks.fgImage} alt="001" className="sideimagemtechlogy"/>  
+                   <img src={this.state.blocks.fgImage} alt="001" className="sideimagemtechlogy img-responsive"/>  
                  </div> 
              </div>
                 

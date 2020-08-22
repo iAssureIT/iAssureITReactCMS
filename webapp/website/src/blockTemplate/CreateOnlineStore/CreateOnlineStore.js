@@ -66,7 +66,7 @@ export default class CreateOnlineStore extends Component{
 
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgwrappstore">
                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 Imgwrapp00">
-                         <img src={this.state.blocks.fgImage} className="ecomimgright"></img>
+                         <img src={this.state.blocks.fgImage} className="ecomimgright img-responsive"></img>
                        </div>
 
                         <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 onlinedashwrapp"> 
@@ -87,7 +87,7 @@ export default class CreateOnlineStore extends Component{
                      </div> 
 
                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 Imgwrapp000">
-                     <img src={this.state.blocks.fgImage1} className="ecomimgleft"></img>
+                     <img src={this.state.blocks.fgImage1} className="ecomimgleft img-responsive"></img>
 
 
                      </div>

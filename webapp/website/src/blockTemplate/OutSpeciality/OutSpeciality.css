@@ -165,8 +165,11 @@
             height: 130px;
             
         }
+        .col1 {
+            height: 435px;
+        }
         .iconCircle{
-            left: 21%; 
+            left: -8%; 
         
         }
         .paragraph{
@@ -176,12 +179,7 @@
         .sptextBox1 p{
             padding-left: 0px;
         }
-
-
-       
-
-
-}
+    }
 @media (min-width:768px) and (max-width:991px){
     .specialhightwrapper{
         height: 1516px!important;
@@ -205,7 +203,7 @@
              margin-top: 36px;
         }
         .iconCircle{
-            left: 40%; 
+            left: 8%; 
         
         }
         .paragraph{
@@ -254,7 +252,7 @@
      margin-top: 36px;
     } 
     .iconCircle{
-        left: 27%; 
+        margin-left: 27%; 
     
     }
     .paragraph{

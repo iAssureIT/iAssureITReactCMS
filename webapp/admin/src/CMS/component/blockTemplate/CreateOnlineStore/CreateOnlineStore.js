@@ -88,7 +88,7 @@ export default class CreateOnlineStore extends Component{
                      </div> 
 
                      <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 Imgwrapp000">
-                     <img src={this.state.fgImage1} className="ecomimgleft"></img>
+                     <img src={this.state.fgImage1} className="ecomimgleft img-responsive"></img>
 
 
                      </div>

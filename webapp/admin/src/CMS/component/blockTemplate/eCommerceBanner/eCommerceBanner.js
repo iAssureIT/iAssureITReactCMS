@@ -63,19 +63,15 @@ export default class eCommerceBanner extends React.Component {
 				
 						<div  className="ecbwrapper">
 							<div className="ecombgimg" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
-							     {/* <div className="col-lg-12 col-md-12 col-xs-12 col-sm-12 logoBox">
-						             <a href="/" ><img className="logo img-responsive" src="./images/Logo.png" alt="logo"/></a>
-							
-						         </div> */}
 								 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-						             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 eocmbgwrapp">
+						              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 eocmbgwrapp">
 							            <div className="h1Titlecom0"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
 								        <div className="h2Titlecom00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
 										 <div className="h3Titlecom0000" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div>
-							         </div>
-							         <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 Imgwrapp">
+							         </div> 
+							          <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12 Imgwrapp">
 							              <img className="bannerImgecom img-responsive" src={this.state.blocks.fgImage} alt="Bannerpng"/>
-						           </div> 
+						           </div>  
 							    </div> 
 							</div>	 
 						</div>

@@ -88,7 +88,7 @@ export default class FastrackFrameWork extends Component{
                          </div>
 
                           <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
-                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
+                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack img-responsive"/>  
                           </div>   
                       </div>   
 					       </div> 

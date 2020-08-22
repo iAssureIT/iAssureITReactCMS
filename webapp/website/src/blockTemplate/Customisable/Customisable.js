@@ -78,7 +78,7 @@ export default class Customisable extends Component{
 				            </div> 
                     <div className="col-lg-12 col-sm-12 col-sm-12 col-xs-12 custmowrapper">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customIMGwrapp">
-                        <   img src={this.state.blocks.fgImage} alt="001" className="customleftimage"/>
+                        <   img src={this.state.blocks.fgImage} alt="001" className="customleftimage img-responsive"/>
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customtextwrapp">

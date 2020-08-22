@@ -77,14 +77,14 @@ export default class Endlesspossibility extends Component{
                     </div> 
                      <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 endlesscontentwrapper">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 enpsbcontent">
-                            <div className="headingtitle">
-                                <div className="mobileappd"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div>
-                            </div>
+                            {/* <div className="headingtitle"> */}
+                                {/* <div className="mobileappd"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockSubTitle}}></div> */}
+                            {/* </div> */}
                             <div className="paragraphendpsb01"  dangerouslySetInnerHTML={ { __html:this.state.blocks.blockDescription}}></div>
-                              <h3 className="enspsbrmrr">Read More </h3> <div className="arrowenspsb"><i className="fas fa-angle-double-right"></i></div> 
+                              {/* <h3 className="enspsbrmrr">Read More </h3> <div className="arrowenspsb"><i className="fas fa-angle-double-right"></i></div>  */}
                          </div>
                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 rightsideendpsbfw">
-                            <img src={this.state.blocks.fgImage} alt="002" className="rightsideimgendpsw"/>  
+                            <img src={this.state.blocks.fgImage} alt="002" className="rightsideimgendpsw img-responsive"/>  
                          </div> 
                     </div> 
                 </div>

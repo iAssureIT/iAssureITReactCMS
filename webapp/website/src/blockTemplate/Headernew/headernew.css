@@ -113,42 +113,44 @@
 }
 
 /* ==============================================Media Query ========================================= */
-@media (min-width:769px) and (max-width:991px){
+@media (min-width:992px) and (max-width:1200px){
   .logoab{
-    margin-top: 5.25%!important;
+    left: 82px!important;
   
   }
   .customSpan {
-   margin-top:2.25%!important;
-     right: 6%;
+    
+    top: 53px;
+  }
+    
+
+
+} 
+@media (min-width:768px) and (max-width:991px){
+  .logoab {
+    top: 51px!important;
+    left: 45px!important
+  }
+  .customSpan {
+   top:60px!important;
+     
    }
   
 
-}
+ } 
 /* ================================================mobile view  ========================================== */
-@media (min-width:469px) and  (max-width: 768px){
-  .logoab{
-    margin-top: 7.25%!important;
-    margin-left: 4%!important;
-  }
-  .customSpan {
+@media  (max-width: 767px){
+  .logoab {
+    margin-top: -5.75%;
+    margin-left: -27%; 
+  } 
+    .customSpan {
+        margin-top: -3.75%!important;
+        right:25px;
    
-   margin-top:2.25%!important;
-    right: 6%;
   }
 
 }
 
 
-@media (max-width: 468px){
-  .customSpan {
-   
-    top: 46px;
-    margin-right: -39px;
-  }
-  .logoab{
-    margin-top: 11.25%;
-    margin-left: 1%;
-  }
-   
-}
+

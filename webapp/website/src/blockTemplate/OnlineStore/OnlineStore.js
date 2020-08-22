@@ -80,7 +80,7 @@ export default class OnlineStore extends Component{
 
                 <div className="col-lg-12 col-sm-12 col-sm-12 col-xs-12 custmowrapper">
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customIMGwrapp">
-                        <   img src={this.state.blocks.fgImage} alt="001" className="customleftimage"/>
+                        <   img src={this.state.blocks.fgImage} alt="001" className="customleftimage img-responsive"/>
                         </div>
 
                         <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 customtextwrapp">
@@ -89,7 +89,7 @@ export default class OnlineStore extends Component{
                             </p> 
                                                       
                            
-                             <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div>
+                             {/* <h3 className="rmoretitle">Read More </h3> <div className="awrapp"><i className="fas fa-angle-double-right"></i></div> */}
                             
 
                             

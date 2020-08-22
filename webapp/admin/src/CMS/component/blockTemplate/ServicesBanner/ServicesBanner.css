@@ -58,7 +58,7 @@
 }
 @media (min-width:768px) and (max-width:991px){
 	.banerpageheight{
-		height: 1440px!important;
+		height: 1316px!important;
 	  
 	}
 	.banerSBheight{
@@ -88,7 +88,7 @@
 }
 @media (max-width:767px){
 	.banerpageheight{
-		height: 1240px!important;
+		height: 1016px!important;
 		  
 	}
 	.banerSBheight{

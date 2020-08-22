@@ -121,11 +121,11 @@
        
     }
     .rightsideimgendpsw{
-        height: 500px;
+        height: 425px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         margin: auto; 
-         margin-top: -51px;  
+         /* margin-top: -51px;   */
          /* margin-left: -8%; */
     
     }
@@ -133,6 +133,7 @@
  @media (min-width:992px) and (max-width:1200px){
     .endpossibwrapper{
         height: 645px!important;
+        background-color: forestgreen!important;
     }
     .dashboxwrapper{
         height: 20px;
@@ -165,11 +166,16 @@
     } 
     .endmainrow{
         height: 86px!important;
+    
+        
     }
     .endlesscontentwrapper{
         height: 829px!important;
         margin-top: 0px!important;
-     }
+    
+        
+        
+    }
     .enpsbcontent{
         height: 370px!important;
         
@@ -241,6 +247,7 @@
                 height: 500px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
+                margin-top: -100px!important;
                            
         }
         

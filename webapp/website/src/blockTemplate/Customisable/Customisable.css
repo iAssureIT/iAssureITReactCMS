@@ -151,7 +151,7 @@
    }
    @media (min-width:768px) and (max-width:991px){
     .customisablewrapper{
-      height: 970px!important;
+      height: 1070px!important;
       
     }
     .dashboxwrapper{
@@ -159,7 +159,7 @@
     }
       .dashBox{
         padding-top: 5px!important;
-   } 
+     } 
     
     .dash1{
       margin-left: 40%!important;
@@ -193,12 +193,12 @@
   
 
 
-
+     
 
    }
    @media (max-width:767px){
     .customisablewrapper{
-      height: 1220px!important;
+      height: 1450px!important;
       
   }
     .dashboxwrapper{

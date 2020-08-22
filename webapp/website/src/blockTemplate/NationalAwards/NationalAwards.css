@@ -32,9 +32,9 @@
     border: 2px solid #f1f1f1!important;
     border-radius: 10px;
 }
-.NAh1title{
+.NAh1titleaward{
     height: 108px;
-    /* background-color: chartreuse; */
+    
 }
 
 .nah1title00{
@@ -45,11 +45,11 @@
 }
 .narionalawardwrapp{
     height: 350px;
-     /* background-color: red;  */
+     
 }
 .awardleftwrapp{
     height: 350px;
-    /* background-color: rosybrown; */
+     
 }
 .awardIMG{
     height: 345px;
@@ -58,9 +58,11 @@
 .NATextwrapp{
     height: 350px;
     margin-left: -40px;
+    
 }
 .NAtextwrapp1{
     height: 50px;
+    margin-top: -110px!important;
 }
 .NAh1title{
     
@@ -77,11 +79,13 @@
 }
 .tabwrap{
     height: 400px;
-    /* background-color: blue; */
-    margin-top: -58px; 
+    margin-top: 33px;   
+}
+.NAh1title{
+    margin-top: 81px;
 }
 .iassureaward{
-    height: 170px;
+    height: 159px;
     
 }
 .nav {
@@ -121,6 +125,7 @@
     }
     .awardIMG{
         margin-left: 0%!important;
+        height: 276px!important;
     }
     .NAhetitle{
         margin-left: 10px;
@@ -138,10 +143,10 @@
 }
 @media (min-width:768px) and (max-width:991px){
     .Nawardswrapp{
-        height: 1273px!important;
+        height: 1500px!important;
     }
     .NawardsBgIMG{
-        height: 1384px!important;
+        height: 1475px!important;
         background-size: 200% 100%!important;
         background-repeat: no-repeat;
     }
@@ -159,22 +164,28 @@
         height: 50px;
         margin-left: 50px;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 30px!important;
+    }
+    .NAtextwrapp1{
+        margin-top: 30px!important;
+        
     }
 }
 @media (max-width:767px){
     .Nawardswrapp{
-        height: 1761px!important;
+        height: 1520px!important;
+        margin-top: 200px;
         
     }
     .NawardsBgIMG{
-        height: 1922px!important;
+        height: 1665px!important;
         background-size: 200% 100%!important;
         background-repeat: no-repeat;
+        margin-top: 100pximportant;
     }
     .awardwrapp{
         height: 20px;
-        margin-top: 286px!important;
+        margin-top: 248px!important;
     }
     .dashBoxNA{
         padding-top: 5px;
@@ -183,7 +194,9 @@
         margin-left: 22%!important;
     }
     .NAh1title{
-        height: 108px;
+        height: 108px!important;
+        /* background-color: brown; */
+        /* margin-top: -124px; */
     }
     .nah1title00{
         font-size: 30px!important;
@@ -197,7 +210,7 @@
         
     }
     .awardIMG{
-        height: 345px;
+        height: 221px;
         margin-left: 0%!important;
     }
     .NATextwrapp{
@@ -214,8 +227,9 @@
     } 
     .tabwrap{
         height: 600px!important;
-        margin-top: 0px!important; 
+        margin-top: -58px!important; 
     }
+    
     .NAhetitle{
         text-align: justify!important;
        

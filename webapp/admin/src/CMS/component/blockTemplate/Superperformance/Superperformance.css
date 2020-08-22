@@ -106,4 +106,26 @@
    background-repeat: no-repeat;
    margin-left: 110px;
 }
+/* ========================================Media Query========================================= */
+@media (max-width:767px){
+    .sperwrapper{
+        height: 1550px!important;
+        background-color:#F00!important; 
+    }
+    .sperwrapper .supbgwrapper{
+        height:1550px!important ;
+        background-size: 200% 100%!important;
+       
+    }
+    .dashwrapp{
+        height: 20px;
+        margin-top: 130px!important;
+    }
+    .sideimageftrack {
+        height: 235px!important;
+    }
+
+    
+
+}
 

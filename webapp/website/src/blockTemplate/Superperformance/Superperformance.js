@@ -82,7 +82,7 @@ export default class SuperPerformance extends Component{
                              {/* <h3 className="ftracermore">Read More </h3> <div className="arrow"><i className="fas fa-angle-double-right"></i></div> */}
                          </div>
                          <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12 imageframework ">
-                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack img-responsive"/>  
+                            <img src={this.state.blocks.fgImage} alt="001" className="sideimageftrack"/>  
                           </div>
                          </div>
                          

@@ -121,12 +121,12 @@
        
     }
     .rightsideimgendpsw{
-        height: 500px;
+        height: 441px;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         margin: auto; 
-         margin-top: -51px;  
-         /* margin-left: -8%; */
+         /* margin-top: -51px;   */
+          margin-left: 0%; 
     
     }
  /* ====================================================Media Query==================================================================    */
@@ -252,6 +252,8 @@
                 height: 500px;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
+                background-color: brown!important;
+                margin-top: -67px;
                            
         }
         

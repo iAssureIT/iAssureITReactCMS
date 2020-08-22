@@ -18,6 +18,7 @@ import React from 'react';
 //   import Digitalmarketing from './CMS/component/blockTemplate/DigitalMarkiting/DigitalMarkiting.js';
   import Digitalmarketing   from './theme1/blocks/DigitalMarkiting.js';
   import Createonlinestore from './CMS/component/blockTemplate/CreateOnlineStore/CreateOnlineStore.js';
+  import Superperformance  from './CMS/component/blockTemplate/Superperformance/Superperformance.js';
 
 
 
@@ -57,7 +58,8 @@ export default class Responsive extends React.Component {
 				   {/* <ServicesBanner /> */}
 				   <Ecommercebanner />
 				   <Digitalmarketing /> 
-				   <Createonlinestore />
+				   <Superperformance />
+				   {/* <Createonlinestore /> */}
 		   </div>
 		);
 	}

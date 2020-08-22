@@ -40,7 +40,7 @@
 }
 .titlewrapper1{
     height: 108px;
-    /* background-color: chartreuse; */
+     background-color: chartreuse!important; 
    
     
 }
@@ -105,5 +105,12 @@
    background-size: 100% 100%;
    background-repeat: no-repeat;
    margin-left: 110px;
+}
+/* ============================================Media Query============================================ */
+@media (max-width:767px){
+    .sperwrapper{
+        height: 850px;
+        background-color:#F00; 
+    }
 }
 

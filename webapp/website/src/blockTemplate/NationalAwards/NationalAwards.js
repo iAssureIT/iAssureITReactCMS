@@ -88,7 +88,7 @@ render(){
                     </ul>
                 </div> 
              </div>
-             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NAh1title">
+             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 NAh1titleaward">
                     <div className=" text-center">
                         <div className="nah1title00" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
                     </div>

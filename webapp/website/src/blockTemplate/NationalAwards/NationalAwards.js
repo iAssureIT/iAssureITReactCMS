@@ -125,6 +125,7 @@ render(){
                               this.state.blocks.repeatedBlocks.map((data, index)=>{
                               return(
                                   <li class={"bgcolorhide "+(index===0 ? "active" : "")}>
+                                  
                                     <a href={"#tab-"+index} data-toggle="pill" className="bgcolorhide">
                                       <img src={data.Image} alt="award" className="iassureaward img-responsive"/>
                                     </a>

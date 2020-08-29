@@ -60,6 +60,13 @@
     margin-left: -40px;
     
 }
+.NATextwrapp a{
+    color:#e0e43c ! important;
+}
+.NATextwrapp a:hover{
+    color:#fff ! important;
+    font-weight: 900;
+}
 .NAtextwrapp1{
     height: 50px;
     margin-top: -110px!important;

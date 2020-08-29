@@ -142,13 +142,13 @@ class Header extends React.Component {
                     <div className="navbar-header">
                       <a className="navbar-brand whtclrHeaderBrand" href="/"><b>iAssureIT CMS</b></a>
                     </div>
-                    <ul className="nav navbar-nav">
+                    <ul className="nav navbar-nav"style={{marginTop:"1px"}}>
                       <li><a href="/cms/select-new-block">Blocks</a></li>
                       <li className=""><a href="/cms/create-new-page">Pages</a></li>
                       <li><a href="#" className="dropdown" id="blogbtnidA">
                       
                         <button className="dropbtn1" id="blogbtnid">Blogs 
-                          <i className="fa fa-caret-down"></i>
+                          <i className="fa fa-caret-down"style={{marginLeft:"5px"}}></i>
                         </button>
                         <div className="dropdown-content">
                           <li className="dpdnBoxLi"><a href="/cms/blogs-form" className="whtclrHeaderBrand">Blogs</a></li>

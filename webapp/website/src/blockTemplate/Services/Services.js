@@ -136,7 +136,7 @@ export default class Services extends React.Component {
 								</div>
 							   <div className="heprizeapps text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.repeatedBlocks?this.state.blocks.repeatedBlocks[0].Title:"<b>ENTERPRISE APPS<b/>"}}></div>
 						</div>    
-						<div className="hexagon2">
+						<div className="hexagon2 hidden-xs">
 						    <div className="h1services text-center" dangerouslySetInnerHTML={ { __html:this.state.blocks.blockTitle}}></div>
 						</div>     
 						<div className="hexagon3">

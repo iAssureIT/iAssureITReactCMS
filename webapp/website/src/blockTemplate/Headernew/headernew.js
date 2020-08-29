@@ -14,7 +14,7 @@ export default class Headernew extends React.Component {
 		  $(".openMenu").addClass("openMenu1");
 		  });
 		  $(".closebtn1").click(function(){ 
-		  $(".openMenu").removeClass("openMenu1");
+		  $(".openMenu").fadeOut().removeClass("openMenu1");
 		  	/*window.location.reload(true);*/
 
 		  });

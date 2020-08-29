@@ -31,7 +31,7 @@ export default class ContactModal extends React.Component {
 
 				
              	
-             	<button type="button" className="btn btn-lg madalbtn btnbg " data-toggle="modal" data-target="#contactpage"  >Contact Us
+             	<button type="button" className="btn btn-lg madalbtn btnbg btn_Responsive" data-toggle="modal" data-target="#contactpage"  >Contact Us
 				</button>
 
 				

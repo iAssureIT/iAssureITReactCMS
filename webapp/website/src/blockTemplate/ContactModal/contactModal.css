@@ -21,7 +21,10 @@
     
 }
 
-
+.btn_Responsive{
+    position: absolute;
+    top:5px;
+}
 .btnbg:focus { 
      outline: 0px auto -webkit-focus-ring-color!important;   
       outline-offset: -2px;  
@@ -272,6 +275,11 @@ textarea.form-control {
 @media (max-width: 468px){
     .madalbtn{
         margin-top: 148px;
+    }
+}
+@media (max-width: 425px){
+    .btn_Responsive{
+        top:64px ! important;
     }
 }
 

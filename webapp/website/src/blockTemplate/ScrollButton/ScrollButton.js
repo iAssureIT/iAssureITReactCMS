@@ -26,7 +26,7 @@ export default class ScrollButton extends Component{
 
     render(){
         return(
-            <div>
+            <div className="hidden-xs">
                 <a href= "#" className="to-top">
                  <i className="fas fa-chevron-up"></i>                
                 </a>

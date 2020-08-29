@@ -99,7 +99,11 @@
   
  
  
-
+ @media (min-width:425px){
+  .b1banerheight{
+    /*height: 400px ! important*/
+  }
+ }
 
  
 /* ==============================================Tablets & ipad=========================================== */
@@ -174,7 +178,7 @@
      
        }
  .b1banerheight{
-     height: 1680px;
+     height: 1680px ! important;
 
  }
  .homepagecontentwrapp{

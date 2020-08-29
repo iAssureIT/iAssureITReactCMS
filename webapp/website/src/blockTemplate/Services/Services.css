@@ -420,7 +420,47 @@ width: 100%;
     
     
 }
-   
+ 
+@media (max-width: 425px){
+  .hexagon3{
+   margin-left: 4.4%; 
+   margin-top: 48% ! important;
+
+  } 
+  .hstaffaugmtion {
+    font-size: 18px ! important;
+  }
+  .heprizeapps{
+    font-size: 18px;
+  }
+  .hexagon4{
+    margin-top: 105% ! important;
+  }
+  .hwebapps{
+    font-size: 18px;
+  }
+  .hexagon5{
+    margin-top: 161% ! important;
+  }
+  .hexagon6{
+    margin-top: 218% ! important;
+  }
+  .hexagon7{
+    margin-top: 277% ! important;
+  }
+  .hbportals{
+    font-size: 18px;
+  }
+  .hmapps{
+    font-size: 18px;
+  }
+  .heportal{
+    font-size: 18px;
+  }
+  .serviceswrapper{
+    height: 1458px ! important;
+  }
+}   
 
 
  @media (max-width: 767px){

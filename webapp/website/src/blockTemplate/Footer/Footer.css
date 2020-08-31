@@ -1,6 +1,6 @@
 .footerBlock{
 	height: 341px;
-    background-color: #376bff; 
+    background-color: #005b99; 
      
     
     
@@ -217,7 +217,7 @@
  }
  .footerBottom{
 	height: 50px;
-	background-color: #283592;
+	background-color: #004266;
 } 
 .mtop10{
 	margin-top: 14px;
@@ -271,7 +271,7 @@
 @media (min-width:768px) and (max-width:991px){
     .footerBlock{
         height: 273px!important;
-        background-color: #376bff; 
+        background-color: #005b99; 
     }
     .wrap1,.wrap2,.wrap3,.wrap4{
         height: 200px;
@@ -305,7 +305,7 @@
     }
     .footerBottom{
         height: 50px;
-        background-color: #283592;
+        background-color: #004266;
         margin-top: -67px;
     }
     .copyright{
@@ -323,7 +323,7 @@
 @media (max-width:767px){
     .footerBlock{
         height: 470px!important;
-        background-color: #376bff; 
+        background-color: #005b99; 
     } 
     .footerTop{
         height: 422px;
@@ -384,7 +384,7 @@
     } 
     .footerBottom{
         height: 50px;
-        background-color: #283592;
+        background-color: #004266;
     } 
         .copyright{
         font-size: 9px;

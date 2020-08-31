@@ -188,7 +188,7 @@
         height: 1665px!important;
         background-size: 200% 100%!important;
         background-repeat: no-repeat;
-        margin-top: 100pximportant;
+        margin-top: 100px ! important;
     }
     .awardwrapp{
         height: 20px;
@@ -202,6 +202,7 @@
     }
     .NAh1title{
         height: 108px!important;
+        margin-top: 0px ! important;
         /* background-color: brown; */
         /* margin-top: -124px; */
     }
@@ -239,6 +240,7 @@
     
     .NAhetitle{
         text-align: justify!important;
+        font-size: 14px;
        
     }
     .iassureaward{

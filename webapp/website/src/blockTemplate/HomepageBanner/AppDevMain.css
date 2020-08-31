@@ -1,9 +1,9 @@
 .carouselBannerwrapper{
-    height: 1040px;
+    height: 1040px ! important;
      background-color: #FFFFFF;    
 }
 .b1banerheight{ 
-	height: 1040px;  
+	height: 1040px ! important;  
 	background-repeat: no-repeat;
     background-size: 100% 100%; 
  }  
@@ -37,7 +37,7 @@
 }
 .b1h2Title{    
     font-size: 60px;
-    line-height: 1;
+    line-height: 1.1;
     letter-spacing: 1px;
     margin-left: 76px;
     font-family: 'Roboto Condensed', sans-serif;
@@ -72,7 +72,7 @@
     height: 50px!important;
     width: 50px;
     background-color: black!important;
-    margin-top: 269px;
+    margin-top: 269px ! important;
     margin-left: 10px;
     border-radius: 50%; 
  } 
@@ -80,7 +80,7 @@
     height: 50px!important;
     width: 50px;
     background-color: black!important;
-    margin-top: 269px;
+    margin-top: 269px ! important;
      margin-right: 10px;
      border-radius: 50%; 
 
@@ -109,12 +109,12 @@
 /* ==============================================Tablets & ipad=========================================== */
   @media (min-width:992px) and (max-width:1200px){
      .carouselBannerwrapper{
-         height: 1180px;
+         height: 1180px ! important;
          
         
      }
      .b1banerheight{
-         height: 1120px;
+         height: 1120px ! important;
  
      }
     
@@ -155,11 +155,11 @@
      }
      .carousel-control-prev{
 
-         margin-top: 302px;
+         margin-top: 302px ! important;
      
          } 
          .carousel-control-next{
-          margin-top: 302px;
+          margin-top: 302px ! important;
             
         
          }
@@ -172,7 +172,7 @@
 
 
 /* ===============================================Mobile view============================================== */
-@media(min-width: 768px) and  (max-width: 991px){
+@media (max-width: 991px){
  .carouselBannerwrapper{
      height: 1700px!important;
      
@@ -195,19 +195,19 @@
   .b1h1Title{
       width: 100%;
       font-size: 36px;
-     margin-left:2%; 
+     margin-left:11%; 
      
  
   }
   .b1h2Title{ 
-      font-size: 46px; 
-   margin-left: 1%;
+   font-size: 46px; 
+   margin-left: 11%;
      
      
  }
  .b1h3Title{
      font-size: 27px;
-  margin-left: 2%;
+  margin-left: 11%;
         
      
  }
@@ -223,11 +223,11 @@
  }
  .carousel-control-prev{
 
-  margin-top: 598px;
+  margin-top: 598px ! important;
 
   } 
   .carousel-control-next{
-   margin-top: 598px;
+   margin-top: 266px ! important;
      
  
   }
@@ -247,14 +247,93 @@
  
   } 
 
+@media(min-width: 768px) {
+   .carouselBannerwrapper{
+     height: 736px!important;
+     
+       }
+ .b1banerheight{
+     height: 744px ! important;
+
+ }
+ .homepagecontentwrapp{
+     height: 870px;
+      
+     
+     
+ }
+ .slide1{
+     height:236px;
+    
+     
+  }
+  .b1bannerImg{
+    height: 210px ! important;
+  }
+  .b1h1Title{
+      width: 100%;
+      font-size: 36px;
+     margin-left:11%; 
+     
+ 
+  }
+  .b1h2Title{ 
+      font-size: 46px; 
+   margin-left: 11%;
+     
+     
+ }
+ .b1h3Title{
+  font-size: 25px;
+  margin-left: 12%;
+        
+     
+ }
+ .appIMGwrapp{
+     height: 336px;
+     margin-top: 110px;   
+ }
+ .homepagecontentwrapp{
+  margin-top: 18px;
+ }
+ .b1bannerImg{
+     height: 330px ! important; 
+     margin: auto;
+     box-sizing: border-box;
+     
+ }
+ .carousel-control-prev{
+
+  margin-top: 258px ! important;
+
+  } 
+  .carousel-control-next{
+   margin-top: 598px;
+     
+ 
+  }
+  .glyphicon-chevron-left{
+    font-size: 22px!important;
+    margin-top: -13px!important;
+    margin-left: -12px!important;
+
+} 
+.glyphicon-chevron-right{
+   font-size: 22px!important;
+   margin-top: -13px!important;
+   margin-right: -12px!important;
+}
+
+}  
+
  @media (max-width: 767px){
  .carouselBannerwrapper{
-     height: 1263px;
+     height: 1263px ! important;
     
      
  }
  .b1banerheight{
-     height: 1251px;
+     height: 1251px ! important;
      
 
  }
@@ -298,7 +377,7 @@
      margin-top: 0px; 
  } 
     .b1bannerImg{
-     height: 278px; 
+     height: 278px ! important; 
      margin: auto;
      box-sizing: border-box;
      
@@ -309,10 +388,15 @@
   .carousel-control-prev{
      height: 38px!important;
      width: 38px;
-     margin-top: 427px;
+     margin-top: 427px ! important;
      
      
-  }  
+  } 
+  .carousel-control-next{
+     margin-top: 427px ! important;
+
+  }
+
    .carousel-control-next{
      height: 38px!important;
      width: 38px;

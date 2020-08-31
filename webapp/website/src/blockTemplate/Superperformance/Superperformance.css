@@ -101,7 +101,7 @@
 
 }
 .sideimageftrack{
-   height: 390px;
+   height: 300px;
    background-size: 100% 100%;
    background-repeat: no-repeat;
    margin-left: 110px;
@@ -109,8 +109,19 @@
 /* ============================================Media Query============================================ */
 @media (max-width:767px){
     .sperwrapper{
-        height: 850px;
-        background-color:#F00; 
+        height: 1250px;
+        margin-top: 121px;
+        /*background-color:#F00; */
+    }
+    .h1title00{
+        font-size: 15px ! important;
+    }
+    .supbgwrapper{
+        height: 1550px ! important;
+    }
+    .sideimageftrack{
+        margin-top: 247px ! important;
+        margin-left: 0px ! important;
     }
 }
 

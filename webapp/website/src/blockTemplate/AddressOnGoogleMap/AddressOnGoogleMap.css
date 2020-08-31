@@ -90,18 +90,21 @@
 @media (min-width:992px) and (max-width:1200px){
   .gmapwrapper{
     height: 629px!important;
+     margin-top: 400px;
   }
 
 }
 @media (min-width:768px) and (max-width:991px){
   .gmapwrapper{
     height: 615px!important;
+    margin-top: 400px;
   }
 
 }
  @media (max-width:767px){
   .gmapwrapper{
     height: 615px!important;
+    margin-top: 400px;
   }
   .Glocationmap{
     height: 80px;
@@ -123,6 +126,12 @@
     overflow:hidden;
     background:none!important;
   
+  }
+  .locationIcon{
+     height: 53px;
+      width: 56px;
+      margin-left: 121px;
+      margin-top: 20px;
   }
   
  }

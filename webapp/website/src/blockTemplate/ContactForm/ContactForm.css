@@ -202,7 +202,67 @@
 		 height: 453px;
 		
 	}
-	
+	 @media(max-width:767px){
+	 	.cformbgimage5{
+	 		margin-left: 0px;
+	 	}
+
+        .cformbgimage9{
+        	margin-left: 0px;
+        }
+        .cformbgimage8{
+        	margin-left: 0px;
+        }
+        .cformbgimage7{
+        	margin-left: 0px;
+        }
+        .contactformwrapp2{
+        	height: 534px;
+        }
+        .takeBoxDown{
+        	margin-top: 20px;
+        }
+        .locationIcon{
+	    height: 53px;
+	    width: 56px;
+	    margin-left: 121px;
+	    margin-top: 20px;
+        }
+	 }
+	  @media(max-width:768px){
+	 	.cformbgimage5{
+	 		margin-left: 0px;
+	 	}
+
+        .cformbgimage9{
+        	margin-left: 0px;
+        	display: none;
+        }
+        .cformbgimage8{
+        	margin-left: 0px;
+        }
+        .cformbgimage7{
+        	margin-left: 0px;
+        }
+        .contactformwrapp2{
+        	height: 534px;
+        }
+        .cformbgimage2{
+        	display: none;
+        }
+        .takeBoxDown{
+        	margin-top: 20px;
+        }
+        .locationIcon{
+	    height: 53px;
+	    width: 56px;
+	    margin-left: 121px;
+	    margin-top: 20px;
+        }
+        .gettouchwrapp{
+        	margin-top: 180px;
+        }
+	 }
 
 
 

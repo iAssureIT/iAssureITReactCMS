@@ -65,11 +65,11 @@ export default class CreateOnlineStore extends Component{
                 <div className="createonlinebgimg" style={{backgroundImage:"url("+this.state.blocks.bgImage+")"}}>
 
                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgwrappstore">
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 Imgwrapp00">
+                        <div className="col-lg-4 col-md-4 col-sm-4 col-xs-4 Imgwrapp00">
                          <img src={this.state.blocks.fgImage} className="ecomimgright img-responsive"></img>
                        </div>
 
-                        <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 onlinedashwrapp"> 
+                        <div className="col-lg-4 col-md-4 col-sm-8 col-xs-8 onlinedashwrapp"> 
                             
                             <ul className="dashBox04">
                                 <li className="dash01onstore"></li>

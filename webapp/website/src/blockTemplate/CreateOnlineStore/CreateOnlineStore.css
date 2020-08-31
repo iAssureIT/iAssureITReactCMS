@@ -86,3 +86,16 @@
 
 
 }
+  @media (max-width:767px){
+    .ecomimgright{
+      height: 159px!important;
+      margin-left: 0px ! important;
+      
+  }
+  .bgwrappstore{
+    margin-top: -78px ! important;
+  }
+  .onlineh1title00{
+    font-size: 12px;
+  }
+  }

@@ -207,6 +207,7 @@
  }
     @media(max-width:767px){
         .endpossibwrapper{
+            margin-top: 200px;
             height: 1250px!important;
         }
         .dashboxwrapper{

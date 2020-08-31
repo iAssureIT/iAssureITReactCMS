@@ -176,13 +176,13 @@ export default class ContactForm extends React.Component {
 								 <div className="row">
 									<div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 bgdiv1">
 										<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-										<div className="cformbgimage9">
+										<div className="cformbgimage9 hidden-xs" >
 							                <img src="/images/cmodel09.png" alt="cmodel03" className="img-responsive"></img>
 					                    </div>
 											<input className="form-control bg0color0" name="from" type="text" placeholder="Mobile"/>
 										</div>
 										<div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-											<input className="form-control bg0color0" name="from" type="text" placeholder="@gmail.com"/>
+											<input className="form-control bg0color0 takeBoxDown" name="from" type="text" placeholder="@gmail.com"/>
 										</div>
 								    </div>
 							    </div>

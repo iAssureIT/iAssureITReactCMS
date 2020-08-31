@@ -12,7 +12,7 @@
 }
 .dashwrapp{
     height: 20px;
-    margin-top: 147px;
+    margin-top: 147px ! important;
 }
  .dashBox1{
     list-style: none;

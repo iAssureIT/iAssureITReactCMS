@@ -220,7 +220,7 @@
     font-size: 30px!important;
   }
   .custmowrapper{
-    height: 1100px!important;
+    height: 950px!important;
   }
   .customIMGwrapp{
     height:440px;
@@ -235,6 +235,7 @@
     margin-left: 0px!important;
   }
   .h1titlecustom{
+    font-size: 13px;
     text-align: justify;
     padding: 0px!important;
 

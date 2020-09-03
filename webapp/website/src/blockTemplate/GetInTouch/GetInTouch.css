@@ -107,4 +107,13 @@
 
 }
 
+@media  (min-width:425px){
+.mobile_img{
+    height: 50px ! important;
+    width: 50px ! important;
+    margin-left: 135px ! important;
+    margin-top: 23px ! important;
+    }
+}
+
 

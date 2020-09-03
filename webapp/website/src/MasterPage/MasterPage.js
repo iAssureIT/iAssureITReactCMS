@@ -4,7 +4,7 @@ import axios        from 'axios';
 import swal from 'sweetalert';
 // import Modal from 'react-modal';
 // import CmsBlock from "../createnewblock/Cmsblock.js";
-// import $ from "jquery";
+import $ from "jquery";
 
 // import PageHead from "../PageHead/PageHead.js";
 import './MasterPage.css';
@@ -52,6 +52,9 @@ componentDidMount(){
 			var pageUrl = window.location.pathname;;
 			// console.log("pageUrl = ",pageUrl);
 			let a = pageUrl ? pageUrl.split('/') : "";
+			if(a == "contact-us"){
+				$('.btn_Responsive').css('display','none');
+			}
 	        console.log("a==>",a[1]); 
 	        const urlParam =a[1];
 	        // console.log("urlparam..",urlParam);

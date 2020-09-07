@@ -65,6 +65,9 @@ export default class Headernew extends React.Component {
 						<a href="/ecommerce">						
 							<h1 className="Services">eCommerce</h1>
 						</a>
+						<a href="/blogs">						
+							<h1 className="Services">Blogs</h1>
+						</a>
 						
 						<a href="/contact-us">
 							<h1 className="aboutus">Contact Us </h1>

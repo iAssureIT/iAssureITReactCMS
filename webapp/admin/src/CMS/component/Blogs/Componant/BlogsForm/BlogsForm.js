@@ -476,9 +476,9 @@ return (
                     <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
                       <label>Blog Tittle<span className="redFont">*</span></label>
                       <div className="">
-                        <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12" name="blogTitle" id="blogTitle" type="text" ref="blogTitle" value={this.state.blogTitle} onChange={this.handleChange.bind(this)} placeholder="" required/>
-                        <div className="errorMsg">{this.state.errors.blogTitle}</div>
-
+                        <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12" name="blogTitle" id="blogTitle" type="text" ref="blogTitle" value={this.state.blogTitle} onChange={this.handleChange.bind(this)} placeholder=""/>
+                       {/* <div className="errorMsg">{this.state.errors.blogTitle}</div>
+*/}
                       </div>
                     </div>
 

@@ -1,0 +1,57 @@
+.sbbannerWall{
+  height: 535px;
+  /*margin-top: 127px;*/
+  margin-top: 0px ! important;
+  /*background-color:  #444;*/
+  padding: 0px !important;
+  position: relative;
+  text-align: center;
+  color: white;
+    /*background-image: url("/images/bannerback.jpeg");*/
+  background-size: 100% 100%;
+
+}
+/*.sbbannerWall:hover {
+    -webkit-transform: scale(1.1) ! important;
+    transform: scale(1.1) ! important;
+    cursor: pointer;
+    -webkit-transition-duration: .5s ! important;
+    transition-duration: .5s ! important;
+  }*/
+.nopadding{
+  padding: 0px;
+}
+.sbcentered {
+  background-color: #191818ba;
+  background-image: url("/images/bannerback1.png");
+  padding: 0px !important;
+  background-repeat: no-repeat;
+  height: 535px;
+  background-size: 100% 100%;
+  padding:0;
+
+
+}
+.sbbtextcentered{
+  top: 25%;
+}
+.fs40{
+  font-size: 40px;
+  margin-top: 40px;
+
+}
+
+.fs72{
+  font-weight: 600;
+  font-size: 72px;
+}
+.newblogTxt{
+  font-size: 40px ! important;
+}
+.fs24{
+  font-size: 22px;
+  color:#fff ! important;
+}
+.ht100{
+  height: 100px;
+}

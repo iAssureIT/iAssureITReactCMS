@@ -92,7 +92,7 @@ this.state={
   componentDidMount(){
     this.edit();
       axios
-        .get('http://iogapi.iassureit.com/api/projectsettings/get/S3')
+        .get('/api/projectsettings/get/S3')
         .then((response)=>{
          
           const config = {
@@ -477,20 +477,15 @@ return (
                       <label>Blog Tittle<span className="redFont">*</span></label>
                       <div className="">
                         <input className="form-control nameSpaceUpper col-lg-12 col-md-12 col-sm-12 col-xs-12" name="blogTitle" id="blogTitle" type="text" ref="blogTitle" value={this.state.blogTitle} onChange={this.handleChange.bind(this)} placeholder=""/>
-                       {/* <div className="errorMsg">{this.state.errors.blogTitle}</div>
-*/}
+                       {/* <div className="errorMsg">{this.state.errors.blogTitle}</div>*/}
                       </div>
                     </div>
-
                     <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
                       <label>Url<span className="redFont">*</span></label>
                       <div className="">
-                       
                          <input type="text" ref="pageUrl" id="basicPageName" value={this.state.pageUrl} name="basicPageName"  className="templateName col-lg-12 col-md-12 col-sm-12 col-xs-12 inputValid hinput30" onChange={this.handleChange.bind(this)} disabled/>
                       </div>
                     </div>
-                        
-
                           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12" style={{height:"auto"}}>
                             <label >Blog Summary<span className="redFont">*</span></label>
                             <div className="">
@@ -498,10 +493,6 @@ return (
                               <div className="errorMsg">{this.state.errors.summary}</div>
                             </div>
                           </div>
-                          
-
-                         
-                        
                           <div className=" col-lg-12 col-md-12 col-sm-12 col-xs-12 ckbox mt20">
                             <label htmlFor="userName">Blog Content<span className="redFont">*</span></label>
                             <div className="">
@@ -510,8 +501,6 @@ return (
                                 onChange={this.onEditorChange} />
                               </div>
                           </div>
-
-
                           <div className=" col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <label htmlFor="contactNumber">Banner Image<span className="redFont">*</span></label>
                             <div className="">
@@ -520,10 +509,8 @@ return (
                                <div className="col-lg-6 col-md-6 col-xs-12  col-sm-2 marginTop17 ">
                               <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
                                   {/*<label htmlFor="designImg" className="designLabel col-lg-12 col-md-12 col-sm-12 col-xs-12 row">Upload</label>*/}
-                               
                                 <input type="file" className="noPadding" title="Please choose image" id="designImg" name="bannerImg" ref="bannerImg" onChange={this.uploadDesignImg.bind(this)} />
                                 <div className="errorMsg">{this.state.errors.bannerImg}</div>
-
                               </div>
                               </div>
                               <div className="col-lg-4 col-lg-offset-2 col-md-6 col-xs-12  col-sm-2 marginTop17 ">
@@ -546,7 +533,6 @@ return (
                               <div className="col-lg-12 col-md-12 col-xs-12  col-sm-2 marginTop17 ">
                                 <div className="col-lg-5  col-md-12 col-sm-12 col-xs-12 row">
                                     {/*<label htmlFor="designImg" className="designLabel col-lg-12 col-md-12 col-sm-12 col-xs-12 row">Upload</label>*/}
-                                 
                                   <input type="file" className="noPadding" title="Please choose image" id="designImg" onChange={this.uploadInTextImg.bind(this)} />
                                 </div>
                                  <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 row ">
@@ -573,9 +559,9 @@ return (
                                 <button onClick={this.Submit.bind(this)}  className="btn btn-primary lightbluebg  buttonhover pull-right">Submit</button>
                               }
                           </div>
-                  </div>
+                   </div>
               </form>
-          </div>
+           </div>
         </div>
       );
   }

@@ -1,0 +1,35 @@
+.commentBox {
+height: 160px;
+
+}
+.newcommentbox{
+	margin-bottom: 25px;
+}
+
+.formcontent {
+
+height: 85px;
+
+}
+textarea.form-control {
+    height: auto !important;
+}
+.commentBoxbtn{
+	background-color: #ccc;
+}
+.userImgB{
+
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+
+}
+.graycolor{
+	color:#777;
+}
+.newcommentboxArea{
+	background-color: #ffffff ! important;
+}
+.newbtncommentbox{
+	background-color: #009de2;
+}
